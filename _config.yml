@@ -21,13 +21,14 @@ footer-links:
   email: kozistr@gmail.com
   facebook: #
   flickr: #
-  github: kozistr/kozistr.github.io
+  github: https://github.com/kozistr/
   instagram: #
   linkedin: #
   pinterest: #
   rss: # just type anything here for a working RSS icon
   twitter: #
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  kaggle: https://kaggle.com/kozistr/
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
