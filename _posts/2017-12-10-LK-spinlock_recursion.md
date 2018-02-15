@@ -41,7 +41,7 @@ But as i know, at futex(spin lock), recursive stuff cannot be implemented kinda 
 So, actually i don't know this part well, my recommendation for solving deadlock problem on queue_work is using mutex instead of spin-lock at security aspect, not performance...
 
 ## Call Trace (Dump)
-```sh
+```c
 Call Trace:
  __dump_stack lib/dump_stack.c:17 [inline]
  dump_stack+0x104/0x1c5 lib/dump_stack.c:53

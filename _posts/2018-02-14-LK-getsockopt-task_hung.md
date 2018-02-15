@@ -18,7 +18,7 @@ So i just simply add a short PoC which can reproduce a bug and Call Trace.
 
 Here's a Call Trace. task hung (default 120s).
 
-```sh
+```c
 root@zer0day:~# uname -a
 Linux zer0day 4.16.0-rc1+ #14 SMP Wed Feb 14 17:44:19 KST 2018 x86_64 GNU/Linux
 root@zer0day:~# gcc -o poc poc.c
