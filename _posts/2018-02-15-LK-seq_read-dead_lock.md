@@ -13,7 +13,7 @@ I'll just add a Call Trace (Dump) only because it isn't important as well and th
 
 ## Call Trace (Dump)
 
-```sh
+```c
 WARNING: possible circular locking dependency detected
 4.16.0-rc1+ #15 Not tainted
 ------------------------------------------------------
