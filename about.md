@@ -38,6 +38,7 @@ permalink: /about/
 ## Presentation
 * Network Sniff & Detect
 * Polymorphic Virus VS AV Detection
+* will be updated
 
 ## Papers
 * [Windows Anti-Debugging Techniques](https://github.com/kozistr/kozistr.github.io/_refs/Anti-Revering-Techniques[zer0day].pdf)
@@ -46,8 +47,12 @@ permalink: /about/
 # Machine Learning
 
 ## Challenges & Projects
-* [MNIST Challenge](https://github.com/kozistr/MNIST-Competition)
+* [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **top 9, 3rd price, ACC 0.9962**
+* [Kaggle MNIST Challenge](ttps://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
+* [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
 * [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
+* [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
+* [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **BEST ACC 0.97607 ~**
 * will be updated
 
 ## Papers
