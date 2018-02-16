@@ -143,7 +143,7 @@ Generously, 'Unable to handle kernel paging request' bug happened when bad type-
 
 At 0x2b, there is a crash point. Meaning that accessing [r13+0x28] is violated.  Let's have a look.
 
-With above Crash Dump, we can notice **r13** is 0x1. At result, in that case, accessing at 0x29 where invalid page currently, getting value from there and moving into edx (skb).
+With above Crash Dump, we can notice **r13** is 0x1. At result, in that case, accessing at 0x29 where a invalid page is currently, getting value from there and moving into edx (skb).
 
 So the bug is happened by above reason.
 
