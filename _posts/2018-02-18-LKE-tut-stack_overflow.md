@@ -30,11 +30,11 @@ gcc version 7.3.0 (Ubuntu 7.3.0-3ubuntu1)
 
 Before we start, there're some concepts for bypassing those protections.
 
-1. SMEP : Supervisor Mode Execution Protection.
+* SMEP : Supervisor Mode Execution Protection.
 
 Which means, userland code cannot be executed by the kernel. And its state is saved in Bit 20 of CR4 register.
 
-![CR4_Register](https://github.com/kozistr/kozistr.github.io/tree/master/images/cr4_register.png)
+![CR4_Register](/images/cr4_register.png "CR4_Register")
 
 To check whether it is activated or not, just read */proc/cpuinfo*, then find **smep**.
 
@@ -46,15 +46,13 @@ flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36
 
 You can see SMEP/SMAP is enabled.
 
-2. KASLR : Kernel Address Space Layout Randomization
+* KASLR : Kernel Address Space Layout Randomization
 
 In every boot, kernel base address is changed randomly. So, we need to leak its address with several ways.
+
 In this example, i just add a function which gets kernel base address for helping exploit easier.
 
-3. Stack Overflow
-
-
-
+* Stack Overflow
 
 ## Case
 
