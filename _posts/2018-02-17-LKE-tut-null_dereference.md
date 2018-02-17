@@ -299,6 +299,8 @@ Let me explain how to bypass SMEP in order. more details about SMEP are explaine
 4. iretq
 5. return to safe structure
 
+- will be added soon after sleep ~ -
+
 ## Epilogue
 
 But, above cases have a lot of limitations. At first, in real world, with NULL dereference can't be triggered because of mmap min address.
