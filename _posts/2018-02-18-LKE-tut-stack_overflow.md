@@ -10,17 +10,43 @@ Linux Kernel Exploitation Tutorial - 2
 
 In this article, we gonna exploit a LK module which has a stack overflow vulnerability with bypassing SMEP.
 
+Test Environment is...
+
+```c
+zero@ubuntu:~$ uname -a
+Linux ubuntu 4.16.0-041600rc1-generic #201802120030 SMP Mon Feb 12 00:31:33 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+zero@ubuntu:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu Bionic Beaver (development branch)
+Release:	18.04
+Codename:	bionic
+zero@ubuntu:~$ gcc -v
+...
+gcc version 7.3.0 (Ubuntu 7.3.0-3ubuntu1)
+```
+
 ## Background
 
 Before we start, there're some concepts for bypassing those protections.
 
 1. SMEP : Supervisor Mode Execution Protection.
 
-Which means, userland code cannot be executed by the kernel. To check whether it is activated or not, just read */proc/cpuinfo*, then find **smep**.
+Which means, userland code cannot be executed by the kernel. And its state is saved in Bit 20 of CR4 register.
+
+[CR4_Register](https://github.com/kozistr/kozistr.github.io/tree/master/images/cr4_register.png)
+
+To check whether it is activated or not, just read */proc/cpuinfo*, then find **smep**.
 
 ```c
-flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl cpuid pni vmx cx16 x2apic hypervisor lahf_lm pti tpr_shadow vnmi flexpriority ept vpid
+zero@ubuntu:~$ cat /proc/cpuinfo | grep flags
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 invpcid rtm mpx rdseed adx smap clflushopt xsaveopt xsavec xsaves arat
+...
 ```
+
+You can see SMEP/SMAP is enabled.
+
+
 
 2. KASLR : Kernel Address Space Layout Randomization
 
