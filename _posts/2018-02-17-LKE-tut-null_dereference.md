@@ -5,10 +5,6 @@ title: LKE - tutorial - NULL dereference
 
 Linux Kernel Exploitation Tutorial - 1
 
-## ts;dr :)
-
-Today, i just gonna start to write tutorials about LKE in modern LK.
-
 ## Case
 
 Let's get down to the point, this time, i'll give an example code which has a NULL dereference vulnerability.
@@ -33,10 +29,9 @@ gcc version 7.3.0 (Ubuntu 7.3.0-3ubuntu1)
 
 ## Code
 
-Here's a vulnerable code.
+Here's a Makefile & vulnerable code.
 
-
-```Makefile
+```c
 obj-m += bug1.o
 
 all:
@@ -45,6 +40,7 @@ all:
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 ```
+
 
 ```c
 #include <linux/init.h>
