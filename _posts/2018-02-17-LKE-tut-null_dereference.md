@@ -255,6 +255,8 @@ you can also see like this dmesg.
 [14006.136042] BUG: unable to handle kernel NULL pointer dereference at           (null)
 [14006.136044] IP:           (null)
 ...
+Oops: 0011 [#2] SMP PTI
+...
 [14006.136122] RIP: 0010:          (null)
 [14006.136123] RSP: 0018:ffffb2ca8636fdf0 EFLAGS: 00010286
 [14006.136124] RAX: 0000000000000000 RBX: 0000000000000004 RCX: ffffb2ca8636fef8
@@ -283,19 +285,8 @@ With above case, **CR4 value is 00000000003606e0**.
 '0b11 0110 0000 0110 1110 0000'
 ```
 
-~~maybe if i just use VirtualBox or Hyper-V, writing this tut will be more easier than now because they're not supporting SMEP as i know. haha :).~~
-
-Anyway, let's do this~
-
-Let me explain how to bypass SMEP in order. more details about SMEP are explained later.
-
-1. backup userland context
-2. overwrite CR4 with value 0x606e0. (remove Bit 20 of CR4 register)
-3. swapgs
-4. iretq
-5. return to safe structure
-
-- will be added soon after sleep ~ -
+But, in this case, it's complicated to handle SMEP because there's no kernelland area to execute the code disabling SMEP before NULL dereference triggered, (meaning before userland code executed).
+So, in the next post, with another case, i'll finish the payload with the bypasses.
 
 ## Epilogue
 
