@@ -10,29 +10,13 @@ Linux Kernel Exploitation Tutorial - 2
 
 In this article, we gonna exploit a LK module which has a stack overflow vulnerability with bypassing SMEP.
 
-Test Environment is...
-
-```c
-zero@ubuntu:~$ uname -a
-Linux ubuntu 4.16.0-041600rc1-generic #201802120030 SMP Mon Feb 12 00:31:33 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-zero@ubuntu:~$ lsb_release -a
-No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu Bionic Beaver (development branch)
-Release:	18.04
-Codename:	bionic
-zero@ubuntu:~$ gcc -v
-...
-gcc version 7.3.0 (Ubuntu 7.3.0-3ubuntu1)
-```
-
 ## Background
 
 Before we start, there're some concepts for bypassing those protections.
 
-* SMEP : Supervisor Mode Execution Protection.
+* SMEP/SMAP : Supervisor Mode Execution/Access Protection.
 
-Which means, userland code cannot be executed by the kernel. And its state is saved in Bit 20 of CR4 register.
+Which means, userland code cannot be executed by the kernel. And its state is saved in Bit 20/21 of CR4 register.
 
 ![CR4_Register](/images/cr4_register.png "CR4_Register")
 
@@ -61,11 +45,17 @@ This time, i'll give an example code which has a stack based overflow vulnerabil
 Testing Environment is like below.
 
 ```c
-zero@zer0day:~$ uname -a
-Linux zer0day 4.16.0-rc1+ #17 SMP Fri Feb 16 10:40:09 KST 2018 x86_64 GNU/Linux
-zero@zer0day:~$ gcc -v
+zero@ubuntu:~$ uname -a
+Linux ubuntu 4.16.0-041600rc1-generic #201802120030 SMP Mon Feb 12 00:31:33 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+zero@ubuntu:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu Bionic Beaver (development branch)
+Release:	18.04
+Codename:	bionic
+zero@ubuntu:~$ gcc -v
 ...
-gcc version 4.7.2 (Debian 4.7.2-5)
+gcc version 7.3.0 (Ubuntu 7.3.0-3ubuntu1)
 ```
 
 ## Code
