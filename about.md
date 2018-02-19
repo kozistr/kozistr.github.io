@@ -63,6 +63,7 @@ permalink: /about/
 ## Projects
 * Korean University Course Information Web Parsing Out-Sourcing (About 40 Universities)
 * IDA plug-in - GO ELF binary RTTI parser
+* will be updated
 
 ## Services
 * will be updated
