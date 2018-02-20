@@ -153,4 +153,29 @@ Then, why 'r13' is corrupted? Well... digging up more with reproducible PoC and 
 
 Maybe, more strict pointer validation is needed at qdisc & skb.
 
+Here's my suggested patch PoC code. (not verified).
+
+```c
+static int pfifo_fast_enqueue(struct sk_buff *skb, struct Qdisc *qdisc,
+			      struct sk_buff **to_free)
+{
+	int band = prio2band[skb->priority & TC_PRIO_MAX];
+	struct pfifo_fast_priv *priv = qdisc_priv(qdisc);
+	struct skb_array *q = band2list(priv, band);
+	int err;
+
+	err = skb_array_produce(q, skb);
+
+	if (unlikely(err))
+		return qdisc_drop_cpu(skb, qdisc, to_free);
+		
+	if (!qdisc) // qdisc validation
+	    return sth;
+	
+	qdisc_qstats_cpu_qlen_inc(qdisc);
+	qdisc_qstats_cpu_backlog_inc(qdisc, skb);
+	return NET_XMIT_SUCCESS;
+}
+```
+
 **End**
