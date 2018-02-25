@@ -3,7 +3,7 @@ layout: post
 title: LK v4.16.x - tick_sched_time - oobs
 ---
 
-tick_sched_time - alloca Out of Bounds
+tick_sched_time - alloca Out Of Bounds
 
 posted & found by [zer0day](https://kozistr.github.io/)
 
