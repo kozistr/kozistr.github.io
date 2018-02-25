@@ -1,19 +1,19 @@
 ---
 layout: post
-title: LK - tick_sched_time - alloca out of bounds
+title: LK - tick_sched_time - oobs
 ---
 
-tick_sched_time - alloca OOBs
+tick_sched_time - alloca Out of Bounds
 
 posted & found by [zer0day](https://kozistr.github.io/)
 
 ## tl;dr
 
-I just got this bug from syzkaller today on LK v4.16.0-rc2.
+Found in LK v4.16.0-rc2. Only Call Trace (Dump)
 
 ## Call Trace (Dump)
 
-Here's a dump
+Here's a dump.
 
 ```c
 BUG: KASAN: alloca-out-of-bounds in tick_sched_handle+0x165/0x180
@@ -106,18 +106,6 @@ Rebooting in 86400 seconds..
 
 ## PoC
 
-Here's a reproducible code.
-
-```c
-#define _GNU_SOURCE
-
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-
-void main(int argc, char *argv[]) {
-	openat(0xffffffffffffff9c, "/dev/vga_arbiter\x00", 0x0, 0x0);  // openat$vga_arbiter
-}
-``` 
+skip... :)
 
 **End**
