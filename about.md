@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-* University Student - sophomore
+* University Student - Junior
 * zero-day security researcher (mainly kernel exploitation)
 * Data Science & Machine Learning 
 
@@ -20,7 +20,7 @@ permalink: /about/
 * [Demon](http://demonteam.org/)
 
 ### CTF, Conference
-* POC Conference 2016 Staff
+* POC 2016 Conference Staff
 * HackingCamp 15 CTF Staff, Challenge Maker
 * CodeGate 2017 OpenCTF Staff, Challenge Maker
 * HackingCamp 16 CTF Staff, Challenge Maker
