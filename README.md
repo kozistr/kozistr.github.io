@@ -49,10 +49,12 @@ All new sections should be added as html or Markdown documents in the `_sections
 Jekyll has great resources to get you started writing blog posts. Check out [this Jekyll Docs page](https://jekyllrb.com/docs/posts/) first. When you've written a post or two, copy the following into a new file in your project directory called `blog.html`, and you'll see a link to your blog from the homepage:
 
 ```
+
 ---
 layout: blog
 title: My Blog
 ---
+
 ```
 
 -- and that's it!
@@ -62,10 +64,12 @@ title: My Blog
 To add a page, just make a new .html or .md file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
 
 ```
+
 ---
 title: My New Page
 layout: page
 ---
+
 ```
 
 You can also set these page variables in the frontmatter, if you want:
