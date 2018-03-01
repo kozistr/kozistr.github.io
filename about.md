@@ -13,13 +13,13 @@ permalink: /about/
 * [Blog](http://zer0day.tistory.com)
 * [Kaggle](https://www.kaggle.com/kozistr)
 
-# Security, Hacking
+## Security, Hacking
 
-## Team
+### Team
 * [F1ay](http://f1ay.com/)
 * [Demon](http://demonteam.org/)
 
-## CTF, Conference
+### CTF, Conference
 * POC Conference 2016 Staff
 * HackingCamp 15 CTF Staff, Challenge Maker
 * CodeGate 2017 OpenCTF Staff, Challenge Maker
@@ -35,18 +35,18 @@ permalink: /about/
 - [POC](http://powerofcommunity.net/)
 - [KID,POX](http://www.powerofxx.com/)
 
-## Presentation
+### Presentation
 * Network Sniff & Detect
 * Polymorphic Virus VS AV Detection
 * will be updated
 
-## Papers
+### Papers
 * [Windows Anti-Debugging Techniques](https://github.com/kozistr/kozistr.github.io/_refs/Anti-Revering-Techniques[zer0day].pdf)
 * will be updated
 
-# Machine Learning
+## Machine Learning
 
-## Challenges & Projects
+### Challenges & Projects
 * [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **top 9, 3rd price, ACC 0.9962**
 * [Kaggle MNIST Challenge](ttps://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
 * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
@@ -55,17 +55,17 @@ permalink: /about/
 * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **BEST ACC 0.97607 ~**
 * will be updated
 
-## Papers
+### Papers
 * will be updated
 
 # Programming
 
-## Projects
+### Projects
 * Korean University Course Information Web Parsing Out-Sourcing (About 40 Universities)
 * IDA plug-in - GO ELF binary RTTI parser
 * will be updated
 
-## Services
+### Services
 * will be updated
 
 will be updated
