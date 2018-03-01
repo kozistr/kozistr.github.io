@@ -53,6 +53,7 @@ Jekyll has great resources to get you started writing blog posts. Check out [thi
 layout: blog
 title: My Blog
 ---
+
 ```
 
 -- and that's it!
@@ -62,10 +63,12 @@ title: My Blog
 To add a page, just make a new .html or .md file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
 
 ```
+
 ---
 title: My New Page
 layout: page
 ---
+
 ```
 
 You can also set these page variables in the frontmatter, if you want:
@@ -89,6 +92,7 @@ Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant 
 Original README from HTML5 UP:
 
 ```
+
 Prologue by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -115,9 +119,8 @@ aj@lkn.io | @ajlkn
 
 PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
 
-
 Credits:
-
+```
 	Demo Images:
 		Felicia Simion (ineedchemicalx.deviantart.com)
 		Unsplash (unsplash.com)
