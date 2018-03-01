@@ -12,6 +12,8 @@ posted & found by [zer0day](https://kozistr.github.io/)
 Got from syzkaller & Found in LK v4.16.0-rc3. But it's not useful info... As before, there's a similar bug what i found.
 As committer said, this bug is absolutely natural and of course not useful stuff...
 
+Other my posts including LK bugs & Stuffs in online aren't critical one :). Real things are in my offline stuffs :).
+
 *link* : [unwind_orc-out_of_bounds](https://kozistr.github.io/2017/12/16/LK-unwind_orc-oob.html)
 
 ## Call Trace (Dump)
