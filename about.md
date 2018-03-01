@@ -8,7 +8,7 @@ permalink: /about/
 * zero-day security researcher (mainly kernel exploitation)
 * Data Science & Machine Learning 
 
-# Links
+## Links
 * [Github](https://github.com/kozistr)
 * [Blog](http://zer0day.tistory.com)
 * [Kaggle](https://www.kaggle.com/kozistr)
@@ -58,7 +58,7 @@ permalink: /about/
 ### Papers
 * will be updated
 
-# Programming
+## Programming
 
 ### Projects
 * Korean University Course Information Web Parsing Out-Sourcing (About 40 Universities)
