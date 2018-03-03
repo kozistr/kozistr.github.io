@@ -21,53 +21,101 @@ Other my posts including LK bugs & Stuffs in online aren't critical one :). Real
 Here's a dump.
 
 ```c
-BUG: KASAN: alloca-out-of-bounds in deref_stack_regs arch/x86/kernel/unwind_orc.c:336 [inline]
-BUG: KASAN: alloca-out-of-bounds in unwind_next_frame+0x19f7/0x1ef0 arch/x86/kernel/unwind_orc.c:465
-Read of size 8 at addr ffff880079b7f020 by task syz-executor1/2928
+[  163.982226] ==================================================================
+[  163.984549] BUG: KASAN: alloca-out-of-bounds in unwind_next_frame+0x18a0/0x1920
+[  163.986378] Read of size 8 at addr ffff88005a9878c0 by task poc/2752
+[  163.987829] 
+[  163.988229] CPU: 0 PID: 2752 Comm: poc Not tainted 4.16.0-rc3+ #6
+[  163.989674] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
+[  163.991730] Call Trace:
+[  163.992180]  <IRQ>
+[  163.992518]  dump_stack+0xd7/0x154
+[  163.993118]  ? unwind_next_frame+0x18a0/0x1920
+[  163.994093]  print_address_description+0x60/0x22b
+[  163.995264]  ? unwind_next_frame+0x18a0/0x1920
+[  163.996411]  kasan_report.cold.6+0xac/0x2f4
+[  163.997455]  ? unwind_next_frame+0x18a0/0x1920
+[  163.998528]  ? apic_timer_interrupt+0xf/0x20
+[  163.999557]  ? deref_stack_reg+0xe0/0xe0
+[  164.000293]  ? apic_timer_interrupt+0xf/0x20
+[  164.001134]  ? __save_stack_trace+0x7d/0xf0
+[  164.001962]  ? __memset+0x29/0x30
+[  164.002616]  ? save_stack+0x32/0xb0
+[  164.003298]  ? __kasan_slab_free+0x12c/0x170
+[  164.004129]  ? kmem_cache_free+0xc1/0x300
+[  164.004906]  ? rcu_process_callbacks+0x814/0x1dc0
+[  164.005807]  ? __do_softirq+0x213/0x915
+[  164.006545]  ? irq_exit+0x1a2/0x1d0
+[  164.007272]  ? smp_apic_timer_interrupt+0xf1/0x500
+[  164.008520]  ? apic_timer_interrupt+0xf/0x20
+[  164.009794]  ? debug_check_no_locks_freed+0x210/0x210
+[  164.011065]  ? debug_check_no_locks_freed+0x210/0x210
+[  164.012342]  ? find_held_lock+0x33/0x1c0
+[  164.013289]  ? mark_held_locks+0xc1/0x140
+[  164.014098]  ? kmem_cache_free+0x152/0x300
+[  164.014998]  ? __kasan_slab_free+0x12c/0x170
+[  164.015695]  ? rcu_process_callbacks+0x814/0x1dc0
+[  164.016483]  ? kmem_cache_free+0xc1/0x300
+[  164.017174]  ? get_object+0x80/0x80
+[  164.018026]  ? rcu_process_callbacks+0x814/0x1dc0
+[  164.018974]  ? note_gp_changes+0x1e0/0x1e0
+[  164.019836]  ? __do_softirq+0x213/0x915
+[  164.020656]  ? irq_exit+0x1a2/0x1d0
+[  164.021375]  ? smp_apic_timer_interrupt+0xf1/0x500
+[  164.022346]  ? apic_timer_interrupt+0xf/0x20
+[  164.023225]  </IRQ>
+[  164.023716]  ? __memset+0x29/0x30
+[  164.024397]  ? debug_check_no_locks_freed+0x210/0x210
+[  164.025396]  ? kasan_unpoison_shadow+0x30/0x40
+[  164.026288]  ? crypto_shash_update+0x24d/0x2a0
+[  164.027278]  ? ext4_inode_csum.isra.60+0x2f1/0x8f0
+[  164.028043]  ? ext4_journalled_zero_new_buffers+0x410/0x410
+[  164.028987]  ? from_kprojid+0x89/0xc0
+[  164.029601]  ? ext4_inode_csum_set+0x1ad/0x3c0
+[  164.030653]  ? ext4_mark_iloc_dirty+0x1616/0x2a50
+[  164.031704]  ? ext4_chunk_trans_blocks+0x20/0x20
+[  164.032557]  ? __ext4_journal_get_write_access+0x143/0x200
+[  164.033437]  ? ext4_mark_inode_dirty+0x204/0x890
+[  164.034234]  ? ext4_rmdir+0x7e2/0xc10
+[  164.035128]  ? ext4_expand_extra_isize+0x500/0x500
+[  164.035921]  ? mark_held_locks+0xc1/0x140
+[  164.036648]  ? timespec_trunc+0xea/0x180
+[  164.037294]  ? current_kernel_time64+0x120/0x140
+[  164.038016]  ? ext4_rmdir+0x7e2/0xc10
+[  164.038616]  ? ext4_rename2+0x210/0x210
+[  164.039262]  ? vfs_rmdir+0x24c/0x470
+[  164.039917]  ? do_rmdir+0x364/0x420
+[  164.040687]  ? user_path_create+0x40/0x40
+[  164.041628]  ? _raw_spin_unlock_irq+0x24/0x40
+[  164.042456]  ? _raw_spin_unlock_irq+0x24/0x40
+[  164.043311]  ? task_work_run+0x113/0x1c0
+[  164.044071]  ? do_syscall_64+0x43/0x6b0
+[  164.044841]  ? SyS_mkdir+0x260/0x260
+[  164.045598]  ? do_syscall_64+0x1b7/0x6b0
+[  164.046418]  ? entry_SYSCALL_64_after_hwframe+0x42/0xb7
+[  164.047648] 
+[  164.047971] The buggy address belongs to the page:
+[  164.048763] page:ffffea00016a61c0 count:0 mapcount:0 mapping:0000000000000000 index:0x0
+[  164.050054] flags: 0x100000000000000()
+[  164.050648] raw: 0100000000000000 0000000000000000 0000000000000000 00000000ffffffff
+[  164.051948] raw: 0000000000000000 ffffea00016a61e0 0000000000000000 0000000000000000
+[  164.053383] page dumped because: kasan: bad access detected
+[  164.054483] 
+[  164.054732] Memory state around the buggy address:
+[  164.055513]  ffff88005a987780: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  164.056689]  ffff88005a987800: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  164.058088] >ffff88005a987880: 00 00 00 00 00 00 00 00 cb cb cb cb 00 00 00 00
+[  164.059202]                                            ^
+[  164.060069]  ffff88005a987900: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  164.061549]  ffff88005a987980: 00 f1 f1 f1 f1 02 f2 f2 f2 f2 f2 f2 f2 00 00 00
+[  164.062649] ==================================================================
+[  164.063841] Disabling lock debugging due to kernel taint
 
-CPU: 0 PID: 2928 Comm: syz-executor1 Not tainted 4.16.0-rc3+ #5
-Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
-Call Trace:
- <IRQ>
- __dump_stack lib/dump_stack.c:17 [inline]
- dump_stack+0x127/0x213 lib/dump_stack.c:53
- print_address_description+0x60/0x22b mm/kasan/report.c:256
- kasan_report_error mm/kasan/report.c:354 [inline]
- kasan_report.cold.6+0xac/0x2f4 mm/kasan/report.c:412
- </IRQ>
+Message from syslogd@zer0day at Mar  3 16:44:33 ...
+ kernel:[  164.048763] page:ffffea00016a61c0 count:0 mapcount:0 mapping:0000000000000000 index:0x0
 
-The buggy address belongs to the page:
-page:ffffea0001e6dfc0 count:0 mapcount:0 mapping:0000000000000000 index:0x0
-flags: 0x500000000000000()
-raw: 0500000000000000 0000000000000000 0000000000000000 00000000ffffffff
-raw: 0000000000000000 ffffea0001e6dfe0 0000000000000000 0000000000000000
-page dumped because: kasan: bad access detected
-
-Memory state around the buggy address:
- ffff880079b7ef00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
- ffff880079b7ef80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
->ffff880079b7f000: 00 00 00 00 cb cb cb cb 00 00 00 00 00 00 00 00
-                               ^
- ffff880079b7f080: 00 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1
- ffff880079b7f100: f1 02 f2 f2 f2 f2 f2 f2 f2 00 00 00 f2 f2 f2 f2
-==================================================================
-Kernel panic - not syncing: panic_on_warn set ...
-
-CPU: 0 PID: 2928 Comm: syz-executor1 Tainted: G    B            4.16.0-rc3+ #5
-Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
-Call Trace:
- <IRQ>
- __dump_stack lib/dump_stack.c:17 [inline]
- dump_stack+0x127/0x213 lib/dump_stack.c:53
- panic+0x1f8/0x46f kernel/panic.c:183
- kasan_end_report+0x43/0x49 mm/kasan/report.c:180
- kasan_report_error mm/kasan/report.c:359 [inline]
- kasan_report.cold.6+0xc8/0x2f4 mm/kasan/report.c:412
- </IRQ>
-Dumping ftrace buffer:
-   (ftrace buffer empty)
-Kernel Offset: 0x36c00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
-Rebooting in 86400 seconds..
+Message from syslogd@zer0day at Mar  3 16:44:33 ...
+ kernel:[  164.050054] flags: 0x100000000000000()
 ```
 
 ## PoC
@@ -75,20 +123,11 @@ Rebooting in 86400 seconds..
 Here's reproducible PoC code generated by syzkaller.
 
 ```c
-Syzkaller reproducer:
-# {Threaded:true Collide:true Repeat:true Procs:8 Sandbox:setuid Fault:false FaultCall:-1 FaultNth:0 EnableTun:true UseTmpDir:true HandleSegv:true WaitRepeat:true Debug:false Repro:false}
-bpf$MAP_CREATE(0x0, &(0x7f0000001000-0x2c)={0x1, 0x0, 0x0, 0x0, 0x4, 0x1, 0x0, [0x0, 0x0, 0x0, 0x0, 0x6]}, 0x2c)
-```
-
-```c
-#define _GNU_SOURCE
+#define _GNU_SOURCE 
 
 #include <endian.h>
 #include <sys/syscall.h>
 #include <unistd.h>
-#include <linux/futex.h>
-#include <pthread.h>
-#include <stdlib.h>
 #include <errno.h>
 #include <signal.h>
 #include <stdarg.h>
@@ -99,17 +138,6 @@ bpf$MAP_CREATE(0x0, &(0x7f0000001000-0x2c)={0x1, 0x0, 0x0, 0x0, 0x4, 0x1, 0x0, [
 #include <sys/prctl.h>
 #include <dirent.h>
 #include <sys/mount.h>
-#include <errno.h>
-#include <sched.h>
-#include <signal.h>
-#include <stdarg.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include <sys/prctl.h>
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <sys/wait.h>
-#include <grp.h>
 #include <arpa/inet.h>
 #include <errno.h>
 #include <fcntl.h>
@@ -129,6 +157,10 @@ bpf$MAP_CREATE(0x0, &(0x7f0000001000-0x2c)={0x1, 0x0, 0x0, 0x0, 0x4, 0x1, 0x0, [
 #include <linux/net.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
 
 __attribute__((noreturn)) static void doexit(int status)
 {
@@ -137,6 +169,7 @@ __attribute__((noreturn)) static void doexit(int status)
 	for (i = 0;; i++) {
 	}
 }
+
 #include <stdint.h>
 #include <string.h>
 #include <errno.h>
@@ -144,14 +177,12 @@ __attribute__((noreturn)) static void doexit(int status)
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
-#include <setjmp.h>
-#include <signal.h>
-#include <string.h>
 
 const int kFailStatus = 67;
 const int kRetryStatus = 69;
 
-static void fail(const char* msg, ...) {
+static void fail(const char* msg, ...)
+{
 	int e = errno;
 	va_list args;
 	va_start(args, msg);
@@ -161,7 +192,8 @@ static void fail(const char* msg, ...) {
 	doexit((e == ENOMEM || e == EAGAIN) ? kRetryStatus : kFailStatus);
 }
 
-static void exitf(const char* msg, ...) {
+static void exitf(const char* msg, ...)
+{
 	int e = errno;
 	va_list args;
 	va_start(args, msg);
@@ -171,37 +203,8 @@ static void exitf(const char* msg, ...) {
 	doexit(kRetryStatus);
 }
 
-static __thread int skip_segv;
-static __thread jmp_buf segv_env;
-
-static void segv_handler(int sig, siginfo_t* info, void* uctx) {
-	uintptr_t addr = (uintptr_t)info->si_addr;
-	const uintptr_t prog_start = 1 << 20;
-	const uintptr_t prog_end = 100 << 20;
-	if (__atomic_load_n(&skip_segv, __ATOMIC_RELAXED) && (addr < prog_start || addr > prog_end)) {
-		_longjmp(segv_env, 1);
-	}
-	doexit(sig);
-}
-
-static void install_segv_handler() {
-	struct sigaction sa;
-
-	memset(&sa, 0, sizeof(sa));
-	sa.sa_handler = SIG_IGN;
-	syscall(SYS_rt_sigaction, 0x20, &sa, NULL, 8);
-	syscall(SYS_rt_sigaction, 0x21, &sa, NULL, 8);
-
-	memset(&sa, 0, sizeof(sa));
-	sa.sa_sigaction = segv_handler;
-	sa.sa_flags = SA_NODEFER | SA_SIGINFO;
-	sigaction(SIGSEGV, &sa, NULL);
-	sigaction(SIGBUS, &sa, NULL);
-}
-
-#define NONFAILING(...) { __atomic_fetch_add(&skip_segv, 1, __ATOMIC_SEQ_CST); if (_setjmp(segv_env) == 0) { __VA_ARGS__; } __atomic_fetch_sub(&skip_segv, 1, __ATOMIC_SEQ_CST); }
-
-static uint64_t current_time_ms() {
+static uint64_t current_time_ms()
+{
 	struct timespec ts;
 
 	if (clock_gettime(CLOCK_MONOTONIC, &ts))
@@ -209,7 +212,8 @@ static uint64_t current_time_ms() {
 	return (uint64_t)ts.tv_sec * 1000 + (uint64_t)ts.tv_nsec / 1000000;
 }
 
-static void use_temporary_dir() {
+static void use_temporary_dir()
+{
 	char tmpdir_template[] = "./syzkaller.XXXXXX";
 	char* tmpdir = mkdtemp(tmpdir_template);
 	if (!tmpdir)
@@ -220,7 +224,8 @@ static void use_temporary_dir() {
 		fail("failed to chdir");
 }
 
-static void vsnprintf_check(char* str, size_t size, const char* format, va_list args) {
+static void vsnprintf_check(char* str, size_t size, const char* format, va_list args)
+{
 	int rv;
 
 	rv = vsnprintf(str, size, format, args);
@@ -230,7 +235,8 @@ static void vsnprintf_check(char* str, size_t size, const char* format, va_list 
 		fail("tun: string '%s...' doesn't fit into buffer", str);
 }
 
-static void snprintf_check(char* str, size_t size, const char* format, ...) {
+static void snprintf_check(char* str, size_t size, const char* format, ...)
+{
 	va_list args;
 
 	va_start(args, format);
@@ -242,7 +248,8 @@ static void snprintf_check(char* str, size_t size, const char* format, ...) {
 #define PATH_PREFIX "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin "
 #define PATH_PREFIX_LEN (sizeof(PATH_PREFIX) - 1)
 
-static void execute_command(bool panic, const char* format, ...) {
+static void execute_command(bool panic, const char* format, ...)
+{
 	va_list args;
 	char command[PATH_PREFIX_LEN + COMMAND_MAX_LEN];
 	int rv;
@@ -262,38 +269,37 @@ static int tun_frags_enabled;
 
 #define SYZ_TUN_MAX_PACKET_SIZE 1000
 
-#define MAX_PIDS 32
-#define ADDR_MAX_LEN 32
+#define TUN_IFACE "syz_tun"
 
-#define LOCAL_MAC "aa:aa:aa:aa:%02hx:aa"
-#define REMOTE_MAC "aa:aa:aa:aa:%02hx:bb"
+#define LOCAL_MAC "aa:aa:aa:aa:aa:aa"
+#define REMOTE_MAC "aa:aa:aa:aa:aa:bb"
 
-#define LOCAL_IPV4 "172.20.%d.170"
-#define REMOTE_IPV4 "172.20.%d.187"
+#define LOCAL_IPV4 "172.20.20.170"
+#define REMOTE_IPV4 "172.20.20.187"
 
-#define LOCAL_IPV6 "fe80::%02hx:aa"
-#define REMOTE_IPV6 "fe80::%02hx:bb"
+#define LOCAL_IPV6 "fe80::aa"
+#define REMOTE_IPV6 "fe80::bb"
 
 #define IFF_NAPI 0x0010
 #define IFF_NAPI_FRAGS 0x0020
 
-static void initialize_tun(int id) {
-	if (id >= MAX_PIDS)
-		fail("tun: no more than %d executors", MAX_PIDS);
-
+static void initialize_tun(void)
+{
 	tunfd = open("/dev/net/tun", O_RDWR | O_NONBLOCK);
 	if (tunfd == -1) {
 		printf("tun: can't open /dev/net/tun: please enable CONFIG_TUN=y\n");
 		printf("otherwise fuzzing or reproducing might not work as intended\n");
 		return;
 	}
-
-	char iface[IFNAMSIZ];
-	snprintf_check(iface, sizeof(iface), "syz%d", id);
+	const int kTunFd = 252;
+	if (dup2(tunfd, kTunFd) < 0)
+		fail("dup2(tunfd, kTunFd) failed");
+	close(tunfd);
+	tunfd = kTunFd;
 
 	struct ifreq ifr;
 	memset(&ifr, 0, sizeof(ifr));
-	strncpy(ifr.ifr_name, iface, IFNAMSIZ);
+	strncpy(ifr.ifr_name, TUN_IFACE, IFNAMSIZ);
 	ifr.ifr_flags = IFF_TAP | IFF_NO_PI | IFF_NAPI | IFF_NAPI_FRAGS;
 	if (ioctl(tunfd, TUNSETIFF, (void*)&ifr) < 0) {
 		ifr.ifr_flags = IFF_TAP | IFF_NO_PI;
@@ -304,69 +310,50 @@ static void initialize_tun(int id) {
 		fail("tun: ioctl(TUNGETIFF) failed");
 	tun_frags_enabled = (ifr.ifr_flags & IFF_NAPI_FRAGS) != 0;
 
-	char local_mac[ADDR_MAX_LEN];
-	snprintf_check(local_mac, sizeof(local_mac), LOCAL_MAC, id);
-	char remote_mac[ADDR_MAX_LEN];
-	snprintf_check(remote_mac, sizeof(remote_mac), REMOTE_MAC, id);
+	execute_command(1, "sysctl -w net.ipv6.conf.%s.accept_dad=0", TUN_IFACE);
 
-	char local_ipv4[ADDR_MAX_LEN];
-	snprintf_check(local_ipv4, sizeof(local_ipv4), LOCAL_IPV4, id);
-	char remote_ipv4[ADDR_MAX_LEN];
-	snprintf_check(remote_ipv4, sizeof(remote_ipv4), REMOTE_IPV4, id);
+	execute_command(1, "sysctl -w net.ipv6.conf.%s.router_solicitations=0", TUN_IFACE);
 
-	char local_ipv6[ADDR_MAX_LEN];
-	snprintf_check(local_ipv6, sizeof(local_ipv6), LOCAL_IPV6, id);
-	char remote_ipv6[ADDR_MAX_LEN];
-	snprintf_check(remote_ipv6, sizeof(remote_ipv6), REMOTE_IPV6, id);
-
-	execute_command(1, "sysctl -w net.ipv6.conf.%s.accept_dad=0", iface);
-
-	execute_command(1, "sysctl -w net.ipv6.conf.%s.router_solicitations=0", iface);
-
-	execute_command(1, "ip link set dev %s address %s", iface, local_mac);
-	execute_command(1, "ip addr add %s/24 dev %s", local_ipv4, iface);
-	execute_command(1, "ip -6 addr add %s/120 dev %s", local_ipv6, iface);
+	execute_command(1, "ip link set dev %s address %s", TUN_IFACE, LOCAL_MAC);
+	execute_command(1, "ip addr add %s/24 dev %s", LOCAL_IPV4, TUN_IFACE);
+	execute_command(1, "ip -6 addr add %s/120 dev %s", LOCAL_IPV6, TUN_IFACE);
 	execute_command(1, "ip neigh add %s lladdr %s dev %s nud permanent",
-			remote_ipv4, remote_mac, iface);
+			REMOTE_IPV4, REMOTE_MAC, TUN_IFACE);
 	execute_command(1, "ip -6 neigh add %s lladdr %s dev %s nud permanent",
-			remote_ipv6, remote_mac, iface);
-	execute_command(1, "ip link set dev %s up", iface);
+			REMOTE_IPV6, REMOTE_MAC, TUN_IFACE);
+	execute_command(1, "ip link set dev %s up", TUN_IFACE);
 }
 
-#define DEV_IPV4 "172.20.%d.%d"
-#define DEV_IPV6 "fe80::%02hx:%02hx"
-#define DEV_MAC "aa:aa:aa:aa:%02hx:%02hx"
+#define DEV_IPV4 "172.20.20.%d"
+#define DEV_IPV6 "fe80::%02hx"
+#define DEV_MAC "aa:aa:aa:aa:aa:%02hx"
 
-static void initialize_netdevices(int id) {
+static void initialize_netdevices(void)
+{
 	unsigned i;
-	const char* devtypes[] = {"ip6gretap", "bridge", "vcan"};
+	const char* devtypes[] = {"ip6gretap", "bridge", "vcan", "bond", "veth"};
 	const char* devnames[] = {"lo", "sit0", "bridge0", "vcan0", "tunl0",
 				  "gre0", "gretap0", "ip_vti0", "ip6_vti0",
 				  "ip6tnl0", "ip6gre0", "ip6gretap0",
-				  "erspan0"};
+				  "erspan0", "bond0", "veth0", "veth1"};
 
 	for (i = 0; i < sizeof(devtypes) / (sizeof(devtypes[0])); i++)
 		execute_command(0, "ip link add dev %s0 type %s", devtypes[i], devtypes[i]);
+	execute_command(0, "ip link add dev veth1 type veth");
 	for (i = 0; i < sizeof(devnames) / (sizeof(devnames[0])); i++) {
-		char addr[ADDR_MAX_LEN];
-		snprintf_check(addr, sizeof(addr), DEV_IPV4, id, id + 10);
+		char addr[32];
+		snprintf_check(addr, sizeof(addr), DEV_IPV4, i + 10);
 		execute_command(0, "ip -4 addr add %s/24 dev %s", addr, devnames[i]);
-		snprintf_check(addr, sizeof(addr), DEV_IPV6, id, id + 10);
+		snprintf_check(addr, sizeof(addr), DEV_IPV6, i + 10);
 		execute_command(0, "ip -6 addr add %s/120 dev %s", addr, devnames[i]);
-		snprintf_check(addr, sizeof(addr), DEV_MAC, id, id + 10);
+		snprintf_check(addr, sizeof(addr), DEV_MAC, i + 10);
 		execute_command(0, "ip link set dev %s address %s", devnames[i], addr);
 		execute_command(0, "ip link set dev %s up", devnames[i]);
 	}
 }
 
-static void setup_tun(uint64_t pid, bool enable_tun) {
-	if (enable_tun) {
-		initialize_tun(pid);
-		initialize_netdevices(pid);
-	}
-}
-
-static int read_tun(char* data, int size) {
+static int read_tun(char* data, int size)
+{
 	if (tunfd < 0)
 		return -1;
 
@@ -381,72 +368,29 @@ static int read_tun(char* data, int size) {
 	return rv;
 }
 
-static void flush_tun() {
+static void flush_tun()
+{
 	char data[SYZ_TUN_MAX_PACKET_SIZE];
 	while (read_tun(&data[0], sizeof(data)) != -1)
 		;
 }
 
-static void loop();
-
-static void sandbox_common() {
-	prctl(PR_SET_PDEATHSIG, SIGKILL, 0, 0, 0);
-	setpgrp();
-	setsid();
-
-	struct rlimit rlim;
-	rlim.rlim_cur = rlim.rlim_max = 128 << 20;
-	setrlimit(RLIMIT_AS, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 8 << 20;
-	setrlimit(RLIMIT_MEMLOCK, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 1 << 20;
-	setrlimit(RLIMIT_FSIZE, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 1 << 20;
-	setrlimit(RLIMIT_STACK, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 0;
-	setrlimit(RLIMIT_CORE, &rlim);
-
-#define CLONE_NEWCGROUP 0x02000000
-
-	if (unshare(CLONE_NEWNS)) {
-	}
-	if (unshare(CLONE_NEWIPC)) {
-	}
-	if (unshare(CLONE_NEWCGROUP)) {
-	}
-	if (unshare(CLONE_NEWUTS)) {
-	}
-	if (unshare(CLONE_SYSVSEM)) {
-	}
+static uintptr_t syz_open_pts(uintptr_t a0, uintptr_t a1)
+{
+	int ptyno = 0;
+	if (ioctl(a0, TIOCGPTN, &ptyno))
+		return -1;
+	char buf[128];
+	sprintf(buf, "/dev/pts/%d", ptyno);
+	return open(buf, a1, 0);
 }
 
-static int do_sandbox_setuid(int executor_pid, bool enable_tun) {
-	if (unshare(CLONE_NEWPID))
-		fail("unshare(CLONE_NEWPID)");
-	int pid = fork();
-	if (pid < 0)
-		fail("sandbox fork failed");
-	if (pid)
-		return pid;
+#define XT_TABLE_SIZE 1536
+#define XT_MAX_ENTRIES 10
 
-	sandbox_common();
-	if (unshare(CLONE_NEWNET))
-		fail("unshare(CLONE_NEWNET)");
-	setup_tun(executor_pid, enable_tun);
-
-	const int nobody = 65534;
-	if (setgroups(0, NULL))
-		fail("failed to setgroups");
-	if (syscall(SYS_setresgid, nobody, nobody, nobody))
-		fail("failed to setresgid");
-	if (syscall(SYS_setresuid, nobody, nobody, nobody))
-		fail("failed to setresuid");
-
-	prctl(PR_SET_DUMPABLE, 1, 0, 0, 0);
-
-	loop();
-	doexit(1);
-}
+struct xt_counters {
+	uint64_t pcnt, bcnt;
+};
 
 struct ipt_getinfo {
 	char name[32];
@@ -460,11 +404,7 @@ struct ipt_getinfo {
 struct ipt_get_entries {
 	char name[32];
 	unsigned int size;
-	void* entrytable[1024 / sizeof(void*)];
-};
-
-struct xt_counters {
-	uint64_t pcnt, bcnt;
+	void* entrytable[XT_TABLE_SIZE / sizeof(void*)];
 };
 
 struct ipt_replace {
@@ -476,18 +416,24 @@ struct ipt_replace {
 	unsigned int underflow[5];
 	unsigned int num_counters;
 	struct xt_counters* counters;
-	char entrytable[1024];
+	char entrytable[XT_TABLE_SIZE];
 };
 
 struct ipt_table_desc {
 	const char* name;
 	struct ipt_getinfo info;
-	struct ipt_get_entries entries;
 	struct ipt_replace replace;
-	struct xt_counters counters[10];
 };
 
 static struct ipt_table_desc ipv4_tables[] = {
+    {.name = "filter"},
+    {.name = "nat"},
+    {.name = "mangle"},
+    {.name = "raw"},
+    {.name = "security"},
+};
+
+static struct ipt_table_desc ipv6_tables[] = {
     {.name = "filter"},
     {.name = "nat"},
     {.name = "mangle"},
@@ -500,21 +446,63 @@ static struct ipt_table_desc ipv4_tables[] = {
 #define IPT_SO_GET_INFO (IPT_BASE_CTL)
 #define IPT_SO_GET_ENTRIES (IPT_BASE_CTL + 1)
 
-static void checkpoint_net_namespace(void) {
-	socklen_t optlen;
-	unsigned i;
-	int fd;
+struct arpt_getinfo {
+	char name[32];
+	unsigned int valid_hooks;
+	unsigned int hook_entry[3];
+	unsigned int underflow[3];
+	unsigned int num_entries;
+	unsigned int size;
+};
 
-	fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+struct arpt_get_entries {
+	char name[32];
+	unsigned int size;
+	void* entrytable[XT_TABLE_SIZE / sizeof(void*)];
+};
+
+struct arpt_replace {
+	char name[32];
+	unsigned int valid_hooks;
+	unsigned int num_entries;
+	unsigned int size;
+	unsigned int hook_entry[3];
+	unsigned int underflow[3];
+	unsigned int num_counters;
+	struct xt_counters* counters;
+	char entrytable[XT_TABLE_SIZE];
+};
+
+struct arpt_table_desc {
+	const char* name;
+	struct arpt_getinfo info;
+	struct arpt_replace replace;
+};
+
+static struct arpt_table_desc arpt_tables[] = {
+    {.name = "filter"},
+};
+
+#define ARPT_BASE_CTL 96
+#define ARPT_SO_SET_REPLACE (ARPT_BASE_CTL)
+#define ARPT_SO_GET_INFO (ARPT_BASE_CTL)
+#define ARPT_SO_GET_ENTRIES (ARPT_BASE_CTL + 1)
+
+static void checkpoint_iptables(struct ipt_table_desc* tables, int num_tables, int family, int level)
+{
+	struct ipt_get_entries entries;
+	socklen_t optlen;
+	int fd, i;
+
+	fd = socket(family, SOCK_STREAM, IPPROTO_TCP);
 	if (fd == -1)
-		fail("socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)");
-	for (i = 0; i < sizeof(ipv4_tables) / sizeof(ipv4_tables[0]); i++) {
-		struct ipt_table_desc* table = &ipv4_tables[i];
+		fail("socket(%d, SOCK_STREAM, IPPROTO_TCP)", family);
+	for (i = 0; i < num_tables; i++) {
+		struct ipt_table_desc* table = &tables[i];
 		strcpy(table->info.name, table->name);
-		strcpy(table->entries.name, table->name);
 		strcpy(table->replace.name, table->name);
 		optlen = sizeof(table->info);
-		if (getsockopt(fd, SOL_IP, IPT_SO_GET_INFO, &table->info, &optlen)) {
+		if (getsockopt(fd, level, IPT_SO_GET_INFO, &table->info, &optlen)) {
 			switch (errno) {
 			case EPERM:
 			case ENOENT:
@@ -523,63 +511,259 @@ static void checkpoint_net_namespace(void) {
 			}
 			fail("getsockopt(IPT_SO_GET_INFO)");
 		}
-		if (table->info.size > sizeof(table->entries.entrytable))
+		if (table->info.size > sizeof(table->replace.entrytable))
 			fail("table size is too large: %u", table->info.size);
-		if (table->info.num_entries > sizeof(table->counters) / sizeof(table->counters[0]))
+		if (table->info.num_entries > XT_MAX_ENTRIES)
 			fail("too many counters: %u", table->info.num_entries);
-		table->entries.size = table->info.size;
-		optlen = sizeof(table->entries) - sizeof(table->entries.entrytable) + table->info.size;
-		if (getsockopt(fd, SOL_IP, IPT_SO_GET_ENTRIES, &table->entries, &optlen))
+		memset(&entries, 0, sizeof(entries));
+		strcpy(entries.name, table->name);
+		entries.size = table->info.size;
+		optlen = sizeof(entries) - sizeof(entries.entrytable) + table->info.size;
+		if (getsockopt(fd, level, IPT_SO_GET_ENTRIES, &entries, &optlen))
 			fail("getsockopt(IPT_SO_GET_ENTRIES)");
 		table->replace.valid_hooks = table->info.valid_hooks;
 		table->replace.num_entries = table->info.num_entries;
-		table->replace.counters = table->counters;
 		table->replace.size = table->info.size;
 		memcpy(table->replace.hook_entry, table->info.hook_entry, sizeof(table->replace.hook_entry));
 		memcpy(table->replace.underflow, table->info.underflow, sizeof(table->replace.underflow));
-		memcpy(table->replace.entrytable, table->entries.entrytable, table->info.size);
+		memcpy(table->replace.entrytable, entries.entrytable, table->info.size);
 	}
 	close(fd);
 }
 
-static void reset_net_namespace(void) {
+static void reset_iptables(struct ipt_table_desc* tables, int num_tables, int family, int level)
+{
+	struct xt_counters counters[XT_MAX_ENTRIES];
 	struct ipt_get_entries entries;
 	struct ipt_getinfo info;
 	socklen_t optlen;
-	unsigned i;
-	int fd;
+	int fd, i;
 
-	memset(&info, 0, sizeof(info));
-	memset(&entries, 0, sizeof(entries));
-	fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	fd = socket(family, SOCK_STREAM, IPPROTO_TCP);
 	if (fd == -1)
-		fail("socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)");
-	for (i = 0; i < sizeof(ipv4_tables) / sizeof(ipv4_tables[0]); i++) {
-		struct ipt_table_desc* table = &ipv4_tables[i];
+		fail("socket(%d, SOCK_STREAM, IPPROTO_TCP)", family);
+	for (i = 0; i < num_tables; i++) {
+		struct ipt_table_desc* table = &tables[i];
 		if (table->info.valid_hooks == 0)
 			continue;
+		memset(&info, 0, sizeof(info));
 		strcpy(info.name, table->name);
 		optlen = sizeof(info);
-		if (getsockopt(fd, SOL_IP, IPT_SO_GET_INFO, &info, &optlen))
+		if (getsockopt(fd, level, IPT_SO_GET_INFO, &info, &optlen))
 			fail("getsockopt(IPT_SO_GET_INFO)");
 		if (memcmp(&table->info, &info, sizeof(table->info)) == 0) {
+			memset(&entries, 0, sizeof(entries));
 			strcpy(entries.name, table->name);
 			entries.size = table->info.size;
 			optlen = sizeof(entries) - sizeof(entries.entrytable) + entries.size;
-			if (getsockopt(fd, SOL_IP, IPT_SO_GET_ENTRIES, &entries, &optlen))
+			if (getsockopt(fd, level, IPT_SO_GET_ENTRIES, &entries, &optlen))
 				fail("getsockopt(IPT_SO_GET_ENTRIES)");
-			if (memcmp(&table->entries, &entries, optlen) == 0)
+			if (memcmp(table->replace.entrytable, entries.entrytable, table->info.size) == 0)
 				continue;
 		}
 		table->replace.num_counters = info.num_entries;
+		table->replace.counters = counters;
 		optlen = sizeof(table->replace) - sizeof(table->replace.entrytable) + table->replace.size;
-		if (setsockopt(fd, SOL_IP, IPT_SO_SET_REPLACE, &table->replace, optlen))
+		if (setsockopt(fd, level, IPT_SO_SET_REPLACE, &table->replace, optlen))
 			fail("setsockopt(IPT_SO_SET_REPLACE)");
 	}
 	close(fd);
 }
 
-static void remove_dir(const char* dir) {
+static void checkpoint_arptables(void)
+{
+	struct arpt_get_entries entries;
+	socklen_t optlen;
+	unsigned i;
+	int fd;
+
+	fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	if (fd == -1)
+		fail("socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)");
+	for (i = 0; i < sizeof(arpt_tables) / sizeof(arpt_tables[0]); i++) {
+		struct arpt_table_desc* table = &arpt_tables[i];
+		strcpy(table->info.name, table->name);
+		strcpy(table->replace.name, table->name);
+		optlen = sizeof(table->info);
+		if (getsockopt(fd, SOL_IP, ARPT_SO_GET_INFO, &table->info, &optlen)) {
+			switch (errno) {
+			case EPERM:
+			case ENOENT:
+			case ENOPROTOOPT:
+				continue;
+			}
+			fail("getsockopt(ARPT_SO_GET_INFO)");
+		}
+		if (table->info.size > sizeof(table->replace.entrytable))
+			fail("table size is too large: %u", table->info.size);
+		if (table->info.num_entries > XT_MAX_ENTRIES)
+			fail("too many counters: %u", table->info.num_entries);
+		memset(&entries, 0, sizeof(entries));
+		strcpy(entries.name, table->name);
+		entries.size = table->info.size;
+		optlen = sizeof(entries) - sizeof(entries.entrytable) + table->info.size;
+		if (getsockopt(fd, SOL_IP, ARPT_SO_GET_ENTRIES, &entries, &optlen))
+			fail("getsockopt(ARPT_SO_GET_ENTRIES)");
+		table->replace.valid_hooks = table->info.valid_hooks;
+		table->replace.num_entries = table->info.num_entries;
+		table->replace.size = table->info.size;
+		memcpy(table->replace.hook_entry, table->info.hook_entry, sizeof(table->replace.hook_entry));
+		memcpy(table->replace.underflow, table->info.underflow, sizeof(table->replace.underflow));
+		memcpy(table->replace.entrytable, entries.entrytable, table->info.size);
+	}
+	close(fd);
+}
+
+static void reset_arptables()
+{
+	struct xt_counters counters[XT_MAX_ENTRIES];
+	struct arpt_get_entries entries;
+	struct arpt_getinfo info;
+	socklen_t optlen;
+	unsigned i;
+	int fd;
+
+	fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	if (fd == -1)
+		fail("socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)");
+	for (i = 0; i < sizeof(arpt_tables) / sizeof(arpt_tables[0]); i++) {
+		struct arpt_table_desc* table = &arpt_tables[i];
+		if (table->info.valid_hooks == 0)
+			continue;
+		memset(&info, 0, sizeof(info));
+		strcpy(info.name, table->name);
+		optlen = sizeof(info);
+		if (getsockopt(fd, SOL_IP, ARPT_SO_GET_INFO, &info, &optlen))
+			fail("getsockopt(ARPT_SO_GET_INFO)");
+		if (memcmp(&table->info, &info, sizeof(table->info)) == 0) {
+			memset(&entries, 0, sizeof(entries));
+			strcpy(entries.name, table->name);
+			entries.size = table->info.size;
+			optlen = sizeof(entries) - sizeof(entries.entrytable) + entries.size;
+			if (getsockopt(fd, SOL_IP, ARPT_SO_GET_ENTRIES, &entries, &optlen))
+				fail("getsockopt(ARPT_SO_GET_ENTRIES)");
+			if (memcmp(table->replace.entrytable, entries.entrytable, table->info.size) == 0)
+				continue;
+		}
+		table->replace.num_counters = info.num_entries;
+		table->replace.counters = counters;
+		optlen = sizeof(table->replace) - sizeof(table->replace.entrytable) + table->replace.size;
+		if (setsockopt(fd, SOL_IP, ARPT_SO_SET_REPLACE, &table->replace, optlen))
+			fail("setsockopt(ARPT_SO_SET_REPLACE)");
+	}
+	close(fd);
+}
+#include <linux/if.h>
+#include <linux/netfilter_bridge/ebtables.h>
+
+struct ebt_table_desc {
+	const char* name;
+	struct ebt_replace replace;
+	char entrytable[XT_TABLE_SIZE];
+};
+
+static struct ebt_table_desc ebt_tables[] = {
+    {.name = "filter"},
+    {.name = "nat"},
+    {.name = "broute"},
+};
+
+static void checkpoint_ebtables(void)
+{
+	socklen_t optlen;
+	unsigned i;
+	int fd;
+
+	fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	if (fd == -1)
+		fail("socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)");
+	for (i = 0; i < sizeof(ebt_tables) / sizeof(ebt_tables[0]); i++) {
+		struct ebt_table_desc* table = &ebt_tables[i];
+		strcpy(table->replace.name, table->name);
+		optlen = sizeof(table->replace);
+		if (getsockopt(fd, SOL_IP, EBT_SO_GET_INIT_INFO, &table->replace, &optlen)) {
+			switch (errno) {
+			case EPERM:
+			case ENOENT:
+			case ENOPROTOOPT:
+				continue;
+			}
+			fail("getsockopt(EBT_SO_GET_INIT_INFO)");
+		}
+		if (table->replace.entries_size > sizeof(table->entrytable))
+			fail("table size is too large: %u", table->replace.entries_size);
+		table->replace.num_counters = 0;
+		table->replace.entries = table->entrytable;
+		optlen = sizeof(table->replace) + table->replace.entries_size;
+		if (getsockopt(fd, SOL_IP, EBT_SO_GET_INIT_ENTRIES, &table->replace, &optlen))
+			fail("getsockopt(EBT_SO_GET_INIT_ENTRIES)");
+	}
+	close(fd);
+}
+
+static void reset_ebtables()
+{
+	struct ebt_replace replace;
+	char entrytable[XT_TABLE_SIZE];
+	socklen_t optlen;
+	unsigned i, j, h;
+	int fd;
+
+	fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	if (fd == -1)
+		fail("socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)");
+	for (i = 0; i < sizeof(ebt_tables) / sizeof(ebt_tables[0]); i++) {
+		struct ebt_table_desc* table = &ebt_tables[i];
+		if (table->replace.valid_hooks == 0)
+			continue;
+		memset(&replace, 0, sizeof(replace));
+		strcpy(replace.name, table->name);
+		optlen = sizeof(replace);
+		if (getsockopt(fd, SOL_IP, EBT_SO_GET_INFO, &replace, &optlen))
+			fail("getsockopt(EBT_SO_GET_INFO)");
+		replace.num_counters = 0;
+		for (h = 0; h < NF_BR_NUMHOOKS; h++)
+			table->replace.hook_entry[h] = 0;
+		if (memcmp(&table->replace, &replace, sizeof(table->replace)) == 0) {
+			memset(&entrytable, 0, sizeof(entrytable));
+			replace.entries = entrytable;
+			optlen = sizeof(replace) + replace.entries_size;
+			if (getsockopt(fd, SOL_IP, EBT_SO_GET_ENTRIES, &replace, &optlen))
+				fail("getsockopt(EBT_SO_GET_ENTRIES)");
+			if (memcmp(table->entrytable, entrytable, replace.entries_size) == 0)
+				continue;
+		}
+		for (j = 0, h = 0; h < NF_BR_NUMHOOKS; h++) {
+			if (table->replace.valid_hooks & (1 << h)) {
+				table->replace.hook_entry[h] = (struct ebt_entries*)table->entrytable + j;
+				j++;
+			}
+		}
+		optlen = sizeof(table->replace) + table->replace.entries_size;
+		if (setsockopt(fd, SOL_IP, EBT_SO_SET_ENTRIES, &table->replace, optlen))
+			fail("setsockopt(EBT_SO_SET_ENTRIES)");
+	}
+	close(fd);
+}
+
+static void checkpoint_net_namespace(void)
+{
+	checkpoint_ebtables();
+	checkpoint_arptables();
+	checkpoint_iptables(ipv4_tables, sizeof(ipv4_tables) / sizeof(ipv4_tables[0]), AF_INET, SOL_IP);
+	checkpoint_iptables(ipv6_tables, sizeof(ipv6_tables) / sizeof(ipv6_tables[0]), AF_INET6, SOL_IPV6);
+}
+
+static void reset_net_namespace(void)
+{
+	reset_ebtables();
+	reset_arptables();
+	reset_iptables(ipv4_tables, sizeof(ipv4_tables) / sizeof(ipv4_tables[0]), AF_INET, SOL_IP);
+	reset_iptables(ipv6_tables, sizeof(ipv6_tables) / sizeof(ipv6_tables[0]), AF_INET6, SOL_IPV6);
+}
+
+static void remove_dir(const char* dir)
+{
 	DIR* dp;
 	struct dirent* ep;
 	int iter = 0;
@@ -683,109 +867,57 @@ void loop() {
 	}
 }
 
-struct thread_t {
-	int created, running, call;
-	pthread_t th;
-};
-
-static struct thread_t threads[16];
-static void execute_call(int call);
-static int running;
-
-static void* thr(void* arg) {
-	struct thread_t* th = (struct thread_t*)arg;
-	for (;;) {
-		while (!__atomic_load_n(&th->running, __ATOMIC_ACQUIRE))
-			syscall(SYS_futex, &th->running, FUTEX_WAIT, 0, 0);
-		execute_call(th->call);
-		__atomic_fetch_sub(&running, 1, __ATOMIC_RELAXED);
-		__atomic_store_n(&th->running, 0, __ATOMIC_RELEASE);
-		syscall(SYS_futex, &th->running, FUTEX_WAKE);
+uint64_t r[3] = {0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff};
+void test()
+{
+	long res;memcpy((void*)0x20000280, "/dev/loop-control", 18);
+	syscall(__NR_openat, 0xffffffffffffff9c, 0x20000280, 0x4000, 0);
+	*(uint64_t*)0x20000180 = 0;
+	*(uint64_t*)0x20000188 = 0;
+	*(uint64_t*)0x20000190 = 0;
+	*(uint64_t*)0x20000198 = 0;
+	syscall(__NR_timer_settime, 0, 0, 0x20000180, 0);
+	*(uint64_t*)0x20000500 = 0x77359400;
+	*(uint64_t*)0x20000508 = 0;
+	*(uint64_t*)0x20000510 = 0;
+	*(uint64_t*)0x20000518 = 0x989680;
+	syscall(__NR_timer_settime, 0, 0, 0x20000500, 0x20000540);
+	res = syz_open_pts(-1, 0x42100);
+	if (res != -1)
+		r[0] = res;
+	syscall(__NR_ioctl, r[0], 0x5462, 0x20000140);
+	syscall(__NR_ioctl, r[0], 0x80084504, 0x200002c0);
+	res = syscall(__NR_pipe2, 0x20000000, 0);
+	if (res != -1) {
+		r[1] = *(uint32_t*)0x20000000;
+		r[2] = *(uint32_t*)0x20000004;
 	}
-	return 0;
+	*(uint16_t*)0x20000040 = -1;
+	*(uint16_t*)0x20000042 = 0x200;
+	*(uint16_t*)0x20000044 = 0x8000;
+	*(uint16_t*)0x20000046 = 0x3f;
+	*(uint16_t*)0x20000048 = 0x22;
+	*(uint16_t*)0x2000004a = 0x45f;
+	syscall(__NR_ioctl, r[1], 0x560a, 0x20000040);
+	syscall(__NR_fstatfs, r[1], 0x200000c0);
+	syz_open_pts(r[2], 0);
+	*(uint32_t*)0x20000340 = 0x10;
+	syscall(__NR_accept, r[2], 0x20000300, 0x20000340);
+	syscall(__NR_fcntl, r[2], 4, 0x40400);
 }
 
-static void execute(int num_calls) {
-	int call, thread;
-	running = 0;
-	for (call = 0; call < num_calls; call++) {
-		for (thread = 0; thread < sizeof(threads) / sizeof(threads[0]); thread++) {
-			struct thread_t* th = &threads[thread];
-			if (!th->created) {
-				th->created = 1;
-				pthread_attr_t attr;
-				pthread_attr_init(&attr);
-				pthread_attr_setstacksize(&attr, 128 << 10);
-				pthread_create(&th->th, &attr, thr, th);
-			}
-			if (!__atomic_load_n(&th->running, __ATOMIC_ACQUIRE)) {
-				th->call = call;
-				__atomic_fetch_add(&running, 1, __ATOMIC_RELAXED);
-				__atomic_store_n(&th->running, 1, __ATOMIC_RELEASE);
-				syscall(SYS_futex, &th->running, FUTEX_WAKE);
-				struct timespec ts;
-				ts.tv_sec = 0;
-				ts.tv_nsec = 20 * 1000 * 1000;
-				syscall(SYS_futex, &th->running, FUTEX_WAIT, 1, &ts);
-				if (running)
-					usleep((call == num_calls - 1) ? 10000 : 1000);
-				break;
-			}
-		}
-	}
-}
-
-uint64_t procid;
-void execute_call(int call) {
-	switch (call) {
-	case 0:
-		NONFAILING(memcpy((void*)0x20000ff1, "\xdb", 1));
-		NONFAILING(*(uint16_t*)0x20002fe4 = 0xa);
-		NONFAILING(*(uint16_t*)0x20002fe6 = 0);
-		NONFAILING(*(uint32_t*)0x20002fe8 = 0);
-		NONFAILING(*(uint8_t*)0x20002fec = 0);
-		NONFAILING(*(uint8_t*)0x20002fed = 0);
-		NONFAILING(*(uint8_t*)0x20002fee = 0);
-		NONFAILING(*(uint8_t*)0x20002fef = 0);
-		NONFAILING(*(uint8_t*)0x20002ff0 = 0);
-		NONFAILING(*(uint8_t*)0x20002ff1 = 0);
-		NONFAILING(*(uint8_t*)0x20002ff2 = 0);
-		NONFAILING(*(uint8_t*)0x20002ff3 = 0);
-		NONFAILING(*(uint8_t*)0x20002ff4 = 0);
-		NONFAILING(*(uint8_t*)0x20002ff5 = 0);
-		NONFAILING(*(uint8_t*)0x20002ff6 = -1);
-		NONFAILING(*(uint8_t*)0x20002ff7 = -1);
-		NONFAILING(*(uint8_t*)0x20002ff8 = 0xac);
-		NONFAILING(*(uint8_t*)0x20002ff9 = 0x14);
-		NONFAILING(*(uint8_t*)0x20002ffa = 0 + procid*1);
-		NONFAILING(*(uint8_t*)0x20002ffb = 0x17);
-		NONFAILING(*(uint32_t*)0x20002ffc = 0);
-		syscall(__NR_sendto, -1, 0x20000ff1, 1, 0x1f4, 0x20002fe4, 0x1c);
-		break;
-	}
-}
-
-void test() {
-	execute(1);
-}
-
-int main() {
+int main()
+{
+	syscall(__NR_mmap, 0x20000000, 0x1000000, 3, 0x32, -1, 0);
 	char *cwd = get_current_dir_name();
-	for (procid = 0; procid < 8; procid++) {
-		if (fork() == 0) {
-			install_segv_handler();
-			for (;;) {
-				if (chdir(cwd))
-					fail("failed to chdir");
-				use_temporary_dir();
-				int pid = do_sandbox_setuid(procid, true);
-				int status = 0;
-				while (waitpid(pid, &status, __WALL) != pid) {}
-			}
-		}
+	for (;;) {
+		if (chdir(cwd))
+			fail("failed to chdir");
+		use_temporary_dir();
+		initialize_tun();
+		initialize_netdevices();
+		loop();
 	}
-	sleep(1000000);
-	return 0;
 }
 ```
 
