@@ -52,7 +52,7 @@ permalink: /about/
 * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
 * [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
 * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
-* [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **BEST ACC 0.97858 ~**
+* [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **BEST ACC 0.98236**
 * [Image Style Transfer](https://github.com/kozistr/style-transfer)
 * will be updated
 
