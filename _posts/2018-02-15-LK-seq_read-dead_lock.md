@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LK v4.16.x - seq_read - deadlock
+comments: true
 ---
 
 seq_read - possible circular locking (leading to deadlock)

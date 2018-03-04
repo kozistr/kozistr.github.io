@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LK v4.16.x - handle_irq - oobs
+comments: true
 ---
 
 handle_irq - alloca Out Of Bounds

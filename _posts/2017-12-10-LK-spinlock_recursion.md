@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LK v4.15.x - spinlock recursion, deadlock
+comments: true
 ---
 
 spin-lock recursion bug (leading to deadlock)

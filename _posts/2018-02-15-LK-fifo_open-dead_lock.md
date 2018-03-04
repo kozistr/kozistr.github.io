@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LK v4.16.x - fifo_open - deadlock
+comments: true
 ---
 
 fifo_open - possible circular locking (leading to deadlock)

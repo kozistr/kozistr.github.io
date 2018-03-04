@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LK v4.15.x - unwind_orc - stack out-of-bounds
+comments: true
 ---
 
 unwind_orc - read 8 bytes stack oob in unwind_next_frame

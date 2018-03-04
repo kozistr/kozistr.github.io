@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LK v4.16.x - getsockopt - task hung
+comments: true
 ---
 
 getsockopt - task hung in lock_sock_nested

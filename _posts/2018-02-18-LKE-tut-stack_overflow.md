@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LKE - tutorial - Stack based Overflow
+comments: true
 ---
 
 Linux Kernel Exploitation Tutorial - 2

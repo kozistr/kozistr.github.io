@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LK v4.16.x - tick_sched_time/handle - oobs
+comments: true
 ---
 
 tick_sched_time/handle - alloca Out Of Bounds
