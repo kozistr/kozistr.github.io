@@ -8,131 +8,151 @@ robots: noindex, nofollow
 canonical: false
 ---
 
-<h2>Kernel Panic <img src="/images/kp.jpg" alt="kernel_panic" align="bottom" height="50", width="77"></h2>
+<h2>Kernel Panic <img src="/images/kp.jpg" alt="kernel_panic" align="bottom" height="50" , width="77"></h2>
 
-<pre style="background:#042029;color:#839496">[   <span style="color:#d33682">12.729336</span>] usb <span
-        style="color:#d33682">1</span><span style="color:#d33682">-2.1</span>: SerialNumber: <span
-        style="color:#d33682">42</span>
-[   <span style="color:#d33682">12.741612</span>] input: QEMU QEMU USB Tablet <span
-            style="color:#859900">as</span> <span style="color:#859900">/</span>devices<span
-            style="color:#859900">/</span>pci0000:<span style="color:#d33682">00</span><span
-            style="color:#859900">/</span><span style="color:#d33682">0000</span>:<span
-            style="color:#d33682">00</span>:<span style="color:#d33682">01.2</span><span
-            style="color:#859900">/</span>usb1<span style="color:#859900">/</span><span
-            style="color:#d33682">1</span><span style="color:#d33682">-2</span><span
-            style="color:#859900">/</span><span style="color:#d33682">1</span><span
-            style="color:#d33682">-2.1</span><span
-            style="color:#859900">/</span><span style="color:#d33682">1</span><span
-            style="color:#d33682">-2.1</span>:<span
-            style="color:#d33682">1.0</span><span style="color:#859900">/</span><span style="color:#d33682">0003</span>:<span
-            style="color:#d33682">0627</span>:<span style="color:#d33682">0001.0002</span><span
-            style="color:#859900">/</span>input<span style="color:#859900">/</span>input5
-[   <span style="color:#d33682">12.796881</span>] hid<span style="color:#859900">-</span>generic <span
-            style="color:#d33682">0003</span>:<span style="color:#d33682">0627</span>:<span
-            style="color:#d33682">0001.0002</span>: input,hidraw1: USB HID v0.<span
-            style="color:#d33682">01</span> Mouse [QEMU QEMU USB Tablet] <span
-            style="color:#859900">on</span> usb<span style="color:#d33682">-0000</span>:<span
-            style="color:#d33682">00</span>:<span style="color:#d33682">01.2</span><span
-            style="color:#d33682">-2.1</span><span style="color:#859900">/</span>input0
-[   <span style="color:#d33682">14.198373</span>] PCI Interrupt Link [LNKB] enabled <span
-            style="color:#859900">at</span> IRQ <span style="color:#d33682">10</span>
-[   <span style="color:#d33682">14.204731</span>] hdaudio hdaudioC0D0: Unable <span style="color:#859900">to</span> bind <span
-            style="color:#859900">the</span> codec
-[   <span style="color:#d33682">14.205463</span>] Initializing XFRM netlink socket
-[   <span style="color:#d33682">14.214681</span>] NET: Registered protocol family <span style="color:#d33682">10</span>
-[   <span style="color:#d33682">14.223507</span>] Segment Routing <span style="color:#859900">with</span> IPv6
-[   <span style="color:#d33682">14.226693</span>] sit: IPv6, IPv4 <span style="color:#859900">and</span> MPLS <span
-            style="color:#859900">over</span> IPv4 tunneling driver
-[   <span style="color:#d33682">14.231327</span>] NET: Registered protocol family <span style="color:#d33682">17</span>
-[   <span style="color:#d33682">14.249533</span>] DCCP: Activated CCID <span style="color:#d33682">2</span> (TCP<span
-            style="color:#859900">-</span>like)
-[   <span style="color:#d33682">14.251749</span>] DCCP: Activated CCID <span style="color:#d33682">3</span> (TCP<span
-            style="color:#859900">-</span>Friendly Rate Control)
-[   <span style="color:#d33682">14.260029</span>] sctp: Hash tables configured (bind <span
-            style="color:#d33682">64</span><span style="color:#859900">/</span><span style="color:#d33682">64</span>)
-[   <span style="color:#d33682">14.263014</span>] <span style="color:#d33682">9</span>pnet: Installing <span
-            style="color:#d33682">9</span>P2000 support
-[   <span style="color:#d33682">14.264061</span>] Key type dns_resolver registered
-[   <span style="color:#d33682">14.266983</span>] sched_clock: Marking stable (<span
-            style="color:#d33682">14266208593</span>, <span style="color:#d33682">0</span>)<span
-            style="color:#859900">-</span><span style="color:#859900">></span>(<span
-            style="color:#d33682">15311164173</span>, <span
-            style="color:#d33682">-1044955580</span>)
-[   <span style="color:#d33682">14.269864</span>] registered taskstats <span style="color:#cb4b16">version</span> <span
-            style="color:#d33682">1</span>
-[   <span style="color:#d33682">14.270506</span>] Loading compiled<span style="color:#859900">-</span><span
-            style="color:#859900">in</span> X.<span style="color:#d33682">509</span> certificates
-[   <span style="color:#d33682">14.271473</span>] kmemleak: Kernel memory leak detector initialized
-[   <span style="color:#d33682">14.271487</span>] kmemleak: Automatic memory scanning thread started
-[   <span style="color:#d33682">14.274430</span>]   Magic <span style="color:#859900">number</span>: <span
-            style="color:#d33682">10</span>:<span style="color:#d33682">284</span>:<span
-            style="color:#d33682">257</span>
-[   <span style="color:#d33682">14.275120</span>] console [netcon0] enabled
-[   <span style="color:#d33682">14.275531</span>] netconsole: network logging started
-[   <span style="color:#d33682">14.277921</span>] cfg80211: Loading compiled<span style="color:#859900">-</span><span
-            style="color:#859900">in</span> X.<span style="color:#d33682">509</span> certificates <span
-            style="color:#859900">for</span> regulatory database
-[   <span style="color:#d33682">14.282203</span>] cfg80211: Loaded X.<span style="color:#d33682">509</span> cert 'sforshee: <span
-            style="color:#d33682">00</span>b28ddf47aef9cea7'
-[   <span style="color:#d33682">14.283688</span>] platform regulatory.<span style="color:#d33682">0</span>: Direct firmware load <span
-            style="color:#859900">for</span> regulatory.db failed <span
-            style="color:#859900">with</span> <span style="color:#859900">error</span> <span
-            style="color:#d33682">-2</span>
-[   <span style="color:#d33682">14.284095</span>] ALSA device <span style="color:#859900">list</span>:
-[   <span style="color:#d33682">14.285000</span>]   <span style="color:#b58900">No</span> soundcards found.
-[   <span style="color:#d33682">14.285827</span>] cfg80211: failed <span style="color:#859900">to</span> load regulatory.db
-[   <span style="color:#d33682">14.287159</span>] md: Waiting <span style="color:#859900">for</span> all devices <span
-            style="color:#859900">to</span> be available <span style="color:#859900">before</span> autodetect
-[   <span style="color:#d33682">14.287744</span>] md: <span style="color:#859900">If</span> you don't use raid, use raid<span
-            style="color:#859900">=</span>noautodetect
-[   <span style="color:#d33682">14.290920</span>] md: Autodetecting RAID arrays.
-[   <span style="color:#d33682">14.291339</span>] md: autorun ...
-[   <span style="color:#d33682">14.291609</span>] md: ... autorun DONE.
-[   <span style="color:#d33682">14.293222</span>] EXT4<span style="color:#859900">-</span>fs (sda): couldn't mount <span
-            style="color:#859900">as</span> ext3 due <span style="color:#859900">to</span> feature incompatibilities
-[   <span style="color:#d33682">14.295777</span>] EXT4<span style="color:#859900">-</span>fs (sda): couldn't mount <span
-            style="color:#859900">as</span> ext2 due <span style="color:#859900">to</span> feature incompatibilities
-[   <span style="color:#d33682">14.318187</span>] EXT4<span
-            style="color:#859900">-</span>fs (sda): mounted filesystem <span
-            style="color:#859900">with</span> ordered <span
-            style="color:#859900">data</span> mode. Opts: (<span style="color:#b58900">null</span>)
-[   <span style="color:#d33682">14.319703</span>] VFS: Mounted root (ext4 filesystem) readonly <span
-            style="color:#859900">on</span> device <span style="color:#d33682">8</span>:<span
-            style="color:#d33682">0.</span>
-[   <span style="color:#d33682">14.334900</span>] devtmpfs: mounted
-[   <span style="color:#d33682">14.335868</span>] debug: unmapping init [mem <span style="color:#d33682">0</span>xffffffff91f80000<span
-            style="color:#d33682">-0</span>xffffffff92229fff]
-[   <span style="color:#d33682">14.337292</span>] Kernel memory protection disabled.
-SELinux:  Could <span style="color:#859900">not</span> open policy <span style="color:#859900">file</span> <span
-            style="color:#859900">&lt;</span><span style="color:#859900">=</span> <span
-            style="color:#859900">/</span>etc<span style="color:#859900">/</span>selinux<span
-            style="color:#859900">/</span>targeted<span style="color:#859900">/</span>policy<span
-            style="color:#859900">/</span>policy.<span style="color:#d33682">31</span>:  <span
-            style="color:#b58900">No</span> such <span style="color:#859900">file</span> <span
-            style="color:#859900">or</span> directory
-INIT: <span style="color:#cb4b16">version</span> <span style="color:#d33682">2.88</span> booting
-[   <span style="color:#d33682">14.493462</span>] stty (<span style="color:#d33682">1208</span>) used greatest stack depth: <span
-            style="color:#d33682">19304</span> bytes left
-[   <span style="color:#d33682">14.506149</span>] <span style="color:#268bd2">run</span><span
-            style="color:#859900">-</span>parts (<span
-            style="color:#d33682">1209</span>) used greatest stack depth: <span
-            style="color:#d33682">18048</span> bytes left
-[   <span style="color:#d33682">14.556398</span>] tput (<span style="color:#d33682">1212</span>) used greatest stack depth: <span
-            style="color:#d33682">17224</span> bytes left
-[info] [   <span style="color:#d33682">14.581639</span>] echo (<span style="color:#d33682">1216</span>) used greatest stack depth: <span
-            style="color:#d33682">16528</span> bytes left
-Using makefile<span style="color:#859900">-</span>style concurrent boot <span style="color:#859900">in</span> runlevel S.
-[   <span style="color:#d33682">14.692289</span>] sed (<span style="color:#d33682">1245</span>) used greatest stack depth: <span
-            style="color:#d33682">16184</span> bytes left
-[   <span style="color:#d33682">14.692975</span>] grep (<span style="color:#d33682">1244</span>) used greatest stack depth: <span
-            style="color:#d33682">15368</span> bytes left
-[....] Starting <span style="color:#859900">the</span> hotplug <span style="color:#859900">events</span> dispatcher: udevd[   <span
-            style="color:#d33682">15.119791</span>] udevd[<span style="color:#d33682">1314</span>]: starting <span
-            style="color:#cb4b16">version</span> <span style="color:#d33682">175</span>
-. ok
-[....] Synthesizing <span style="color:#859900">the</span> initial hotplug <span style="color:#859900">events</span>...[   <span
-            style="color:#d33682">15.491922</span>] WARNING! power<span style="color:#859900">/</span>level <span
-            style="color:#859900">is</span> deprecated; use power<span style="color:#859900">/</span>control instead
-[   <span style="color:#d33682">14.693162</span>] <span style="color:#859900">The</span> requested page could <span
-            style="color:#859900">not</span> be found :(
+<pre style="background:#042029;color:#839496">[   <span style="color:#d33682">24.645523</span>] The buggy address belongs to the page<span
+        style="color:#859900">:</span>
+[   <span style="color:#d33682">24.645531</span>] page<span style="color:#859900">:</span>ffffea0000a5c980 count<span
+            style="color:#859900">:</span><span style="color:#d33682">0</span> mapcount<span
+            style="color:#859900">:</span><span style="color:#d33682">0</span> mapping<span
+            style="color:#859900">:</span><span style="color:#d33682">0000000000000000</span> index<span
+            style="color:#859900">:</span>0x0
+[   <span style="color:#d33682">24.645539</span>] flags<span style="color:#859900">: </span>0x100000000000000()
+[   <span style="color:#d33682">24.645557</span>] raw<span style="color:#859900">: </span><span style="color:#d33682">0100000000000000</span> <span
+            style="color:#d33682">0000000000000000</span> <span style="color:#d33682">0000000000000000</span> 00000000ffffffff
+[   <span style="color:#d33682">24.645567</span>] raw<span style="color:#859900">: </span><span style="color:#d33682">0000000000000000</span> ffffea0000a5c9a0 <span
+            style="color:#d33682">0000000000000000</span> <span style="color:#d33682">0000000000000000</span>
+[   <span style="color:#d33682">24.645571</span>] page dumped because<span style="color:#859900">: </span>kasan<span
+            style="color:#859900">: </span>bad access detected
+[   <span style="color:#d33682">24.645573</span>]
+[   <span style="color:#d33682">24.645576</span>] Memory state around the buggy address<span
+            style="color:#859900">:</span>
+[   <span style="color:#d33682">24.645583</span>]  ffff880029726b00<span style="color:#859900">: </span><span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span>
+[   <span style="color:#d33682">24.645589</span>]  ffff880029726b80<span style="color:#859900">: </span><span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> ca ca ca ca
+[   <span style="color:#d33682">24.645596</span>]<span style="color:#859900"> ></span>ffff880029726c00<span
+            style="color:#859900">: </span><span style="color:#d33682">02</span> cb cb cb cb cb cb cb <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span>
+[   <span style="color:#d33682">24.645600</span>]<span style="color:#859900">                    ^</span>
+[   <span style="color:#d33682">24.645606</span>]  ffff880029726c80<span style="color:#859900">: </span><span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span
+            style="color:#d33682">00</span> f1 f1 f1 f1 <span style="color:#d33682">02</span> f2
+[   <span style="color:#d33682">24.645612</span>]  ffff880029726d00<span style="color:#859900">: </span>f2 f2 f2 f2 f2 f2 <span
+            style="color:#d33682">00</span> <span style="color:#d33682">00</span> <span style="color:#d33682">00</span> f2 f2 f2 f2 f2 f8 f8
+[   <span style="color:#d33682">24.645616</span>]<span style="color:#859900"> ==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span><span
+            style="color:#859900">==</span><span style="color:#859900">==</span>
+[   <span style="color:#d33682">24.645619</span>] Disabling lock debugging due to kernel taint
+[   <span style="color:#d33682">24.645622</span>] Kernel panic<span style="color:#859900"> - </span><span
+            style="color:#859900">not</span> syncing<span style="color:#859900">: </span>panic_on_warn set ...
+[   <span style="color:#d33682">24.645622</span>]
+[   <span style="color:#d33682">24.645630</span>] CPU<span style="color:#859900">: </span><span
+            style="color:#d33682">1</span> PID<span style="color:#859900">: </span><span
+            style="color:#d33682">2692</span> Comm<span style="color:#859900">: </span>rs<span
+            style="color:#859900">:</span>main Q<span style="color:#859900">:</span>Reg Tainted<span
+            style="color:#859900">: </span>G    B            <span style="color:#d33682">4.16</span>.0<span
+            style="color:#859900">-</span>rc4 #6
+[   <span style="color:#d33682">24.645634</span>] Hardware name<span style="color:#859900">: </span>QEMU Standard PC (i440FX<span
+            style="color:#859900"> + </span>PIIX, <span style="color:#d33682">1996</span>), BIOS <span
+            style="color:#d33682">1.10</span>.2<span style="color:#859900">-</span>1ubuntu1 <span style="color:#d33682">04</span><span
+            style="color:#859900">/</span><span style="color:#d33682">01</span><span style="color:#859900">/</span><span
+            style="color:#d33682">2014</span>
+[   <span style="color:#d33682">24.645636</span>] Call Trace<span style="color:#859900">:</span>
+[   <span style="color:#d33682">24.645639</span>]<span style="color:#859900">  &lt;</span>IRQ<span
+            style="color:#859900">></span>
+[   <span style="color:#d33682">24.645646</span>]  dump_stack<span style="color:#859900">+</span>0x127<span
+            style="color:#859900">/</span>0x213
+[   <span style="color:#d33682">24.645654</span>]  ? _atomic_dec_and_lock<span style="color:#859900">+</span>0x18d<span
+            style="color:#859900">/</span>0x18d
+[   <span style="color:#d33682">24.645665</span>]  panic<span style="color:#859900">+</span>0x1f8<span
+            style="color:#859900">/</span>0x46f
+[   <span style="color:#d33682">24.645673</span>]  ? add_taint.cold.5<span style="color:#859900">+</span>0x16<span
+            style="color:#859900">/</span>0x16
+[   <span style="color:#d33682">24.645683</span>]  ? add_taint<span style="color:#859900">+</span>0x21<span
+            style="color:#859900">/</span>0x50
+[   <span style="color:#d33682">24.645691</span>]  ? tick_sched_handle<span style="color:#859900">+</span>0x165<span
+            style="color:#859900">/</span>0x180
+[   <span style="color:#d33682">24.645698</span>]  kasan_end_report<span style="color:#859900">+</span>0x43<span
+            style="color:#859900">/</span>0x49
+[   <span style="color:#d33682">24.645705</span>]  kasan_report.cold.6<span style="color:#859900">+</span>0xc8<span
+            style="color:#859900">/</span>0x2f4
+[   <span style="color:#d33682">24.645715</span>]  ? tick_sched_handle<span style="color:#859900">+</span>0x165<span
+            style="color:#859900">/</span>0x180
+[   <span style="color:#d33682">24.645723</span>]  ? tick_sched_timer<span style="color:#859900">+</span>0x3d<span
+            style="color:#859900">/</span>0x120
+[   <span style="color:#d33682">24.645730</span>]  ? __hrtimer_run_queues<span style="color:#859900">+</span>0x379<span
+            style="color:#859900">/</span>0x1000
+[   <span style="color:#d33682">24.645738</span>]  ? tick_sched_do_timer<span style="color:#859900">+</span>0xf0<span
+            style="color:#859900">/</span>0xf0
+[   <span style="color:#d33682">24.645746</span>]  ? hrtimer_interrupt<span style="color:#859900">+</span>0x10b<span
+            style="color:#859900">/</span>0x730
+[   <span style="color:#d33682">24.645754</span>]  ? hrtimer_init<span style="color:#859900">+</span>0x430<span
+            style="color:#859900">/</span>0x430
+[   <span style="color:#d33682">24.645763</span>]  ? lock_downgrade<span style="color:#859900">+</span>0x6d0<span
+            style="color:#859900">/</span>0x6d0
+[   <span style="color:#d33682">24.645772</span>]  ? pvclock_read_flags<span style="color:#859900">+</span>0x150<span
+            style="color:#859900">/</span>0x150
+[   <span style="color:#d33682">24.645780</span>]  ? __lock_is_held<span style="color:#859900">+</span>0xad<span
+            style="color:#859900">/</span>0x140
+[   <span style="color:#d33682">24.645790</span>]  ? kvm_clock_read<span style="color:#859900">+</span>0x21<span
+            style="color:#859900">/</span>0x30
+[   <span style="color:#d33682">24.645797</span>]  ? ktime_get_update_offsets_now<span style="color:#859900">+</span>0x324<span
+            style="color:#859900">/</span>0x400
+[   <span style="color:#d33682">24.645806</span>]  ? do_timer<span style="color:#859900">+</span>0x40<span
+            style="color:#859900">/</span>0x40
+[   <span style="color:#d33682">24.645813</span>]  ? save_trace<span style="color:#859900">+</span>0x300<span
+            style="color:#859900">/</span>0x300
+[   <span style="color:#d33682">24.645821</span>]  ? irq_exit<span style="color:#859900">+</span>0x87<span
+            style="color:#859900">/</span>0x1d0
+[   <span style="color:#d33682">24.645828</span>]  ? scheduler_ipi<span style="color:#859900">+</span>0x39b<span
+            style="color:#859900">/</span>0x690
+[   <span style="color:#d33682">24.645839</span>]  ? hrtimer_interrupt<span style="color:#859900">+</span>0x2e9<span
+            style="color:#859900">/</span>0x730
+[   <span style="color:#d33682">24.645851</span>]  ? smp_apic_timer_interrupt<span
+            style="color:#859900">+</span>0x14d<span style="color:#859900">/</span>0x710
+[   <span style="color:#d33682">24.645859</span>]  ? smp_call_function_single_interrupt<span
+            style="color:#859900">+</span>0x660<span style="color:#859900">/</span>0x660
+[   <span style="color:#d33682">24.645865</span>]  ? smp_thermal_interrupt<span style="color:#859900">+</span>0x800<span
+            style="color:#859900">/</span>0x800
+[   <span style="color:#d33682">24.645876</span>]  ? handle_edge_irq<span style="color:#859900">+</span>0x322<span
+            style="color:#859900">/</span>0x840
+[   <span style="color:#d33682">24.645888</span>]  ? task_prio<span style="color:#859900">+</span>0x50<span
+            style="color:#859900">/</span>0x50
+[   <span style="color:#d33682">24.730390</span>]  ? _raw_spin_unlock<span style="color:#859900">+</span>0x1f<span
+            style="color:#859900">/</span>0x30
+...
+[   <span style="color:#d33682">24.772281</span>] Dumping ftrace buffer<span style="color:#859900">:</span>
+[   <span style="color:#d33682">24.772284</span>]    (ftrace buffer empty)
+[   <span style="color:#d33682">24.772290</span>] Kernel Offset<span style="color:#859900">: </span>0x4600000 from 0xffffffff81000000 (relocation range<span
+            style="color:#859900">: </span>0xffffffff80000000<span style="color:#859900">-</span>0xffffffffbfffffff)
+[   <span style="color:#d33682">24.780997</span>] Rebooting in <span style="color:#d33682">86400</span> seconds.
+[   <span style="color:#d33682">25.252525</span>] The requested page could <span style="color:#859900">not</span> be found<span
+            style="color:#859900"> :</span>(
 </pre>
