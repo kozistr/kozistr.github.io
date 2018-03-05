@@ -86,63 +86,128 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
         <div class="container">
             <header>
                 <h2>404 Error</h2></header>
-            <p>
-                [ 12.729336] usb 1-2.1: SerialNumber: 42
-                [ 12.741612] input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:01.2/usb1/1-2/1-2.1/1-2.1:1.0/0003:0627:0001.0002/input/input5
-                [ 12.796881] hid-generic 0003:0627:0001.0002: input,hidraw1: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:01.2-2.1/input0
-                [ 14.198373] PCI Interrupt Link [LNKB] enabled at IRQ 10
-                [ 14.204731] hdaudio hdaudioC0D0: Unable to bind the codec
-                [ 14.205463] Initializing XFRM netlink socket
-                [ 14.214681] NET: Registered protocol family 10
-                [ 14.223507] Segment Routing with IPv6
-                [ 14.226693] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
-                [ 14.231327] NET: Registered protocol family 17
-                [ 14.249533] DCCP: Activated CCID 2 (TCP-like)
-                [ 14.251749] DCCP: Activated CCID 3 (TCP-Friendly Rate Control)
-                [ 14.260029] sctp: Hash tables configured (bind 64/64)
-                [ 14.263014] 9pnet: Installing 9P2000 support
-                [ 14.264061] Key type dns_resolver registered
-                [ 14.266983] sched_clock: Marking stable (14266208593, 0)->(15311164173, -1044955580)
-                [ 14.269864] registered taskstats version 1
-                [ 14.270506] Loading compiled-in X.509 certificates
-                [ 14.271473] kmemleak: Kernel memory leak detector initialized
-                [ 14.271487] kmemleak: Automatic memory scanning thread started
-                [ 14.274430] Magic number: 10:284:257
-                [ 14.275120] console [netcon0] enabled
-                [ 14.275531] netconsole: network logging started
-                [ 14.277921] cfg80211: Loading compiled-in X.509 certificates for regulatory database
-                [ 14.282203] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
-                [ 14.283688] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
-                [ 14.284095] ALSA device list:
-                [ 14.285000] No soundcards found.
-                [ 14.285827] cfg80211: failed to load regulatory.db
-                [ 14.287159] md: Waiting for all devices to be available before autodetect
-                [ 14.287744] md: If you don't use raid, use raid=noautodetect
-                [ 14.290920] md: Autodetecting RAID arrays.
-                [ 14.291339] md: autorun ...
-                [ 14.291609] md: ... autorun DONE.
-                [ 14.293222] EXT4-fs (sda): couldn't mount as ext3 due to feature incompatibilities
-                [ 14.295777] EXT4-fs (sda): couldn't mount as ext2 due to feature incompatibilities
-                [ 14.318187] EXT4-fs (sda): mounted filesystem with ordered data mode. Opts: (null)
-                [ 14.319703] VFS: Mounted root (ext4 filesystem) readonly on device 8:0.
-                [ 14.334900] devtmpfs: mounted
-                [ 14.335868] debug: unmapping init [mem 0xffffffff91f80000-0xffffffff92229fff]
-                [ 14.337292] Kernel memory protection disabled.
-                SELinux: Could not open policy file <= /etc/selinux/targeted/policy/policy.31: No such file or directory
-                INIT: version 2.88 booting
-                [ 14.493462] stty (1208) used greatest stack depth: 19304 bytes left
-                [ 14.506149] run-parts (1209) used greatest stack depth: 18048 bytes left
-                [ 14.556398] tput (1212) used greatest stack depth: 17224 bytes left
-                [info] [ 14.581639] echo (1216) used greatest stack depth: 16528 bytes left
-                Using makefile-style concurrent boot in runlevel S.
-                [ 14.692289] sed (1245) used greatest stack depth: 16184 bytes left
-                [ 14.692975] grep (1244) used greatest stack depth: 15368 bytes left
-                [....] Starting the hotplug events dispatcher: udevd[ 15.119791] udevd[1314]: starting version 175
-                . ok
-                [....] Synthesizing the initial hotplug events...[ 15.491922] WARNING! power/level is deprecated; use
-                power/control instead
-                [ 14.693162] The requested page could not be found :(
-            </p>
+            <pre style="background:#042029;color:#839496">[   <span style="color:#d33682">12.729336</span>] usb <span
+                    style="color:#d33682">1</span><span style="color:#d33682">-2.1</span>: SerialNumber: <span
+                    style="color:#d33682">42</span>
+[   <span style="color:#d33682">12.741612</span>] input: QEMU QEMU USB Tablet <span
+                        style="color:#859900">as</span> <span style="color:#859900">/</span>devices<span
+                        style="color:#859900">/</span>pci0000:<span style="color:#d33682">00</span><span
+                        style="color:#859900">/</span><span style="color:#d33682">0000</span>:<span
+                        style="color:#d33682">00</span>:<span style="color:#d33682">01.2</span><span
+                        style="color:#859900">/</span>usb1<span style="color:#859900">/</span><span
+                        style="color:#d33682">1</span><span style="color:#d33682">-2</span><span
+                        style="color:#859900">/</span><span style="color:#d33682">1</span><span style="color:#d33682">-2.1</span><span
+                        style="color:#859900">/</span><span style="color:#d33682">1</span><span style="color:#d33682">-2.1</span>:<span
+                        style="color:#d33682">1.0</span><span style="color:#859900">/</span><span style="color:#d33682">0003</span>:<span
+                        style="color:#d33682">0627</span>:<span style="color:#d33682">0001.0002</span><span
+                        style="color:#859900">/</span>input<span style="color:#859900">/</span>input5
+[   <span style="color:#d33682">12.796881</span>] hid<span style="color:#859900">-</span>generic <span
+                        style="color:#d33682">0003</span>:<span style="color:#d33682">0627</span>:<span
+                        style="color:#d33682">0001.0002</span>: input,hidraw1: USB HID v0.<span
+                        style="color:#d33682">01</span> Mouse [QEMU QEMU USB Tablet] <span
+                        style="color:#859900">on</span> usb<span style="color:#d33682">-0000</span>:<span
+                        style="color:#d33682">00</span>:<span style="color:#d33682">01.2</span><span
+                        style="color:#d33682">-2.1</span><span style="color:#859900">/</span>input0
+[   <span style="color:#d33682">14.198373</span>] PCI Interrupt Link [LNKB] enabled <span
+                        style="color:#859900">at</span> IRQ <span style="color:#d33682">10</span>
+[   <span style="color:#d33682">14.204731</span>] hdaudio hdaudioC0D0: Unable <span style="color:#859900">to</span> bind <span
+                        style="color:#859900">the</span> codec
+[   <span style="color:#d33682">14.205463</span>] Initializing XFRM netlink socket
+[   <span style="color:#d33682">14.214681</span>] NET: Registered protocol family <span style="color:#d33682">10</span>
+[   <span style="color:#d33682">14.223507</span>] Segment Routing <span style="color:#859900">with</span> IPv6
+[   <span style="color:#d33682">14.226693</span>] sit: IPv6, IPv4 <span style="color:#859900">and</span> MPLS <span
+                        style="color:#859900">over</span> IPv4 tunneling driver
+[   <span style="color:#d33682">14.231327</span>] NET: Registered protocol family <span style="color:#d33682">17</span>
+[   <span style="color:#d33682">14.249533</span>] DCCP: Activated CCID <span style="color:#d33682">2</span> (TCP<span
+                        style="color:#859900">-</span>like)
+[   <span style="color:#d33682">14.251749</span>] DCCP: Activated CCID <span style="color:#d33682">3</span> (TCP<span
+                        style="color:#859900">-</span>Friendly Rate Control)
+[   <span style="color:#d33682">14.260029</span>] sctp: Hash tables configured (bind <span
+                        style="color:#d33682">64</span><span style="color:#859900">/</span><span style="color:#d33682">64</span>)
+[   <span style="color:#d33682">14.263014</span>] <span style="color:#d33682">9</span>pnet: Installing <span
+                        style="color:#d33682">9</span>P2000 support
+[   <span style="color:#d33682">14.264061</span>] Key type dns_resolver registered
+[   <span style="color:#d33682">14.266983</span>] sched_clock: Marking stable (<span
+                        style="color:#d33682">14266208593</span>, <span style="color:#d33682">0</span>)<span
+                        style="color:#859900">-</span><span style="color:#859900">></span>(<span style="color:#d33682">15311164173</span>, <span
+                        style="color:#d33682">-1044955580</span>)
+[   <span style="color:#d33682">14.269864</span>] registered taskstats <span style="color:#cb4b16">version</span> <span
+                        style="color:#d33682">1</span>
+[   <span style="color:#d33682">14.270506</span>] Loading compiled<span style="color:#859900">-</span><span
+                        style="color:#859900">in</span> X.<span style="color:#d33682">509</span> certificates
+[   <span style="color:#d33682">14.271473</span>] kmemleak: Kernel memory leak detector initialized
+[   <span style="color:#d33682">14.271487</span>] kmemleak: Automatic memory scanning thread started
+[   <span style="color:#d33682">14.274430</span>]   Magic <span style="color:#859900">number</span>: <span
+                        style="color:#d33682">10</span>:<span style="color:#d33682">284</span>:<span
+                        style="color:#d33682">257</span>
+[   <span style="color:#d33682">14.275120</span>] console [netcon0] enabled
+[   <span style="color:#d33682">14.275531</span>] netconsole: network logging started
+[   <span style="color:#d33682">14.277921</span>] cfg80211: Loading compiled<span style="color:#859900">-</span><span
+                        style="color:#859900">in</span> X.<span style="color:#d33682">509</span> certificates <span
+                        style="color:#859900">for</span> regulatory database
+[   <span style="color:#d33682">14.282203</span>] cfg80211: Loaded X.<span style="color:#d33682">509</span> cert 'sforshee: <span
+                        style="color:#d33682">00</span>b28ddf47aef9cea7'
+[   <span style="color:#d33682">14.283688</span>] platform regulatory.<span style="color:#d33682">0</span>: Direct firmware load <span
+                        style="color:#859900">for</span> regulatory.db failed <span
+                        style="color:#859900">with</span> <span style="color:#859900">error</span> <span
+                        style="color:#d33682">-2</span>
+[   <span style="color:#d33682">14.284095</span>] ALSA device <span style="color:#859900">list</span>:
+[   <span style="color:#d33682">14.285000</span>]   <span style="color:#b58900">No</span> soundcards found.
+[   <span style="color:#d33682">14.285827</span>] cfg80211: failed <span style="color:#859900">to</span> load regulatory.db
+[   <span style="color:#d33682">14.287159</span>] md: Waiting <span style="color:#859900">for</span> all devices <span
+                        style="color:#859900">to</span> be available <span style="color:#859900">before</span> autodetect
+[   <span style="color:#d33682">14.287744</span>] md: <span style="color:#859900">If</span> you don't use raid, use raid<span
+                        style="color:#859900">=</span>noautodetect
+[   <span style="color:#d33682">14.290920</span>] md: Autodetecting RAID arrays.
+[   <span style="color:#d33682">14.291339</span>] md: autorun ...
+[   <span style="color:#d33682">14.291609</span>] md: ... autorun DONE.
+[   <span style="color:#d33682">14.293222</span>] EXT4<span style="color:#859900">-</span>fs (sda): couldn't mount <span
+                        style="color:#859900">as</span> ext3 due <span style="color:#859900">to</span> feature incompatibilities
+[   <span style="color:#d33682">14.295777</span>] EXT4<span style="color:#859900">-</span>fs (sda): couldn't mount <span
+                        style="color:#859900">as</span> ext2 due <span style="color:#859900">to</span> feature incompatibilities
+[   <span style="color:#d33682">14.318187</span>] EXT4<span
+                        style="color:#859900">-</span>fs (sda): mounted filesystem <span
+                        style="color:#859900">with</span> ordered <span
+                        style="color:#859900">data</span> mode. Opts: (<span style="color:#b58900">null</span>)
+[   <span style="color:#d33682">14.319703</span>] VFS: Mounted root (ext4 filesystem) readonly <span
+                        style="color:#859900">on</span> device <span style="color:#d33682">8</span>:<span
+                        style="color:#d33682">0.</span>
+[   <span style="color:#d33682">14.334900</span>] devtmpfs: mounted
+[   <span style="color:#d33682">14.335868</span>] debug: unmapping init [mem <span style="color:#d33682">0</span>xffffffff91f80000<span
+                        style="color:#d33682">-0</span>xffffffff92229fff]
+[   <span style="color:#d33682">14.337292</span>] Kernel memory protection disabled.
+SELinux:  Could <span style="color:#859900">not</span> open policy <span style="color:#859900">file</span> <span
+                        style="color:#859900">&lt;</span><span style="color:#859900">=</span> <span
+                        style="color:#859900">/</span>etc<span style="color:#859900">/</span>selinux<span
+                        style="color:#859900">/</span>targeted<span style="color:#859900">/</span>policy<span
+                        style="color:#859900">/</span>policy.<span style="color:#d33682">31</span>:  <span
+                        style="color:#b58900">No</span> such <span style="color:#859900">file</span> <span
+                        style="color:#859900">or</span> directory
+INIT: <span style="color:#cb4b16">version</span> <span style="color:#d33682">2.88</span> booting
+[   <span style="color:#d33682">14.493462</span>] stty (<span style="color:#d33682">1208</span>) used greatest stack depth: <span
+                        style="color:#d33682">19304</span> bytes left
+[   <span style="color:#d33682">14.506149</span>] <span style="color:#268bd2">run</span><span
+                        style="color:#859900">-</span>parts (<span style="color:#d33682">1209</span>) used greatest stack depth: <span
+                        style="color:#d33682">18048</span> bytes left
+[   <span style="color:#d33682">14.556398</span>] tput (<span style="color:#d33682">1212</span>) used greatest stack depth: <span
+                        style="color:#d33682">17224</span> bytes left
+[info] [   <span style="color:#d33682">14.581639</span>] echo (<span style="color:#d33682">1216</span>) used greatest stack depth: <span
+                        style="color:#d33682">16528</span> bytes left
+Using makefile<span style="color:#859900">-</span>style concurrent boot <span style="color:#859900">in</span> runlevel S.
+[   <span style="color:#d33682">14.692289</span>] sed (<span style="color:#d33682">1245</span>) used greatest stack depth: <span
+                        style="color:#d33682">16184</span> bytes left
+[   <span style="color:#d33682">14.692975</span>] grep (<span style="color:#d33682">1244</span>) used greatest stack depth: <span
+                        style="color:#d33682">15368</span> bytes left
+[....] Starting <span style="color:#859900">the</span> hotplug <span style="color:#859900">events</span> dispatcher: udevd[   <span
+                        style="color:#d33682">15.119791</span>] udevd[<span style="color:#d33682">1314</span>]: starting <span
+                        style="color:#cb4b16">version</span> <span style="color:#d33682">175</span>
+. ok
+[....] Synthesizing <span style="color:#859900">the</span> initial hotplug <span style="color:#859900">events</span>...[   <span
+                        style="color:#d33682">15.491922</span>] WARNING! power<span style="color:#859900">/</span>level <span
+                        style="color:#859900">is</span> deprecated; use power<span style="color:#859900">/</span>control instead
+[   <span style="color:#d33682">14.693162</span>] <span style="color:#859900">The</span> requested page could <span
+                        style="color:#859900">not</span> be found :(
+            </pre>
         </div>
     </article>
 </div><!-- Footer -->
