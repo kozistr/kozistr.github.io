@@ -26,31 +26,68 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
-    <script src="./assets/js/ie/html5shiv.js" defer></script><![endif]-->
-    <link rel="stylesheet" href="./assets/css/main.scss"/>
+    <script src="/assets/js/ie/html5shiv.js" defer></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.scss"/>
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="./assets/css/ie8.css"/><![endif]-->
+    <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="./assets/css/ie9.css"/><![endif]-->
+    <link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
-    <script src="./assets/js/jquery.scrolly.min.js" defer></script>
-    <script src="./assets/js/jquery.scrollzer.min.js" defer></script>
-    <script src="./assets/js/skel.min.js" defer></script>
-    <script src="./assets/js/util.js" defer></script>
+    <script src="/assets/js/jquery.scrolly.min.js" defer></script>
+    <script src="/assets/js/jquery.scrollzer.min.js" defer></script>
+    <script src="/assets/js/skel.min.js" defer></script>
+    <script src="/assets/js/util.js" defer></script>
     <!--[if lte IE 8]>
-    <script src="./assets/js/ie/respond.min.js" defer></script><![endif]-->
-    <script src="./assets/js/main.js" defer></script>
+    <script src="/assets/js/ie/respond.min.js" defer></script><![endif]-->
+    <script src="/assets/js/main.js" defer></script>
 
 </head>
 <body><!-- Header -->
-
-<header>
-    <h2>Kernel Panic</h2>
-</header>
-
-<pre style="background:#042029;color:#839496">[   <span style="color:#d33682">12.729336</span>] usb <span
+<div id="header">
+    <div class="top"><!-- Logo -->
+        <div id="logo">
+            <a href="http://localhost:4000/" id="home-link">
+                <span class="image avatar48"><img src="/assets/images/avatar.jpg"
+                                                  alt="Avatar of Your Incredible Name"/></span>
+                <h1 id="title">Your awesome title</h1>
+                <p>Your awesome subtitle</p>
+            </a>
+        </div><!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="http://localhost:4000/about/" id="about-link">
+                    <span class="icon fa-link">About</span>
+                </a></li>
+                <li><a href="http://localhost:4000/" id="my-great-homepage-link">
+                    <span class="icon fa-home">My Great Homepage</span>
+                </a></li>
+                <li><a href="http://localhost:4000/blog.html" id="amazing-blog-link">
+                    <span class="icon fa-pencil">Amazing Blog</span>
+                </a></li>
+                <li><a href="http://localhost:4000/reading-list.html" id="reading-list-link">
+                    <span class="icon fa-book">Reading List</span>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bottom"><!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="mailto:your-email@example.com" class="icon fa-envelope"><span class="label">Email</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Main -->
+<div id="main">
+    <!-- Page -->
+    <article class="shade-two">
+        <div class="container">
+            <header>
+                <h2>Kernel Panic</h2>
+            </header>
+            <pre style="background:#042029;color:#839496">[   <span style="color:#d33682">12.729336</span>] usb <span
         style="color:#d33682">1</span><span style="color:#d33682">-2.1</span>: SerialNumber: <span
         style="color:#d33682">42</span>
 [   <span style="color:#d33682">12.741612</span>] input: QEMU QEMU USB Tablet <span
@@ -175,7 +212,10 @@ Using makefile<span style="color:#859900">-</span>style concurrent boot <span st
             style="color:#859900">is</span> deprecated; use power<span style="color:#859900">/</span>control instead
 [   <span style="color:#d33682">14.693162</span>] <span style="color:#859900">The</span> requested page could <span
             style="color:#859900">not</span> be found :(
-</pre>
+            </pre>
+        </div>
+    </article>
+</div>
 
 <!-- Footer -->
 <div id="footer">
@@ -188,6 +228,7 @@ Using makefile<span style="color:#859900">-</span>style concurrent boot <span st
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
     </ul>
+
 </div>
 </body>
 </html>
