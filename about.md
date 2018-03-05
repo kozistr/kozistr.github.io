@@ -6,7 +6,7 @@ comments: true
 ---
 
 * University Student - Junior
-* zero-day security researcher (mainly kernel exploitation)
+* Security Researcher (mainly kernel exploitation) & Reverse Engineering
 * Data Science & Machine Learning 
 
 ## Links
