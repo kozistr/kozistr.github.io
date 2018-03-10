@@ -5,69 +5,97 @@ permalink: /about/
 comments: true
 ---
 
-* University Student - Junior
-* Security Researcher (mainly kernel exploitation) & Reverse Engineering
-* Data Science & Machine Learning 
+##  Profile
+
+Junior in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
+
+CV : [[~~PDF~~]](https://kozistr.gituhb.io/)
 
 ## Links
-* [Github](https://github.com/kozistr)
-* [Blog](http://zer0day.tistory.com)
-* [Kaggle](https://www.kaggle.com/kozistr)
 
-## Security, Hacking
+Email : **kozistr**@gmail.com
 
-### Team
-* [F1ay](http://f1ay.com/)
-* [Demon](http://demonteam.org/)
+Github : https://github.com/kozistr
 
-### CTF, Conference
-* POC 2016 Conference Staff
-* HackingCamp 15 CTF Staff, Challenge Maker
-* CodeGate 2017 OpenCTF Staff, Challenge Maker
-* HackingCamp 16 CTF Staff, Challenge Maker
-* POX 2017 CTF Staff, Challenge Maker
-* KID 2017 CTF Staff, Challenge Maker
-* Belluminar 2017 CTF Staff
-* WhiteHat League 1 - 2nd (Demon)
-* HackingCamp 17 CTF Staff, Challenge Maker
+Kaggle : https://www.kaggle.com/kozistr
 
-- [HackingCamp](http://hackingcamp.org/)
-- [CodeGate](https://www.codegate.org/)
-- [POC](http://powerofcommunity.net/)
-- [KID,POX](http://www.powerofxx.com/)
+Another Blog : http://zer0day.tistory.com
 
-### Presentation
-* Network Sniff & Detect
-* Polymorphic Virus VS AV Detection
-* will be updated
+## Interests
 
-### Papers
-* [Windows Anti-Debugging Techniques](https://github.com/kozistr/kozistr.github.io/_refs/Anti-Revering-Techniques[zer0day].pdf)
-* will be updated
+Data Science & **Machine Learning** & Challenge Stuffs :)
 
-## Machine Learning
+**Security Researcher** (mainly kernel exploitation)
 
-### Challenges & Projects
+**Reverse Engineering**
+
+## Publications
+
+Conference
+
+
+Journals
+
+[1] zer0day, *Windows Anti-Debugging Techniques* (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/_refs/Anti-Revering-Techniques[zer0day].pdf)
+
+## Work Experience
+
+Penetration Tester, **ELCID** **(2016.07 ~ 2017.08)**
+
+> ...
+
+**Out Sourcing**
+
+2017.7 ~ 2018.3
+> * Korean University Course Information Web Parsing (About 40 Universities), 2 times.
+
+## Personal Projects
+
+### Machine Learning
+
+**Generative Models**
+
+![sample_image](https://github.com/kozistr/Awesome-GANs/blob/master/BEGAN/gen_img/train_300000.png)
+
+* **GANs-tensorflow** :: Lots of GAN codes :) :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
+> * **StarGAN-tensorflow** :: Unified GAN for multi-domain :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/StarGAN)
+> * **LAPGAN-tensorflow** :: Laplacian Pyramid GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/LAPGAN)
+> * **BEGAN-tensorflow** :: Boundary Equilibrium in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/BEGAN)
+
+* **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
+
+**Challenges**
+
 * [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **top 9, 3rd price, ACC 0.9962**
 * [Kaggle MNIST Challenge](ttps://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
 * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
-* [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
 * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
 * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **BEST ACC 0.98236**
-* [Image Style Transfer](https://github.com/kozistr/style-transfer)
-* will be updated
 
-### Papers
-* will be updated
+### Security, Hacking
 
-## Programming
+**CTF, Conference**
 
-### Projects
-* Korean University Course Information Web Parsing Out-Sourcing (About 40 Universities)
-* IDA plug-in - GO ELF binary RTTI parser
-* will be updated
+* [POC](http://powerofcommunity.net/) 2016 Conference Staff
+* [HackingCamp](http://hackingcamp.org/) 15 CTF Staff, Challenge Maker
+* [CodeGate](https://www.codegate.org/) 2017 OpenCTF Staff, Challenge Maker
+* HackingCamp 16 CTF Staff, Challenge Maker
+* [POX](http://www.powerofxx.com/) 2017 CTF Staff, Challenge Maker
+* [KID](http://www.powerofxx.com/) 2017 CTF Staff, Challenge Maker
+* Belluminar 2017 CTF Staff
+* WhiteHat League 1 - **2nd (Demon)**
+* HackingCamp 17 CTF Staff, Challenge Maker
 
-### Services
-* will be updated
+### Programs
 
-will be updated
+**Plug-In**
+
+* IDA pro plug-in - GO ELF binary RTTI parser
+
+### Presentation
+
+2015
+> * Polymorphic Virus VS AV Detection
+
+2014
+> * Network Sniff & Detect
