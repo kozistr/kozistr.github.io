@@ -36,18 +36,17 @@ Conference
 
 Journals
 
-[1] zer0day, *Windows Anti-Debugging Techniques* (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/_refs/Anti-Revering-Techniques[zer0day].pdf)
+[1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/_refs/Anti-Revering-Techniques[zer0day].pdf)
 
 ## Work Experience
 
-Penetration Tester, **ELCID** **(2016.07 ~ 2017.08)**
+**Company**
 
-> ...
+Penetration Tester, **ELCID** **(2016.07 ~ 2017.08)**
 
 **Out Sourcing**
 
-2017.7 ~ 2018.3
-> * Korean University Course Information Web Parsing (About 40 Universities), 2 times.
+Korean University Course Information Web Parsing (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
 
 ## Personal Projects
 
@@ -61,6 +60,9 @@ Penetration Tester, **ELCID** **(2016.07 ~ 2017.08)**
 > * **StarGAN-tensorflow** :: Unified GAN for multi-domain :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/StarGAN)
 > * **LAPGAN-tensorflow** :: Laplacian Pyramid GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/LAPGAN)
 > * **BEGAN-tensorflow** :: Boundary Equilibrium in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/BEGAN)
+> * **DCGAN-tensorflow** :: Deep Convolutional GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/DCGAN)
+> * **SRGAN-tensorflow** :: Super Resolution GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
+> * ... lots of GANs :)
 
 * **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
 
