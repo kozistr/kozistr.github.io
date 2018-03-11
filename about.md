@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About
+title: HyeongChan Kim
 permalink: /about/
 comments: true
 ---
