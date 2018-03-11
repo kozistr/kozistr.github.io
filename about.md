@@ -64,7 +64,6 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * **SRGAN-tensorflow** :: Super Resolution GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
 > * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
 > * ... lots of GANs :)
-
 * **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
 
 **Challenges**
@@ -82,12 +81,18 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 * [POC](http://powerofcommunity.net/) 2016 Conference Staff
 * [HackingCamp](http://hackingcamp.org/) 15 CTF Staff, Challenge Maker
 * [CodeGate](https://www.codegate.org/) 2017 OpenCTF Staff, Challenge Maker
-* HackingCamp 16 CTF Staff, Challenge Maker
+* [HackingCamp](http://hackingcamp.org/) 16 CTF Staff, Challenge Maker
 * [POX](http://www.powerofxx.com/) 2017 CTF Staff, Challenge Maker
 * [KID](http://www.powerofxx.com/) 2017 CTF Staff, Challenge Maker
 * Belluminar 2017 CTF Staff
 * WhiteHat League 1 - **2nd (Demon)**
-* HackingCamp 17 CTF Staff, Challenge Maker
+* [HackingCamp](http://hackingcamp.org/) 17 CTF Staff, Challenge Maker
+
+**Team**
+
+Hacking Team, [**Fl4y**](http://f1ay.com/). **Since 2017.07 ~**
+
+Hacking Team, [**Demon**](https://demonteam.org/) by [*POC*](http://powerofcommunity.net/). **Since 2014.02 ~**
 
 ### Programs
 
@@ -104,3 +109,4 @@ Polymorphic Virus VS AV Detection
 **2014**
 
 Network Sniff & Detect
+
