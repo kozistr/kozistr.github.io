@@ -62,6 +62,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * **BEGAN-tensorflow** :: Boundary Equilibrium in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/BEGAN)
 > * **DCGAN-tensorflow** :: Deep Convolutional GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/DCGAN)
 > * **SRGAN-tensorflow** :: Super Resolution GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
+> * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
 > * ... lots of GANs :)
 
 * **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
@@ -96,8 +97,10 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 ### Presentation
 
-2015
-> * Polymorphic Virus VS AV Detection
+**2015**
 
-2014
-> * Network Sniff & Detect
+Polymorphic Virus VS AV Detection
+
+**2014**
+
+Network Sniff & Detect
