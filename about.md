@@ -36,7 +36,7 @@ Conference
 
 Journals
 
-[1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/_refs/Anti-Revering-Techniques[zer0day].pdf)
+[1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/blob/master/_refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
 
 ## Work Experience
 
