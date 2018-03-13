@@ -4,7 +4,7 @@ title: LK v4.16.x - tracepoint_probe_register_prio - warn
 comments: true
 ---
 
-tracepoint_probe_register_prio - kernel panic
+tracepoint_probe_register_prio - warn
 
 posted & found by [zer0day](https://kozistr.github.io/)
 
