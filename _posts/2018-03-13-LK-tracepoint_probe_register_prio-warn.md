@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LK v4.16.x - tracepoint_probe_register_prio-kp - kernel panic
+title: LK v4.16.x - tracepoint_probe_register_prio - warn
 comments: true
 ---
 
