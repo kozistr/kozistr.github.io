@@ -16,7 +16,7 @@ Just anther maybe meaningless posting :)
 
 ## Call Trace (Dump)
 
-Here's a kernel dmesg.
+Here's a dmesg.
 
 ```c
 WARNING: CPU: 1 PID: 19167 at kernel/tracepoint.c:210 tracepoint_add_func kernel/tracepoint.c:210 [inline]
