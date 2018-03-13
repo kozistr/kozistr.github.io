@@ -10,7 +10,7 @@ posted & found by [zer0day](https://kozistr.github.io/)
 
 ## tl;dr
 
-Found in LK v4.16.0-rc4.
+Found in LK v4.16.0-rc4. Maybe it could be useful :)
 
 ## Call Trace (Dump)
 
