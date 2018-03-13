@@ -1,10 +1,10 @@
 ---
 layout: post
-title: LK v4.16.x - tracepoint_probe_register_prio-kp - kernel panic
+title: LK v4.16.x - init_tty - kernel panic
 comments: true
 ---
 
-tracepoint_probe_register_prio - kernel panic
+init_tty - kernel panic
 
 posted & found by [zer0day](https://kozistr.github.io/)
 
