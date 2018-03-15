@@ -38,6 +38,10 @@ Journals
 
 [1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/blob/master/_refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
 
+SlideShare
+
+[1] kozistr, [*ZeroToAll Machine Learning for ALL*](https://www.slideshare.net/KimHyeongCHan/overview-of-machine-learning-90783681) Mar, 2018.
+
 ## Work Experience
 
 **Company**
