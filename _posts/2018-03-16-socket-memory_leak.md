@@ -12,6 +12,11 @@ posted & found by [zer0day](https://kozistr.github.io/)
 
 Got from syzkaller & Found in *LK v4.16.0-rc5* with enabling ```CONFIG_FAULT_INJECTION```.
 
+Actually, i had a few of leaks related to ```socket$sctp``` worked in the past version of LK (maybe v4.14.x somewhere...).
+But i just forgot my dumps & codes... :(
+
+Anyway, :)...
+
 ## Call Trace (Dump)
 
 Here's a dmesg.
