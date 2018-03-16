@@ -12,7 +12,6 @@ posted & found by [zer0day](https://kozistr.github.io/)
 
 Got from syzkaller & Found in *LK v4.16.0-rc5* with enabling ```CONFIG_FAULT_INJECTION```.
 
-
 ## Call Trace (Dump)
 
 Here's a dmesg.
