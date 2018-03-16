@@ -4,7 +4,7 @@ title: LK v4.16.x - sctp_id2assoc - uaf
 comments: true
 ---
 
-sctp_id2assoc - use after free
+sctp_id2assoc - use after free *Read*
 
 posted & found by [zer0day](https://kozistr.github.io/)
 
