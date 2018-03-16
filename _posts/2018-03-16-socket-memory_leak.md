@@ -15,7 +15,9 @@ Got from syzkaller & Found in *LK v4.16.0-rc5* with enabling ```CONFIG_FAULT_INJ
 Actually, i had a few of leaks related to ```socket$sctp``` worked in the past version of LK (maybe v4.14.x somewhere...).
 But i just forgot my dumps & codes... :(
 
-Anyway, :)...
+Anyway, that is not related to this post :)...
+
+It seems like not useful leaks... But, maybe?, i should test/try more cases.
 
 ## Call Trace (Dump)
 
