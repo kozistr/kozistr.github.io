@@ -72,11 +72,14 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 **Challenges**
 
-* [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **top 9, 3rd price, ACC 0.9962**
-* [Kaggle MNIST Challenge](ttps://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
-* [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
-* [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
-* [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
+* **TF-KR Challenge** :: Facebook TF-KR MNIST Challenge
+> * [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **top 9, 3rd price, ACC 0.9962**
+
+* **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
+> * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
+> * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
+> * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
+> * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
 
 ### Security, Hacking
 
