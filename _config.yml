@@ -53,7 +53,7 @@ slack_url:
 twitter_url:
 
 # Google Analytics Tracking ID goes here:
-# google_analytics:
+google_analytics: UA-116366668-1
 
 # Disqus comments
 # disqus_shortname: zer0days-blog
