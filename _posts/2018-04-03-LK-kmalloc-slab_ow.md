@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LK v4.16.x -  - slab ... overwritten
+title: LK v4.16.x - slab ... overwritten
 comments: true
 ---
 
