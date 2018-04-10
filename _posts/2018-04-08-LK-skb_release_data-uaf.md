@@ -89,4 +89,10 @@ Memory state around the buggy address:
  ffff880079c4f780: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
 ```
 
+## PoC
+
+*Skip~*
+
+[2018-04-10] Maybe, it is *reproducible* under some conditions..:( So it needs more works to be generic PoC. 
+
 **End**
