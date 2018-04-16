@@ -41,7 +41,7 @@ Journals
 SlideShare
 
 [1] kozistr, [*ZeroToAll Machine Learning for ALL*](https://www.slideshare.net/KimHyeongCHan/overview-of-machine-learning-90783681) Mar, 2018. <br/>
-[2] kozistr, [*ZeroToAll Artificial Intelligence for ALL*]() Apr, 2018. <br/>
+[2] kozistr, [*ZeroToAll Artificial Intelligence for ALL*](https://www.slideshare.net/KimHyeongCHan/2018-0327artificial-intelligence) Apr, 2018. <br/>
 
 ## Work Experiences
 
