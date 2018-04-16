@@ -94,8 +94,8 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
 
 * **NAVER A.I Hackathon** :: Naver A.I Hackathon 2018
-> *[Phase1]() - <br/>
-> *[Phase2]() - <br/>
+> * [Phase1]() -
+> * [Phase2]() - 
 
 
 ### Security, Hacking
