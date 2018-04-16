@@ -7,7 +7,7 @@ comments: true
 
 ##  Profile
 
-Junior in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
+*Junior* in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
 CV : [[~~PDF~~]](https://kozistr.gituhb.io/)
 
@@ -15,15 +15,15 @@ CV : [[~~PDF~~]](https://kozistr.gituhb.io/)
 
 Email : **kozistr**@gmail.com
 
-Github : https://github.com/kozistr
+Github : [https://github.com/kozistr](https://github.com/kozistr)
 
-Kaggle : https://www.kaggle.com/kozistr
+Kaggle : [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr)
 
-Another Blog : http://zer0day.tistory.com
+Another Blog : [http://zer0day.tistory.com](http://zer0day.tistory.com)
 
 ## Interests
 
-Data Science & **Machine Learning** & Challenge Stuffs :)
+*Data Science* & **Machine Learning** & Challenge Stuffs :)
 
 **Security Researcher** (mainly kernel exploitation)
 
@@ -41,8 +41,9 @@ Journals
 SlideShare
 
 [1] kozistr, [*ZeroToAll Machine Learning for ALL*](https://www.slideshare.net/KimHyeongCHan/overview-of-machine-learning-90783681) Mar, 2018.
+[2] kozistr, [*ZeroToAll Artificial Intelligence for ALL*]() Apr, 2018.
 
-## Work Experience
+## Work Experiences
 
 **Company**
 
@@ -54,11 +55,20 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 ## Personal Projects
 
+### Computer Languages
+
+> *Assembly* (x86, x86-64, arm, ...) <br/>
+> *C/C++*/C# <br/>
+> *Python* <br/>
+> Java <br/>
+> HTML/CSS, PHP <br/>
+> Go (a little bit...) <br/>
+
 ### Machine Learning
 
 **Generative Models**
 
-![sample_image](https://github.com/kozistr/Awesome-GANs/blob/master/BEGAN/gen_img/train_300000.png)
+[sample_image](https://github.com/kozistr/Awesome-GANs/blob/master/BEGAN/gen_img/train_300000.png)
 
 * **GANs-tensorflow** :: Lots of GAN codes :) :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
 > * **StarGAN-tensorflow** :: Unified GAN for multi-domain :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/StarGAN)
@@ -69,6 +79,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
 > * ... lots of GANs :)
 * **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
+* **Kaggle-Challenge** :: My works of Kaggle-Challenges :: [code](https://github.com/kozistr/kaggle-challenge)
 
 **Challenges**
 
@@ -80,6 +91,10 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
 > * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
 > * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
+
+* **NAVER A.I Hackathon** :: Naver A.I Hackathon 2018
+> *[Phase1]() - 
+> *[Phase2]() -
 
 ### Security, Hacking
 
@@ -115,5 +130,6 @@ Polymorphic Virus VS AV Detection
 
 **2014**
 
-Network Sniff & Detect
+Network Sniffing & Detection
 
+**End**
