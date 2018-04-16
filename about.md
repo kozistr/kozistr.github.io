@@ -69,8 +69,6 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 **Generative Models**
 
-[sample_image](https://github.com/kozistr/Awesome-GANs/blob/master/BEGAN/gen_img/train_300000.png)
-
 * **GANs-tensorflow** :: Lots of GAN codes :) :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
 > * **StarGAN-tensorflow** :: Unified GAN for multi-domain :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/StarGAN)
 > * **LAPGAN-tensorflow** :: Laplacian Pyramid GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/LAPGAN)
