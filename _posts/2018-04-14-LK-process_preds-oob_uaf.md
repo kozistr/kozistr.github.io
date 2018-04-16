@@ -4,7 +4,7 @@ title: LK v4.16.x - process_preds - uaf/oobs
 comments: true
 ---
 
-process_preds - slab out of bounds / use after free *Write*
+process_preds - slab out of bounds *Write* / use after free *Read/Write*
 
 posted & found by [zer0day](https://kozistr.github.io/)
 
