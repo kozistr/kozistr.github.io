@@ -77,7 +77,9 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * **SRGAN-tensorflow** :: Super Resolution GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
 > * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
 > * ... lots of GANs :)
+
 * **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
+
 * **Kaggle-Challenge** :: My works of Kaggle-Challenges :: [code](https://github.com/kozistr/kaggle-challenge)
 
 **Challenges**
@@ -98,7 +100,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 ### Security, Hacking
 
-**CTF, Conference**
+**CTFs, Conferences**
 
 * [POC](http://powerofcommunity.net/) 2016 Conference Staff
 * [HackingCamp](http://hackingcamp.org/) 15 CTF Staff, Challenge Maker
@@ -109,8 +111,10 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 * Belluminar 2017 CTF Staff
 * WhiteHat League 1 - **2nd (Demon)**
 * [HackingCamp](http://hackingcamp.org/) 17 CTF Staff, Challenge Maker
+* ... 2018 - **2nd (SeoulWesterns)**
+* Boot2Root 2018 - **2nd (Demon)**
 
-**Team**
+**Teams**
 
 Hacking Team, [**Fl4y**](http://f1ay.com/). **Since 2017.07 ~**
 
