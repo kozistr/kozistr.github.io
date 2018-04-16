@@ -40,8 +40,8 @@ Journals
 
 SlideShare
 
-[1] kozistr, [*ZeroToAll Machine Learning for ALL*](https://www.slideshare.net/KimHyeongCHan/overview-of-machine-learning-90783681) Mar, 2018.
-[2] kozistr, [*ZeroToAll Artificial Intelligence for ALL*]() Apr, 2018.
+[1] kozistr, [*ZeroToAll Machine Learning for ALL*](https://www.slideshare.net/KimHyeongCHan/overview-of-machine-learning-90783681) Mar, 2018. <br/>
+[2] kozistr, [*ZeroToAll Artificial Intelligence for ALL*]() Apr, 2018. <br/>
 
 ## Work Experiences
 
@@ -63,6 +63,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > Java <br/>
 > HTML/CSS, PHP <br/>
 > Go (a little bit...) <br/>
+
 
 ### Machine Learning
 
