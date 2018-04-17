@@ -93,9 +93,10 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
 > * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
 
-* **NAVER A.I Hackathon** :: Naver A.I Hackathon 2018
+* **NAVER A.I Hackathon** :: NAVER A.I Hackathon 2018
 > * [Phase1]() -
-> * [Phase2]() - 
+> * [Phase2]() -
+> * [Final]() - 
 
 
 ### Security, Hacking
@@ -128,12 +129,18 @@ Hacking Team, [**Demon**](https://demonteam.org/) by [*POC*](http://powerofcommu
 
 ### Presentations
 
+**2018**
+
+[2] Artificial Intelligence ZeroToAll, Apr 2018.
+
+[1] Machine Learning ZeroToAll, Mar 2018.
+
 **2015**
 
-Polymorphic Virus VS AV Detection
+[1] Polymorphic Virus VS AV Detection, Oct 2015.
 
 **2014**
 
-Network Sniffing & Detection
+[1] Network Sniffing & Detection, Oct, 2014.
 
 **End**
