@@ -62,6 +62,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > *Python* <br/>
 > Java <br/>
 > HTML/CSS, PHP <br/>
+> JavaScript (Vue.js) <br/>
 > Go (a little bit...) <br/>
 
 
