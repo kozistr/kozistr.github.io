@@ -9,7 +9,7 @@ comments: true
 
 *Junior* in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-CV : [[~~PDF~~]](http://kozistr.tech/)
+CV : [[PDF]](_refs/cv.pdf)
 
 ## Links
 
