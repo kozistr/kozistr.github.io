@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LK v4.17.x - ext4_data_block_valid - uaf/oobs
+title: LK v4.17.x - ext4_data_block_valid - uaf
 comments: true
 ---
 
