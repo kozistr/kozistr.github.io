@@ -14,7 +14,7 @@ Found in LK v4.17.0+. Interesting one... :)
 
 ## Call Trace (Dump)
 
-Here's dmesg.
+Got from syzkaller
 
 ```c
 [  697.425122] kernel BUG at include/linux/mm.h:499!
