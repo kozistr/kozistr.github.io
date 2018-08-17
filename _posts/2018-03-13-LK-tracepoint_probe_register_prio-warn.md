@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - tracepoint_probe_register_prio - warn
-comments: true
+author: zer0day
+categories: lk
 ---
 
 tracepoint_probe_register_prio - warn

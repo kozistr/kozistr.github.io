@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - kernfs_get - warn
-comments: true
+author: zer0day
+categories: lk
 ---
 
 kernfs_get - warn

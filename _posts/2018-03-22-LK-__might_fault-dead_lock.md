@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - __might_fault - dead lock
-comments: true
+author: zer0day
+categories: lk
 ---
 
 __might_fault - dead lock

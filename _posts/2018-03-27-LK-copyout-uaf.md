@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - copyout - uaf
-comments: true
+author: zer0day
+categories: lk
 ---
 
 copyout - use after free *Read*

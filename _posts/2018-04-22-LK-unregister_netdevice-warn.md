@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - unregister_netdevice - warn
-comments: true
+author: zer0day
+categories: lk
 ---
 
 unregister_netdevice - waiting for DEV to become free

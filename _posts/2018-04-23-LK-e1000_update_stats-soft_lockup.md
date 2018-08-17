@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - e1000_update_stats - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 e1000_update_stats - soft lockup

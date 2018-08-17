@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - alloc_vmap_area - kernel paging request
-comments: true
+author: zer0day
+categories: lk
 ---
 
 alloc_vmap_area - unable to handle kernel paging request

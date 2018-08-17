@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - xxx - memory leak
-comments: true
+author: zer0day
+categories: lk
 ---
 
 xxx - memory leak

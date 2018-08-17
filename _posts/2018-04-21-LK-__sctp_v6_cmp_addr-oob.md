@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - __sctp_v6_cmp_addr - oobs
-comments: true
+author: zer0day
+categories: lk
 ---
 
 __sctp_v6_cmp_addr - slab out of bounds *Read*

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - ata_scsi_queuecmd - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 ata_scsi_queuecmd - soft lockup

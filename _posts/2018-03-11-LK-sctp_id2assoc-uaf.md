@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - sctp_id2assoc - uaf
-comments: true
+author: zer0day
+categories: lk
 ---
 
 sctp_id2assoc - use after free *Read*

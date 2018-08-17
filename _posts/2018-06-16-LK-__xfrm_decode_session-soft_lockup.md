@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - __xfrm_decode_session - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 __xfrm_decode_session - soft lockup

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - kmem_cache_alloc - general page fault
-comments: true
+author: zer0day
+categories: lk
 ---
 
 kmem_cache_alloc - general page fault

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - dev_hard_start_xmit - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 dev_hard_start_xmit - soft lockup

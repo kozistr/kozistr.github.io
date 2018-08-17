@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - hpet_open - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 hpet_open - soft lockup

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - strlen - oobs
-comments: true
+author: zer0day
+categories: lk
 ---
 
 strlen - slab out of bounds *Read*

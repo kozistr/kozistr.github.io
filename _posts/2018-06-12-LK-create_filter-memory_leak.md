@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - create_filter - memory leak
-comments: true
+author: zer0day
+categories: lk
 ---
 
 create_filter - memory leak

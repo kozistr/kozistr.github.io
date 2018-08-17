@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - bad rss-counter state - bug
-comments: true
+author: zer0day
+categories: lk
 ---
 
 bad rss-counter state - bug

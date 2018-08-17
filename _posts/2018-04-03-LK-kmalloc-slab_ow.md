@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - slab ... overwritten
-comments: true
+author: zer0day
+categories: lk
 ---
 
 kmalloc-1024 - slab padding/red zone overwritten

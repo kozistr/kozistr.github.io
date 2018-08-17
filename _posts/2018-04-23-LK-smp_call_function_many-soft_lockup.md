@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - smp_call_function_many - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 smp_call_function_many - soft lockup

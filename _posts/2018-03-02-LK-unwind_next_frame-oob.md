@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - unwind_next_frame- oobs
-comments: true
+author: zer0day
+categories: lk
 ---
 
 unwind_next_frame - alloca Out Of Bounds

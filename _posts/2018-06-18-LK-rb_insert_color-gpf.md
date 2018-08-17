@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - rb_insert_color - general page fault
-comments: true
+author: zer0day
+categories: lk
 ---
 
 rb_insert_color - general page fault

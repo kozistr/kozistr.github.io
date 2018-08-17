@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - perf_exclude_event - oobs
-comments: true
+author: zer0day
+categories: lk
 ---
 
 perf_exclude_event - alloca Out Of Bounds

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - d_walk - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 d_walk - soft lockup

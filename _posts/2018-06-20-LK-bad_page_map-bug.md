@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - bad page map - bug
-comments: true
+author: zer0day
+categories: lk
 ---
 
 bad page map - bug

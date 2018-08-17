@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - process_preds - uaf/oobs
-comments: true
+author: zer0day
+categories: lk
 ---
 
 process_preds - slab out of bounds *Write* / use after free *Read/Write*

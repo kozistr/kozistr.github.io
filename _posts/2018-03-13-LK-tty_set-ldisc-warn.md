@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - tty_set_ldisc - warn
-comments: true
+author: zer0day
+categories: lk
 ---
 
 tty_set_ldisc - warn

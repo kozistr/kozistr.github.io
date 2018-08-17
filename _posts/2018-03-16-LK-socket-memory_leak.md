@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - socket - memory leak
-comments: true
+author: zer0day
+categories: lk
 ---
 
 socket - memory leak

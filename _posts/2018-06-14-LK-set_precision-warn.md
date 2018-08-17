@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - set_precision - warn
-comments: true
+author: zer0day
+categories: lk
 ---
 
 set_precision - warning

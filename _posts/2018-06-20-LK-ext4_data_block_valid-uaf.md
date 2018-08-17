@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - ext4_data_block_valid - uaf
-comments: true
+author: zer0day
+categories: lk
 ---
 
 ext4_data_block_valid - use after free *Read*

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - qlist_free_all - kernel paging request
-comments: true
+author: zer0day
+categories: lk
 ---
 
 qlist_free_all - unable to handle kernel paging request

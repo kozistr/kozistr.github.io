@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - __xfrm_policy_check - general page fault
-comments: true
+author: zer0day
+categories: lk
 ---
 
 __xfrm_policy_check - general page fault

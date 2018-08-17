@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - default_idle - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 default_idle - soft lockup

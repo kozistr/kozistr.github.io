@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - anon_vma_chain - slab ... overwritten
-comments: true
+author: zer0day
+categories: lk
 ---
 
 anon_vma_chain - slab padding/red zone overwritten

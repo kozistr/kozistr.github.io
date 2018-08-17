@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - iptunnel_handle_offloads - uaf
-comments: true
+author: zer0day
+categories: lk
 ---
 
 iptunnel_handle_offloads - use after free *Read*

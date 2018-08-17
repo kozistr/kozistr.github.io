@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - mon_bin_vma_fault - dead lock
-comments: true
+author: zer0day
+categories: lk
 ---
 
 mon_bin_vma_fault - dead lock

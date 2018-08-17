@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - dev_watchdog - warn
-comments: true
+author: zer0day
+categories: lk
 ---
 
 dev_watchdog - warning

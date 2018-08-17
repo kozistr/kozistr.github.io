@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - perf_trace_buf_alloc - warn
-comments: true
+author: zer0day
+categories: lk
 ---
 
 perf_trace_buf_alloc - warn

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - _decode_session6 - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 _decode_session6 - soft lockup

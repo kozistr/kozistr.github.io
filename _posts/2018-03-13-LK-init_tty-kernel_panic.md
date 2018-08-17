@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - init_tty - kernel panic
-comments: true
+author: zer0day
+categories: lk
 ---
 
 init_tty - kernel panic

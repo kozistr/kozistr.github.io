@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - xfrm_state_find - oobs
-comments: true
+author: zer0day
+categories: lk
 ---
 
 xfrm_state_find - stack out of bounds

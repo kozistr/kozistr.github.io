@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - get_work_pool - general page fault
-comments: true
+author: zer0day
+categories: lk
 ---
 
 get_work_pool - general page fault

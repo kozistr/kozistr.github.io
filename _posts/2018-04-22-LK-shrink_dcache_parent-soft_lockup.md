@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - shrink_dcache_parent - soft lockup
-comments: true
+author: zer0day
+categories: lk
 ---
 
 shrink_dcache_parent - soft lockup

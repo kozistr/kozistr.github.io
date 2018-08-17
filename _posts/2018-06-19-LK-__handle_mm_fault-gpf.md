@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - __handle_mm_fault - general page fault
-comments: true
+author: zer0day
+categories: lk
 ---
 
 __handle_mm_fault - general page fault

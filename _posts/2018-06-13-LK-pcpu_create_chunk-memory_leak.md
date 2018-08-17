@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.17.x - pcpu_create_chunk - memory leak
-comments: true
+author: zer0day
+categories: lk
 ---
 
 pcpu_create_chunk - memory leak

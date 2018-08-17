@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - uprobe_perf_close - uaf
-comments: true
+author: zer0day
+categories: lk
 ---
 
 uprobe_perf_close - use after free *Read*

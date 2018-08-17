@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - skb_release_data - uaf
-comments: true
+author: zer0day
+categories: lk
 ---
 
 skb_release_data - use after free *Write*
