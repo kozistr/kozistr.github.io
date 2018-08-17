@@ -6,9 +6,9 @@ permalink: /about/
 
 ##  Profile
 
-*Junior* in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
+**Junior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-Military Service Status : Unfulfilled
+Military Service Status : *Unfulfilled*
 
 CV : [[PDF] (as of Aug. 2018)](/refs/cv.pdf)
 
@@ -38,15 +38,25 @@ CV : [[PDF] (as of Aug. 2018)](/refs/cv.pdf)
 
 ## Publications
 
-Conferences
+**Conferences**
 
 [1]
 
-Journals
+**Journals**
 
-[1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/blob/master/_refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
+[1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](/refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
 
-## Work Experiences
+----------------------------------------------------------------
+
+## Awards
+
+### Machine Learning
+
+### Hacking
+
+----------------------------------------------------------------
+
+## Work Experience
 
 **Company**
 
@@ -55,6 +65,12 @@ Penetration Tester, **ELCID** **(2016.07 ~ 2017.08)**
 **Out Sourcing**
 
 Korean University Course Information Web Parsing (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
+
+----------------------------------------------------------------
+
+## Research Experience
+
+----------------------------------------------------------------
 
 ## Personal Projects
 
@@ -99,6 +115,12 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 * **NAVER A.I Hackathon** :: NAVER A.I Hackathon 2018
 > * [Final]() - *Kin* **4th place**, *Movie Review* **13th place** :: [*summary_paper*](https://github.com/kozistr/naver-ai-hackathon-2018)
 
+## Plug-Ins
+
+* IDA pro plug-in - GO ELF binary RTTI parser
+
+### Open Source Contribution
+
 
 ### Security, Hacking
 
@@ -122,11 +144,7 @@ Hacking Team, [**Fl4y**](http://f1ay.com/). **Since 2017.07 ~**
 
 Hacking Team, [**Demon**](https://demonteam.org/) by [*POC*](http://powerofcommunity.net/). **Since 2014.02 ~**
 
-### Programs
-
-**Plug-In**
-
-* IDA pro plug-in - GO ELF binary RTTI parser
+----------------------------------------------------------------
 
 ### Presentations
 
@@ -143,6 +161,3 @@ Hacking Team, [**Demon**](https://demonteam.org/) by [*POC*](http://powerofcommu
 **2014**
 
 [1] Network Sniffing & Detection, Oct, 2014.
-
-**End**
-
