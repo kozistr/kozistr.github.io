@@ -3,7 +3,7 @@ layout: post
 title: LK v4.16.x - kaslr bypass (memleak)
 author: zer0day
 categories: sec-res
-tags: 0-day, 1-day
+tags: 0-day
 ---
 
 About my recent founds :)
