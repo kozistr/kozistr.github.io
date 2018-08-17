@@ -20,7 +20,7 @@ Before we start, there're some concepts for bypassing those protections.
 
 Which means, userland code cannot be executed by the kernel. And its state is saved in Bit 20/21 of CR4 register.
 
-![CR4_Register](/images/cr4_register.png "CR4_Register")
+![CR4_Register](/assets/cr4_register.png "CR4_Register")
 
 To check whether it is activated or not, just read */proc/cpuinfo*, then find **smep**.
 

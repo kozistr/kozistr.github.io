@@ -20,7 +20,7 @@ Except this, there're some bugs, also memleak. But i didn't make them into usefu
 
 ## Demo Screen...
 
-![leak](/images/poc_0.jpeg)
+![leak](/assets/poc_0.jpeg)
 
 ```c
 zero@zer0day:/tmp$ uname -a
