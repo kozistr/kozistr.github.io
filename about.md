@@ -4,45 +4,47 @@ title: HyeongChan Kim
 permalink: /about/
 ---
 
-<img src="/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
-
 ##  Profile
 
 *Junior* in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-CV : [[PDF]](_refs/cv.pdf)
+Military Service Status : Unfulfilled
+
+CV : [[PDF] (as of Aug. 2018)](/refs/cv.pdf)
 
 ## Links
 
-Email : **kozistr**@gmail.com
-
-Github : [https://github.com/kozistr](https://github.com/kozistr)
-
-Kaggle : [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr)
-
-Another Blog : [http://zer0day.tistory.com](http://zer0day.tistory.com)
+|              |                                  |
+|:-------------|:---------------------------------|
+| Email        | **kozistr**@gmail.com            |
+| Github       | https://github.com/kozistr       |
+| Linkedin     | https://github.com/kozistr       |
+| Kaggle       | https://www.kaggle.com/kozistr   |
+| Facebook     | https://www.facebook.com/kozistr |
+| SideShare    | https://www.slideshare.net/KimHyeongChan |
+| Another Blog | http://zer0day.tistory.com       |
 
 ## Interests
 
-*Data Science* & **Machine Learning** & Challenge Stuffs :)
+### Current
 
-**Security Researcher** (mainly kernel exploitation)
+**Machine Learning**, **Data Science**
 
-**Reverse Engineering**
+### Old
+
+**Security Researches**, **Reverse Engineering**
+
+----------------------------------------------------------------
 
 ## Publications
 
-Conference
+Conferences
 
+[1]
 
 Journals
 
 [1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](https://github.com/kozistr/kozistr.github.io/blob/master/_refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
-
-SlideShare
-
-[1] kozistr, [*ZeroToAll Machine Learning for ALL*](https://www.slideshare.net/KimHyeongCHan/overview-of-machine-learning-90783681) Mar, 2018. <br/>
-[2] kozistr, [*ZeroToAll Artificial Intelligence for ALL*](https://www.slideshare.net/KimHyeongCHan/2018-0327artificial-intelligence) Apr, 2018. <br/>
 
 ## Work Experiences
 
@@ -65,7 +67,6 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > HTML/CSS, PHP <br/>
 > JavaScript (Vue.js) <br/>
 > Go (a little bit...) <br/>
-
 
 ### Machine Learning
 
