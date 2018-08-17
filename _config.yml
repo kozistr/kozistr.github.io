@@ -48,11 +48,17 @@ ga_tracking_id: "UA-116366668-1"
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: security
-    desc: "About my security researches"
+  - cat: sec-res
+    desc: "About my security researches (including 0,1-day analysis, etc...)"
+
+  - cat: lk
+    desc: "Linux Kernel security/performance holes review"
+
+  - cat: sec-tut
+    desc: "security techniques tutorial"
 
   - cat: ml
-    desc: "machine learning stuffs"
+    desc: "Machine Learning stuffs"
 
 # Social icons and sharing options
 #

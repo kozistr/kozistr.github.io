@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.15.x - sidtab_search_core - null dereference
-comments: true
+author: zer0day
+categories: lk
 ---
 
 selinux/sidtab_search_core - null dereference by GPF

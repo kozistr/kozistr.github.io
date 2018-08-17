@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.15.x - unwind_orc - stack out-of-bounds
-comments: true
+author: zer0day
+categories: lk
 ---
 
 unwind_orc - read 8 bytes stack oob in unwind_next_frame
@@ -12,6 +13,7 @@ posted & found by [zer0day](https://kozistr.github.io/)
 I just found the bug(?) stack oob (8 bytes read) in unwind_orc. So i just tested it on the latest LK (v4.15.0-rc4 currently),
 and it worked. But i found the commit about this bug(?).
 He(Commiter) said...
+
 > "The ORC unwinder got confused by some kprobes changes, which isn't
 surprising since the runtime code no longer matches vmlinux and the
 stack was modified for kretprobes. <br />

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LKE - tutorial - Stack based Overflow
-comments: true
+author: zer0day
+categories: sec-tut
 ---
 
 Linux Kernel Exploitation Tutorial - 2

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK - prlimit64 - kernel panic
-comments: true
+author: zer0day
+categories: lk
 ---
 
 prlimit64 (leading to kernel panic)

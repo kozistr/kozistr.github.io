@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LK v4.16.x - pfifo_fast_enqueue - kernel paging request
-comments: true
+author: zer0day
+categories: lk
 ---
 
 pfifo_fast_enqueue - unable to handle kernel paging request

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: LKE - tutorial - NULL dereference
-comments: true
+author: zer0day
+categories: sec-tut
 ---
 
 Linux Kernel Exploitation Tutorial - 1
