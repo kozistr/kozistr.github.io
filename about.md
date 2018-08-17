@@ -48,11 +48,26 @@ CV : [[PDF] (as of Aug. 2018)](/refs/cv.pdf)
 
 ----------------------------------------------------------------
 
-## Awards
+## Challenges & Awards
 
 ### Machine Learning
 
+* **NAVER A.I Hackathon** :: NAVER A.I Hackathon 2018
+> * [Final](https://github.com/naver/ai-hackathon-2018) - *Kin* **4th place**, *Movie Review* **13th place** :: [*summary_paper*](https://github.com/kozistr/naver-ai-hackathon-2018)
+
+* **TF-KR Challenge** :: Facebook TF-KR MNIST Challenge
+> * [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **Top 9, 3rd price, ACC 0.9964**
+
 ### Hacking
+
+* **Boot2Root CTF 2018** :: **2nd place** (Demon + alpha)
+> * 
+
+* **Harekaze CTF 2017** :: **3rd place** (SeoulWesterns)
+> * 
+
+* **WhiteHat League 1 (2017)** :: **2nd place** (Demon)
+> * Awarded by .... Received an award of $3,000
 
 ----------------------------------------------------------------
 
@@ -76,13 +91,13 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 ### Computer Languages
 
-> *Assembly* (x86, x86-64, arm, ...) <br/>
-> *C/C++*/C# <br/>
 > *Python* <br/>
-> Java <br/>
+> *C/C++*/C# <br/>
 > HTML/CSS, PHP <br/>
 > JavaScript (Vue.js) <br/>
 > Go (a little bit...) <br/>
+> *Assembly* (x86, x86-64, arm, ...) <br/>
+> Java <br/>
 
 ### Machine Learning
 
@@ -99,12 +114,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 * **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
 
-* **Kaggle-Challenge** :: My works of Kaggle-Challenges :: [code](https://github.com/kozistr/kaggle-challenge)
-
 **Challenges**
-
-* **TF-KR Challenge** :: Facebook TF-KR MNIST Challenge
-> * [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **top 9, 3rd price, ACC 0.9962**
 
 * **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
 > * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
@@ -112,8 +122,6 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
 > * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
 
-* **NAVER A.I Hackathon** :: NAVER A.I Hackathon 2018
-> * [Final]() - *Kin* **4th place**, *Movie Review* **13th place** :: [*summary_paper*](https://github.com/kozistr/naver-ai-hackathon-2018)
 
 ## Plug-Ins
 
