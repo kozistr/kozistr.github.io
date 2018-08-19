@@ -95,12 +95,12 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 ### Computer Languages
 
-> *Python* <br/>
-> *C/C++*/C# <br/>
+> **Python** <br/>
+> **C/C++**/C# <br/>
 > HTML/CSS, PHP <br/>
 > JavaScript (Vue.js) <br/>
 > Go (a little bit...) <br/>
-> *Assembly* (x86, x86-64, arm, ...) <br/>
+> Assembly (x86, x86-64, arm, ...) <br/>
 > Java <br/>
 
 ### Machine Learning
