@@ -117,9 +117,12 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
 > * ... lots of GANs :)
 
-* **Style-Transfer-tensorflow** :: Style-Transfer in Tensorlfow :: [code](https://github.com/kozistr/style-transfer)
+**Style Transfer**
 
-**Challenges**
+* **Image-Style-Transfer** :: Image Neural Style Transfer
+> * **style-transfer-tensorflow** :: Image Style-Transfer in Tensorflow ::  [code](https://github.com/kozistr/style-transfer)
+
+**Kaggle Challenges**
 
 * **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
 > * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
