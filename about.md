@@ -69,7 +69,7 @@ CV : [[PDF] (as of Aug. 2018)](/refs/cv.pdf)
 > * 
 
 * **WhiteHat League 1 (2017)** :: **2nd place** (Demon)
-> * Awarded by .... Received an award of $3,000
+> * Awarded by 한국정보기술연구원 Received an award of $3,000
 
 ----------------------------------------------------------------
 
