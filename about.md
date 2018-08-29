@@ -157,7 +157,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 Hacking Team, [**Fl4y**](http://f1ay.com/). **Since 2017.07 ~**
 
-Hacking Team, [**Demon**](https://demonteam.org/) by [*POC*](http://powerofcommunity.net/). **Since 2014.02 ~**
+Hacking Team, [**Demon**](https://demonteam.org/) by [*POC*](http://powerofcommunity.net/). **Since 2014.02 ~ 2018.08**
 
 ----------------------------------------------------------------
 
