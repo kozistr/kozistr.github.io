@@ -110,22 +110,22 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 * **GANs-tensorflow** :: Lots of GAN codes :) :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
 > * **ACGAN-tensorflow** :: Auxiliary Classifier GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/ACGAN)
 > * **StarGAN-tensorflow** :: Unified GAN for multi-domain :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/StarGAN)
-> * **LAPGAN-tensorflow** :: Laplacian Pyramid GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/LAPGAN)
-> * **BEGAN-tensorflow** :: Boundary Equilibrium in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/BEGAN)
-> * **DCGAN-tensorflow** :: Deep Convolutional GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/DCGAN)
-> * **SRGAN-tensorflow** :: Super Resolution GAN in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
-> * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in Tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
+> * **LAPGAN-tensorflow** :: Laplacian Pyramid GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/LAPGAN)
+> * **BEGAN-tensorflow** :: Boundary Equilibrium in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/BEGAN)
+> * **DCGAN-tensorflow** :: Deep Convolutional GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/DCGAN)
+> * **SRGAN-tensorflow** :: Super Resolution GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
+> * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
 > * ... lots of GANs :)
 
 **Style Transfer**
 
 * **Image-Style-Transfer** :: Image Neural Style Transfer
-> * **style-transfer-tensorflow** :: Image Style-Transfer in Tensorflow :: [code](https://github.com/kozistr/style-transfer)
+> * **style-transfer-tensorflow** :: Image Style-Transfer in tensorflow :: [code](https://github.com/kozistr/style-transfer)
 
 **Text Classification**
 
 * **Movie Rate prediction** :: Sentences classification
-> * **naver-movie-rate-prediction&& :: Korean sentences classification :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
+> * **naver-movie-rate-prediction** :: Korean sentences classification in tensorflow :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
 
 **Kaggle Challenges**
 
