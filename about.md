@@ -122,10 +122,10 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 * **Image-Style-Transfer** :: Image Neural Style Transfer
 > * **style-transfer-tensorflow** :: Image Style-Transfer in tensorflow :: [code](https://github.com/kozistr/style-transfer)
 
-**Text Classification**
+**Text Classification/Generation**
 
-* **Movie Rate prediction** :: Sentences classification
 > * **naver-movie-rate-prediction** :: Korean sentences classification in tensorflow :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
+> * **KoSpacing-tensorflow** :: Automatic Korean sentences spacing in tensorflow :: [~~code~~](https://github.com/kozistr/KoSpacing-tensorflow)
 
 **Kaggle Challenges**
 
