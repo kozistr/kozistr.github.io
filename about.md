@@ -124,7 +124,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 **Text Classification/Generation**
 
-> * **naver-movie-rate-prediction** :: Korean sentences classification in tensorflow :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
+> * **movie-rate-prediction** :: Korean sentences classification in tensorflow :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
 > * **KoSpacing-tensorflow** :: Automatic Korean sentences spacing in tensorflow :: [~~code~~](https://github.com/kozistr/KoSpacing-tensorflow)
 
 **Kaggle Challenges**
@@ -157,6 +157,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 * [KID](http://www.powerofxx.com/) 2017 CTF Staff, Challenge Maker
 * Belluminar 2017 CTF Staff
 * [HackingCamp](http://hackingcamp.org/) 17 CTF Staff, Challenge Maker
+* [HackingCamp](http://hackingcamp.org/) 18 CTF Staff, Challenge Maker
 
 **Teams**
 
