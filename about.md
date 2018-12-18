@@ -10,7 +10,7 @@ permalink: /about/
 
 Military Service Status : *Unfulfilled*
 
-CV : [[PDF] (as of Aug. 2018)](/refs/cv.pdf)
+CV : [[PDF] (as of Dec. 2018)](/refs/cv.pdf)
 
 ## Links
 
@@ -28,7 +28,7 @@ CV : [[PDF] (as of Aug. 2018)](/refs/cv.pdf)
 
 ### Current
 
-**Machine Learning**, **Data Science**
+**Machine Learning**, **Computer Vision**, **Natural Language Processing**,
 
 ### Old
 
