@@ -40,7 +40,7 @@ CV : [[PDF] (as of Dec. 2018)](/refs/cv.pdf)
 
 **Conferences**
 
-[1]
+[1] 
 
 **Journals**
 
@@ -51,6 +51,9 @@ CV : [[PDF] (as of Dec. 2018)](/refs/cv.pdf)
 ## Challenges & Awards
 
 ### Machine Learning
+
+* **NAVER NLP Challenge** :: NAVER NLP Challenge 2018
+> * [Final]() - *SRL* **6th place**, *Semantic Role Labeling* :: [Presentation]()
 
 * **NAVER A.I Hackathon** :: NAVER A.I Hackathon 2018
 > * [Final](https://github.com/naver/ai-hackathon-2018) - *Kin* **4th place**, *Movie Review* **13th place** :: [*summary_paper*](https://github.com/kozistr/naver-ai-hackathon-2018)
