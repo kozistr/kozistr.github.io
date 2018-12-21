@@ -80,7 +80,9 @@ CV : [[PDF] (as of Dec. 2018)](/refs/cv.pdf)
 
 **Company**
 
-Penetration Tester, **ELCID** **(2016.07 ~ 2017.08)**
+Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ )**
+
+Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
 
 <br/>
 
@@ -137,8 +139,8 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
 > * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
 > * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
-> * [Kaggle TGS Salt Identification](https://www.kaggle.com/kozistr) - **LB top %, IoU 0.795**
-> * [Kaggle Airbus Ship Detection](https://www.kaggle.com/kozistr) - **LB top %, IoU 0.**
+> * [Kaggle TGS Salt Identification](https://www.kaggle.com/kozistr) - **LB top %, IoU 0.798**
+> * [~~Kaggle Airbus Ship Detection~~](https://www.kaggle.com/kozistr) - **LB top %, IoU 0.**
 
 ### Plug-Ins
 
