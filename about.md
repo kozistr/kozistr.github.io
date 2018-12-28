@@ -132,6 +132,14 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 > * **movie-rate-prediction** :: Korean sentences classification in tensorflow :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
 > * **KoSpacing-tensorflow** :: Automatic Korean sentences spacing in tensorflow :: [~~code~~](https://github.com/kozistr/KoSpacing-tensorflow)
 
+**TTS**
+
+* **Tacotron-tensorflow** :: Text To Sound (TTS)
+> * **tacotron-tensorflow** :: lots of TTS models in tensorflow :: [code](https://github.com/kozistr/tacotron-tensorflow)
+
+**Speech Recognition** :: Speech Recognition
+> *
+
 **Kaggle Challenges**
 
 * **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
