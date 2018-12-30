@@ -38,9 +38,9 @@ CV : [[PDF] (as of Dec. 2018)](/refs/cv.pdf)
 
 ## Publications
 
-**Conferences**
+**Conferences/Workshops**
 
-[1] 
+[1] kozistr_team, [*NAVER NLP Challenge 2018 SRL Task*]()
 
 **Journals**
 
