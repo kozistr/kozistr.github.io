@@ -94,6 +94,8 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 
 ## Research Experience
 
+[1] ... (private)
+
 ----------------------------------------------------------------
 
 ## Personal Projects
