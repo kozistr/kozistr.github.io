@@ -6,7 +6,7 @@ permalink: /about/
 
 ##  Profile
 
-**Junior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
+**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
 Military Service Status : *Unfulfilled*
 
@@ -40,7 +40,7 @@ CV : [[PDF] (as of Dec. 2018)](/refs/cv.pdf)
 
 **Conferences/Workshops**
 
-[1] kozistr_team, [*NAVER NLP Challenge 2018 SRL Task*]()
+[1] kozistr_team, [*NAVER NLP Challenge 2018 SRL Task*](https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf)
 
 **Journals**
 
