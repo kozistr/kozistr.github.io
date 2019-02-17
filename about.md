@@ -84,11 +84,17 @@ Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ )**
 
 Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
 
-<br/>
+<br>
 
 **Out Sourcing**
 
 Korean University Course Information Web Parsing (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
+
+<br>
+
+**Lab**
+
+HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 
 ----------------------------------------------------------------
 
