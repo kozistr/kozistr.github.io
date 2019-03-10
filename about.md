@@ -100,7 +100,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 
 ## Research Experience
 
-[1] ... (private)
+[1] **Kim** et al, [CNN Architecture Predicting Movie Rating](./_ref/CNN Architecture Predicting Movie Rating.pdf), 2019. 01.
 
 ----------------------------------------------------------------
 
