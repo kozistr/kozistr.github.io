@@ -28,7 +28,7 @@ CV : [[PDF] (as of Feb. 2019)](/refs/cv.pdf)
 
 ### Current
 
-**Machine Learning**, **Computer Vision**, **Natural Language Processing**,
+**Machine Learning**, **Computer Vision**, **Natural Language Processing**, **Sound Synthesis**
 
 ### Old
 
@@ -128,7 +128,11 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 > * **DCGAN-tensorflow** :: Deep Convolutional GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/DCGAN)
 > * **SRGAN-tensorflow** :: Super Resolution GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
 > * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
-> * ... lots of GANs :)
+> * ... lots of GANs (over 20) :)
+
+**Super Resolution**
+* **Image Super Resolution** :: Image Super Resolution
+> * **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
 
 **Style Transfer**
 
@@ -139,14 +143,22 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 
 > * **movie-rate-prediction** :: Korean sentences classification in tensorflow :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
 > * **KoSpacing-tensorflow** :: Automatic Korean sentences spacing in tensorflow :: [~~code~~](https://github.com/kozistr/KoSpacing-tensorflow)
+> * **text-tagging** :: Automatic Korean articles categories classification in tensorflow :: [code](https://github.com/sales-tagging/text-tagging-ml)
 
-**TTS**
+**Speech Synthesis**
 
 * **Tacotron-tensorflow** :: Text To Sound (TTS)
 > * **tacotron-tensorflow** :: lots of TTS models in tensorflow :: [code](https://github.com/kozistr/tacotron-tensorflow)
 
 **Speech Recognition** :: Speech Recognition
-> *
+> * [private] :: noisy acoustic speech recognition system in tensorflow :: [~~code~~]()
+
+**Optimizer**
+
+* **AdaBound** :: Optimizer that trains as fast as Adam and as good as SGD
+> * **AdaBound-tensorflow** :: AdaBound Optimizer implementation in tensorflow :: [code](https://github.com/kozistr/AdaBound-tensorflow)
+
+****
 
 **Kaggle Challenges**
 
