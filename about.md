@@ -10,7 +10,7 @@ permalink: /about/
 
 Military Service Status : *Unfulfilled*
 
-CV : [[PDF] (as of Feb. 2019)](/refs/cv.pdf)
+CV : [[PDF] (as of Feb. 2019)](/_ref/cv.pdf)
 
 ## Links
 
