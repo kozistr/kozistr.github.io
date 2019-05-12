@@ -10,7 +10,7 @@ permalink: /about/
 
 Military Service Status : *Unfulfilled*
 
-CV : [[PDF] (as of Feb. 2019)](/_ref/cv.pdf)
+CV : [[PDF] (as of May. 2019)](/_ref/cv.pdf)
 
 ## Links
 
@@ -26,13 +26,9 @@ CV : [[PDF] (as of Feb. 2019)](/_ref/cv.pdf)
 
 ## Interests
 
-### Current
-
 **Machine Learning**, **Computer Vision**, **Natural Language Processing**, **Sound Synthesis**
 
-### Old
-
-**Security Researches**, **Reverse Engineering**
+Security Researches, Reverse Engineering
 
 ----------------------------------------------------------------
 
@@ -112,7 +108,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 > **C/C++**/C# <br/>
 > HTML/CSS, PHP <br/>
 > JavaScript (Vue.js) <br/>
-> Go (a little bit...) <br/>
+> Golang <br/>
 > Assembly (x86, x86-64, arm, ...) <br/>
 > Java <br/>
 
@@ -133,6 +129,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 **Super Resolution**
 * **Image Super Resolution** :: Image Super Resolution
 > * **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
+> * **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [~~code~~](https://github.com/kozistr/ESRGAN-tensorflow)
 
 **Style Transfer**
 
@@ -148,7 +145,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 **Speech Synthesis**
 
 * **Tacotron-tensorflow** :: Text To Sound (TTS)
-> * **tacotron-tensorflow** :: lots of TTS models in tensorflow :: [code](https://github.com/kozistr/tacotron-tensorflow)
+> * **tacotron-tensorflow** :: lots of TTS models in tensorflow :: [~~code~~](https://github.com/kozistr/tacotron-tensorflow)
 
 **Speech Recognition** :: Speech Recognition
 > * [private] :: noisy acoustic speech recognition system in tensorflow :: [~~code~~]()
@@ -171,7 +168,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 
 ### Plug-Ins
 
-* IDA pro plug-in - GO ELF binary RTTI parser
+* IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 
 ### Open Source Contribution
 
