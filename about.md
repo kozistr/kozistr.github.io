@@ -53,6 +53,9 @@ Security Researches, Reverse Engineering
 * **NAVER NLP Challenge** :: NAVER NLP Challenge 2018
 > * [Final](https://github.com/naver/nlp-challenge) - *Semantic Role Labeling (SRL)* **6th place** :: [Presentation]()
 
+* **A.I R&D Challenge** :: A.I R&D Challenge 2018
+> * [Final](http://airndchallenge.com/g5) - *Fake or Real Detection* - as *Digital Forensic* Team
+
 * **NAVER A.I Hackathon** :: NAVER A.I Hackathon 2018
 > * [Final](https://github.com/naver/ai-hackathon-2018) - *Kin* **4th place**, *Movie Review* **13th place** :: [*summary_paper*](https://github.com/kozistr/naver-ai-hackathon-2018)
 
