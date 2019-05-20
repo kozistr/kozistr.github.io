@@ -114,12 +114,9 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 ### Computer Languages
 
 > **Python** <br/>
-> **C/C++**/C# <br/>
-> HTML/CSS, PHP <br/>
-> JavaScript (Vue.js) <br/>
-> Golang <br/>
+> **C/C++** <br/>
 > Assembly (x86, x86-64, arm, ...) <br/>
-> Java <br/>
+> *experienced with more than 10 languages*
 
 ### Machine Learning
 
