@@ -129,7 +129,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 > * **BEGAN-tensorflow** :: Boundary Equilibrium in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/BEGAN)
 > * **DCGAN-tensorflow** :: Deep Convolutional GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/DCGAN)
 > * **SRGAN-tensorflow** :: Super Resolution GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
-> * **WGAN-GP-tensorflow** :: Wasserstein GAN with gradient penalty in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
+> * **WGAN-GP-tensorflow** :: Wasserstein GAN w/ gradient penalty in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
 > * ... lots of GANs (over 20) :)
 
 **Super Resolution**
