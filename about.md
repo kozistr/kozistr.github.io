@@ -174,10 +174,10 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 
 ### Plug-Ins
 
-* IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
+IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 - recover stripped symbols & information and patch byte-codes for being able to hex-ray
 
-### Open Source Contribution
+### Open Source Contributions
 
 * [syzkaller](https://github.com/google/syzkaller) :: New Generation of Linux Kernel Fuzzer :: Minor contribution [#575](https://github.com/google/syzkaller/pull/575)
 
