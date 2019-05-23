@@ -175,6 +175,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 ### Plug-Ins
 
 * IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
+- recover stripped symbols & information and patch byte-codes for being able to hex-ray
 
 ### Open Source Contribution
 
