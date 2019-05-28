@@ -94,6 +94,7 @@ Korean University Course Information Web Parsing (About 40 Universities). **2 ti
 **Lab**
 
 HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
+- Wrote a paper about improved TextCNN model for predicting a movie rate
 
 ----------------------------------------------------------------
 
