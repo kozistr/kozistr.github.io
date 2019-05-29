@@ -37,6 +37,7 @@ Security Researches, Reverse Engineering
 **Conferences/Workshops**
 
 [1] kozistr_team, [*NAVER NLP Challenge 2018 SRL Task*](https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf)
+- SRL Task, challenging w/o any domain knowledge. Presented about trails & errors during the competition
 
 **Journals**
 
