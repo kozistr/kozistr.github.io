@@ -42,6 +42,7 @@ Security Researches, Reverse Engineering
 **Journals**
 
 [1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](/refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
+- Wrote about lots of anti-reversing / debugging (A to Z) techniques avail on window executable binary
 
 ----------------------------------------------------------------
 
