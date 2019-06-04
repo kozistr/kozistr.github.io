@@ -76,7 +76,7 @@ Security Researches, Reverse Engineering
 
 **Company**
 
-Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ )**
+Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ 2019.xx)**
 
 Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
 
