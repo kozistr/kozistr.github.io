@@ -77,6 +77,7 @@ Security Researches, Reverse Engineering
 **Company**
 
 Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ 2019.xx)**
+- Developed speaker verification models & diarization algorithms for speaker diraization
 
 Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
 
