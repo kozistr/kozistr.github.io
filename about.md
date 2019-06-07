@@ -81,6 +81,7 @@ Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ 2019.xx)**
 - Developed hair swapping / reconstruction & semantic segmentation models
 
 Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
+- Penetrated some products related to firewall
 
 <br>
 
