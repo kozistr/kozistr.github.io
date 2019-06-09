@@ -129,7 +129,7 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 **Super Resolution**
 * **Image Super Resolution** :: Image Super Resolution
 > * **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
-> * **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [~~code~~](https://github.com/kozistr/ESRGAN-tensorflow)
+> * **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [code](https://github.com/kozistr/ESRGAN-tensorflow)
 
 **Style Transfer**
 
