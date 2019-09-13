@@ -10,7 +10,7 @@ permalink: /about/
 
 Military Service Status : *Unfulfilled*
 
-CV : [[PDF] (as of May. 2019)](/_ref/cv.pdf)
+CV : [[PDF] (as of Sep. 2019)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
 
 ## Links
 
