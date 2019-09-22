@@ -81,25 +81,26 @@ Security Researches, Reverse Engineering
 
 **Company**
 
-Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ 2019.xx)**
-- Developed speaker verification models & diarization algorithms for speaker diraization
-- Developed hair swapping / reconstruction & semantic segmentation models
+Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ 2019.1x)**
+- Developed a robust Speaker Verification model and etc for recognizing and diarizing the arbitrary speaker recorded from the noisy environment.
+- Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
 Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
-- Penetrated some products related to firewall
+- Penetrated some products related to network firewall and anti-virus product.
 
 <br>
 
 **Out Sourcing**
 
-Korean University Course Information Web Parsing (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
+- Developed Korean University Course Information Web Parser (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
+- Developed AWS CloudTrail logger analyzer / formatter. **(2019.9)**
 
 <br>
 
 **Lab**
 
-HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
-- Wrote a paper about improved TextCNN model for predicting a movie rate
+HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
+- Wrote a paper about improved TextCNN model for predicting a movie rate.
 
 ----------------------------------------------------------------
 
@@ -133,12 +134,14 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 > * ... lots of GANs (over 20) :)
 
 **Super Resolution**
-* **Image Super Resolution** :: Image Super Resolution
+* **Single Image Super Resolution** :: Single Image Super Resolution (SISR)
 > * **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
 > * **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [code](https://github.com/kozistr/ESRGAN-tensorflow)
 
-**Style Transfer**
+**I2I Translation**
+* **Improved Content Disentanglement** :: tuned version of 'Content Disentanglement' in pytorch :: [code](https://github.com/kozistr/improved-ContentDisentanglement)
 
+**Style Transfer**
 * **Image-Style-Transfer** :: Image Neural Style Transfer
 > * **style-transfer-tensorflow** :: Image Style-Transfer in tensorflow :: [code](https://github.com/kozistr/style-transfer)
 
@@ -160,6 +163,13 @@ HPC Lab, KoreaTech, **(2018.09 ~ 2018.12)**
 
 * **AdaBound** :: Optimizer that trains as fast as Adam and as good as SGD
 > * **AdaBound-tensorflow** :: AdaBound Optimizer implementation in tensorflow :: [code](https://github.com/kozistr/AdaBound-tensorflow)
+
+* **RAdam** :: On The Variance Of The Adaptive Learning Rate And Beyond in tensorflow
+> * **RAdam-tensorflow** :: RAdam Optimizer implementation in tensorflow :: [code](https://github.com/kozistr/RAdam-tensorflow)
+
+**R.L**
+
+* **Rosseta Stone** :: Hearthstone simulator using C++ with some reinforcement learning :: [code](https://github.com/utilForever/RosettaStone)
 
 ****
 
