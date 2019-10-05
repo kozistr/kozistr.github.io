@@ -10,7 +10,7 @@ permalink: /about/
 
 Military Service Status : *Unfulfilled*
 
-CV : [[PDF] (as of Sep. 2019)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
+CV : [[PDF] (as of Oct. 2019)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
 
 ## Links
 
@@ -81,7 +81,7 @@ Security Researches, Reverse Engineering
 
 **Company**
 
-Machine Learning Engineer, **VoyagerX Intern**, **(2019.01 ~ 2019.1x)**
+Machine Learning Engineer, **VoyagerX Intern**, **(2019.01.07 ~ 2019.10.04)**
 - Developed a robust Speaker Verification model and etc for recognizing and diarizing the arbitrary speaker recorded from the noisy environment.
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
