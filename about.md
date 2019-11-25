@@ -10,7 +10,7 @@ permalink: /about/
 
 Military Service Status : *Unfulfilled*
 
-CV : [[PDF] (as of Oct. 2019)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
+CV : [[PDF] (as of Nov. 2019)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
 
 ## Links
 
@@ -81,7 +81,12 @@ Security Researches, Reverse Engineering
 
 **Company**
 
-Machine Learning Engineer, **VoyagerX Intern**, **(2019.01.07 ~ 2019.10.04)**
+Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ )**
+- Working as a full time.
+- Developing ...
+
+Machine Learning Engineer, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
+- Working as an intern.
 - Developed a robust Speaker Verification model and etc for recognizing and diarizing the arbitrary speaker recorded from the noisy environment.
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
@@ -93,7 +98,7 @@ Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
 **Out Sourcing**
 
 - Developed Korean University Course Information Web Parser (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
-- Developed AWS CloudTrail logger analyzer / formatter. **(2019.9)**
+- Developed AWS CloudTrail logger analyzer / formatter. **(2019.09)**
 
 <br>
 
