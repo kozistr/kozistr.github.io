@@ -83,6 +83,7 @@ Security Researches, Reverse Engineering
 
 Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ )**
 - Working as a full time.
+- Developed the card & bank account transaction category classification models, designed light weight purpose for the low latency.
 - Developing ...
 
 Machine Learning Engineer, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
@@ -181,11 +182,11 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 **Kaggle Challenges**
 
 * **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
-> * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%, ACC 0.99757**
-> * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%, ACC 0.80861**
-> * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%, ACC 0.98801**
-> * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%, ACC 0.98236**
-> * [Kaggle TGS Salt Identification](https://www.kaggle.com/kozistr) - **LB top %, IoU 0.798**
+> * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **top 3% (28 / 1214)** (2019.)
+> * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%** (2017.)
+> * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%** (2017.)
+> * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%**
+> * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%**
 
 ### Plug-Ins
 
