@@ -26,9 +26,9 @@ CV : [[PDF] (as of Jan. 2020)](https://github.com/kozistr/kozistr.github.io/blob
 
 ## Interests
 
-**Machine Learning**, **Computer Vision**, **Natural Language Processing**, **Sound Synthesis**
+**Machine Learning**, **Computer Vision**, **Natural Language Processing**,
 
-Security Researches, Reverse Engineering
+Previously, i'm also interested in security researches, kind of *Reverse Engineering*, *Linux kernel exploitation*, ....
 
 ----------------------------------------------------------------
 
