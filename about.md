@@ -20,7 +20,6 @@ CV : [[PDF] (as of Jan. 2020)](https://github.com/kozistr/kozistr.github.io/blob
 | Github       | [https://github.com/kozistr](https://github.com/kozistr)       |
 | Linkedin     | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr)     |
 | Kaggle       | [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr)   |
-| Facebook     | [https://www.facebook.com/kozistr](https://www.facebook.com/kozistr) |
 | SideShare    | [https://www.slideshare.net/KimHyeongChan](https://www.slideshare.net/KimHyeongChan) |
 | Another Blog | [http://zer0day.tistory.com](http://zer0day.tistory.com)       |
 
