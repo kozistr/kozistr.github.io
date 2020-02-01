@@ -48,6 +48,9 @@ ga_tracking_id: "UA-116366668-1"
 
 # Category descriptions (for archive pages)
 descriptions:
+  - cat: deep-learning
+    desc: "About all about deep learning"
+
   - cat: sec-res
     desc: "About my security researches (including 0,1-day analysis, etc...)"
 
