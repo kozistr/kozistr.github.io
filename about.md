@@ -8,9 +8,11 @@ permalink: /about/
 
 **Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-Military Service Status : *Unfulfilled*
+Alternative Military Service Status : *Unfulfilled* 
 
-CV : [[PDF] (as of Jan. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
+**I'm looking for a company, MLE position as Skilled Industry Personnel.**
+
+CV : [[PDF] (as of Mar. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
 
 ## Links
 
@@ -82,12 +84,12 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ )**
 - Working as a full time.
-- Developed the card & bank account transaction category classification models, designed light weight purpose for the low latency.
-- Developing ...
+- Developed the card & bank account transaction category classification models, designed light weight purpose for the low latency. (now in service)
+- Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
 
 Machine Learning Engineer, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 - Working as an intern.
-- Developed a robust Speaker Verification model and etc for recognizing and diarizing the arbitrary speaker recorded from the noisy environment.
+- Developed a robust speaker verification model for recognizing and diarizing the arbitrary speaker recorded from the noisy environment.
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
 Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
@@ -98,7 +100,7 @@ Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
 **Out Sourcing**
 
 - Developed Korean University Course Information Web Parser (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
-- Developed AWS CloudTrail logger analyzer / formatter. **(2019.09)**
+- Developed AWS CloudTrail logger analyzer / formatter. **(2019.09 ~ 2019.10)**
 
 <br>
 
@@ -111,7 +113,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 ## Research Experience
 
-[1] **Kim** et al, [CNN Architecture Predicting Movie Rating](./_ref/CNN Architecture Predicting Movie Rating.pdf), 2019. 01.
+[1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
 
 ----------------------------------------------------------------
 
