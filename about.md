@@ -183,6 +183,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 **Kaggle Challenges**
 
 * **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
+> * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **top 4% (67 / 2059)** (2020.)
 > * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **top 3% (28 / 1214)** (2019.)
 > * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%** (2017.)
 > * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%** (2017.)
