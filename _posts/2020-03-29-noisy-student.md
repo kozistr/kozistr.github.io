@@ -53,9 +53,14 @@ EfficientNet : [arXiv](https://arxiv.org/pdf/1905.11946.pdf)
 
 Student Model 을 학습할 때 논문에서 `Noisy` 하게 훈련한다고 했는데, 이 때 `Noisy` 에 해당하는 부분은 크게 3 부분 입니다.
 
-1. Data Augmentation
+1. Data Augmentation w/ RandAugment
 2. Dropout
 3. Stochastic Depth
+4. etc (data filtering, balancing)
+  * unlabelled data 에 대해선 class 별 samples 수가 biased 돼있으니, 적은 sample 들 duplicate 하기
+  * pseudo label 시, soft or hard pseudo 한다고 했었는데, soft, hard 둘다 좋은 결과를 보였지만, soft 가 더 좋았다
+
+요런 기법들은 이전에 소개된 기법들이니 설명은 pass
 
 ## Experiment Result
 
