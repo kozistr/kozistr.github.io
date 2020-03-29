@@ -56,7 +56,8 @@ Student Model 을 학습할 때 논문에서 `Noisy` 하게 훈련한다고 했�
 1. Data Augmentation w/ RandAugment
 2. Dropout
 3. Stochastic Depth
-4. etc (data filtering, balancing)
+4. other techniques (data filtering, balancing)
+  * OOD (Out-Of-Distribution)
   * unlabelled data 에 대해선 class 별 samples 수가 biased 돼있으니, 적은 sample 들 duplicate 하기
   * pseudo label 시, soft or hard pseudo 한다고 했었는데, soft, hard 둘다 좋은 결과를 보였지만, soft 가 더 좋았다
 
