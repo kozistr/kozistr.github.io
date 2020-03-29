@@ -49,6 +49,27 @@ EfficientNet : [arXiv](https://arxiv.org/pdf/1905.11946.pdf)
 위 과정이 knowledge (self) distillation 과 비슷한 과정인데, 주로 요 목적은 compression 으로 사용되는데, 여기는 
 해당 목적 (not compression) 으로 사용하지 않는다는게 차이점 입니다.
 
+### Training
+
+데이터 셋이나 구체적인 training recipe 들이 있지만, 적용한 technique 가 있어서 이걸 설명 해 보면,
+
+#### fix train-test resolution discrepancy
+
+처음 몇 epoch 은 low resolution image 로 훈련을 하고 후에 high resolution image 로 fine-tuning 하는 기법입니다.
+
+논문 실험에서는 처음 350 epochs 는 낮은 해상도 이미지로 훈련하고, 1.5 epochs 는 더 큰 해상도로 unlabelled image 에 대해서 훈련했다고 하네요.
+
+unlabelled image data 는 학습할 때 labelled image 보다 14 배 큰 batch size 를 사용했다고도 하네요.
+
+#### Iterative Training
+
+논문에서는 총 3 steps 의 iterative training 을 했다고 소개합니다.
+
+1. `EfficientNet-b7` 을 ImageNet 으로 훈련 `(as Teacher)`
+2. `EfficientNet-L2` 를 JFT-300M + ImageNet 으로 훈련 `(as Student)` (batch size 비율은 labelled : unlabelled = 1 : 14)
+3. `EfficientNet-L2` 를 새롭게 훈련 `2` 에서 만든 모델을 `Teacher` 로 사용 `(as Student)`
+4. `3` 과 비슷한 scheme 으로 진행하는데, (batch size 비율은 labelled : unlabelled = 1 : 28) 로 훈련
+
 #### Noisy
 
 Student Model 을 학습할 때 논문에서 `Noisy` 하게 훈련한다고 했는데, 이 때 `Noisy` 에 해당하는 부분은 크게 3 부분 입니다.
@@ -67,5 +88,8 @@ Student Model 을 학습할 때 논문에서 `Noisy` 하게 훈련한다고 했�
 
 
 ## Conclusion
+
+요즘 경향들은 이전처럼 deep 한 architecture 를 설계하거나 AutoML 을 이용한 NAS 를 만드는 것 보다는,
+training recipe (~ techniques) 에 집중을 하고 있는데, 이런 trend 에서 재미있는 approach 들이 많이 나오고 있는 것 같네요.
 
 결론 : 굳
