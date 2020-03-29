@@ -86,10 +86,48 @@ Student Model 을 학습할 때 논문에서 `Noisy` 하게 훈련한다고 했�
 
 ## Experiment Result
 
+### ImageNet Benchmark
+
+역대 ImageNet architecture 들 정확도를 benchmark 한 table 인데, 다른 구조보다 
+
+1. 더 적은 params 수
+2. 상대적으로 적은 data 수
+3. 더 높은 성능
+
+을 달성했다는 점에서 의미가 있을 것 같네요.
+
+![img](/assets/NoisyStudent/overall-imagenet-performance.png)
+
+### Robustness Results on ImageNet-A, ImageNetC and ImageNet-P
+
+해당 dataset 은 이 모델이 정말로 noise 에 robust 한지 체크하는 task 입니다.
+
+예를 들어서, (일반적인 corruptions, perturbations)
+
+1. blur 섞인 이미지
+2. fogged 이미지
+3. rotated 이미지 
+4. scaled 이미지
+
+등등이 데이터에 섞여 있어요.
+
+![img](/assets/NoisyStudent/imagenet-a-benchmark.png)
+
+ImageNet-A dataset benchmark table 만 하나 보면, 확실히 `The Noise` 가 robustness 에 큰 도움을 주고 있네요.
+
+### Adversarial Robustness
+
+이번 실험은 adversarial attack 에도 robust 한지 확인하는 겁니다. 주로 FGSM Attack 을 해서 테스트를 하는데, 성능은 아래와 같습니다.
+
+![img](/assets/NoisyStudent/fgsm-benchmark.png)
+
+FGSM 보다 더 강력한 attack 인 FGD Attack 시에도 꽤괜 성능을 보였다고 캅니다.
 
 ## Conclusion
 
 요즘 경향들은 이전처럼 deep 한 architecture 를 설계하거나 AutoML 을 이용한 NAS 를 만드는 것 보다는,
 training recipe (~ techniques) 에 집중을 하고 있는데, 이런 trend 에서 재미있는 approach 들이 많이 나오고 있는 것 같네요.
+
+또 현재 상태에서 CutMix 등등 여러 또 다른 기술들이 적용되면 최고 performance 가 어느 정도 될지도 궁금해 지네요.
 
 결론 : 굳
