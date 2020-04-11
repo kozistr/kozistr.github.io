@@ -39,6 +39,7 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 [1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
 - Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
+- Handling un-normalized text w/ various convolution kernel size and dropout
 
 **Conferences/Workshops**
 
