@@ -35,6 +35,11 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 ## Publications
 
+**Paper**
+
+[1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
+- Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
+
 **Conferences/Workshops**
 
 [1] kozistr_team, [*NAVER NLP Challenge 2018 SRL Task*](https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf)
@@ -111,12 +116,6 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 ----------------------------------------------------------------
 
-## Research Experience
-
-[1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
-
-----------------------------------------------------------------
-
 ## Personal Projects
 
 ### Computer Languages
@@ -144,6 +143,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 * **Single Image Super Resolution** :: Single Image Super Resolution (SISR)
 > * **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
 > * **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [code](https://github.com/kozistr/ESRGAN-tensorflow)
+> * **NatSR-pytorch** :: NatSR implementation in pytorch :: [code](https://github.com/kozistr/NatSR-pytorch)
 
 **I2I Translation**
 * **Improved Content Disentanglement** :: tuned version of 'Content Disentanglement' in pytorch :: [code](https://github.com/kozistr/improved-ContentDisentanglement)
@@ -193,11 +193,12 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 ### Plug-Ins
 
 IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
-- recover stripped symbols & information and patch byte-codes for being able to hex-ray
+- Recover stripped symbols & information and patch byte-codes for being able to hex-ray
 
 ### Open Source Contributions
 
 * [syzkaller](https://github.com/google/syzkaller) :: New Generation of Linux Kernel Fuzzer :: Minor contribution [#575](https://github.com/google/syzkaller/pull/575)
+* [simpletransformers](https://github.com/https://github.com/ThilinaRajapakse/simpletransformers) :: Transformers made simple w/ training, evaluating, and prediction possible w/ one line each. :: [#290](https://github.com/ThilinaRajapakse/simpletransformers/pull/290)
 
 ### Security, Hacking
 
