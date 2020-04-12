@@ -69,7 +69,15 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 * **TF-KR Challenge** :: Facebook TF-KR MNIST Challenge
 > * [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **Top 9, 3rd price, ACC 0.9964**
 
-<br/>
+****
+
+* **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
+> * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **top 4% (67 / 2059)** (2020.)
+> * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **top 3% (28 / 1214)** (2019.)
+> * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%** (2017.)
+> * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%** (2017.)
+> * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%**
+> * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%**
 
 ### Hacking
 
@@ -178,18 +186,6 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 **R.L**
 
 * **Rosseta Stone** :: Hearthstone simulator using C++ with some reinforcement learning :: [code](https://github.com/utilForever/RosettaStone)
-
-****
-
-**Kaggle Challenges**
-
-* **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
-> * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **top 4% (67 / 2059)** (2020.)
-> * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **top 3% (28 / 1214)** (2019.)
-> * [Kaggle MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **LB top 4%** (2017.)
-> * [Kaggle Titanic](https://www.kaggle.com/kozistr) - **LB top 5%** (2017.)
-> * [Kaggle Plant Seedlings Classification](https://www.kaggle.com/kozistr) - **LB top 12%**
-> * [Kaggle Invasive Species Monitoring](https://www.kaggle.com/kozistr) - **LB top 25%**
 
 ### Plug-Ins
 
