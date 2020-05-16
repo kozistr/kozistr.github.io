@@ -72,8 +72,9 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 ****
 
 * **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
-> * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **top 4% (67 / 2059)** (2020.)
-> * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **top 3% (28 / 1214)** (2019.)
+> * [Flower Classification with TPUs](https://www.kaggle.com/c/flower-classification-with-tpus/) - **top 4% (27 / 848), Private 0.98734** (2020.)
+> * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **top 4% (67 / 2059), Private 0.9372** (2020.)
+> * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **top 3% (28 / 1214), Private 0.99100** (2019.)
 
 ### Hacking
 
