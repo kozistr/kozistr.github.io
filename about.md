@@ -192,7 +192,7 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 ### Open Source Contributions
 
 * [syzkaller](https://github.com/google/syzkaller) :: New Generation of Linux Kernel Fuzzer :: Minor contribution [#575](https://github.com/google/syzkaller/pull/575)
-* [simpletransformers](https://github.com/https://github.com/ThilinaRajapakse/simpletransformers) :: Transformers made simple w/ training, evaluating, and prediction possible w/ one line each. :: [#290](https://github.com/ThilinaRajapakse/simpletransformers/pull/290)
+* [simpletransformers](https://github.com/https://github.com/ThilinaRajapakse/simpletransformers) :: Transformers made simple w/ training, evaluating, and prediction possible w/ one line each. :: Minor contribution [#290](https://github.com/ThilinaRajapakse/simpletransformers/pull/290)
 
 ### Security, Hacking
 
