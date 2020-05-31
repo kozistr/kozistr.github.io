@@ -100,7 +100,7 @@ Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ 2020.06.)**
 
 Machine Learning Engineer, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 - Worked as an intern.
-- Developed a speaker verification, a speaker diarization models & logic for recognizing the arbitrary speakers recorded from the noisy (real-world) environment.
+- Developed speaker verification, diarization models & logic for recognizing the arbitrary speakers recorded from the noisy (real-world) environment.
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
 Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
