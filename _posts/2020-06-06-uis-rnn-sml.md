@@ -44,7 +44,7 @@ diarization task 를 확률 모델 적으로 아래 식으로 joint probability 
 
 이 문제를 online generative problem 으로 바꿔본다면, 식이 아래와 같이 써 볼 수 있겠죠?
 
-> $p(x_t, y_t, z_t\|x_{[t-1]}, y_{[t-1]} z_{[t-1]}) = p(x_t\|x_{[t-1]}, y_t) * p(y_t\|y_{[t-1]}, z_t)) * p(z_t\|z_{[t-1]})), (time t)$
+> $p(x_t, y_t, z_t\|x_{[t-1]}, y_{[t-1]} z_{[t-1]}) = p(x_t\|x_{[t-1]}, y_t) * p(y_t\|y_{[t-1]}, z_t)) * p(z_t\|z_{[t-1]})), (time  t)$
 
 $x_t, y_t, z_t$ 에 대한 조건부 확률을 순서대로 보면 
 
@@ -60,7 +60,18 @@ $x_t, y_t, z_t$ 에 대한 조건부 확률을 순서대로 보면
 
 ### UIS-RNN
 
-기존의 `UIS-RNN`은 
+기존의 `UIS-RNN`은 아래와 같은 diagram 처럼 훈련이 되고 있는데요,
+
+![img](/assets/UIS-RNN-SML/uis-rnn.png)
+
+Dataset $D = {(X_1, ..., X_M), (Y_1, ..., Y_M)}$ ($M$, sequences of embeddings, related labels) 이라 하면, 
+$\theta^*$ 를 통해 아래와 같은 log likelihood 를 minimizing 시키는 겁니다.
+
+>  $L = \sum_{m=1}^{D} - ln p(X_m\|Y_M;\theta)$
+
+위에 sequence generation 에 대한 formula 와 바로 위 log likelihood 식을 MSE fashion 으로 적어보면 다음과 같습니다.
+
+> $L_{MSE} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|a_{i,j} - \mu (GRU_{\theta} (a_{i, [j-1]}))\|^2$
 
 ## Experiment Result
 
