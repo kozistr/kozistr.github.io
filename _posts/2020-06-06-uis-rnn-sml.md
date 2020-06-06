@@ -85,7 +85,7 @@ each sequence 인 $A_i = (a_{i,1}, ..., a_{i,L_i} \in D_A$ 들은 concat 되고 
 
 ![img](/assets/UIS-RNN-SML/uis-rnn-sml.png)
 
-이전 `UIS-RNN` 과 비슷하지만, $1 ~ j-1 th embeddings$ 와 $j ~ L th embeddings$ 부분을 sampling 해서 똑같이 mean 해서 구한 후 MSE 를 구해줍니다.
+이전 `UIS-RNN` 과 비슷하지만, $1 ~ j-1 th$ embeddings 와 $j ~ L th$ embeddings 부분을 sampling 해서 똑같이 mean 해서 구한 후 MSE 를 구해줍니다.
 
 이렇게 $j - 1 th$ 이후의 sequence 를 sampling 해서 mean 해서 구한다고 해서 네이밍을 Sample Mean Loss 라고 했군요.
 
