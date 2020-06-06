@@ -117,7 +117,7 @@ $N_{k,t-1}$ 은 speaker $k$ 에 대한 연속적인 segment 들. 여기서는 $\
 
 그래서 이 부분을 다시 제안하는데,
 
-$\alpha = \frac{\sum_{m=1}^{D} (max(Y_m) - 1)}{\sum_{m=1}^{D} \sum_{t=1}^{Y_m} 1 (y_{m,t} \ne y_{m,t+1}}$
+$\alpha = \frac{\sum_{m=1}^{D} (max(Y_m) - 1)}{\sum_{m=1}^{D} \sum_{t=1}^{Y_m} 1 (y_{m,t} \ne y_{m,t+1})}$
 
 이렇게 하면 잘못된 metric 이나 휴리스틱하게 결정되는 거로부터 방지가 가능하겠죠
 
