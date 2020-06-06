@@ -132,7 +132,7 @@ $\alpha = \frac{\sum_{m=1}^{D} (max(Y_m) - 1)}{\sum_{m=1}^{D} \sum_{t=1}^{Y_m} 1
 각 환경에 따른 DER (Diarization Error Rate) 변화도 보여줬는데, Audiobooks 이외엔 전부 outperform 합니다. 
 
 이 부분을 논문에서도 설명하는데, `UIS-RNN-SML` 은 `평균`을 더 잘 맞추려 하고, cluster 간 variance 가 작다는 점에서 대부분의 cases 에선 잘 동작하는데,
-화자 수가 거의 없는 환경에서는 performance degradation 이 존재할거라 합니다 (come from $\alpha, $p_0$).  
+화자 수가 거의 없는 환경에서는 performance degradation 이 존재할거라 합니다 (by $\alpha$, $p_0$).  
 
 ![img](/assets/UIS-RNN-SML/dihard2-domain-benchmark.png)
 
