@@ -107,7 +107,18 @@ permuted sequence 에서 직접 랜덤하게 가져왔다는데, generic sequenc
 
 이전에 `UIS-RNN` 의 큰 장점 중 하나가 unbounded 된 화자 수를 모델링 했다는 점인데 (ddCRP), 이전에 보였던 화자와 새롭게 등장한 화자로 switching 이 잘 된다는 점 입니다.
 
+아래처럼 써 볼 수 있을텐데,
 
+> $p(y_t = k\|z_t = 1, y_{[t-1]}) \propto N_{k,t-1}$
+> $p(y_t = max(y_{[t-1}) + 1\|z_t = 1, y_{[t-1]}) \propto \alpha$
+
+$N_{k,t-1}$ 은 speaker $k$ 에 대한 연속적인 segment 들. 여기서는 $\alpha$ 란 parameter 하나에 의해 결정됩니다. 만약 $\alpha$ 가 크다면 speaker 수를 과대평가(?) 할 수도 있겠죠.
+
+그래서 이 부분을 다시 제안하는데,
+
+$\alpha = \frac{\sum_{m=1}^{D} (max(Y_m) - 1)}{\sum_{m=1}^{D} \sum_{t=1}^{Y_m} 1 (y_{m,t} \ne y_{m,t+1)}$
+
+이렇게 하면 잘못된 metric 이나 휴리스틱하게 결정되는 거로부터 방지가 가능하겠죠
 
 ## Experiment Result
 
