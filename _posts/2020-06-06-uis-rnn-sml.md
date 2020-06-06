@@ -91,17 +91,17 @@ each sequence 인 $A_i = (a_{i,1}, ..., a_{i,L_i} \in D_A$ 들은 concat 되고 
 
 그럼 공식은 조금 변형되서 이렇게 되겠네요
 
-> $L_{MSE} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|E(s(i)) - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$, $where s(i) 는 sampling 해 온 i th speaker 의 embedding distribution$
+> $L_{MSE} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|E(s(i)) - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$, $where s(i) = embedding distribution of i-th speaker$
 
 하지만 실제 probability distribution 은 없기도 하고 제한된 레이블된 데이터로 하다보면 overfit 될 거 같은 느낌이 들 거 같다면서, 
 unseen samples 에 대한 mean 을 예측하는 network 를 위해 gt 를 만들었다고 하네요. 
 
 permuted sequence 에서 직접 랜덤하게 가져왔다는데, $generic sequence A_i$ 에 대한 subset $H = (h_1, ..., h_N), N 은 랜덤하게 sample 된 embedding$,
-즉, $\hat_{\mu_N}(A_i) = (\sum_{i}^{N} h_i) / N$ 로 써 볼 수 있겠네요. ($N$ 이 아니라 $N - i$ 아닌가)
+즉, $\hat_{\mu} (A_i) = (\sum_{i}^{N} h_i) / N$ 로 써 볼 수 있겠네요. ($N$ 이 아니라 $N - i$ 아닌가)
 
 그럼 식을 다시 써 보면 이렇게 되겠네요.
 
-> $L_{SML} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|\hat_{\mu_N}(a_{i,[j,L_i}) - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$
+> $L_{SML} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|\hat_{\mu}(a_{i,[j,L_i}) - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$
 
 ## Experiment Result
 
