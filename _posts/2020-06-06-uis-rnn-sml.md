@@ -71,7 +71,19 @@ $\theta^*$ 를 통해 아래와 같은 log likelihood 를 minimizing 시키는 �
 
 위에 sequence generation 에 대한 formula 와 바로 위 log likelihood 식을 MSE fashion 으로 적어보면 다음과 같습니다.
 
-> $L_{MSE} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|a_{i,j} - \mu (GRU_{\theta} (a_{i, [j-1]}))\|^2$
+> $L_{MSE} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|a_{i,j} - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$
+
+또, data augmentation 을 진행하는데, S 명의 화자, P permutations 가 적용된다면, $D_A = (A_1, ..., A_{S \times P}$, 
+each sequence 인 $A_i = (a_{i,1}, ..., a_{i,L_i} \in D_A$ 들은 concat 되고 random 하게 permute 됩니다.
+
+그런데 여기서 sequences 가 shuffle 된다면, 다음에 어떤 embedding 이 와야하는 지, observation 간의 어떠한 관계를 학습을 못하게 되죠.
+위 공식과 같이 네트워크는 각 embedding 들의 mean distribution 을 예측하도록 학습되겠죠!
+
+### UIS-RNN-SML
+
+이번 논문에서 제안한`UIS-RNN-SML`은 아래와 같은 diagram 처럼 훈련이 되고 있는데요,
+
+![img](/assets/UIS-RNN-SML/uis-rnn-sml.png)
 
 ## Experiment Result
 
