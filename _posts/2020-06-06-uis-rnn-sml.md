@@ -122,7 +122,24 @@ $\alpha = \frac{\sum_{m=1}^{D} (max(Y_m) - 1)}{\sum_{m=1}^{D} \sum_{t=1}^{Y_m} 1
 
 ## Experiment Result
 
+### DIHARD-2 Benchmark
 
+해당 dataset 에서 evaluate 했을 때, UIS-RNN 보다 outperform 한 성능을 보여주네요.
+
+![img](/assets/UIS-RNN-SML/dihard2-benchmark.png)
+
+각 환경에 따른 DER (Diarization Error Rate) 변화도 보여줬는데, Audiobooks 이외엔 전부 outperform 합니다. 
+
+이 부분을 논문에서도 설명하는데, `UIS-RNN-SML` 은 `평균`을 더 잘 맞추려 하고, cluster 간 variance 가 작다는 점에서 대부분의 cases 에선 잘 동작하는데,
+화자 수가 거의 없는 환경에서는 performance degradation 이 존재할거라 합니다 (come from $\alpha, $p_0$).  
+
+![img](/assets/UIS-RNN-SML/dihard2-domain-benchmark.png)
+
+### Cluster Mean Variance (at training time)
+
+SML 적용으로 cluster 간 variance 가 stable 해진 점도 굳
+
+![img](/assets/UIS-RNN-SML/cluster-mean-variance.png)
 
 ## Conclusion
 
@@ -136,6 +153,7 @@ speaker diarization 성능이 어쩌면 (당연하게?) 결정된다고 생각�
 
 그래도 해당 논문은 `x-vector` 기반으로 재현을 하였고, `SML loss` 사용이 전 make sense 하고 좋은 method 라 생각해서 재밌게 읽었습니다!
 
-특히 cluster 별 mean variance 가 거의 일정하게 낮음을 유지하는 부분이 인상적 이였습니다.
+특히 cluster 별 mean variance 가 거의 일정하게 낮음을 유지하는 부분이 인상적 이였고, 
+speaker embedding 을 extract 할 때 `x-vector` 가 아닌 구글이 가지고 있는 `d-vector v3` 을 사용했으면 얼마나 더 좋은 성능이 나왔을 지도 궁금해 지네요.
 
 결론 : 굳굳
