@@ -13,7 +13,7 @@ posted by [kozistr](http://kozistr.tech)
 
 평소에 speaker diarization task 에 정말 관심이 많았고, 이전에 이쪽 분야 (speech domain 쪽 전반적으로) 업무를 하다가, 
 
-최근 몇 달간 업무로 딥러닝, 머신러닝하고 먼 일들을 하고 있는데요,
+최근 몇 달간 업무로 딥러닝, 머신러닝하고 먼 일들을 하고 있는데요 ㅠㅠ,
 
 다시 이쪽 분야 trend 는 어떤지 궁금해서 예전에 UIS-RNN 기반으로 speaker diarization pipeline 구현하던 게 생각나서 찾아보다 발견해서 읽게 됐습니당.
 
@@ -62,6 +62,8 @@ $x_t, y_t, z_t$ 에 대한 조건부 확률을 순서대로 보면
 * **sequence generation** 은 GRU (Gated Recurrent Unit) 을 사용해서 처리
 
 ## Experiment Result
+
+
 
 ## Conclusion
 
