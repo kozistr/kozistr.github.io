@@ -73,7 +73,7 @@ $\theta^*$ 를 통해 아래와 같은 log likelihood 를 minimizing 시키는 �
 
 > $L_{MSE} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|a_{i,j} - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$
 
-또, data augmentation 을 진행하는데, S 명의 화자, P permutations 가 적용된다면, $D_A = (A_1, ..., A_{S \times P}$, 
+또, data augmentation 을 진행하는데, S 명의 화자, P permutations 가 적용된다면, $D_A = (A_1, ..., A_{S \times P})$, 
 each sequence 인 $A_i = (a_{i,1}, ..., a_{i,L_i} \in D_A$ 들은 concat 되고 random 하게 permute 됩니다.
 
 그런데 여기서 sequences 가 shuffle 된다면, 다음에 어떤 embedding 이 와야하는 지, observation 간의 어떠한 관계를 학습을 못하게 되죠.
@@ -84,6 +84,24 @@ each sequence 인 $A_i = (a_{i,1}, ..., a_{i,L_i} \in D_A$ 들은 concat 되고 
 이번 논문에서 제안한`UIS-RNN-SML`은 아래와 같은 diagram 처럼 훈련이 되고 있는데요,
 
 ![img](/assets/UIS-RNN-SML/uis-rnn-sml.png)
+
+이전 `UIS-RNN` 과 비슷하지만, $1 ~ j-1 th embeddings$ 와 $j ~ L th embeddings$ 부분을 sampling 해서 똑같이 mean 해서 구한 후 MSE 를 구해줍니다.
+
+이렇게 $j - 1 th$ 이후의 sequence 를 sampling 해서 mean 해서 구한다고 해서 네이밍을 Sample Mean Loss 라고 했군요.
+
+그럼 공식은 조금 변형되서 이렇게 되겠네요
+
+> $L_{MSE} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|E(s(i)) - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$, $where s(i) 는 sampling 해 온 i th speaker 의 embedding distribution$
+
+하지만 실제 probability distribution 은 없기도 하고 제한된 레이블된 데이터로 하다보면 overfit 될 거 같은 느낌이 들 거 같다면서, 
+unseen samples 에 대한 mean 을 예측하는 network 를 위해 gt 를 만들었다고 하네요. 
+
+permuted sequence 에서 직접 랜덤하게 가져왔다는데, $generic sequence A_i$ 에 대한 subset $H = (h_1, ..., h_N), N 은 랜덤하게 sample 된 embedding$,
+즉, $\hat_{\mu_N}(A_i) = (\sum_{i}^{N} h_i) / N$ 로 써 볼 수 있겠네요. ($N$ 이 아니라 $N - i$ 아닌가)
+
+그럼 식을 다시 써 보면 이렇게 되겠네요.
+
+> $L_{SML} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|\hat_{\mu_N}(a_{i,[j,L_i}) - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$
 
 ## Experiment Result
 
