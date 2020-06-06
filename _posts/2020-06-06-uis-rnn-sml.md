@@ -96,12 +96,18 @@ each sequence 인 $A_i = (a_{i,1}, ..., a_{i,L_i} \in D_A$ 들은 concat 되고 
 하지만 실제 probability distribution 은 없기도 하고 제한된 레이블된 데이터로 하다보면 overfit 될 거 같은 느낌이 들 거 같다면서, 
 unseen samples 에 대한 mean 을 예측하는 network 를 위해 gt 를 만들었다고 하네요. 
 
-permuted sequence 에서 직접 랜덤하게 가져왔다는데, $generic sequence A_i$ 에 대한 subset $H = (h_1, ..., h_N), N 은 랜덤하게 sample 된 embedding$,
+permuted sequence 에서 직접 랜덤하게 가져왔다는데, generic sequence $A_i$ 에 대한 subset $H = (h_1, ..., h_N)$, $N$ 은 랜덤하게 sample 된 embedding,
 즉, $\hat{\mu_A} (A_i) = (\sum_{i}^{N} h_i) / N$ 로 써 볼 수 있겠네요. ($N$ 이 아니라 $N - i$ 아닌가)
 
 그럼 식을 다시 써 보면 이렇게 되겠네요.
 
 > $L_{SML} = \sum_{i=1}^{\|D_A\|} \sum_{j=1}^{\|A_i\|} \|\|\hat{\mu_A}(a_{i,[j,L_i}) - \mu (GRU_{\theta} (a_{i, [j-1]}))\|\|^2$
+
+### New Speaker Probability
+
+이전에 `UIS-RNN` 의 큰 장점 중 하나가 unbounded 된 화자 수를 모델링 했다는 점인데 (ddCRP), 이전에 보였던 화자와 새롭게 등장한 화자로 switching 이 잘 된다는 점 입니다.
+
+
 
 ## Experiment Result
 
