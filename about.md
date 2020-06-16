@@ -93,7 +93,7 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 **Company**
 
-Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ 2020.06.)**
+Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Worked as a full time.
 - Developed the card & bank account transaction category classification models, designed *light-weight purpose* for the low latency. (now on service)
 - Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
