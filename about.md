@@ -71,9 +71,9 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 ****
 
-* **Kaggle Challeneges** :: Kaggle Challenges what i participated :: [kaggle-challenges](https://github.com/kozistr/kaggle-challenge)
-> * [Tweet Sentiment Extraction](https://www.kaggle.com/c/tweet-sentiment-extraction) - **top 4% (84 / 2234), Private 0.717** (2020.)
-> * [Flower Classification with TPUs](https://www.kaggle.com/c/flower-classification-with-tpus/) - **top 4% (27 / 848), Private 0.98734** (2020.)
+* **Kaggle Challeneges** :: Kaggle Challenges what i participated :: **Competition Expert**
+> * [Tweet Sentiment Extraction](https://www.kaggle.com/c/tweet-sentiment-extraction) - **top 4% (84 / 2227), Private 0.71796** (2020.)
+> * [Flower Classification with TPUs](https://www.kaggle.com/c/flower-classification-with-tpus) - **top 4% (27 / 848), Private 0.98734** (2020.)
 > * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **top 4% (67 / 2059), Private 0.9372** (2020.)
 > * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **top 3% (28 / 1214), Private 0.99100** (2019.)
 
@@ -100,7 +100,7 @@ Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Developed the card & bank account transaction category classification models, designed *light-weight purpose* for the low latency. (now on service)
   - In A/B test result, improved **about 25 ~ 30%** accuracy.
 - Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
-  - zero failure rate (*0* 40x, 50x errors)
+  - zero failure rate (**0** 40x, 50x errors)
   - utilize inference-wise DL framework
 - Developed the classification model for forecasting possibility of loan overdue.
   - baseline model
