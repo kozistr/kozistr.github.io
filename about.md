@@ -8,9 +8,7 @@ permalink: /about/
 
 **Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-Alternative Military Service Status : *Unfulfilled* 
-
-**I'm looking for a company, MLE position as Skilled Industry Personnel.**
+Alternative Military Service Status : *Unfulfilled*  - **SOON!**
 
 CV : [[PDF] (as of Mar. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
 
@@ -92,10 +90,10 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 **Company**
 
-Machine Learning Engineer, **Watcha**, **(2020.06.22 ~ )**
+*Machine Learning Engineer*, **Watcha**, **(2020.06.22 ~ Present)**
 - Working as a full time.
 
-Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
+*Machine Learning Engineer*, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Worked as a full time.
 - Developed the card & bank account transaction category classification models, designed *light-weight purpose* for the low latency. (now on service)
   - In A/B test result, improved **about 25 ~ 30%** accuracy.
@@ -105,12 +103,12 @@ Machine Learning Engineer, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Developed the classification model for forecasting possibility of loan overdue.
   - baseline model
 
-Machine Learning Engineer, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
+*Machine Learning Engineer*, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 - Worked as an intern.
 - Developed speaker verification, diarization models & logic for recognizing the arbitrary speakers recorded from the noisy (real-world) environment.
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
-Penetration Tester, **ELCID**, **(2016.07 ~ 2016.08)**
+*Penetration Tester*, **ELCID**, **(2016.07 ~ 2016.08)**
 - Worked as a part-time.
 - Penetrated some products related to network firewall and anti-virus product.
 
