@@ -99,7 +99,6 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
   - In A/B test result, improved **about 25 ~ 30%** accuracy.
 - Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
   - zero failure rate (**0** 40x, 50x errors)
-  - utilize inference-wise DL framework
 - Developed the classification model for forecasting possibility of loan overdue.
   - baseline model
 
@@ -109,7 +108,7 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
 *Penetration Tester*, **ELCID**, **(2016.07 ~ 2016.08)**
-- Worked as a part-time.
+- Worked as a part-time job.
 - Penetrated some products related to network firewall and anti-virus product.
 
 <br>
