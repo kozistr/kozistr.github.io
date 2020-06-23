@@ -90,7 +90,7 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 **Company**
 
-*Machine Learning Engineer*, **Watcha**, **(2020.06.22 ~ Present)**
+*Machine Learning Researcher*, **Watcha**, **(2020.06.22 ~ Present)**
 - Working as a full time.
 
 *Machine Learning Engineer*, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
