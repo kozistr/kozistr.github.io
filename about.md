@@ -25,9 +25,21 @@ CV : [[PDF] (as of Jun. 2020)](https://github.com/kozistr/kozistr.github.io/blob
 
 ## Interests
 
-**Machine Learning**, **Computer Vision**, **Natural Language Processing**,
+* (light-weighted) Single Image / Video Super Resolution (SISR)
 
-Previously, i'm also interested in security researches, kind of *Reverse Engineering*, *Linux kernel exploitation*, ....
+* (Online) E2E Speaker Diarization
+
+* Contents (video, music, etc) Recommendation System
+
+  * Sequential Recommendation
+
+  * R.L approaches
+
+* Unsupervised I2I image multi-domain transfer
+
+* lots of challenges like kaggle :)
+
+Previously, i'm also interested in **offensive security**, kind of *Reverse Engineering*, *Linux kernel exploitation*, ....
 
 ----------------------------------------------------------------
 
