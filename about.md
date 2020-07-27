@@ -55,6 +55,13 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 ### Machine Learning
 
+* **Kaggle Challeneges** :: Kaggle Challenges :: **Competition Expert**
+> * [ALASKA2 Image Steganalysis](https://www.kaggle.com/c/alaska2-image-steganalysis) - **solo, top 10% (105 / 1115), Private 0.917** (2020.)
+> * [Tweet Sentiment Extraction](https://www.kaggle.com/c/tweet-sentiment-extraction) - **solo, top 4% (84 / 2227), Private 0.71796** (2020.)
+> * [Flower Classification with TPUs](https://www.kaggle.com/c/flower-classification-with-tpus) - **solo, top 4% (27 / 848), Private 0.98734** (2020.)
+> * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **solo, top 4% (67 / 2059), Private 0.9372** (2020.)
+> * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **solo, top 3% (28 / 1214), Private 0.99100** (2019.)
+
 * **NAVER NLP Challenge** :: NAVER NLP Challenge 2018
 > * [Final](https://github.com/naver/nlp-challenge) - *Semantic Role Labeling (SRL)* **6th place** :: [Presentation]()
 
@@ -66,15 +73,6 @@ Previously, i'm also interested in security researches, kind of *Reverse Enginee
 
 * **TF-KR Challenge** :: Facebook TF-KR MNIST Challenge
 > * [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **Top 9, 3rd price, ACC 0.9964**
-
-****
-
-* **Kaggle Challeneges** :: Kaggle Challenges :: **Competition Expert**
-> * [ALASKA2 Image Steganalysis](https://www.kaggle.com/c/alaska2-image-steganalysis) - **solo, top 10% (105 / 1115), Private 0.917** (2020.)
-> * [Tweet Sentiment Extraction](https://www.kaggle.com/c/tweet-sentiment-extraction) - **solo, top 4% (84 / 2227), Private 0.71796** (2020.)
-> * [Flower Classification with TPUs](https://www.kaggle.com/c/flower-classification-with-tpus) - **solo, top 4% (27 / 848), Private 0.98734** (2020.)
-> * [Kaggle Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19) - **solo, top 4% (67 / 2059), Private 0.9372** (2020.)
-> * [Kaggle Kannada MNIST Challenge](https://www.kaggle.com/c/Kannada-MNIST) - **solo, top 3% (28 / 1214), Private 0.99100** (2019.)
 
 ### Hacking
 
