@@ -18,8 +18,8 @@ CV : [[PDF] (as of Jun. 2020)](https://github.com/kozistr/kozistr.github.io/blob
 |:-------------|:---------------------------------|
 | Email        | **kozistr**@gmail.com            |
 | Github       | [https://github.com/kozistr](https://github.com/kozistr)       |
-| Linkedin     | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr)     |
 | Kaggle       | [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr)   |
+| Linkedin     | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr)     |
 | SideShare    | [https://www.slideshare.net/KimHyeongChan](https://www.slideshare.net/KimHyeongChan) |
 | Another Blog | [http://zer0day.tistory.com](http://zer0day.tistory.com)       |
 
@@ -103,11 +103,16 @@ Previously, i'm also interested in **offensive security**, kind of *Reverse Engi
 
 *Machine Learning Researcher*, **Watcha**, **(2020.06.22 ~ Present)**
 - Working as a full time.
+- Developed a novel sequential recommendation architecture to recommend what to watch next.
+  - Achieved SOTA performance compared to previous SOTA models, BERT4Rec, etc...
+- Developed Image Super Resolution model to upscale movie & tv posters, still-cuts.
+  - Optimized the codes for fast inference time & memory-efficiency on cpu.
+  - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
 
 *Machine Learning Engineer*, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Worked as a full time.
 - Developed the card & bank account transaction category classification models, designed *light-weight purpose* for the low latency. (now on service)
-  - In A/B test result, improved **about 25 ~ 30%** accuracy.
+  - In A/B (online) test result, improved **about 25 ~ 30%p** top-1 accuracy, **about 0.6%p** 1+ retention.
 - Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
   - zero failure rate (**0** 40x, 50x errors)
 - Developed the classification model for forecasting possibility of loan overdue.
