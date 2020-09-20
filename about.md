@@ -10,7 +10,7 @@ permalink: /about/
 
 Alternative Military Service Status : *Unfulfilled*  - **SOON!**
 
-CV : [[PDF] (as of Jun. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
+CV : [[PDF] (as of Sep. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
 
 ## Links
 
