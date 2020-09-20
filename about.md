@@ -67,7 +67,8 @@ Previously, i'm also interested in **offensive security**, kind of *Reverse Engi
 
 ### Machine Learning
 
-* **Kaggle Challeneges** :: Kaggle Challenges :: **Competition Expert**
+* **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
+> * [Cornell Birdcall Identification](https://www.kaggle.com/c/birdsong-recognition) - **team, top 2% (24 / 1395), Private 0.631** (2020.)
 > * [ALASKA2 Image Steganalysis](https://www.kaggle.com/c/alaska2-image-steganalysis) - **solo, top 9% (93 / 1095), Private 0.917** (2020.)
 > * [Tweet Sentiment Extraction](https://www.kaggle.com/c/tweet-sentiment-extraction) - **solo, top 4% (84 / 2227), Private 0.71796** (2020.)
 > * [Flower Classification with TPUs](https://www.kaggle.com/c/flower-classification-with-tpus) - **solo, top 4% (27 / 848), Private 0.98734** (2020.)
