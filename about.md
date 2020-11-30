@@ -102,7 +102,8 @@ Previously, i'm also interested in **offensive security**, kind of *Reverse Engi
 *Machine Learning Researcher*, **Watcha**, **(2020.06.22 ~ Present)**
 - Working as a full time.
 - Developed a pipeline to recognize all tv & movie actors from the poster and still-cut images.
-  - a
+  - Utilized **SOTA** face detector & recognizer.
+  - Optimized pre/post processing routines to consider `inference time`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next.
   - Achieved **SOTA** performance compared to previous SOTA models (`SASRec`, `BERT4Rec`).
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
