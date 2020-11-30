@@ -113,11 +113,13 @@ Previously, i'm also interested in **offensive security**, kind of *Reverse Engi
 *Machine Learning Engineer*, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Worked as a full time.
 - Developed the card & bank account transaction category classification models, designed *light-weight purpose* for the low latency. (now on service)
-  - In A/B (online) test result, improved **about 25 ~ 30%p** top-1 accuracy, **about 0.6%p** 1+ retention.
+  - In A/B (online) test result, improved **about 25 ~ 30%p** *accuracy, **about 0.6%p** 1+ retention.
 - Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
   - zero failure rate (**0** 40x, 50x errors)
 - Developed the classification model for forecasting possibility of loan overdue.
   - baseline deep learning model
+
+% *accuracy : how many people don't update/change their transactions' category.
 
 *Machine Learning Engineer*, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 - Worked as an intern.
