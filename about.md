@@ -8,7 +8,7 @@ permalink: /about/
 
 **Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-Alternative Military Service Status : *Unfulfilled*  - **SOON!**
+Alternative Military Service Status : **on-going**
 
 CV : [[PDF] (as of Sep. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/_ref/cv.pdf)
 
@@ -25,21 +25,13 @@ CV : [[PDF] (as of Sep. 2020)](https://github.com/kozistr/kozistr.github.io/blob
 
 ## Interests
 
-* (light-weighted) Single Image / Video Super Resolution (SISR)
-
-* (Online) E2E Speaker Diarization
-
-* Contents (video, music, etc) Recommendation System
-
-  * Sequential Recommendation
-
-  * R.L approaches
-
-* Unsupervised I2I image multi-domain transfer
-
 * lots of challenges like kaggle :)
 
-Previously, i'm also interested in **offensive security**, kind of *Reverse Engineering*, *Linux kernel exploitation*, ....
+* (light-weighted) Single Image / Video Super Resolution (SISR)
+
+* End to End Speaker Diarization (E2E SD)
+
+Previously, i'm also interested in **offensive security**, kind of *Reverse Engineering*, *Linux Kernel Exploitation*, ....
 
 ----------------------------------------------------------------
 
@@ -60,6 +52,11 @@ Previously, i'm also interested in **offensive security**, kind of *Reverse Engi
 
 [1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](/refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
 - Wrote about lots of anti-reversing / debugging (A to Z) techniques avail on window executable binary
+
+**Posts**
+
+[1] kozistr (as a part of team, `Dragonsong`) []()
+- Wrote about classifying audios with deep learning based on the kaggle challenge where we participated
 
 ----------------------------------------------------------------
 
@@ -104,10 +101,12 @@ Previously, i'm also interested in **offensive security**, kind of *Reverse Engi
 
 *Machine Learning Researcher*, **Watcha**, **(2020.06.22 ~ Present)**
 - Working as a full time.
-- Developed a novel sequential recommendation architecture to recommend what to watch next.
-  - Achieved SOTA performance compared to previous SOTA models, BERT4Rec, etc...
-- Developed Image Super Resolution model to upscale movie & tv posters, still-cuts.
-  - Optimized the codes for fast inference time & memory-efficiency on cpu.
+- Developed a pipeline to recognize all tv & movie actors from the poster and still-cut images.
+  - a
+- Developed a novel sequential recommendation architecture to recommend what content to watch next.
+  - Achieved **SOTA** performance compared to previous SOTA models (`SASRec`, `BERT4Rec`).
+- Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
+  - Optimized the codes for fast `inference time` & `memory-efficiency` on *cpu*.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
 
 *Machine Learning Engineer*, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
@@ -117,7 +116,7 @@ Previously, i'm also interested in **offensive security**, kind of *Reverse Engi
 - Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
   - zero failure rate (**0** 40x, 50x errors)
 - Developed the classification model for forecasting possibility of loan overdue.
-  - baseline model
+  - baseline deep learning model
 
 *Machine Learning Engineer*, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 - Worked as an intern.
