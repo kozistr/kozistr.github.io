@@ -5,13 +5,9 @@ module.exports = {
   author: `Hyeongchan Kim`,                     // (* Required)
   language: 'ko-KR',                            // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'http://kozistr.tech',               // (* Required)
-    // ex.'https://junhobaik.github.io'
-    // ex.'https://junhobaik.github.io/' << X, Do not enter "/" at the end.
 
   /** Header */
-  profileImageFileName: 'profile.png', // include filename extension ex.'profile.jpg'
-    // The Profile image file is located at path "./images/"
-    // If the file does not exist, it is replaced by a random image.
+  profileImageFileName: 'profile.png',
 
   /** Home > Bio information*/
   comment: 'Machine Learning Researcher at Watcha',
