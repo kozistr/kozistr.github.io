@@ -10,9 +10,7 @@ keywords:
   - Generative-Models
 ---
 
-posted by [kozistr](http://kozistr.tech)
-
-## tl;dr
+## TL;DR
 
 최근에 NVLabs 에서 VAE 관련 논문이 하나 나왔는데, 매주 월요일이 회사 짬데이라고 개인 or 팀 끼리 공부하고 싶은 주제 공부하고 공유하는 문화가 있어서, 마침 잘 돼서 논문 리뷰를 해 봅니다.
 
