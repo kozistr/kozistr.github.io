@@ -81,7 +81,7 @@ const gatsbyConfig = {
           },
           `gatsby-remark-autolink-headers`,
           {
-            resolve: `gatsby-remark-katex`,
+            resolve: `gatsby-remark-mathjax`,
             options: {
               strict: `ignore`,
             },
