@@ -84,7 +84,7 @@ each sequence 인 $A_i = (a_{i,1}, ..., a_{i,L_i} \in D_A$ 들은 concat 되고 
 
 이번 논문에서 제안한`UIS-RNN-SML`은 아래와 같은 diagram 처럼 훈련이 되고 있는데요,
 
-![img](/assets/UIS-RNN-SML/uis-rnn-sml.png)
+![img](uis-rnn-sml.png)
 
 이전 `UIS-RNN` 과 비슷하지만, $1 ~ j-1 th$ embeddings 와 $j ~ L th$ embeddings 부분을 sampling 해서 똑같이 mean 해서 구한 후 MSE 를 구해줍니다.
 
@@ -128,20 +128,20 @@ $\alpha = \frac{\sum_{m=1}^{D} (max(Y_m) - 1)}{\sum_{m=1}^{D} \sum_{t=1}^{Y_m} 1
 
 해당 dataset 에서 evaluate 했을 때, UIS-RNN 보다 outperform 한 성능을 보여주네요.
 
-![img](/assets/UIS-RNN-SML/dihard2-benchmark.png)
+![img](dihard2-benchmark.png)
 
 각 환경에 따른 DER (Diarization Error Rate) 변화도 보여줬는데, Audiobooks 이외엔 전부 outperform 합니다. 
 
 이 부분을 논문에서도 설명하는데, `UIS-RNN-SML` 은 `평균`을 더 잘 맞추려 하고, cluster 간 variance 가 작다는 점에서 대부분의 cases 에선 잘 동작하는데,
 화자 수가 거의 없는 환경에서는 performance degradation 이 존재할거라 합니다 (by $\alpha$, $p_0$).  
 
-![img](/assets/UIS-RNN-SML/dihard2-domain-benchmark.png)
+![img](dihard2-domain-benchmark.png)
 
 ### Cluster Mean Variance (at training time)
 
 SML 적용으로 cluster 간 variance 가 stable 해진 점도 굳
 
-![img](/assets/UIS-RNN-SML/cluster-mean-variance.png)
+![img](cluster-mean-variance.png)
 
 ## Conclusion
 
