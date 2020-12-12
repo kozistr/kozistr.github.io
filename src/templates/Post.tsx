@@ -36,7 +36,7 @@ import Toc from '../components/Toc';
 import SEO from '../components/seo';
 
 import { RootState } from '../state/reducer';
-import config from '../../_config';
+import config from '../../config';
 
 interface postProps {
   data: any;

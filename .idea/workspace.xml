@@ -22,392 +22,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30aeba8-557f-4486-b929-854e01a37752" name="Default Changelist" comment="feature: XFLATContentFineTuneNextWatchDataSet loader">
+    <list default="true" id="f30aeba8-557f-4486-b929-854e01a37752" name="Default Changelist" comment="update: ads.txt">
       <change afterPath="$PROJECT_DIR$/../Jeongseok-Guide/plsa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/@types/react-adsense.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatsby-ssr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Bio/bio.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Bio/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Comment/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostList/postList.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Toc/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Toc/toc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/seo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gatsby-plugin-theme-ui/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/404.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/styles/search.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/styles/tags.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/tags.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/createStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Post.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/code-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/md-style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/post.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-700.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-700.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-700.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-700.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-700.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-coding-v14-latin_korean-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-700.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-700.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-700.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-700.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-700.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/nanum-gothic-v17-latin_korean-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/raleway-v17-latin-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/raleway-v17-latin-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/raleway-v17-latin-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/raleway-v17-latin-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fonts/raleway-v17-latin-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/google-fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/typography.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ads.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrap-with-provider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Awesome-GANs/awesome_gans/wgan/model/model.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../kaggle-challenges/leaf_disease/train-vit-b-16-w-attention-trainer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../kaggle-challenges/leaf_disease/train-vit-b-16-w-attention-trainer.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/mathjax_support.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/page_divider.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/archive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-10-29-LKE-CVE-2017-5123.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-12-10-LK-spinlock_recursion.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-12-16-LK-unwind_orc-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-12-20-LK-prlimit64-kernel_panic.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-01-18-LK-sidtab_search_core-null_dereference.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-14-LK-getsockopt-task_hung.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-15-LK-fifo_open-dead_lock.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-15-LK-seq_read-dead_lock.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-16-LK-pfifo_fast_enqueue-kpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-17-LKE-tut-null_dereference.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-18-LKE-tut-stack_overflow.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-02-24-LK-tick_sched_time-handle-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-01-LK-handle_irq-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-02-LK-do_IRQ-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-02-LK-unwind_next_frame-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-04-LK-default_idle-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-06-LK-perf_exclude_event-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-11-LK-sctp_id2assoc-uaf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-13-LK-init_tty-kernel_panic.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-13-LK-tracepoint_probe_register_prio-warn.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-13-LK-tty_set-ldisc-warn.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-16-LK-perf_trace_buf_alloc-warn.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-16-LK-socket-memory_leak.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-20-LK-xfrm_state_find-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-22-LK-__might_fault-dead_lock.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-22-LK-kernfs_get-warn.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-22-LK-mon_bin_vma_fault-dead_lock.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-23-LK-kaslr_bypass.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-24-LK-dev_hard_start_xmit-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-26-LK-iptunnel_handle_offloads-uaf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-27-LK-copyout-uaf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-03-30-LK-anon_vma_chain-slab_ow.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-02-LK-xxx-memory_leak.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-03-LK-kmalloc-slab_ow.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-04-LK-get_work_pool-gpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-05-LK-mon_bin_read-dead_lock.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-06-LK-strlen-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-07-LK-xxx-slab_ow.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-08-LK-skb_release_data-uaf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-08-LK-uprobe_perf_close-uaf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-09-LK-alloc_vmap_area-kpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-12-LK-xxx-memory_leak.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-14-LK-process_preds-oob_uaf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-21-LK-__sctp_v6_cmp_addr-oob.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-22-LK-shrink_dcache_parent-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-22-LK-unregister_netdevice-warn.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-23-LK-ata_scsi_queuecmd-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-23-LK-d_walk-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-23-LK-e1000_update_stats-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-23-LK-hpet_open-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-23-LK-smp_call_function_many-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-12-LK-create_filter-memory_leak.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-13-LK-pcpu_create_chunk-memory_leak.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-14-LK-set_precision-warn.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-15-LK-__xfrm_policy_check -gpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-16-LK-__xfrm_decode_session-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-17-LK-_decode_session6-soft_lockup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-18-LK-rb_insert_color-gpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-19-LK-__handle_mm_fault-gpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-20-LK-bad_page_map-bug.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-20-LK-bad_rss_counter_state-bug.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-20-LK-dev_watchdog-warn.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-20-LK-ext4_data_block_valid-uaf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-20-LK-kmem_cache_alloc-gpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-20-LK-qlist_free_all-kpf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-07-20-LK-Modern Linux Kernel 0,1-day Unkind-Exploitations Review.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-02-02-SinGAN.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-02-10-StarGANv2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-02-29-StyleGANv2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-03-14-SAN.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-03-29-noisy-student.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-04-11-electra.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-04-26-yolo-v4.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-05-10-cotatron.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-05-23-resnest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-06-06-uis-rnn-sml.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-06-16-tunit.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-09-07-NVAE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ref/cv.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_grid-settings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/_bourbon-deprecated-upcoming.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/_bourbon.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_border-color.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_border-radius.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_border-style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_border-width.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_ellipsis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_font-stacks.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_hide-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_margin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_padding.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_prefixer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_retina-image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_text-inputs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_timing-functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_triangle.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/addons/_word-wrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_animation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_appearance.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_backface-visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_background-image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_border-image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_calc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_columns.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_filter.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_flex-box.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_font-face.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_font-feature-settings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_hidpi-media-query.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_hyphens.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_image-rendering.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_keyframes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_linear-gradient.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_perspective.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_placeholder.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_radial-gradient.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_selection.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_text-decoration.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_transform.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/css3/_user-select.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_assign-inputs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_contains-falsy.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_contains.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_is-length.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_is-light.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_is-number.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_is-size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_modular-scale.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_px-to-em.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_px-to-rem.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_shade.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_strip-units.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_tint.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_transition-property-name.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/functions/_unpack.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_convert-units.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_directional-values.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_font-source-declaration.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_gradient-positions-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_linear-angle-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_linear-gradient-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_linear-positions-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_linear-side-corner-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_radial-arg-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_radial-gradient-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_radial-positions-parser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_render-gradients.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_shape-size-stripper.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/helpers/_str-to-num.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/settings/_asset-pipeline.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/settings/_prefixer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/bourbon/settings/_px-to-em.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/_neat-helpers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/_neat.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/functions/_new-breakpoint.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/functions/_private.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_box-sizing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_direction-context.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_display-context.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_fill-parent.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_omega.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_outer-container.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_pad.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_private.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_row.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_shift.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_span-columns.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_to-deprecate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/grid/_visual-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/settings/_disable-warnings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/settings/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/neat/settings/_visual-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Cotatron/cotatron-architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Cotatron/degree_of_speaker_disentanglement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Cotatron/residual_encoder_vc_decoder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Cotatron/vctk_benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Cotatron/voice-conversion-system.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ELECTRA/disc_gen_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ELECTRA/efficiency_exp_glue_score.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ELECTRA/small_models_glue_dev_set.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ELECTRA/squad_benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NVAE/architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NVAE/generated_images.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NVAE/performance_benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NVAE/residual_blocks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NoisyStudent/fgsm-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NoisyStudent/imagenet-a-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NoisyStudent/overall-imagenet-performance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NoisyStudent/performance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NoisyStudent/teacher-student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ResNeSt/imagenet-benchmark-resnet-based.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ResNeSt/imagenet-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ResNeSt/instance-segmentation-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ResNeSt/object-detection-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ResNeSt/resnest-blocks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ResNeSt/semantic-segmentation-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ResNeSt/split-attention-block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SAN/LSRAG-module.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SAN/RL-NL-module.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SAN/SAN-parameter-comparison.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SAN/SAN-performance-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SAN/SAN-psnr-performance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SAN/overall_architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/editing_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/generate_from_different_scales.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/harmonization_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/manipulation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/multi-scale-architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/paint_to_image_style_transfer_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/single-scale-generation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/sisr_result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/SinGAN/teaser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/celeba_hq_teaser_video.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/generator-architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/latent-guided-synthesis-on-datasets.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/mapping-network-architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/overview_of_starganv2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/reference-guided-synthesis-on-datasets.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/reference-guided-synthesis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StarGANv2/style-encoder-architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StyleGANv2/droplet-llike-artifacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StyleGANv2/stylegan2-architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StyleGANv2/stylegan2-resolve-artifacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StyleGANv2/stylegan2-results.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/StyleGANv2/stylegan2-teaser-1024x256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/TUNIT/t-SNE-vis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/TUNIT/translation-loss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/TUNIT/tunit-architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/UIS-RNN-SML/cluster-mean-variance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/UIS-RNN-SML/dihard2-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/UIS-RNN-SML/dihard2-domain-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/UIS-RNN-SML/uis-rnn-sml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/UIS-RNN-SML/uis-rnn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/YOLOv4/ap-fps-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/YOLOv4/backbone-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/YOLOv4/bof-benchmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cr4_register.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/header_image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/android-icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/android-icon-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/android-icon-36x36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/android-icon-48x48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/android-icon-72x72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/android-icon-96x96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-114x114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-120x120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-152x152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-180x180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-57x57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-60x60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-72x72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-76x76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/apple-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/favicon-96x96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/ms-icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/ms-icon-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/ms-icon-310x310.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/ms-icon-70x70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/instacode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/kp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/poc_0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/profile-placeholder.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/circle.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/_drafts/DO_NOT_ERASE_THIS_FOLDER" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bio/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bio/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Comment/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comment/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Post.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -547,56 +175,7 @@
       <workItem from="1601906562081" duration="1478000" />
       <workItem from="1601909339393" duration="274000" />
       <workItem from="1607604909712" duration="7212000" />
-      <workItem from="1607758438849" duration="2209000" />
-    </task>
-    <task id="LOCAL-00158" summary="refactor: cgan">
-      <created>1601894961401</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1601894961401</updated>
-    </task>
-    <task id="LOCAL-00159" summary="refactor: cogan">
-      <created>1601894999737</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1601894999737</updated>
-    </task>
-    <task id="LOCAL-00160" summary="refactor: cyclegan">
-      <created>1601895056500</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1601895056500</updated>
-    </task>
-    <task id="LOCAL-00161" summary="refactor: dcgan">
-      <created>1601895096419</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1601895096419</updated>
-    </task>
-    <task id="LOCAL-00162" summary="refactor: deblurgan">
-      <created>1601895173698</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1601895173698</updated>
-    </task>
-    <task id="LOCAL-00163" summary="refactor: discogan">
-      <created>1601895231536</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1601895231536</updated>
-    </task>
-    <task id="LOCAL-00164" summary="refactor: the codes">
-      <created>1601895296567</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1601895296567</updated>
+      <workItem from="1607758438849" duration="4861000" />
     </task>
     <task id="LOCAL-00165" summary="refactor: dragan">
       <created>1601895349432</created>
@@ -892,7 +471,56 @@
       <option name="project" value="LOCAL" />
       <updated>1607611734475</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="update: gatsby blog">
+      <created>1607761914282</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1607761914282</updated>
+    </task>
+    <task id="LOCAL-00208" summary="update: gatsby blog">
+      <created>1607763126596</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1607763126596</updated>
+    </task>
+    <task id="LOCAL-00209" summary="update: gitignore">
+      <created>1607763146522</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1607763146522</updated>
+    </task>
+    <task id="LOCAL-00210" summary="fix: theme">
+      <created>1607763542667</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1607763542667</updated>
+    </task>
+    <task id="LOCAL-00211" summary="add: googleSearchConsole">
+      <created>1607763701860</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1607763701861</updated>
+    </task>
+    <task id="LOCAL-00212" summary="update: googleAdsenseSlot">
+      <created>1607764097139</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1607764097139</updated>
+    </task>
+    <task id="LOCAL-00213" summary="update: ads.txt">
+      <created>1607764241052</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1607764241052</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -915,12 +543,6 @@
       <path value="$PROJECT_DIR$/../banksalad-laboratory" />
       <path value="$PROJECT_DIR$/../transaction-classifier" />
     </ignored-roots>
-    <MESSAGE value="refactor: sgan" />
-    <MESSAGE value="refactor: srgan" />
-    <MESSAGE value="refactor: stargan" />
-    <MESSAGE value="refactor: ugan" />
-    <MESSAGE value="refactor: remove not implemented gans" />
-    <MESSAGE value="feature: set_seed()" />
     <MESSAGE value="refactor: reformatting with black" />
     <MESSAGE value="refactor: configuration" />
     <MESSAGE value="add: initial __main__ for ACGAN" />
@@ -940,7 +562,13 @@
     <MESSAGE value="refactor: XFLATAttributePreTrainNextWatchDataSet, XFLATAttributeFineTuneNextWatchDataSet" />
     <MESSAGE value="feature: XFLATContentPreTrainNextWatchDataSet loader" />
     <MESSAGE value="feature: XFLATContentFineTuneNextWatchDataSet loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: XFLATContentFineTuneNextWatchDataSet loader" />
+    <MESSAGE value="update: gatsby blog" />
+    <MESSAGE value="update: gitignore" />
+    <MESSAGE value="fix: theme" />
+    <MESSAGE value="add: googleSearchConsole" />
+    <MESSAGE value="update: googleAdsenseSlot" />
+    <MESSAGE value="update: ads.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: ads.txt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kozistr_github_io$Unittests_in_plsa_py.coverage" NAME="Unittests in plsa.py Coverage Results" MODIFIED="1598704024364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Jeongseok-Guide" />

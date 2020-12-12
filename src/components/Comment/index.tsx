@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DiscussionEmbed } from 'disqus-react';
-import config from '../../../_config';
+import config from '../../../config';
 
 interface CommentProps {
   slug: string;
