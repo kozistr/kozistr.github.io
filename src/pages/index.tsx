@@ -64,6 +64,7 @@ export const pageQuery = graphql`
             title
             tags
           }
+          timeToRead
         }
       }
     }

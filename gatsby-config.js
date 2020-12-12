@@ -49,18 +49,12 @@ const gatsbyConfig = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
-              inlineCodeMarker: null,
-              showLineNumbers: false,
+              // classPrefix: 'language-',
+              // inlineCodeMarker: null,
+              // showLineNumbers: false,
               noInlineHighlight: false,
               escapeEntities: {},
-              aliases: {
-                react: 'jsx',
-                javascriptreact: 'jsx',
-                'javascript react': 'jsx',
-                typescriptreact: 'tsx',
-                'typescript react': 'tsx',
-              },
+              aliases: {},
             },
           },
           {
