@@ -5,7 +5,7 @@ update: 2020-05-10
 tags:
   - Deep-Learning
 keywords:
-  - NLP  
+  - NLP
   - ChatBot
   - Blender
 ---
@@ -40,7 +40,7 @@ code : 아직 official code / pre-trained model은 없는데, 곧 나올 예정�
 
 이번에 제안한 *cotatron* 은 google 의 *tacotron2* 를 기반으로 합니다. 
 
-> $M_{1:i}^\hat , A_i = Decoder (Encoder(T), M_{0:i-1}, z^{id})$
+> $\hat{M_{1:i}} , A_i = Decoder (Encoder(T), M_{0:i-1}, z^{id})$
 
 *T* 는 Transcription, *M* 은 log mel-spectogram, *z* 는 speaker representation.
 
