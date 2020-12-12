@@ -33,7 +33,7 @@ module.exports = {
   /** Optional */
   googleAnalytics: 'UA-116366668-1',                                  // Google Analytics TrackingID. ex.'UA-123456789-0'
   googleSearchConsole: 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4', // content value in HTML tag of google search console ownership verification
-  googleAdsenseSlot: '',                       // Google Adsense Slot. ex.'5214956675'
+  googleAdsenseSlot: 'ca-pub-7954241517411559',                       // Google Adsense Slot. ex.'5214956675'
   googleAdsenseClient: '',                     // Google Adsense Client. ex.'ca-pub-5001380215831339'
     // Please correct the adsense client number(ex.5001380215831339) in the './static/ads.txt' file.
 };
