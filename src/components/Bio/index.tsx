@@ -76,8 +76,8 @@ const Bio = () => {
           <Fa icon={faAddressCard} />
         </div>
 
-        <a href="/about" target="_blank" rel="noopener noreferrer">
-          <p>About ME</p>
+        <a href="/about">
+          <span>About ME</span>
         </a>
       </div>
 
