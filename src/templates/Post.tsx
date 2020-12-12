@@ -222,22 +222,21 @@ const Post = (props: postProps) => {
       <Layout>
         <div className="blog-post-container">
           <div className="blog-post">
+            <div className="date-wrap">
+              <span className="write-date">
+                {date} •{timeToRead} min read ☕
+              </span>
+              {update ? (
+                <>
+                  <span>(</span>
+                  <span className="update-date">{`Last updated: ${update}`}</span>
+                  <span>)</span>
+                </>
+              ) : null}
+            </div>
             <h1 className="blog-post-title">{title}</h1>
 
             <div className="blog-post-info">
-              <div className="date-wrap">
-                <span className="write-date">
-                  {date} •{timeToRead} min read ☕
-                </span>
-                {update ? (
-                  <>
-                    <span>(</span>
-                    <span className="update-date">{`Last updated: ${update}`}</span>
-                    <span>)</span>
-                  </>
-                ) : null}
-              </div>
-
               {tags.length && tags[0] !== 'undefined' ? (
                 <>
                   <span className="dot">·</span>

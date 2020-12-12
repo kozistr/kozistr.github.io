@@ -70,8 +70,7 @@ const PostList = memo((props: PostListProps) => {
       <li key={slug} className={`post ${i < showCnt ? 'show' : 'hide'}`}>
         <div className="date">
           <small>
-            {' '}
-            {date} •{timeToRead} min read ☕{' '}
+            {date} •{timeToRead} min read ☕
           </small>
         </div>
         <article>

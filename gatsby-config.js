@@ -52,9 +52,9 @@ const gatsbyConfig = {
               // classPrefix: 'language-',
               // inlineCodeMarker: null,
               // showLineNumbers: false,
-              noInlineHighlight: false,
-              escapeEntities: {},
-              aliases: {},
+              // noInlineHighlight: false,
+              // escapeEntities: {},
+              // aliases: {},
             },
           },
           {
