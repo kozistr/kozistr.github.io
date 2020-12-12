@@ -18,7 +18,9 @@ const Bio = () => {
           <div className="icon-wrap">
             <Fa icon={faUserCircle} />
           </div>
-          <span>{name}</span>
+          <a href="/about">
+            <span>{name}</span>
+          </a>
         </div>
       )}
 
@@ -60,6 +62,16 @@ const Bio = () => {
           </a>
         </div>
       )}
+
+      <div className="bio-item address-card">
+        <div className="icon-wrap">
+          <Fa icon={faLink} />
+        </div>
+
+        <a href="/about" target="_blank" rel="noopener noreferrer">
+          <p>About ME</p>
+        </a>
+      </div>
 
       <div className="social">
         <a href={`${config.siteUrl}/rss`} target="_blank" rel="noopener noreferrer">
