@@ -13,7 +13,7 @@ keywords:
 
 Alternative Military Service Status : **on-going**
 
-CV : [[PDF] (as of Dec. 2020)](https://github.com/kozistr/kozistr.github.io/cv.pdf)
+CV : [[PDF] (as of Dec. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/cv.pdf)
 
 ## Links
 
