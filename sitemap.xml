@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>http://kozistr.tech/NVAE/</loc> <lastmod>2020-09-07</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://kozistr.tech/TUNIT/</loc> <lastmod>2020-06-16</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/UIS-RNN-SML/</loc> <lastmod>2020-06-06</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/ResNeSt/</loc> <lastmod>2020-05-23</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/Cotatron/</loc> <lastmod>2020-05-10</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/YOLOv4/</loc> <lastmod>2020-04-26</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/Noisy-Student/</loc> <lastmod>2020-04-11</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/ELECTRA/</loc> <lastmod>2020-04-11</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/SinGAN/</loc> <lastmod>2020-03-14</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/StarGANv2/</loc> <lastmod>2020-03-14</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/SAN/</loc> <lastmod>2020-03-14</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/StyleGANv2/</loc> <lastmod>2020-03-14</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/KASLR-bypass/</loc> <lastmod>2018-07-20</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/Modern-Linux-Kernel-0day-Unkind-Exploitations-Review/</loc> <lastmod>2018-07-20</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://kozistr.tech/CVE-2017-5123/</loc> <lastmod>2017-10-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://kozistr.tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://kozistr.tech/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://kozistr.tech/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
