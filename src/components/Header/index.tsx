@@ -9,7 +9,7 @@ import { useColorMode } from 'theme-ui';
 import './header.scss';
 import { RootState } from '../../state/reducer';
 import { actionCreators } from '../../state/actions';
-import config from '../../../_config';
+import config from '../../../config';
 
 interface headerPropsType {
   siteTitle: string;

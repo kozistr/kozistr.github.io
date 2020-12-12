@@ -13,7 +13,7 @@ import './layout.scss';
 import '../../utils/google-fonts.scss';
 import Header from '../Header';
 import { actionCreators } from '../../state/actions';
-import config from '../../../_config';
+import config from '../../../config';
 import { throttle } from 'lodash';
 
 FaConfig.autoAddCss = false;
