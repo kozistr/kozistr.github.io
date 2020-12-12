@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2020-12-12
+update: 2020-12-13
 tags:
   - About
 keywords:
@@ -11,7 +11,7 @@ keywords:
 
 **Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-Alternative Military Service Status : **on-going**
+Alternative Military Service Status : **on-going** (`2020/11/27 ~ 2023/09/26`)
 
 CV : [[PDF] (as of Dec. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/cv.pdf)
 
