@@ -1,0 +1,97 @@
+@import '../../utils/variables.scss';
+
+#layout {
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+
+  svg {
+    color: #6a737d;
+    margin: 0;
+  }
+
+  &.light {
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color;
+      }
+    }
+  }
+
+  &.dark {
+    svg {
+      color: #a3aab3;
+    }
+
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color-d;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-top: $header-height;
+  min-height: 100vh;
+
+  @media screen and (max-width: $break-m) {
+    padding-top: $header-height-m;
+  }
+  @media screen and (max-width: $break-s) {
+    padding-top: $header-height-s;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    user-select: none;
+  }
+}
+
+#top {
+  display: flex;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-right: 2rem;
+  margin-bottom: 2.2rem;
+  transition: 0.5s;
+  cursor: pointer;
+
+  @media screen and (max-width: $break-s) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  svg {
+    font-size: 2rem;
+    margin: 0;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

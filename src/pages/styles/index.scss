@@ -1,0 +1,59 @@
+@import '../../utils/variables.scss';
+
+a:visited {
+  color: inherit;
+}
+
+.index-wrap {
+  display: flex;
+
+  @media screen and (max-width: $break-l) {
+    margin-top: 0.5rem;
+  }
+  @media screen and (max-width: $break-m) {
+    margin-top: 1rem;
+  }
+
+  .bio {
+    position: fixed;
+    top: $header-height;
+    left: 0;
+    transition: opacity 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+
+    @media screen and (max-width: $break-l) {
+      display: none;
+    }
+  }
+
+  .index-post-list-wrap {
+    width: 100%;
+
+    & > div {
+      margin: 0 auto;
+    }
+
+    .show-more-posts {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+
+      .show-more-btn {
+        cursor: pointer;
+        opacity: 0.5;
+        font-size: 0.9rem;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+        span {
+          margin-left: 0.25rem;
+        }
+      }
+    }
+  }
+}

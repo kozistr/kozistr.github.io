@@ -1,0 +1,48 @@
+@import '../../utils/variables.scss';
+
+#tags {
+  max-width: 720px;
+  margin: 1rem auto;
+
+  .tag-list-wrap {
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: $break-s) {
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin: 0.25rem 0.5rem;
+        list-style: none;
+
+        @media screen and (max-width: $break-s) {
+          margin: 0 0.4rem;
+        }
+
+        span {
+          cursor: pointer;
+          opacity: 0.5;
+          line-height: 1.25;
+          transition: font-size 0.6s;
+          transition-delay: font-size 0.3s;
+
+          &:hover {
+            opacity: 0.9 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .post-list {
+    margin: 0 auto;
+  }
+}
