@@ -9,13 +9,35 @@ import {
   faAddressCard,
   faRss,
 } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram, faLinkedin, faGithub, faKaggle } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faGithub,
+  faKaggle,
+  faMedium,
+  faSlideshare,
+} from '@fortawesome/free-brands-svg-icons';
 
 import './bio.scss';
 import config from '../../../config';
 
 const Bio = () => {
-  const { comment, name, company, location, email, website, linkedin, facebook, instagram, github, kaggle } = config;
+  const {
+    comment,
+    name,
+    company,
+    location,
+    email,
+    website,
+    linkedin,
+    facebook,
+    instagram,
+    github,
+    kaggle,
+    medium,
+    sildeshare,
+  } = config;
 
   return (
     <div className="bio">
@@ -109,6 +131,16 @@ const Bio = () => {
         {!kaggle ? null : (
           <a href={kaggle} target="_blank" rel="noopener noreferrer">
             <Fa icon={faKaggle} className="kaggle" />
+          </a>
+        )}
+        {!medium ? null : (
+          <a href={medium} target="_blank" rel="noopener noreferrer">
+            <Fa icon={faMedium} className="medium" />
+          </a>
+        )}
+        {!sildeshare ? null : (
+          <a href={sildeshare} target="_blank" rel="noopener noreferrer">
+            <Fa icon={faSlideshare} className="sildeshare" />
           </a>
         )}
       </div>

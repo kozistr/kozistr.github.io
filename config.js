@@ -21,6 +21,8 @@ module.exports = {
   instagram: '',
   github: 'https://github.com/kozistr',
   kaggle: 'https://www.kaggle.com/kozistr',
+  medium: 'https://medium.com/@kozistr',
+  sildeshare: '',
 
   /** Post */
   enablePostOfContents: true,           // TableOfContents activation (Type of Value: Boolean. Not String)
