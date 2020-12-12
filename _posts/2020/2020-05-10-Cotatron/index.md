@@ -10,9 +10,7 @@ keywords:
   - Blender
 ---
 
-posted by [kozistr](http://kozistr.tech)
-
-## tl;dr
+## TL;DR
 
 최근 mindslab 에서 VC (Voice Conversion)관련 논문이 나와서 오랜만에 요 쪽 domain 도 볼 겸 해서 논문을 읽게 됐습니다.
 
