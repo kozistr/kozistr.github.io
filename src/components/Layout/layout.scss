@@ -1,0 +1,118 @@
+@import "../../utils/variables.scss";
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+#layout {
+  svg {
+    color: #6a737d;
+    &:hover,
+    &:focus {
+      color: #2874a6;
+    }
+  }
+
+  &.light {
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color;
+      }
+    }
+
+    a {
+      color: #606060;
+      &:hover, &:focus{
+        color: black;
+      }
+    }
+  }
+
+  &.dark {
+    svg {
+      color: #a3aab3;
+      &:hover,
+      &:focus {
+        color: #2874a6;
+      }
+    }
+
+    a {
+      color: #C8C8C8;
+      &:hover, &:focus{
+        color: white;
+      }
+    }
+
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color-d;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-top: $header-height;
+  min-height: 100vh;
+
+  @media screen and (max-width: $break-m) {
+    padding-top: $header-height-m;
+  }
+  @media screen and (max-width: $break-s) {
+    padding-top: $header-height-s;
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+}
+
+#top {
+  display: flex;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 100%;
+  margin-right: 2rem;
+  margin-bottom: 2.2rem;
+  transition: 0.5s;
+  cursor: pointer;
+
+  @media screen and (max-width: $break-s) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  svg {
+    margin: 0;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
