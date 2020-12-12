@@ -126,7 +126,7 @@ Covariance Normalization 를 하는 이유는, 더 discriminative representation
 
 간단한 연산이니, 아래 공식만 적어두겠습니다.
 
-> $Y^\hat  =  \sigma ^ \alpha = U A^\alpha U^T$
+> $\hat{Y} = \sigma ^ \alpha = U A^\alpha U^T$
 
 결론적으로, $\alpha < 1$ 일 때, eigenvalues 들이 non-linear 하게 잘 동작하고, $\alpha = 1 / 2$ 일 때 제일 좋다고 하네요.
 
