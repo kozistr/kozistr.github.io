@@ -1,6 +1,14 @@
 import * as React from 'react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faUserCircle, faAt, faMapMarkerAlt, faLink, faAddressCard, faRss } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUserCircle,
+  faAt,
+  faMapMarkerAlt,
+  faBuilding,
+  faLink,
+  faAddressCard,
+  faRss,
+} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import './bio.scss';
@@ -27,7 +35,7 @@ const Bio = () => {
       {!company ? null : (
         <div className="bio-item company">
           <div className="icon-wrap">
-            <Fa icon={faAddressCard} />
+            <Fa icon={faBuilding} />
           </div>
           <span>{company}</span>
         </div>
@@ -63,9 +71,9 @@ const Bio = () => {
         </div>
       )}
 
-      <div className="bio-item address-card">
+      <div className="bio-item about">
         <div className="icon-wrap">
-          <Fa icon={faLink} />
+          <Fa icon={faAddressCard} />
         </div>
 
         <a href="/about" target="_blank" rel="noopener noreferrer">
