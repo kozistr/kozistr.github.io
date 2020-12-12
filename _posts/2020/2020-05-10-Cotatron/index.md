@@ -34,8 +34,9 @@ code : 아직 official code / pre-trained model은 없는데, 곧 나올 예정�
 
 ## Architecture
 
-*Cotatron*의 전체적인 architecture 는 아래와 같습니다. 
-![img](/assets/Cotatron/cotatron-architecture.png)
+*Cotatron*의 전체적인 architecture 는 아래와 같습니다.
+
+![img](cotatron-architecture.png)
 
 ### 1. speaker-independent linguistic features from TTS
 
@@ -72,11 +73,11 @@ Decoder output 으로 transcription 과 mel-spectogram 사이의 *Alignment* 가
 
 ### 2. voice conversion
 
-![img](/assets/Cotatron/voice-conversion-system.png)
+![img](voice-conversion-system.png)
 
 위 이미지처럼 voice-conversion system 인데, 전반적인 pipeline 이 그려져 있습니다.
 
-![img](/assets/Cotatron/residual_encoder_vc_decoder.png)
+![img](residual_encoder_vc_decoder.png)
 
 #### 2.1 residual encoder
 
@@ -110,13 +111,13 @@ VC decoder 구조는 *GAN-TTS* 란 paper 와 유사합니다. head, tail 에 1d 
 
 ### VCTK Benchmark (many-to-many)
 
-![img](/assets/Cotatron/vctk_benchmark.png)
+![img](vctk_benchmark.png)
 
 기존 SOTA 인 Blow 보다 훨 높은 MOS, DMOS 를 보여줍니다. SCA 는 Blow 를 넘진 못헀네요.
 
 ### Speaker Disentanglement
 
-![img](/assets/Cotatron/degree_of_speaker_disentanglement.png)
+![img](degree_of_speaker_disentanglement.png)
 
 그냥 Cotatron feature 만 쓸 때와 mel spectogram 만 따로 encoding 해서 쓴 경우와 비교했을 때,
 SCA 가 훨씬 높은 걸 보여주네요.
