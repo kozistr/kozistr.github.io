@@ -177,7 +177,6 @@ const Post = (props: postProps) => {
   return (
     <>
       <Helmet>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script type="application/ld+json">
           {`
@@ -337,7 +336,7 @@ const Post = (props: postProps) => {
             <>
               <aside className="ad">
                 <AdSense.Google
-                  client={config.googleAdsenseClient || 'ca-pub-5001380215831339'}
+                  client={config.googleAdsenseClient || 'ca-pub-7954241517411559'}
                   slot={config.googleAdsenseSlot || '5214956675'}
                   style={{ display: 'block' }}
                   format="auto"
