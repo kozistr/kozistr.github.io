@@ -75,7 +75,7 @@ const Header = (props: headerPropsType) => {
     }
 
     const setVisible = () => {
-      setYPos(prevYPos => {
+      setYPos((prevYPos) => {
         const currentYPos = window.pageYOffset;
 
         if (currentYPos > 0) setIsHide(prevYPos < currentYPos);
