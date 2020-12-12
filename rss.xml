@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Dec 2020 13:23:30 GMT</lastBuildDate><item><title><![CDATA[NVAE A Deep Hierarchical Variational Autoencoder]]></title><description><![CDATA[TL;DR 최근에 NVLabs 에서 VAE 관련 논문이 하나 나왔는데, 매주 월요일이 회사 짬데이라고 개인 or 팀 끼리 공부하고 싶은 주제 공부하고 공유하는 문화가 있어서, 마침 잘 돼서 논문 리뷰를 해 봅니다. paper : arXiv code …]]></description><link>http://kozistr.tech/NVAE/</link><guid isPermaLink="false">http://kozistr.tech/NVAE/</guid><pubDate>Mon, 07 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Dec 2020 13:38:50 GMT</lastBuildDate><item><title><![CDATA[NVAE A Deep Hierarchical Variational Autoencoder]]></title><description><![CDATA[TL;DR 최근에 NVLabs 에서 VAE 관련 논문이 하나 나왔는데, 매주 월요일이 회사 짬데이라고 개인 or 팀 끼리 공부하고 싶은 주제 공부하고 공유하는 문화가 있어서, 마침 잘 돼서 논문 리뷰를 해 봅니다. paper : arXiv code …]]></description><link>http://kozistr.tech/NVAE/</link><guid isPermaLink="false">http://kozistr.tech/NVAE/</guid><pubDate>Mon, 07 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;최근에 NVLabs 에서 VAE 관련 논문이 하나 나왔는데, 매주 월요일이 회사 짬데이라고 개인 or 팀 끼리 공부하고 싶은 주제 공부하고 공유하는 문화가 있어서, 마침 잘 돼서 논문 리뷰를 해 봅니다.&lt;/p&gt;
 &lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2007.03898.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;code : &lt;a href=&quot;https://github.com/NVlabs/NVAE&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
@@ -310,7 +310,38 @@ bound KL 을 만들기 위해, input changes 에 output 이 dramatic 하게 변�
 &lt;p&gt;하지만 real-world data 들은 label 들을 주로 구하기 힘든 문제들이 존재하니,
 그럼 어떻게 unlabelled data 로 (unsupervised) i2i translate 를 잘 할 수 있을지를 해결한 논문입니다.&lt;/p&gt;
 &lt;h2 id=&quot;method&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#method&quot; aria-label=&quot;method permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Method&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/TUNIT/tunit-architecture.png&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e2c992b47e19f9fdd4d7970f339a36d1/38abd/tunit-architecture.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACdklEQVQozzWS/UuTURTHn/+p3/ozIgiCIiJ/sHzpF5UiIiICwQk5CCy0wilklqVzam5OzGlNramtObc9e9fNvdi2Z5vbnmef7nOlA4d7v+ece873nHuUaDSGGk8Ri8VJJBJCk6ixpDwNw6DVavFfQqEQ0WhUxiZT5psYkUiE8/OG9JuxSiqpsrkyhW93SxrjsSM8y1P4939KXCqVcLucLC/aOTsroOs6LtcSsx+nSQoCum7gcjqY+zRDVFVRAn+82F92semelgl++9axj3az45mXuKJVGLEM0dfTQaGQkzbryDD3ezrZ9+/JAkOWQbp67wkyYZRiPo/DOYPJ1JR0No37s43jTFJioyUYuFewzYyLni5aX1lbY3L2C+flosTuVSf2D++pNBso3oKPp34rCykXuul1LaP3d2MsXjCsNmuMx6axhMaIVFRqIumAv82tXfCVzcGJ+b19BU8GaAf8KBb/KJ1bD7grNN3I03o8gHb7GlrHdTgrEa+d0OHp446nn4mIjYgGl5Y1Ln+t0nvQhkyC0s2rVG5c4dzyHEX9m8B68Iadk1+SUTNwQPnZI5oHPonbLR27usLr/UnBrk6jVse6d8pDb1G0aMiYhuhGezFIM5VE2VjfIB1NiWEhB9zKHKNNjNHKZWVwLpfjyC9+3r1BMHBItd4guG7DNz9MoZgXDJro9RqNowCabVzMcNtL6jgtd86U8lmR1QU7+UxG4tPTUxxLi2zvbJPNXtgcc++YnRomJ37dECS0comEGuHbqgvFTFQoFDgMBgkKjcXjlDVNFGhjtNuyULVaFeujUa/XKRaL/PBus7n1nXA4LG2a8Jn7WhP3fz9jvSoE24CtAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/e2c992b47e19f9fdd4d7970f339a36d1/fcda8/tunit-architecture.png&quot;
+        srcset=&quot;/static/e2c992b47e19f9fdd4d7970f339a36d1/12f09/tunit-architecture.png 148w,
+/static/e2c992b47e19f9fdd4d7970f339a36d1/e4a3f/tunit-architecture.png 295w,
+/static/e2c992b47e19f9fdd4d7970f339a36d1/fcda8/tunit-architecture.png 590w,
+/static/e2c992b47e19f9fdd4d7970f339a36d1/efc66/tunit-architecture.png 885w,
+/static/e2c992b47e19f9fdd4d7970f339a36d1/c83ae/tunit-architecture.png 1180w,
+/static/e2c992b47e19f9fdd4d7970f339a36d1/38abd/tunit-architecture.png 2766w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;위 이미지가 전반적인 TUNIT architecture 인데요, 크게 3 종류의 network 로 구성돼있습니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Network E : Guiding Network&lt;/li&gt;
@@ -1759,423 +1790,7 @@ masking 하는 대신, 작은 MLM (masked language model ~ generator) 으로 생
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[StarGAN-v2 - Diverse Image Synthesis for Multiple Domains review]]></title><description><![CDATA[TL;DR 이번 포스팅에서는 ICCV 2019 에서 Best Paper Awards 에서 선정된 papers 중에 하나인 SinGAN 을 리뷰해 보겠습니다. 개인적으로 정말 재밌게 본 논문이고, ICCV 2019 논문들 중 최고였던거 같아요. 그래서…]]></description><link>http://kozistr.tech/SinGAN/</link><guid isPermaLink="false">http://kozistr.tech/SinGAN/</guid><pubDate>Sat, 14 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;이번 포스팅에서는 ICCV 2019 에서 &lt;a href=&quot;https://syncedreview.com/2019/10/29/iccv-2019-best-papers-announced/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Best Paper Awards&lt;/a&gt; 에서 선정된 papers 중에 하나인 &lt;strong&gt;SinGAN&lt;/strong&gt; 을 리뷰해 보겠습니다.&lt;/p&gt;
-&lt;p&gt;개인적으로 정말 재밌게 본 논문이고, ICCV 2019 논문들 중 최고였던거 같아요. 그래서 저도 간략한 overview 와 technical review 를 해 보려고 합니다.&lt;/p&gt;
-&lt;p&gt;소개 전에 간단하게 SinGAN 으로 뭘 할 수 있는지 보면, &lt;strong&gt;단 한 장의 이미지로 realistic 한 image manipulation 들을 생성&lt;/strong&gt;할 수 있어요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/f705a/teaser.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABPElEQVQY0wExAc7+AMvT28LN2MDJztfb3Nbi6srZ5dDb4dHa3+bu987W2rfAw8rT2szX4LrEyMbR2NDe6djk7Njf4s7Z38bR1ABieHhadXtncW2Li4RUdHZEZ2xjbWdPW1dui5h6hYBQV09ifH9jfoFhaV9LYmBNaGlffINobGRGWFQ9QDQAnIlkkHlQm4BWybqjmIlljnpPpIlhnIVejnlQm4BapItmlHpQmnlPpYZfl4RdknhPnINZpYVemYJanYNbAPq3avy5X//KZfrbpvS0aP/DYv7Ga/y9Zv24Xfu7YP3DbP2tVv2wWfu3YP2+a/isVf7AZfi2X/67YP/HawCiek+mdDy2ejnUs5Kgd02cajWjc0GkdkaSZjerdT29hkulbziqcTmvdT66hE+WaTmmczyuekC0fkK/gkSJLa65PFHxowAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/fcda8/teaser.png&quot;
-        srcset=&quot;/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/12f09/teaser.png 148w,
-/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/e4a3f/teaser.png 295w,
-/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/fcda8/teaser.png 590w,
-/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/efc66/teaser.png 885w,
-/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/c83ae/teaser.png 1180w,
-/static/8cd3f0f4e8a5f5a5ac1669b31c5811d2/f705a/teaser.png 1493w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/cb21c27cc9e586cfbbed37d8942a1ae2/72aae/manipulation.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 49.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACbUlEQVQozwFiAp39APb4+Nji5r7Q1s3Z3e/u7L/Q+52164qo27LR/9zg4tfTxcvJv+Hi3b7K1ae0v9re4f///8zJ0ZyRsc7D5gC3uryVoqCyxMmhtrR/jHlziqZ6l9NMkPZRkOd6kpi3sILUyaLNy62Ij5BkdYDa4ur///+fmLNLNnx4Z6EAlpuPUF4wb31KZHI3XWw7vLaJspl2lJqhjH2BbHlXaX9Lm5xttruNmoJ1eEtJ5eLh////jISXSTVzZ1ePAL7GvHmNbYOXc3GLbXiPfYySq3x7lnx3j4yHpZygj5yifJeYd6iqi218fFZeZbbAycfX3np1k2tWnl1PhgDT2dustbqVoayDmqibr7t8k8hzi9hUhPlFgP+Roaq7rYbbz6zZ07hNd5dEXHBjanExZotLTmxiSolqWpIAqrGgWm1GZHVQZnNOc4FhtLKGqYpjhYudcHaRa3ZaWVMspqN3u8GVYXqJZl1Yk31tZ4CRVFyCWkaFSz9xAMLMu3eOZHmOaW6JYn+Wc5udo3dve3Zqbo5+hpubg5CPaoeHYaKkgHaBiXh3d4iBe4iWnVVYdlQ8f3hmogDa3d+9xMiuub+ouMG2xMqCk9BthtdWgvNMhP+Vpq7DupXXy67V0LlTeZdEXXRicHs8bpBnaopgTo1WSXoAp6yhZHNIaXlQb31UgIxurq+NnoVufIuwYXKkaXhhXGM0sKp9wsWaWHaIWVdWgnJnWXiLRkxvSzJ3bFmbAMTKt3yLUoqXYIKRWYqYa6yqm5qJeZaCdKCIfpWYfIaNZ5OUbaqrhoaPkoyDfqKUipKan4eMqmxfi3hwkRQkVYlooc/WAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/cb21c27cc9e586cfbbed37d8942a1ae2/fcda8/manipulation.png&quot;
-        srcset=&quot;/static/cb21c27cc9e586cfbbed37d8942a1ae2/12f09/manipulation.png 148w,
-/static/cb21c27cc9e586cfbbed37d8942a1ae2/e4a3f/manipulation.png 295w,
-/static/cb21c27cc9e586cfbbed37d8942a1ae2/fcda8/manipulation.png 590w,
-/static/cb21c27cc9e586cfbbed37d8942a1ae2/efc66/manipulation.png 885w,
-/static/cb21c27cc9e586cfbbed37d8942a1ae2/72aae/manipulation.png 964w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/1905.01164.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;official implementation : &lt;a href=&quot;https://github.com/tamarott/SinGAN&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;기존 GAN 들을 대부분의 연구들을 보면 얼굴, 침실, 풍경 등 한 가지 종류에 focus 한 게 대부분이고, 주로 많은 데이터를 요구했습니다.&lt;/p&gt;
-&lt;p&gt;다양한 종류의 object 를 생성하는 것은 여전히 잘 못하고 있고, 이런 문제를 해결할려고 conditional 하게 생성을 하거나 (e.g. cGAN), task 를 특정하는 등의 방법으로 문제를 해결하려 했습니다.&lt;/p&gt;
-&lt;p&gt;왜냐면 이전 방법들로는 적은 수의 데이터와 여러 종류의 데이터의 distribution 을 잘 학습하기엔 엄청 어려웠어요&lt;/p&gt;
-&lt;p&gt;그럼 이런 문제들을 어떻게 하면 해결할 수 있을까에서,&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&apos;단 1 장&apos;의 이미지로 GAN 을 훈련할 수 있을까??&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;이런 이번 논문인 &lt;strong&gt;SinGAN&lt;/strong&gt; 이란 concept 이 나오게 됐습니다. (멋지죠?)&lt;/p&gt;
-&lt;p&gt;물론 이전에 이런 노력을 안한건 아니에요. 정확히 논문 이름들은 기억이 안나는데, 대부분이 input 에 대해서 conditional 한 method 를 사용하고 있었습니다.&lt;/p&gt;
-&lt;p&gt;또한 이전에 Unconditional Single Image GAN 이라고 하면 Texture Generation 이란 task 로 유일하게 문제를 풀고 있었는데, 이 task 의 한계는
-texture image 에 대해선 결과가 reasonable 한데, non-texture image 에 대해서는 별로 였어요.&lt;/p&gt;
-&lt;p&gt;하지만 이번에 소개할 논문에서는 &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;unconditional 하게, noise 로 부터 image 생성&lt;/li&gt;
-&lt;li&gt;general purpose 로 natural image target (non-texture) 에도 적용 가능한 방법 제안&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;합니다.&lt;/p&gt;
-&lt;p&gt;물론 결과는 이전 method 들 보다 훨씬 general 하고 결과도 outperform 합니다!&lt;/p&gt;
-&lt;h2 id=&quot;technical-review&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#technical-review&quot; aria-label=&quot;technical review permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Technical Review&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;SinGAN&lt;/strong&gt; 에 소개된 novelty 를 1 가지로 요약 해 보면 아래와 같아요&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Multi-Scale Architecture (# 2.1)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;완전 새로운 concept 는 아니고, multi-scale architecture 에 대해서는 이전에 LAPGAN 이란 GAN 에서 한 번 비슷하게 소개가 되었는데,
-궁금하시면 한번 봐도 좋을 것 같습니다.&lt;/p&gt;
-&lt;h3 id=&quot;multi-scale-architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#multi-scale-architecture&quot; aria-label=&quot;multi scale architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multi Scale Architecture&lt;/h3&gt;
-&lt;p&gt;SinGAN 의 ultimate goal 이라고 하면, single image 의 internal distribution 을 잘 배우는 unconditional generative model 를 만드는 겁니다.&lt;/p&gt;
-&lt;p&gt;이런 것을 하려면 다음과 같은 것들을 잘 해야 할텐데,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;many different scales 로 복잡한 image structure 의 distribution 을 capture 하기&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;global properties : 이미지 내 큰 objects 들의 모양과 배열 e.g.) 하늘 위치, 땅 위치&lt;/li&gt;
-&lt;li&gt;local properties : global properties 의 details &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;그래서 multi-scale architecture 를 선택했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7c27c9c01342508a98366734bfe86dd2/78958/multi-scale-architecture.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB5klEQVQozyVRSW/TQBj1P+PPcOOABIdKnOiBSggqISGhilYiEKmlUpGglLpJWByi0mx1m5DEzmbSJJ7xFo93xx7H4XP7Du/wLW++94YpFot7ufzn05JM/KWpu2Ir4yU9OGYPWG6ZpH96/3YOT4ZzNY5isY8VTFoS+sB+564E5n3u3cOnW/c3X+7/qkaz8YL9GE1HE1V/9OLVxutdw/Z2P3158Gz77LxuE6dQ6omCdsJVHj9/kjv+xvi+3x8OTovsSBqHvj8biI5FkiQR+4LQ64RheDMZt1u8rqlxTMfSDGGdmIY8n9rEZKC9Xq/TdQbHdacytmwnXQGSrJ7edTJQSrGi6LoRxeAgTZKUAb1Go/GVLWDiOmiml9lIVwzbOSpwXhjdrVWuu3xvGPh+uSLOb8wffHdzbytf4BhV0yxinnG/ueZVbBOlxkFglutBxQuC9e3L1Uu+3RNoTOvNEUJ285rPHe5w1QsGY0xpdmFC4yAMEUJBEEbLyPM8cB5FcGMMEmADSEbYc732aPKz9uai08yWYQgmZnOZaBoqsz5ZYN0Qx1KmuFoBLyyrOxiFYVCu/MXILp2X3+bvHZX2GdC+DWYFyemaNux2FEWJKYXwICEQBYYfcT3XXBjtVkeSJkie12sNVVH+A4CD11KWlOH2AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/7c27c9c01342508a98366734bfe86dd2/fcda8/multi-scale-architecture.png&quot;
-        srcset=&quot;/static/7c27c9c01342508a98366734bfe86dd2/12f09/multi-scale-architecture.png 148w,
-/static/7c27c9c01342508a98366734bfe86dd2/e4a3f/multi-scale-architecture.png 295w,
-/static/7c27c9c01342508a98366734bfe86dd2/fcda8/multi-scale-architecture.png 590w,
-/static/7c27c9c01342508a98366734bfe86dd2/efc66/multi-scale-architecture.png 885w,
-/static/7c27c9c01342508a98366734bfe86dd2/c83ae/multi-scale-architecture.png 1180w,
-/static/7c27c9c01342508a98366734bfe86dd2/78958/multi-scale-architecture.png 1320w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;위 그림에서 x&lt;em&gt;0 가 original training image 이고, x&lt;/em&gt;1 ~ x&lt;em&gt;N 가 x&lt;/em&gt;0 에서 r 배 (r &gt; 1) 씩 down-sampled image 입니다.&lt;/p&gt;
-&lt;p&gt;각 scale 에서...&lt;/p&gt;
-&lt;h4 id=&quot;generator&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#generator&quot; aria-label=&quot;generator permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generator&lt;/h4&gt;
-&lt;p&gt;noise (z&lt;em&gt;n) 와 이전 단계에서 생성된 image (~x&lt;/em&gt;n-1) 를 받아서 image (~x_n) 을 만듭니다.&lt;/p&gt;
-&lt;h4 id=&quot;discriminator&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#discriminator&quot; aria-label=&quot;discriminator permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Discriminator&lt;/h4&gt;
-&lt;p&gt;real image 와 (x&lt;em&gt;n) fake image (~x&lt;/em&gt;n) 를 구분.&lt;/p&gt;
-&lt;p&gt;하나 차이(?)점이 있다면, 맨 아래 scale stage 에서는 only noise (z_N) 를 사용해서 image 를 생성합니다.&lt;/p&gt;
-&lt;p&gt;논문에서 coarse-to-fine fashion 이라고 소개를 하는데, 좀 쉽게 설명 해 보면,&lt;/p&gt;
-&lt;p&gt;아래 단계에서는 down-sampled image 를 학습하니, 상대적으로 detail 보단 global 한 feature 에 집중을 하면서 학습을 하고,
-위 단계일 수록 fine feature 에 더욱 집중하게 됩니다. 동일한 receptive field 에 생성하는 image scale 이 다르니,
-위 그림에 &lt;strong&gt;Effective Patch Size&lt;/strong&gt; 가 달라지면서 coarse-to-fine fashion 으로 학습이 된다 입니다.&lt;/p&gt;
-&lt;h4 id=&quot;single-scale-generation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#single-scale-generation&quot; aria-label=&quot;single scale generation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Single Scale Generation&lt;/h4&gt;
-&lt;p&gt;각 G_N 부분에 해당되는 block 인데, 구조는 아래와 같습니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/771b67b3bff99ade4f7b25f40bbbdf29/00b70/single-scale-generation.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 37.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABb0lEQVQY031QS0/CYBDs3zXh5MWDJl40gBjlRCCIIHogQiIYNWgwIEgEwqsVS6GUtpRHgQLtVyiVPvBDbh7czGF3Mzs7u8j639A0TTeMP03DNEVRhAmCYVg6nUZR1DRNWH+rqiQIYDJZiDNVBnyHnfB9bTFXAVAkUQGSaRpQkaFpyEecTqfFYrE5Tis1vEpQnRYlN2syiY+/qjpHpR7uQ4HL0JU/8xhbj7oqS0J1huMy2exgKiNwZ+I57g3Hds88e+7QR6GstvFRrUJkUzxWCng9DpvVbrPd+n0zAuPKearNHHpudo7OXU85xPg96S1fOLA7rC43/olBkkzVFZpY0o2g78J6vIlw0A+NkLn3Id93+gP7jpPru+hmGLqXgTTsdacTYdplh1hJadc1llTpRjERT0Yjr9EImnwxOIpHi9pS0VYq3+sauoZsHwgAmIkimM8XkjhuNwckwbcaEALdmjIUBEx4khAYSl+tIH/73R8OVmXlpHKtjQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/771b67b3bff99ade4f7b25f40bbbdf29/fcda8/single-scale-generation.png&quot;
-        srcset=&quot;/static/771b67b3bff99ade4f7b25f40bbbdf29/12f09/single-scale-generation.png 148w,
-/static/771b67b3bff99ade4f7b25f40bbbdf29/e4a3f/single-scale-generation.png 295w,
-/static/771b67b3bff99ade4f7b25f40bbbdf29/fcda8/single-scale-generation.png 590w,
-/static/771b67b3bff99ade4f7b25f40bbbdf29/00b70/single-scale-generation.png 733w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;% 이전 stage 에서 up-sampled image : x_n+1&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;z&lt;em&gt;n + x&lt;/em&gt;n+1 가 conv 연산을 통과&lt;/li&gt;
-&lt;li&gt;x_n+1 가 residual 하게 마지막에 연결&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;가 간단한 구조인데, conv block 부분을 더 자세하게 설명하면,&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Conv (3x3) - BatchNorm - LeakyReLU&lt;/code&gt; &lt;/p&gt;
-&lt;p&gt;이 convention 으로 5 층을 쌓았네요.&lt;/p&gt;
-&lt;p&gt;처음 (coarsest scale) 엔 32 kernels / block 으로 시작을 하고 4 scales 마다 kernel 을 2 배 늘려 주었다고 합니다.&lt;/p&gt;
-&lt;p&gt;이렇게 해 준 이유는 (상대적으로 light 한 구조여서), &lt;/p&gt;
-&lt;p&gt;주로 generator 의 capacity 가 커지면 training image 를 외어버리는 경우가 생기는데, 이를 방지하려고 light 하게 설계를 한 것 같습니다.&lt;/p&gt;
-&lt;p&gt;또한 fully-convolutional 하게 설계를 한 이유는, arbitrary image size 에도 training / inference 가 가능하게끔 하려고 라고 설명을 합니다.&lt;/p&gt;
-&lt;h3 id=&quot;gan-training&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gan-training&quot; aria-label=&quot;gan training permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GAN training&lt;/h3&gt;
-&lt;p&gt;이 부분이 이제 GAN을 학습하는데 있어서 제일 중요한 부분인데, 딱히 특별한 부분은 없습니다.&lt;/p&gt;
-&lt;h4 id=&quot;loss-function&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#loss-function&quot; aria-label=&quot;loss function permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;loss function&lt;/h4&gt;
-&lt;p&gt;loss 는 adversarial loss + reconstruction loss 로 이뤄졌고&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;total_loss &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; adv_loss &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; alpha &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; rec_loss&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h5 id=&quot;adversarial-loss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#adversarial-loss&quot; aria-label=&quot;adversarial loss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adversarial loss&lt;/h5&gt;
-&lt;p&gt;WGAN-GP loss 사용 했고. 논문에 보면, 다른 texture single image GAN 과 다르게, patch 별이 아닌 전체 이미지에 대한
-loss 를 사용했더니 네트워크가 boundary conditions (SM) 를 학습할 수 있었다고 합니다.&lt;/p&gt;
-&lt;h4 id=&quot;reconstruction-loss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reconstruction-loss&quot; aria-label=&quot;reconstruction loss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reconstruction loss&lt;/h4&gt;
-&lt;p&gt;l2 loss 를 사용. 각 stage 에서의 rec loss 를 다음과 같이 정의가 가능한데,&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;rec_loss_n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; l2_loss&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;G_n&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;~&lt;/span&gt;x_n&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x_n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;또한 ~x&lt;em&gt;n 의 역할이 하나 더 있는데, stage n 에서의 noise z&lt;/em&gt;n 에 대한 std 값을 결정하는데 쓰여요.
-~x&lt;em&gt;n+1 하고 x&lt;/em&gt;n 의 RMSE 값을 구해서 각 scale 에 얼마만큼 더해야 하는지를 알려주는 정도로 사용된다고 합니다.&lt;/p&gt;
-&lt;p&gt;또 중요한 부분은 noise 를 넣어줄 때, 첫 단계에만 fixed noise 로 넣어주고 다른 단계에서는 noise 를 따로 만들어 주지 않았는데,
-image pixel difference 를 줄이려는 것에 focus 를 하려고 이렇게 했다고 캅니다.&lt;/p&gt;
-&lt;h2 id=&quot;experiment-result&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experiment-result&quot; aria-label=&quot;experiment result permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experiment Result&lt;/h2&gt;
-&lt;h3 id=&quot;정량적인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EB%9F%89%EC%A0%81%EC%9D%B8&quot; aria-label=&quot;정량적인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정량적인&lt;/h3&gt;
-&lt;p&gt;총 2 가지의 정략적인 방법을 사용했는데,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Amazon Mechanical Turk (AMT) &lt;/li&gt;
-&lt;li&gt;Single Image Frechet Inception Distance (SIFID)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;요즘 GAN paper 들에서 자주 사용하는 metric 들입니다.&lt;/p&gt;
-&lt;h4 id=&quot;amt&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#amt&quot; aria-label=&quot;amt permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AMT&lt;/h4&gt;
-&lt;p&gt;AMT 는 사람들에게 직접 답을 하게 해서 결과를 매기는 서비스입니다.
-여기서는 해당 이미지가 Fake 인지 Real 인지를 구별하게 하는 투표 방식을 사용했습니다.&lt;/p&gt;
-&lt;p&gt;여기선 2 가지 방식으로 조사를 하였는데,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;실제 이미지와 SinGAN 이 생성한 이미지를 보여주고 어느 쪽이 가짜인지 맞히는 Paired 실험&lt;/li&gt;
-&lt;li&gt;둘 중 하나만 보여주고 얼마나 헷갈렸는지를 물어보는 Unpaired 실험&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;실험 조건은, 각 실험 당 1 초의 시간에 1 명당 50 장의 image 를 보여주었답니다.&lt;/p&gt;
-&lt;p&gt;생성한 이미지는 stage N, N - 1 에서 생성한 이미지들을 주었다는데, (논문에선 N -2 까지)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;stage N 은 noise 로 부터 생성한 이미지고&lt;/li&gt;
-&lt;li&gt;stage N - 1 은 진짜 이미지를 축소해서 G_N-1 에 넣어주는 방식인&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;이런 실험에선 노이즈로 부터 생성할 때와 진짜 이미지 기반으로 생성할 때의 차이를 볼 수 있는데,&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f68470a6fe3e8debb47d08a2175cacf2/7e509/generate_from_different_scales.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEeElEQVQ4yxWOaVMaBwBA9z+lk1QNBjUqRq0aEcR4QLiWZRdEOcR4ERQUUbQcyy4scsshcolIUEyTZtpJJhrRJNPp9E7SXJ2203qAGmpn3of35c08oPSpdFw4Pzor/f7xnx9/fXN4UjwunP3PWen1+79/fvXh7ce/Tk7Pj06KJ2eld3/++9OrD7+8flconJx/KgHHxfNBfBPU2QV6F38xwTXnxMR9KfGQq8F5GiNf7+EYEqB1S7r0iK8P8iYNPJ0DtqyLprSOWBw4KpYQc7KRQW7vIzM1OMOYY6GbsO0rqpDTwihrZzXcGpnqRe/DjkcMuYrButbDq+2SDYD4htafAi4GXH5iTCXVzN+dty1oUf28E7N5cRSfXZyVuI3CEI54CeWS12TCZi3opNEyNWeeMmDT/lU3cFY4zBPNz9CreVtVHiPtWq4cOOpeuFoPMNJLR/U+Vp63lj23VTx3Ne9byg5w0gF+dd9WsWv+7GWwBygWjhO+mcjS3bhXeyFRpyrlV28ELmQy4dVE3VOrjtGEazQTnI45J9a8mqRHHXONJzH+44wZOCqc317YvClVdyqUdOlA+xjaa/maa37YLlXRpVLa6EK7JkY1bHOt31BHLB39SIditEfnZ6v1i/4Q8Nub9yI0Q+Uz6eymTnZ995AccT4YdNzvVQx3cpuYwg5IOwfb1mWuB8yJOTZM5fXT+pRymMhpAllgd+dJEB/yolKnWea0yD2YLOhUrnomgnZZwiZYt3E38O6srSvtkYfs8rBdEbArfXaFywSuhWeAH757/q2ldRet3bHWPbXUPDaS94gv8kv0p6aaZzhlx3r9ieX6Dn4j76Ttmqr38No9rPoZSs5jFd/HuMDLF/trEUkmhmRi8AWpCC8TF28lFRtRKBtH7sUEmSi4sSrYTinTEX42DmfjUCYq8JvA7Mo8sLv3xOSjyYbbFTKuUsmTK+gGgubfAlX6PpDfJ1eAyqG+GVNrICfUOxhCmCkd4Gq14g5qk06nBj7+8dbq6ejqudxIId3qJjc1kCQwbTl9G4TIbW2VTHZtSzOZ3dO4vAbeUde0tVRy+ZQBCYfNavWGhoHi6SEaoElGr47pro9pqqQjlbCoyZXoGhwvk09U6QnK4B0SX0DBfL0qAwmRVcwR9Xd1FAi5ZsSFF/FxKjuysg5HNkSRtDiSRiIpWWpr3L8qcIb5y0kokIRCSXE6pw7EhEtBnjcKBRKQL9h/b9t8ER8F7sGoA5qdRzQz0Owck1jpDW9LjE7O9IzI8KVYN8/C/F3hnMQaZGp18MJCv42QsllUw+w0UDg9dCdZTCblRk0No7OWzWwYG2cEMhxEfKOZUku/2dBUV40ImkMZ4bi2saWhrpPaSG/7gkGt94VUQPHscNHdxhVd4okvD09XTqI1IkkrEaEJFZdEynKV6Rp/oOw2p97q7R7Wfc5BrkyhVYiyvIdVbrIJgdPT43h6yOkD7W7Qs4ysRPs9y4Pp3ITDy7PYud6w0B+EnR4ktanyhSETxnYHoUBYtOTip7Jz/wEp9Hyn7n14zwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/f68470a6fe3e8debb47d08a2175cacf2/fcda8/generate_from_different_scales.png&quot;
-        srcset=&quot;/static/f68470a6fe3e8debb47d08a2175cacf2/12f09/generate_from_different_scales.png 148w,
-/static/f68470a6fe3e8debb47d08a2175cacf2/e4a3f/generate_from_different_scales.png 295w,
-/static/f68470a6fe3e8debb47d08a2175cacf2/fcda8/generate_from_different_scales.png 590w,
-/static/f68470a6fe3e8debb47d08a2175cacf2/7e509/generate_from_different_scales.png 745w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;실험 결과를 보면, stage N, 노이즈로 부터 생성한 것은 원본과는 많이 다른 결과를 가져올 수 있고,
-stage N - 1, N - 2 는 원본 형태 유지는 되고, N - 2 같은 경우엔 texture 가 더 원본 같다는 것도 확인 할 수 있습니다.&lt;/p&gt;
-&lt;p&gt;하지만, 원본 object 의 배열을 유지한 상태에서 다양성을 보장하기엔 stage N - 1 결과물이 제일 좋다고 판단이 가능하네요.
-AMT perceptual study 결과도 N - 1 stage 일 때가 가장 좋습니다.&lt;/p&gt;
-&lt;p&gt;재밌는 점은 stage N - 1 일 때, &lt;strong&gt;confusion 이 47 %&lt;/strong&gt; 인데, 사람이 보기에도 정말 헷갈리나 보네요.&lt;/p&gt;
-&lt;h4 id=&quot;sifid&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sifid&quot; aria-label=&quot;sifid permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SIFID&lt;/h4&gt;
-&lt;p&gt;기존 FID 를 Single Image 에 맞게 변형해서 SIFID metric 을 제안해서 사용합니다.&lt;/p&gt;
-&lt;p&gt;각 scale 별 SIFID 를 측정하고 AMT 에서 Survey 한 결과하고 (Paired, UnPaired) correlation 를 측정해서 유의미한 metric 임을 증명하네요.&lt;/p&gt;
-&lt;p&gt;요 부분은 논문 6 ~ 7 페이지에 나와있는데, 여길 참고하세용 (&lt;del&gt;귀찮아&lt;/del&gt;)&lt;/p&gt;
-&lt;h3 id=&quot;정성적인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EC%84%B1%EC%A0%81%EC%9D%B8&quot; aria-label=&quot;정성적인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정성적인&lt;/h3&gt;
-&lt;p&gt;총 5 개의 application 예시를 보여주고 있는데,&lt;/p&gt;
-&lt;h4 id=&quot;single-image-super-resolution-sisr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#single-image-super-resolution-sisr&quot; aria-label=&quot;single image super resolution sisr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Single Image Super Resolution (SISR)&lt;/h4&gt;
-&lt;p&gt;결과 비교를 위해
-internal method 인 Deep Image Prior (DIP), Zero-Shot Super Resolution (ZSSR)
-external method 인 SRGAN, EDSR 와 결과를 비교했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7c177a1b2169c7eb75c0a40183049776/acd79/sisr_result.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 23.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABPElEQVQY0wExAc7+AKanm7++s7ezpr25rLe2q7a1qrq2p7q4qre3rL69sL26q7e2qb+/tbSypL+8rbW0qLm4rby6q7a1prq6rgBzc1V0dVuAelyPiWqBfWB6eVyGg2CRj2x3eFl+e16Oi2iHhWR7e19+e1uSkG19fVx6eV2HhWOPjmt/f2AAiolrg4NqfHpigH9llZJ4jItxe3tehodrm5t9hINqgYBjiopunJt/fX1igYFlkpJ1kJB1fH1ig4RnnJyAAHJyVIyJa5mSb4F9YIB+ZaqkgZWOant5Xo6NbqegeouGZHd2Wp+efaCZc4eDZH19Yaung5eSbHt5W4yMcADY2dPd3Nbd29LY1s+/v7nEw7zSz8XZ2NHMzMXa187h3tXT0szLysLKyL7S0Me6urPIxr7j39XY2NDQz8iCCLIw0jJXnQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/7c177a1b2169c7eb75c0a40183049776/fcda8/sisr_result.png&quot;
-        srcset=&quot;/static/7c177a1b2169c7eb75c0a40183049776/12f09/sisr_result.png 148w,
-/static/7c177a1b2169c7eb75c0a40183049776/e4a3f/sisr_result.png 295w,
-/static/7c177a1b2169c7eb75c0a40183049776/fcda8/sisr_result.png 590w,
-/static/7c177a1b2169c7eb75c0a40183049776/efc66/sisr_result.png 885w,
-/static/7c177a1b2169c7eb75c0a40183049776/c83ae/sisr_result.png 1180w,
-/static/7c177a1b2169c7eb75c0a40183049776/acd79/sisr_result.png 1543w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;(distortion quality 인 RMSE 가 낮을 수록 좋고, Perceptual Quality 인 NIQE 가 높을 수록 좋음)&lt;/p&gt;
-&lt;p&gt;다른 Internal Method 에 비해 RMSE 는 높지만, external method 인 SRGAN 과 NIQE 값은 comparable 합니다.&lt;/p&gt;
-&lt;p&gt;1 장의 이미지만 사용해서 이 정도 결과라서 정말 신기하네. 개인적으론 PSNR 같은 다른 metric 하고 모델 들도 넣어줬으면 좋을 것 같네요.&lt;/p&gt;
-&lt;h4 id=&quot;paint-to-image-style-transfer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#paint-to-image-style-transfer&quot; aria-label=&quot;paint to image style transfer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Paint-To-Image Style Transfer&lt;/h4&gt;
-&lt;p&gt;Paint Image 로 부터 생성하는 style transfer 실험인데, quality 가 꽤괜입니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3389c01a5021789c0be4714d0ba0749b/8b84a/paint_to_image_style_transfer_result.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.054054054054056%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABeUlEQVQY0wFuAZH+ANvh67/M4bbE3cTR5c/b77fG3rPA1sjV68vX6brG2rzI2r/N4sHX96vD47jG2qvE58jZ9LrH4LPB2bzK4gDByNC6wcS4t6a4urGis8uYq8aVr9eVr9mxu8W3u7W0vsO1wc2fudmFptGLrdmOseGfttWercSbs9uZsdoAq6OMlIdhlIdfl4tqm5N+kYl0i4qBjY+Popd7n45ino9sopd6mopseWtKcm9XdG5dj4Rvmo5wk4t6ko2BAJuXcYR/W4Z/XoqHYoyNYYKEU4SEUIeIVY6LYYaAWIaCVouFXYuISHt9LXt8OnR2J4GES4eJXYWFVYSFUwCOlFd/gTiHhD+Jj0eSmEiAijGDijaHkTmMkUp+gz6Ag0KFiUiPmT17jBuAjSKFkiaPmEWFiziDizyHjjoAoqd1lZhflplekJpinaRomp1al55bnKNfnqVslZlilZphmaJon6dhjphLlJtMl59So6dnlplemp1elZ5dKiHPgJ8LZm8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/3389c01a5021789c0be4714d0ba0749b/fcda8/paint_to_image_style_transfer_result.png&quot;
-        srcset=&quot;/static/3389c01a5021789c0be4714d0ba0749b/12f09/paint_to_image_style_transfer_result.png 148w,
-/static/3389c01a5021789c0be4714d0ba0749b/e4a3f/paint_to_image_style_transfer_result.png 295w,
-/static/3389c01a5021789c0be4714d0ba0749b/fcda8/paint_to_image_style_transfer_result.png 590w,
-/static/3389c01a5021789c0be4714d0ba0749b/efc66/paint_to_image_style_transfer_result.png 885w,
-/static/3389c01a5021789c0be4714d0ba0749b/c83ae/paint_to_image_style_transfer_result.png 1180w,
-/static/3389c01a5021789c0be4714d0ba0749b/8b84a/paint_to_image_style_transfer_result.png 1531w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;editing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#editing&quot; aria-label=&quot;editing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Editing&lt;/h4&gt;
-&lt;p&gt;원본 이미지에 일부 영역들을 임의의 무언가로 넣으면 이 친구가 얼마나 자연스럽게 만들어 주는지 확인 해 주는 task 인데,
-이것도 꽤 재밌는 결과를 보이네요.&lt;/p&gt;
-&lt;p&gt;아래 이미지에서 &lt;em&gt;Content Aware Move&lt;/em&gt; 가 포토샵 기능인데, 이 것보다 잘하는 거 같네요&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/827c27d77bcc338201f45b2bc70727ea/f1d1f/editing_result.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADnklEQVQozwGTA2z8AOrt9Nba4sPHz7m/yLG7x73H0MPP3LC4w9TZ4ujt9eXo7+bq883S2rnCzLjDz7zH0rS/zdPb5+Tp8+vu9ABzibJXeKtsjrqApc2WoKqPgnl8fIJtiK1ZfrllgbVmfqpbgLZ2eYiGc2iSlZeHfHZ7foluirNRdrKLockAiKDBhqLCo8Hcr6+qpn1cmm1OkGA9gXNuiqvOjo+Ye5K0fJ7GjJOflWpGkmQ+hVMujV04h2RLZ3OGrquuAKy8y7rS4czT0oplS3NQQI9uW7KNbYRhSIqLjqGMeKe4x6a+0pu924mBfmY8J4xnUqp+V3lTN3lzb72mkAB2bm6jp6XLs5JyTDVbPTTU1dPn5tugfl2ge1SggWNzbW2kqKa5wcJ7bWhnST/l6+3ZzruOaUeeeVG/p48ART5FSDIom3hUVjousZh1//C779uow6Bur4lcn4JlLycwYUc0k29NUzUqybKJ/+676tWjwJxsqIFVu6OLAIZrVIFbNmxJMVMxIqaEU+nCeNqxbLSMWaJ3S598W3xgRoJaNmE+Klo4JbqWXenCd9ataq6GVptvQruhhwD66dTZxbG6r6eyqaSyqKTJvbHKu628raHYyLfu4NH45tDgzr2wpZ+pop+yqabHuq6+sKTGuK3m1sXw5tsAkqvNcpXAiKbFkZ6tmLTKl6Otj6W6gqbMcJnKiafSh6LJfKDMjaW8lZ2mmqy7mKOuiKK6f6bOdp7Qo7zdAG+Ns1uGtIOfuKB+YZ55W45ePYZdQ3tycmWCo26GpGSCqWGPvZCOjpReNphtSopaOoliR4N4c1p8opaktgCju9CMqsSqxtmhiHR5RyuGUjOfZz6NWDOEgIGnl4ibssWXt9CkvtCYemF3RyyIUjKlbUKMWTN7cW3Bq5gAlJebtcXLutThk4F1WC0fraKh08KvjGJBiG9ZooRpkpebssrZt9rxm4x/YTUlvrm5zracgVg7jW5TwKaPAEs/RFtHQLaafGlJOoxvW/vy1u7jxreQZrWIWaWDZDgrL21hW7SpmG9NO6eKc//53ubXtrWMYLCDVcCljQBdTEdkPyV4TS9JJRi9mGb8143sxoDHm2Opek2felpQPTV0SSlpPCFPKhrSrXL50ojowHu/k16gcUS8n4QA1raXwp58l31vkXZqpIl117iQ0a6IuZp/waKEya2V1rSTvpx+lXxwlXturpN827uTy6qIuZ2Dw6OF2MWzpIEFTr+pmaIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/827c27d77bcc338201f45b2bc70727ea/fcda8/editing_result.png&quot;
-        srcset=&quot;/static/827c27d77bcc338201f45b2bc70727ea/12f09/editing_result.png 148w,
-/static/827c27d77bcc338201f45b2bc70727ea/e4a3f/editing_result.png 295w,
-/static/827c27d77bcc338201f45b2bc70727ea/fcda8/editing_result.png 590w,
-/static/827c27d77bcc338201f45b2bc70727ea/f1d1f/editing_result.png 739w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;harmonization&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#harmonization&quot; aria-label=&quot;harmonization permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Harmonization&lt;/h4&gt;
-&lt;p&gt;Image 2 장을 합쳤을 때 조화롭게 잘 합쳐주는 지를 보는 task 인데, 이것도 꽤 자연스럽게 잘 되는 것 같아요&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/261bf4d359af935e3dfea0a8c3c3118d/d0cc0/harmonization_result.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 54.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACqklEQVQozwGfAmD9ANPU2sbJ07m8x56isb/D0M7T3czO06WnraKksKeqtqSms6GksqmvtcvN0r/Byp2gq6qsvKGksrG1wt3g5QBpc5Y/SXFOW35SWnhNXoh9iXevtZ9KVYZJVHhNW4FPXH9WZoqiqX6MlaE9SHZRXYFMV3ZSYIVldICzuI0AgpCkTVxxU2ByXF5hfYaabIKXqbS0YHCHT151Tl6AWGmFXnWYgJObmqewUWF3U2J2TVVdbnmFZnuXm6qrAISSnzlDSnaFkGF1jmRwfmNxgJObpltqdkhSWHqNnlpuimFziGp1hZGcp0JPWGRvdm2BmVpqf2FwfoGKlwBmcHweIiEvNjk7SV8zP1c2Qll9hJI5RVQbIB0zP0w3RF0vO1VKV251f44jLTYiKSg4Rlo0P1wtO1ZqdIgAgIKCVFpeVltiZ2tybG97Z29+kpeZdW9hYFtUXVpYa3BuZ2ptaG1ykJGIaWRYXFVRYmJhbHFwXmFogIWHADhBZAwrayQ9gFBTl2RrsDZVtX6LrP7JhtufetOMZMqFW8N7S7FoSNy9ivO9hdmadtGIX8qIWLtqN7yCagB7W2RgNDuGV0yVbWGRgot/gZmqrZveyYSce3HVpU/rtUTVpkegfETTzIC1r4WQh23htEjVq1asjmCki2QAxIZf45Y+8s1kya5uxJVKlnNJrppl16FL1YEmunola1EyNiwqKSwxrqJjx5hI1IEdmWsqS0ZILDFGV15fAIlFRJAvD7p+NNylO5tRMDE5VYSFcOjAWPCbILBAK3A6RzYrRzE3Waieceu/ReFxGZY3OV46SSAcPVxgdABqYnBPNEWaaEzYo1u4dF9ja5WUmpfuy2HgojzCWDGFTVBWT2dCTG2/snTuylnZhDOsTTpyU15GRmZqcYU0iDiCacRfAAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/261bf4d359af935e3dfea0a8c3c3118d/fcda8/harmonization_result.png&quot;
-        srcset=&quot;/static/261bf4d359af935e3dfea0a8c3c3118d/12f09/harmonization_result.png 148w,
-/static/261bf4d359af935e3dfea0a8c3c3118d/e4a3f/harmonization_result.png 295w,
-/static/261bf4d359af935e3dfea0a8c3c3118d/fcda8/harmonization_result.png 590w,
-/static/261bf4d359af935e3dfea0a8c3c3118d/d0cc0/harmonization_result.png 732w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;single-image-animation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#single-image-animation&quot; aria-label=&quot;single image animation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Single Image Animation&lt;/h4&gt;
-&lt;p&gt;한 장의 이미지를 넣어주면 짧은 video clip 을 만들어 주는 task 인데, 이 것도 자연스럽게 잘 되는 것 같네요&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=xk8bWLZk4DU&amp;#x26;feature=youtu.be&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;video&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;이번에 SinGAN paper review 를 해 보았는데, 이미지 한 장만 사용한다는 점과 Application 들이 정말 좋았던 paper 였어요.&lt;/p&gt;
-&lt;p&gt;개인적으론 network 설계나 등등 요소들은 조금 아쉽네요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[StarGAN-v2 - Diverse Image Synthesis for Multiple Domains review]]></title><description><![CDATA[TL;DR 이번 포스팅에서는 I2I translation 를 푼 StartGAN v2 을 리뷰해 보겠습니다. 평소에 Multi-Domain I2I translation task 에 관심이 많았는데, 작년에 나온 StarGAN 후속작인 StarGAN …]]></description><link>http://kozistr.tech/StarGANv2/</link><guid isPermaLink="false">http://kozistr.tech/StarGANv2/</guid><pubDate>Sat, 14 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[StarGAN-v2 - Diverse Image Synthesis for Multiple Domains review]]></title><description><![CDATA[TL;DR 이번 포스팅에서는 I2I translation 를 푼 StartGAN v2 을 리뷰해 보겠습니다. 평소에 Multi-Domain I2I translation task 에 관심이 많았는데, 작년에 나온 StarGAN 후속작인 StarGAN …]]></description><link>http://kozistr.tech/StarGANv2/</link><guid isPermaLink="false">http://kozistr.tech/StarGANv2/</guid><pubDate>Sat, 14 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;이번 포스팅에서는 I2I translation 를 푼 &lt;strong&gt;StartGAN v2&lt;/strong&gt; 을 리뷰해 보겠습니다.&lt;/p&gt;
 &lt;p&gt;평소에 Multi-Domain I2I translation task 에 관심이 많았는데, 작년에 나온 StarGAN 후속작인 StarGAN v2 가 나와서 한번 리뷰해 보려고 합니당&lt;/p&gt;
 &lt;p&gt;아래는 StarGAN v2 demo 인데, 아래와 같은 느낌입니다.&lt;/p&gt;
@@ -2541,4 +2156,264 @@ encoder part 에는 instance normalization (IN), decoder part 에는 adaptive in
 &lt;p&gt;를 물어본 결과 &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;CelebA-HQ data&lt;/em&gt;로 트레이닝 한 모델 case 에선, StarGANv2 가 quality 는 &lt;em&gt;70 votes&lt;/em&gt;, style 은 &lt;em&gt;75 votes&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;AFHQ data&lt;/em&gt;로 트레이닝 한 모델 case 에선, StarGANv2 가 quality 는 &lt;em&gt;88 votes&lt;/em&gt;, style 은 &lt;em&gt;92 votes&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;를 받아서 압도적으로 좋은 것을 증명했다고 캅니다.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;를 받아서 압도적으로 좋은 것을 증명했다고 캅니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[StyleGAN-v2 - Analyzing and Improving the Image Quality of StyleGAN]]></title><description><![CDATA[TL;DR 이번 포스팅에서는 리뷰할 논문은 지난 19년 11월에 나온 StyleGAN v2를 리뷰 해 보겠습니다 StyleGAN 에 이어서 2 번째 논문인데, 이번 버전에서는 어떤 문제점들을 어떻게 해결했는지를 한번 보려고 합니다! 아래는 Style…]]></description><link>http://kozistr.tech/StyleGANv2/</link><guid isPermaLink="false">http://kozistr.tech/StyleGANv2/</guid><pubDate>Sat, 14 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;이번 포스팅에서는 리뷰할 논문은 지난 19년 11월에 나온 &lt;strong&gt;StyleGAN v2&lt;/strong&gt;를 리뷰 해 보겠습니다&lt;/p&gt;
+&lt;p&gt;StyleGAN 에 이어서 2 번째 논문인데, 이번 버전에서는 어떤 문제점들을 어떻게 해결했는지를 한번 보려고 합니다!&lt;/p&gt;
+&lt;p&gt;아래는 StyleGAN v2 로 생성한 이미지들 입니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5113e9adaf42d411c678dbce0d576441/2bef9/stylegan2-teaser-1024x256.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsSAAALEgHS3X78AAABPElEQVQY0wExAc7+AI6BVRgRDR8YEjsvI6udZkE+DT0sGDwmIiEKAyASAmFLJ4VxV4J0cnBiTravd8LNmbOxoKmjkMvMrOTmxwCumFV3Sim2cUmebj+emkNNPwSEb3Ckf3wvFQwzFQlTSDeagHLlycGAZV1hXSmmtIney8LiwrS4roy0zIUAv6FSsHVFyHdOy5lXva1JtHkLjWxmb1NSOBsTaDEKal41m4N/2r64sZGJdGVKtKWBzq6cuIx8nYxffZ9LAHBfNoNVM7dtSodpRJaCSLB4IaJ7cYJdYTAVDlQvCGRZKnZmY9+5r45wZ2RXNsW7lbmUf5p1bIZ6UWyNSQAfICQqIR8/LSMaGh41NDySipluWFh3VlUQBAAQDAxZOjB4XFXRsqNqUEdbTiOKkYuLi5Z6aFx1h1ZOXzwY534exOOUiAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/5113e9adaf42d411c678dbce0d576441/fcda8/stylegan2-teaser-1024x256.png&quot;
+        srcset=&quot;/static/5113e9adaf42d411c678dbce0d576441/12f09/stylegan2-teaser-1024x256.png 148w,
+/static/5113e9adaf42d411c678dbce0d576441/e4a3f/stylegan2-teaser-1024x256.png 295w,
+/static/5113e9adaf42d411c678dbce0d576441/fcda8/stylegan2-teaser-1024x256.png 590w,
+/static/5113e9adaf42d411c678dbce0d576441/efc66/stylegan2-teaser-1024x256.png 885w,
+/static/5113e9adaf42d411c678dbce0d576441/2bef9/stylegan2-teaser-1024x256.png 1024w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/1912.04958.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;official implementation : &lt;a href=&quot;https://github.com/NVlabs/stylegan2&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
+&lt;p&gt;요건 이전 버전 StyleGAN paper 입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;StyleGAN : &lt;a href=&quot;https://arxiv.org/pdf/1812.04948.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;이번 논문에서는 이전에 발표한 StyleGAN 의 artifacts 들에 대해 지적하면서 시작합니다.&lt;/p&gt;
+&lt;p&gt;요약 해 보면 크게 3개의 문제점을 지적 / 개선 / 해결 했는데, &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;blob-like artifacts&lt;/li&gt;
+&lt;li&gt;artifacts related to progressive growing&lt;/li&gt;
+&lt;li&gt;metrics for evaluating GAN performance&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;blob-like-artifacts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#blob-like-artifacts&quot; aria-label=&quot;blob like artifacts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;blob-like artifacts&lt;/h3&gt;
+&lt;p&gt;StyleGAN 에서 &lt;em&gt;Instance Normalization&lt;/em&gt; 이 아래 이미지 처럼 water droplet 과 같은 artifacts 를 발생한다고 합니다. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/18408e2b9433f5d9ea020c0b9c0a5937/280a1/droplet-llike-artifacts.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA+0lEQVQI1w3IX0uDQAAAcL9fBVEbrZEIW2BNcG7Q1rk7Tz2tFrOsUSrd7Zqmlkp7aEHQQ/TnO/TSh2m/x5/wlbGpb11Rv+TzlNLHotCxpnZbBhoWy7csy584L/LcNfGlg+XGttvrVmX5kKaLJBH+qjtmq5IiEptACAmxd5tbh7KkyJ0jgEarGQwgAKrcZhcnUG7K9XWEjGMAXMsSfumkBIrW2bcdByF0Pj6r13Y21jb3GjU47BsYQ4RM0zy1MBn0555ZJVTXRys2IcLPtftxoH0CL7hnURDEcYwgbEnia8G/319uboMwDDmfTb1Jry3O/PFy8UwpjaKIMfYPSRd+22dO3n4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/18408e2b9433f5d9ea020c0b9c0a5937/fcda8/droplet-llike-artifacts.png&quot;
+        srcset=&quot;/static/18408e2b9433f5d9ea020c0b9c0a5937/12f09/droplet-llike-artifacts.png 148w,
+/static/18408e2b9433f5d9ea020c0b9c0a5937/e4a3f/droplet-llike-artifacts.png 295w,
+/static/18408e2b9433f5d9ea020c0b9c0a5937/fcda8/droplet-llike-artifacts.png 590w,
+/static/18408e2b9433f5d9ea020c0b9c0a5937/efc66/droplet-llike-artifacts.png 885w,
+/static/18408e2b9433f5d9ea020c0b9c0a5937/c83ae/droplet-llike-artifacts.png 1180w,
+/static/18408e2b9433f5d9ea020c0b9c0a5937/280a1/droplet-llike-artifacts.png 1545w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;generator&lt;/em&gt; 의 activation map 을 보면 (오른쪽 사진들) 자국 같은 것 들이 보일텐데, 설계상 때문에 요게 문제가 됐다는 겁니다.&lt;/p&gt;
+&lt;p&gt;그래서 StyleGANv2 에서는 새로운 normalization method 를 사용해서 이 문제를 해결합니다.&lt;/p&gt;
+&lt;h3 id=&quot;artifacts-related-to-progressive-growing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#artifacts-related-to-progressive-growing&quot; aria-label=&quot;artifacts related to progressive growing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;artifacts related to progressive growing&lt;/h3&gt;
+&lt;p&gt;high-resolution GAN 에서 stable 한 훈련을 위해 low resolution 부터 훈련을 시작하는 progressive 한 훈련 방식을 해 왔었는데,
+이전에는 각 resolution 마다 같은 network 구조를 사용했는데, 다른 resolution 을 훈련할 때는 다른 network topology 를 사용해야 한다는 말 입니다.&lt;/p&gt;
+&lt;p&gt;매 resolution 마다 같은 구조가 아닌 다른 구조로 학습을 하게 되면, 각 resolution 에 맞게 더 효율적으로 훈련할 수 있다는 논문피셜 입니다.
+(당연한 이야기긴 하지만)&lt;/p&gt;
+&lt;h3 id=&quot;metrics-for-evaluating-gan-performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#metrics-for-evaluating-gan-performance&quot; aria-label=&quot;metrics for evaluating gan performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;metrics for evaluating GAN performance&lt;/h3&gt;
+&lt;p&gt;GAN 생성 이미지 quality 를 측정하기 위해 여러 metric 들을 사용하는데 (e.g. FID, precision, recall),
+이런 metric 들의 문제점을 제기하고 새로운 gan metric 을 사용해서 performance 를 측정했다고 합니다.&lt;/p&gt;
+&lt;p&gt;간단하게 설명 해 보면, 위에 소개된 이전 metric 들은 inception v3 같은 base network 에 기반해서, 전반적인 texture 보다 shape 같은 것에 집중을 하는데,
+결론적으로 이미지 quality 전반적인 면을 capture 하지 못한다는 말 입니다.&lt;/p&gt;
+&lt;p&gt;그래서 이런 문제가 어느 정도 해결 한 perceptual path length (PPL) metric 을 사용했다고 합니다.&lt;/p&gt;
+&lt;h3 id=&quot;etc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#etc&quot; aria-label=&quot;etc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;etc&lt;/h3&gt;
+&lt;p&gt;마지막으론 latent space &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;W&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;W&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.13889em;&quot;&gt;W&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 가 더 잘된다고 하네요&lt;/p&gt;
+&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;결론적으로 아래와 같은 변경 사항들로 &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;characteristic artifacts 들을 제거하고 &lt;/li&gt;
+&lt;li&gt;full controllability 를 유지한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;removing-normalization-artifacts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#removing-normalization-artifacts&quot; aria-label=&quot;removing normalization artifacts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;removing normalization artifacts&lt;/h3&gt;
+&lt;p&gt;위에 introduction 에서 &lt;em&gt;instance normalization&lt;/em&gt; 때문에 blob-like 한 artifacts 가 생긴다고 했는데,
+최종 이미지 (1024x1024) 에서는 안 보일 수 있어도, 중간 이미지 (64x64) 쯤 부터 발생하는 걸 볼 수 있는데,
+이런 부분을 &lt;em&gt;discriminator&lt;/em&gt; 에서 잡을 수 있어야 하겠죠?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;AdaIN&lt;/em&gt; 같은 operation 이 각 features 별 &lt;em&gt;mean&lt;/em&gt;, &lt;em&gt;variance&lt;/em&gt; 를 따로따로 normalize 하기 떄문이라 원인을 밝힙니다.
+(논문에선 generator 가 의도적으로 signal strength 정보를 이전 &lt;em&gt;IN&lt;/em&gt; 으로부터 sneak 한다고 표현돼 있어요)&lt;/p&gt;
+&lt;p&gt;결론은 이런 normalization step 이 없어지면 이런 droplet artifacts 가 없어질 거라 합니다.&lt;/p&gt;
+&lt;h3 id=&quot;generator-architecture-revisited&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#generator-architecture-revisited&quot; aria-label=&quot;generator architecture revisited permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;generator architecture revisited&lt;/h3&gt;
+&lt;p&gt;아래가 과거 (StyleGAN) / 현재 (StyleGANv2) &lt;em&gt;generator&lt;/em&gt; architecture 비교 샷 인데,
+&lt;em&gt;AdaIN&lt;/em&gt; operation 을 normalization, modulation step 으로 분리해서 보여줬네요.&lt;/p&gt;
+&lt;p&gt;과거에는 &lt;em&gt;bias&lt;/em&gt; 하고 &lt;em&gt;noise&lt;/em&gt; 를 &lt;em&gt;style block&lt;/em&gt; 에 적용 해 줬는데, 이런 상대적인 영향이 게 style magnitude 에 반비례하게 적용된다고 합니다.&lt;/p&gt;
+&lt;p&gt;그래서 이런 operation 을 &lt;em&gt;style block&lt;/em&gt; 밖으로 빼면서 조금 더 predictable 한 결과를 가져갈 수 있었다고 해요.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dcd29a1c419acffd55110ffd0c4a35d3/af756/stylegan2-architecture.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.891891891891895%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABlklEQVQY0z1R2ZLaMBD0//9J8pRUqCJJUUvYWhxgFwOWjWW8xpIB37ctycIH0e5D+mmmZrqrZ1q6d/zd1VVzE6W3cRz7vi/L6oyueVEQWj0+MQ7jf3y04zgMgyikmmTA1NeqUpOivbMsi0wHfXmSIcLDcE+z6OZd5cPufMWCVDUF8sKyqrIsEXyJtrWJtTWQg8Tt+y7wfc1Up39nwDqIEWX0ckOzrXxEkHNS1cUKWCes265KGZEILcERrt72dV33wz1OfMO0v/560U/O4zGkeeg4zs+FDAyTMqFFPD9EGEMIqyaXuo7v9NVcnnohFrekSaoau8n8297YtJxw3jnYmiwmO2M79F1eJM+KIW8Xy9fflDVSQwrowB0EhFVCyA8u+sn6sdyYGPU9T7IIYefp9c1EZ+GRceZHSZbncRw1pJSEwNE+LJVnL0SCHAQ+gIfvfyZ7qAifhBD35kzXc2BrXdemeTRba+CkHN83rKUSa2s/SG0ccM7F91vGsrzULDdK88/getKQy9WPk7ShhVhglMbJRwQinX+VKbAsvWiGdAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/dcd29a1c419acffd55110ffd0c4a35d3/fcda8/stylegan2-architecture.png&quot;
+        srcset=&quot;/static/dcd29a1c419acffd55110ffd0c4a35d3/12f09/stylegan2-architecture.png 148w,
+/static/dcd29a1c419acffd55110ffd0c4a35d3/e4a3f/stylegan2-architecture.png 295w,
+/static/dcd29a1c419acffd55110ffd0c4a35d3/fcda8/stylegan2-architecture.png 590w,
+/static/dcd29a1c419acffd55110ffd0c4a35d3/efc66/stylegan2-architecture.png 885w,
+/static/dcd29a1c419acffd55110ffd0c4a35d3/c83ae/stylegan2-architecture.png 1180w,
+/static/dcd29a1c419acffd55110ffd0c4a35d3/af756/stylegan2-architecture.png 1639w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그리고 한 가지 더, &lt;em&gt;AdaIN&lt;/em&gt; (normalize &amp;#x26; mod) 를 &lt;em&gt;mean&lt;/em&gt;, &lt;em&gt;std&lt;/em&gt; 둘 다가 아닌 &lt;em&gt;std&lt;/em&gt; 에만 적용 하는 것만으로도 충분 하다고 합니다.&lt;/p&gt;
+&lt;h3 id=&quot;instance-normalization-revisited&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#instance-normalization-revisited&quot; aria-label=&quot;instance normalization revisited permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;instance normalization revisited&lt;/h3&gt;
+&lt;p&gt;이전 &lt;em&gt;instance normalization&lt;/em&gt; 은 style 에 너무 strong 한 영향을 끼쳤었고, 이를 그럼 어떻게 scale-specific 영향을 style 에 그래도 주면서, 좀 relaxing 할 수 있을까 했는데,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;일단 &lt;em&gt;batch normalization&lt;/em&gt; 은 안됨. (small mini-batches 에서 high-resolution synthesis 엔 부적합)&lt;/li&gt;
+&lt;li&gt;그냥 &lt;em&gt;instance normalization&lt;/em&gt; 제거. -&gt; 실제로 성능 증가 (효과있음)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;그런데, 이렇게 제거 해 버리는 것은, scale-specific 보다 style cumulative 한 거에 영향을 주었고,
+StyleGAN 의 &lt;strong&gt;controllability&lt;/strong&gt; 를 잃어 버리게 됐답니다.&lt;/p&gt;
+&lt;p&gt;그래서 새로운 방법을 제안했는데, &lt;strong&gt;controllability&lt;/strong&gt; 를 유지하면서, &lt;em&gt;instance normalization&lt;/em&gt; 으로 인한 artifacts 는 제거하는 방법.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;modulation&lt;/em&gt;, &lt;em&gt;convolution&lt;/em&gt;, &lt;em&gt;normalization&lt;/em&gt; 에서 &lt;em&gt;modulation&lt;/em&gt; 부분을 생각 해 보면,&lt;/p&gt;
+&lt;p&gt;들어오는 style 에 의해서 (위 그림에서 A) &lt;em&gt;modulation&lt;/em&gt; 각 convolution 의 feature map 을 scale 하는데,
+이 부분을 아래처럼 구현이 가능 합니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;msub&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;‘&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;⋅&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;w`_{i,j,k} = s_i \cdot w_{i,j,k}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.980548em;vertical-align:-0.286108em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361079999999999em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mpunct mtight&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mpunct mtight&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.286108em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.59445em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.31166399999999994em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;⋅&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.716668em;vertical-align:-0.286108em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361079999999999em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mpunct mtight&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mpunct mtight&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.286108em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;w&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 는 일반 weight 이고, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;‘&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;w`&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.69444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;‘&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 이 modulated weight, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;s&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 는 scale 인데, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;i&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.65952em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 번째 input feature map, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;j,k&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8888799999999999em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 는 output feature map 에 해당. &lt;/p&gt;
+&lt;p&gt;이렇게 하게 되면, 위 처럼 제안된 &lt;em&gt;instance normalization&lt;/em&gt; 은 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;s&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; effect 를 output feature maps distribution 에서 제거할 수 있어요.&lt;/p&gt;
+&lt;p&gt;결론적으로 위에 (d) 그럼처럼, 이제 &lt;em&gt;style block&lt;/em&gt; 은 하나의 &lt;em&gt;convolution layer&lt;/em&gt; 로 구성될 수 있네요. (conv weight 는 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;s&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 에 의해 adjust 됨)&lt;/p&gt;
+&lt;p&gt;(논문 뒤엔 이거에 대한 이야기가 더 있는데 skip)&lt;/p&gt;
+&lt;p&gt;그래서 아래와 같이 blob-like artifacts 들을 해결 했답니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/386f1f8ead1bc4bc789a111ab0dcf307/7de01/stylegan2-resolve-artifacts.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 103.37837837837837%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEDElEQVQ4yyVT309TZxg+f8FudjONRnZlNnVBJBnClqJjU1aDY24OCgwoATEK2J9QetrT055C21PojzGBlmJbSigWrC6bSrI5IM4Lk+2iWJZaKra0xdrK7vmR7Ok5T5o37/f1e973ed7vfMQvK//YQ0/H7j9XUCxptFtnHgf+WPf7vNMcZmZmvN5iPjs7i8Tn83k5eDyeUChEMMOmb8U3m0UtTP1n7k5he90FhXmKJNVyuby/v1+lUg1woCgKEUuGYViWVavVQ0NDhLTnWq3wYptQsCAXLZt7++s+vXzpIk3rBwcHNRoNTdNaDnq9HktEh8MxPj4+PDyMEsRtt6e+QXTl/FnT1a/YFqFNVDPU1UxqKbQEx2AwIPJVSJJEf7vdbrVabTbb1NQU4Qotycbui1vF5oYv78mbdHVnlF2tGkoHhdAGMphI0BNkFEJbl8s1MjJSJDt+nuiSU40/tncLSlWXq747V1l9XkBpNbxhnFZz0Ol0MIJkdHQUbeHcYrEQJjN9qa5G1HCl+uyJ5oavXf675IDMaGRwWs+B4WA2mzEhCEEEDcphnpBoO0o+eq/09Imy6k9E16tsFmlnWyNjNOIcTqAE3IKJbk6nE8onJyfdbje8YJPo6m0+VV6iILuVZotmxH66ouLQ4cMmkwmzMRqNYCKiFZgQjE0UhRw4gm1ibMJysrTsG1Fn7Q8dh0qOf3D0WJ/0BstaKKooG1VAhmzcDTxjBMjBVCgURfLq6kplZeWxI0faWxrtLL38cP7vZ79DNgB7OMoPGYX4gcEIlvhgigP769myZ9pld7Dz/onnq49Xlh8FZ++ACHnQTHFAgs6IKAEydsDHFIh7v/4WDD9UMOzA7Z90ZL9eS8u0BvzP3zN/yQAk8A2xg7qQXez859NQKGxbWLA7H4TaVGSToMykvKahKKlEwl81ImhwgRJIpFIp+MFgEG+G8M1buutPGmhJ0y2lsKL8+9pzcsl1tbo4G5iESHTAafhfWlpaXFyUSCRzc3Mg48IIHa09dfT9z88cF1SVC0s/vCnpu8VYtRpSz32Y+PrRU6lUQnY4HMZjxGYgEOBHQDx4ZOsQV/TdqOnt+aL2wsci8VXJqJOmdRgydPKzASABPvlLgiKZTIYd4skTp+9O47y/MzDe5p1u9QfE0/4ezJWfE/+GUYh/kmqSBBNLDKI4sHeFRD4bKWSi7zLRnWy0sB3Jbb+IxWLr6+v/cohGi+kGhziHRCKB+CqRILLbuc3X6Xz+v81keiORTG1tp7ayQCqZTKczOzs7mUwmnU5vbaVeJ5OZTLZQKOTevMnnC7lcjkilktHoi3j8JX7JzVdra2tokEhs4BeJROLxjZexGPogRqPRt2/zBwcHu7u7e3t7+/v7/wMJU7Ffy3IWAgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/386f1f8ead1bc4bc789a111ab0dcf307/fcda8/stylegan2-resolve-artifacts.png&quot;
+        srcset=&quot;/static/386f1f8ead1bc4bc789a111ab0dcf307/12f09/stylegan2-resolve-artifacts.png 148w,
+/static/386f1f8ead1bc4bc789a111ab0dcf307/e4a3f/stylegan2-resolve-artifacts.png 295w,
+/static/386f1f8ead1bc4bc789a111ab0dcf307/fcda8/stylegan2-resolve-artifacts.png 590w,
+/static/386f1f8ead1bc4bc789a111ab0dcf307/7de01/stylegan2-resolve-artifacts.png 794w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;etc-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#etc-1&quot; aria-label=&quot;etc 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;etc&lt;/h3&gt;
+&lt;p&gt;training technique 들도 몇 개 소개되었는데, 그렇게 여러 기술들이 덕지덕지 적용되지 않고 깔-끔 합니다.&lt;/p&gt;
+&lt;p&gt;다른 거 붙이는 거 비해 computation cost 가 적게들고, memory 사용량 down 등의 이유를 들었네요.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Loss : logistic loss&lt;/li&gt;
+&lt;li&gt;Lazy Regularization : &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;R_1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.83333em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.00773em;&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.30110799999999993em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; regularization (every 16 mini-batches 마다 1 번)&lt;/li&gt;
+&lt;li&gt;Path Length Regularization : poor local conditioning 을 피해기 위한 method 인데, Jacobian Matric 연산의 heaviness 를 해결하기 위해 identity 등을 사용 하는 등 이야기가 논문에 나옵니다.
+결론적으로, 조금 더 reliable 하고 consistently 동작하는 모델이 됐다고 캅니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;I&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∥&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∥&lt;/mi&gt;&lt;msubsup&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;/msubsup&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∥&lt;/mi&gt;&lt;msub&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∥&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;msup&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;E_{x,y~N(0, I)}(\|\|J^T_wy\|\|_2 - \alpha)^2&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.1965309999999998em;vertical-align:-0.3551999999999999em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.34480000000000005em;&quot;&gt;&lt;span style=&quot;top:-2.5198em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mpunct mtight&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;mspace nobreak mtight&quot;&gt;&lt;span class=&quot;mtight&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;mopen mtight&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mpunct mtight&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.07847em;&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;mclose mtight&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3551999999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∥&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∥&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.09618em;&quot;&gt;J&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8413309999999999em;&quot;&gt;&lt;span style=&quot;top:-2.4530000000000003em;margin-left:-0.09618em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.13889em;&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.247em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∥&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;∥&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.30110799999999993em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.064108em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.0037em;&quot;&gt;α&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8141079999999999em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;J_w&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.83333em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.09618em;&quot;&gt;J&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.151392em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; 가 orthogonal matrix 니, 이런 matrix 는 lengths 를 보존하겠죠? (어떤 dimension 에 대해서 squeezing 없고)&lt;/p&gt;
+&lt;p&gt;constant &lt;em&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\alpha&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.0037em;&quot;&gt;α&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; 가 training 중 path lengths 의 exponential moving average 값을 optimize 되게 해 줍니다&lt;/p&gt;
+&lt;h2 id=&quot;experiment-result&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experiment-result&quot; aria-label=&quot;experiment result permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experiment Result&lt;/h2&gt;
+&lt;p&gt;FFHQ / LSUN Car dataset 에서 퍼포먼스는 아래와 같아요. 총 4가지 metrics 을 사용해서 evaluate 했습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Frechet Inception Distance (FID)&lt;/li&gt;
+&lt;li&gt;Perceptual Path Length (PPL)&lt;/li&gt;
+&lt;li&gt;Precision&lt;/li&gt;
+&lt;li&gt;Recall&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/213052fe97cf0f4fbd9233da3ed26bcd/61583/stylegan2-results.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 27.7027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA+ElEQVQY0zVQ7W6EIBDk/R/ORHP1AAEBGwsFPCVG41fTuZruj2HZmZ3sLuGcW2PznJdlyVMOMY7jWBTFk9KyLJF778fxFWMchgGVRoiqqtIwfHtPKKUfjweT7LzOfd/7vt+27UZjNFAbDV9YgO2snee5bdtlXY3WBE6MM611GhJo2J/niebjOOANvI1Sij/XFUJY19U5B6X7cgT2nHHvfAwBulaplBK80KmUgq5pOOrGWuSov3NjkIMlUirbW91pKWRd1ygpKYUQlD4pewP+nDcNJsSMjOHFmTAsWNIqrKBUq7ruc5qmnDPw9R842I1Y56bGPw0ipvQLoK5E4mEDCI4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/213052fe97cf0f4fbd9233da3ed26bcd/fcda8/stylegan2-results.png&quot;
+        srcset=&quot;/static/213052fe97cf0f4fbd9233da3ed26bcd/12f09/stylegan2-results.png 148w,
+/static/213052fe97cf0f4fbd9233da3ed26bcd/e4a3f/stylegan2-results.png 295w,
+/static/213052fe97cf0f4fbd9233da3ed26bcd/fcda8/stylegan2-results.png 590w,
+/static/213052fe97cf0f4fbd9233da3ed26bcd/efc66/stylegan2-results.png 885w,
+/static/213052fe97cf0f4fbd9233da3ed26bcd/c83ae/stylegan2-results.png 1180w,
+/static/213052fe97cf0f4fbd9233da3ed26bcd/61583/stylegan2-results.png 1616w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이 외에도 이전 StyleGAN 과 PPL distribution 차이 여러 가지 analysis 가 있습니당&lt;/p&gt;
+&lt;p&gt;나머지는 논문 참고하세요~ (&lt;del&gt;귀찮&lt;/del&gt;)&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;이번 논문도 엄청 재미있는 approach 들이 많아서 재밌었는데,
+매번 느끼지만 nvidia labs 는 이전 연구들의 root cause 를 잘 잡고 좋은 결과들을
+매번 보여주네요.&lt;/p&gt;
+&lt;p&gt;결론 : 마음에 드는 논문&lt;/p&gt;</content:encoded></item></channel></rss>
