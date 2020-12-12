@@ -28,7 +28,7 @@ const IndexPage = (props: IndexPageProps) => {
         <Bio />
         <div className="index-post-list-wrap">
           <PostList posts={posts} />
-          {posts.length < 100 ? null : (
+          {posts.length < 10 ? null : (
             <div className="show-more-posts">
               <div className="show-more-btn">
                 <Link to="/search">
