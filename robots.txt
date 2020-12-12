@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://kozistr.tech/sitemap.xml
+Host: kozistr.tech
