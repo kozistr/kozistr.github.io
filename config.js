@@ -7,7 +7,7 @@ module.exports = {
   siteUrl: 'http://kozistr.tech',               // (* Required)
 
   /** Header */
-  profileImageFileName: 'profile.png',
+  profileImageFileName: 'profile.jpg',
 
   /** Home > Bio information*/
   comment: 'Machine Learning Researcher at Watcha',
