@@ -45,7 +45,7 @@ Image-to-Image Translation 쪽 papers 이 정도만
 
 ## Method
 
-![img](/assets/TUNIT/tunit-architecture.png)
+![img](tunit-architecture.png)
 
 위 이미지가 전반적인 TUNIT architecture 인데요, 크게 3 종류의 network 로 구성돼있습니다.
 
