@@ -10,13 +10,10 @@ keywords:
   - exploitation
 ---
 
-Linux Kernel Exploitation Tutorial - 1
-
 ## Case
 
-Let's get down to the point, this time, I'll give an example code which has a NULL dereference vulnerability.
-
-Testing Environment is like below.
+Let's get down to the point this time. I'll give an example code that has a NULL dereference vulnerability.
+The testing Environment is like below.
 
 ```c
 zero@ubuntu:~$ uname -a
@@ -293,15 +290,10 @@ With above case, **CR4 value is 00000000003606e0**.
 ```
 
 But, in this case, it's complicated to handle SMEP because there's no kernelland area to execute the code disabling SMEP before NULL dereference triggered, (meaning before userland code executed).
-So, in the next post, with another case, i'll finish the payload with the bypasses.
+So, in the next post, with another case, I'll finish the payload with the bypasses.
 
 ## Epilogue
 
-But, above cases have a lot of limitations. At first, in real world, with NULL dereference can't be triggered because of mmap min address.
-Second is that we need to leak kernel base address with another vulnerability to get commit_Creds & prepare_kernel_cred and etc...
-Last is considering about default kernel protections like SMEP/SMAP, etc... 
-
-~~So, usually, if you search about LKE codes, you can easily find that their vulnerability types are UAF or sth similar.~~
-~~half true, half false:)~~
-
-**End**
+But, the above cases have a lot of limitations. At first, in the real world, with NULL dereference can't be triggered because of mmap min address.
+The second is that we need to leak kernel base address with another vulnerability to get commit_Creds & prepare_kernel_cred, etc.
+Last is considering default kernel protections like SMEP/SMAP, etc.
