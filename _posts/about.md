@@ -13,7 +13,7 @@ keywords:
 
 Alternative Military Service Status : **on-going** (`2020/11/27 ~ 2023/09/26`)
 
-CV : [[PDF] (as of Dec. 2020)](https://github.com/kozistr/kozistr.github.io/blob/master/cv.pdf)
+CV : [[PDF] (as of Dec. 2020)](http://kozistr.tech)
 
 ## Links
 
