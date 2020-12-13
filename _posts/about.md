@@ -20,46 +20,17 @@ CV : [[PDF] (as of Dec. 2020)](http://kozistr.tech/cv.pdf)
 |              |                                  |
 |:-------------|:---------------------------------|
 | Email        | **kozistr**@gmail.com            |
-| Github       | [https://github.com/kozistr](https://github.com/kozistr)       |
-| Kaggle       | [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr)   |
-| Linkedin     | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr)     |
-| SideShare    | [https://www.slideshare.net/KimHyeongChan](https://www.slideshare.net/KimHyeongChan) |
-| Another Blog | [http://zer0day.tistory.com](http://zer0day.tistory.com)       |
+| Github       | [https://github.com/kozistr](https://github.com/kozistr) |
+| Kaggle       | [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr) |
+| Linkedin     | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr) |
 
 ## Interests
 
-* lots of challenges like kaggle :)
-
+* Lots of challenges like **Kaggle**
 * (light-weighted) Single Image / Video Super Resolution (SISR)
-
 * End to End Speaker Diarization (E2E SD)
 
-Previously, I'm also interested in **offensive security**, kind of *Reverse Engineering*, *Linux Kernel Exploitation*, ....
-
-----------------------------------------------------------------
-
-## Publications
-
-**Paper**
-
-[1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
-- Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
-- Handling un-normalized text w/ various convolution kernel size and dropout
-
-**Conferences/Workshops**
-
-[1] kozistr_team, [*NAVER NLP Challenge 2018 SRL Task*](https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf)
-- SRL Task, challenging w/o any domain knowledge. Presented about trails & errors during the competition
-
-**Journals**
-
-[1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](/refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
-- Wrote about lots of anti-reversing / debugging (A to Z) techniques avail on window executable binary
-
-**Posts**
-
-[1] kozistr (as a part of team, `Dragonsong`) []()
-- Wrote about classifying audios with deep learning based on the kaggle challenge where we participated
+Previously, I'm also interested in **offensive security**, kind of *Reverse Engineering*, *Linux Kernel Exploitation*.
 
 ----------------------------------------------------------------
 
@@ -146,6 +117,31 @@ Previously, I'm also interested in **offensive security**, kind of *Reverse Engi
 
 HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 - Wrote a paper about improved TextCNN model for predicting a movie rate.
+
+----------------------------------------------------------------
+
+## Publications
+
+**Paper**
+
+[1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
+- Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
+- Handling un-normalized text w/ various convolution kernel size and dropout
+
+**Conferences/Workshops**
+
+[1] kozistr_team, [*NAVER NLP Challenge 2018 SRL Task*](https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf)
+- SRL Task, challenging w/o any domain knowledge. Presented about trails & errors during the competition
+
+**Journals**
+
+[1] zer0day, [*Windows Anti-Debugging Techniques*](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](/refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
+- Wrote about lots of anti-reversing / debugging (A to Z) techniques avail on window executable binary
+
+**Posts**
+
+[1] kozistr (as a part of team, `Dragonsong`) []()
+- Wrote about classifying audios with deep learning based on the kaggle challenge where we participated
 
 ----------------------------------------------------------------
 
