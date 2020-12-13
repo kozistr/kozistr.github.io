@@ -1,7 +1,7 @@
 ---
 title: Linux Kernel - 2018-03-1 Founds
 date: 2018-03-01
-update: 2018-03-07
+update: 2018-03-06
 tags:
   - Security
   - Linux-Kernel
