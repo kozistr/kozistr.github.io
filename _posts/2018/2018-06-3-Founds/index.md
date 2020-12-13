@@ -1,5 +1,5 @@
 ---
-title: Linux Kernel - 2018-06- Founds
+title: Linux Kernel - 2018-06-3 Founds
 date: 2018-06-17
 update: 2018-06-20
 tags:
