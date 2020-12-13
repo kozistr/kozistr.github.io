@@ -99,6 +99,7 @@ export const pageQuery = graphql`
             tags
             update(formatString: "MMM DD, YYYY")
           }
+          timeToRead
         }
       }
     }
