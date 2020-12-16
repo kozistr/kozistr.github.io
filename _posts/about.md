@@ -140,8 +140,8 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 **Posts**
 
-[1] kozistr (as a part of team, `Dragonsong`) []()
-- Wrote about classifying audios with deep learning based on the kaggle challenge where we participated
+[1] kozistr (as a part of team, `Dragonsong`) [towarddatascience](https://towardsdatascience.com/detecting-sounds-with-deep-learning-ed9a41909da0)
+- Wrote about audio classifier with deep learning based on the kaggle challenge where we participated
 
 ----------------------------------------------------------------
 
