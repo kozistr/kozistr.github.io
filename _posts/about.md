@@ -85,6 +85,12 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Optimized pre/post processing routines to consider `inference time`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next.
   - Achieved **SOTA** performance compared to previous SOTA models (`SASRec`, `BERT4Rec`).
+  - **In A/B (online)** test (statistically significant `p-value < 0.05`)
+    - **Paid Conversion** : improved **%p1.39%**
+    - **Viewing Days** : improved **%p0.25%**
+    - **Viewing Minutes (median)** : improved **%4.10**
+    - **Click Ratio** : improved **%p4.30**
+    - **Play Ratio** : improved **%p2.32**
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
   - Optimized the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
@@ -93,11 +99,11 @@ _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
 - Worked as a full time.
 - Developed the card & bank account transaction category classification models, designed _light-weight purpose_ for the low latency. (now on service)
-  - In A/B (online) test result, improved **about 25 ~ 30%p** \*accuracy, **about 0.6%p** 1+ retention.
-- Developed the machine learning model serving RESTful API server (utilizing k8s + open source project)
+  - **In A/B (online)** test (statistically significant `p-value < 0.05`)
+    - **\*accuracy** : improved **about 25 ~ 30%p**
+- Developed the machine learning model serving RESTful API server (utilizing *k8s* + open source project)
   - zero failure rate (**0** 40x, 50x errors)
 - Developed the classification model for forecasting possibility of loan overdue.
-  - baseline deep learning model
 
 % \*accuracy : how many people don't update/change their transactions' category.
 
