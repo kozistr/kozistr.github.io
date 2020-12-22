@@ -43,11 +43,11 @@
     "gatsby-plugin-offline": "^3.7.0",
     "gatsby-plugin-preact": "^4.4.0",
     "gatsby-plugin-react-helmet": "^3.7.0",
-    "gatsby-plugin-robots-txt": "^1.5.3",
+    "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.11.1",
     "gatsby-plugin-sitemap": "^2.9.0",
-    "gatsby-plugin-theme-ui": "^0.3.4",
+    "gatsby-plugin-theme-ui": "^0.3.5",
     "gatsby-plugin-typescript": "^2.9.0",
     "gatsby-plugin-typography": "^2.9.0",
     "gatsby-remark-autolink-headers": "^2.8.0",
@@ -79,7 +79,7 @@
     "react-share": "^4.3.1",
     "react-typography": "^0.16.19",
     "redux": "^4.0.4",
-    "theme-ui": "^0.3.4",
+    "theme-ui": "^0.3.5",
     "typography": "^0.16.19"
   },
   "devDependencies": {
