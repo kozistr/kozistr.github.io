@@ -224,8 +224,9 @@ const Post = (props: postProps) => {
           <div className="blog-post">
             <div className="date-wrap">
               <span className="write-date">
-                {date} •{timeToRead} min read ☕
+                {date} • {timeToRead} min read ☕
               </span>
+              <span> </span>
               {update ? (
                 <>
                   <span>(</span>
