@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2020-12-20
+update: 2020-12-24
 tags:
   - About
 keywords:
@@ -86,11 +86,11 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
 - Developed a novel sequential recommendation architecture to recommend what content to watch next.
   - Achieved **SOTA** performance compared to previous SOTA models (`SASRec`, `BERT4Rec`).
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
-    - **Paid Conversion** : improved **1.39%p**
-    - **Viewing Days** : improved **0.25%p**
-    - **Viewing Minutes (median)** : improved **4.10%**
-    - **Click Ratio** : improved **4.30%p**
-    - **Play Ratio** : improved **2.32%p**
+      * **Paid Conversion** : improved **1.39%p**
+      * **Viewing Days** : improved **0.25%p**
+      * **Viewing Minutes (median)** : improved **4.10%**
+      * **Click Ratio** : improved **4.30%p**
+      * **Play Ratio** : improved **2.32%p**
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
   - Optimized the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
