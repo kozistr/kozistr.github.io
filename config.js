@@ -30,8 +30,8 @@ module.exports = {
   enableSocialShare: true,              // Social share icon activation (Type of Value: Boolean. Not String)
 
   /** Optional */
-  googleAnalytics: 'UA-116366668-1',                                  // Google Analytics TrackingID. ex.'UA-123456789-0'
-  googleSearchConsole: 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4', // content value in HTML tag of google search console ownership verification
-  googleAdsenseSlot: '5791074071',                                    // Google Adsense Slot. ex.'5214956675'
-  googleAdsenseClient: 'ca-pub-7954241517411559',                     // Google Adsense Client. ex.'ca-pub-5001380215831339'
+  googleAnalytics: 'UA-116366668-1',                        // Google Analytics TrackingID. ex.'UA-123456789-0'
+  googleSearchConsole: '',                                  // content value in HTML tag of google search console ownership verification. ex. 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4'
+  googleAdsenseSlot: '',                                    // Google Adsense Slot. ex.'5791074071'
+  googleAdsenseClient: '',                                  // Google Adsense Client. ex.'ca-pub-7954241517411559'
 };
