@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2020-12-24
+update: 2021-03-13
 tags:
   - About
 keywords:
@@ -11,9 +11,9 @@ keywords:
 
 **Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
-Alternative Military Service Status : **on-going** (`2020/11/27 ~ 2023/09/26`)
+Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
 
-CV : [[PDF] (as of Dec. 2020)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of Mar. 2021)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -27,7 +27,7 @@ CV : [[PDF] (as of Dec. 2020)](http://kozistr.tech/cv.pdf)
 ## Interests
 
 - Lots of challenges like **Kaggle**
-- (light-weighted) Single Image / Video Super Resolution (SISR)
+- (light-weighted) Single Image Super Resolution (SISR)
 - End to End Speaker Diarization (E2E SD)
 
 Previously, I'm also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
@@ -80,9 +80,12 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
 
 - Working as a full time.
-- Developed a pipeline to recognize all tv & movie actors from the poster and still-cut images.
-  - Utilized **SOTA** face detector & recognizer.
-  - Optimized pre/post processing routines to consider `inference time`.
+- Developed a model to predict expected users' view-time of the contents.
+  - Predict how many people going to watch, how much time people going to watch the content before the content is supplied. 
+  - Find out which features impact users' watch.
+- Developed a pipeline to recognize main actors from the poster and still-cut images.
+  - Utilize **SOTA** face detector & recognizer.
+  - Optimized pre/post processing routines to consider `latency`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next.
   - Achieved **SOTA** performance compared to previous SOTA models (`SASRec`, `BERT4Rec`).
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
