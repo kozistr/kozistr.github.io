@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 08 Jan 2021 06:43:02 GMT</lastBuildDate><item><title><![CDATA[2020년 회고]]></title><description><![CDATA[TL;DR 올해 처음으로 회고록을 적어보는데, 사실 작년부터 써야지 생각만 하다 결국 놓쳤는데, 벌써 1년이 지나 쓸 때가 온 걸 보고 시간은 정말 빨리 가는 걸 실감하며, 2020년 회고지만 지난 2년 동안 일어났던 작고 큼지막한 일들을 하나씩 적…]]></description><link>http://kozistr.tech/Review/</link><guid isPermaLink="false">http://kozistr.tech/Review/</guid><pubDate>Wed, 23 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 13 Mar 2021 13:27:10 GMT</lastBuildDate><item><title><![CDATA[2020년 회고]]></title><description><![CDATA[TL;DR 올해 처음으로 회고록을 적어보는데, 사실 작년부터 써야지 생각만 하다 결국 놓쳤는데, 벌써 1년이 지나 쓸 때가 온 걸 보고 시간은 정말 빨리 가는 걸 실감하며, 2020년 회고지만 지난 2년 동안 일어났던 작고 큼지막한 일들을 하나씩 적…]]></description><link>http://kozistr.tech/Review/</link><guid isPermaLink="false">http://kozistr.tech/Review/</guid><pubDate>Wed, 23 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;올해 처음으로 회고록을 적어보는데, 사실 작년부터 써야지 생각만 하다 결국 놓쳤는데, 벌써 1년이 지나 쓸 때가 온 걸 보고 시간은 정말 빨리 가는 걸 실감하며, 2020년 회고지만 지난 2년 동안 일어났던 작고 큼지막한 일들을 하나씩 적어보려고 해요.&lt;/p&gt;
 &lt;p&gt;나중의 이 글을 다시 보게 됐을 때, 내가 어떤 게 부족했고 이 정도나 성장했다는 걸 느낄 수 있게 글로 남겨보려고 해요. 그럼 의식이 흘러가는 데로 한번 적어볼게yo&lt;/p&gt;
 &lt;h2 id=&quot;회사&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%9A%8C%EC%82%AC&quot; aria-label=&quot;회사 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;회사&lt;/h2&gt;
@@ -31,10 +31,10 @@
 &lt;p&gt;올해는 운동을 위한 해였다. 평소에 코딩하면서 자주 피로함을 느꼈는데, 기본 체력이 부족한 거 같아 집에서 맨몸운동을 시작했다. 그런데 성격상 동기부여 제대로 된 건 시작하면 끝을 보는 성격이라, &lt;em&gt;플란체&lt;/em&gt;를 목표로 매일 꾸준히 운동하고 있다. 덕분에 굽었던 뼈가 펴졌는지 모르겠지만, 키도 커지고 수족냉증도 사라지고 몸이 건강해 진 게 느낄 정도라 너무 만족하고 있다.&lt;/p&gt;
 &lt;h2 id=&quot;정리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;정리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정리&lt;/h2&gt;
 &lt;p&gt;이렇게 회고를 쓰며 생각들을 정리해 보며 돌아보면서 부족한 점과 앞으로 할 것들이 정리되니 조금은 홀가분해진 기분이네요. 꼭 연말이 아녀도 자주 이런 시간을 가져야겠어요. 마침 모델 훈련한 게 거의 끝나서 모델 확인하는 즐거운 시간 보내러 가야겠어요.&lt;/p&gt;
-&lt;p&gt;올 한해 특히 코로나 때문에 많은 분 힘드실 텐데, 이 글을 보신 분, 안 보신 분 모두 따뜻한 연말 보내고 내년에도 화이팅해요!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About ME]]></title><description><![CDATA[Profile Senior in Computer Engineering from KUT Alternative Military Service Status : on-going () CV : [PDF] (as of Dec. 2020) Links   Emai…]]></description><link>http://kozistr.tech/about/</link><guid isPermaLink="false">http://kozistr.tech/about/</guid><pubDate>Sat, 12 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;profile&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#profile&quot; aria-label=&quot;profile permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Profile&lt;/h2&gt;
+&lt;p&gt;올 한해 특히 코로나 때문에 많은 분 힘드실 텐데, 이 글을 보신 분, 안 보신 분 모두 따뜻한 연말 보내고 내년에도 화이팅해요!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About ME]]></title><description><![CDATA[Profile Senior in Computer Engineering from KUT Alternative Military Service Status : on duty () CV : [PDF] (as of Mar. 2021) Links   Email…]]></description><link>http://kozistr.tech/about/</link><guid isPermaLink="false">http://kozistr.tech/about/</guid><pubDate>Sat, 12 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;profile&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#profile&quot; aria-label=&quot;profile permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Profile&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Senior&lt;/strong&gt; in Computer Engineering from &lt;a href=&quot;https://www.koreatech.ac.kr/eng.do&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;KUT&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Alternative Military Service Status : &lt;strong&gt;on-going&lt;/strong&gt; (&lt;code class=&quot;language-text&quot;&gt;2020/11/27 ~ 2023/09/26&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;CV : &lt;a href=&quot;http://kozistr.tech/cv.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;[PDF] (as of Dec. 2020)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Alternative Military Service Status : &lt;strong&gt;on duty&lt;/strong&gt; (&lt;code class=&quot;language-text&quot;&gt;2020/11/27 ~ 2023/09/26&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;CV : &lt;a href=&quot;http://kozistr.tech/cv.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;[PDF] (as of Mar. 2021)&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;links&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#links&quot; aria-label=&quot;links permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -65,7 +65,7 @@
 &lt;h2 id=&quot;interests&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#interests&quot; aria-label=&quot;interests permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Interests&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Lots of challenges like &lt;strong&gt;Kaggle&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;(light-weighted) Single Image / Video Super Resolution (SISR)&lt;/li&gt;
+&lt;li&gt;(light-weighted) Single Image Super Resolution (SISR)&lt;/li&gt;
 &lt;li&gt;End to End Speaker Diarization (E2E SD)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Previously, I&apos;m also interested in &lt;strong&gt;offensive security&lt;/strong&gt;, kind of &lt;em&gt;Reverse Engineering&lt;/em&gt;, &lt;em&gt;Linux Kernel Exploitation&lt;/em&gt;.&lt;/p&gt;
@@ -139,10 +139,17 @@
 &lt;ul&gt;
 &lt;li&gt;Working as a full time.&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Developed a pipeline to recognize all tv &amp;#x26; movie actors from the poster and still-cut images.&lt;/p&gt;
+&lt;p&gt;Developed a model to predict expected users&apos; view-time of the contents.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Utilized &lt;strong&gt;SOTA&lt;/strong&gt; face detector &amp;#x26; recognizer.&lt;/li&gt;
-&lt;li&gt;Optimized pre/post processing routines to consider &lt;code class=&quot;language-text&quot;&gt;inference time&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Predict how many people going to watch, how much time people going to watch the content before the content is supplied. &lt;/li&gt;
+&lt;li&gt;Find out which features impact users&apos; watch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Developed a pipeline to recognize main actors from the poster and still-cut images.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilize &lt;strong&gt;SOTA&lt;/strong&gt; face detector &amp;#x26; recognizer.&lt;/li&gt;
+&lt;li&gt;Optimized pre/post processing routines to consider &lt;code class=&quot;language-text&quot;&gt;latency&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -525,7 +532,7 @@ Assembly (x86, x86-64, arm, ...) &lt;br/&gt; &gt; &lt;em&gt;experienced with mor
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 27.027027027027025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAxklEQVQY0zVP2RKDIBDz/3+vinjDVEW0lgHxdmyDtnnY2SPJ7nrneU7TNAyD1nq4YIxBZxzHdV0/f1hr3cz+sO87mt48z2maEkL8C1EUIQ8JieO4qipYg3QcB6Wh//CDIMCUUtp1nRP3fc85L4oiSZI8zxljWZahfF6A9b0Wpozxm4C+EGLbNk8ppbWxdgTDXLgPw+V1XcMaYtyr1BuP3H8hKcsS0VuWRUrZti0uQZCukK9Xh1rUAlOI4YhVrSM5WtM0EGPBFx1LFOjXGpkEAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 27.027027027027025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAw0lEQVQY001P2Q6DIBDk/3+vivWG1Ih4lCB4G9sB06TzsNljdnaWXNc1z7MxRmttjTUe6EzTtG3b5weU9g/HcaBJlmXJsoxSGnjEcYw8ojRJkqqqIA3SeZ7PZxQ8gjAM3TSKuq5zy8MwcM7LskzTtCgKxlie5yhfHpAGCacgyhi/CegLIfZ9J0oprUdrnavR4zYG53VdQxrLeESpN5zfTyGBKUSyrquUsm1bOEGQHn2PqhO1wBTLUMSp1pEcrWkaLOPAFyVLFO4Rqz7XAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -603,7 +610,7 @@ bound KL 을 만들기 위해, input changes 에 output 이 dramatic 하게 변�
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 85.8108108108108%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACH0lEQVQ4y22SiXKCQBBE/f9vU1MqIHLLKsqN3HiQPCBaRSpThs3OztE90wtd103T3CvKfq/Isnw4HFRV5c/QdVlWZEnC/7X+wr8fIhReFUXZbreGYS5s2z46jnt0KWHb1tEVlDudTvi9s+fYjj0ax/V6zdIsTdMoinzfv2XZoq7rruuItizrdsOTBUFAH8dx1PFrGIZFg6PLNU4SIdwojr9HW0wHxShcN03f9/f7XdMOeV64rhvHseeBwKMhiAijFm1/k4nmAJgk7fh5l0scR5vt5nK5aActTbO2bYui6Lo2DALqCiHKspolA2az2dA8LwqQG8bQxHHsqqqezyfUvt82xc+S4cYAoU2TsixNw0iS1B+NWmk2WpomScLr6/WaJTPw1WoFJBiSEIbh9eqzDGgDB2cYBufzeRjyLf+bzFD2qhpF8fQwOQllEaxgmhCg+vHpg/w3+eQKSZLoc78/uE4l6M+0yqIIo4grk+/fNp+2Za3Xa2jr41Y1TTMtk8Xy1UcTrhiU4gya+czvzfl4XC6XpAESqKq6jxFEkjB8QumPs27q7t61oxZmyefzCemis+Ha9wBmQ0iNVX02RInvfznDdrfbCUG6QExwRg9N05BAZ0rwD0C6AUH3eDz+7hnO9qj+5g2MxRJXlMUk5makSt1/BrZaLkHu+wGA37ITVVV3bZvn+Wd/M9jTQUMUP0niMyE4oydGiFQ/LPjyNGX9AJNBtfMY3sDqAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 85.8108108108108%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACMUlEQVQ4y22Ti7KiQAxE/f9vUyzlqSIgICBvAVEQdQ+Me/dq7VQBTmaSTnfa2W632+8tXdN0XVNVdbPZGIbOY+52qqqpikJ8KS2J6+MNzTAMTdPW6/XONGe2bR8cxz24e2rY1sH1KOf7PvHj8ejYjj0tPmEUlUVZFEWapqfTqSzLWdu2Xddx27Ks8nwmFMcxOI7jGNPbNE0LgIPLNstzz/PSLHu9Xs/nc/aaFsWiKGqvLaG+77fbTVXVrutmWRYG4TEIAKQjrlEL2HcyD79oTFFkRZaDMMyydLVehWG43WyLorzdbnVdd90tiWPqgtw0FwH5TvY8d7VaAV7VNZ2b5gjiOPblchmGAWoC6uf9kQw3BIQ2IE3T7E0zz4vTtKhVlNMqijzPOX08Hh/JCL5YLGgpCAISkiSJohP6Q5t2CCZJjPgcnc/n7+QgOOqGkaaZOBBBrjKIqqqEQjB6Tkc/nb+TfddTFAWcvr+zFSXSJEEt+kzSlC3KP/+uj2TbtqSlBG1zb9qOw1Tgj5l4Ix5mgtFolWldJv1+cT4c5vO5ZdlQolUcmmGIPKfVtr2CT3C0U9/dbtdv5KPv65qOz8bt84U892HAaoxK3CNOidd/OcNWlmXPI93DTHDGD9friAkgJfhBI93YQXe/37/nLEkSrBgMOSLIYLnXNLUw83WiSt1vZIRZzOf8505xPHA8qY1IYPbjtOrfDvuXLD4A4nhhCfoUCsGZOSEhVoWFiNMXRyLrD4ShtfmvdtKvAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -635,7 +642,7 @@ bound KL 을 만들기 위해, input changes 에 output 이 dramatic 하게 변�
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACi0lEQVQoz2P4////+/fvwkOCdLQ0dTTUzA30a6sqgIJ3bt3ICHJtTA7wsdLrri+7fH5fbFSQno5WSID33JkTr1w8DVTDAMSPHt4X5BfQFBModdS2U5ZQU1b+/uPbktnTpsZY/983o8JLJy7Ia2p3PQMDgwwfmyQfW2ps0MVzJxCa+bnYo600DzREJ9jp8fPyPHn6ZNOimdNSPC/Ob95ZGbqmo6QkJzVQW2J2mm+Kg158uO/Vi2egmp88fCAlLNAfbnOrK73W15yfh+fu3btb50/YXRH+ckHTiYaYvbMaCzKTqtz1bnUWzI33yEkKv3zxLFTzw3t3OFiYzBRE95VHWCkIcbGx3L17b2lvVWuA6bvF9YvS7Zf1lkZGRcSZyx2pT04w1/Dzdbt29RJU8/t376ZOmVxWVNBXk7t4Wt+0yRNv37l7dN+unraGHSvnH9++9sSBnZvWrNo0c8LWuX3zp3Rv3bz25fMnUM3fvn1bumSJm42ZnKhQsK/X6jVrTp45N2Xq9Ew3nVR75YaWrp37ju5ePnt6S+2kypx5jSU71y168/wBVPOfv38ToyNj3awX1BcoCXI01NXduv+4IS9xVrTO0iSjJH/nPQeOrV0wtac85+rCvr3dFbPbau5evwLV/PP377So4KmVuYfm9yc4m2Vnpt9+8HRaVeq8FKvZSZZZfpbL1mzYunrJnJqyQ70Nuzuql7VV3jp/CmFzkIdje2roxYVTYmz0crIyb999MHP61AQLmVQLKV11pf5pcw7t29tXnLe0LG9+cfa6SY2vHt6BagaCgpysMFerjRPrPG3Mpk6devDA/vrm1uqSvOy4UCfPgLTsgmuX7k3p7pndVL2spx2YBF4+AvkZAPzWcYoEIYAYAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACjElEQVQoz2P4////hw/vo8JD9bS1dDTVLYwM62oqgYJ3b9/KCHarTwrwtdbvqS+7cuFAYmyogZ52aKDPvFmTr1w8A1TDAMSPHz0UFhTSEOMvdtCyVZZQV1X9/uPb0jnTJ0db/dszrcJLJybQY3pfIwMDgzQvmyQfW2pc8MVzJxCaBbg5oiw1DtRHxdnpCvDyPHn6dNPimdNSPC/Ob95RGba6vagsL81fU3xmqk+yvW58uO9VuM1PHz+UFhHsj7C91Z1e52vOz8Nz5+7dbfMn7KkIf7mw6WRj7J6ZjQVZyVVuere6CuYleOYkhV++eBaq+dH9u5yszOYKovvLIi3lhbjYWO7evbe0t7ot0Ozd4vrF6Q5Le0qioiNjzOSO1icnWmj6+bpdu3oJqvn9+/fTpkwpKyroq8ldPK1v2uSJt+/cPbpvV09bw/YV809sX3fiwI5Na1dtmtm/dW7f/MndWzevffn8CVTz9+/fly1d4mZjJicqFOzrtXrNmpNnzk2ZOj3TTSfVXrm+uXPnvqO7l8+Z3lI7qTJnXmPJznWL3jx/ANX89++/5NioWDfrBfUFSoIcDXV1t+4/bshLnBWtszTJKNHPcc/+o2sXTuspz7m6oG9vT+Xstpq7169ANf/6/Sc9OmRqZe6h+f0JzmbZmem3HzydVpU6L8VqdrJllp/F0tXrt61ZOrum7FBvw+6O6mVtlbfOn4LZ/O9fsKdze2roxYVTYmz0crIyb999MHP61AQLmVQLKV11xb6psw/v29dXkre0LG9+cfa6SY2vHt6BagaCwtzsMFerjRPrPG3Mpk6devDA/vrm1uqSvOy4ECevwNSs/GuX7k3t6Z3dVLWsp33TopkvH4H8DADWEXH4uzxF0AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -695,7 +702,7 @@ bound KL 을 만들기 위해, input changes 에 output 이 dramatic 하게 변�
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACfUlEQVQozyWSW08TURSF5zfpH+HNRB98QF80JAgk4h0iXhJ5kqBgvIegImBbbKoVECrlVmKlKBQoU9qhLcwUeplpO+10+nk67GQne529zsrZZy9pT46TUNLs7ydIJkUqB8j7Cul0hkajQb1epxm23SAajQrePolkkoNUirio4/E4tuA1o8mV5Ng/gj/GiG5uOIe72xEW/GPsxXYcrGkqP2dmCMzPUioZGIaB/7sX31eP6GkOnvZ78fu8ZDIZpPDqd7zPrhAOTTsCawtuvMNt/F0POvhIPeJR7z16bnVgWTWqtSoPH/TS3d0ppkmg60V6em5z/UYXJ8cakpKI4/v2Ce0w5Qjs7EWZ9oyg5jQHV8smk64xJlyjDqZRZ8Lt4suUh1q5SFWM63JN4p1yY4qeFNBW6dscZDkbPuVPTWLd7MReW3FwzswzLI/yXORJNUvWhA7xO+0RyNQEoWzAiwHo76NxKEa+G+7n6tJNrq3dp6BnMdsuYbSew2i/DBaEshFag11cXOjCn/Iyp8KZbzpnfTqP40JwI0T+fAvGhRaqb4aQfmsb9P8ZYkPbPB0xMEuh9wZWbNvBZrXC+63PvN0co96wOCka3Akd0xvWMW1BsCwqI6/Rnz7BOjlGWgwEyWaywhdNa9hYcozyh3fYhu4IplNp5Oge89PzKEmFQrHA1uwrIv6XlMplqJSxa2JZq0uY7nGkhcUgR8IadsN2BNQDhTmPm2Iu52BZlsXSfKysrpDL56jVLVwfB/COD6KXStRMk7Kusx1ZJ/QrgGQJM6pCMBaLsSsylU6TF4SmqZsvbpq1UCg4fjPFZVVVWVxeJri0hKIoVCoVp5fL5ymJ+j9hob1q6sYHCgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACfUlEQVQozyWSW09TQRSF+5uMP4Q3E30xQV80ShASkHgB71FeDF7AqESDilJpQUoJRZCWUm7hUhAQeqG0UOiBnrbntD3t6enndNjJZGbN3rNm9pplC0fCrK2vEwqFUNNpItEoK2trxGL71CKXy3F8fEwymSSRSMg5GFxlQ5zZ24vJvURinyOxr6oqtkh4E//EANub65IgtBNkxjNAeHdHYkVRmJr8jW96El3X5fCMu3CP/JK5Gp7wjOIZG5WX2VYWx3G9ucbygkcSLPmHcfXcYGN1RuJUKsXTjvu0tzVimmVK5TJPHnfQ2tLEfjyGrmm0t9+hpbWJ9KmCLR6L4h7rRzlKSIKdyDYTw32k0imJSwWDQccP7INfOIsKdqeTwSEn5XyOchUcjp+MDDsxrAo2n7LAo83XBJRlWV4dcWC2NWEtzkmsGhl6Il95K0a6dMJpCW4JdRqCkCyLgoIO77rgxUOqR6LleyudXA+00bj0gKx2gnHzKnr9BfSGK2AKCU7Wqfc3c3mmmfEDF17x8HNjGufdGs+ignBjiczFOvRLdZR6u4WGygadq90EU3/PWvRNke24jbm7LbFRKvJ5a4Deze9UqiZqTufu4intK5posaaASbHvI9rL55jpU2yz3llOkgqIpGVZmNEwxW+fsHRNEiYPk0S2w3gnponvJ8gKG21NfSA4/p58oQDFAla5RElIZAzZsc3M+jlWUlhV68wmwld/hofICU/WouZL95ib+YV51IyKWang7O/CZX+Fls9TNgwK4qf/BYMs+rzYTNOUfgqFw9LcB4eHZESBVa3KF1cEQTablX4zxOFa7WxgDn8gQDwep1gsypyayZAX6//a7ruYPZYjJgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -782,7 +789,7 @@ guiding network E 가 모든 이미지를 하나의 style code 로 뽑는 것도
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 97.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAAC5klEQVQ4y3VU2XarMAzM/39Ze9K9adIlzVogAUPYN5vM1ZhA04fLOcK2LI1GC0wgT9u2yLMMpmkQxzF830dZlkDXIEliRFFkpdUGZdMijELESQJtDCpd93eCwWfCV3c+o65ydKa0yrOcrVz2VVVZ567rYMRRS2AtAVsRLUR0Xdk7C0gHPkWaIFGO3fOy1/egyemE0nWghb3OUgtiisKCdhKgrcpfwCHlIArgRi6M0fZyACX7QpybUliYzp67C/t+PffMJYMRcHjC6IisTC9pd2P6idTLtARs+2CmQadZY5YGqBohMQDSIU1TaUIl1CtsnQWkWiAeQXmfFzlWwQ+8xIMXreGedrJ3RY7YhBucCjWWaEKqQRDYwluWBweHYHmpZV9fFYYI4wxZlqPIY2EsNS1reKEHlSqcpMt2Kq5THhthznA8R8ZiPTalli620tlagtZ1I8FrNHJuZDUySnmei77+BeTlSTo50G4FdOf9IPTm7Nh1mXG+WofmDfJnbK6VQ0NU7GO3myFWnp25ThgapibDLZRg0gxnGaFOemCE+ciQoKzBONAXsew7DT8+YHdYwws28PwtjspFqPaI8wBxKV9ScUIj4/YHkKPB1Mkyk6hsEvdFXkjt+voUEjTOUxQyMsckxI/vCliKQ+RDRer/KXPQh0ENpcPb7RZKKWzWa6hAjUXstBlrOzaFTJbLJY7Ho9Rrh9vbW+z3e3x/f2M2m+Hl5QUfHx/4+vqy+s/PTzw+Plr9ZrOxeq70ZYYTtpwGNKQRZT6f4/n5GTc3N3h9fcX7+7sNxDsGeXh4sHv6PT09WXvasQ8WcC2pOI6D1WoFz/OsASO6rmsDUciSQIvFYgxCZjwPwm/epjxEpiPBGIDG1DN1sqWOKb+9vdk0WSauBCdL2mqtMSEqwQhEwPv7e8uEwpTIhGzpRBZ3d3fWlvoBiAGn02mfMl80oDHT5viws1wZjMKu80zhH50rfyjc829NG65k+A9LMKTPJ5Qy9gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 97.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAAC6ElEQVQ4y2VUh27rMAzM/39Zi+42aDrSxBke8bbjLdn3ePJAi2eAkUSRx+NQVpCv6zoU1yt02yJNU/i+j6qqgL5FlqWI49hIpzSqtkMUR0izDEpr1KoZ7wSD34o/wzCgqQv0usJ8NjLt67o2zn3fQ4ujksBKAnYiSoiopjZ3E+BgNmWeIQtts+clgXjH3yxJUDk2lLBX19yA6LI0oL0E6OrqN+CYchAHcGIHWitzOYP2IqU4t5Ww0L059xP7cR1G5pLBAjh/UXzBtcqntPsl/UzqpTsCTsF0h0GxxiwNULeinwGbpsFVUqikTp3Iwd5AqoWhH5ZaFmWBXXCGm7lwEwtOcpS9I3KBFR+QlOFSohW7GviBKbxh6dnwgu1Uy7G+YRQhTHMJXMg0pMJYalo1cCMPQR4ikS6bqfid8tIIPcB2bXHajymLNNLFTjrbSNCmaSV4g7Zt5NxAyygVRQFmugC2YpxIJ2fanYAe3BMid8OO/S7zNBPjOjdvFgM4guCPcm5ImPg4HtdIQ28cEWGopduQ4YYw1fkVg9S/z3NoOf8ZbNZgGehJDPtewU89HL093MCC6x9wCR1E4QnpNUBayUsqE7QyAX8AORpMnSzZdTaJ+7IoTa3M8EvQVAa7lJG5ZBHOviNgOTzJJIzD/5syp8xBnwc1kg4fDgeEYQhrbyEMgqWIvdJLbZemeJ6Hn58fXC4XqdcRt7e3OJ1ORrder/H6+orPz098f38b/dfXF56enozesiyj50pfZriiIw1oSCPK+/s7Xl5ecHNzg7e3N3x8fJhA1DHI4+OjsaMfhfa0Yx9WjuNgv9/Dtm3sdju4rmsMGJF3DEQhSwJtNpslCJnxPAvf/Op8PhsDRqYjwRiAxmTBDMiMOqbMe9ptt1uTLn2fn5+NrVIKKzIh2Gz48PBgmFCYDpnQhk5kcX9/b2ypn4EY8O7ubkyZDGfKTJtvm53lyifFNNh1jhWFeq65DPNsSxv+a5PhPzx8o1mhpTNhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -817,7 +824,7 @@ guiding network E 가 모든 이미지를 하나의 style code 로 뽑는 것도
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACnElEQVQoz1WSW08TQRSA+YU+mvhgfNAHfTASteAFKFptCQhVQaClRYmiVgQUCFFATAREkVugVOhld3u3lrIUpJS2u5/TBSGe5Mycy8yXM+dMBUI0TaNYKqKXNDbTcXL5XDnM2pKX0LofXeTTv5K42h5jt1ZhsV7ktdNMT08jLY56LphO4RlyG3cqykuhUDCcHaFvPg+zX9gxnAnLDOsL6yJaJBmL4OpqorW5mtums7Q136axoZbqWyba6k4zOdR9BNR1SqUS+fwB3z/UkQ17jMTs3DT72bxh7x7kSCfCvH9px+Mw09F0hfvmKqrN17nTcIPWu+cYG3x6AtQ0ndwfleWZt6DnUDWV7olOvEtzLM/Nkito5NQ0vq8D2Osv42i6yYvuVl4M9DC1+gWbrZL+/pcnTy5XqHMo0WicTVU17ET/G1QpKKrX2Puzg/xzgfXVaX4uT7G88o1V7yJLq4uszU+QkLwnwGKxKKCaERgZHOW5bY68kiUeSzG9sCaq32Vze4te9x08XTaaLSasVhMNdXWYr9YwaTlD8GPX/0BdKxkBtSAGMJ9hw9lOzDfLp8lx1K1NMtvbOATkidPFU7eT8b52Ou0tPLRdo732PMO9nYdA7Qi0sviVqRkHvt1vuN49YW87jbaf45/8Tv+iy3yJh4+stFmvcq+mkg77A+rNlbRabjHa7zmp0Jik6NHWTlzMaJ9AwHsM0vXD7mazW4yPvOLdcC9ul/g+9kcM9w3x3Olm7FkngaUfh8BMJkM8HkdRFKSQgt8fJJlMIUkS4XDY0HIuGoshJxIElRh+JUoy/hs5GCYiRUkoEaLhCKlUioqNjQ18Pp+YblRAQgLoJxQKGVqGlmGBQABZllGERsIKsjgnyxKh411CKuciEf4CFSPwjAbed+sAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACnUlEQVQoz1WSyVNTQRCH+fu8e9CyyoMnDyiyCKIQECFaLAGBQEJAVFBZZBVLZCvZiRKQEEBC3nvZiSxJWEIIvHxOHiJlV3X1dPfMV9O/mbRkMsn5+TkkVRLAN+skB8d7cAwDVUNYJ2ZFNUkoGKS1xUTFsxwy79+kviKPl9XFFJXl8SD9Gj1dJlKWpqoClEhoyYHwzolBTk6jWjJaMsP6j3VRPSPo82JpKqe28iH52beoq3hM+YsCcvNzqCu8zli/5QKYul3K46cJrMM6Iu4OrTH/fYaTSFxbH57G2A146HtnoMOko6H8HqVFueTqsinS51H39DbDvS1XQFVNEjuKsDzTLaaLEVEjtIw2Yl+ysrwwRyyhEgvvsDbbg6EoHVP5I9paamnrec2UfRK9PoOu7vYL4KWGImjm8/nZC4e1deBjJ2GXk3hc5fjoAHljkXX7NBvLU/xcmce+amPJvoTjxyh+afVKw7OzMwFVtcKn3s+80S8QV6IEfCGmFx3i9ofsRsO0NxfT0aSnsiSbsrIcnhcWUpj5hPGSG2x9Mf8PTKrnWiGcEA+wuM8vsxGfY5ax8RHC+7vsR6OYBKTebOFVs5mRLiONhiqq9VkYC+4w0Ga8AqZsZWmOqRkza4fzWPqNHEV2UE9iXNrObogm3V2qa/TUlWVR+iSDBkMFxboMakvyGer+cAG8PHAoNNo/8AstT3A6V/+Bkn/FjYqRRz69p2+wnWaL+D6GGga7BnhrbuZrayObNusFcHt7G7/fj6IoSC6Fzc0tgsEQkiThdrs1T/W8Ph9yIMCW4mNT9hL0/0becuORvAQUD163h1AoRJrNZsPhWMPr9eJyuQTwlxZTnoKmYE6nE1mWUWQJj1tBllwil3CJKGlR0vZ6PB7+ACly7jwX4/hlAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -895,7 +902,7 @@ diarization task 를 확률 모델 적으로 아래 식으로 joint probability 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABmElEQVQoz21S227bMAzN/39Gv2NAUWCvA9p6CNrAkW+yZVmyItsSdUvsMQkwNFsPBJI6FA9BgbvtBp/caKWCkamOTz0GeAyYpmnyPK/rehg47/uU4vYFu21b0dloyXDsJpod3z7qfTvRUhDrrXf+DgPeOr89Ynd3EKEZq37uqGo63bLpGoAHTF3WFeXPU7PQbLV8/Vq83jorK1/bX1n/+vz+4+fHy+/+Da+zPZ1TstY4B+rw8vn8FNj7N52VcXnLqNJFP5RcVkKRno9LFNoJ7ZVJQkocelQnbdNDMbZmI5zU1AygFz9qX7FZKf1JF6lmJhc6zC5ejt2iZ9NJCOny0LkdgUtVciO05QpIq4dRE+7FybRiafgy25BTLUbdShv/Ft++Y4NwnmyaIWkTJhuNv9StIBVrudJLWOCMPNpryqV/Z/4fIXgHNsZwV/8Wu/1+zxjDTaCU5kdSlmXXdRijLauqYwyZwyGvqqqum4IUV74s8cEg5C7LsqIo6qpGFZQghAC4lBIuBgDEFHGrEMiEEJxzIcSbDcj8Aa96bbEyYUjNAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABnElEQVQoz2VS227cIBDd//+MfkelKFJfK2Xr1FE2vmJsbIMxmDvs2sHdtvIqR2g4DDNzuMxp+wMbzKQI1ROi3cD7SOKQWjZNk2UZAGAch6Hvg/fbAaf7pLwqxrzlMMnPbyCNpMKFssoae4fUVhkbI9f1S7L2uplqxFtIQcdgx9uGAm31tm63dY+/8kbAZJX9elRet31JFXlpfyb9y9Ov7z/enl/7c1wuar6GoJQ0RtPL8/vTN4vO20H9rzKVJmtRQ1nZj9WAa0yLfpiEx8xgZqkMmJB4aUJnJsN6TI4UTXqmvBk1W8zEbY0WStk7FIQuiAg4Lsbf8k6wRXZEOX97UG4nHcuWvcCzGqjOW4YnXg6OzKrFAgxiUe4DspEwiJUP/5LvZ9DuylVYVGDSceWlvdXtmFdd21MmnNDX6I923zJhWx9f+yucs0Yr7+16/JxHnH6nKUIodgKEMMuLsqy6ros82qquO4SqqrpcsrquAWjKotz9VRUDRkxOSZKUZQlqkKZpLFEUhdY6hBAbIxLvfYhttdvgnDPG/LfR8wlnhG19n2UYeAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -940,7 +947,7 @@ each sequence 인 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB4ElEQVQoz21S2W7cIBTN/39Kn/tQVcpjp1KqJmnTJpnF9hgbA2MWY8AYDLgk6TZRjlgul3t0uOJcrH+gtYYQdl3HGBODNCMLsllkm6IXYqCUSilDCOt/uPgbzbObzJTBOZNKT6w5bt51N++9HUZtOOfamBjj2+S0priGkJbZ2bimsEyGNU6g1dk1JW9tTqXFrzGckTMtr706FfSwRQ+bu09lf8gxtypw4cr9sP1ZXX02xc4WuzDKN5SlkVgSZljHIJ84EkjqMWhlSWdw51k/EWQQjPP8hjIa2x/k29fq6vL64113e4du8EgiQen+ln3ZlJcfhuur9PA98P65yXSmjMWw7eqakntQtaLfdTVVRtKBHCrZEbgrRIPwoVKDev3sySdE1YkpgM1klxIqyseyG5uT7gdTYS2Nq07TiSvEJx/Sb/LLbv0KyYD6ocbKWLdvBaGsoRaxiQlVoTH/XY01JrSj2i/pTDnGJM0yaJ+HUE7ZiOm4r2ANKRVmzFfKPRWYRZklPeOs51eIIbjZLot/ZYwzk5RFUR2PADSgafIsywpj0rawhbBtW4xwtmwDQFFWdQ2OdY0JAQDkguzFCwDqx8fHY5Xz9X63K5+x3W7zMVvdzbN33nv3D9mATyaess9/ASP73v9LbW4jAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 64.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB20lEQVQoz3WS247bIBCG8/6v0ttetFJ7u1vtqrvbpkpzMhg7GEjAxhx9wLgkUrebVfppNIwGfv0aMYv5L8YYjHFVVXUtpGytEqE9BIXjNDRSCiGUUiGE+Q2L16rrOmuts64WQipjRZnff6iePw5eKm1EXRtrp2m6LY5znOYQ4tj1fppjGJ0RZd+QufdzjIP3qRXHYZ7ClTjJUj7pIxD7HV3fL+8AzzKe1V6HpunBvt2u4OM3C3Ye7IJubzi3tmUtq62oBG5cTRuSOsEYz4gh1SC4Y9QSPHXdDWei8C/24zt8+PL0eVm9LMkzVWxiJK5exOMd+PpJPj3E3z9DfboMGa+cqZSbCiHOVgU8NKdthbi2LZdsD9uK4W3WlITuoZb6n3O8HH6IhOuj0Iha50eANa8VqFR5NCdpITWt7eHRHWtNajeE+E48YybJSeZUWd/vDg07iZJ7IpxoNCStNg5RQxmvuBnGV/GlSP/X2lGaIUWjOu0nytUOYoQ5b+z5SvfnbEdtx3jhauZ3hDB23o1DP03hf28WIMtgnhdFmaIsSgAgpfRwwJc4UELTypYFygBEqMgRoowVRZFunXOLVK3X6xymPtptt+DCZrNBOUrivuuGfujfkhbQnUl7/gdiFN8GTW5eewAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1033,7 +1040,7 @@ unseen samples 에 대한 mean 을 예측하는 network 를 위해 gt 를 만들
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABK0lEQVQY0yVPUUvCUBjdD+zZv9BrT70IPVVEmPgSUS+hYhAExhAJy4qVTWflcm5OXWiT5TbY3b3brs613XWjA4fv8J0PvnOYKIo+ZxNd/7JM03VdCOGaIqIMqUVHQkgcx0lKDID9VZSSZKQ7Al8N45Ch95o+WJgGhIiQlPwx/UeSJHGaDkcDVRvfvlyXGtUmz16xZxc3l4eFDWP1zSCEloGPf6KFoSmzqTRW21JfmYj1x2K5UanfnedOs0fl7f1CZq+UzRU3D062dis7+ePMHM8Z+sG2rOFUuedqgsR3xYdWr9WTOY5nBZkXpGZP7ohq+0N+elWEd5l76z8LcqfTreEYM47j2LYNHAAAdAGkIXCAoesBBwYeXuK1h3y6RCgIvABBn7ajAgDke/4vLeEAQfE8PJ8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABLElEQVQY0y2P3UsCQRTF9w/s2T8heuypl6KniggLXyLqoVIxEILMQMK+NtHVNfNrR3czS13YtI2ZndmZ2bDVtTH6ceAeDvdyOZLnfTd0VTda5sBkjHLOpkEgNJsTiOn7E8J/vggutN8GH6P+eytX1U5PluAYSo6DuyYYjiyMiVgN/s/mTAWzmf4CjG7nRknFshd3Svo8fXR2ndyJLFieJRFCPEa9iT+0uu1+T+sYJa3Zfq1n5Gg8m8jcHocP13bjK1uR0GZsNRxd3D5Y3kis7+2HTG5K4oNtfxo9/f7xSm0Wy7WHfDVfBbJcSJVAXm1kK5ryrCs1TS6DUgXIT/WcCopF9ZL5TIIQ2rbtQIQQdhD+a82x4yKImcs9PqaEipAQxlxGMBXthEGIUJf+AuSl/bjo0A5oAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1067,7 +1074,7 @@ unseen samples 에 대한 mean 을 예측하는 network 를 위해 gt 를 만들
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB/UlEQVQoz21SyW7bMBD15/crei6KogV666UL0EOBBAXiLag3LdRCUZRJLRYpkeJ0JNdxnOZBEkccPs72Zs45ANBaJ0lyPB779lSVZZ7nTdP0fa+U0mdcVgRcMDsveIiQiPOsadI4ju7u7zebTVXXow9vtxoGMxrOaKWGKd4/8jAMGJYxJktp3dB1nWpPCHVCsgPTQc1ASegVdHWnlXtONsb4vk8plVKOkcbXjE6rwGgwCkQI2RoaBuyxa+sLdyJba6MowuBX8tEDGUH4C+gK9t/h2xu4ewvrz7D8+AqZEBJHkZAlCM/Fv2H3FR7ew/ITPLyDxQdIF1Ds4fADhN/1WNlwQw7DMKW0PObg/xz+fHHZoxOBO3FXxtDk7lS4VoCuQJcva0Yy5hwnqeAUtHRumBrrsJPT07te4XE3WHThqK7kpzlj2VwUgQxCGbKWkZKQKsra7CA8UpGkSTZ8E9UEZ3ETeZqlw/hCiKLimaDL7SITWcqT1W4la5mwZOttlVZxEqdpehXJ0zUIlBT+4tibqhGFIAHZ7/ZYD01pXY2Cqeu6OSvnRWS4hR2ssWa6y/7vdSNghjJkOUeRhCGJ4zErhO95BeeoOUpTz/exnSihw+EQBgHaeCDw/Yzls/l8vt3tML31eo09w8yxJdg/lN3ZRtnjF23cRAcavRmBPfoLcsoclVlQxVMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB80lEQVQoz2VTy46bMBTN5/cnuq/aSl101U2rql1lpEqTzGSUCQkPGxvMwwQSbDD27QWUdJIe2XCw7/F9+LJwzgFA13UxY2WR920phNhsNkmSGGPcDGunMdJO61mCWMxMa00IzfL01HBKyXK53G63dd2MJmgwdODMSJzRStmrGKe1lnGGDquqGpzFKFR7Rqgzih2YDhoBqoJeQdd0Wrm3YgwvDEOME8Wjp3GacXNQYDQYBTKCdAMnAeKla5uL9uI5juMbcelDzYE8oDX4v+DHO3h4D5uvsP58Lx6GgRASUyqrI0jfxX/A+w6PH+HpCzx+gPUn4Gso9nD4CTLoeszM3oijKOLoucwg+G2331z64mTozrk7xnDK4Fy4VoKuQVf3OaOYYdyMyyzB7fFgZ8fa2mEaBnoNU3q4rt9e1fzCJUppXhbRMSIVEa2gNcWRtmlQBaSm7MS8wqMNxbu4F+M3+pdSFnWeyuRpt05kynP27D1XTcUE2/k7pVXMYs45XLC4HoPo+35qJ9scm7IoSUi8nYcJoaA+1mjQ1A3in/jqGW4x2MEMZj7r/92paWHx+voqsiwIgigisxNE4PtFnmPPJQn3g4Axhl1wOByicORogCQV2WK1Wu08b7/f48+ANcPIsSRYP2y7mSul8IlcT0DSmxFYo79T3RyVOZkxKgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1135,7 +1142,7 @@ training 하려고 하면 &lt;strong&gt;computation cost 가 꽤 많이 듭니�
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 41.891891891891895%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABrklEQVQoz22SW2/aQBCF/f9/QPvW9z60aqrmrSUUKqKKJDgkJAHK1dgG3wCvb2CbL2O3SJXaI412ZzRzdPbMar7r4DlrTqeSCmmSYK2WZGlKnhf8D5ZlYds2RVFKT05eFPVZliXaaG4zWqwJVVQ3BzuFPlyy3SuKY1Y3FfmBOFJEErnUPM/DFSFxFOL7Pmq/EwEJqYjQGvqSRt9kL4RBmHL9bNPoLeiOHdxdTBzHfGnp3D7NeZoYfGr22IcK2/H5eNVjvlrTvhvRvHlGhSFa+3FFe2DJYMLDdMPn6zG9sc1FZ1zncRTx7vKGH/qE/nDB24surhcwNTa8kftkYXLZeeH9t3tCUapd6QuafYNAnljhlxnwoT3E9Kq8IBFPbx9HtISwpU/pj1dkB7EgSfn5MKVxN+Frd8TMdIiUQhvMNvSGBiqKa0LDVbTu55huKGSxLOvE8ZgzsQIGcwc/2BJ4DvvAI04zqW+xfUVZ5L89hFNt+knMr4YrHLJqw8d6cxXO9Qqh+PddPOv0Z/XCzijknmYZ2l+9/wyf83MU8j1SUWVstixtn0wIElGV/okqfwWUxFh0UeE/WwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 41.891891891891895%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABr0lEQVQoz2WS3Y/SUBDF+///Afrmuw/GkKhPiggJahZpt8sGKRYo0Bb6BW3pB7Twc1p3E6Mnmdw7k5mTc+dcJQw8fG/H7XalQZHnONs1ZVFQ1TX/4ibhOA6u61LXV6qqavua83q9ohiWi2HtSNJTOxDFKdpszUHO+lK2TXV1ITulbTS1IPDxfU/yhDAMSZOjCMgpRITS1dZ0dZtYCKO04NvUpatajOai/JiRZRnvBxrj6YqpuaHTU4mTFNcLeftZZWXvGKgGvdFUiBOUwWRLf+JwynImiz2dr3PUuUtnOEc390J44tWHEQPNRJ9ZvOzc4QURi82OF3I3LZt3w5+8/nRPEh9ReppFT9+0T23wy454M5hhB01ek8tOf0wM+kLY1xbo8y3l+UyWF3x/WNAdm3y8M1jaHqc0RXlc7lFnG5JT1hJu/ZT+/Qrbj4UsE7NuXGThphPxuPIIowORGBlHAVlRSv2AG6Zc6+rPDhvf6urMTZbfDDc4l+KwGNE41zr7VG+QyP6+jA2G+rI17Bm13IuyRPmr97/h5/w5avkehaja7A+s3ZBSCHJRVTxFk/8GqxpYf/sVM8cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1172,7 +1179,7 @@ training 하려고 하면 &lt;strong&gt;computation cost 가 꽤 많이 듭니�
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 115.54054054054055%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAAsTAAALEwEAmpwYAAADt0lEQVQ4y31VWXPaVhTmt3c6TTNdXvqWdvrU1kmacaeJZ/pCWlKDDUjYAiMhEBKLEEbsIFYD/nq/w8jxNMuZuVxJ99zvfGclASXD4RCWZaFer6NWq2G5XGK322G9XuPu7g6bzQar1Qr39/dUl53vPNtut6K/3+/lLMGf0WgkYJVKBe12G71eD2EYotFoyDca4TMBKARptVqwbVvObm9vMR6P3wMGQSAXC4WCAFKZAJ1OB9lsVp65yHg6ncp313VRLBZhmqa8E0MAabXZbCKKInGD9GezmVilEU3TZCcb6tGbxWIh+ty5qE8SDFOCVhlDCuMQx4aH8/kcWv4ISDcJ9inp9/uiI4CMF2UwGMAwDJTLZVSrVRwOB5RKJQGiATJkrGiIZ0wOdwrj/gBIdEocXLqRz+dlMfs0kMvlxC16wHjycpzxTwKS4XgyUXFcScxubm4EzFSghlFUrGsqHDsE3e5Dxj8ApMX3gH3kLi/guXVMRkPMZxMYVzq6QQez6RgVy0S72cBkPHwA+yxgIxjg5NzDy0wDr7I+3hhDPE838es/Vby5HuKXv22c6iGSRkfF9LMMB/LRDUb44ayMp88v8N0rDc/eNvAs6eLrkwx+fufjmxcX+Pb0CicpWwGppKg7h8MHgCqGKsuB3xK3nLqLZjvANFpjHi1hVaoI+0NEyzVqXhvd/gi1uie6RzlmmRgCyJ9K1cHZeQnnNz7OMiZK9UBKw/AGeKvZuDR91BX7QdjD/eHYs6+TF8iUfei1EAWnJ0T2LOzd3RaaYeH712V8eZLDkz9MnF42YTsNfPWygCe/F/D0Txsvzl10/DY2igBr8qe/ivjiN010fnwXQLsqShgSnCSO60GzWkjpFeStNrxgiNk8gm53kMya+NdwYbdCcWu/P7pYcjpIFxtI5kwU3RB1hSGtR0A2uutUVclk0O91sYjmmKh63K6XqNkWZiyT+70UNruKA2K1iBDeBrDKJey2GxkOrE0BZBHPZnMsVcbnqumjh7VQ48mBrhekBakXD4VYZ7FYSjOwCdiG0insW7YcWXFyMCHx4pwkGC9wxefcyTR+5wDhcEnwhxfYq6lUSvqZDGiAo4wzL5TY7eF5njQBQVi/XdWCuq4LEZ5JDBlgPnBIZjIZYfRYrq+vBZSFG4+5eGo7joN0Oi1DmZ6yaxJx60jrqSlCqwTnohKZ85kBJ2uy5TufOUziSR23YSJucC7f9yWTtMyLtMyJTZZkyJgxif+Xx0Mi8fif7GNCxozZxwAer/j7f2zLrip4hWxzAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 115.54054054054055%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAAsTAAALEwEAmpwYAAADt0lEQVQ4y31VaW/bRhDVXy9QNA16fOm3FO231E7aJmiToB8aNwosyTptURIpSjx0UJRFkbqo0zr8yjcKXSNOOsCCS+7s2zezM4+J29tbjEYjaJoG0zTRbDaxXC6x3++xXq+x3W6x2WywWq1AXxqffOcaR+xPS3BCQILpuo5ut4vBYADP89BqteQbD+Gcm2k3NzfixzXDMHB9fY3xeHwEJAvXdVGv11EqlcSx0+kIQK/XQzablTkHfafTqXy3LAuKokBVVXknhgCSSbvdxnw+lzAWiwVms5mcykMKhYI8yYagjIY+9Ocz9ieJ3W6HxHA4RBAEgs7w49xwMQxD5PN5AWQeCfY5Iw5TIYBkSfN9H+VyGbVaDY1GA4fDAZVKRQ7kAYyEueJBXOPl8Elj3h8A8iNZMByGSna8fR6Qy+UkLEbA0Lk5vvEHgBxHhgHGk0lUBqsoZw1Uq1UBUyPQclkR1tvtDm6/f3fj/wsYRCHnLjKwLROTUYBwNkH5soi+28NsOkZdU9FttzAZB3dgDwA97z/Adt/H6bmN5+kWfs86eFUOcJpq4+m7hsyf/qPjZdHD23IPu88xZP5iQLs/wg+va3h8msF3v+Xx5KyFJ28tfH2Sxs/vHXzzLINvX1ziJKnjlpcS7TkcPgLkJQwjUNfpYDYZo2laaHV7mMxXCOcLaPUGBkMf4XKNpt2F643QMGxJwdEOH8rGOwIG/hB608Tr8wpSVQdv0iqqpiulodg+zgo6LlQHljuC7w0iZseefXWWQbrmoGh4uDQGMCIieynsQR8FRcP3f9bw5UkOj16qeHHRhm628NXzEh79WsLjP+p4dm6h53SxiViwJn/6S8EXvxTE58eki8KlEuXzgIQfUTUsG3mtg3eFOnJaF7YbYBZGtVjv4e+sivdXFvS2J6mJVUUxejhXbFkvmx5MK2YYXQgb3TIayGczIOPlPMQkqseb9RJNXcOUZRKdzsLmJVIgVsu5+Gq1CvbbjYgDazPBCRt/NgulC8KoS+Z3YxFJl4FisSQtSL9YFGKfxWIpzcAmYBsKIPWOPUpWVA5eSDyokwTj4CauE4hrnMf+FBCmI0FBoDN7NZlMimyRAQ+gElPzvA+5s21bapYgjKYftWCxWBQiXBP5YqVzQpFMp9PC6L5dXV0JKAs3lrlYtembSqUktxRfYiXi1qFRRXgqwTnoROaO40jCyZpsucY5o+M8tjvAeHAjT+N/goz4O6CMkSXfebsU2o/tvkgk7v/JPmVkzJx9CuD+iL//C2Q+q1WEJYK3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1237,7 +1244,7 @@ skip-connect 부분이 channel size alignment 를 위해 strided convolution or 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 90.54054054054053%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAACfklEQVQ4y3WUyY5aQQxF3/9/CxKCHQsEG4RAQDPPQzPP89AdCDg+ThyxSEpyv+oq+/pe20Xw9fUli8VClsvlf229Xst2u7XvbreT/X5v++l0KvP53Iw9vsHr9ZJ/2fP5tO/j8ZDVaiWTycQSDwYD6ff70u12pVgs2v/tdlsajYYMh0MJ7ve7HI9HOZ/Pcrlc5HQ62R7m39/ftp/NZgYGE/ZuuVzOQDqdjmSzWTkcDhLwp16vWxYuMLKRiEWSVqtlZ8jcbDbG+Hq9SrPZlNFoZFatVu0ugFGtVjMJSEECwVyyYEogAdQPsPF4bOewgzmGjzEEsFKpGDMcAefr63a7Sa/XMwUw9HpyzpmT8IQB9YMRspwl2eiYA3oZXK4D4s+eDuND9wOKDiuAYMYFUnzRGGfI6ACKROJoColgl06nrZZ/mwIrY6L7hrKdKei615W1BneUCT6wAwxGMAuFQhKJRCQWi0k4HJZ8Pv8bEDCX3NbvXIHnyviHyjppSXzOHPDz89PqBTPuiP34+LBRCtDNgProAF4pFGSpl4/HT+scJcEHZoBRAuIAYs8ZCSmJNQUwv6QOfe0aMr2GztBr6GODIsCIIZbZtLGBLk2hGTggm4F+B4Sldxk/7zIjAyA+NjYA+itx+jhR9HdAVMAQ2QCgrKCl4RzGgJvk97F5p88Qs+7640A5HJCm4IMCmkJyrFwu21u3GgIIQ5dd592qvNtuK1uelQLW/rxVOgl7EqZSKbNEIiHRaNQaZ2MDAwxAe0pKf9huyUGDd/pi6DwMYOi/POyTyaQNdCaTkXg8brIDCslAlkolk1BRa+q+pzbmWSkATcNQ4XOHEvz9FZGQZL8A9BQi6AsLsT0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 90.54054054054053%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChUlEQVQ4y22UyW4qQQxF+/+/BQkhVlmgsGEQgoR5hoR5ngkgCDg+jhwhvdeS1dVV9vW9tquDw+Eg2+1WdrvdP7bf7+1ssVjIfD43m81m9h4MBlKr1eTz81M6nY60221bB4/HQ/5n9/vd3rfbzQCGw6FMp1P5+PiQbrdrAPl83r6bzaaB93o9CY7Ho7GBKWtYsT6fz3K5XGw9Ho8NbDKZ2Notm80aSKvVkkwmY2oCMlSrVcvCAUa26/UqPCRpNBq2h/TVamWyv76+pF6vS7/fN/nlclmWy+UvYKVSMQlI4ZtgDnlgSiAB6/X6r37sww7mGD7GEJBSqWTMcASctz+n08mKjgJvDufss+ckSAj7wBkhy1mSDVkO6GWANaA0iH38WY9GI/NBQUCrYQUQmTlAij80xhkCCAsk0qxcLmf1h10qlfrtMkBswsqY6LqmbMd6uOi0ZaHBLWWCD3IBc1ahUEgikYi8vLxIOBy2rptkwFxyU98TBZ5ooovKYqR8znywUYU8as8Zse/v75YkgBUD6qNT18DS25vMdM5u39/WOUqCDwHIIvFmszEgykECElpTXLIfMlddZY1Mr6EzpIaYj41fN2KIZWYDFtAFmOw4IPuoRX8GhCVgyMbPu0zJAMTHuuwfSHf6OCHvGRAVSGKfGGr7pqVhH8aAm+TnsXmmv1AmPFf9OVAOB6Qp+CCPcfHBLhaLdtf/rh4MXXaVe6vyTiphpQB1BaxoMEPNT4GxQX4ikZBkMimvr68SjUatcQYIAwxAy6j0e82GbMcjWQOoYwUDGAIIE9bxeNwGOp1OSywWM1IBzkx8oVAwCSW1uq47agMGWAHy2jQaR4DPHUrw91tEQur7A5VJH1TgxvqKAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1269,7 +1276,7 @@ skip-connect 부분이 channel size alignment 를 위해 strided convolution or 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiUlEQVQozzWSja6CMAyFef8nMyZqTIx/qKAgKjAQGbDNwbltc13SFLb19Gu7YJommGEgM+K/3qF7FejzArr7oql7ACOqqkZZllBK4V1VuF6viOMYYRjieDyK3e93BNZaaK3Byz5ytE+NJjfQbwtjJujWwo8ep9NJLD6f8SAxFtjtdlgul5jP55jNZjgcDggGY9A2NWxeQT2I1Hj4aRQR77+w1pAfheZ2u+FK1nw+QhNFEV6vl1ie5+i6DkGpSmi60FcGzjPnhJHa8FvWOozjKETr9RpnIlRUOpe62WwkEbeB91k06IeeyEq8oxReP+HdgK7RSJMUWZahbVsi9ELHwQn5jPyP+Fc6J+O9wH0dkkuCNIxR5Bk8/dfqg9VyJReb5gMeHBNxUEgCl/9BbLdbKZsJ+ZxLD5yz9EH9U0TWd9RDi3etEF0uVEKBuq6F8EwDSZIEFQW3NGUWFmLa44kvFgspO+DsLDpNXoL5ME1Tyeqcw0BPiQWZiAMSOuPB7Pd7oeLhFEUhwhzzB4HRVYi93yUiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABi0lEQVQozzWRDa+qMAyG+f+/TE30aGKuHyioIAiXCcjnxth72p64pCl07dunqzdNE/q+hwNg6xpTN6COK3QZWQ9U7xHOzUjTFPHziSxNUOU5zuczjscj1us1lsul2Ol0gqe1Rtu24GPSHM2rRZ2PaCuNcXRoGw07W1wuF7HwekV6v4vg4XDAZrPBarXCYrH4ExzGEU1dQudvqHQgEQtLRCxi7QStR/IzbrcbHo8H7mT154Mn0YZhiCzLxHKi7roOXqEKtJTQ02jaMqfD7By+R2uDeZ6FaLfb4UqEqijg+z72+700UkpJnEW9fuiJrEAVxrDdC9YM6OoWzzhGkiRomoYIrdBxcUQ+If8l/o6+3W4l5pnJIAoixP4N//MElv5L9cHP5kcSa1qUI2ImYkKfBAL6Zv+P7nlsJuT3FUJjNF6ZoiCR9R29oUZVKgRBIAllWQohj/SIIhm3eb9FUIgpdqcl8bY5x+PuLOqclWIeI6ZxuasxBsMwiCCPxgV8x4s50kaZmp+loCYszDW/1CpUaFALbIsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1303,7 +1310,7 @@ skip-connect 부분이 channel size alignment 를 위해 strided convolution or 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPklEQVQ4y02U147CUAxE8/8/hATihYUVvFATakLvJfRevD5e3dVGshLnus2ME+90OkkURVKr1aTdbku325XFYiHL5dJstVqZz73X60mz2ZROpyP9ft/Op9Op+dVqVUajkXii12QykXq9bjYej+X1esnz+ZTH4yG3202Ox6McDgfxfV/S6bTkcjnJZrPWnEb5fF4KhYLM53PxNpuNFItF2W63stvtrAtGk9lsJp/PR67XqyUzRRAEfxPiOxSDwYDZxIvj2KCu12vhGWMi7vv93oIoWiqVbMJGo2GwgU9xlwtt7/dbPKDAH1zQjc7D4fDvmUkJ5pw4poIaClMUZJyBAKo8piCwXC5bIAmVSsW645/PZ4N0v9+NI86YinMEhWua8s4mpKo7gCt8kvERBLiIQwxJNAQyBRGQHBDgE28qwwHd3fiOaHjkojiCwSGGKECkEEWgiGY0NsjwQVEUpxiF8DEupibZCio9NT+QhW5CHHZkrpvAlmQymd+1IZmOTs3/Fz7FmIKmFASarzZUQSaBL5FOlkwmJZFIGBW2h4zvCkAsRZzhUxAOEQkBW62WPUeaxxn5NIJPWxsclpnlxMIwtDvcOMhwShwFmWSk55N+T87aiIK8M1Eul4txh7J04O6mQwwnCqQzla2TJq90VWKlaqDQM19fkkqlbG9NZYRxXwqT8MnxQ3CiUJD9w1ibku7sWJPnyuFA0eS+vyWlPLJGBhlRCAaOg+VEQDlWyX0dWE3fh/yZNLavcLs6Jbyydj/onU/YhnpmPAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPUlEQVQ4y02UV4/qQAyF5///oF0JxAsLK3ihhh5K6L335uvPV4N2JCeZjH18fOzEzedzabfbUi6XpdlsSqfTkdlsJrz3xn6xWEi325V6vS6tVkt6vZ6djcdj25dKJRkMBuJOp5OMRiOpVqtmw+FQns+nPB4Pud/vcr1e5XA4yH6/lyAIJJFISDqdllQqZclJlMlkJJvNynQ6FYdTLpeT9Xot2+3WsmBknkwm8n6/5XK5WDAsKpXKhyF7WAIaRZGwHIeUulwuDXS1Whkbn8CvfD5vDGu1mpVN+YD7WGR7vV7iwjA0/WBENjL3+/3PM3LgzDl+sEIagAHdbDZ2RgVI5QjCsVAomCMBxWLRsrNHY0q63W6mEWew4vx4PJrWJOWdMTyfz58DtOJOsN/jRHPw8d2kZAAH2kB8qIA9DXRc0IDsnr4Xmj0LcPREQwxgSmyrXMQjEQxJ7EBHDwBoCGA0hCQYC23wM0CVpxxUZKaTsA5bMtVJYEqSyeT/sQGMjCxG5O9iDxgs8AOQ0gLK1YaMKoG0Gw2JxWLy/fVlUriGvoC+B0AzQDCeMQDRkCbRQGJ4DjWOM+JJhJ7OC8owM5wYo8QdbXzJSIIfgDAZ6PlQWZ40EYBUYE1BJ7Sjs3Scu2dIM3xTEB1WNk4KuNBRWatUkYImf34kHo/b3Dqcd7vd50uBCZ8czSGRB2T+MMYmrzM71OCpgkdaTfr313TkP+D83wJnyvFl+SbQOXz814GV9X3In0l9e1puR1miK2P2D7YATR0hoiGPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1334,7 +1341,7 @@ skip-connect 부분이 channel size alignment 를 위해 strided convolution or 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuElEQVQoz12SyYrCQBCG+/3fRvDinAQRdISoiUuiBjVi1LjvGsWa/grawzQ0SXWq/61iRqORdDod6fV6Mp/PZbvdSpZlslwupd/vS7fb1W/UcRzLYDDQ3Wg0JAxD/T4ej6Ver+t94/u+1Go14Qn4+XyW5/Mpt9tNgarVql4+nU5KliSJBEEgq9VK1uu1grXbbVksFnK9XsVEUaSMNO73e7lcLgqY57lMJhMF5RLnn89HiTh3636/qxC3DGBccvZgAwA2LHEO6W63k9frpUqxDiGLGgwWhIaLNB8OB7VLzTtqIcIeRKm1BMhms9H68XgoCDEgAqUKiHfyoNENA3uckysKY2tpNp1KbhXShyJicYAoJgoFpHAKAXIqUdezSgL7B6QWLItCSezT8zz5KZU0N6baarWkZGv6cWU4/L/e7/d3muzQqkwsAMTkWS6X1cHxeFTgSqWi/ag0s9lMLbNpYmOLmqwYDC7maaqWcIJlBsSiHg6H3wgMLOTAB96ZGtKbzaZuz+4p9nw7fQtc//2VQqGg2aKKCIrFog4GHMPP6cDcE2v8a1yY2tyIhRw5AwgirFITAWA4wdkfdocoKP8bCjcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuklEQVQoz12SWY/CMAyE8///DRIv8ISEkGCRqLhKuRbainIUyn0jvPm8Gx7WUtQmsccz45jRaCSdTkd835fZbCabzUZWq5UsFgvp9XrS7Xb1jv14PJbBYKCrXq9LEAR6P5lMpFarab1ptVpSrVaFL+CHw0Hu97tcLhcFqlQqWrzf77VZFEXSbrdluVxKmqYK1mw2ZT6fy+l0EtPv97UjidvtVg8BfDweMp1OFZQizt/vtzZi7+J2uykRFwYwaDt5dKPgfD6rJM5pmll2z+dTFSCdhsTxeFRCBA0NhVmWyW6300v2/MMWMOTRKEkSBVmv1+o5zAhqIXG9Xn8B0Y4fJLphAMo5vgI6tpLiMFSG5MEIWwh8hTFWKCD6HUN8QhKAeOdbZm3LJrFgaT+QyH4bnifFYlFBmCrsCoWC5qPKcPg/Xq/XZ5qswLKM/hrDrlQqqQImD6Fyuaz5sDRxHKtkFkksZLHHOwajbKyHSAIEUJoSKBsOhx8LjHtfXPCPZKh7VhoLiaFlMWvZ6X9/y5d9k7lcThvBipx8Pq/SwTE8TgfmvkjjDVIQWt+wBR85Y0heo6FS2cMWMBqg7AdxMCg8JkHeugAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1365,7 +1372,7 @@ skip-connect 부분이 channel size alignment 를 위해 strided convolution or 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 31.756756756756754%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDElEQVQY0z2R2a6CQBBE+f9fk0gAUdkRQfZVIIGXulOdiw+EIV1ddabQqqqCruvwfR9d1+H5fMr35/OB67q43+9wHAdRFKFpGlwuF4RhiHEc8Xg8flrP8+TR0jTF7XaT4bquyLIMlmXJuSxLMPB8F0UhM4Zzzl3btrEsi8D0fQ8tjmMRBUGA4ziQ57kQbWphGAZ8v18xq+taZoZhgDvbtkm4aNX5Z0h0Ckix7zuSJJGAcZpEQFOatW0rJLw6yUjIPd6OHgylqcZeeJjnWZaYyB5LRfN+v6UfklFH89OYOzRjz4UiJQiJtUmRMOHsj2Y0al4vGNcrTNOU4hm0/tdwXpdmqdI1ilhXP4t1/AEr27epbYEBVwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 31.756756756756754%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDUlEQVQY0z1Rx7KCQBDk/38NkCeSkSBBMqKEKrj0o6dKD1vM7vR0GBTHcaBpGsIwxDAM8DxP7s/nE77vg33bthHHMbqug6qqiKII0zTBdd0fNggCOYplWbjdbtJc1xVFUcA0TamrqkLTNKjrWr68s0dx9rMsk9llWcTMOI5Q+EDQ/X7HcRwoy1IcceD1emGeZ7RtK4c9wzCQJAm2bRNxYln/CPlIAF3s+440TUVger8FQFKS9X0vThidzijIOSZkfCYgqUIiFp/PR4aoyD3WZYE8z2U/PNwfyb/EnCEZ91ydpmiE5hSCqEBFRnJPMhJ1jweMywV/1yt0XRchEhH/jeudZNmJ60/H2vmzuI5/Ibe27hWyFHsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1416,7 +1423,7 @@ skip-connect 부분이 channel size alignment 를 위해 strided convolution or 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 88.51351351351352%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEaElEQVQ4y22UaWxUVRTHnwaX6Ae/GD+amPhRJDFRkBiwpQsqKgoIiCaaKCEghggKskUTN1SsrLad2nZoGeiCbVmkUGgplBbaaWfa6SydTjvtMPvSztKZ6cx0+vO+V5qY6En+Oeed++7vnvPevVcKx5Nc6LfTpBvh4uA9XMFJZrMzpDNZPG4jbmc7NmsLo7brjI22KZJjx9gNJS97r/s2Pk8HoZATyRuJc6LbQVGbkWK9jy7DEBMBHx5vkHuOW0zHmxkyVWG1VGMaPIXVXI2urxyvqxGX4y8BayQxdY3MdAuBwDBSZmaGyUgMvcFEIBTm35aMR5kMuknEgsSjAUVy3N/Xhb63S8D1mAxasaCekN9JOpVEkida3eN821iJbsRM0O/HZDaL6sYxuydosfq4anTSYnErumbxUNs5SM2tfs51GWnqtdGktdI6EsI7GZsDNna3s0b9E5VtlxgftXO3pwe7zSpeHuZ4j4ufm3X8cLGbHy9pOXSln2MdNlR9Ho7cMPNrywC/XNFTYghhdPrngKl0Fu2wiWQ6RTaTJjWdVFpOZTNMijg2kyEq8tFMipjI9QwasN5zYBkfYyI1Nz4ZmSIzM4sUiwaZCNlhdkaBmMZcmOxOJXZa3Wj/1qG72k+fqKyvWU/vZR1XNNfouniX62db6arrRH/dSL9jmGgigOR2dottUEUs5iWRTHPG6KfO6FOAVd/Vc3x/KQ2nLlCnauCCphnN0XreePR9cqTV5C9Yz4qnP2D50s28/Mwmrta2Ivk8vQwPVZEUdFExqttmym8aFaD6m1r2r/ue33acpGhHMcd2lXLowyIKn9jEsoWbyc3ZQt6ij8h7fAPLpFW0aNqQnI67dN85SSTiIhJLoOowo2obELhZ/thZyfPSqyyVXmeJlM9L0mssfmoDucu3kPPsx6x4cB150rvkS2sF8G3xCdpFy64edNoSPB4bo3YHZZ1DVNy2MBH2c+KLCl6R3mTlIxvJWbiVFXnbyV/4iYCsFXpHaA15D6wlX4CXSW/RWnMTyePWCmAp08mg0mZJu4GyGwNKXPbVaQFcRcHSbeS+sJWCxzZSKCAFC96j4KH1FAova6WIc8QCCtDtvIPFqCIR9xFPpKjUu9AMeBXg8S8ree7JVSx5eLVoN5cXpQLhC/+jxdJKFkk5XFa3IIXElvG47whgmFnxU25ZnXQOuxTggMVEyeEaKnZrKD9wlvJ9Z/hzr4bS3VWUfX0a1Z5qymSJuHinmhHDGJIMyYgtKHvZMtMJ/B4X/kCAWCSinM9UNkk6O01w0o/DZWd03EYoHOD/TJL/5rxm71NnslnSaXEyYjExMcyEAMvyiUXsDgdanQ6X10tYjMficaJTU4SjMXHi0nKFc6B5mOyz9+O6nnY+VR9mm7qIz6qP8vmZE+xqKGOr/Fx1RMltO/U7O2qL2X6umG6bae4sz4PmoVlRoWxNvR3sqilmf30ZBxoqOCBupIPn1eytU7GnpmQuJ3SwSc2+8+K2Gh3iH0I5evVqSeDsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 88.51351351351352%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEc0lEQVQ4y22TWXDTVRSH/wrqODz44Pjogw++MfDgKMso0tKWqqgguziOPsAoUgUFREBGZ9wQh0rZWtLShi4UytLKYjcoBdrSNm2StlmadE2zL02TNEmTNP28+ZfOOKNn5jf3zLn3fvece++RXIEI+Z0WTjT1odB66DQMEvD7cHv82MZaiIT+RtdzAaO+DIOuFJOhnF6tEpvlGkPmS9jHrjMZbCAebcDrMSM5A2FOd1jIbdKRr3HR1tvPuMeFw+llzPKAqXAt/XoBMpah71MKYBnqriKctmpx4DWc9moik40kphrwuE1Iielp/IEQml49Ht8E/7ZoOIjfaxdZegkHPbIiIR/a7jY0XW0CrkHfqxIHavC5rcRjUaTURpN9lB+rS1APGvC63egNBpHdKAb7OA0mF/U6Kw1Gu6xGo4PLrX1ceqDlSpuOmq4BalQm7g76cPhDs8DqjmbWK3+jpOkWo0PDtHd2MjxgEovNnOq08Xutml9udvDrLRVH67ScfGhG0e3gxD0jfzT0cKxOTUGvj74x9ywwFk+iMuuJxmMkE3FiU1G55FgygV/4oekEQREPJmJMilhnXy+mMQvG0RHGYxF53h+YJDGdRAoFvYz7hmFmWoboR2zoh62ybzXZUd1Wo67X0i0y667V0CWyratopO1mO3cqm2itakVzR4fWYiYY8SDZrR0MDZQSCjmJRONc1Lmp0rlkYOlPVzh1+BzXL9ygSlHNjfJaKvKusubZD0mT1pI5fzOrXvyIlct3sOylbdRV3kFyObow95cSFfTpGVC0GDh/XycDlT9c5vDGnzm++wy5u/M5ufccRz/OJfu5baxYuJ30tM/JWPwJGQu2sEJ6h/qyu0hWSzsdj84QDNgJhCIoHhpQNPUI3AxnvylhkbSS5dLbLJUyeU16iyUvbCH9zc9Ie/lTVs3bSIb0AZnSBgF8n8aL90TJtk7UqgIcdjNDwxYKW/spbjEyPuHm9NfFvCG9S/YzW0lbuJNVGTlkLtouIBuE1gmtJ+OJDWQ+uVGse0/caTOSw64SwHNEo165zILmXgrv9ch+4f5yXpfWkLXsC9Jf2UnWgq2sFpCseZvIemozq+dvkpX99GZxp+tmgXbrIwx9CiJhF+FIjBKNjYoepww8tbeYhc+vYenTa0W56bwqZYlx9X+0RMpmsZTG7eJ6JJ/4Mg7bIwGcYEY8yn2TlRazTQZqDTrOHqvk/L5yig5VUPRdBYUHyinYp0TxbRnn9l8QKpX9M3uKGdAOI6UgiQQyLGWJqQhuhw2Px0MoEJD7M5aMEk9O4fW7sdhGGBodwDvh4f9MSr3mnGYeU6eTSeJx0RmhEL7AhOiCgCyXOGTEYqFLrcbmdBKYnCQUiRAMh8UPCcl7pBRkTilLjcnHfpWqmR3K4+xS/klOWR5fXTzNvuoidipzySnNI6c8j12lJ9hTlc+XV/NpN+tme3kONAdNigxTVtP1kL2VZzlUVcjh68V8X13Mkb+UHKxScKCyQMTOy/EjNSUcFOoeNPIP3c94u9azR2QAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1470,7 +1477,7 @@ Decoder output 으로 transcription 과 mel-spectogram 사이의 &lt;em&gt;Align
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz4WSS2/TQBSF/YP5A2yR2AFrFogFFHVRKoSEkFoeghYo0IaGpokTp44fSdzYTupX6meSj5sUlVQgMdLRSDN3zr3nnFH4z5oVGd1Oh15Ho33SoNVUCcJwdbdYLP6qV+I4JopCQUySBPheg2kSYowmfFBtji0PzTTZ+vqejc+7dAfW2vMFaZpxeZkznaYURYkymUzwPFfgEwQutvWGJPT5eKLxaL/Ji5rOsdbh/rtt7uxs0rR7xFmFk+SEacHo3MY0TrFMVUinKOvjVlVJWVbEcUQYBMxns5Ws5R6FEcPBgHNnyNO9OndffeN13WBoHYklzxj2d5jPZyjj8Rh3NMJxRtLtC7a5JUWf2GvoPHj7k42DDgcndW6/fMyt5w+p6W2RVqHbA/JqRlXmZFksSFbNlaLIpaBYTZZe+jK2w6yMSPMCw73ADRLiacypSK2bXSbxVSBJEv8zRKWn6+iCVrOF748JLhwmQUTNOKdmuhycDbHcgMOzFruNQ8pMvIsiPN+/Tnodiud5dDUNtaUKsYYzOMIVG7Z/9Ng86vHk+xnHhisJ73Bvd4tCCPM8F0Xln6zXvo+SZdkqnUBCWE4o/kuxWJCnVHkmSBG3KcSC4jfR8s2VTaVczW+QXqfsui6m/Lel/H6/j9bt0hXoeo+eYdBut7EsC1VVsW17tS/PkiS5QfgLwbfqMJ8UCT8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz4WST2/TQBDF/YH5Ahw5cEGCMwfEAVqQoEVCQohSEKLQFmhDS9rEjh07tlOn/pPUiZ3EXjvJj7UrlUggsdLTaHdn3+y8Nwr/WQuRYXQ6WB0drXlGu6USx+P6brVa/ZWvpGnKZDKRSJimY6LwvI52cMVnzeXECTEcm61vn9jc36V74aw9XzGfZ8xmOdPpnKIoUEajEWEYSESycoDr7JKOI/aaBo++tHjVMDnRO9z/uM2dnee0XIskKxmkOeO5wL90sXvnOLYqSaco698ty7JGkiSM45jlclm3tVwsSMYTvAsPf+CxsXfK3TffeXvaw3OOMbRNvP6OzC9RhsMhge8zGPiy2gGu/VImfWXvzOTBh188Pehw2Dzl9uvH3Np6SMPUEKLEdC/IywVlkZNliURaF1eEEFQoipL5LJL6eSyKCbNcYAUj/DglmSacubL1ns4ouTZkmib/NFGxTBNTot1qEUVD4qsBo3hCo3dJww447Ho4QcxRt8375hFFJrWTJoZRdOP0OpQwlC7qOmpblcS61OKYQBJv/7R4dmzx5EeXE8tnY/8d93ZeILKMPM8Rhfjj9dr4KJlMqNyJpQnVD6X+sn0pQT6nzLM6SrURUgIhiarRqN5cy1TUxq2T3rgcBAG2bdftu/0+umFgSFR7q9dD0zQcx0FVVVzXrWN1Vs3xOuFv6kbqLnB6QpMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1502,7 +1509,7 @@ Decoder output 으로 transcription 과 mel-spectogram 사이의 &lt;em&gt;Align
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVQ4y02T2XPaVhjF+XOT6WQy6Use+t6HLtPF7l7j4K2Abbw3aR279oANOGaREYsMQiBhEBI7mNX2LxfcGefOnPmOPt0595xPV45+54iiusl10k36ao1s2oNp7NFr/ctt44xD6YLP9xd5ve/ixdocL1bneOn5RfB5Xh+4eLXnZDd6xkLgLX5FwlGuZylU0mgCCSWMWpIpmhkMK4NZy2PYJkEtSbiQEkhzkopwmo4SVGVCWoqQ6GdKGl9sOTmQQjh+eC/z86nCT8cpfhR87kjmV/8186dZPFGdTq9PrTvGag2oi5ov2ehmc8bt9gCrPWRyD51Wi8l4jOPveJZ3Vyr/yBpbYVnw/Oz5QMpzod4Q16ssplv8canz/fEV8wFxWEBhzp/hz4jBglwnVmowvO0yGI5wvDlL4Y4W8EoGS+Es7liRvyJ5XKEsB6kb+oMBt4MhfbF5OLmjateoNVuMBJ/2pu+mq9vtMhoJwf1kifVQCm8wyZpfYj2cZieeZ1cuEVBNdLvJiWpxmMhznNZ5G8/xTlJ5LxIdJQsiWQHVrFO3LSE4jZyt4YtpM3guc2xJRfYzJnvXNc70JqmShTtRZjmksCISrH5QWb3IsRTMiJrFFc4R1SoM+7fcPzw8Cm5EcvjiGmvBND6pwGZUZU+xOcnXuBuJSGOBu/FjtGadQbc947PeZMTTEoL7Yk7eoMxGOMXyaZT1izQbAjsJg0Cugiwcruc6eJJVnOcKTjHbhfMMLuHUmxLulQaJcmMmN3PojZdwX2q4I0XxQQxxVYpsJky8VxVO9R6lWouo2Sdy0yYkZulXygQEwlqNSKnNZblHpd1/9DcV3I4l8H2ICsRY9Z/P6nZUYjsu85+iitl0uB/VGPdtHiYtGpZGp2GIqE3Rr3M3tEXy2yfBV9u/88z5Fc9d3/B86VueLX7NZyvf8XLnN748XEfXY9StXZKJZWIRJ/HoIlLsDSl5BaPowyz7sKqJ/wXvceTKBvlqeQZNwKhbFMTvVrAqWGL4o1Gf8bgjalvcNYtWq0KvZwtuiyqci/5kPHhyWCrq4iSdrKKg5VTMm/Ks1qoWn67BYESxaFCt2hQKOoqSxfxkz1Rsuj4C0sLZodpsIawAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADNUlEQVQ4y02SaW/aWBSG+bmtRlXV+TLS/ID5MItmaWapqpKkaTKELM06SjtJ0yyEQNkxJqzGS8DYEAgQjEnoMxenUuZIj87r46vX5xxf3/D6ALWyTjEXIJ9ZopRfxtS36Xfec3MVYj8d5eudWb7ZnefJ0gxPFmd4GvzT09Pas20/24kQ/tAexxdpfPV2CbUhUxNkixGqhoRq5jHsC8xWFc1uEFIkworMueBQjvFRjnNWzopajnAtR15X+PatME6d4ft1X+KPowK/H8r8JvTzA4m/jovMHJdYTmj0BkNa/TFW16EtctWw0cyOp61rRzDidgK9bpdbd4zvn1SZvUyFd5LC24gkdNV73k1XiFYuSWlNZvNdXsY0fvmQYeZUfOy0wPOTC17GdV5JbZLGFaObPs5ohG8uJBNI1AimdV5HSgSSKn/Hq8yfl9iVLxk6DjfOiOHIZXR7R9Nu0ep0cYWe1qbvptHv93FdF99OzmA1IrMSzrF0mhY6z1aqypZkcFox0e0uRxWLfTHBYV5nL13mnZjiIFfjg6zyXlKpmG3atnVvuFtqsZZUPJZjZdbTKjt5k+1ii5DWQTYsApk6C+ELFiJF3kTLHvNnFyxGS8xFyiSUBqPhDZPJZ7FDYbgaF0YphaVwXhjWWEtU2C7YfKy2uHPFSGPB3fh+tE4bp3/taa926/IQwnBH7CkYlryxF44SrETzrAo2szqn5QaS6HCl3GM518R/VsAvdvtKdDcfrRCURfeFK7L1K89u8lkYBlMGgZhCIK6KH6KJq6KyJpkEMw2OtAFGq0u8MSRmXBOuNDkuXHIiOFdsr/bpckCjO7zvb2q4kZRY/5T0WDwJe3kzkWEjJXFYrIrd9Ji4LcaOLcbrcmUp9Dq6pydum7uRLSa/eTB8tvGCR/7veTz3I49f/8Sj2R/4auFnnm6+4Lt/V9C0JG1ri1x2gWTMTyoxS1ogS2/Qa+uY9XWsZvaL4QRfua5TbdY9FIHetqjZJjWrgSWW77pDxuOeyNfirll0uw0GA5tBXzAQnYv67dh56NBQNXRBqVBAKVcwL+tebjUt/h+O46KqOs2mTa2mUSiUMM2HM1OzafwHfCfZgmA+/70AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1556,7 +1563,7 @@ Decoder output 으로 transcription 과 mel-spectogram 사이의 &lt;em&gt;Align
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABk0lEQVQoz3WTR44CMRBFff/rNCsQG5KEyCByzjnn+GdejZrdWLLcuMo/2Tj9jvP5rGKxqFarpdFopEqlona7rX6/r1qtpl6vp/F4bN+sg8FAk8lEnU5H3W7Xeh+PB1Byp9NJl8tFrIfDQbvdTtvt9jvX67U2m419/7f683g8ysEWCAQUiUSUSCQM+Hq9mmoIQqGQYrGY7ve71TgUDAbleZ45er1epjIajWo2m8nN53OzOBwOzQ5ztVqZavaIgHWxWOh2u2m5XNredDo1oP1+b+TEQc0AUVYul1Wv1xUOhw2AwR45MQFhoIJM6SmVSgaG9Ww2a6QGmM/nv6yA0gBzs9m0gz4AEbByCayoopff6XTa3Dmak8mkySUnMsHa8/kUZIRNjct5v9+WIUoAQi39vIZMJmN7jlsFMB6PK5fLmXTUfj4f+S8AW5CwRz/g1CCjBjlE9DhyAb1QKNhtYp9BEQJsYL3RaNjBarVq9nDG2yUGCFKp1N8tIxOFNKGSDMkPIEg4yPPgJZAx9vjt7xOL/2fgzA8yY97yRcAXngAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 48.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABk0lEQVQoz12Tx44CMRBE5/9/B04gLiQJkUHknHPOsdjXK7PSWrLa7mlXV5U9nn7G6XRSoVBQs9nUcDhUuVy2da/XU7VaVbfb1Wg0sjWx3+9rPB6r3W6r0+mo1Wrpfr8DJe94POp8Pou43++13W612Wy+c7Vaab1e29pFN//vD4eDPLr5/X6Fw2HF43EDvlwuxpoGwWBQkUhEt9vNvnEoEAjI5/OZiufzaSypmU6n8mazmUkcDAYmh7lcLo01OSwgzudzXa9XLRYLy00mEwPa7XbWHDuoMUCYlUol1Wo1hUIhA2CQcz4BwoAFnlJTLBYNDOmZTOYPMJfLfbsCSgFyG42GHXQA5IhcAhFW1LJPpVKmzqM4kUiYTHzCE+Lj8RDNMBuZXM7r9TIPyQMEW+p5DQCS87hVAGOxmLLZrFGH7fv9lnsByMI/cngGODnOEmlOI2o8fEmn08rn84pGowbK4CNrZCC9Xq/bwUqlYmxQxtvFBhokk8nfW4YmDCmCJR7CAiCacJDnwQXhMfLYuzzy3c/AmQ8zdN71V6EArAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1588,7 +1595,7 @@ Decoder output 으로 transcription 과 mel-spectogram 사이의 &lt;em&gt;Align
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 25.675675675675674%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA10lEQVQY001QWQqFMBDr/W8jiBcQf/1z31BRwX0HRcgjA8orhJZkmsyMwt8JwxBBEGAYBriuizzPUZYlPM9DHMcoikJ03/cFrO/7/t8C6jxP7PuObduwrqu8j+PAsiwC8q9G8P1q8zx/f4n7vqGYqmkaTNOEYRjQdR1N0yBJEuEsy0JVVdJJlmViws6oO46DaZoQRRHSNMV1XVBt28K2bUl8nkdIgmkcj4HkedOIndCcK2EQJ6Q5VyKGFEnQmGnjOH6gCT+Rr+ta9sn6rutkv5yEdayhxvF/l+1y5B6RtxYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 25.675675675675674%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2klEQVQY001QSQqEQBDz/78RxA+IV2/uihsquO+4QYYUzDBCsLuSTqpKwd8XBAF830ff93AcB1mWoSgKuK6LKIqQ57nwnucJqO+67t8CynEc2LYN67piWRY57/uOeZ4FrH85gucvN03T7y1x3zcUpqqqCsMwoOs6NE1DXdeI41hqpmmiLEvpJEkSMWJn5G3bxjiOCMNQ7td1QWmaBpZlifB5HpznKQTTOB4D3/eVP43YCc25EgZxQppxJWJIkgUaM20Yhh9owkesV1Ul+2zbVpCmqUxCHTXUcvwPlBJy1bxcaOoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1671,7 +1678,7 @@ CSPDarknet53 이 detector backbone 으로 사용하기 optimal 하다는 결론�
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAs0lEQVQI1x1O2Q6DIBDk/z/OVvpgYsAWFo9oUTnUqjTp2H2YbGbnWLYsy7quQO+91mSMqaqqrmulFBFhF0KANERgvA/HcXz+AxebpimECIQI2Pd927bImucZZymuiYh2rr4SaBiGEELXdVopZsigG3lN00A9jiMOWKBL6UtaK61TSjAgFKRz7jzPGK8+dssyUOgpisJaK6Xk/GHflud82za8/Xy9oIa5LMt7nsOz77v3DmU/8q3bkLfIRB8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAs0lEQVQI1yWO3Q6DIBSDff+Hc8ouTBzoUIZGh8qvEViyZrs59EC/lmLbNmMM5jDwZVmmaRJC7PsOfRwHY5Q+KAQ84zhKOVlrQ/AwzPNc4LDWYVJK/wx47z2AEMKPpc45o/VLCPDruoIHOXBeiFF4H2KMUkq48QU8QMCX8weTc55zBoBQrFrrlBLi0FTcyhJX6GmaRinFGCPkrt6K1OQ8z67v+v6ZYgLctm1V1Ui/rssYjbIv7Srbf0u19OcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1781,7 +1788,7 @@ PAN 에 concat 은 성능 측면인 것 같네요. (뇌피셜)&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABOklEQVQoz3WS4ZKCMAyE+/4viBQEpKUtih4FRxxEuA+4ueFO3R+dkGY32VBRVZWUUikVx/H+B/Eu2GVZJmWUJEkYhpxk0zQlSRnFJM7ns2jb1vu69r5pmrr+8t5fLhcu+CRAum2acsYRkDfGcFpryYhhGJ7P5zRN4zhOL1iTEApjnHOnqqL58Xg6HA5oCe6GGY9flS1tPZXK88UXEszvXBlFkdZabKshIzEu2EoorbQu4ngmpEmCB/wzjng76j8V6/DoVhr9GTiDbK2g7pNbfCBBDMeVpSkK9gezrmt8zAvrum5r9e3CrDWQgyBg7GKRIMaJ6Pv+fr+zMED8gWxZdSQlAavCxC4I8jwXcGjOeP2CVzIFcMxCQwQazfdsvijWR+LbBdfrtfuL2+1G0hq4jocIgf5aq1CG/LxvScBr2lFRPgMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABRUlEQVQoz3VSi3KDIBDk/38QAygqT40mopmYscZ0kbaTJu3OeMJxe3d7QPq+Y4wppYQQ+TcympVlyRgviuJwOMDCKaWEE2EIhqPvezJNUwjDEMI4jsNwDiGcTiccYItF13XTODYRLYCtcxanzjl4yLqu27Y9Ho9kX5CczlpjbeM9yFVZte2xqqIlOFsjPvDd7/c/yeizVioXwhiT58J7zzjTWpPnOJBTip8uvshaaW2E4PjJQnrfQL+1lvzZasqy7Yhte2h0UhaQjoG1bVPKEh7yXOclBZpACqzB8U2DUtCMsQ3ns6rrOLB5nt+lvg7MWZCzjEInZB+7I6UUEsiyLLfbDQMDsP6H7DAkzjmyiGhdRmld1wQcFEd7y453MgIQbZ1LNLrXT5NPjyRMOy6Xy/wb1+sVTtwzaLgeYzTn8Tni2eHyPgFZZmvboTy+hgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1815,7 +1822,7 @@ PAN 에 concat 은 성능 측면인 것 같네요. (뇌피셜)&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 30.405405405405407%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABB0lEQVQY0yVQW3LCMBDL/Q/Vj77AobScoB1ShlADiR3HXu/LqQGNvqRZ7a4aEVmWBZB+7PU4DMdx7J0D5iqqlofrI3xXdxwrT9NEqlUspTQskubQe1hn2ZViAA3LoSyUsYKYCakL2LJsWZ59fEt0KeUWfRtmgeTP7mpC/JjdyxSffOyIxss5poREeU59SCvvP1MwyK8pH5Am52p4AznXcB8Hk+IG0pfyRssvo7vanDEBcM6nRO8Jtxl2Ktul9DkP1opqQ0TKHJBWgK0WQ7RW7RjHi61rKwuTBXpHakVbYqPaI+Y4386WO7D+GWEfgmX+E5mYiuqjMGEGkX2YuxDO1WWe73XWwv4BgwlVPxUJA8MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 30.405405405405407%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABCElEQVQY0yWQyW7CQBBE/f8flUMWwCAnKMohiuDAokBsYhjG09O7M5B3LVV1VVdyQ3uQ9wHXImumlUpvNo6jubGwmh0TfQCtWD4TfDHH0Yvq7pWowhAPIc9Ql+51plp07yMjFViEiXeR5qKN6mNIL8Cd+z26mEUzhC70dUzNcHkK6SGkLfP51CUAYsYBDhGmIbxCrImfAffE10tAxCojlvCQ+hrSIsObycJ8J3T5bREJchbEI/AEqMG8NG1G/0bs27bMqZjZRCLxNFOx1cwzs63Q+dSW1uWyC3fIE+K52pylNjsQYRputfUOlZ0pb2JsRX5Ur8JuBb9pIll1E4dtjF1RRQaR/4f9AaL3VVm4IbBeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1839,7 +1846,235 @@ PAN 에 concat 은 성능 측면인 것 같네요. (뇌피셜)&lt;/p&gt;
 &lt;p&gt;이번 논문은 정말 모든 case 들을 하나하나 고려하려는 게 보였고, 설명도 최대한 low-level(?) 하게 하나하나 스킾하지 않고
 다 짚고 넘어가서 뭔가 투머치 같지만 좋았어요 &lt;/p&gt;
 &lt;p&gt;또 정말 모든 부분 하나하나 튜닝한 점이 꽤 인상적이었어요. 온갖 힙한 것들도 사용하고.&lt;/p&gt;
-&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ELECTRA Pre-training Text Encoders as Discriminators Rather Than Generators]]></title><description><![CDATA[TL;DR 이번에 리뷰할 논문은 ELECTRA 란 google ai 에서 3월에 발표한 논문인데, 재밌는 approach 를 하고 있어서 가져와 봤습니다. ELECTRA paper : OpenReview google ai blog : blog Rel…]]></description><link>http://kozistr.tech/ELECTRA/</link><guid isPermaLink="false">http://kozistr.tech/ELECTRA/</guid><pubDate>Sat, 11 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Self-training with Noisy Student improves ImageNet classification]]></title><description><![CDATA[TL;DR 이번 포스팅에서 리뷰할 논문은 EfficientNet 기반으로 새로운 techniques 를 적용해서 ImageNet dataset 에서 SOTA 를 찍은 논문입니다.
+나온지는 꽤 됐지만, 최근 TPU 에서 돌아가는 요 코드를 짜다가 생각…]]></description><link>http://kozistr.tech/Noisy-Student/</link><guid isPermaLink="false">http://kozistr.tech/Noisy-Student/</guid><pubDate>Sat, 11 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;이번 포스팅에서 리뷰할 논문은 EfficientNet 기반으로 새로운 techniques 를 적용해서 ImageNet dataset 에서 SOTA 를 찍은 논문입니다.
+나온지는 꽤 됐지만, 최근 TPU 에서 돌아가는 요 코드를 짜다가 생각나서 리뷰하게 됐어요.&lt;/p&gt;
+&lt;p&gt;아래는 이번 approach 가 달성한 성능인데, 이전 SOTA 에 비해서 Accuracy 가 약 2% 정도 올라갔네요.&lt;/p&gt;
+&lt;p&gt;해당 이미지에는 &lt;em&gt;L2&lt;/em&gt; performance 가 안올라와 있는데, &lt;em&gt;Noisy Student + Random Augment&lt;/em&gt; 로 훈련한 &lt;em&gt;L2&lt;/em&gt; 모델 top-1 accuracy 가 &lt;em&gt;88.4%&lt;/em&gt; 입니다.
+올해에는 90% 가 넘는 architecture 가 나오지 않을까 생각이 드네요.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/83339124bc869908ad6f92e63006f4a1/22475/performance.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 81.75675675675677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACLElEQVQoz3WTi3KbMBBF/f9/1jit7diB2OAxyGDeEhIggXj1CtokTaY7HmEJ7e7Zu8tmmiZKaVVVwzB0Wsu2LQjpWfE428HVJff7nZglDIKmabTWbdt2XYcV2808z+tG971irCO+jos2E97rLfBjyugwjPM3Q0op5QYPXpZdP3SUahKyfOTVLLu51fM4ffeaZdOwxeq6NplV24pK1GFWJLo3aaa/vxm1XN3r5XIJwxCcQogsy67XK7YmMwJwzpu6YnbQDyvRBxjepklKCIEuqA6xcF6WJbbGuSiKWikwMyKmxQkLJICbUsqo2HX9YtNi/9ScZzmvReklMmQ41Z0GG0oCDkJUlfB9P0kSxPqs1jiOxpmXXHaKBVSEZUbzOIqREO/yPAcboxSt+a/aaZo2sqEOiYOiLBlAgPrlHlgAv+qHiZCLmT7HcYx94NGmkSVj1WJJHD8eD2CvDvvd7nQ6ua4DfmhkvVrgAuBGLVZyrpQ01VLTQMgD8lWeYejPl/Ph5XA47B3HRWgEWuU0fcY/qC8l+t1mWcoFf1cVNg6DbVu/drvDfu95PrS0LQsh/ji3SgEjW4wLgZwf7V6wj8eX7Xb79OPJdV2k+fn8jGvte+Y0QZlR+HhAiS+CoQTHcU7H09ub7fsEzpZlCVEBc7OOxIItb7dbEASQCkjAW1ece96N3AlCBGGIJBg4kEJd4wxOZMOKL279yMASRTHmJIoirGawpex7vQ7cehMpfwMLXYzReaRx/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/83339124bc869908ad6f92e63006f4a1/fcda8/performance.png&quot;
+        srcset=&quot;/static/83339124bc869908ad6f92e63006f4a1/12f09/performance.png 148w,
+/static/83339124bc869908ad6f92e63006f4a1/e4a3f/performance.png 295w,
+/static/83339124bc869908ad6f92e63006f4a1/fcda8/performance.png 590w,
+/static/83339124bc869908ad6f92e63006f4a1/efc66/performance.png 885w,
+/static/83339124bc869908ad6f92e63006f4a1/22475/performance.png 1039w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/1911.04252.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;code : &lt;a href=&quot;https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
+&lt;p&gt;EfficientNet : &lt;a href=&quot;https://arxiv.org/pdf/1905.11946.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;이전 Image Classification 연구 동향들에서도 간단하게 설명은 다음에 다른 포스트로 다뤄볼께요. 양이 좀 많이 질 듯 해서 (&lt;del&gt;귀찮네요&lt;/del&gt;)&lt;/p&gt;
+&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
+&lt;h3 id=&quot;self-training-w-noisy-student&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#self-training-w-noisy-student&quot; aria-label=&quot;self training w noisy student permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Self-Training w/ Noisy Student&lt;/h3&gt;
+&lt;p&gt;학습은 다음과 같은 process 로 이뤄지는데,&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/db781720920abfda90bbcb8c902c548d/68e9c/teacher-student.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 97.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACaElEQVQ4y5WTiY6bQBBE/f8/lkTa7AK2N1w+uC9jM9zgNeQN3isrJVJaAo+Z7p7qqppVWZa2ZamqalqWYRi/dH232x2PThhGQog4idM0beqmbduXl+sw9Cy6rmuapu+H1e12y7KUMoot07Rsm8XhsA+DkIXneaZp+r4fhTLiOCF833M9n8LVPM/0dlzXcRxd1/f7/eFwsG17GIbr9eUerMdxvF6v8uE9jn3fT9Mki+d5ks9bkN117W36+Dj/JVafy6abzKzrarffR1F0yrL8fM7zPMtOBACB+p77WvwlYIVKKAHhPWl6K/p6MgOUoqzKsijEckgmRMGBl8ulKIpTdmKPM9MkuZzPmcSQxXH8ejJNfc9XNfV5u3l8fNqsN6ZlPvx8UFRVW68VRYFtaumLqIgnOOOcf8CGuqZFtx4F+0EGmOu6RlIQsfgXYZ+DKaQBum6BfakqWdw2DVtIwAF/FMPK4piaN8DyXNKby58zXURZYq6SHkLQhQQMVlUVdJC/QtUgCBgMc6zX2vdvP563W01bK0+KoeuapuHW7XaLYbHRhgyY2Gxcz4NSCTuJI7Yd52iYpqI8UWCY9uJVC6vTgmz+8T1NJd2o8zEzDOEBSVjTIhiQqqqGKkx552xBKylEmq+EjcOQpRkM9T3DMyEzVvRCFhhhcjyDRgzPG7RLN5lzl6pj4CRNyaaG9tBbLcGWvDaOgzcKIejF7n2LptIk0mQSGDf2RvG4xLBcI/7CKoDHt8C89+sF09KeXFrD0AOufxjBbZJwa+MgCIPA53rGUYRyKOIcj6xd12XteT4fJWyUBRj2mv8zfgNpeC/7ZdD6rQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/db781720920abfda90bbcb8c902c548d/fcda8/teacher-student.png&quot;
+        srcset=&quot;/static/db781720920abfda90bbcb8c902c548d/12f09/teacher-student.png 148w,
+/static/db781720920abfda90bbcb8c902c548d/e4a3f/teacher-student.png 295w,
+/static/db781720920abfda90bbcb8c902c548d/fcda8/teacher-student.png 590w,
+/static/db781720920abfda90bbcb8c902c548d/68e9c/teacher-student.png 654w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Labelled dataset 인 ImageNet 으로 &lt;strong&gt;Teacher Model&lt;/strong&gt; 을 학습&lt;/li&gt;
+&lt;li&gt;un-labelled dataset 인 JFT-300M 를 &lt;strong&gt;Teacher Model&lt;/strong&gt; 로 pseudo labelling 하기&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; 에서 생성된 data + ImageNet 으로 &lt;strong&gt;Student Model&lt;/strong&gt; 학습 w/ noise&lt;/li&gt;
+&lt;li&gt;다시 &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; 으로 가서 반복 (iterative training)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;위 과정이 knowledge (self) distillation 과 비슷한 과정인데, 주로 요 목적은 compression 으로 사용되는데, 여기는
+해당 목적 (not compression) 으로 사용하지 않는다는게 차이점 입니다.&lt;/p&gt;
+&lt;h3 id=&quot;training&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#training&quot; aria-label=&quot;training permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Training&lt;/h3&gt;
+&lt;p&gt;데이터 셋이나 구체적인 training recipe 들이 있지만, 적용한 technique 가 있어서 이걸 설명 해 보면,&lt;/p&gt;
+&lt;h4 id=&quot;fix-train-test-resolution-discrepancy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#fix-train-test-resolution-discrepancy&quot; aria-label=&quot;fix train test resolution discrepancy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;fix train-test resolution discrepancy&lt;/h4&gt;
+&lt;p&gt;처음 몇 epoch 은 low resolution image 로 훈련을 하고 후에 high resolution image 로 fine-tuning 하는 기법입니다.&lt;/p&gt;
+&lt;p&gt;논문 실험에서는 처음 350 epochs 는 낮은 해상도 이미지로 훈련하고, 1.5 epochs 는 더 큰 해상도로 unlabelled image 에 대해서 훈련했다고 하네요.&lt;/p&gt;
+&lt;p&gt;unlabelled image data 는 학습할 때 labelled image 보다 14 배 큰 batch size 를 사용했다고도 하네요.&lt;/p&gt;
+&lt;h4 id=&quot;iterative-training&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#iterative-training&quot; aria-label=&quot;iterative training permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Iterative Training&lt;/h4&gt;
+&lt;p&gt;논문에서는 총 3 steps 의 iterative training 을 했다고 소개합니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EfficientNet-b7&lt;/code&gt; 을 ImageNet 으로 훈련 &lt;code class=&quot;language-text&quot;&gt;(as Teacher)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EfficientNet-L2&lt;/code&gt; 를 JFT-300M + ImageNet 으로 훈련 &lt;code class=&quot;language-text&quot;&gt;(as Student)&lt;/code&gt; (batch size 비율은 labelled : unlabelled = 1 : 14)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EfficientNet-L2&lt;/code&gt; 를 새롭게 훈련 &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; 에서 만든 모델을 &lt;code class=&quot;language-text&quot;&gt;Teacher&lt;/code&gt; 로 사용 &lt;code class=&quot;language-text&quot;&gt;(as Student)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; 과 비슷한 scheme 으로 진행하는데, (batch size 비율은 labelled : unlabelled = 1 : 28) 로 훈련&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;noisy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#noisy&quot; aria-label=&quot;noisy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Noisy&lt;/h4&gt;
+&lt;p&gt;Student Model 을 학습할 때 논문에서 &lt;code class=&quot;language-text&quot;&gt;Noisy&lt;/code&gt; 하게 훈련한다고 했는데, 이 때 &lt;code class=&quot;language-text&quot;&gt;Noisy&lt;/code&gt; 에 해당하는 부분은 크게 3 부분 입니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Data Augmentation w/ RandAugment&lt;/li&gt;
+&lt;li&gt;Dropout&lt;/li&gt;
+&lt;li&gt;Stochastic Depth&lt;/li&gt;
+&lt;li&gt;other techniques (data filtering, balancing)&lt;/li&gt;
+&lt;li&gt;OOD (Out-Of-Distribution)&lt;/li&gt;
+&lt;li&gt;unlabelled data 에 대해선 class 별 samples 수가 biased 돼있으니, 적은 sample 들 duplicate 하기&lt;/li&gt;
+&lt;li&gt;pseudo label 시, soft or hard pseudo 한다고 했었는데, soft, hard 둘다 좋은 결과를 보였지만, soft 가 더 좋았다&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;요런 기법들은 이전에 소개된 기법들이니 설명은 pass&lt;/p&gt;
+&lt;h2 id=&quot;experiment-result&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experiment-result&quot; aria-label=&quot;experiment result permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experiment Result&lt;/h2&gt;
+&lt;h3 id=&quot;imagenet-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#imagenet-benchmark&quot; aria-label=&quot;imagenet benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ImageNet Benchmark&lt;/h3&gt;
+&lt;p&gt;역대 ImageNet architecture 들 정확도를 benchmark 한 table 인데, 다른 구조보다 &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;더 적은 params 수&lt;/li&gt;
+&lt;li&gt;상대적으로 적은 extra data 수&lt;/li&gt;
+&lt;li&gt;더 높은 성능&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;을 달성했다는 점에서 의미가 있을 것 같네요.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4a5d59c7ec213c223b48d78af30834c5/2bef9/overall-imagenet-performance.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.94594594594594%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB+0lEQVQoz21T2ZKbMBDk/38u69RiLiOELSQhwNYiLnElLVjnIcm4oGbM9HSrGTwpBaV5d4TpTN/3TV2nhNR1PQzD8/kkhAghzvx+vyulKqUopS+tPSklSTOqaGvNvu7ruqIPz/ph2LZtWZZxHK21yHHnnKuqmq1FwzCOHi+4/+knWfJo2a8j5nnOSDZNE/J933E7/0delrKqKuS32w2zPCH45eOSStIu5mybZ3tLbyA8Afu+HSNcnuc5FwJZFIYOrEoZBiG9U1YzY40DW5tlYLZvwm8wlOPMVV2jhBEQ6EkhwjhiDdPD17qtaMJIMEzWvsWeWAfmRQHbUGO6AytZhklUjdW2bycVwDSj/8qGl7Bda40SDQ4spLj8uER5JDv5Bk/w4zTsP7KrGkkcJw5cFPzj5weRRI96PxwDcxRFXdf/xQxMnlO8Z5ThaZjgPIiDQnDVq2lz5wRnmqbDIXtzseICALKLoqjrxsmm9PtVRVF8SxLyIEKJpmv6roMfxph1Xf4EkBh6gic7QT92CbLZp3/FIX3fJ4ywlg1TH8exge6ugz1fLlpc4zixx0MdS4JVwTivlBKtoMrvOS+LytTaaMgG+Nxn7Qbgp1Ey9miaZpkXNEAImIvr1Q+CAB+DfunWtC/9wg4Agj43NM8hEluNbyZJYs5F27ZOmjG/AcPrEoRUJCDlAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/4a5d59c7ec213c223b48d78af30834c5/fcda8/overall-imagenet-performance.png&quot;
+        srcset=&quot;/static/4a5d59c7ec213c223b48d78af30834c5/12f09/overall-imagenet-performance.png 148w,
+/static/4a5d59c7ec213c223b48d78af30834c5/e4a3f/overall-imagenet-performance.png 295w,
+/static/4a5d59c7ec213c223b48d78af30834c5/fcda8/overall-imagenet-performance.png 590w,
+/static/4a5d59c7ec213c223b48d78af30834c5/efc66/overall-imagenet-performance.png 885w,
+/static/4a5d59c7ec213c223b48d78af30834c5/2bef9/overall-imagenet-performance.png 1024w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;robustness-results-on-imagenet-a-imagenetc-and-imagenet-p&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#robustness-results-on-imagenet-a-imagenetc-and-imagenet-p&quot; aria-label=&quot;robustness results on imagenet a imagenetc and imagenet p permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Robustness Results on ImageNet-A, ImageNetC and ImageNet-P&lt;/h3&gt;
+&lt;p&gt;해당 dataset 은 이 모델이 정말로 noise 에 robust 한지 체크하는 task 입니다.&lt;/p&gt;
+&lt;p&gt;예를 들어서, (일반적인 corruptions, perturbations)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;blur 섞인 이미지&lt;/li&gt;
+&lt;li&gt;fogged 이미지&lt;/li&gt;
+&lt;li&gt;rotated 이미지 &lt;/li&gt;
+&lt;li&gt;scaled 이미지&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;등등이 데이터에 섞여 있어요.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bd4580870392b73ee63cd51263ff1380/0c69d/imagenet-a-benchmark.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB9ElEQVQoz2VSyZbbIBD0///WxAfHb15sJ9aGWATakBdtYC3eUrLiOUz6wAOa6iqqe5HneRAEkYjqujatadu2eQf2uBSCx3GcJElRHM7nE6MUJymltXZRFIXrukKIqqwa27S27bu+H4b+FcaYJIk5F0rK4/ForaE0BJ9Squu6RaH1xCyjMCD8wKllF3NBIPd8PodhuF6veZrmWuP4eDyw3u/3eb/QOt/v9zSkgjMRR8SQ/KiVVJCKh+MwjOOYJpPsCffC3G63ucoEdhyHcSZZFGY0tNS0FrQgn5kBhkg8m8FfzBM4y9Ltdhd4JIxJfEh0r+MsVkJmWfZ4y9Z5nmX5838wEn4QUEJJRmQpbWXNaOxgbGPrqobhEAlvIylfSifZKPdPNqzDnz3Pi7hglH2uP93EYYb6sU8jBrfHcVBKUsZQ5TszBPmeL7iIogi2oGdpmmhTJE1SmYn5dD4hJaVC51ELa1mWdd1MrYITrufSMHQ9D0g08/YujIDCvutI4FNKZ0Kt9WbzC8MzMcdKLZfL/Z/fHx8/VqvVZrcLAh9WG2vsxYIZpmy3G8/3AYDzoFmvfyZpCi8XU1esrV6BdFlBUv01nrjExr7UzoJxidKYzUn2LC/NUsfZH4oDRgX6SRAwztEgqOBC5Mjib65HCMHwWHuZbf8LQozQY+SLdxsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/bd4580870392b73ee63cd51263ff1380/fcda8/imagenet-a-benchmark.png&quot;
+        srcset=&quot;/static/bd4580870392b73ee63cd51263ff1380/12f09/imagenet-a-benchmark.png 148w,
+/static/bd4580870392b73ee63cd51263ff1380/e4a3f/imagenet-a-benchmark.png 295w,
+/static/bd4580870392b73ee63cd51263ff1380/fcda8/imagenet-a-benchmark.png 590w,
+/static/bd4580870392b73ee63cd51263ff1380/0c69d/imagenet-a-benchmark.png 598w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;ImageNet-A dataset benchmark table 만 하나 보면, 확실히 &lt;code class=&quot;language-text&quot;&gt;The Noise&lt;/code&gt; 가 robustness 에 큰 도움을 주고 있네요.&lt;/p&gt;
+&lt;h3 id=&quot;adversarial-robustness&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#adversarial-robustness&quot; aria-label=&quot;adversarial robustness permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adversarial Robustness&lt;/h3&gt;
+&lt;p&gt;이번 실험은 adversarial attack 에도 robust 한지 확인하는 겁니다. 주로 FGSM Attack 을 해서 테스트를 하는데, 성능은 아래와 같습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 523px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3a179011ae1230e5213e3dcc7fa3a416/3e286/fgsm-benchmark.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 81.75675675675677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABmElEQVQoz42TbXOCMBCE+f//zvajTlVEIICAECAG8fqEWKu1bzdMBpLb3WPvEojIRaRrmrEsT9aejDk9xjAMo1JlnqdKFUURx3Ge50mSdF0XAD5PU1vX49ubXOD5GtP5rDebOAxfXl+Xy+VisdjtdrBorQMIkjiGs4xjaRqHfqSYpqnSejCmbdvj8dg0jTFmHMe+7wPPQW19101KkXsFQeGf7wIwkCAMw9VqBWVnjC0KCcNPvNx4HsKBrXXgKIowwHuDuAyDUH8UuRc+tX7m+lTe7/cYSOVQou91xFppW4fkR9JUylIOB/dUlWPs+7EoBtzOsgxlwMCwBG/ll+B0Jh2zzIGRBX8DWzT/b9h6vaZvNIAt3D9Qm6/8p7g3DDDKuOVbSuegkL/iqpym6Xa7rev6Jsi7UsrMc/oL2A2JF2TObv2cfTkD5hjqqqqGOfhk/9pnr0wSGfe/enkaT1ykClb9ETTIXQxS4cNnP6ewYF41B/WzckQqI0ACK0ok4NT1Vnl6SoAIei9FYahhB9kUbGd72QSDGCvJ72KQn41hq/jdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/3a179011ae1230e5213e3dcc7fa3a416/3e286/fgsm-benchmark.png&quot;
+        srcset=&quot;/static/3a179011ae1230e5213e3dcc7fa3a416/12f09/fgsm-benchmark.png 148w,
+/static/3a179011ae1230e5213e3dcc7fa3a416/e4a3f/fgsm-benchmark.png 295w,
+/static/3a179011ae1230e5213e3dcc7fa3a416/3e286/fgsm-benchmark.png 523w&quot;
+        sizes=&quot;(max-width: 523px) 100vw, 523px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;FGSM 보다 더 강력한 attack 인 FGD Attack 시에도 꽤괜 성능을 보였다고 캅니다.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;요즘 경향들은 이전처럼 deep 한 architecture 를 설계하거나 AutoML 을 이용한 NAS 를 만드는 것 보다는,
+training recipe (~ techniques) 에 집중을 하고 있는데, 이런 trend 에서 재미있는 approach 들이 많이 나오고 있는 것 같네요.&lt;/p&gt;
+&lt;p&gt;또 현재 상태에서 CutMix 등등 여러 또 다른 기술들이 적용되면 최고 performance 가 어느 정도 될지도 궁금해 지네요.&lt;/p&gt;
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ELECTRA Pre-training Text Encoders as Discriminators Rather Than Generators]]></title><description><![CDATA[TL;DR 이번에 리뷰할 논문은 ELECTRA 란 google ai 에서 3월에 발표한 논문인데, 재밌는 approach 를 하고 있어서 가져와 봤습니다. ELECTRA paper : OpenReview google ai blog : blog Rel…]]></description><link>http://kozistr.tech/ELECTRA/</link><guid isPermaLink="false">http://kozistr.tech/ELECTRA/</guid><pubDate>Sat, 11 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;이번에 리뷰할 논문은 &lt;em&gt;ELECTRA&lt;/em&gt; 란 google ai 에서 3월에 발표한 논문인데, 재밌는 approach 를 하고 있어서 가져와 봤습니다.&lt;/p&gt;
 &lt;p&gt;ELECTRA paper : &lt;a href=&quot;https://openreview.net/pdf?id=r1xMH1BtvB&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;OpenReview&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;google ai blog : &lt;a href=&quot;https://ai.googleblog.com/2020/03/more-efficient-nlp-model-pre-training.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;blog&lt;/a&gt;&lt;/p&gt;
@@ -1881,7 +2116,7 @@ masking 하는 대신, 작은 MLM (masked language model ~ generator) 으로 생
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 27.027027027027025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA2ElEQVQY0zVQu3KDMBDU/39W3EBBZXfGAiSBXoCEBiEFmInXIbniitu7fRw5zzOntG1bCAF9Xdd934/j2GKklM7TlHO21sYYsQDUez9N07VJvnOWShljuq5Dr+t6HEettR3/qu97OQw//wVqkLZdywUnWikhhFKqoRQdwP3+KIriIzvPoBsGWT+fVVWVZfl1u3HGAdHXq20aAjNSShiDmnOeMSY4b9oWgrBnrdHGQD+l5L1bQkAKzjn7LYIwwJZlgYhzDjcxIm/E5EoIO2DHa65fYIgzjIy1b33wEyXIbv94AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 27.027027027027025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA1UlEQVQY0zVQy5KEIBDz/3/Lix487dxmgRWUN4KWyBZaNZNxa/vQUAlJuml+UaUcx7FtG/q+77XWs9YjZ0ppCAG8cy7njAdgU0oA8TLnvQk+aK1Bcz5a6wgh4Ky13nuA3gcppZLy9V+wZoyN4zhNUyM4xwE9oxQdaV+PR9d1uCzLAhep1PfzOQxD3/dt2wouQFFCfhhrjNZKKcQYY2JM/PaC9zzPGME5a+4pSikpRUyOLYRA4qcayMABRUiMEZqcsU9e1/VvQ327X9f1+YvzBAgZMOvcG0UzEs2PHmxWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1965,7 +2200,7 @@ masking 하는 대신, 작은 MLM (masked language model ~ generator) 으로 생
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 32.43243243243243%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABA0lEQVQY0yWQ2ZKDIBBF/f8v8y3jEkVZRVwqUdEqjRqZcq4OT01fmnPAC4JAKbUsy+v1iuMY2zAMuRBJkqCuqurx+MGBKIqwxQHf9xljGcmapvHyPMfY77WcEAJBWZbnebZNg5lpmqQQuJpznmU55rng67pi8jgOLyMEKGvttm2FKqSUdV0759q27bpu3zZ0xnEsS4MCpOXzQWqM2ffdgxjnTEph7ViZSqkCIojRx/WAFFrP86y1LrVO03QYLJiwA8yDGCEEts4d+l7vdwft//rWUfv3C6zWRRiEfd9fj2pbAC7yM0lgji5jlDJWGYMPgJi+mZRSO470ymgYRYO9yIig/Qce9UM2hqQ4hQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 32.43243243243243%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABAklEQVQY0yWQ2XKFIBBE+f8v8+3GpRQVEVmU8rpWNEokZdqEp2GG7j4MCcNQCLHve9/3SZLgGkVRxXmapqiNMa/XBx7EcYwrHgRBUJYsp3nXdaQoCsh+nuM554xVSqr7vm3XQbOua805rKuqyvMCehTHcUB5XRfJKUXUPM/neTaiqeu6bVvvvbV2GAbnHDrLsiilUSBp378w1VpjRAAGM9hDb7QRogEIxujDHiGNbD63TUqppMyybJomZCqlEEYARilljHl/yeeo93sA9l8t3XkC3rlvxErZRGE0juPzKWsRQACJ3YAcXcawC2a0xgIABvG2bWVRAps9szKK4//kx9e5XxsXQzOLLmJvAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1999,7 +2234,7 @@ masking 하는 대신, 작은 MLM (masked language model ~ generator) 으로 생
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABOElEQVQY0zWR25KCMBBE+f9/UxYpuRolSCwlkAQEddUt9oBlP8CQTE+fGrw8zyqluq5zzp1OpzRN8zxXleJZFIW/9qMoOhwOSZKsVqswDJfDdRAE2+3Wy9K0LMvb7fZ+/1ljhNijpmlKKeu6Zkqtaz7dV8MwcE7R9723CYI4TsZxnKaJeHKklBQ7sbPWtG1rjHHWWWuh401M02gOZ3OezZxcYCYZPJJpFULQUWvN1fU6fLrJvN/v46LH4+FB7/s/+DmlL4pibJiZcl1UL4KWEaqqhmE0raGBK28vRJZlVK/XC04pi/P5DDbwMGP7kGutKS6Xi3VOL8LvxXH82fDz98kICnYOIRtmKw1OOwPj7PuubRsypq+8zayQ7UtZ0sHPAJv1MrSqqkJKZhFIACxpksB1PB6VUvT8A8KYsoYqvlAHAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABNklEQVQY0zWRW3eCMBCE+f8/zQe15RwuaqrBhCKQQMJNqz30gx7nhd3NzM4kBIfDQSk9juP9fi/LMk1TJt9FIU4n5kmSZFlGK6U8CUENBwLt9XoNqBghfr1+m8YK8QXqus6khKeVLquStn2j73vmFN77YL//iON4GIZ5np1zURSxlUIIwS5jjLUWatM0znmKaZzYxXARozwej7ARwyAnzhSIYZRVxVHX9f9sPKdpGlZwzWCz2ex2e/TjOHmPc7x6Llu6rvO+K1eQlhVaqb4frLEQOA3iKObaVM/nk5GUl6IonGsJT2ZkZoGtqorP7XZr2rZaQZYgXYHzz+PBCgqd5yQ8n8/csK5xWQKjJL8xNR7zG0EYhp+f4W67xcpaQ0tsnoS3UEpdpMzzHEMMIKRJQi5+ktYazh+aYLQSsH0fwwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2032,7 +2267,7 @@ masking 하는 대신, 작은 MLM (masked language model ~ generator) 으로 생
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 14.18918918918919%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAl0lEQVQI1yWMwQ6DIBBE/f9f86K1VYglurioLBqFWrlI0m37DpPNZPZleZ7P8+ycW5Zl0Lq8lVLKruuqqhJC1HWt1PP+5aGUapqGr7Zte+iLosiElAOi9/48T1YgYoyRddZSCOE43kQ0jmN4Be93RLNtG4/XdQWALKV0XRenMYYcTdMEoM0PIqu1Zp21lnu2APS73/8vzAfgZaH3ln1ZfwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 14.18918918918919%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAjElEQVQI1zVOSQ6EMAzj/0/rA4CKU2lC26Cqy7AcaKXxIE1OjmM7HpRSzJxzPs/TOaf1HEJY13VZFmstTsDTNAN770Fide+M4zjMWluiUsp1Xfu+E9F939CFILXW4zhEZNu2+qmlZCJOKUEcYzTGDK3353laa3gSRBCJbH5HfhUMM6ELeKTAgI79b/kC5aWjtP3mBWsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2052,232 +2287,4 @@ masking 하는 대신, 작은 MLM (masked language model ~ generator) 으로 생
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Self-training with Noisy Student improves ImageNet classification]]></title><description><![CDATA[TL;DR 이번 포스팅에서 리뷰할 논문은 EfficientNet 기반으로 새로운 techniques 를 적용해서 ImageNet dataset 에서 SOTA 를 찍은 논문입니다.
-나온지는 꽤 됐지만, 최근 TPU 에서 돌아가는 요 코드를 짜다가 생각…]]></description><link>http://kozistr.tech/Noisy-Student/</link><guid isPermaLink="false">http://kozistr.tech/Noisy-Student/</guid><pubDate>Sat, 11 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;이번 포스팅에서 리뷰할 논문은 EfficientNet 기반으로 새로운 techniques 를 적용해서 ImageNet dataset 에서 SOTA 를 찍은 논문입니다.
-나온지는 꽤 됐지만, 최근 TPU 에서 돌아가는 요 코드를 짜다가 생각나서 리뷰하게 됐어요.&lt;/p&gt;
-&lt;p&gt;아래는 이번 approach 가 달성한 성능인데, 이전 SOTA 에 비해서 Accuracy 가 약 2% 정도 올라갔네요.&lt;/p&gt;
-&lt;p&gt;해당 이미지에는 &lt;em&gt;L2&lt;/em&gt; performance 가 안올라와 있는데, &lt;em&gt;Noisy Student + Random Augment&lt;/em&gt; 로 훈련한 &lt;em&gt;L2&lt;/em&gt; 모델 top-1 accuracy 가 &lt;em&gt;88.4%&lt;/em&gt; 입니다.
-올해에는 90% 가 넘는 architecture 가 나오지 않을까 생각이 드네요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/83339124bc869908ad6f92e63006f4a1/22475/performance.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 81.75675675675677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACJklEQVQoz3VTi3KbMBD0//9Z47S2YxeHQg3IwjwlkACBeHYFadom0xvPYUns7d6e2M3zzDmv6nocR933qusYIUPBHvaV/nTJ/X4nJoWUNk3T933XdVprZCx3y7LoddUPY1sWOvD7hLVp5V08GsS84NM0LZ8ClEqpHR6iLPUwas56EhZsEtWi9NL1yzR/Ri2qaYo16ro2zNAga1nTjCXDYADz79+CXlzHsW07DEPorKoqz7Lb7YalYUYBIURTV9yiw7ghTUyTEYbTLEvRM6jQ3NYClGJpwIyxum015wWRK+u8aQGsbVvjotbDGvMa//QMGaKRpZ+oR4HdXmspJfxHNu1IGQRBkiSo9bdbkGDAohRKtwXlghYpy+I4BgZneZ6jRME5mP/rdpqmjWq4Q2LK0Eue5ZD64T3wbyVwBM/UGmbOoMKa+rxpFHyo1sDm4/GAhA1wPBwul4vrOtAPj6zvFnTBkV27RikEioGh4GaAsAfKN3vGcbB/2KeX0+l0dBwXpVFos9PMGf/KsgQYVBiMkHKa/9yPaRyvV+vb4XA6Hn0/wJCuloUSb2A8csayNQxyHeb7VCD7fH7Z7/dPX55c1wXN1+dnvNa9M6dJEsUR+gT/B8PQguM4l/Pl9fUaBARgy7KkrCDzjRlbcM/zPEopSmAH8raMcr7vkTtBCRqGSRwTQmAY3N2tNxF9jcj44raPDFqiKMa1jaII2VxspYah3y7c9iaYfwFAiIzdQa3AUQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/83339124bc869908ad6f92e63006f4a1/fcda8/performance.png&quot;
-        srcset=&quot;/static/83339124bc869908ad6f92e63006f4a1/12f09/performance.png 148w,
-/static/83339124bc869908ad6f92e63006f4a1/e4a3f/performance.png 295w,
-/static/83339124bc869908ad6f92e63006f4a1/fcda8/performance.png 590w,
-/static/83339124bc869908ad6f92e63006f4a1/efc66/performance.png 885w,
-/static/83339124bc869908ad6f92e63006f4a1/22475/performance.png 1039w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/1911.04252.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;code : &lt;a href=&quot;https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
-&lt;p&gt;EfficientNet : &lt;a href=&quot;https://arxiv.org/pdf/1905.11946.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;이전 Image Classification 연구 동향들에서도 간단하게 설명은 다음에 다른 포스트로 다뤄볼께요. 양이 좀 많이 질 듯 해서 (&lt;del&gt;귀찮네요&lt;/del&gt;)&lt;/p&gt;
-&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
-&lt;h3 id=&quot;self-training-w-noisy-student&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#self-training-w-noisy-student&quot; aria-label=&quot;self training w noisy student permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Self-Training w/ Noisy Student&lt;/h3&gt;
-&lt;p&gt;학습은 다음과 같은 process 로 이뤄지는데,&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/db781720920abfda90bbcb8c902c548d/68e9c/teacher-student.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 97.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACaklEQVQ4y5WT6XKbQBCE9f4vlqTKLkscDkLo4JKABYnlBgmRb5FdTlTJj3SV8BpmZnt6ehZFUTibzWq1sjeb9Xr907K22+3h4B6PRyllFEdJktR13TTN7Xbr+45D27a86ft+MY6jEAlpJG9se+M4HPb73TEMOfi+b9t2EATHGVEUgyDwPT8gcTFNE7Vdz3Ndl2t3u91+v3cch8LX6+0BzsMwXK9X9eM5DF3X3e93lTxNd/X7BNFwG8fHSy4Y+TP9DYvf00ggrKrK7W53Op1SIbLzOcsyIVIgkmScIx74SH4CqpCJJDB8BN0/k55vpoFCFmVR5LmcLxFS5lx4vlwu+SUVKd8QJYljXgjFQURR9HEzRUM/YFSmaby+vhm6gbwvLy/L5VLTdJ4MIhEC+mVZSgYrJZW/aCNd3dQ8mWDXK8C5qipkgxGH6R947pkuyOzaVrHOL2Wpkpu65hPe4II/klFldkzFE1JZpuSdcaYKPDFXQQ0pq7oiAIPBP89z4hdMNcRMto05dF37/u3Hu2mqbt+Wa8vSNA23mqaJYbGRQYSm64aBw6CmaMdxZJrvrnuw1zYK6bpu2w5WxayWZSGYYZpYlzxUR248/9UzCmVp2s2mlzPosypL+m/bBsrwbJumqmvltifBhr4XiYBGp5qnwzm66xg4itB5dDpRsZ5LM/9iBjGPUbU0DCWi0ZPyyFvO4JNaG9fFG1IW1OIr7+HFNcokymRKRjZ2JHmY0c9rxL+oShPDJzDvY71QesG2+Z6HMGGoNpZlxH1xFAXMIAhYULUhaRYE4eFw4IzmrLfn+QxT0cZuzAF7Tf+JX3jrL/7FMnMhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/db781720920abfda90bbcb8c902c548d/fcda8/teacher-student.png&quot;
-        srcset=&quot;/static/db781720920abfda90bbcb8c902c548d/12f09/teacher-student.png 148w,
-/static/db781720920abfda90bbcb8c902c548d/e4a3f/teacher-student.png 295w,
-/static/db781720920abfda90bbcb8c902c548d/fcda8/teacher-student.png 590w,
-/static/db781720920abfda90bbcb8c902c548d/68e9c/teacher-student.png 654w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Labelled dataset 인 ImageNet 으로 &lt;strong&gt;Teacher Model&lt;/strong&gt; 을 학습&lt;/li&gt;
-&lt;li&gt;un-labelled dataset 인 JFT-300M 를 &lt;strong&gt;Teacher Model&lt;/strong&gt; 로 pseudo labelling 하기&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; 에서 생성된 data + ImageNet 으로 &lt;strong&gt;Student Model&lt;/strong&gt; 학습 w/ noise&lt;/li&gt;
-&lt;li&gt;다시 &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; 으로 가서 반복 (iterative training)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;위 과정이 knowledge (self) distillation 과 비슷한 과정인데, 주로 요 목적은 compression 으로 사용되는데, 여기는
-해당 목적 (not compression) 으로 사용하지 않는다는게 차이점 입니다.&lt;/p&gt;
-&lt;h3 id=&quot;training&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#training&quot; aria-label=&quot;training permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Training&lt;/h3&gt;
-&lt;p&gt;데이터 셋이나 구체적인 training recipe 들이 있지만, 적용한 technique 가 있어서 이걸 설명 해 보면,&lt;/p&gt;
-&lt;h4 id=&quot;fix-train-test-resolution-discrepancy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#fix-train-test-resolution-discrepancy&quot; aria-label=&quot;fix train test resolution discrepancy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;fix train-test resolution discrepancy&lt;/h4&gt;
-&lt;p&gt;처음 몇 epoch 은 low resolution image 로 훈련을 하고 후에 high resolution image 로 fine-tuning 하는 기법입니다.&lt;/p&gt;
-&lt;p&gt;논문 실험에서는 처음 350 epochs 는 낮은 해상도 이미지로 훈련하고, 1.5 epochs 는 더 큰 해상도로 unlabelled image 에 대해서 훈련했다고 하네요.&lt;/p&gt;
-&lt;p&gt;unlabelled image data 는 학습할 때 labelled image 보다 14 배 큰 batch size 를 사용했다고도 하네요.&lt;/p&gt;
-&lt;h4 id=&quot;iterative-training&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#iterative-training&quot; aria-label=&quot;iterative training permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Iterative Training&lt;/h4&gt;
-&lt;p&gt;논문에서는 총 3 steps 의 iterative training 을 했다고 소개합니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EfficientNet-b7&lt;/code&gt; 을 ImageNet 으로 훈련 &lt;code class=&quot;language-text&quot;&gt;(as Teacher)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EfficientNet-L2&lt;/code&gt; 를 JFT-300M + ImageNet 으로 훈련 &lt;code class=&quot;language-text&quot;&gt;(as Student)&lt;/code&gt; (batch size 비율은 labelled : unlabelled = 1 : 14)&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EfficientNet-L2&lt;/code&gt; 를 새롭게 훈련 &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; 에서 만든 모델을 &lt;code class=&quot;language-text&quot;&gt;Teacher&lt;/code&gt; 로 사용 &lt;code class=&quot;language-text&quot;&gt;(as Student)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; 과 비슷한 scheme 으로 진행하는데, (batch size 비율은 labelled : unlabelled = 1 : 28) 로 훈련&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;noisy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#noisy&quot; aria-label=&quot;noisy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Noisy&lt;/h4&gt;
-&lt;p&gt;Student Model 을 학습할 때 논문에서 &lt;code class=&quot;language-text&quot;&gt;Noisy&lt;/code&gt; 하게 훈련한다고 했는데, 이 때 &lt;code class=&quot;language-text&quot;&gt;Noisy&lt;/code&gt; 에 해당하는 부분은 크게 3 부분 입니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Data Augmentation w/ RandAugment&lt;/li&gt;
-&lt;li&gt;Dropout&lt;/li&gt;
-&lt;li&gt;Stochastic Depth&lt;/li&gt;
-&lt;li&gt;other techniques (data filtering, balancing)&lt;/li&gt;
-&lt;li&gt;OOD (Out-Of-Distribution)&lt;/li&gt;
-&lt;li&gt;unlabelled data 에 대해선 class 별 samples 수가 biased 돼있으니, 적은 sample 들 duplicate 하기&lt;/li&gt;
-&lt;li&gt;pseudo label 시, soft or hard pseudo 한다고 했었는데, soft, hard 둘다 좋은 결과를 보였지만, soft 가 더 좋았다&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;요런 기법들은 이전에 소개된 기법들이니 설명은 pass&lt;/p&gt;
-&lt;h2 id=&quot;experiment-result&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experiment-result&quot; aria-label=&quot;experiment result permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experiment Result&lt;/h2&gt;
-&lt;h3 id=&quot;imagenet-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#imagenet-benchmark&quot; aria-label=&quot;imagenet benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ImageNet Benchmark&lt;/h3&gt;
-&lt;p&gt;역대 ImageNet architecture 들 정확도를 benchmark 한 table 인데, 다른 구조보다 &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;더 적은 params 수&lt;/li&gt;
-&lt;li&gt;상대적으로 적은 extra data 수&lt;/li&gt;
-&lt;li&gt;더 높은 성능&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;을 달성했다는 점에서 의미가 있을 것 같네요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4a5d59c7ec213c223b48d78af30834c5/2bef9/overall-imagenet-performance.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.94594594594594%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB80lEQVQoz2VTCY6jMBDk/49bTUZDuI0JBjtccTCXuWbLMIlWOy0BLeiqri43Fhc8SZLuCNWpvu/rqooIqapqGIamaQghnPMzv91uRVGURUEpfUhpCSHiKKYFbbXa131dV9ThWz8M27YtyzKOo9YaOe55npdlNWuNgmEcrTzL7C87iIO0Zd9HzPMck3iapu+f2H8e+36/i7IskYdhCC4LZJePSyRIu6izbJ51GIVo+MJsb3CSUM4FMs91DRhkruPSG2UVU1oZsNZxjM76PzCUY2Z4ARYYAYGWyLnre6xmcniu24oiUMLCSb/B+xuMGZvmgTdgN+C7EG7glWO5vToATGP6Wza8hO3y+QQYBQaMo7r8uXiJKzrxAk/w423Yb9lIfD8w4CzLPj4/iCBylPvhGDp7ntd1/an5X3BCaVGWeOWehsFtx3dynhd9MW1mTvSMomg4ZBvoth4UZgUyllV1bWRTeoB57nl+GAQkJbzgdVf3XQc/lFLrurwDSJBCJsCTnqAfu2RljH3ZVwxp2zZhhLVsmHrf9xV0d52UMAjR4hrHKU3Tc0lwB51xG6VYqeSW5Pe8VJVUErIBPvdZmnjiGoaRsbRu6mWeUTBOk+l8vdqO4+BnkA/ZqvYhH9gBVNd1Df04c4jEdPhnAt/HabVta6Qp9RcE0RKlo4IsFQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/4a5d59c7ec213c223b48d78af30834c5/fcda8/overall-imagenet-performance.png&quot;
-        srcset=&quot;/static/4a5d59c7ec213c223b48d78af30834c5/12f09/overall-imagenet-performance.png 148w,
-/static/4a5d59c7ec213c223b48d78af30834c5/e4a3f/overall-imagenet-performance.png 295w,
-/static/4a5d59c7ec213c223b48d78af30834c5/fcda8/overall-imagenet-performance.png 590w,
-/static/4a5d59c7ec213c223b48d78af30834c5/efc66/overall-imagenet-performance.png 885w,
-/static/4a5d59c7ec213c223b48d78af30834c5/2bef9/overall-imagenet-performance.png 1024w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;robustness-results-on-imagenet-a-imagenetc-and-imagenet-p&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#robustness-results-on-imagenet-a-imagenetc-and-imagenet-p&quot; aria-label=&quot;robustness results on imagenet a imagenetc and imagenet p permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Robustness Results on ImageNet-A, ImageNetC and ImageNet-P&lt;/h3&gt;
-&lt;p&gt;해당 dataset 은 이 모델이 정말로 noise 에 robust 한지 체크하는 task 입니다.&lt;/p&gt;
-&lt;p&gt;예를 들어서, (일반적인 corruptions, perturbations)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;blur 섞인 이미지&lt;/li&gt;
-&lt;li&gt;fogged 이미지&lt;/li&gt;
-&lt;li&gt;rotated 이미지 &lt;/li&gt;
-&lt;li&gt;scaled 이미지&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;등등이 데이터에 섞여 있어요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bd4580870392b73ee63cd51263ff1380/0c69d/imagenet-a-benchmark.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB9UlEQVQoz2VSyZKbMBT0///WxAfHNRV7YrMJCSEQCPDCIrF5SwPjHJJ3UPEk+nWrW6s0TT3PC3lYVZVudNM09bvwjU3OgziOpZR5XpzPZ0YpOiGEMWaV55lt25zz8lrWpm5M03d9Pwz9XFprKeMg4JEQp9MJLaW+UiqKoq7rVlmWTcwi9D0SFAE1rNUtCmev12sYhtvtppJEZRna5/OJ9fF4LN8rpdLD4eD7Pg8Yj0OiSXbK4iiCTvw4DsM4jnKWPeFmzP1+X6asMqUsy2KcCRb6KfUN1Y0BLcgXZoAhMsvUAv7LPIGTJNl/fXku8WMiC5n3uVQyFhEu9nzLBkGaqtf/YOy7nkcJJSkRV2FKo0dtBm1qU5UV7IdIeCsiMSudZGPct+xUpcfj0XGcMOCMss/tpy0tpqkbuzRksHcchygSlDFM+ZcZObuOywMehiFsQWZJInNdyFqWukLU58sZR6BG8piF9Xq9VlU9R6WU7djU923HARJh3t+DUVDYdx3xXErZQohod7tfeDwTM5xcr9fHw++Pjx+bzWYH8zy37VpttGkNmDF9v985rgsAkgPNdvtTJgm8XHVzQUlZlm9J3/Xd1pWBWnRVfblcMA4p4m1OshffkjSxrGORFzyg0E+IxwKOIKAi4FzhFHezsU/wzo1pF9v/AC9X0FBz/fHqAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/bd4580870392b73ee63cd51263ff1380/fcda8/imagenet-a-benchmark.png&quot;
-        srcset=&quot;/static/bd4580870392b73ee63cd51263ff1380/12f09/imagenet-a-benchmark.png 148w,
-/static/bd4580870392b73ee63cd51263ff1380/e4a3f/imagenet-a-benchmark.png 295w,
-/static/bd4580870392b73ee63cd51263ff1380/fcda8/imagenet-a-benchmark.png 590w,
-/static/bd4580870392b73ee63cd51263ff1380/0c69d/imagenet-a-benchmark.png 598w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;ImageNet-A dataset benchmark table 만 하나 보면, 확실히 &lt;code class=&quot;language-text&quot;&gt;The Noise&lt;/code&gt; 가 robustness 에 큰 도움을 주고 있네요.&lt;/p&gt;
-&lt;h3 id=&quot;adversarial-robustness&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#adversarial-robustness&quot; aria-label=&quot;adversarial robustness permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adversarial Robustness&lt;/h3&gt;
-&lt;p&gt;이번 실험은 adversarial attack 에도 robust 한지 확인하는 겁니다. 주로 FGSM Attack 을 해서 테스트를 하는데, 성능은 아래와 같습니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 523px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3a179011ae1230e5213e3dcc7fa3a416/3e286/fgsm-benchmark.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 81.75675675675677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABkElEQVQoz5WT6ZKCMBCEef+3c/1plQcqEo6AQCCGI/uFsB7lHrVTVCom092TnjGw1k7TpKqql/JmzE3r22t0XdcLIZMkFiLLsiiK0jS9XC5KqQDwMAx1WfbbLTT2LcZhUPv9OQw/1uvNZrNarY7HIyxN0zgwZHDKKLJVNc2VvIDHsWiaTuu6rq/Xa1VVWuu+79u2DYqi4JTaWqVGIchdQFD477sADCQoy5JioFRamyyzYfjA2zvPSziwMQ6czuG9Qdx2Hc+wp5Pb8LNp3rkeylLK8/lM5VCi73W4tHXtwDwkjq2UNs/dVxSOTqk+TTvcBoB1+A4MCry1vwS3z+A8z5MkwXeucJJ6/mFYHMf0DRhHuA/XUvlP8WwYsyKEwC3fUsBQ2L9iUeadh8OBht0F2UPHJBhjfgG7IfGC3rB7GxlYwFzzKKbIjdAcnC999srsyHh+6vQ2npTAu1ibr2A0nv4Yde1nHRbMK+agfj+8pPqOsqJEwm63W8CenjrRhN5LURhq2EE2BZvZXg7BIMZK8ieH/aCb+TtlngAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/3a179011ae1230e5213e3dcc7fa3a416/3e286/fgsm-benchmark.png&quot;
-        srcset=&quot;/static/3a179011ae1230e5213e3dcc7fa3a416/12f09/fgsm-benchmark.png 148w,
-/static/3a179011ae1230e5213e3dcc7fa3a416/e4a3f/fgsm-benchmark.png 295w,
-/static/3a179011ae1230e5213e3dcc7fa3a416/3e286/fgsm-benchmark.png 523w&quot;
-        sizes=&quot;(max-width: 523px) 100vw, 523px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;FGSM 보다 더 강력한 attack 인 FGD Attack 시에도 꽤괜 성능을 보였다고 캅니다.&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;요즘 경향들은 이전처럼 deep 한 architecture 를 설계하거나 AutoML 을 이용한 NAS 를 만드는 것 보다는,
-training recipe (~ techniques) 에 집중을 하고 있는데, 이런 trend 에서 재미있는 approach 들이 많이 나오고 있는 것 같네요.&lt;/p&gt;
-&lt;p&gt;또 현재 상태에서 CutMix 등등 여러 또 다른 기술들이 적용되면 최고 performance 가 어느 정도 될지도 궁금해 지네요.&lt;/p&gt;
 &lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item></channel></rss>
