@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-03-13
+update: 2021-03-16
 tags:
   - About
 keywords:
@@ -85,9 +85,9 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Find out which features impact users' watch.
 - Developed a pipeline to recognize main actors from the poster and still-cut images.
   - Utilize **SOTA** face detector & recognizer.
-  - Optimized pre/post processing routines to consider `latency`.
+  - Optimized pre/post processing routines for low `latency`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next.
-  - Achieved **SOTA** performance compared to previous SOTA models (`SASRec`, `BERT4Rec`).
+  - Achieve **SOTA** performance compared to previous SOTA models (`SASRec`, `BERT4Rec`).
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
       * **Paid Conversion** : improved **1.39%p**
       * **Viewing Days** : improved **0.25%p**
@@ -95,7 +95,7 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
       * **Click Ratio** : improved **4.30%p**
       * **Play Ratio** : improved **2.32%p**
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
-  - Optimized the codes for fast `inference time` & `memory-efficiency` on _cpu_.
+  - Optimize the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
 
 _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
@@ -103,12 +103,12 @@ _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Worked as a full time.
 - Developed the card & bank account transaction category classification models, designed _light-weight purpose_ for the low latency. (now on service)
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
-    - **\*accuracy** : improved **about 25 ~ 30%p**
-- Developed the machine learning model serving RESTful API server (utilizing *k8s* + open source project)
+    - **\*Accuracy** : improved **about 25 ~ 30%p**
+- Developed the RESTful API server to serve deep learning model (utilized k8s and open source project)
   - zero failure rate (**0** 40x, 50x errors)
 - Developed the classification model for forecasting possibility of loan overdue.
 
-% \*accuracy : how many people don't update/change their transactions' category.
+% \*Accuracy : how many people don't update/change their transactions' category.
 
 _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
