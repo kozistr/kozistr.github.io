@@ -1,11 +1,12 @@
 ---
-title: StarGAN-v2 - Diverse Image Synthesis for Multiple Domains review
+title: SinGAN - Learning a Generative Model from a Single Natural Image
 date: 2020-03-14
 update: 2020-03-14
 tags:
   - Deep-Learning
 keywords:
   - GAN
+  - multi-stage 
   - one-shot
 ---
 
