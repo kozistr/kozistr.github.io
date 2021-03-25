@@ -102,7 +102,26 @@ SinGAN 같은 경우엔 주로 8 ~ 10 stages 를 통과하는데, 아래와 같�
 
 ![scale](rescale.png)
 
+차이는 아래와 같습니다.
+
+1. old scaling : 25×34, 38×50, 57×75, 84×112, 126×167, 188×250
+2. new scaling : 25×34, 32×42, 42×56, 63×84, 126×167, 188×250
+
 ### Fine-Tune
+
+마지막으로, image harmonization task를 위한 fine-tuning에 대해서도 언급합니다.
+
+간단하게 설명하면, 먼저 source image에 대해 학습을 하고, 이후에 reference image 에 대해 학습을 하면 더 좋은 성능을 낼 수 있다고 캅니다.
+
+## Benchmark
+
+### Confusion & SIFID
+
+SinGAN 하고 비교했을 때, SIFID 가 더 좋아진 걸 볼 수 있었고, 훈련 시간, 학습해야하는 모델 파라메터 수도 2배 정도 줄었음을 확인
+
+![perf](place_benchmark.png)
+
+![perf](lsun_benchmark.png)
 
 ## Conclusion
 
