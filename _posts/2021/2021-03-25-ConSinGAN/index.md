@@ -100,6 +100,8 @@ SinGAN 같은 경우엔 주로 8 ~ 10 stages 를 통과하는데, 아래와 같�
 
 > $x_{n} = x_{N} × r^{((N - 1) / log(N)) * log(N - n + 1)}, n \in [0, N)$
 
+![scale](rescale.png)
+
 ### Fine-Tune
 
 ## Conclusion
