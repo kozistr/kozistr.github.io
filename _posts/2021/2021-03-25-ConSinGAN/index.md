@@ -148,5 +148,4 @@ LSUN dataset 에선 global structure 를 catch 하지 못한 게 낮은 diversit
 
 개인적으로 새로운 idea를 제안하는 논문도 좋아하지만, 이런 training recipe 튜닝하는 걸 좋아해서 개인적으로 가볍고 재밌게 읽었습니다.
 
-
 결론 : 굳굳
