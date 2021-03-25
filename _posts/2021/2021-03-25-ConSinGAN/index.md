@@ -45,6 +45,8 @@ code : [github](https://github.com/tohinz/ConSinGAN)
 
 ### Multi-Stage Training
 
+#### Random Noise
+
 model architecture 같은 경우 **SinGAN**과 대조를 하는데, 
 **SinGAN**도 multi-stage generators 를 가지고 있는데, 가장 낮은 resolution에 해당하는 generator만 unconditional generator 라고 말하고 있습니다.
 
@@ -54,14 +56,31 @@ model architecture 같은 경우 **SinGAN**과 대조를 하는데,
 
 위는 ConSinGAN 의 model architecture 인데, **diversity**를 높히기 위해 매 stage 마다 이전 stage 의 생성 결과와 random noise가 같이 합쳐서 들어가고 있습니다.
 
+#### Freeze Previous Generator
+
 그리고, 현재 (n) stage를 훈련할 때 이전 (n - 1) stage의 generator를 freeze 한다는 차이도 있습니다.
 
 이런 방식으로 concurrently 하게 한 번에 여러 stages 의 generator 를 학습하는데, 한 번에 모든 stages의 generator를 학습하면 overfitting 가능성이 커지니, 
 **적당히 한 번에 3 stages** 를 훈련한다고 합니다.
 
-### Discriminator
+#### Learning Rate
 
-### Optimization
+또한, 한 번에 3 개의 generators 를 훈련하는데, 각 stage 마다 다른 learning rate 를 사용했습니다.
+
+예를 들어, Generator (n - 2), (n - 1), (n) 을 학습한다면, (0.01 * lr), (0.1 * lr), (lr) 식으로 (10배 씩 decay 해) 사용했다 합니다.
+
+물론, 이렇게 learning rate 를 사용하는 것에대한 이야기도 했는데, 
+
+1. lower generators 에서 higher learning rate 사용 : training image 에 더 similar 한 image 를 만들겠다.
+2. lower generators 에서 lower learning rate 사용   : 더 높은 diversity 를 가져가겠다 (~= maybe leads to worse quality) 
+
+이렇게 말하면서, learning rate 란 artifact 에 대한 sample 변화도 보여줬습니다.
+
+![lr](changing_by_lr.png)
+
+#### Discriminator
+
+Discriminator로 Patch Discriminator 를 사용하는 것에 대해, 이미지의 일부로만 판단하면 global perspective 에서 real or fake 확인이 어렵다는 점을 언급합니다.
 
 ### Rescaling Image
 
