@@ -102,10 +102,14 @@ SinGAN 같은 경우엔 주로 8 ~ 10 stages 를 통과하는데, 아래와 같�
 
 ![scale](rescale.png)
 
-차이는 아래와 같습니다.
+차이는 아래와 같습니다. (scaling factor 0.55 <- 논문에서 언급한 값)
 
 1. old scaling : 25×34, 38×50, 57×75, 84×112, 126×167, 188×250
 2. new scaling : 25×34, 32×42, 42×56, 63×84, 126×167, 188×250
+
+% 개인적인 생각
+
+scale factor 를 0.55 로 논문에선 설정했는데, 계산해 보면 scaling factor 값이 조금 이상하네요.
 
 ### Fine-Tune
 
@@ -122,6 +126,23 @@ SinGAN 하고 비교했을 때, SIFID 가 더 좋아진 걸 볼 수 있었고, �
 ![perf](place_benchmark.png)
 
 ![perf](lsun_benchmark.png)
+
+### Diversity
+
+논문에서 중요하게 생각하던 Diversity 도 보면, SinGAN 대비 comparable 하거나 low 한 diversity score 가 나왔습니다.
+
+| DataSet\Model | SinGAN | ConSinGAN |
+| :---: | :---: | :---: |
+| Place | 0.52 | 0.50 (0.43) |
+| LSUN  | 0.64 | 0.54 |
+
+Place dataset benchmark 중 괄호는 learning rate scaling factor 를 0.1 에서 0.5 로 올렸을 때, diversity 감소가 발생했다는 걸 보여주고 있습니다.
+
+LSUN dataset 에선 global structure 를 catch 하지 못한 게 낮은 diversity score를 얻었다는 것으로 해석합니다.
+
+### Image Harmonization
+
+![harmonization](harmonization.png)
 
 ## Conclusion
 
