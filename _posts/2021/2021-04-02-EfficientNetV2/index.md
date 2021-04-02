@@ -31,7 +31,7 @@ code : [github](https://github.com/google/automl/tree/master/efficientnetv2)
 최근에 나온 convolution 기반 architectures 를 보면 (e.g. ResNet-RS, NFNet), 
 성능은 좋지만, 모델 파라메터가 너무 많고 FLOPs 도 엄청나게 커서 웬만한 장비 아니면 훈련하기도 빡센 문제가 있어요.
 
-## Methodology
+## Training Efficiency
 
 ### Training with very large image sizes is slow
 
@@ -57,6 +57,24 @@ EfficinetNet 에선 compound scaling rule 에 따라서 scaling 하는데, 만�
 그런데, 각 stages 에서 훈련 시간과 파라메터 수는 equally contributed 안하는 문제점을 들면서, *non-uniform* 한 scaling 전략을 선택하겠다고 합니다.
 
 이미지 사이즈 같은 경우도 훈련 시간과 memory 에 큰 영향을 주기 때문에, (image size에 대한) scaling rule 도 변견했다고 합니다.
+
+## Training-Aware NAS and Scaling
+
+### NAS Search
+
+모델 훈련 속도를 위한 best combination 을 찾기위해, training-aware NAS 을 제안합니다.
+
+EfficientNet에서 사용한 NAS 기반을 했는데, 아래와 같은 목표를 joinly optimize 했다고 합니다.
+
+1. accuracy
+2. parameter-efficiency
+3. training-efficiency (on modern accelerators)
+
+
+
+### EfficientNetV2 Architecture
+
+
 
 ## Benchmark
 
