@@ -46,6 +46,8 @@ EfficientNet architecture에는 *MBConv* 라는 block 이 있는데, depth-wise 
 최근 연구들에는 이런 문제때문에 *Fused-MBConv* 라는 걸 만들었는데, 
 아래 그림처럼 `Conv 1x1 + depthwise Conv 3x3` -> `Conv 3x3` 으로 replace 한게 더 좋다는 연구를 언급하면서
 
+![MBConv](mbconv.png)
+
 ## Benchmark
 
 ## Conclusion
