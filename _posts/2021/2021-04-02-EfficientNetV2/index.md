@@ -101,6 +101,12 @@ NAS를 사용해서 찾은 architecture (EfficientNetV2-S, baseline) 가 아래�
 
 ![regularization_strength](regularization_strength.png)
 
+Progressive Learning 을 하기 위해서 fomulation을 세웠는데, 아래와 같습니다.
+
+전체 훈련을 $N$ steps를 하고 훈련 과정을 $M$ stages로 나눴고, $k$ 는 regularizations 종류 (e.g. RandAugment, MixUp, Dropout, ...)
+
+![progressive_learning](progressive_learning.png)
+
 ## Benchmark
 
 ## Conclusion
