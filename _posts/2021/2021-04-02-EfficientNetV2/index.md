@@ -74,7 +74,7 @@ EfficientNet에서 사용한 NAS 기반을 했는데, 아래와 같은 목표를
 
 ### EfficientNetV2 Architecture
 
-NAS를 사용해서 찾은 architecture 가 아래와 같은 구조라 합니다. EfficientNet 과 크게 4가지 차이점이 있다 하는데,
+NAS를 사용해서 찾은 architecture (EfficientNetV2-S, baseline) 가 아래와 같은 구조라 합니다. EfficientNet 과 크게 4가지 차이점이 있다 하는데,
 
 1. *MBConv* 와 *Fused-MBConv* 를 섞어서 씀
 2. 더 작은 expansion ratio (for *MBConv*) 를 사용 -> 더 적은 overhead 를 가지기 때문
@@ -85,6 +85,14 @@ NAS를 사용해서 찾은 architecture 가 아래와 같은 구조라 합니다
 
 ### EfficientNetV2 Scaling
 
+위에서 만든 EfficientNetV2-S 기반으로 M/L 버전도 만들었는데, 몇 가지 제한을 두고 scaling 했다고 합니다.
+
+1. maximum inference image size to 480
+2. add more layers to later stages (stage 5, 6)
+
+![acc_vs_step](accuracy_vs_training_step.png)
+
+## Progressive Learning
 
 ## Benchmark
 
