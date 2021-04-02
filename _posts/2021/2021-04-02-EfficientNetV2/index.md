@@ -107,6 +107,10 @@ Progressive Learning 을 하기 위해서 fomulation을 세웠는데, 아래와 
 
 ![progressive_learning](progressive_learning.png)
 
+각 모델은 아래와 같은 recipes 로 훈련했다고 합니다.
+
+![recipe](progressive_learning_recipes.png)
+
 ## Benchmark
 
 ## Conclusion
