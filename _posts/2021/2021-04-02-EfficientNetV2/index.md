@@ -70,10 +70,20 @@ EfficientNet에서 사용한 NAS 기반을 했는데, 아래와 같은 목표를
 2. parameter-efficiency
 3. training-efficiency (on modern accelerators)
 
-
+구체적인 settings 은 논문에
 
 ### EfficientNetV2 Architecture
 
+NAS를 사용해서 찾은 architecture 가 아래와 같은 구조라 합니다. EfficientNet 과 크게 4가지 차이점이 있다 하는데,
+
+1. *MBConv* 와 *Fused-MBConv* 를 섞어서 씀
+2. 더 작은 expansion ratio (for *MBConv*) 를 사용 -> 더 적은 overhead 를 가지기 때문
+3. 3x3 kernel sizes 를 선호. (하지만 작은 receptive field를 사용하는 만큼 layer를 더 쌓게 됨)
+4. EfficientNet 에 있던 맨 마지막 stride-1 stage 를 제거. -> 이것도 메모리 때문에
+
+![EfficinetNetV2-S](efficientnetv2-s.png)
+
+### EfficientNetV2 Scaling
 
 
 ## Benchmark
