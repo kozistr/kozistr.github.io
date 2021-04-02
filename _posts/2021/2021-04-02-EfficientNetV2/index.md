@@ -113,6 +113,14 @@ Progressive Learning 을 하기 위해서 fomulation을 세웠는데, 아래와 
 
 ## Benchmark
 
+### ImageNet
+
+accuracy, training speed 측면에서 EfficientNet 대비 다 좋네요.
+
+![performance](performance.png)
+
+![efficiency](efficiency.png)
+
 ## Conclusion
 
 새로운 아이디어보단 여러 가지를 조합하고 training recipe 실험에 가까웠지만, 
