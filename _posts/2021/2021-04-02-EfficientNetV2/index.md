@@ -121,9 +121,14 @@ accuracy, training speed 측면에서 EfficientNet 대비 다 좋네요.
 
 ![efficiency](efficiency.png)
 
+### Transfer Learning Performance Comparison
+
+다른 datasets 에 transfer learning 했는데, 성능이 comparable 하네요.
+
+![transfer_learning](transfer_learning.png)
+
 ## Conclusion
 
-새로운 아이디어보단 여러 가지를 조합하고 training recipe 실험에 가까웠지만, 
-갠적으로 이런 튜닝 성격의 연구도 좋아하고, 엄청난 개선이 있어서 재밌게 읽었습니다.
+새로운 아이디어보단 여러 가지를 조합하고 training recipe 실험에 가까웠지만, 갠적으로 이런 튜닝 성격의 연구도 좋아하고, 엄청난 개선이 있어서 재밌게 읽었습니다.
 
 결론 : 굳굳
