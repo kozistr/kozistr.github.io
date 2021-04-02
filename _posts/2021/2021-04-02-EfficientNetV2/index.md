@@ -94,6 +94,13 @@ NAS를 사용해서 찾은 architecture (EfficientNetV2-S, baseline) 가 아래�
 
 ## Progressive Learning
 
+훈련 시 image size 를 dynamic 하게 사용하는데, 이전 연구들은 accuracy drop 이 발생했다고 합니다.
+이번 논문에선 그런 accuracy drop이 *imbalanced regularization* (다른 이미지 크기로 학습하면 거기에 맞는 regularization strength를 사용해야 한다)에서 오지 않을까 추측합니다.
+
+아래와 같이 regularization strength를 실험해 본 결과, 추측한 대로 image size 가 작을 땐 weak augmentations, 클 땐 strong augmentations이 성능향상에 더 도움됐다고 합니다.
+
+![regularization_strength](regularization_strength.png)
+
 ## Benchmark
 
 ## Conclusion
