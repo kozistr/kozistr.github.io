@@ -48,6 +48,16 @@ EfficientNet architecture에는 *MBConv* 라는 block 이 있는데, depth-wise 
 
 ![MBConv](mbconv.png)
 
+EfficientNet-B4 에 gradually *Fused-MBConv* 를 적용해 봤는데, **early layers** (1 ~ 3 stages) 에만 적용하는게,
+속도도 빠르면서 성능도 제일 좋게 가져갈 수 있었다고 합니다.
+
+### Equally scaling up every stage is sub-optimal
+
+EfficinetNet 에선 compound scaling rule 에 따라서 scaling 하는데, 만약 depth coef 가 2라면, 모든 stages 에서 2로 scaling 합니다.
+그런데, 각 stages 에서 훈련 시간과 파라메터 수는 equally contributed 안하는 문제점을 들면서, *non-uniform* 한 scaling 전략을 선택하겠다고 합니다.
+
+이미지 사이즈 같은 경우도 훈련 시간과 memory 에 큰 영향을 주기 때문에, (image size에 대한) scaling rule 도 변견했다고 합니다.
+
 ## Benchmark
 
 ## Conclusion
