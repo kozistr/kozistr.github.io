@@ -84,7 +84,7 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Build *Future* module for better understand at the time of inference.
   - Apply augmentations to the various features, leads to performance gain & robustness.
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
-    - coming soon
+      * **coming soon**
 - Developed a model to predict expected users' view-time of the contents.
   - Predict how many people going to watch, how much time people going to watch the content before the content is supplied. 
   - Find out which features impact users' watch.
