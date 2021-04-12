@@ -83,9 +83,6 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
 - Developed training recipes to train sequential recommendation architecture.
   - Build *Future* module for better understand at the time of inference.
   - Apply augmentations to the various features, leads to performance gain & robustness.
-  - **In offline** evaluation (internal test set)
-    - **MAP@1** : 0.151
-    - **Recall@200** : 0.586
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
     - coming soon
 - Developed a model to predict expected users' view-time of the contents.
@@ -95,9 +92,6 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Utilize **SOTA** face detector & recognizer.
   - Optimized pre/post processing routines for low `latency`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next.
-  - **In offline** evaluation (internal test set)
-      * **MAP@1** : 0.142
-      * **Recall@200** : 0.550
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
       * **Paid Conversion** : improved **1.39%p**
       * **Viewing Days** : improved **0.25%p**
