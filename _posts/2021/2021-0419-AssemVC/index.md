@@ -51,6 +51,10 @@ demo : [demo](https://mindslab-ai.github.io/assem-vc/)
 
 ![architecture](architecture.png)
 
+구체적으로 하나하나 보기 전에 전체적으로 한번 훑어보면, 
+`Cotatron-VC` 와 `Normalized-F0` 로 linguistic, intonation features (speaker-independent)를 생성하고, 
+이 정보들과 target speaker를 encoding한 정보와 같이 decoder에 넣어 mel-spectrogram 을 뽑고, 마지막으로 `HiFi-GAN` 으로 raw audio를 생성하는 방식입니다.
+
 ### Linguistic Encoder
 
 결론부터 말하자면 `Cotatron-VC` 에 있는 linguistic encoder 를 채택했습니다. 
@@ -72,6 +76,8 @@ speaker voice 를 time frame 별로 log f0를 뽑고 mean/std normalize 후, unv
 
 ### Decoder
 
+결론은 non-casual decoder를 채택한 듯 합니다.
+
 3개 baseline 중 `Mellotron-VC`만 autoregressive casual decoder 를 사용하는데, 이런 구조가 non-casual decoder 들 보다 더 좋은 퀄의 mel-spectrogram 을 뽑을 수 있다고 합니다.
 
 하지만, teacher forcing method 로 학습하는 과정이 source-speaker에 대해 cheating할 수 있다는 점을 언급해, 실제로는 speaker disentanglement 를 못 지킬수도(?) 있다고 합니다.
@@ -82,10 +88,27 @@ speaker voice 를 time frame 별로 log f0를 뽑고 mean/std normalize 후, unv
 
 최근 VC methods를 보면 raw audio 만드는 부분에서 `WaveNet` 기반 vocoder를 사용하는데, 논문에선 real-world 에서는 `WaveNet` 기반 vocoder 는 latency가 나오지 않기 때문에 `HiFi-GAN` 기반으로 생성한다고 합니다.
 
-이 중 포인트는, Ground Truth Alignment (GTA, 왠지 차 훔쳐야 할 거 같은 이름) mel-spec 을 finetune 시 사용했다고 하는데, 
+이 중 포인트는, Ground Truth Alignment (GTA, 왠지 차 훔쳐야 할 거 같은 이름) mel-spec을 finetune시 사용했다고 하는데, 
 이 논문에선 GTA mel-spec 부분을 reconstructed mel-spec으로 해석해서 튜닝을 했다고 하네요.
 
+## Train Recipe
+
+훈련 방식에도 차이가 있습니다. 3개의 baselines을 모두 훈련하는데,
+
+먼저, `Cotatron-VC`를 *LibriTTS train-clean* 으로 훈련 후 *LibriTTS* + *VCTK* 로 progressively 훈련헀다고 합니다. 
+그리고 `Cotatron-VC` 는 freeze하고 `Assem-AC` 전체 pipeline 을 훈련했다고 합니다.
+
+다른 recipes는 논문에
+
+## Performance
+
+### VC
+
+![benchmark](VC-benchmarks.png)
+
+
 ## Conclusion
+
 
 
 결론 : 굳
