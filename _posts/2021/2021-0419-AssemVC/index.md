@@ -115,6 +115,11 @@ speaker voice 를 time frame 별로 log f0를 뽑고 mean/std normalize 후, unv
 
 disentanglement가 잘 됐는지를 측정하기 위해 `SCA`로 benchmark 합니다. 아마 `Cotatron-VC`논문에서도 `SCA`를 사용했던 것 같은데, 앞으로 다른 연구에서도 `SCA`를 사용하길 바란다고 합니다 ㅋㅋㅋㅋ
 
+개인적으론, `SCA` 값은 일반적인 trend를 보여주는 데엔 괜찮을 수도 있지만, `SCA` 측정에 사용하는 모델 성능과 방식에 따라 variance가 많이 커지지 않을까란 생각이 있어서 더 solid?한 tolerant한 method가 뭐가 있을까 한번 생각해 보게 되네요.
+(higlhy personal thought :), not the answer)
+
+% `SCA` : Speaker Classification Accuracy
+
 ## Conclusion
 
 어쩌면 단순 조합이라고도 할 수 있지만, 여러 architecture를 benchmark하고 각 components를 meaningful하게 가져와 사용한 점과 성능도 outperform 해서 좋아 보였습니다. 
