@@ -76,6 +76,15 @@ speaker voice 를 time frame 별로 log f0를 뽑고 mean/std normalize 후, unv
 
 하지만, teacher forcing method 로 학습하는 과정이 source-speaker에 대해 cheating할 수 있다는 점을 언급해, 실제로는 speaker disentanglement 를 못 지킬수도(?) 있다고 합니다.
 
+논문에선 non-casual decoders (`PPG-VC`, `Cotatron-VC`) 차이도 설명하는데, 논문 참조~
+
+### Vocoder
+
+최근 VC methods를 보면 raw audio 만드는 부분에서 `WaveNet` 기반 vocoder를 사용하는데, 논문에선 real-world 에서는 `WaveNet` 기반 vocoder 는 latency가 나오지 않기 때문에 `HiFi-GAN` 기반으로 생성한다고 합니다.
+
+이 중 포인트는, Ground Truth Alignment (GTA, 왠지 차 훔쳐야 할 거 같은 이름) mel-spec 을 finetune 시 사용했다고 하는데, 
+이 논문에선 GTA mel-spec 부분을 reconstructed mel-spec으로 해석해서 튜닝을 했다고 하네요.
+
 ## Conclusion
 
 
