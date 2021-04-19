@@ -1,4 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Apr 2021 04:55:53 GMT</lastBuildDate><item><title><![CDATA[EfficientNetV2 - Smaller Models and Faster Training]]></title><description><![CDATA[TL;DR EfficientNet 의 2번째 논문이 나왔네요. 저자는 EfficientNet 을 쓴 두 분이 쓰셨네요. 이번에 나온 논문은 효율성을 목표로 한 연구인데, NAS로 모델 훈련 속도와 파라메터 수를 엄청나게 줄이면서 성능도 compara…]]></description><link>http://kozistr.tech/EfficientNetV2/</link><guid isPermaLink="false">http://kozistr.tech/EfficientNetV2/</guid><pubDate>Fri, 02 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Apr 2021 06:41:14 GMT</lastBuildDate><item><title><![CDATA[Assem-VC - Realistic Voice Conversion by Assembling Modern Speech Synthesis Techniques]]></title><description><![CDATA[TL;DR 최근 mindslab 에서 Cotatron에 이어 새로운 VC (Voice Conversion) 논문이 나와서 논문을 읽게 됐습니다. code는 곧 나올 예정인 듯합니다. issue를 보니 mid-june 에 release 할 가능성이 있…]]></description><link>http://kozistr.tech/2021-0419-AssemVC/</link><guid isPermaLink="false">http://kozistr.tech/2021-0419-AssemVC/</guid><pubDate>Mon, 19 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;최근 mindslab 에서 Cotatron에 이어 새로운 VC (Voice Conversion) 논문이 나와서 논문을 읽게 됐습니다.&lt;/p&gt;
+&lt;p&gt;code는 곧 나올 예정인 듯합니다. &lt;a href=&quot;https://github.com/mindslab-ai/assem-vc/issues/1&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;issue&lt;/a&gt;를 보니 mid-june 에 release 할 가능성이 있다고 카네요.&lt;/p&gt;
+&lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2104.00931.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;code : &lt;a href=&quot;https://github.com/mindslab-ai/assem-vc&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;demo : &lt;a href=&quot;https://mindslab-ai.github.io/assem-vc/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;demo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
+&lt;p&gt;요 논문과 관련높은 reference&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cotatron : &lt;a href=&quot;https://arxiv.org/pdf/1905.11946.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;paper&lt;/a&gt;, my review : &lt;a href=&quot;https://kozistr.tech/Cotatron/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;review&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;논문 제목부터 보면 &lt;em&gt;Assem-VC&lt;/em&gt; 인데, 가존에 제안된 여러 VC 모델들의 장점들을 잘 조합해 하나로 만들어 둔 느낌입니다.
+&lt;em&gt;2. Approach&lt;/em&gt; 를 보면, &lt;code class=&quot;language-text&quot;&gt;Cotatorn-VC&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Mellotron-VC&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;PPG-VC&lt;/code&gt; 이렇게 3개의 모델을 baseline으로 해서 만들었다고 합니다.&lt;/p&gt;
+&lt;p&gt;그리고 3가지의 components로 나눠 살펴보는데, 다음과 같습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;linguistic encoder&lt;/li&gt;
+&lt;li&gt;intonation encoder&lt;/li&gt;
+&lt;li&gt;decoder&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;% &lt;code class=&quot;language-text&quot;&gt;PPG&lt;/code&gt; : phonetic posteriorgrams&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Auto-VC&lt;/code&gt; 논문에서 저자가 source speaker의 linguistic, intonation 정보가 bottleneck 부분에 들어가게 되면 self-reconstruction 퀄리티를 떨어트린다고 합니다.
+즉, &lt;strong&gt;speaker independent&lt;/strong&gt; 하게 학습해야 양질의 conversion 이 가능하다고 합니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Auto-VC&lt;/code&gt; 논문을 읽어보진 않았지만, speaker specific 한 정보가 reconstruction 과정에 들어가면, speaker-biased 된 학습이 이뤄질 수 있어 speaker-overfitted, not generalized 한 모델이 만들어 짐을 유도하는 맥락같다는 생각이 드네요. (저도 이런 argument에 동의합니다)&lt;/p&gt;
+&lt;p&gt;쨋든, 이런 이유로 encoder design 을 speaker independent하게 만들었다고 합니다.&lt;/p&gt;
+&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2c573c0f2f52e3de28161d9afa9cc503/0786c/architecture.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACQElEQVQoz21SyW7UQBD1f/MBSIgbCIkLIDgAt1wgQiEsUcjAZJhMmGS8u72113h3e2mPPbwkIgKJUsnqLterev2qhN2/NgwcPo5T2/Vt29m2fb4+Xyx/WpY1TdMO/pcJvO+zLKWe57rOMOwC73tAfxg0fny4enp0uVbIg4O39969TMr8FtC2bRBEcJhwV2a6qcp5w/smyws3yRPWdz2nV6Fk6pbjvpnLz04kxQko+eI7+4wlAjCMsTiK8jwfeBfQY5+egK1jmbZlepS+mh08OtyjYSA64Wyj+0mmkQtJOY3SG3Dfc+C7tttuhyJT6srsmqbM0rrIiyz7LK0+XCyqhoEZb+pvWnD//fLh/vLJsSKAa10zx7HDMOz7rirNlrlGmJ5ReObnjeiSuSHtxqnp8LeMWb9ygrlClKQWIECaJhfr9WKx0DTVcw6vvK8fz8TnR79ezKS5Sl+D9qe9rmZFWfCBQ5flabVeVXWxBe0RzPn1gHjP+e5/No3jnajDMJTllrGRD5OgqaooilewOPY8L45jXdd938fXMAwoBy1xNU2CM56GBNe1MVnfo4JpmpqmEUJcSk1CdE2TZRkroesawOJmY1lAWaqqKoqiqRqlFBMmxEBECAMfaqEElgTdNF2/zrVtpGJOruPIskJdatmWJErEMABGaXBBP0FRFUmWXVCxbbTabC4NQoBEf0TAHR0kSSYGwTlJkoYxkK+qOgwDAfcIz4riDFuapngStgW/U8SjOAzCosihBdIQ3P5R7tZ+AzRCwLOivbLTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;architecture&quot;
+        title=&quot;architecture&quot;
+        src=&quot;/static/2c573c0f2f52e3de28161d9afa9cc503/fcda8/architecture.png&quot;
+        srcset=&quot;/static/2c573c0f2f52e3de28161d9afa9cc503/12f09/architecture.png 148w,
+/static/2c573c0f2f52e3de28161d9afa9cc503/e4a3f/architecture.png 295w,
+/static/2c573c0f2f52e3de28161d9afa9cc503/fcda8/architecture.png 590w,
+/static/2c573c0f2f52e3de28161d9afa9cc503/0786c/architecture.png 663w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;구체적으로 하나하나 보기 전에 전체적으로 한번 훑어보면,
+&lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;Normalized-F0&lt;/code&gt; 로 linguistic, intonation features (speaker-independent)를 생성하고,
+이 정보들과 target speaker를 encoding한 정보와 같이 decoder에 넣어 mel-spectrogram 을 뽑고, 마지막으로 &lt;code class=&quot;language-text&quot;&gt;HiFi-GAN&lt;/code&gt; 으로 raw audio를 생성하는 방식입니다.&lt;/p&gt;
+&lt;h3 id=&quot;linguistic-encoder&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#linguistic-encoder&quot; aria-label=&quot;linguistic encoder permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linguistic Encoder&lt;/h3&gt;
+&lt;p&gt;결론부터 말하자면 &lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt; 에 있는 linguistic encoder 를 채택했습니다. &lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;PPG-VC&lt;/code&gt; 같은 경우엔 time-frame 별로 phoneme 의 posterior probability를 &lt;em&gt;pretrained speaker-independent ASR&lt;/em&gt; 베이스로 주는 방식인데,
+일단 ASR 를 훈련하려면 많은 양의 transcription 으로 학습한 ASR이 있어야 하고 (-&gt; 어렵), output이 각 phoneme 의 확률만 주는 친구라서 사용하기 흠터레스팅하다 언급합니다.&lt;/p&gt;
+&lt;h3 id=&quot;intonation-encoder&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#intonation-encoder&quot; aria-label=&quot;intonation encoder permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Intonation Encoder&lt;/h3&gt;
+&lt;p&gt;이 부분도 결론부터 말하자면 &lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt; 에 있는 intonation encoder에 개선점을 추가해 사용했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt;에서 intonation encoder에 해당하는 residual encoder가 &lt;strong&gt;unseen&lt;/strong&gt; speakers or noises 에 대해서 잘 하는지는 여전히 의문이라고 합니다.&lt;/p&gt;
+&lt;p&gt;그래서 &lt;code class=&quot;language-text&quot;&gt;PPG-VC&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;Mellotron-VC&lt;/code&gt;에서 채택해 사용하던 &lt;code class=&quot;language-text&quot;&gt;Normalized-F0&lt;/code&gt; 를 사용했다고 합니다.&lt;/p&gt;
+&lt;p&gt;speaker voice 를 time frame 별로 log f0를 뽑고 mean/std normalize 후, unvocied segments는 &lt;em&gt;constant -10&lt;/em&gt;으로 채우는 작업을 했다는데, 구체적인 구현 사항은 논문을 참고하세용.&lt;/p&gt;
+&lt;p&gt;이런 작업을 해서 pitch contour는 speaker independent해 지면서 decoder 는 speaker 의 pitch range를 잘 잡아 학습 가능하다고 캅니다.&lt;/p&gt;
+&lt;h3 id=&quot;decoder&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#decoder&quot; aria-label=&quot;decoder permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Decoder&lt;/h3&gt;
+&lt;p&gt;결론은 non-casual decoder를 채택한 듯 합니다.&lt;/p&gt;
+&lt;p&gt;3개 baseline 중 &lt;code class=&quot;language-text&quot;&gt;Mellotron-VC&lt;/code&gt;만 autoregressive casual decoder 를 사용하는데, 이런 구조가 non-casual decoder 들 보다 더 좋은 퀄의 mel-spectrogram 을 뽑을 수 있다고 합니다.&lt;/p&gt;
+&lt;p&gt;하지만, teacher forcing method 로 학습하는 과정이 source-speaker에 대해 cheating할 수 있다는 점을 언급해, 실제로는 speaker disentanglement 를 못 지킬수도(?) 있다고 합니다.&lt;/p&gt;
+&lt;p&gt;논문에선 non-casual decoders (&lt;code class=&quot;language-text&quot;&gt;PPG-VC&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt;) 차이도 설명하는데, 논문 참조~&lt;/p&gt;
+&lt;h3 id=&quot;vocoder&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vocoder&quot; aria-label=&quot;vocoder permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vocoder&lt;/h3&gt;
+&lt;p&gt;최근 VC methods를 보면 raw audio 만드는 부분에서 &lt;code class=&quot;language-text&quot;&gt;WaveNet&lt;/code&gt; 기반 vocoder를 사용하는데, 논문에선 real-world 에서는 &lt;code class=&quot;language-text&quot;&gt;WaveNet&lt;/code&gt; 기반 vocoder 는 latency가 나오지 않기 때문에 &lt;code class=&quot;language-text&quot;&gt;HiFi-GAN&lt;/code&gt; 기반으로 생성한다고 합니다.&lt;/p&gt;
+&lt;p&gt;이 중 포인트는, Ground Truth Alignment (GTA, 왠지 차 훔쳐야 할 거 같은 이름) mel-spec을 finetune시 사용했다고 하는데,
+이 논문에선 GTA mel-spec 부분을 reconstructed mel-spec으로 해석해서 튜닝을 했다고 하네요.&lt;/p&gt;
+&lt;h2 id=&quot;train-recipe&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#train-recipe&quot; aria-label=&quot;train recipe permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Train Recipe&lt;/h2&gt;
+&lt;p&gt;훈련 방식에도 차이가 있습니다. 3개의 baselines을 모두 훈련하는데,&lt;/p&gt;
+&lt;p&gt;먼저, &lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt;를 &lt;em&gt;LibriTTS train-clean&lt;/em&gt; 으로 훈련 후 &lt;em&gt;LibriTTS&lt;/em&gt; + &lt;em&gt;VCTK&lt;/em&gt; 로 progressively 훈련헀다고 합니다.
+그리고 &lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt; 는 freeze하고 &lt;code class=&quot;language-text&quot;&gt;Assem-AC&lt;/code&gt; 전체 pipeline 을 훈련했다고 합니다.&lt;/p&gt;
+&lt;p&gt;다른 recipes는 논문에&lt;/p&gt;
+&lt;h2 id=&quot;performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#performance&quot; aria-label=&quot;performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
+&lt;h3 id=&quot;vc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vc&quot; aria-label=&quot;vc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VC&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dd252b1175e9a01f0fc126c31ac6bc91/d4b10/VC-benchmarks.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.83783783783784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABKElEQVQY0yWRC5ODIAyE+f//sE6r1YKCLwR56PWuvU/NjAxuNrtJEErKuq6VOs66bqSUSqmmacZxXJZlni1njNE7Z/mx1jm3WOu9Bxev14vcsgC6aZqK262sKkiAKaVt37XW8oyc877vfd9T0mm9bZu4eEDDcFiRGM7gfvmgNc9zWZX0ArPrOkC0OEVRFGVZIoMP2j9n4ADyfr8RhUdHxuih78EBf/lOmsAkhGDtzGVdV84YIuOta0gp4qmkGseJVSBEyjm/5czMVIkQw/f7xYeWPp+/awp6Jp1y0kbf73dtDCukYbJM587ASQDlnNziGIm2jTFU4n+opEi3PAEgNJz9eiyZMi6EQJIGzqmM8x4SKmz4qm/b9vF4NHVTPZ+8JOC52qFVCuY/U9q9KjLGIPUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;benchmark&quot;
+        title=&quot;benchmark&quot;
+        src=&quot;/static/dd252b1175e9a01f0fc126c31ac6bc91/fcda8/VC-benchmarks.png&quot;
+        srcset=&quot;/static/dd252b1175e9a01f0fc126c31ac6bc91/12f09/VC-benchmarks.png 148w,
+/static/dd252b1175e9a01f0fc126c31ac6bc91/e4a3f/VC-benchmarks.png 295w,
+/static/dd252b1175e9a01f0fc126c31ac6bc91/fcda8/VC-benchmarks.png 590w,
+/static/dd252b1175e9a01f0fc126c31ac6bc91/efc66/VC-benchmarks.png 885w,
+/static/dd252b1175e9a01f0fc126c31ac6bc91/c83ae/VC-benchmarks.png 1180w,
+/static/dd252b1175e9a01f0fc126c31ac6bc91/d4b10/VC-benchmarks.png 1394w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Assem-VC&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;MOS&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;DMOS&lt;/code&gt;에서 제일 좋은 성능을 보여주고 있네요.&lt;/p&gt;
+&lt;h3 id=&quot;degree-of-disentanglement&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#degree-of-disentanglement&quot; aria-label=&quot;degree of disentanglement permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Degree of disentanglement&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/12065443d42115b2b077eab971846735/0786c/sca.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 33.108108108108105%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABBElEQVQY05VQy46EIBDk/3/LxPO4c0FFQB5mHASMD4hedks3k+x160C6qYaqLlJTOnnfMtb3chgGIURT10prIXjXdbRumqZGYa1Ff48pKaVSKsZIOOeoVC+1MRjigoMz96hSWkr81bzGsb8gtdYQwEDbsnEciTFWyJtS6uX8939A1nXdtm3f9+2D9canuKir+3OJc1mWlBIpy7IoCpisHhVWwtVXVVFKU8rOvafJ55SsMUgBtud5vpxby1iHmjyfT+dczomxFkvmnBEAsO/JaM0Yg60YPILE+/M8YwhIQWl1HAdBmm/n4hwRAyINIfzu771HjlIIiE/OQRAs1KAke2mMgfkfh0F9/tVQvuoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;sca&quot;
+        title=&quot;sca&quot;
+        src=&quot;/static/12065443d42115b2b077eab971846735/fcda8/sca.png&quot;
+        srcset=&quot;/static/12065443d42115b2b077eab971846735/12f09/sca.png 148w,
+/static/12065443d42115b2b077eab971846735/e4a3f/sca.png 295w,
+/static/12065443d42115b2b077eab971846735/fcda8/sca.png 590w,
+/static/12065443d42115b2b077eab971846735/0786c/sca.png 663w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;disentanglement가 잘 됐는지를 측정하기 위해 &lt;code class=&quot;language-text&quot;&gt;SCA&lt;/code&gt;로 benchmark 합니다. 아마 &lt;code class=&quot;language-text&quot;&gt;Cotatron-VC&lt;/code&gt;논문에서도 &lt;code class=&quot;language-text&quot;&gt;SCA&lt;/code&gt;를 사용했던 것 같은데, 앞으로 다른 연구에서도 &lt;code class=&quot;language-text&quot;&gt;SCA&lt;/code&gt;를 사용하길 바란다고 합니다 ㅋㅋㅋㅋ&lt;/p&gt;
+&lt;p&gt;개인적으론, &lt;code class=&quot;language-text&quot;&gt;SCA&lt;/code&gt; 값은 일반적인 trend를 보여주는 데엔 괜찮을 수도 있지만, &lt;code class=&quot;language-text&quot;&gt;SCA&lt;/code&gt; 측정에 사용하는 모델 성능과 방식에 따라 variance가 많이 커지지 않을까란 생각이 있어서 더 solid?한 tolerant한 method가 뭐가 있을까 한번 생각해 보게 되네요.
+(higlhy personal thought :), not the answer)&lt;/p&gt;
+&lt;p&gt;% &lt;code class=&quot;language-text&quot;&gt;SCA&lt;/code&gt; : Speaker Classification Accuracy&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;어쩌면 단순 조합이라고도 할 수 있지만, 여러 architecture를 benchmark하고 각 components를 meaningful하게 가져와 사용한 점과 성능도 outperform 해서 좋아 보였습니다. &lt;/p&gt;
+&lt;p&gt;요즘의 연구 트렌드들이 architecture design을 revisit 하는 연구보단 training recipe &amp;#x26; combining network design로 outperform한 성능을 내는 연구가 많아지는 것 같아서, 갠적으로 튜닝을 좋아하는 사람 중 하나고, 이런 recipes를 발견하고 적용하는 게 더 큰 성능 향상을 낼 수 있다 생각하기 때문에, 더 재밌게 읽었던 것 같습니다. &lt;/p&gt;
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[EfficientNetV2 - Smaller Models and Faster Training]]></title><description><![CDATA[TL;DR EfficientNet 의 2번째 논문이 나왔네요. 저자는 EfficientNet 을 쓴 두 분이 쓰셨네요. 이번에 나온 논문은 효율성을 목표로 한 연구인데, NAS로 모델 훈련 속도와 파라메터 수를 엄청나게 줄이면서 성능도 compara…]]></description><link>http://kozistr.tech/EfficientNetV2/</link><guid isPermaLink="false">http://kozistr.tech/EfficientNetV2/</guid><pubDate>Fri, 02 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;EfficientNet 의 2번째 논문이 나왔네요. 저자는 EfficientNet 을 쓴 두 분이 쓰셨네요.&lt;/p&gt;
 &lt;p&gt;이번에 나온 논문은 &lt;strong&gt;효율성&lt;/strong&gt;을 목표로 한 연구인데, NAS로 모델 훈련 속도와 파라메터 수를 엄청나게 줄이면서 성능도 comparable 하거나 더 좋은 성능을 달성했다고 합니다.&lt;/p&gt;
 &lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2104.00298.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
@@ -2262,232 +2418,4 @@ SCA 가 훨씬 높은 걸 보여주네요.&lt;/p&gt;
 &lt;p&gt;간단한 concept 으로 꽤괜 성능이 나오고,
 transcript 를 주지 않아도 성능이 준 것과 comparable 하다는 점도 재밌고,
 Cortatron encoder 를 다른 task 에 적용해 봐도 재밌는 결과 볼 수 있을 것 같네용&lt;/p&gt;
-&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[YOLOv4 Optimal Speed and Accuracy of Object Detection]]></title><description><![CDATA[TL;DR 이번에 리뷰할 논문은 오랜만에 나온 YOLO 4번째 버전인 YOLOv4 논문입니다. 이번 버전은 이야기가 있는(?) 버전인데, YOLO 원 저자인 Joe Redmon 님 께서 올해 2월쯤에 twit으로 CV 연구를 그만하겠다고 선언하셨는데…]]></description><link>http://kozistr.tech/YOLOv4/</link><guid isPermaLink="false">http://kozistr.tech/YOLOv4/</guid><pubDate>Sun, 26 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;이번에 리뷰할 논문은 오랜만에 나온 YOLO 4번째 버전인 YOLOv4 논문입니다.&lt;/p&gt;
-&lt;p&gt;이번 버전은 이야기가 있는(?) 버전인데, YOLO 원 저자인 Joe Redmon 님 께서 올해 2월쯤에 twit으로 CV 연구를 그만하겠다고 선언하셨는데 (&lt;del&gt;정말 YOLO 하러 가셨을까&lt;/del&gt;),
-과연 이번 버전엔 저자에 포함될지, darknet page에는 YOLOv4 가 올라갈지 이야기가 있었는데, 이번 저자로는 빠지셨고 ㅠㅠ darknet 에는 올라갔더라고요.&lt;/p&gt;
-&lt;p&gt;쨋든, 요약하면 현재 SOTA 인 EfficientDet 과 비슷한 AP를 달성하면서 높은 FPS를 달성했네요.&lt;/p&gt;
-&lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2004.10934.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;
-code : &lt;a href=&quot;https://github.com/pjreddie/darknet&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
-&lt;p&gt;YOLO 시리즈&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;YOLO v1 : &lt;a href=&quot;https://arxiv.org/pdf/1506.02640.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;YOLO v2 : &lt;a href=&quot;https://arxiv.org/pdf/1612.08242.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;YOLO v3 : &lt;a href=&quot;https://pjreddie.com/media/files/papers/YOLOv3.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;이번에도 논문에서는 speed를 추구한다고 강조를 하면서 &lt;/p&gt;
-&lt;ol start=&quot;0&quot;&gt;
-&lt;li&gt;누구나 저렴한 GPU 장비로 학습 가능&lt;/li&gt;
-&lt;li&gt;빠른 operation 사용&lt;/li&gt;
-&lt;li&gt;parallel computing 최적화 등등 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;여러 가지들을 고려했다고 합니다.&lt;/p&gt;
-&lt;p&gt;총 2가지의 production serving 환경을 옵션을 들면서 설명하는데,&lt;/p&gt;
-&lt;h3 id=&quot;gpu&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gpu&quot; aria-label=&quot;gpu permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GPU&lt;/h3&gt;
-&lt;p&gt;convolution layer 에서 작은 group 들 (1 ~ 8)을 사용했다고 카네요. CSPResNeXt50 / CSPDarknet53 &lt;/p&gt;
-&lt;h3 id=&quot;vpu&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vpu&quot; aria-label=&quot;vpu permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VPU&lt;/h3&gt;
-&lt;p&gt;grouped-convolution 을 사용하고, SE Module 를 사용하지 않는다고 하네요.&lt;/p&gt;
-&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
-&lt;p&gt;크게 아키텍쳐를 설계하고 튜닝하는 것을 논문에선 3 부분으로 나눠서 설명합니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;아키텍쳐 선정&lt;/li&gt;
-&lt;li&gt;BoF, BoS (여러가지 augmentation, activation, layer)&lt;/li&gt;
-&lt;li&gt;기타 튜닝&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;selection-of-architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#selection-of-architecture&quot; aria-label=&quot;selection of architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Selection of Architecture&lt;/h3&gt;
-&lt;p&gt;이 논문에선 optimal 한 architecture 를 설계하기 위해 총 3가지의 balance 를 고려하는데요,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;resolution of input image&lt;/li&gt;
-&lt;li&gt;num of layers&lt;/li&gt;
-&lt;li&gt;num of parameters&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Backbone으로 사용할 network가 ImageNet classification task에선 좋은 성능을 보일진 몰라도
-Object Detection task에선 고려해야 할 점이 또 다르기 때문에, 띵킹을 해야 한다라는 점을 언급해요.&lt;/p&gt;
-&lt;p&gt;예로는 CSPResNeXt50 가 CSPDarknet53 보다 ImageNet 에선 성능이 좋아도, MS COCO dataset 에서 Object Detection 에선
-반대라고 합니다.&lt;/p&gt;
-&lt;p&gt;결론적으로 CSPResNeXt50 vs CSPDarknet53 vs EfficientNet-B3 을 backbone 으로 benchmark 결과
-CSPDarknet53 이 detector backbone 으로 사용하기 optimal 하다는 결론을 내립니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0914c4e4386dda4ca2e26769170a651b/cf899/backbone-benchmark.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAs0lEQVQI1yWO3Q6DIBSDff+Hc8ouTBzoUIZGh8qvEViyZrs59EC/lmLbNmMM5jDwZVmmaRJC7PsOfRwHY5Q+KAQ84zhKOVlrQ/AwzPNc4LDWYVJK/wx47z2AEMKPpc45o/VLCPDruoIHOXBeiFF4H2KMUkq48QU8QMCX8weTc55zBoBQrFrrlBLi0FTcyhJX6GmaRinFGCPkrt6K1OQ8z67v+v6ZYgLctm1V1Ui/rssYjbIv7Srbf0u19OcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/0914c4e4386dda4ca2e26769170a651b/fcda8/backbone-benchmark.png&quot;
-        srcset=&quot;/static/0914c4e4386dda4ca2e26769170a651b/12f09/backbone-benchmark.png 148w,
-/static/0914c4e4386dda4ca2e26769170a651b/e4a3f/backbone-benchmark.png 295w,
-/static/0914c4e4386dda4ca2e26769170a651b/fcda8/backbone-benchmark.png 590w,
-/static/0914c4e4386dda4ca2e26769170a651b/efc66/backbone-benchmark.png 885w,
-/static/0914c4e4386dda4ca2e26769170a651b/c83ae/backbone-benchmark.png 1180w,
-/static/0914c4e4386dda4ca2e26769170a651b/cf899/backbone-benchmark.png 1513w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;또한 SSP Module 을 추가적으로 사용하고 (receptive field 때문에), PANet 을 feature aggregation 을 위해 사용한다고 합니다. (YOLOv3 에서 쓰던 FPN 대신 사용하는 거)&lt;/p&gt;
-&lt;p&gt;최종적으로 아래와 같은 architecture 를 사용합니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;backbone&lt;/code&gt; : CSPDarknet53 w/ SSP &lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;neck&lt;/code&gt; : PANet (path-aggregation)&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;head&lt;/code&gt; : YOLOv3 (anchor-based)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;마지막으로 CGBN, SyncBN 같은 multi-gpu / TPU 환경같이 비싼 환경에서 사용하는 operation 들은 사용하지 않았다고 합니다. &lt;/p&gt;
-&lt;p&gt;정말 누구나 훈련할 수 있다고 강조를 하네요 ㅋㅋㅋㅋ (&lt;del&gt;그런데 1080ti, 2080ti 1개 도 없는 게 현실&lt;/del&gt;)&lt;/p&gt;
-&lt;h3 id=&quot;selection-of-bof-and-bos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#selection-of-bof-and-bos&quot; aria-label=&quot;selection of bof and bos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Selection of BoF and BoS&lt;/h3&gt;
-&lt;p&gt;여기선 모든 layer 들 loss, metric, augmentation 모든 기법을 나열하면서 괜춘한 걸 고르는 작업을 합니다.&lt;/p&gt;
-&lt;p&gt;결론적으로 비싼 operation 들, 비싼 장비용 operation 들은 제외하고 누구나 써 볼 수 있는 operation 들을 고른 결과,&lt;/p&gt;
-&lt;p&gt;regularization method 로 DropBlock 을 사용했답니다.&lt;/p&gt;
-&lt;h3 id=&quot;additional-improvements&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#additional-improvements&quot; aria-label=&quot;additional improvements permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Additional improvements&lt;/h3&gt;
-&lt;p&gt;여기선,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;새로운 augmentation 기법들과 SAT(Self-Adversarial Training)&lt;/li&gt;
-&lt;li&gt;genetic algorithm 으로 hyper-parameter 튜닝&lt;/li&gt;
-&lt;li&gt;효율적인 훈련을 위해 디자인 변경 -&gt; SAM, PAN module 들 수정, BN -&gt; CmBN (Cross mini)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1&quot; aria-label=&quot;1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1&lt;/h4&gt;
-&lt;p&gt;결론적으로 기존 CutMix 는 2장의 이미지끼리 blend 하는데, Mosaic 은 4장의 이미지를 섞기 때문에 더 좋아서 (둘 다) 쓴다.
-(large mini-batch 사용을 안 해도 된다 등등의 이유)&lt;/p&gt;
-&lt;p&gt;SAT 는 구글에 찾아보세요~ (&lt;del&gt;귀찮&lt;/del&gt;)&lt;/p&gt;
-&lt;h4 id=&quot;3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3&quot; aria-label=&quot;3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3&lt;/h4&gt;
-&lt;p&gt;SAM 에서 spatial-wise attention 을 point-wise attention 으로 변경
-PAN 에서 shortcut 을 concat 으로 변경&lt;/p&gt;
-&lt;p&gt;이유는 나와 있지 않은데, SAM 같은 경우엔 그 작은 parameter 몇 개 줄여보겠다는 의도인 것 같고,
-PAN 에 concat 은 성능 측면인 것 같네요. (뇌피셜)&lt;/p&gt;
-&lt;h2 id=&quot;summary&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#summary&quot; aria-label=&quot;summary permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Summary&lt;/h2&gt;
-&lt;p&gt;정리 함 다시 해 보면 &lt;/p&gt;
-&lt;h3 id=&quot;architecture-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture-1&quot; aria-label=&quot;architecture 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;backbone&lt;/code&gt; : CSPDarknet53 w/ SPP&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;neck&lt;/code&gt; : PAN&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;head&lt;/code&gt; : YOLOv3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;uses&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#uses&quot; aria-label=&quot;uses permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Uses&lt;/h3&gt;
-&lt;p&gt;적용한 것들을 파트(?)별로 정리해 보면 아래와 같습니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Bag of Freebies (BoF) for backbone&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;augmentation : CutMix, Mosaic&lt;/li&gt;
-&lt;li&gt;regularization : DropBlock&lt;/li&gt;
-&lt;li&gt;etc : class label smoothing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Bag of Specials (Bos) for backbone&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;activation : Mish&lt;/li&gt;
-&lt;li&gt;network : CSP, MiWRC&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Bag of Freebies (BoF) for detector&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;augmentation : Mosaic&lt;/li&gt;
-&lt;li&gt;regularization : DropBlock&lt;/li&gt;
-&lt;li&gt;loss : CIoU&lt;/li&gt;
-&lt;li&gt;layer : CmBN&lt;/li&gt;
-&lt;li&gt;lr scheduler : cosine annealing&lt;/li&gt;
-&lt;li&gt;etc : SAT, eliminate grid sensitivity, multiple anchors for a single gt &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Bag of Specials (Bos) for detector&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;activation : Mish&lt;/li&gt;
-&lt;li&gt;module : SPP, SAM, PAN&lt;/li&gt;
-&lt;li&gt;loss : DIoU-NMS&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;experiment-result&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experiment-result&quot; aria-label=&quot;experiment result permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experiment Result&lt;/h2&gt;
-&lt;h3 id=&quot;bof-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bof-benchmark&quot; aria-label=&quot;bof benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bof Benchmark&lt;/h3&gt;
-&lt;p&gt;위에 있는 모든 요소들을 benchmark 한 표.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/145aa96ca215b8e497c96cbafd8cbd11/cd138/bof-benchmark.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABRUlEQVQoz3VSi3KDIBDk/38QAygqT40mopmYscZ0kbaTJu3OeMJxe3d7QPq+Y4wppYQQ+TcympVlyRgviuJwOMDCKaWEE2EIhqPvezJNUwjDEMI4jsNwDiGcTiccYItF13XTODYRLYCtcxanzjl4yLqu27Y9Ho9kX5CczlpjbeM9yFVZte2xqqIlOFsjPvDd7/c/yeizVioXwhiT58J7zzjTWpPnOJBTip8uvshaaW2E4PjJQnrfQL+1lvzZasqy7Yhte2h0UhaQjoG1bVPKEh7yXOclBZpACqzB8U2DUtCMsQ3ns6rrOLB5nt+lvg7MWZCzjEInZB+7I6UUEsiyLLfbDQMDsP6H7DAkzjmyiGhdRmld1wQcFEd7y453MgIQbZ1LNLrXT5NPjyRMOy6Xy/wb1+sVTtwzaLgeYzTn8Tni2eHyPgFZZmvboTy+hgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/145aa96ca215b8e497c96cbafd8cbd11/fcda8/bof-benchmark.png&quot;
-        srcset=&quot;/static/145aa96ca215b8e497c96cbafd8cbd11/12f09/bof-benchmark.png 148w,
-/static/145aa96ca215b8e497c96cbafd8cbd11/e4a3f/bof-benchmark.png 295w,
-/static/145aa96ca215b8e497c96cbafd8cbd11/fcda8/bof-benchmark.png 590w,
-/static/145aa96ca215b8e497c96cbafd8cbd11/efc66/bof-benchmark.png 885w,
-/static/145aa96ca215b8e497c96cbafd8cbd11/c83ae/bof-benchmark.png 1180w,
-/static/145aa96ca215b8e497c96cbafd8cbd11/cd138/bof-benchmark.png 1220w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ap-fps-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ap-fps-benchmark&quot; aria-label=&quot;ap fps benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AP, FPS Benchmark&lt;/h3&gt;
-&lt;p&gt;각 GPU architecture 별로 AP, FPS benchmark 를 했는데, 아래 V100 (volta arch)에서 테스트한 결과.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/38be4ae2954fb7aa9e2e62fd1d2a889f/6aacb/ap-fps-benchmark.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 30.405405405405407%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABCElEQVQY0yWQyW7CQBBE/f8flUMWwCAnKMohiuDAokBsYhjG09O7M5B3LVV1VVdyQ3uQ9wHXImumlUpvNo6jubGwmh0TfQCtWD4TfDHH0Yvq7pWowhAPIc9Ql+51plp07yMjFViEiXeR5qKN6mNIL8Cd+z26mEUzhC70dUzNcHkK6SGkLfP51CUAYsYBDhGmIbxCrImfAffE10tAxCojlvCQ+hrSIsObycJ8J3T5bREJchbEI/AEqMG8NG1G/0bs27bMqZjZRCLxNFOx1cwzs63Q+dSW1uWyC3fIE+K52pylNjsQYRputfUOlZ0pb2JsRX5Ur8JuBb9pIll1E4dtjF1RRQaR/4f9AaL3VVm4IbBeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/38be4ae2954fb7aa9e2e62fd1d2a889f/fcda8/ap-fps-benchmark.png&quot;
-        srcset=&quot;/static/38be4ae2954fb7aa9e2e62fd1d2a889f/12f09/ap-fps-benchmark.png 148w,
-/static/38be4ae2954fb7aa9e2e62fd1d2a889f/e4a3f/ap-fps-benchmark.png 295w,
-/static/38be4ae2954fb7aa9e2e62fd1d2a889f/fcda8/ap-fps-benchmark.png 590w,
-/static/38be4ae2954fb7aa9e2e62fd1d2a889f/efc66/ap-fps-benchmark.png 885w,
-/static/38be4ae2954fb7aa9e2e62fd1d2a889f/c83ae/ap-fps-benchmark.png 1180w,
-/static/38be4ae2954fb7aa9e2e62fd1d2a889f/6aacb/ap-fps-benchmark.png 1347w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;빠르네요&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;이번 논문은 정말 모든 case 들을 하나하나 고려하려는 게 보였고, 설명도 최대한 low-level(?) 하게 하나하나 스킾하지 않고
-다 짚고 넘어가서 뭔가 투머치 같지만 좋았어요 &lt;/p&gt;
-&lt;p&gt;또 정말 모든 부분 하나하나 튜닝한 점이 꽤 인상적이었어요. 온갖 힙한 것들도 사용하고.&lt;/p&gt;
-&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item></channel></rss>
