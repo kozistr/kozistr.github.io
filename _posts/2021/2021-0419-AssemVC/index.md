@@ -107,8 +107,18 @@ speaker voice 를 time frame 별로 log f0를 뽑고 mean/std normalize 후, unv
 ![benchmark](VC-benchmarks.png)
 
 
+`Assem-VC`가 `MOS`, `DMOS`에서 제일 좋은 성능을 보여주고 있네요.
+
+### Degree of disentanglement
+
+![sca](sca.png)
+
+disentanglement가 잘 됐는지를 측정하기 위해 `SCA`로 benchmark 합니다. 아마 `Cotatron-VC`논문에서도 `SCA`를 사용했던 것 같은데, 앞으로 다른 연구에서도 `SCA`를 사용하길 바란다고 합니다 ㅋㅋㅋㅋ
+
 ## Conclusion
 
+어쩌면 단순 조합이라고도 할 수 있지만, 여러 architecture를 benchmark하고 각 components를 meaningful하게 가져와 사용한 점과 성능도 outperform 해서 좋아 보였습니다. 
 
+요즘의 연구 트렌드들이 architecture design을 revisit 하는 연구보단 training recipe & combining network design로 outperform한 성능을 내는 연구가 많아지는 것 같아서, 갠적으로 튜닝을 좋아하는 사람 중 하나고, 이런 recipes를 발견하고 적용하는 게 더 큰 성능 향상을 낼 수 있다 생각하기 때문에, 더 재밌게 읽었던 것 같습니다. 
 
 결론 : 굳
