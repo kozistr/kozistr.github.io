@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-03-16
+update: 2021-05-20
 tags:
   - About
 keywords:
@@ -27,7 +27,6 @@ CV : [[PDF] (as of Mar. 2021)](http://kozistr.tech/cv.pdf)
 ## Interests
 
 - Lots of challenges like **Kaggle**
-- (light-weighted) Single Image Super Resolution (SISR)
 - End to End Speaker Diarization (E2E SD)
 
 Previously, I'm also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
@@ -40,6 +39,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
 
+  > - [Shopee - Price Match Guarantee](https://www.kaggle.com/c/shopee-product-matching) - **solo, top 7% (166 / 2426), Private 0.725** (2021.)
   > - [Cornell Birdcall Identification](https://www.kaggle.com/c/birdsong-recognition) - **team, top 2% (24 / 1395), Private 0.631** (2020.)
   > - [ALASKA2 Image Steganalysis](https://www.kaggle.com/c/alaska2-image-steganalysis) - **solo, top 9% (93 / 1095), Private 0.917** (2020.)
   > - [Tweet Sentiment Extraction](https://www.kaggle.com/c/tweet-sentiment-extraction) - **solo, top 4% (84 / 2227), Private 0.71796** (2020.)
