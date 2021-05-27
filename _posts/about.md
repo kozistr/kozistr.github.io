@@ -9,8 +9,6 @@ keywords:
 
 ## Profile
 
-**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
-
 Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
 
 CV : [[PDF] (as of May. 2021)](http://kozistr.tech/cv.pdf)
@@ -170,6 +168,10 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 - Wrote about audio classifier with deep learning based on the kaggle challenge where we participated
 
 ---
+
+## Educations
+
+**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
 ## Personal Projects
 
