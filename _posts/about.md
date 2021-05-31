@@ -180,8 +180,13 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 ### Computer Languages
 
-> **Python** <br/> > **C/C++** <br/>
-> Assembly (x86, x86-64, arm, ...) <br/> > _experienced with more than 10 languages_
+> **Python**
+> 
+> C/C++
+> 
+> Assembly (x86, x86-64, arm, ...)
+> 
+> _experienced with lots of languages_
 
 ### Machine Learning
 
