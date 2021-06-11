@@ -152,7 +152,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 **Conferences/Workshops**
 
-[1] kozistr_team, [_NAVER NLP Challenge 2018 SRL Task_](https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf)
+[1] kozistr_team, <a href="https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf">_NAVER NLP Challenge 2018 SRL Task_</a>
 
 - SRL Task, challenging w/o any domain knowledge. Presented about trails & errors during the competition
 
