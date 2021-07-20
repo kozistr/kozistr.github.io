@@ -10,9 +10,9 @@ module.exports = {
   profileImageFileName: 'profile.webp',
 
   /** Home > Bio information*/
-  comment: 'Machine Learning Researcher @Watcha',
+  comment: 'Machine Learning Researcher',
   name: 'Hyeongchan Kim',
-  company: 'Watcha',
+  company: '',
   location: 'Korea',
   email: 'kozistr@gmail.com',
   website: 'http://kozistr.tech',
