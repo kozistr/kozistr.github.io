@@ -25,7 +25,10 @@ CV : [[PDF] (as of May. 2021)](http://kozistr.tech/cv.pdf)
 ## Interests
 
 - Lots of challenges like **Kaggle**
-- End to End Speaker Diarization (E2E SD)
+- Audio/Speech Domains
+  - End to End Speaker Diarization (E2E SD)
+  - Text To Speech (TTS)
+  - Speaker Verifications
 
 Previously, I'm also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
 
