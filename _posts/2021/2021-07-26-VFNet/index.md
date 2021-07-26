@@ -21,8 +21,9 @@ OD 쪽을 오랜만에 공부해 보니 그동안 공부 안 했던 스택이 �
 
 ## Related Work
 
-논문에서 제시하는 novelty들에 직/간접적으로 영향을 준 논문들.
+논문에서 제시하는 novelty들에 직/간접적으로 영향을 주거나 관련있는 논문들.
 
+* Deformable Convolution : [arXiv](https://arxiv.org/abs/1703.06211)
 * FCOS : [arXiv](https://arxiv.org/abs/1904.01355)
 * ATSS : [arXiv](https://arxiv.org/abs/1912.02424)
 * FocalLoss : [arXiv](https://arxiv.org/abs/1708.02002)
@@ -61,6 +62,9 @@ bg (background)일 때는, 모든 classes에 대해 target $q$ = 0
 논문에서 bg 일 때 ($q$ = 0)는 negative examples에 대해서**만** factor ($p^{\gamma}$)로 scale 하는 이유는, positive exmaples ($q$ > 0)에선 negative exmaples에 비해 rare 하게 등장하기 때문에 scale 하지 않았다고 합니다. 그리고 $q$ = 0일 때, $\alpha$를 scale 해 positive, negative losses 사이에 balance를 잡아줬다고 합니다.
 
 ### Star-Shaped Box Feature Representation
+
+`IACS`를 에측하기 위해서 Star-shaped Box Feature Representaion을 개발했다는데, 요약하면 deformable convolution
+로 9 개의 bbox points (= `Figure 1`에 노란 점들)를 표현하는 무언가다.
 
 ## Train Recipe
 
