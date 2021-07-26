@@ -43,6 +43,11 @@ OD task에서 높은 성능을 얻으려면 candidate detection를 rank 하는 �
 
 ### VertiFocal Loss
 
+`IACS`를 탐지하기 위해 `VertiFocal` loss를 설계했는데, base는 `Focal` loss 입니다.
+
+> $VFL(p, y) = -q(qlog(p) + (1 - q)log(1 - p)), q > 0$
+> $VFL(p, y) = -\alpha p^{\gamma}(1 - p)$
+
 ### Star-Shaped Box Feature Representation
 
 ## Train Recipe
