@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Jul 2021 07:31:45 GMT</lastBuildDate><item><title><![CDATA[VertiFocalNet - An IoU-aware Dense Object Detector]]></title><description><![CDATA[TL;DR 최근에 Object Detection (이하 OD) task 관련 kaggle challenge를 하다, 비슷한 대회 solutions들을 보다가 상위 랭크 solution에  (이하 )을 사용한 걸 발견해서, 요 논문을 더 자세하게 공부…]]></description><link>http://kozistr.tech/VFNet/</link><guid isPermaLink="false">http://kozistr.tech/VFNet/</guid><pubDate>Mon, 26 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Jul 2021 07:39:27 GMT</lastBuildDate><item><title><![CDATA[VertiFocalNet - An IoU-aware Dense Object Detector]]></title><description><![CDATA[TL;DR 최근에 Object Detection (이하 OD) task 관련 kaggle challenge를 하다, 비슷한 대회 solutions들을 보다가 상위 랭크 solution에  (이하 )을 사용한 걸 발견해서, 요 논문을 더 자세하게 공부…]]></description><link>http://kozistr.tech/VFNet/</link><guid isPermaLink="false">http://kozistr.tech/VFNet/</guid><pubDate>Mon, 26 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;최근에 Object Detection (이하 OD) task 관련 kaggle challenge를 하다, 비슷한 대회 solutions들을 보다가 상위 랭크 solution에 &lt;code class=&quot;language-text&quot;&gt;VertiFocalNet&lt;/code&gt; (이하 &lt;code class=&quot;language-text&quot;&gt;VFNet&lt;/code&gt;)을 사용한 걸 발견해서, 요 논문을 더 자세하게 공부해 보고 싶어서 정리해 봅니다.&lt;/p&gt;
 &lt;p&gt;OD 쪽을 오랜만에 공부해 보니 그동안 공부 안 했던 스택이 쌓였는지, 볼 것도 많지만 대회에도 써 보면서 재밌게 공부했습니다.&lt;/p&gt;
 &lt;ul&gt;
@@ -149,7 +149,7 @@ bg (background)일 때는, 모든 classes에 대해 target &lt;span class=&quot;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#performance&quot; aria-label=&quot;performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
-&lt;h2 id=&quot;coco&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#coco&quot; aria-label=&quot;coco permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;COCO&lt;/h2&gt;
+&lt;h3 id=&quot;coco&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#coco&quot; aria-label=&quot;coco permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;COCO&lt;/h3&gt;
 &lt;p&gt;MS COCO에서 AP metric 기준 SotA 달성했다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -175,6 +175,38 @@ bg (background)일 때는, 모든 classes에 대해 target &lt;span class=&quot;
 /static/a1b9d13879f33592f402f9d7ea27ec2f/e4a3f/performance.png 295w,
 /static/a1b9d13879f33592f402f9d7ea27ec2f/a805e/performance.png 572w&quot;
         sizes=&quot;(max-width: 572px) 100vw, 572px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;vfl&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vfl&quot; aria-label=&quot;vfl permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VFL&lt;/h3&gt;
+&lt;p&gt;다른 dense od에 VFL를 적용해 봤을 때, 전반적으로 성능이 올라가는 점도 확인할 수 있었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b8d766558094d9d5b4c899e183fc6f84/aec65/vfl_performance.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 101.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC1ElEQVQ4y1WT2ZqiMBCFff/Hmr4cF1T2PUDYFGG0xV3nJ9jjN7kISVGn6tSpyuTxeJzP5+PxyL7/083n8+lslmXychmMrKZpdF3n4LmO5/mHw2Ghadvt9vV6TQDf7/fT6WToa8MwVqth91wv8Ae/2+1WVaVuGP3pJLPMcV1y6Gtd5vkAfql1OOzBOENsL4rioshNw9io8G27S9P0/nhUZZll2fP5dBxn2zQD+KlW02y1xQK8oRuu6yaJsG2rKAt4FXm+XC7brgMZhtHA0dCbEfxQi4vve8thrcIwjOOYEFJKKirLwnWc47FPhIiiCNrGD6k37d1uxw/TstIEj7AsawBFUYy0Lcu6quJjIciE5/f394d2XdcUiYzoZDt2LBKKT5IE11zKxWKxPxzSJAnC8HK5UBH+/9GmSdpySVdMyyb2h3ZRoFDfnwZwEPZ9T9y2bT+0obSYzwGIJPU9YIUHWPWj3TWAr7f7pq7R4na/s9PFN20+qDKdTjVtYdmWZRh0KwiCTEpIySydTn+rPqf0WWV2u657g5kEnMqynM1mtm2Tn8oJD2cqrKsKy7Hv4R9GQ6vw2f5Te0xOYMYrzTKipGlimOZD2Tul9uVypSNVVZNGxPF+v38LdlWryKWmaUjNPIVBEKkk2GWW/Pr62u8HtX0/wGiaZlVVH9o4sfu+v1qtAEMMSUba6MR1VNtxXMBUAYuP2iwoOLa9Wq+7tuUlbDabsSIml95wzvMcOkTk2rU/go0ZmDupprdTY7xrGp4bjLbbzVo3GClmAbZYoPZWOwpDapAy558QAuaER1gmBMHpNlNFw/NcRnGMEWc1/KIqqwknb3hGCf8t0woCnz7hh922mQ7HNC0i4sDMi1gsNc11PT8Y8BNen6eyEXV4jCKmmdC2LJvaeMNhEPJIwPueTyww9CJJ03qzmQgxDBMyskObzD6HaCBMxLGLyIHIZ7XGKzsC/wUQKEBrnfnChAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vfl_performance&quot;
+        title=&quot;vfl_performance&quot;
+        src=&quot;/static/b8d766558094d9d5b4c899e183fc6f84/fcda8/vfl_performance.png&quot;
+        srcset=&quot;/static/b8d766558094d9d5b4c899e183fc6f84/12f09/vfl_performance.png 148w,
+/static/b8d766558094d9d5b4c899e183fc6f84/e4a3f/vfl_performance.png 295w,
+/static/b8d766558094d9d5b4c899e183fc6f84/fcda8/vfl_performance.png 590w,
+/static/b8d766558094d9d5b4c899e183fc6f84/aec65/vfl_performance.png 687w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
