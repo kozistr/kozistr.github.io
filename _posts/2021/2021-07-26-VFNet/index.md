@@ -90,7 +90,7 @@ bbox refinement 과정도 있는데, 기존 dense od에선 비효율적이라 �
 
 ### Loss
 
-전체 로스는 다음과 같이 정의했습니다.
+전체 로스는 다음과 같이 정의했는데, VFL + initial, refined bbox 둘 다 loss를 구해서 최소화 하도록 합니다.
 
 ![loss](total_loss.png)
 
