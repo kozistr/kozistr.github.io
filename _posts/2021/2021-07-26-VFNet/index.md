@@ -96,11 +96,17 @@ bbox refinement 과정도 있는데, 기존 dense od에선 비효율적이라 �
 
 ## Performance
 
-## COCO
+### COCO
 
 MS COCO에서 AP metric 기준 SotA 달성했다.
 
 ![performance](performance.png)
+
+### VFL
+
+다른 dense od에 VFL를 적용해 봤을 때, 전반적으로 성능이 올라가는 점도 확인할 수 있었습니다.
+
+![vfl_performance](vfl_performance.png)
 
 ## Conclusion
 
