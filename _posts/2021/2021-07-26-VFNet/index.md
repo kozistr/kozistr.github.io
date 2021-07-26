@@ -39,14 +39,26 @@ OD task에서 높은 성능을 얻으려면 candidate detection를 rank 하는 �
 
 ## Architecture
 
+![vertifocal_loss](vertifocal_loss.png)
+
 ### IACS (IoU-Aware Classification Score)
+
+`IACS`는 classificaiton score vector 인데, 각 값들은 gt and predicted bbox 의 IoU 값이 됩니다. 위에 첨부한 `Figure 1` 과 같습니다.
 
 ### VertiFocal Loss
 
-`IACS`를 탐지하기 위해 `VertiFocal` loss를 설계했는데, base는 `Focal` loss 입니다.
+`IACS`를 탐지하기 위해 `VertiFocal Loss`를 설계했는데, idea는 `Focal Loss`에서 가져왔습니다. 이유는 IACS를 regress할 때 imbalance 문제를 해결하기 위해서라고 합니다.
 
 > $VFL(p, y) = -q(qlog(p) + (1 - q)log(1 - p)), q > 0$
-> $VFL(p, y) = -\alpha p^{\gamma}(1 - p)$
+>
+> $VFL(p, y) = -\alpha p^{\gamma}(1 - p), q = 0$
+
+$p$ = predicted IACS, $q$ = target score
+
+fg (foreground)일 때는, $q$ = gt 와 generated bbox 의 IoU
+bg (background)일 때는, 모든 classes에 대해 target $q$ = 0
+
+논문에서 bg 일 때 ($q$ = 0)는 negative examples에 대해서**만** factor ($p^{\gamma}$)로 scale 하는 이유는, positive exmaples ($q$ > 0)에선 negative exmaples에 비해 rare 하게 등장하기 때문에 scale 하지 않았다고 합니다. 그리고 $q$ = 0일 때, $\alpha$를 scale 해 positive, negative losses 사이에 balance를 잡아줬다고 합니다.
 
 ### Star-Shaped Box Feature Representation
 
