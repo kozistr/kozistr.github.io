@@ -66,6 +66,26 @@ bg (background)일 때는, 모든 classes에 대해 target $q$ = 0
 `IACS`를 에측하기 위해서 Star-shaped Box Feature Representaion을 개발했다는데, 요약하면 deformable convolution
 로 9 개의 bbox points (= `Figure 1`에 노란 점들)를 표현하는 무언가다.
 
+구체적인 과정은,
+
+1. initial bbox, 4 points (x1, y1, x2, y2)를 fixed kernel size의 3x3 convolution으로 찾는다.
+2. By `FCOS`, points들이 4d-vector로 encoded됨. ($l`$, $t`$, $r`$, $b`$).
+    * $l`$ : distance from sample location (x, y) to left side of the bbox.
+    * $t`$ : distance from sample location (x, y) to top side of the bbox.
+    * $r`$ : distance from sample location (x, y) to right side of the bbox.
+    * $b`$ : distance from sample location (x, y) to bottom side of the bbox.
+3. 요 것들로 9 points를 `Figure 1` 그림처럼 생성
+
+끝으로 추가적인 예측으로 요런 points들을 생성하지 않아 computation-efficient 라고 캅니다.
+
+### Bounding Box Refinement
+
+bbox refinement 과정도 있는데, 기존 dense od에선 비효율적이라 잘 쓰이지 않았지만, 위에 제안한 Star-shaped Box Feature Representation 덕분에 효율적으로 refine이 가능하다고 합니다.
+
+아래 이미지는 전체적인 architecture 입니다.
+
+![architecture](architecture.png)
+
 ## Train Recipe
 
 ## Performance
