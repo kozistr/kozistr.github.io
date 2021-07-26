@@ -88,8 +88,22 @@ bbox refinement 과정도 있는데, 기존 dense od에선 비효율적이라 �
 
 ## Train Recipe
 
+### Loss
+
+전체 로스는 다음과 같이 정의했습니다.
+
+![loss](total_loss.png)
+
 ## Performance
 
+## COCO
+
+MS COCO에서 AP metric 기준 SotA 달성했다.
+
+![performance](performance.png)
+
 ## Conclusion
+
+20년 기준 SotA AP를 달성했고, 제안한 VFL만 다른 구현체에 적용했을 때 promising 한 performance를 보여줘서 성능적 측면에도 좋아 보였다. 논문에서 제안한 novelty들 설계도 make sense하고 재밌게 봤다.
 
 결론 : 굳굳
