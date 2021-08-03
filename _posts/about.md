@@ -87,7 +87,7 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
       * Compared to the previous model, there’s no (statistically significant) changes.
       * However, it still seems to be better on the offline metrics & training stability. So, we chose to use it.
-  _ **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
+  - **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
       * **Viewing Days (mean)** : improved **1.012%**
       * **Viewing Minutes (median)** : improved **1.015%**
 - Developed a model to predict expected users' view-time of the contents.
