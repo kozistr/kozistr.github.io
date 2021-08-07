@@ -77,8 +77,67 @@ computational cost를 줄이기 위해 channel 부분도 variable 하게 만듭�
 
 * `consistency loss` = `MSE loss` + `LPIPS loss`
 
+#### Generator-conditioned Discriminator
+
+각각 다른 sub-generators의 channels과 resolutions을 한번에 학습해야 하는데, single discriminator를 사용하는건 성능에 영향을 줄 거라 생각해서 `generator-conditioned` discriminator를 만들었다고 합니다.
+
+여러 직관적인 방법이 있겠지만, 설계 및 성능상 영향을 줄수 있어서 `learning-based` 접근 방식으로 `conditioning`을 구현했다는데, 위에 이미지 Figure3(c)에 4차원 짜리 vector (one-hot encoding한) *g_arch* (for the ratios)을 concat해 준다고 합니다.
+
+#### Searching under different budgets
+
+한 줄 요약으로 `evolutionary search`로 적절한 budget내에서 configuration을 찾을 수 있다고 캅니다.
+
 ### Image Projection w/ Anycost Generators
 
+#### Consistency-aware image projection
+
+editing task를 진행하려면 먼저 image를 latent space로 projection해야 하는데, 2 가지 방식이 있을 수 있습니다.
+
+* Encoder-based projection
+  > $E^{*} = argmin_{E} L(G(E(x)), x)$
+  >
+  > $L = MSE + LPIPS$
+
+* Optimization-based projection
+  > $w^{*} = argmin_{w} L(G(w), x)$ with iterative gradient descent
+  >
+  > $L = MSE + LPIPS$
+
+하지만 랜덤하게 sampled된 latent code로 부터 이미지를 생성하면, predicted/optimized $E(x)$는 prior distribution을 follow하지 못할 수 있습니다.
+
+그래서, full generator에서도 동작해야하고 randomly sampled된 latent code에 대해서도 잘 동작할 수 있게 objective를 수정했다고 합니다.
+
+> $E^{*} = argmin_{E} [L(G(E(x)), x) + \alpha E_{k,c^{\lambda}}(G_{C}^{k}(E(x)), x)]$
+>
+> $w^{*} = argmin_{w} L(G(w), x) + \alpha E_{k,c^{\lambda}}(G_{C}^{k}(w), x)$
+>
+> $\alpha = 1$
+
+#### Image-editing with anycost generators
+
+latent code를 edit하기 위해서 간단하게 $\Delta w$를 $w$에 더해줍니다. 즉, 다음곽 같이 새로운 이미지를 생성합니다.
+
+> $G_{C}^{k}(w + \Delta w)$
+
+## Performance
+
+### single vs multi-resolution on FFHQ
+
+FFHQ dataset에서 FID-70k를 측정했는데, sampling-based multi-resolution으로 학습을 하니 single resolution method보다 좋은 FID를 얻었네요.
+
+![fid_score](fid_score.png)
+
+### Budgets
+
+다음은 성능대비 costs를 benchmark한 plot인데, 다른 methods들 보다 가성비가 좋다는 것도 보여줬습니다.
+
+![budgets](budgets.png)
+
+### StyleGANv2 vs AnycostGAN
+
+성능도 comparable하게 가져가고 있다는 점도 흥미롭네요
+
+![anycost_vs_styleganv2](anycost_vs_styleganv2.png)
 
 ## Conclusion
 
