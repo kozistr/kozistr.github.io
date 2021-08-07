@@ -32,12 +32,12 @@ Github에 들어가면 우측 상단에 `Explore repositories`에서 종종 재�
 아래와 같이 크게 `3개의 특징`으로 정리해 볼 수 있습니다.
 
 1. `stage-wise training` to stablize the process
-  * a generator가 여러 configurations에 대해 minmax optimization하는 건 pretty challenging한 일
+    * a generator가 여러 configurations에 대해 minmax optimization하는 건 pretty challenging한 일
 2. two types of `channel configurations`
-  * uniform channel reduction ratio
-  * flexible ratios
+    * uniform channel reduction ratio
+    * flexible ratios
 3. `consistency-aware` encoder & `iterative optimization` for image projection
-  * optimize reconstruction loss for the both generators
+    * optimize reconstruction loss for the both generators
 
 ## Architecture
 
