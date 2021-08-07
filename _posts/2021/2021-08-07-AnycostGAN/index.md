@@ -29,10 +29,10 @@ Github에 들어가면 우측 상단에 `Explore repositories`에서 종종 재�
 
 논문의 목표는 `run at diverse computational costs`라고 하며, 넓은 범위의 computational costs에 따른 계산(~= 이미지 생성)이 가능하다는 점 입니다. editing 같이 빠르게 수정해야할 니즈가 있는 건 low-cost(sub) generator를 사용해 preview를 보여주고, 최종 결과물을 render할 때엔 high-cost(full) generator를 사용할 수 있다고 합니다.
 
-아래와 같이 크게 3개의 특징으로 정리해 볼 수 있습니다.
+아래와 같이 크게 `3개의 특징`으로 정리해 볼 수 있습니다.
 
 1. `stage-wise training` to stablize the process
-  * a generator가 여러 configurations에 대해 minmax 하는 건 pretty challenging한 일
+  * a generator가 여러 configurations에 대해 minmax optimization하는 건 pretty challenging한 일
 2. two types of `channel configurations`
   * uniform channel reduction ratio
   * flexible ratios
@@ -43,13 +43,25 @@ Github에 들어가면 우측 상단에 `Explore repositories`에서 종종 재�
 
 ![architecture](architecture.png)
 
-위에는 AnycostGAN의 전반적인 flow
+위에는 AnycostGAN의 전반적인 flow.
+
+### Learning Anycost Generators
+
+아래는 다른 구현체들과 AyncostGAN architecture를 diff한 이미지
 
 ![architecture_diff](architecture_diff.png)
 
-위에는 다른 구현체들과 AyncostGAN architecture를 diff한 이미지
+이미 이전에 StackGAN, StyleGANv2처럼 diverse resolutions 이미지를 생성하는 연구가 있었지만, low-resolution과 output (high-resolution) 이미지가 자연스럽지 못하다는 문제를 듭니다.
 
-### stage-wise training
+그래서 `multi-scale objectives`를 추가해서, gradually 여러 해상도의 좋은 퀄 이미지를 얻을 수 있다고 합니다.
+
+multiple-resolutions으로 학습할 때, MSG-GAN에서 채택한 방식처럼 학습을 하면 (주로 large-scale datasets에서) fidelity degradation이 발생할 수 있다고 합니다 (single-resolution으로 하는 방법 보단).
+
+그래서 `sampling-based` objective를 제안했는데, 한 step에 하나의 resolution에 대한 imsage를 sample해서 사용한다고 합니다. 또한, `low-resolution` image를 생성할 땐 $G$ network의 중간 layer를 output으로 사용했다고 합니다.
+
+아래는 multi-scale objectives를 추가했을 때 해상도 별 이미지 퀄리티를 확인할 수 있는데, 확실히 각 resolution-level(?)별로 퀄리티가 훨씬 좋아지는 점이 있습니다. 또한, consistency term도 추가해 low/high resolution간 perceptual 도 훨씬 좋아진 걸 확인할 수 있네용
+
+![multi-scale_consistency](multi-scale_consistency.png)
 
 ### two types of channel configurations
 
@@ -58,4 +70,4 @@ Github에 들어가면 우측 상단에 `Explore repositories`에서 종종 재�
 
 ## Conclusion
 
-결론 : 굳굳
+결론 : 굳굳굳
