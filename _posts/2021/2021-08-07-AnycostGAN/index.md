@@ -139,6 +139,10 @@ FFHQ dataset에서 FID-70k를 측정했는데, sampling-based multi-resolution�
 
 ![anycost_vs_styleganv2](anycost_vs_styleganv2.png)
 
+### Generated samples
+
+![anycostgan_flexible](anycostgan_flexible.png)
+
 ## Conclusion
 
 결론 : 굳굳굳
