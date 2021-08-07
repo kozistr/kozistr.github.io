@@ -139,6 +139,12 @@ FFHQ dataset에서 FID-70k를 측정했는데, sampling-based multi-resolution�
 
 ![anycost_vs_styleganv2](anycost_vs_styleganv2.png)
 
+### Consistency-aware encoder benchmark
+
+consistency-aware term도 추가하면서, $G`$, $G$의 consistency도 metric상 꽤 좋게 나옵니다. 
+
+![consistency_aware_encoder_benchmark](consistency_aware_encoder_benchmark.png)
+
 ### Generated samples
 
 ![anycostgan_flexible](anycostgan_flexible.png)
