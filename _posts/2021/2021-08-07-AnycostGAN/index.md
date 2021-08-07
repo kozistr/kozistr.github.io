@@ -141,7 +141,7 @@ FFHQ dataset에서 FID-70k를 측정했는데, sampling-based multi-resolution�
 
 ### Consistency-aware encoder benchmark
 
-consistency-aware term도 추가하면서, $G`$, $G$의 consistency도 metric상 꽤 좋게 나옵니다. 
+consistency-aware term도 추가하면서, $G`$, $G$의 consistency도 metric상 꽤 좋게 나옵니다.
 
 ![consistency_aware_encoder_benchmark](consistency_aware_encoder_benchmark.png)
 
@@ -150,5 +150,7 @@ consistency-aware term도 추가하면서, $G`$, $G$의 consistency도 metric상
 ![anycostgan_flexible](anycostgan_flexible.png)
 
 ## Conclusion
+
+갠적으로 real-world에서 user가 사용할 수 있는 형태를 고려한 연구라 더 재미있게 읽었고, adaptive-channel을 사용하고 이걸 잘 훈련하는 idea도 멋지다 생각했어요. 또한, 다른 stabilization methods들도 make sense하고 흥미로운 논문이었습니다. 뭔가 Nvidia에서 나온 논문처럼 benchmark하고 samples이 rich 해서 더 좋았던 거 같아요.
 
 결론 : 굳굳굳
