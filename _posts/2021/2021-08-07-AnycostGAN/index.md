@@ -51,21 +51,33 @@ Github에 들어가면 우측 상단에 `Explore repositories`에서 종종 재�
 
 ![architecture_diff](architecture_diff.png)
 
+#### Multi-resolution training
+
 이미 이전에 StackGAN, StyleGANv2처럼 diverse resolutions 이미지를 생성하는 연구가 있었지만, low-resolution과 output (high-resolution) 이미지가 자연스럽지 못하다는 문제를 듭니다.
 
 그래서 `multi-scale objectives`를 추가해서, gradually 여러 해상도의 좋은 퀄 이미지를 얻을 수 있다고 합니다.
 
-multiple-resolutions으로 학습할 때, MSG-GAN에서 채택한 방식처럼 학습을 하면 (주로 large-scale datasets에서) fidelity degradation이 발생할 수 있다고 합니다 (single-resolution으로 하는 방법 보단).
+multiple-resolutions로 학습할 때, MSG-GAN에서 채택한 방식처럼 학습하면 (주로 large-scale datasets에서) fidelity degradation이 발생할 수 있다고 합니다 (single-resolution으로 하는 방법 보단).
 
 그래서 `sampling-based` objective를 제안했는데, 한 step에 하나의 resolution에 대한 imsage를 sample해서 사용한다고 합니다. 또한, `low-resolution` image를 생성할 땐 $G$ network의 중간 layer를 output으로 사용했다고 합니다.
 
-아래는 multi-scale objectives를 추가했을 때 해상도 별 이미지 퀄리티를 확인할 수 있는데, 확실히 각 resolution-level(?)별로 퀄리티가 훨씬 좋아지는 점이 있습니다. 또한, consistency term도 추가해 low/high resolution간 perceptual 도 훨씬 좋아진 걸 확인할 수 있네용
+아래는 multi-scale objectives를 추가했을 때 해상도 별 이미지 퀄리티를 확인할 수 있는데, 확실히 각 resolution-level(?)별로 퀄리티가 훨씬 좋아지는 점이 있습니다. 또한, consistency term도 추가해 low/high resolution 간 perceptual도 훨씬 좋아진 걸 확인할 수 있네용
 
 ![multi-scale_consistency](multi-scale_consistency.png)
 
-### two types of channel configurations
+#### Adaptive-channel training
 
-### consistency-aware encoder & iterative optimization
+computational cost를 줄이기 위해 channel 부분도 variable 하게 만듭니다. 각 layer 마다 다른 channel multipliers를 가지게 하는데, `uniform` or `flexible`한 전략을 소개합니다.
+
+각 training iteration에, channel multiplier을 sample하고, sample한 부분만 update한다고 합니다.
+
+마지막으론, 모델을 초기화할 떈 이전 stage에서 학습한 weight를 사용하고, magnitude of kernel에 따라 conv layer의 channel을 sort했다고 합니다.
+
+요 정도로 학습하면 어느 정도 잘 학습하지만, 논문에서 목표하는 정확한 preview (full image와 consistency가 있어야 함)를 생성하는데 문제가 있다는 점을 언급하며 `consistency loss` term을 추가합니다.
+
+* `consistency loss` = `MSE loss` + `LPIPS loss`
+
+### Image Projection w/ Anycost Generators
 
 
 ## Conclusion
