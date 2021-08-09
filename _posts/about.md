@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-08-03
+update: 2021-08-09
 tags:
   - About
 keywords:
@@ -85,8 +85,8 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Build *Future* module to understand better at the time of inference.
   - Apply augmentations to the various features, leads to performance gain & robustness.
   - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-      * Compared to the previous model, there’s no (statistically significant) changes.
-      * However, it still seems to be better on the offline metrics & training stability. So, we chose to use it.
+      * Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
+      * However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
   - **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
       * **Viewing Days (mean)** : improved **1.012%**
       * **Viewing Minutes (median)** : improved **1.015%**
@@ -95,7 +95,7 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Find out which features impact users' watch.
 - Developed a pipeline to recognize main actors from the poster and still-cut images.
   - Utilize **SOTA** face detector & recognizer.
-  - Optimized pre/post processing routines for low `latency`.
+  - Optimize pre/post processing routines for low `latency`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next. (named `FLAT`)
   - **In A/B (online)** test, `previous algorithms` vs `FLAT` (statistically significant `p-value < 0.05`)
       * **Paid Conversion** : improved **1.39%**
