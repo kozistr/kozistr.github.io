@@ -39,7 +39,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 ### Machine Learning
 
 - **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
-
+  > - [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection) - **solo, top 4% (49 / 1324), Private 0.612** (2021.)
   > - [Shopee - Price Match Guarantee](https://www.kaggle.com/c/shopee-product-matching) - **solo, top 7% (166 / 2426), Private 0.725** (2021.)
   > - [Cornell Birdcall Identification](https://www.kaggle.com/c/birdsong-recognition) - **team, top 2% (24 / 1395), Private 0.631** (2020.)
   > - [ALASKA2 Image Steganalysis](https://www.kaggle.com/c/alaska2-image-steganalysis) - **solo, top 9% (93 / 1095), Private 0.917** (2020.)
