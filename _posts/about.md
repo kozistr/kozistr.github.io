@@ -107,7 +107,7 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Optimize the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
 
-% `Viewing Days` : likewise `DAU` (Daily Active User), but days.
+% `Viewing Days` : how many days users active on an app each month.
 
 % `Viewing Minutes` : how many minutes user watched the contents.
 
