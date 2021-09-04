@@ -18,10 +18,10 @@
   "scripts": {
     "start": "gatsby develop",
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby clean && gatsby build && gh-pages -b master -d public",
+    "deploy": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages && gh-pages -b master -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,scss,tsx,ts}\""
   },
   "engines": {
@@ -34,6 +34,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@types/theme-ui": "^0.3.7",
+    "cross-env": "^7.0.3",
     "disqus-react": "^1.0.10",
     "gatsby": "^2.30.1",
     "gatsby-image": "^2.9.0",

@@ -359,7 +359,7 @@ const Post = (props: postProps) => {
 };
 
 export const pageQuery = graphql`
-  query($slug: String) {
+  query ($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt(truncate: true, format: PLAIN)
