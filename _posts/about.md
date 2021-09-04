@@ -108,6 +108,7 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
 
 % `Viewing Days` : likewise `DAU` (Daily Active User), but days.
+
 % `Viewing Minutes` : how many minutes user watched the contents.
 
 _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
