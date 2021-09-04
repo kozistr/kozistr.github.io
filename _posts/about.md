@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-08-09
+update: 2021-09-03
 tags:
   - About
 keywords:
@@ -106,6 +106,9 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
   - Optimize the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
+
+% `Viewing Days` : likewise `DAU` (Daily Active User), but days.
+% `Viewing Minutes` : how many minutes user watched the contents.
 
 _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
