@@ -1,9 +1,11 @@
 export default {
   initialColorModeName: 'light',
   colors: {
-    text: '#24292e',
-    background: '#fff',
     modes: {
+      light: {
+        text: '#24292e',
+        background: '#fff',
+      },
       dark: {
         text: '#e4e4e4',
         background: '#141414',
