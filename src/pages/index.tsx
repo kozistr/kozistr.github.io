@@ -5,10 +5,10 @@ import { graphql, Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
+import './styles/index.scss';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import Bio from '../components/Bio';
-import './styles/index.scss';
 import PostList from '../components/PostList';
 
 interface IndexPageProps {
