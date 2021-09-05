@@ -14,8 +14,9 @@ export default {
     modes: {
       dark: {
         text: '#fff',
-        background: '#212121',
+        background: '#222222',
         secondary: '#fff',
+        muted: '#f6f6f6',
       },
       tomato: {
         text: '#565656',
