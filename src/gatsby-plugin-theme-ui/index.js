@@ -9,11 +9,13 @@ export default {
     text: '#24292e',
     background: '#fff',
     primary: '#07c',
+    accent: '#333',
+    muted: '#a8a8a8',
     modes: {
       dark: {
-        text: '#e4e4e4',
-        background: '#141414',
-        primary: '#0cf',
+        text: '#fff',
+        background: '#212121',
+        secondary: '#fff',
       },
       tomato: {
         text: '#565656',
