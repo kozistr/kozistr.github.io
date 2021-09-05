@@ -93,11 +93,7 @@ const Header = (props: headerPropsType) => {
         <Link to="/">
           <div className="header-profile-image-wrap">
             <img
-              src={
-                config.profileImageFileName
-                  ? require(`../../images/${config.profileImageFileName}`)
-                  : 'https://source.unsplash.com/random/100x100'
-              }
+              src="../../profile.webp"
               alt="title profile picture"
               style={{
                 width: imageSize,
