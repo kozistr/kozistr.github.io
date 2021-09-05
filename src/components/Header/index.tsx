@@ -32,10 +32,10 @@ const Header = (props: headerPropsType) => {
     document.body.style.transition = `background-color ${ms}ms`;
     if (header) header.style.transition = transition;
 
-    if (colorMode === 'dark') {
-      setColorMode('default');
+    if (colorMode === 'deep') {
+      setColorMode('light');
     } else {
-      setColorMode('dark');
+      setColorMode('deep');
     }
 
     setTimeout(() => {
