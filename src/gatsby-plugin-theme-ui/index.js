@@ -8,11 +8,6 @@ export default {
         text: '#e4e4e4',
         background: '#141414',
       },
-      tomato: {
-        text: '#565656',
-        background: 'tomato',
-        primary: 'tomato',
-      },
       deep: {
         text: 'hsl(210, 50%, 96%)',
         background: 'hsl(230, 25%, 18%)',
