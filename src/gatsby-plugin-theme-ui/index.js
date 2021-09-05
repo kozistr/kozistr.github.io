@@ -1,5 +1,4 @@
 export default {
-  initialColorModeName: 'light',
   colors: {
     modes: {
       light: {
