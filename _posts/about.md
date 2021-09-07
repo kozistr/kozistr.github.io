@@ -11,7 +11,7 @@ keywords:
 
 Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
 
-CV : [[PDF] (as of Aug. 2021)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of Sep. 2021)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
