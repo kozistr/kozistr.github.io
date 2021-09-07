@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-09-03
+update: 2021-09-08
 tags:
   - About
 keywords:
@@ -117,7 +117,9 @@ _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 - Developed the card & bank account transaction category classification models, designed _light-weight purpose_ for the low latency. (now on service)
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
     - **\*Accuracy** : improved **about 25 ~ 30%p**
-- Developed the RESTful API server to serve deep learning model (utilized k8s and open source project)
+- Developed the RESTful API server to serve (general purpose) machine learning models.
+  - Deployed & managed with K8s, utilized open source project.
+  - Utilized inference-aware framework to reduce the latency.
   - zero failure rate (**0** 40x, 50x errors)
 - Developed the classification model for forecasting possibility of loan overdue.
 
@@ -158,13 +160,13 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 [1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
 
 - Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
-- Handling un-normalized text w/ various convolution kernel size and dropout
+- Handling un-normalized text with various convolution kernel size and spatial dropout
 
 **Conferences/Workshops**
 
 [1] kozistr_team, <a href="https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf">_NAVER NLP Challenge 2018 SRL Task_</a>
 
-- SRL Task, challenging w/o any domain knowledge. Presented about trails & errors during the competition
+- SRL Task, challenging w/o any domain knowledge. Presented about trials & errors during the competition
 
 **Journals**
 

@@ -33,7 +33,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "@theme-ui/preset-funk": "^0.11.1",
     "@types/theme-ui": "^0.3.7",
     "cross-env": "^7.0.3",
     "disqus-react": "^1.1.2",
