@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-09-08
+update: 2021-09-11
 tags:
   - About
 keywords:
@@ -88,8 +88,8 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
       * Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
       * However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
   - **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-      * **Viewing Days (mean)** : improved **1.012%**
-      * **Viewing Minutes (median)** : improved **1.015%**
+      * **\*Viewing Days (mean)** : improved **1.012%**
+      * **\*Viewing Minutes (median)** : improved **1.015%**
 - Developed a model to predict expected users' view-time of the contents.
   - Predict how many people going to watch, how much time people going to watch the content before the content is supplied.
   - Find out which features impact users' watch.
@@ -99,17 +99,17 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
 - Developed a novel sequential recommendation architecture to recommend what content to watch next. (named `FLAT`)
   - **In A/B (online)** test, `previous algorithms` vs `FLAT` (statistically significant `p-value < 0.05`)
       * **Paid Conversion** : improved **1.39%**
-      * **Viewing Days** : improved **0.25%**
-      * **Viewing Minutes (median)** : improved **4.10%**
+      * **\*Viewing Days (mean)** : improved **0.25%**
+      * **\*Viewing Minutes (median)** : improved **4.10%**
       * **Click Ratio** : improved **4.30%**
       * **Play Ratio** : improved **2.32%**
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
   - Optimize the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
 
-% `Viewing Days` : how many days users active on an app each month.
+% `*Viewing Days` : how many days users active on an app each month.
 
-% `Viewing Minutes` : how many minutes user watched the contents.
+% `*Viewing Minutes` : how many minutes user watched the contents.
 
 _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
@@ -123,7 +123,7 @@ _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
   - zero failure rate (**0** 40x, 50x errors)
 - Developed the classification model for forecasting possibility of loan overdue.
 
-% \*Accuracy : how many people don't update/change their transactions' category.
+% `*Accuracy` : how many people don't update/change their transactions' category.
 
 _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
