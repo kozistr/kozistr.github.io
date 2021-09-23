@@ -247,8 +247,10 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 **Optimizer**
 
-- **AdaBound** :: Optimizer that trains as fast as Adam and as good as SGD
+- **pytorch-optimizer** :: Bunch of optimizer implementations in PyTorch
+  > - **pytorch_optimizer** :: Bunch of optimizer implementations in PyTorch with clean-code, strict types. Also, including useful optimization ideas. Most of the implementations are based on the original paper, but I added some tweaks. :: [code](https://github.com/kozistr/pytorch_optimizer)
 
+- **AdaBound** :: Optimizer that trains as fast as Adam and as good as SGD
   > - **AdaBound-tensorflow** :: AdaBound Optimizer implementation in tensorflow :: [code](https://github.com/kozistr/AdaBound-tensorflow)
 
 - **RAdam** :: On The Variance Of The Adaptive Learning Rate And Beyond in tensorflow
