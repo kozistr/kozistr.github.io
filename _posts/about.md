@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-09-25
+update: 2021-10-04
 tags:
   - About
 keywords:
@@ -76,20 +76,21 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ## Work Experience
 
-**Company**
+### Company
 
 _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
 
 - Working as a full time.
+- Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
   - Build *Future* module to understand better at the time of inference.
   - Apply augmentations to the various features, leads to performance gain & robustness.
   - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-      * Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
-      * However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
+    * Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
+    * However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
   - **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-      * **\*Viewing Days (mean)** : improved **1.012%**
-      * **\*Viewing Minutes (median)** : improved **1.015%**
+    * **\*Viewing Days (mean)** : improved **1.012%**
+    * **\*Viewing Minutes (median)** : improved **1.015%**
 - Developed a model to predict expected users' view-time of the contents.
   - Predict how many people going to watch, how much time people going to watch the content before the content is supplied.
   - Find out which features impact users' watch.
@@ -98,11 +99,11 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
   - Optimize pre/post processing routines for low `latency`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next. (named `FLAT`)
   - **In A/B (online)** test, `previous algorithms` vs `FLAT` (statistically significant `p-value < 0.05`)
-      * **Paid Conversion** : improved **1.39%**
-      * **\*Viewing Days (mean)** : improved **0.25%**
-      * **\*Viewing Minutes (median)** : improved **4.10%**
-      * **Click Ratio** : improved **4.30%**
-      * **Play Ratio** : improved **2.32%**
+    * **Paid Conversion** : improved **1.39%**
+    * **\*Viewing Days (mean)** : improved **0.25%**
+    * **\*Viewing Minutes (median)** : improved **4.10%**
+    * **Click Ratio** : improved **4.30%**
+    * **Play Ratio** : improved **2.32%**
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
   - Optimize the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
@@ -136,16 +137,12 @@ _Penetration Tester_, **ELCID**, **(2016.07 ~ 2016.08)**
 - Worked as a part-time job.
 - Penetrated some products related to network firewall and anti-virus product.
 
-<br>
-
-**Out Sourcing**
+### Out Sourcing
 
 - Developed Korean University Course Information Web Parser (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
 - Developed AWS CloudTrail logger analyzer / formatter. **(2019.09 ~ 2019.10)**
 
-<br>
-
-**Lab**
+### Lab
 
 HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
@@ -155,26 +152,26 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 ## Publications
 
-**Paper**
+### Paper
 
 [1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
 
 - Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
 - Handling un-normalized text with various convolution kernel size and spatial dropout
 
-**Conferences/Workshops**
+### Conferences/Workshops
 
 [1] kozistr_team, <a href="https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf">_NAVER NLP Challenge 2018 SRL Task_</a>
 
 - SRL Task, challenging w/o any domain knowledge. Presented about trials & errors during the competition
 
-**Journals**
+### Journals
 
 [1] zer0day, [_Windows Anti-Debugging Techniques_](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](/refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
 
 - Wrote about lots of anti-reversing / debugging (A to Z) techniques avail on window executable binary
 
-**Posts**
+### Posts
 
 [1] kozistr (as a part of team, `Dragonsong`) [towarddatascience](https://towardsdatascience.com/detecting-sounds-with-deep-learning-ed9a41909da0)
 
@@ -200,9 +197,9 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 > 
 > _experienced with lots of languages_
 
-### Machine Learning
+### Machine/Deep Learning
 
-**Generative Models**
+#### Generative Models
 
 - **GANs-tensorflow** :: Lots of GAN codes :) :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
   > - **ACGAN-tensorflow** :: Auxiliary Classifier GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/ACGAN)
@@ -214,38 +211,34 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
   > - **WGAN-GP-tensorflow** :: Wasserstein GAN w/ gradient penalty in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
   > - ... lots of GANs (over 20) :)
 
-**Super Resolution**
+#### Super Resolution
 
 - **Single Image Super Resolution** :: Single Image Super Resolution (SISR)
   > - **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
   > - **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [code](https://github.com/kozistr/ESRGAN-tensorflow)
   > - **NatSR-pytorch** :: NatSR implementation in pytorch :: [code](https://github.com/kozistr/NatSR-pytorch)
 
-**I2I Translation**
+#### I2I Translation
 
 - **Improved Content Disentanglement** :: tuned version of 'Content Disentanglement' in pytorch :: [code](https://github.com/kozistr/improved-ContentDisentanglement)
 
-**Style Transfer**
+#### Style Transfer
 
 - **Image-Style-Transfer** :: Image Neural Style Transfer
   > - **style-transfer-tensorflow** :: Image Style-Transfer in tensorflow :: [code](https://github.com/kozistr/style-transfer)
 
-**Text Classification/Generation**
+#### Text Classification/Generation
 
 > - **movie-rate-prediction** :: Korean sentences classification in tensorflow :: [code](https://github.com/kozistr/naver-movie-rate-prediction)
 > - **KoSpacing-tensorflow** :: Automatic Korean sentences spacing in tensorflow :: [~~code~~](https://github.com/kozistr/KoSpacing-tensorflow)
 > - **text-tagging** :: Automatic Korean articles categories classification in tensorflow :: [code](https://github.com/sales-tagging/text-tagging-ml)
 
-**Speech Synthesis**
+#### Speech Synthesis
 
 - **Tacotron-tensorflow** :: Text To Sound (TTS)
   > - **tacotron-tensorflow** :: lots of TTS models in tensorflow :: [~~code~~](https://github.com/kozistr/tacotron-tensorflow)
 
-**Speech Recognition** :: Speech Recognition
-
-> - [private] :: noisy acoustic speech recognition system in tensorflow :: [~~code~~]()
-
-**Optimizer**
+#### Optimizer
 
 - **pytorch-optimizer** :: Bunch of optimizer implementations in PyTorch
   > - **pytorch_optimizer** :: Bunch of optimizer implementations in PyTorch with clean-code, strict types. Also, including useful optimization ideas. Most of the implementations are based on the original paper, but I added some tweaks. :: [code](https://github.com/kozistr/pytorch_optimizer)
@@ -256,7 +249,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 - **RAdam** :: On The Variance Of The Adaptive Learning Rate And Beyond in tensorflow
   > - **RAdam-tensorflow** :: RAdam Optimizer implementation in tensorflow :: [code](https://github.com/kozistr/RAdam-tensorflow)
 
-**R.L**
+#### R.L
 
 - **Rosseta Stone** :: Hearthstone simulator using C++ with some reinforcement learning :: [code](https://github.com/utilForever/RosettaStone)
 
@@ -273,7 +266,7 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 
 ### Security, Hacking
 
-**CTFs, Conferences**
+#### CTFs, Conferences
 
 - [POC](http://powerofcommunity.net/) 2016 Conference Staff
 - [HackingCamp](http://hackingcamp.org/) 15 CTF Staff, Challenge Maker
@@ -285,7 +278,7 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 - [HackingCamp](http://hackingcamp.org/) 17 CTF Staff, Challenge Maker
 - [HackingCamp](http://hackingcamp.org/) 18 CTF Staff, Challenge Maker
 
-**Teams**
+#### Teams
 
 Hacking Team, [**Fl4y**](http://f1ay.com/). **Since 2017.07 ~**
 
@@ -295,16 +288,16 @@ Hacking Team, [**Demon**](https://demonteam.org/) by [_POC_](http://powerofcommu
 
 ### Presentations
 
-**2018**
+#### 2018
 
 [2] Artificial Intelligence ZeroToAll, Apr 2018.
 
 [1] Machine Learning ZeroToAll, Mar 2018.
 
-**2015**
+#### 2015
 
 [1] Polymorphic Virus VS AV Detection, Oct 2015.
 
-**2014**
+#### 2014
 
 [1] Network Sniffing & Detection, Oct, 2014.
