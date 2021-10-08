@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-10-04
+update: 2021-10-08
 tags:
   - About
 keywords:
@@ -81,6 +81,10 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
 
 - Working as a full time.
+- Developed a new sequential recommendation architecture. (named `Trans4Rec`)
+  - Newly proposed transformer architecture to improve the performance in a genernal manner.
+  - Apply proper post-processing logic into the model.
+  - In A/B (online) test (soon)
 - Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
   - Build *Future* module to understand better at the time of inference.
