@@ -10,6 +10,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import Bio from '../components/Bio';
 import PostList from '../components/PostList';
+import config from '../../config';
 
 interface IndexPageProps {
   path: string;
@@ -23,6 +24,7 @@ const IndexPage = (props: IndexPageProps) => {
 
   return (
     <Layout>
+      <link rel="icon" href={config.favicon ? require(`../images/${config.favicon}`).default : ''} />
       <SEO title={title} />
       <div className="index-wrap">
         <Bio />

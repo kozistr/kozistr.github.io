@@ -8,6 +8,7 @@ module.exports = {
 
   /** Header */
   profileImageFileName: 'profile.webp',
+  favicon: 'favicon.ico',
 
   /** Home > Bio information*/
   comment: 'Machine Learning Researcher',
