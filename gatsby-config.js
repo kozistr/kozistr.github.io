@@ -111,7 +111,7 @@ const gatsbyConfig = {
         theme_color_in_head: false,
         lang: language,
         display: `standalone`,
-        icon: 'src/images/favicon.ico',
+        icon: 'src/images/favicon.png',
         legacy: false,
         include_favicon: false,
         crossOrigin: `use-credentials`,
