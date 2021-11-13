@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-11-04
+update: 2021-11-13
 tags:
   - About
 keywords:
@@ -79,7 +79,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Company
 
-_Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ Present)**
+_Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.xx)**
 
 - Working as a full time.
 - Developed a new sequential recommendation architecture. (named `Trans4Rec`)
