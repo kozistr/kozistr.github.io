@@ -125,7 +125,6 @@ const gatsbyConfig = {
           },
         ],
         legacy: false,
-        include_favicon: false,
         cache_busting_mode: 'query',
         crossOrigin: `use-credentials`,
       },
