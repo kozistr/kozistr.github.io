@@ -81,11 +81,11 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Company
 
-_Data Scientist_ **Toss Core**, **(2021.12.06 ~ present)**
+#### _Data Scientist_ **Toss Core**, **(2021.12.06 ~ present)**
 
 - Working as a full time.
 
-_Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
+#### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
 - Working as a full time.
 - Developed a new sequential recommendation architecture. (named `Trans4Rec`)
@@ -123,7 +123,7 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
 % `*Viewing Minutes` : how many minutes user watched the contents.
 
-_Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
+#### _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
 - Worked as a full time.
 - Developed the card & bank account transaction category classification models, designed _light-weight purpose_ for the low latency. (now on service)
@@ -137,13 +137,13 @@ _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
 % `*Accuracy` : how many people don't update/change their transactions' category.
 
-_Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
+#### _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
 - Worked as an intern.
 - Developed speaker verification, diarization models & logic for recognizing the arbitrary speakers recorded from the noisy (real-world) environment.
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
 
-_Penetration Tester_, **ELCID**, **(2016.07 ~ 2016.08)**
+#### _Penetration Tester_, **ELCID**, **(2016.07 ~ 2016.08)**
 
 - Worked as a part-time job.
 - Penetrated some products related to network firewall and anti-virus product.

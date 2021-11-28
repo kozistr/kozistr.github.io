@@ -2,7 +2,7 @@
   "name": "borderless",
   "private": true,
   "description": "Gatsby Blog, 'Borderless' Theme By Junhobaik",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "author": "JunhoBaik",
   "keywords": [
     "gatsby"
@@ -16,7 +16,6 @@
     "url": "https://github.com/kozistr/kozistr.github.io/issues"
   },
   "scripts": {
-    "start": "gatsby develop",
     "develop": "gatsby develop",
     "build": "cross-env GATSBY_CPU_COUNT=8 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=16 GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
@@ -25,7 +24,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,scss,tsx,ts}\""
   },
   "engines": {
-    "node": "^10.0.0"
+    "node": "^14.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
