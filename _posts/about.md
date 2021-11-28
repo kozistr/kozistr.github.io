@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-11-13
+update: 2021-11-28
 tags:
   - About
 keywords:
@@ -26,8 +26,7 @@ CV : [[PDF] (as of Nov. 2021)](http://kozistr.tech/cv.pdf)
 
 - Lots of challenges like **Kaggle**
 - Audio/Speech Domains
-  - End to End Speaker Diarization (E2E SD)
-  - Text To Speech (TTS)
+  - End to End Speaker Diarization (E2ESD)
   - Speaker Verifications
 
 Previously, I'm also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
@@ -39,6 +38,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 ### Machine Learning
 
 - **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
+
   > - [Google Brain - Ventilator Pressure Prediction](https://www.kaggle.com/c/ventilator-pressure-prediction) - **team, top 1% (20 / 2605), Private 0.1171** (2021.)
   > - [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection) - **solo, top 4% (47 / 1305), Private 0.612** (2021.)
   > - [Shopee - Price Match Guarantee](https://www.kaggle.com/c/shopee-product-matching) - **solo, top 7% (166 / 2426), Private 0.725** (2021.)
@@ -62,6 +62,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
   > - [Final](https://github.com/naver/ai-hackathon-2018) - _Kin_ **4th place**, _Movie Review_ **13th place** :: [_summary_paper_](https://github.com/kozistr/naver-ai-hackathon-2018)
 
 - **TF-KR Challenge** :: Facebook TF-KR MNIST Challenge
+
   > - [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **Top 9, 3rd price, ACC 0.9964**
 
 ### Hacking
@@ -71,6 +72,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 - **Harekaze CTF 2017** :: **3rd place** (SeoulWesterns)
 
 - **WhiteHat League 1 (2017)** :: **2nd place** (Demon)
+
   > - Awarded by 한국정보기술연구원 Received an award of **$3,000**
 
 ---
@@ -79,23 +81,27 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Company
 
-_Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.xx)**
+_Data Scientist_ **Toss Core**, **(2021.12.06 ~ present)**
+
+- Working as a full time.
+
+_Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
 - Working as a full time.
 - Developed a new sequential recommendation architecture. (named `Trans4Rec`)
   - Newly proposed transformer architecture to improve the performance in a genernal manner.
   - Apply proper post-processing logic into the model.
-  - In A/B (online) test (soon)
+  - In A/B (online) test (on-going)
 - Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
   - Build *Future* module to understand better at the time of inference.
   - Apply augmentations to the various features, leads to performance gain & robustness.
   - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-    * Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
-    * However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
+    - Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
+    - However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
   - **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-    * **\*Viewing Days (mean)** : improved **1.012%**
-    * **\*Viewing Minutes (median)** : improved **1.015%**
+    - **\*Viewing Days (mean)** : improved **1.012%**
+    - **\*Viewing Minutes (median)** : improved **1.015%**
 - Developed a model to predict expected users' view-time of the contents.
   - Predict how many people going to watch, how much time people going to watch the content before the content is supplied.
   - Find out which features impact users' watch.
@@ -104,11 +110,11 @@ _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.xx)**
   - Optimize pre/post processing routines for low `latency`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next. (named `FLAT`)
   - **In A/B (online)** test, `previous algorithms` vs `FLAT` (statistically significant `p-value < 0.05`)
-    * **Paid Conversion** : improved **1.39%**
-    * **\*Viewing Days (mean)** : improved **0.25%**
-    * **\*Viewing Minutes (median)** : improved **4.10%**
-    * **Click Ratio** : improved **4.30%**
-    * **Play Ratio** : improved **2.32%**
+    - **Paid Conversion** : improved **1.39%**
+    - **\*Viewing Days (mean)** : improved **0.25%**
+    - **\*Viewing Minutes (median)** : improved **4.10%**
+    - **Click Ratio** : improved **4.30%**
+    - **Play Ratio** : improved **2.32%**
 - Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
   - Optimize the codes for fast `inference time` & `memory-efficiency` on _cpu_.
   - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
@@ -195,11 +201,11 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 ### Computer Languages
 
 > **Python**
-> 
+>
 > C/C++
-> 
+>
 > Assembly (x86, x86-64, arm, ...)
-> 
+>
 > _experienced with lots of languages_
 
 ### Machine/Deep Learning
@@ -207,6 +213,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 #### Generative Models
 
 - **GANs-tensorflow** :: Lots of GAN codes :) :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
+
   > - **ACGAN-tensorflow** :: Auxiliary Classifier GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/ACGAN)
   > - **StarGAN-tensorflow** :: Unified GAN for multi-domain :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/StarGAN)
   > - **LAPGAN-tensorflow** :: Laplacian Pyramid GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/LAPGAN)
@@ -219,6 +226,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 #### Super Resolution
 
 - **Single Image Super Resolution** :: Single Image Super Resolution (SISR)
+
   > - **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
   > - **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [code](https://github.com/kozistr/ESRGAN-tensorflow)
   > - **NatSR-pytorch** :: NatSR implementation in pytorch :: [code](https://github.com/kozistr/NatSR-pytorch)
@@ -230,6 +238,7 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 #### Style Transfer
 
 - **Image-Style-Transfer** :: Image Neural Style Transfer
+
   > - **style-transfer-tensorflow** :: Image Style-Transfer in tensorflow :: [code](https://github.com/kozistr/style-transfer)
 
 #### Text Classification/Generation
@@ -241,17 +250,21 @@ HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 #### Speech Synthesis
 
 - **Tacotron-tensorflow** :: Text To Sound (TTS)
+
   > - **tacotron-tensorflow** :: lots of TTS models in tensorflow :: [~~code~~](https://github.com/kozistr/tacotron-tensorflow)
 
 #### Optimizer
 
 - **pytorch-optimizer** :: Bunch of optimizer implementations in PyTorch
+
   > - **pytorch_optimizer** :: Bunch of optimizer implementations in PyTorch with clean-code, strict types. Also, including useful optimization ideas. Most of the implementations are based on the original paper, but I added some tweaks. :: [code](https://github.com/kozistr/pytorch_optimizer)
 
 - **AdaBound** :: Optimizer that trains as fast as Adam and as good as SGD
+
   > - **AdaBound-tensorflow** :: AdaBound Optimizer implementation in tensorflow :: [code](https://github.com/kozistr/AdaBound-tensorflow)
 
 - **RAdam** :: On The Variance Of The Adaptive Learning Rate And Beyond in tensorflow
+
   > - **RAdam-tensorflow** :: RAdam Optimizer implementation in tensorflow :: [code](https://github.com/kozistr/RAdam-tensorflow)
 
 #### R.L
