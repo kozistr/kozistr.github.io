@@ -49,7 +49,7 @@ const PostList = memo((props: PostListProps) => {
     const { excerpt, fields, frontmatter, timeToRead } = node;
     const { slug } = fields;
     const { date, title, tags } = frontmatter;
-  
+
     let update = frontmatter.update;
     if (Number(update.split(',')[1]) === 1) update = null;
 
