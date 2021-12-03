@@ -46,11 +46,10 @@ const PostList = memo((props: PostListProps) => {
 
   const mapPost = posts.map((post: any, i: number) => {
     const { node } = post;
-    const { excerpt, fields, frontmatter } = node;
+    const { excerpt, fields, frontmatter, timeToRead } = node;
     const { slug } = fields;
     const { date, title, tags } = frontmatter;
-    const { timeToRead } = node;
-
+  
     let update = frontmatter.update;
     if (Number(update.split(',')[1]) === 1) update = null;
 
