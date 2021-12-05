@@ -10,7 +10,7 @@ module.exports = {
   profileImageFileName: 'profile.webp',
 
   /** Home > Bio information*/
-  comment: 'Data Scientist @ Toss',
+  comment: 'Data Scientist',
   name: 'Hyeongchan Kim',
   company: 'Toss',
   location: 'Korea',
