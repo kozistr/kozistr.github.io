@@ -2,11 +2,6 @@ const config = require('./config');
 const { title, description, author, googleAnalytics, siteUrl, language } = config;
 
 const gatsbyConfig = {
-  flags: {
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PARALLEL_SOURCING: true,
-  },
-
   siteMetadata: { title, description, author, siteUrl, language },
 
   plugins: [
