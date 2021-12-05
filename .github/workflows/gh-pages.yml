@@ -20,7 +20,7 @@ jobs:
       - name: Cache .cache Folder
         uses: actions/cache@v2
         with:
-          path: ~/.cache
+          path: .cache
           key: ${{ runner.os }}-cache-gatsby
           restore-keys: |
             ${{ runner.os }}-cache-gatsby
@@ -45,7 +45,7 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy
+      - name: Deploy gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
