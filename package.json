@@ -24,7 +24,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,scss,tsx,ts}\""
   },
   "engines": {
-    "node": "^14.0.0"
+    "node": "^16.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
