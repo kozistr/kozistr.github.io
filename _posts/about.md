@@ -81,7 +81,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Company
 
-#### _Data Scientist_ **Toss Core**, **(2021.12.06 ~ present)**
+#### _Data Scientist_, **Toss Core**, **(2021.12.06 ~ present)**
 
 - Working as a full time.
 
@@ -155,7 +155,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Lab
 
-HPC Lab, KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
+[HPC Lab](https://sites.google.com/view/hpclab/home), KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
 - Wrote a paper about improved TextCNN model for predicting a movie rate.
 
