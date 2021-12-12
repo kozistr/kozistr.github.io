@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-11-28
+update: 2021-12-12
 tags:
   - About
 keywords:
@@ -157,7 +157,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 [HPC Lab](https://sites.google.com/view/hpclab/home), KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
-- Wrote a paper about improved TextCNN model for predicting a movie rate.
+- Wrote a paper about improved TextCNN model to predict a movie rate.
 
 ---
 
@@ -169,6 +169,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
 - Handling un-normalized text with various convolution kernel size and spatial dropout
+- Selected as one of the `highlight papers` for the first half of 2020
 
 ### Conferences/Workshops
 
