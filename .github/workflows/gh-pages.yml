@@ -51,3 +51,6 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_branch: master
           publish_dir: ./public
+          user_name: 'kozistr'
+          user_email: 'kozistr@gmail.com'
+          full_commit_message: ${{ github.event.head_commit.message }}
