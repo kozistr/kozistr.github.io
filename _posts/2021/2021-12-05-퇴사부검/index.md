@@ -1,5 +1,5 @@
 ---
-title: 2021년 회고 with 퇴사 부검
+title: 2021년 퇴사 부검
 date: 2021-12-05
 update: 2021-12-11
 tags:
