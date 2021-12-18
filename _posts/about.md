@@ -91,7 +91,8 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 - Developed a new sequential recommendation architecture. (named `Trans4Rec`)
   - Newly proposed transformer architecture to improve the performance in a genernal manner.
   - Apply proper post-processing logic into the model.
-  - In A/B (online) test (on-going)
+  - In A/B (online) test, `FutureFLAT` vs `Trans4Rec` (statistically significant `p-value < 0.05`)
+    - (unknown)
 - Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
   - Build *Future* module to understand better at the time of inference.
