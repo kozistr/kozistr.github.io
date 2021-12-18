@@ -50,6 +50,7 @@ keywords:
 
 ## 계획...?
 
-* 취미 꼭 가지기
+* 좀 활동적인 취미 가지기
 * Kaggle Competition Master
-* 
+* 팀 문화 잘 만들어 나가기
+* 운동 꾸준히 열심히 하기
