@@ -26,6 +26,12 @@ keywords:
 
 쨋든 아쉽지만 올해는 달성하지 못 했으니 내년에도 다시 열심히 해 봐야 겠어요. 물론 `Compeition GrandMaster`가 되는 날 그 이후에도 열심히 할 거에요!
 
+## Github
+
+올해 github에서 open source 활동한 걸 보면 약 1.6k contributions을 했는데, PR merge를 squash merge 하거나 개인 계정으로 회사 team에 invited 하는 형태가 아니라서 잔디밭이 군데군데 빈 것이 조금 아쉽다. 지금까진 주로 ML/DL 논문 구현/재현을 했는데, 최근부턴 [`pytorch_optimizer`](https://github.com/kozistr/pytorch_optimizer)같이 실용적이고 잘 정돈된(?) 프로젝트들을 만들기 시작했습니다. 실질적으로 당장 내가 쓸 수 있는 pip package가 output으로 나오니까 뭔가 동기부여도 되고 좋은 것 같아서, 앞으론 다른 사용자들이 편하게 쓸 수 있는 형태로 작업해 보려고 합니다.
+
+![github](./github.png)
+
 ## 회사
 
 이직 했습니다. 몇 주전에 쓴 [퇴사부검](https://kozistr.tech/%ED%87%B4%EC%82%AC%EB%B6%80%EA%B2%80/) 글에 이직한 이유에 대해 적어봤지만, 요약하면 정말 제 분야에서 토론하고 가슴뛰는 일을 다시 해 보고 싶어서인데, `Kaggle` 이나 2년 전 `VoyagerX` 회사에서 경험을 잊지 못해선지 계속 **그런 환경**을 찾으려 돌아다니는 거 같아요. 하지만, 이상만을 바라는 것은 잘못된 거고 힘들다는 걸 알지만, 여러 팀하고 이야기하고 경험해 볼 수록 원하는 게 너무 이상적인가? 타협하고 버텨야 하는 건가? 란 생각도 들고 여러 생각이 들면서 힘들더라고요.
