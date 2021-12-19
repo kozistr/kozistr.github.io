@@ -17,22 +17,15 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Cache .cache Folder
+      - name: Cache Gatsby
         uses: actions/cache@v2
         with:
-          path: .cache
-          key: ${{ runner.os }}-cache-gatsby
+          path: |
+            .cache
+            public
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-cache-gatsby
-
-      - name: Cache public Folder
-        uses: actions/cache@v2
-        id: gatsby-public-folder
-        with:
-          path: public/
-          key: ${{ runner.os }}-public-gatsby
-          restore-keys: |
-            ${{ runner.os }}-public-gatsby
+            ${{ runner.os }}-gatsby-build-
 
       - name: Cache Dependencies
         uses: actions/cache@v2
