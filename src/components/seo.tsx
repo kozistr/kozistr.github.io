@@ -27,7 +27,7 @@ const SEO = (props: SEOPropsType) => {
           }
         }
       }
-    `
+    `,
   );
 
   const metaDescription = description ?? site.siteMetadata.description;

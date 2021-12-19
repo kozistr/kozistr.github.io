@@ -168,7 +168,7 @@ const Post = (props: postProps) => {
     // toc
     const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
     const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
-    const yPositions = hs.map((h) => h.offsetTop - minusValue);
+    const yPositions = hs.map(h => h.offsetTop - minusValue);
     setYList(yPositions);
 
     return () => removeScrollEvent();

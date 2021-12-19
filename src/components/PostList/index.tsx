@@ -24,7 +24,7 @@ const PostList = memo((props: PostListProps) => {
         });
       }
     }, 250),
-    []
+    [],
   );
 
   useEffect(() => {

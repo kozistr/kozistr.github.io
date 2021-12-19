@@ -42,7 +42,7 @@ const Layout = (props: LayoutPropsType) => {
 
   const setTop = useCallback(
     throttle(() => setIsTop(window.pageYOffset < window.innerHeight / 2), 250),
-    []
+    [],
   );
 
   useEffect(() => {

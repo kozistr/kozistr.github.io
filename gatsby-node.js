@@ -32,7 +32,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  const getSeries = (target) => {
+  const getSeries = target => {
     const splitedSlug = target.split('_');
     if (splitedSlug.length >= 3) return 0;
 
@@ -56,7 +56,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       const series = [];
 
       if (getSeries(slug)) {
-        filteredEdges = edges.filter((e) => {
+        filteredEdges = edges.filter(e => {
           const fSlug = e.node.fields.slug;
           const splitedFSlug = fSlug.split('_');
           if (splitedFSlug.length >= 3) return false;
@@ -90,7 +90,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         component: blogPostTemplate,
         context: { slug, series, lastmod: update.includes('0001') ? date : update },
       });
-    })
+    }),
   );
 };
 
@@ -101,7 +101,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` });
 
-    const rewriteSlug = (slug) => {
+    const rewriteSlug = slug => {
       // 폴더 경로에 따라 url에 표시되는 것을 폴더 경로를 제거하고 파일명으로만 url을 지정되도록 하기 위함
       if (slug.match(/\//g).length > 2) {
         let tempStr = slug.split('/');
@@ -117,7 +117,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       return slug;
     };
 
-    const rewriteNode = (node) => {
+    const rewriteNode = node => {
       if (node.frontmatter.title.includes(`"`)) {
         console.log('');
         console.warn(`
