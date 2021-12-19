@@ -30,11 +30,13 @@ keywords:
 
 ## Github
 
-올해 github에서 open source 활동한 걸 보면 약 1.6k contributions을 했는데, PR merge를 squash merge 하거나 개인 계정으로 회사 team에 invited 하는 형태가 아니라서 잔디밭이 군데군데 빈 것이 조금 아쉽다. 지금까진 주로 ML/DL 논문 구현/재현을 했는데, 최근부턴 [`pytorch_optimizer`](https://github.com/kozistr/pytorch_optimizer)같이 실용적이고 잘 정돈된(?) 프로젝트들을 만들기 시작했습니다. 실질적으로 당장 내가 쓸 수 있는 pip package가 output으로 나오니까 뭔가 동기부여도 되고 좋은 것 같아서, 앞으론 다른 사용자들이 편하게 쓸 수 있는 형태로 작업하려고 합니다.
+올해 github에서 open source 활동한 걸 보면 약 1.6k contributions을 했는데, PR merge를 squash merge 하거나 개인 계정으로 회사 team에 invited 하는 형태가 아니라서 잔디밭이 군데군데 빈 것이 조금 아쉽다.
 
 ![github](./github.png)
 
-희망 사항이긴 하지만 회사 차원에서 open source project를 해 보는 것도 제 목표에 있기 때문에, 한번 열심히 설득해 봐야 겠어요.
+지금까진 주로 ML/DL 논문 구현/재현을 했는데, 최근부턴 [`pytorch_optimizer`](https://github.com/kozistr/pytorch_optimizer)같이 실용적이고 잘 정돈된(?) 프로젝트들을 만들기 시작했습니다. 실질적으로 당장 내가 쓸 수 있는 pip package가 output으로 나오니까 뭔가 동기부여도 되고 좋은 것 같아서, 앞으론 다른 사용자들이 편하게 쓸 수 있는 형태로 작업하려고 합니다.
+
+또, 희망 사항이긴 하지만 회사 차원에서 open source project를 해 보는 것도 제 목표에 있기 때문에, 한번 열심히 설득해 봐야 겠어요.
 
 ## 회사
 
