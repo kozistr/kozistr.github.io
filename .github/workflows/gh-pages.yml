@@ -42,8 +42,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
-      - run: npm run build
+      - name: Install Dependencies
+        run: npm ci --prefer-offline --no-audit --production
+
+      - name: Build
+        run: npm run build
 
       - name: Deploy gh-pages
         uses: peaceiris/actions-gh-pages@v3
