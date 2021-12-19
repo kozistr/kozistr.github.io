@@ -6,7 +6,7 @@ tags:
   - Diary
 keywords:
   - Review
-  - postmortem-email
+  - postmortem
 ---
 
 ## TL;DR
