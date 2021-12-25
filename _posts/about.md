@@ -51,7 +51,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - **NAVER NLP Challenge** :: NAVER NLP Challenge 2018
 
-  > - [Final](https://github.com/naver/nlp-challenge) - _Semantic Role Labeling (SRL)_ **6th place** :: [Presentation]()
+  > - [Final](https://github.com/naver/nlp-challenge) - _Semantic Role Labeling (SRL)_ **6th place**
 
 - **A.I R&D Challenge** :: A.I R&D Challenge 2018
 
