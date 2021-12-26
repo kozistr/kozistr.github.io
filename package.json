@@ -21,7 +21,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "cross-env GATSBY_CPU_COUNT=8 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=16 GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages && ",
-    "format": "prettier --write \"**/*.{js,jsx,json,scss,tsx,ts}\""
+    "format": "prettier --write \"**/*.{js,jsx,json,scss,tsx,ts}\"",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public ."
   },
   "engines": {
     "node": "^16.0.0"
