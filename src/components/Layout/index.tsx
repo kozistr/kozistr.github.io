@@ -1,33 +1,33 @@
-import * as React from 'react';
-import { useState, useEffect, useMemo, useCallback } from 'react';
-import { Helmet } from 'react-helmet';
-import { useDispatch } from 'react-redux';
-import { useStaticQuery, graphql } from 'gatsby';
-import MobileDetect from 'mobile-detect';
-import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
-import { useColorMode } from 'theme-ui';
+import * as React from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
+import { Helmet } from 'react-helmet'
+import { useDispatch } from 'react-redux'
+import { useStaticQuery, graphql } from 'gatsby'
+import MobileDetect from 'mobile-detect'
+import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons'
+import { useColorMode } from 'theme-ui'
 
-import './layout.scss';
-import '../../utils/google-fonts.scss';
-import Header from '../Header';
-import { actionCreators } from '../../state/actions';
-import config from '../../../config';
-import { throttle } from 'lodash';
+import './layout.scss'
+import '../../utils/google-fonts.scss'
+import Header from '../Header'
+import { actionCreators } from '../../state/actions'
+import config from '../../../config'
+import { throttle } from 'lodash'
 
-FaConfig.autoAddCss = false;
+FaConfig.autoAddCss = false
 
 interface LayoutPropsType {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children } = props;
-  const [isTop, setIsTop] = useState(true);
-  const dispatch = useDispatch();
-  const [colorMode] = useColorMode();
-  const isDark = useMemo(() => colorMode === 'dark', [colorMode]);
+  const { children } = props
+  const [isTop, setIsTop] = useState(true)
+  const dispatch = useDispatch()
+  const [colorMode] = useColorMode()
+  const isDark = useMemo(() => colorMode === 'dark', [colorMode])
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -38,22 +38,22 @@ const Layout = (props: LayoutPropsType) => {
         }
       }
     }
-  `);
+  `)
 
   const setTop = useCallback(
     throttle(() => setIsTop(window.pageYOffset < window.innerHeight / 2), 250),
-    [],
-  );
+    []
+  )
 
   useEffect(() => {
-    const md = new MobileDetect(window.navigator.userAgent);
+    const md = new MobileDetect(window.navigator.userAgent)
     if (md.mobile()) {
-      dispatch(actionCreators.setIsMobile(true));
+      dispatch(actionCreators.setIsMobile(true))
     }
 
-    document.addEventListener('scroll', setTop);
-    return () => document.removeEventListener('scroll', setTop);
-  }, []);
+    document.addEventListener('scroll', setTop)
+    return () => document.removeEventListener('scroll', setTop)
+  }, [])
 
   return (
     <>
@@ -82,14 +82,14 @@ const Layout = (props: LayoutPropsType) => {
             pointerEvents: isTop ? 'none' : 'all',
           }}
           onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
         >
           <Fa icon={faAngleDoubleUp} />
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

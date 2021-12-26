@@ -1,25 +1,25 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as React from 'react';
-import { graphql, Link } from 'gatsby';
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import * as React from 'react'
+import { graphql, Link } from 'gatsby'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import './styles/index.scss';
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
-import Bio from '../components/Bio';
-import PostList from '../components/PostList';
+import './styles/index.scss'
+import Layout from '../components/Layout'
+import SEO from '../components/seo'
+import Bio from '../components/Bio'
+import PostList from '../components/PostList'
 
 interface IndexPageProps {
-  path: string;
-  data: any;
+  path: string
+  data: any
 }
 
 const IndexPage = (props: IndexPageProps) => {
-  const { data } = props;
-  const posts = data.allMarkdownRemark.edges;
-  const title = data.site.siteMetadata.title;
+  const { data } = props
+  const posts = data.allMarkdownRemark.edges
+  const title = data.site.siteMetadata.title
 
   return (
     <Layout>
@@ -41,8 +41,8 @@ const IndexPage = (props: IndexPageProps) => {
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query {
@@ -69,6 +69,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage

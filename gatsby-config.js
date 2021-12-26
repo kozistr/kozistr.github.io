@@ -1,5 +1,5 @@
-const config = require('./config');
-const { title, description, author, googleAnalytics, siteUrl, language } = config;
+const config = require('./config')
+const { title, description, author, googleAnalytics, siteUrl, language } = config
 
 const gatsbyConfig = {
   siteMetadata: { title, description, author, siteUrl, language },
@@ -164,8 +164,8 @@ const gatsbyConfig = {
               changefreq: `daily`,
               lastmod: edge.node.context.lastmod,
               priority: 0.7,
-            };
-          });
+            }
+          })
         },
       },
     },
@@ -195,8 +195,8 @@ const gatsbyConfig = {
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
-                });
-              });
+                })
+              })
             },
             query: `
               {
@@ -233,7 +233,7 @@ const gatsbyConfig = {
       },
     },
   ],
-};
+}
 
 if (process.env.NODE_ENV === 'development') {
   gatsbyConfig.plugins.push({
@@ -242,11 +242,11 @@ if (process.env.NODE_ENV === 'development') {
       path: `${__dirname}/_drafts`,
       name: 'markdown-pages',
     },
-  });
+  })
 }
 
 if (process.env.NODE_ENV === 'production') {
-  gatsbyConfig.plugins.push(`gatsby-plugin-preact`);
+  gatsbyConfig.plugins.push(`gatsby-plugin-preact`)
 }
 
-module.exports = gatsbyConfig;
+module.exports = gatsbyConfig
