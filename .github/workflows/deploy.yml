@@ -1,10 +1,9 @@
-name: github pages
+name: deploy
 
 on:
   push:
     branches:
       - develop
-  pull_request:
 
 jobs:
   deploy:
@@ -24,24 +23,25 @@ jobs:
             .cache
             public
           key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
-          restore-keys: |
-            ${{ runner.os }}-gatsby-build-
+          restore-keys: ${{ runner.os }}-gatsby-build-
 
       - name: Cache Dependencies
         uses: actions/cache@v2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          restore-keys: ${{ runner.os }}-node-
 
       - name: Install Dependencies
         run: npm ci --prefer-offline --no-audit --production
 
+      - name: Lint
+        run: npm run lint
+
       - name: Build
         run: npm run build
 
-      - name: Deploy gh-pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
