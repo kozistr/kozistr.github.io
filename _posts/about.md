@@ -174,7 +174,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Conferences/Workshops
 
-[1] kozistr_team, <a href="https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf">_NAVER NLP Challenge 2018 SRL Task_</a>
+[1] `kozistr_team`, [presentation](https://bit.ly/3eneg2y) _NAVER NLP Challenge 2018 SRL Task_</a>
 
 - SRL Task, challenging w/o any domain knowledge. Presented about trials & errors during the competition
 
