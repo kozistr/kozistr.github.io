@@ -14,6 +14,15 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Cache Gatsby
+        uses: actions/cache@v2
+        with:
+          path: |
+            .cache
+            public
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-gatsby-build-
+
       - name: Cache Dependencies
         uses: actions/cache@v2
         with:
@@ -26,3 +35,6 @@ jobs:
 
       - name: Lint
         run: npm run lint
+
+      - name: Build
+        run: npm run build
