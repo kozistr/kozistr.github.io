@@ -1,91 +1,91 @@
-import * as React from 'react';
-import { useEffect, useState, useCallback } from 'react';
-import { Link } from 'gatsby';
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { useSelector, useDispatch } from 'react-redux';
-import { useColorMode } from 'theme-ui';
+import * as React from 'react'
+import { useEffect, useState, useCallback } from 'react'
+import { Link } from 'gatsby'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { useSelector, useDispatch } from 'react-redux'
+import { useColorMode } from 'theme-ui'
 
-import './header.scss';
-import { RootState } from '../../state/reducer';
-import { actionCreators } from '../../state/actions';
-import config from '../../../config';
+import './header.scss'
+import { RootState } from '../../state/reducer'
+import { actionCreators } from '../../state/actions'
+import config from '../../../config'
 
 interface headerPropsType {
-  siteTitle: string;
+  siteTitle: string
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle } = props;
-  const { isMobile, path, size } = useSelector((state: RootState) => state);
-  const [, setYPos] = useState(0);
-  const [isHide, setIsHide] = useState(false);
-  const dispatch = useDispatch();
-  const [colorMode, setColorMode] = useColorMode();
-  const imageSize = React.useMemo(() => size ?? '25px', [size]);
+  const { siteTitle } = props
+  const { isMobile, path, size } = useSelector((state: RootState) => state)
+  const [, setYPos] = useState(0)
+  const [isHide, setIsHide] = useState(false)
+  const dispatch = useDispatch()
+  const [colorMode, setColorMode] = useColorMode()
+  const imageSize = React.useMemo(() => size ?? '25px', [size])
 
   const toggleTheme = useCallback(() => {
-    const ms = 300;
-    const header: HTMLElement | null = document.getElementById('Header');
-    const transition = 'top 0.3s ease 0.2s, background-color ${ms}ms';
+    const ms = 300
+    const header: HTMLElement | null = document.getElementById('Header')
+    const transition = 'top 0.3s ease 0.2s, background-color ${ms}ms'
 
-    document.body.style.transition = `background-color ${ms}ms`;
-    if (header) header.style.transition = transition;
+    document.body.style.transition = `background-color ${ms}ms`
+    if (header) header.style.transition = transition
 
     if (colorMode === 'dark') {
-      setColorMode('light');
+      setColorMode('light')
     } else {
-      setColorMode('dark');
+      setColorMode('dark')
     }
 
     setTimeout(() => {
-      document.body.style.transition = 'none';
-      if (header) header.style.transition = transition;
-    }, ms + 100);
-  }, [colorMode]);
+      document.body.style.transition = 'none'
+      if (header) header.style.transition = transition
+    }, ms + 100)
+  }, [colorMode])
 
-  const setPath = useCallback((path: string, size?: string) => dispatch(actionCreators.setPath(path, size)), []);
+  const setPath = useCallback((path: string, size?: string) => dispatch(actionCreators.setPath(path, size)), [])
 
   useEffect(() => {
-    const bio: HTMLDivElement | null = document.querySelector('.bio');
+    const bio: HTMLDivElement | null = document.querySelector('.bio')
     if (bio) {
       if (isHide === true) {
-        bio.style.opacity = '0';
-        bio.style.pointerEvents = 'none';
+        bio.style.opacity = '0'
+        bio.style.pointerEvents = 'none'
       } else {
-        bio.style.opacity = '1';
-        bio.style.pointerEvents = 'all';
+        bio.style.opacity = '1'
+        bio.style.pointerEvents = 'all'
       }
     }
-  }, [isHide]);
+  }, [isHide])
 
   useEffect(() => {
-    const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
+    const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img')
 
-    const prevPath: string = path;
-    const currPath: string = location.pathname;
+    const prevPath: string = path
+    const currPath: string = location.pathname
 
     if (profile) {
-      if (currPath === prevPath) setPath(location.pathname, currPath !== '/' ? '25px' : '50px');
-      if (prevPath !== '/' && currPath === '/') setPath(location.pathname, '50px');
-      if (prevPath === '/' && currPath !== '/') setPath(location.pathname, '25px');
-      if (prevPath !== '/' && currPath !== '/') setPath(location.pathname);
+      if (currPath === prevPath) setPath(location.pathname, currPath !== '/' ? '25px' : '50px')
+      if (prevPath !== '/' && currPath === '/') setPath(location.pathname, '50px')
+      if (prevPath === '/' && currPath !== '/') setPath(location.pathname, '25px')
+      if (prevPath !== '/' && currPath !== '/') setPath(location.pathname)
     } else {
-      setPath(location.pathname);
+      setPath(location.pathname)
     }
 
     const setVisible = () => {
       setYPos(prevYPos => {
-        const currentYPos = window.pageYOffset;
+        const currentYPos = window.pageYOffset
 
-        if (currentYPos > 0) setIsHide(prevYPos < currentYPos);
+        if (currentYPos > 0) setIsHide(prevYPos < currentYPos)
 
-        return currentYPos;
-      });
-    };
-    document.addEventListener('scroll', setVisible);
-    return () => document.removeEventListener('scroll', setVisible);
-  }, []);
+        return currentYPos
+      })
+    }
+    document.addEventListener('scroll', setVisible)
+    return () => document.removeEventListener('scroll', setVisible)
+  }, [])
 
   return (
     <header id="Header" className={`${isHide ? 'hide' : 'show'} ${isMobile ? 'mobile' : ''}`}>
@@ -126,15 +126,15 @@ const Header = (props: headerPropsType) => {
             icon={colorMode === 'dark' ? faSun : faMoon}
             style={{ fontSize: colorMode === 'dark' ? '1.2rem' : '1.1rem' }}
             onMouseEnter={() => {
-              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
-              if (toggle) toggle.style.opacity = '0.5';
+              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description')
+              if (toggle) toggle.style.opacity = '0.5'
             }}
             onMouseLeave={() => {
-              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
-              if (toggle) toggle.style.opacity = '0';
+              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description')
+              if (toggle) toggle.style.opacity = '0'
             }}
             onClick={() => {
-              toggleTheme();
+              toggleTheme()
             }}
           />
         </div>
@@ -158,7 +158,7 @@ const Header = (props: headerPropsType) => {
         </ul>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

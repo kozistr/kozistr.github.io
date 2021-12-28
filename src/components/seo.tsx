@@ -1,19 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import * as React from 'react'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
 interface SEOPropsType {
-  description?: string;
-  lang?: string;
-  meta?: any[];
-  title?: string;
-  keywords?: string[];
+  description?: string
+  lang?: string
+  meta?: any[]
+  title?: string
+  keywords?: string[]
 }
 
 const SEO = (props: SEOPropsType) => {
-  const { description, lang, meta, title, keywords } = props;
+  const { description, lang, meta, title, keywords } = props
 
   const { site } = useStaticQuery(
     graphql`
@@ -27,11 +27,11 @@ const SEO = (props: SEOPropsType) => {
           }
         }
       }
-    `,
-  );
+    `
+  )
 
-  const metaDescription = description ?? site.siteMetadata.description;
-  const metaTtitle = site.siteMetadata.title;
+  const metaDescription = description ?? site.siteMetadata.description
+  const metaTtitle = site.siteMetadata.title
 
   return (
     <Helmet
@@ -79,7 +79,7 @@ const SEO = (props: SEOPropsType) => {
         },
       ].concat(meta ?? [])}
     />
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO

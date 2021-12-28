@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as React from 'react';
-import { useEffect, useState, useCallback, Suspense } from 'react';
-import { Helmet } from 'react-helmet';
-import { useSelector } from 'react-redux';
-import { graphql, Link } from 'gatsby';
-import moment from 'moment';
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import AdSense from 'react-adsense';
+import * as React from 'react'
+import { useEffect, useState, useCallback, Suspense } from 'react'
+import { Helmet } from 'react-helmet'
+import { useSelector } from 'react-redux'
+import { graphql, Link } from 'gatsby'
+import moment from 'moment'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import AdSense from 'react-adsense'
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -22,63 +22,63 @@ import {
   RedditIcon,
   PocketIcon,
   EmailIcon,
-} from 'react-share';
-import { useColorMode } from 'theme-ui';
-import { throttle } from 'lodash';
+} from 'react-share'
+import { useColorMode } from 'theme-ui'
+import { throttle } from 'lodash'
 
-import './post.scss';
-import './code-theme.scss';
-import './md-style.scss';
-import 'katex/dist/katex.min.css';
+import './post.scss'
+import './code-theme.scss'
+import './md-style.scss'
+import 'katex/dist/katex.min.css'
 
-import Layout from '../components/Layout';
-import Toc from '../components/Toc';
-import SEO from '../components/seo';
+import Layout from '../components/Layout'
+import Toc from '../components/Toc'
+import SEO from '../components/seo'
 
-import { RootState } from '../state/reducer';
-import config from '../../config';
+import { RootState } from '../state/reducer'
+import config from '../../config'
 
 interface postProps {
-  data: any;
-  pageContext: { slug: string; series: any[]; lastmod: string };
+  data: any
+  pageContext: { slug: string; series: any[]; lastmod: string }
 }
 
 interface iConfig {
-  enablePostOfContents: boolean;
-  enableSocialShare: boolean;
-  disqusShortname?: string;
+  enablePostOfContents: boolean
+  enableSocialShare: boolean
+  disqusShortname?: string
 }
 
 const Post = (props: postProps) => {
-  const isSSR = typeof window === 'undefined';
+  const isSSR = typeof window === 'undefined'
 
-  const { data, pageContext } = props;
-  const isMobile = useSelector((state: RootState) => state.isMobile);
-  const [yList, setYList] = useState([] as number[]);
-  const [isInsideToc, setIsInsideToc] = useState(false);
-  const [commentEl, setCommentEl] = useState<JSX.Element | null>(null);
-  const [colorMode] = useColorMode();
+  const { data, pageContext } = props
+  const isMobile = useSelector((state: RootState) => state.isMobile)
+  const [yList, setYList] = useState([] as number[])
+  const [isInsideToc, setIsInsideToc] = useState(false)
+  const [commentEl, setCommentEl] = useState<JSX.Element | null>(null)
+  const [colorMode] = useColorMode()
 
-  const { markdownRemark } = data;
-  const { frontmatter, html, tableOfContents, fields, excerpt, timeToRead } = markdownRemark;
-  const { title, date, tags, keywords } = frontmatter;
-  let update = frontmatter.update;
-  if (Number(update?.split(',')[1]) === 1) update = null;
-  const { slug } = fields;
-  const { series } = pageContext;
-  const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config;
-  const isTableOfContents = enablePostOfContents && tableOfContents !== '';
-  const isDevelopment = process.env.NODE_ENV === 'development';
-  const isDisqus: boolean = disqusShortname ? true : false;
-  const isSocialShare = enableSocialShare;
+  const { markdownRemark } = data
+  const { frontmatter, html, tableOfContents, fields, excerpt, timeToRead } = markdownRemark
+  const { title, date, tags, keywords } = frontmatter
+  let update = frontmatter.update
+  if (Number(update?.split(',')[1]) === 1) update = null
+  const { slug } = fields
+  const { series } = pageContext
+  const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config
+  const isTableOfContents = enablePostOfContents && tableOfContents !== ''
+  const isDevelopment = process.env.NODE_ENV === 'development'
+  const isDisqus: boolean = disqusShortname ? true : false
+  const isSocialShare = enableSocialShare
 
   const mapTags = tags.map((tag: string) => {
     return (
       <li key={tag} className="blog-post-tag">
         <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
       </li>
-    );
-  });
+    )
+  })
 
   const mapSeries = series.map((s: any) => {
     return (
@@ -88,91 +88,91 @@ const Post = (props: postProps) => {
           <div className="icon-wrap">{slug === s.slug ? <Fa icon={faAngleLeft} /> : null}</div>
         </Link>
       </li>
-    );
-  });
+    )
+  })
 
   const metaKeywords = useCallback((keywordList: string[], tagList: string[]) => {
-    const resultKeywords = new Set();
-    for (const v of [...keywordList, ...tagList]) resultKeywords.add(v);
+    const resultKeywords = new Set()
+    for (const v of [...keywordList, ...tagList]) resultKeywords.add(v)
 
-    return Array.from(resultKeywords) as string[];
-  }, []);
+    return Array.from(resultKeywords) as string[]
+  }, [])
 
   const renderComment = () => {
-    const Comment = React.lazy(() => import('../components/Comment'));
-    setCommentEl(<Comment slug={slug} title={title} />);
-  };
+    const Comment = React.lazy(() => import('../components/Comment'))
+    setCommentEl(<Comment slug={slug} title={title} />)
+  }
 
   useEffect(() => {
     if (isMobile) {
-      const adDiv = document.querySelector('.ad') as HTMLDivElement;
+      const adDiv = document.querySelector('.ad') as HTMLDivElement
 
       if (adDiv) {
-        const maxWidth = window.innerHeight > window.innerWidth ? window.innerWidth : window.innerHeight;
-        adDiv.style.maxWidth = `${maxWidth}px`;
-        adDiv.style.display = 'flex';
-        adDiv.style.justifyContent = 'flex-end';
+        const maxWidth = window.innerHeight > window.innerWidth ? window.innerWidth : window.innerHeight
+        adDiv.style.maxWidth = `${maxWidth}px`
+        adDiv.style.display = 'flex'
+        adDiv.style.justifyContent = 'flex-end'
       }
     }
-  }, [isMobile]);
+  }, [isMobile])
 
   useEffect(() => {
     const setYPos = () => {
       if (yList) {
         const index =
           yList.filter((v: number) => {
-            return v < window.pageYOffset;
-          }).length - 1;
+            return v < window.pageYOffset
+          }).length - 1
 
-        const aList = document.querySelectorAll('.toc.outside li a') as NodeListOf<HTMLAnchorElement>;
+        const aList = document.querySelectorAll('.toc.outside li a') as NodeListOf<HTMLAnchorElement>
 
         for (const i in Array.from(aList)) {
           if (parseInt(i, 10) === index) {
-            aList[i].style.opacity = '1';
+            aList[i].style.opacity = '1'
           } else {
-            aList[i].style.opacity = '0.4';
+            aList[i].style.opacity = '0.4'
           }
         }
       }
-    };
+    }
 
-    if (isTableOfContents) document.addEventListener('scroll', setYPos);
+    if (isTableOfContents) document.addEventListener('scroll', setYPos)
     return () => {
-      if (isTableOfContents) document.removeEventListener('scroll', setYPos);
-    };
-  }, [yList]);
+      if (isTableOfContents) document.removeEventListener('scroll', setYPos)
+    }
+  }, [yList])
 
   useEffect(() => {
-    setCommentEl(null);
+    setCommentEl(null)
 
     setTimeout(() => {
-      renderComment();
-    }, 1000);
-  }, [colorMode]);
+      renderComment()
+    }, 1000)
+  }, [colorMode])
 
   useEffect(() => {
     // scroll
-    const postContentOriginTop = document.querySelector('.blog-post')?.getBoundingClientRect().top ?? 0;
-    const removeScrollEvent = () => document.removeEventListener('scroll', scrollEvents);
+    const postContentOriginTop = document.querySelector('.blog-post')?.getBoundingClientRect().top ?? 0
+    const removeScrollEvent = () => document.removeEventListener('scroll', scrollEvents)
 
     const scrollEvents = throttle(() => {
-      const postContentHeight = document.querySelector('.blog-post')?.getBoundingClientRect().height ?? Infinity;
+      const postContentHeight = document.querySelector('.blog-post')?.getBoundingClientRect().height ?? Infinity
       if (window.scrollY + window.innerHeight * 1.75 - postContentOriginTop > postContentHeight) {
-        renderComment();
-        removeScrollEvent();
+        renderComment()
+        removeScrollEvent()
       }
-    }, 250);
-    scrollEvents();
-    document.addEventListener('scroll', scrollEvents);
+    }, 250)
+    scrollEvents()
+    document.addEventListener('scroll', scrollEvents)
 
     // toc
-    const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
-    const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
-    const yPositions = hs.map(h => h.offsetTop - minusValue);
-    setYList(yPositions);
+    const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[]
+    const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5)
+    const yPositions = hs.map(h => h.offsetTop - minusValue)
+    setYList(yPositions)
 
-    return () => removeScrollEvent();
-  }, []);
+    return () => removeScrollEvent()
+  }, [])
 
   return (
     <>
@@ -251,8 +251,8 @@ const Post = (props: postProps) => {
                     role="button"
                     onClick={() => {
                       setIsInsideToc((prev: boolean) => {
-                        return !prev;
-                      });
+                        return !prev
+                      })
                     }}
                   >
                     <Fa icon={faListUl} />
@@ -354,8 +354,8 @@ const Post = (props: postProps) => {
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
     </>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query ($slug: String) {
@@ -376,6 +376,6 @@ export const pageQuery = graphql`
       timeToRead
     }
   }
-`;
+`
 
-export default Post;
+export default Post

@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2021-12-23
+update: 2021-12-27
 tags:
   - About
 keywords:
@@ -81,7 +81,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Company
 
-#### _Data Scientist_, **Toss Core**, **(2021.12.06 ~ present)**
+#### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
 - Working as a full time.
 
@@ -174,7 +174,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Conferences/Workshops
 
-[1] kozistr_team, <a href="https://github.com/naver/nlp-challenge/raw/master/slides/Naver.NLP.Workshop.SRL.kozistr_team.pdf">_NAVER NLP Challenge 2018 SRL Task_</a>
+[1] `kozistr_team`, [presentation](https://bit.ly/3eneg2y) _NAVER NLP Challenge 2018 SRL Task_</a>
 
 - SRL Task, challenging w/o any domain knowledge. Presented about trials & errors during the competition
 

@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faFrown } from '@fortawesome/free-regular-svg-icons';
+import * as React from 'react'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faFrown } from '@fortawesome/free-regular-svg-icons'
 
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
+import Layout from '../components/Layout'
+import SEO from '../components/seo'
 
 const NotFoundPage = () => (
   <Layout>
@@ -27,6 +27,6 @@ const NotFoundPage = () => (
       <p>{`That page doesn't exist or is unavailable.`}</p>
     </div>
   </Layout>
-);
+)
 
-export default NotFoundPage;
+export default NotFoundPage

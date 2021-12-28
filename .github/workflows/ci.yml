@@ -1,13 +1,10 @@
-name: github pages
+name: ci
 
 on:
-  push:
-    branches:
-      - develop
   pull_request:
 
 jobs:
-  deploy:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,29 +21,20 @@ jobs:
             .cache
             public
           key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
-          restore-keys: |
-            ${{ runner.os }}-gatsby-build-
+          restore-keys: ${{ runner.os }}-gatsby-build-
 
       - name: Cache Dependencies
         uses: actions/cache@v2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          restore-keys: ${{ runner.os }}-node-
 
       - name: Install Dependencies
-        run: npm ci --prefer-offline --no-audit --production
+        run: npm install --prefer-offline --no-audit
+
+      - name: Lint
+        run: npm run lint
 
       - name: Build
         run: npm run build
-
-      - name: Deploy gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          publish_branch: master
-          publish_dir: ./public
-          user_name: 'kozistr'
-          user_email: 'kozistr@gmail.com'
-          full_commit_message: ${{ github.event.head_commit.message }}

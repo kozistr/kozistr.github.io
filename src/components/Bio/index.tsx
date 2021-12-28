@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import * as React from 'react'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import {
   faUserCircle,
   faAt,
@@ -8,7 +8,7 @@ import {
   faLink,
   faAddressCard,
   faRss,
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebook,
   faInstagram,
@@ -17,10 +17,10 @@ import {
   faKaggle,
   faMedium,
   faSlideshare,
-} from '@fortawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons'
 
-import './bio.scss';
-import config from '../../../config';
+import './bio.scss'
+import config from '../../../config'
 
 const Bio = () => {
   const {
@@ -37,7 +37,7 @@ const Bio = () => {
     kaggle,
     medium,
     sildeshare,
-  } = config;
+  } = config
 
   return (
     <div className="bio">
@@ -145,7 +145,7 @@ const Bio = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Bio;
+export default Bio

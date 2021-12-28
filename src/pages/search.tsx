@@ -1,40 +1,40 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as React from 'react';
-import { useState, useCallback } from 'react';
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import * as React from 'react'
+import { useState, useCallback } from 'react'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
-import { graphql } from 'gatsby';
-import PostList from '../components/PostList';
-import './styles/search.scss';
+import Layout from '../components/Layout'
+import SEO from '../components/seo'
+import { graphql } from 'gatsby'
+import PostList from '../components/PostList'
+import './styles/search.scss'
 
 interface SearchProps {
-  data: any;
+  data: any
 }
 
 const Search = (props: SearchProps) => {
-  const { data } = props;
-  const posts = data.allMarkdownRemark.edges;
+  const { data } = props
+  const posts = data.allMarkdownRemark.edges
 
-  const [value, setValue] = useState('');
-  const [isTitleOnly, setIsTitleOnly] = useState(true);
+  const [value, setValue] = useState('')
+  const [isTitleOnly, setIsTitleOnly] = useState(true)
 
   const filteredPosts = useCallback(
     posts.filter((post: any) => {
-      const { node } = post;
-      const { frontmatter, rawMarkdownBody } = node;
-      const { title } = frontmatter;
-      const lowerValue = value.toLocaleLowerCase();
+      const { node } = post
+      const { frontmatter, rawMarkdownBody } = node
+      const { title } = frontmatter
+      const lowerValue = value.toLocaleLowerCase()
 
-      if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true;
+      if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true
 
-      return title.toLocaleLowerCase().includes(lowerValue);
+      return title.toLocaleLowerCase().includes(lowerValue)
     }),
-    [value, isTitleOnly],
-  );
+    [value, isTitleOnly]
+  )
 
   return (
     <Layout>
@@ -52,14 +52,14 @@ const Search = (props: SearchProps) => {
               autoComplete="off"
               autoFocus
               onChange={(e: React.FormEvent<HTMLInputElement>) => {
-                setValue(e.currentTarget.value);
+                setValue(e.currentTarget.value)
               }}
             />
             <div className="search-toggle">
               <span
                 style={{ opacity: isTitleOnly ? 0.8 : 0.15 }}
                 onClick={() => {
-                  setIsTitleOnly(true);
+                  setIsTitleOnly(true)
                 }}
               >
                 in Title
@@ -67,7 +67,7 @@ const Search = (props: SearchProps) => {
               <span
                 style={{ opacity: !isTitleOnly ? 0.8 : 0.15 }}
                 onClick={() => {
-                  setIsTitleOnly(false);
+                  setIsTitleOnly(false)
                 }}
               >
                 in Title+Content
@@ -80,8 +80,8 @@ const Search = (props: SearchProps) => {
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query {
@@ -104,6 +104,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default Search;
+export default Search
