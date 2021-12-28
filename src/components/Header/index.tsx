@@ -27,7 +27,7 @@ const Header = (props: headerPropsType) => {
   const toggleTheme = useCallback(() => {
     const ms = 300
     const header: HTMLElement | null = document.getElementById('Header')
-    const transition = 'top 0.3s ease 0.2s, background-color ${ms}ms'
+    const transition = `top 0.3s ease 0.2s, background-color ${ms}ms`
 
     document.body.style.transition = `background-color ${ms}ms`
     if (header) header.style.transition = transition
