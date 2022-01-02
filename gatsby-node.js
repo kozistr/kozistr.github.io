@@ -3,9 +3,7 @@ const { createFilePath } = require('gatsby-source-filesystem')
 
 const config = require('./config')
 
-// Create Pages
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/Post.tsx`)
   const result = await graphql(`
     {
@@ -85,7 +83,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
 
-      createPage({
+      actions.createPage({
         path: slug,
         component: blogPostTemplate,
         context: { slug, series, lastmod: update.includes('0001') ? date : update },
@@ -94,10 +92,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   )
 }
 
-// Create Nodes
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
+exports.onCreateNode = async ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
 
@@ -159,7 +154,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const newSlug = rewriteSlug(slug)
     const newNode = rewriteNode(node)
 
-    createNodeField({
+    actions.createNodeField({
       name: `slug`,
       node: newNode,
       value: newSlug,
