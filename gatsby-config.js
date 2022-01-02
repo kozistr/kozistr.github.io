@@ -137,36 +137,7 @@ const gatsbyConfig = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap.xml`,
-        query: `
-          {
-          site {
-              siteMetadata {
-                  siteUrl
-              }
-          }
-
-          allSitePage {
-            edges {
-              node {
-                path
-                context {
-                  lastmod
-                }
-              }
-            }
-          }
-      }`,
-        serialize: ({ site, allSitePage }) => {
-          return allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: `daily`,
-              lastmod: edge.node.context.lastmod,
-              priority: 0.7,
-            }
-          })
-        },
+        output: `/`,
       },
     },
 
