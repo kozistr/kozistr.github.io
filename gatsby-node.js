@@ -121,10 +121,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       if (node.frontmatter.title.includes(`"`)) {
         console.log('')
         console.warn(`
-It is not recommended to include " in the title.
-- file: ${node.fileAbsolutePath}
-- title: ${node.frontmatter.title}
-
+          It is not recommended to include " in the title.
+          - file: ${node.fileAbsolutePath}
+          - title: ${node.frontmatter.title}
         `)
       }
 
