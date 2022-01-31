@@ -136,6 +136,6 @@ $K$ blocks 에서 $K$를 어디까지 쓸까에 대해서도 도메인 별 bench
 
 ## Conclusion
 
-여러 modality를 한곳에 모아 유의미한 결과를 보였다는 점에서 재밌는 시도였다고 생각합니다. 하지만 새롭다기보단 기존의 방법론들을 채용해와 조립했다는 점에서 novelty가 약하지 않느냐란 생각이 들었다. 또한, hyper-parameters에 robust 하지 못한 점도 아쉬운 거 같다.
+여러 modality를 한곳에 모아 유의미한 결과를 보였다는 점에서 재밌는 시도였다고 생각합니다. 또한 target representation을 만드는 방법 (feats. agg $K$ blocks)또 meaningful 한 거 같습니다. 하지만 새롭다기보단 기존의 방법론들을 채용해와 조립했다는 점에서 novelty가 약하지 않느냐란 생각이 들었다. 또한, hyper-parameters에 robust 하지 못한 점도 아쉬운 거 같다.
 
 결론 : 굳
