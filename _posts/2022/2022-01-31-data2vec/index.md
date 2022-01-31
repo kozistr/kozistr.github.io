@@ -92,7 +92,7 @@ formula로 쓰면 아래와 같습니다.
 > $\alpha_{t}^{l}$ : time-step $t$ $l^{th}$ block,
 > $\hat{}$ : normalized
 
-> $y_{t} = {1 \over K} \sigma^{L}_{l=L - K + 1} \hat{\alpha_{t}^{l}}$
+> $y_{t} = {1 \over K} \sum^{L}_{l=L - K + 1} \hat{\alpha_{t}^{l}}$
 
 위와 같은 targerts을 생성하면서 collapsing issue가 있다고 했다. 문제와 해결책으로는 아래와 같습니다.
 
