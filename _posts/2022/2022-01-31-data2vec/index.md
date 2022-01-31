@@ -94,7 +94,7 @@ formula로 쓰면 아래와 같습니다.
 
 > $y_{t} = {1 \over K} \sum^{L}_{l=L - K + 1} \hat{\alpha_{t}^{l}}$
 
-위와 같은 targerts을 생성하면서 collapsing issue가 있다고 했다. 문제와 해결책으로는 아래와 같습니다.
+위와 같은 targerts을 생성하면서 collapsing issue가 있다고 했다. 문제와 해결책으로는 아래와 같습니다. 한 줄 요약은 normalization 만 하면 적당히 잘 된다.
 
 1. normalization
    * For speech domain, utilizing instance normalization
@@ -130,7 +130,7 @@ Smooth L1 loss를 사용했다. $\beta$는 튜닝이 필요하다고 하더라.
 
 ### K benchmark
 
-$K$ blocks 에서 $k$를 어디까지 쓸까에 대해서도 도메인 별 benchmark를 했는데, 6이 가장 무난한 값이라고 하네요.
+$K$ blocks 에서 $K$를 어디까지 쓸까에 대해서도 도메인 별 benchmark를 했는데, 6이 가장 무난한 값이라고 하네요.
 
 ![benchmark](./k_benchmark.png)
 
