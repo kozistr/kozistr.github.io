@@ -1,6 +1,5 @@
 ---
-title: Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision
-and Language
+title: Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language
 date: 2022-01-31
 update: 2022-01-31
 tags:
