@@ -75,7 +75,7 @@ EMA 하면 formula는 아래와 같을텐데,
 
 논문에서 $\gamma$는 constant 가 아닌 dynamic 하게 schedule 해서 사용했다고 합니다.
 
-첫 $n$ steps는 linear하게 $\tau_{0}$ to $\tau_{e}$ 증가시키고, $n$ steps 이후에는 쭉 유지시킨다 합니다. 이렇게 한 이유는 학습 초반에 teacher update 를 더 많이 시키려 했다고 합니다.
+첫 $n$ steps는 linear하게 $\tau_{0}$ to $\tau_{e}$ 증가시키고, $n$ steps 이후에는 쭉 유지시킨다 합니다. 이렇게 한 이유는 학습 초반에 teacher update 를 더 많이 시키려 했다고 합니다. ($\tau_{0}$ = 0.999, $\tau_{e}$ = 0.9999)
 
 더 디테일한 실험에서는 feature encoder하고 PE 부분은 EMA 하지 않는 편이 더 좋다고 합니다.
 
@@ -111,17 +111,17 @@ Smooth L1 loss를 사용했다. $\beta$는 튜닝이 필요하다고 하더라.
 
 ## Performance
 
-### Computer Vision
+### Computer Vision benchmark
 
 기존 vision domain SSL 성능보다 좋은 것을 보여주고 있습니다.
 
 ![benchmark](./vision_benchmark.png)
 
-### Speech Domain
+### Speech benchmark
 
 ![benchmark](./speech_benchmark.png)
 
-### Text Domain
+### Text benchmark
 
 추가로 wav2vec 2.0 masking method (연속으로 4 tokens masking 하는)도 테스트 했는데, 더 좋은 성능을 보였다고 합니다.
 
@@ -135,6 +135,6 @@ $K$ blocks 에서 $k$를 어디까지 쓸까에 대해서도 도메인 별 bench
 
 ## Conclusion
 
-여러 modality를 한 곳에 모아 유의미한 결과를 보였다는 점에서 재밌는 시도였다고 생각합니다. 
+여러 modality를 한 곳에 모아 유의미한 결과를 보였다는 점에서 재밌는 시도였다고 생각합니다. 하지만 새롭다기 보단 기존의 방법론들을 채용해와 조립했다는 점에서 novelty 가 약하지 않나란 생각이 들었다. 또한, hyper-parameters에 robust하지 못한 점, 
 
 결론 : 굳
