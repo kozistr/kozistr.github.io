@@ -28,7 +28,7 @@ related works가 많은데, 요약하면 각 domain에서 SSL을 하던 방식�
 
 ## Introduction
 
-논문에서 말하는 목표는 `modality 상관없이 general하게 잘 되는 SSL 방식을 제안`이라고 합니다. (pursue `modality-free` SSL)
+논문에서 말하는 목표는 `modality 상관없이 general하게 잘 되는 SSL 방식을 제안`이라고 합니다. (`modality-free` SSL)
 
 ## Architecture
 
