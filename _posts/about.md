@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-01-03
+update: 2022-02-02
 tags:
   - About
 keywords:
@@ -95,7 +95,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
     - **Click Ratio** : improved **1.01%**
 - Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
-  - Build *Future* module to understand better at the time of inference.
+  - Build _Future_ module to understand better at the time of inference.
   - Apply augmentations to the various features, leads to performance gain & robustness.
   - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
     - Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
@@ -131,9 +131,11 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
     - **\*Accuracy** : improved **about 25 ~ 30%p**
 - Developed the RESTful API server to serve (general purpose) machine learning models.
-  - Deployed & managed with K8s, utilized open source project.
-  - Utilized inference-aware framework to reduce the latency.
+  - about 1M MAU service, 500K ~ 1M transactions / day (1 transaction = (median) about 100 samples).
+  - Utilized `inference-aware framework` (onnx) to reduce the latency.
+    - median 100 ~ 200ms / transaction.
   - zero failure rate (**0** 40x, 50x errors)
+  - Deployed & managed with kubernetes, utilized open source project.
 - Developed the classification model for forecasting possibility of loan overdue.
 
 % `*Accuracy` : how many people don't update/change their transactions' category.
