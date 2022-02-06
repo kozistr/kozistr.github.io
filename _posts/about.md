@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-02-02
+update: 2022-02-06
 tags:
   - About
 keywords:
@@ -286,7 +286,7 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 - [syzkaller](https://github.com/google/syzkaller) :: New Generation of Linux Kernel Fuzzer :: [#575](https://github.com/google/syzkaller/pull/575)
 - [simpletransformers](https://github.com/https://github.com/ThilinaRajapakse/simpletransformers) :: Transformers made simple w/ training, evaluating, and prediction possible w/ one line each. :: [#290](https://github.com/ThilinaRajapakse/simpletransformers/pull/290)
 - [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) :: PyTorch image models, scripts, pretrained weights :: [#1058](https://github.com/rwightman/pytorch-image-models/pull/1058), [#1069](https://github.com/rwightman/pytorch-image-models/pull/1069)
-- [deit](https://github.com/facebookresearch/deit) :: DeiT: Data-efficient Image Transformers :: [#140](https://github.com/facebookresearch/deit/pull/140)
+- [deit](https://github.com/facebookresearch/deit) :: DeiT: Data-efficient Image Transformers :: [#140](https://github.com/facebookresearch/deit/pull/140), [#147](https://github.com/facebookresearch/deit/pull/147)
 
 ### Security, Hacking
 
