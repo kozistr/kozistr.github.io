@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-02-06
+update: 2022-02-20
 tags:
   - About
 keywords:
@@ -39,8 +39,8 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
 
-  > - [Google Brain - Ventilator Pressure Prediction](https://www.kaggle.com/c/ventilator-pressure-prediction) - **team, top 1% (20 / 2605), Private 0.1171** (2021.)
-  > - [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection) - **solo, top 4% (47 / 1305), Private 0.612** (2021.)
+  > - [Google Brain - Ventilator Pressure Prediction](https://www.kaggle.com/c/ventilator-pressure-prediction) - **team, top 1% (20 / 2605), Private 0.1171** - [solution](https://www.kaggle.com/c/ventilator-pressure-prediction/discussion/285295#1570360) (2021.)
+  > - [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection) - **solo, top 4% (47 / 1305), Private 0.612** - [solution](https://www.kaggle.com/c/siim-covid19-detection/discussion/263830#1463830) (2021.)
   > - [Shopee - Price Match Guarantee](https://www.kaggle.com/c/shopee-product-matching) - **solo, top 7% (166 / 2426), Private 0.725** (2021.)
   > - [Cornell Birdcall Identification](https://www.kaggle.com/c/birdsong-recognition) - **team, top 2% (24 / 1395), Private 0.631** (2020.)
   > - [ALASKA2 Image Steganalysis](https://www.kaggle.com/c/alaska2-image-steganalysis) - **solo, top 9% (93 / 1095), Private 0.917** (2020.)
