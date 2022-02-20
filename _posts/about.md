@@ -84,6 +84,10 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
 - Working as a full time.
+- Developed the card transaction category classification model.
+  - Transformer-based architecture.
+  - about 900 TPS on a single GPU.
+- Developed the loan overdue prediction model (CSS model)
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
