@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-02-20
+update: 2022-02-23
 tags:
   - About
 keywords:
@@ -293,6 +293,7 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 - [simpletransformers](https://github.com/https://github.com/ThilinaRajapakse/simpletransformers) :: Transformers made simple w/ training, evaluating, and prediction possible w/ one line each. :: [#290](https://github.com/ThilinaRajapakse/simpletransformers/pull/290)
 - [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) :: PyTorch image models, scripts, pretrained weights :: [#1058](https://github.com/rwightman/pytorch-image-models/pull/1058), [#1069](https://github.com/rwightman/pytorch-image-models/pull/1069)
 - [deit](https://github.com/facebookresearch/deit) :: DeiT: Data-efficient Image Transformers :: [#140](https://github.com/facebookresearch/deit/pull/140), [#147](https://github.com/facebookresearch/deit/pull/147), [#148](https://github.com/facebookresearch/deit/pull/148)
+- [MADGRAD](https://github.com/facebookresearch/madgrad) :: MADGRAD Optimization Method :: [#11](https://github.com/facebookresearch/madgrad/pull/11)
 
 ### Security, Hacking
 
