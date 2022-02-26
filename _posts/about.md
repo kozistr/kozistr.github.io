@@ -290,17 +290,9 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 
 - Recover stripped symbols & information and patch byte-codes for being able to hex-ray
 
----
+## Security, Hacking
 
-## Educations
-
-**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
-
----
-
-### Security, Hacking
-
-#### CTFs, Conferences
+### CTFs, Conferences
 
 - [POC](http://powerofcommunity.net/) 2016 Conference Staff
 - [HackingCamp](http://hackingcamp.org/) 15 CTF Staff, Challenge Maker
@@ -312,13 +304,17 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 - [HackingCamp](http://hackingcamp.org/) 17 CTF Staff, Challenge Maker
 - [HackingCamp](http://hackingcamp.org/) 18 CTF Staff, Challenge Maker
 
-#### Teams
+### Teams
 
 Hacking Team, [**Fl4y**](http://f1ay.com/). **Since 2017.07 ~**
 
 Hacking Team, [**Demon**](https://demonteam.org/) by [_POC_](http://powerofcommunity.net/). **Since 2014.02 ~ 2018.08**
 
 ---
+
+## Educations
+
+**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
 ## Presentations
 
