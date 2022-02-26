@@ -294,7 +294,7 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 - [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) :: PyTorch image models, scripts, pretrained weights :: [#1058](https://github.com/rwightman/pytorch-image-models/pull/1058), [#1069](https://github.com/rwightman/pytorch-image-models/pull/1069)
 - [deit](https://github.com/facebookresearch/deit) :: DeiT: Data-efficient Image Transformers :: [#140](https://github.com/facebookresearch/deit/pull/140), [#147](https://github.com/facebookresearch/deit/pull/147), [#148](https://github.com/facebookresearch/deit/pull/148)
 - [MADGRAD](https://github.com/facebookresearch/madgrad) :: MADGRAD Optimization Method :: [#11](https://github.com/facebookresearch/madgrad/pull/11)
-- [tensorflow-image-models] :: TensorFlow Image Models (tfimm) is a collection of image models with pretrained weights, obtained by porting architectures from timm to TensorFlow :: [#61](https://github.com/martinsbruveris/tensorflow-image-models/pull/61)
+- [tensorflow-image-models](https://github.com/martinsbruveris/tensorflow-image-models) :: TensorFlow Image Models (tfimm) is a collection of image models with pretrained weights, obtained by porting architectures from timm to TensorFlow :: [#61](https://github.com/martinsbruveris/tensorflow-image-models/pull/61)
 
 ### Security, Hacking
 
