@@ -85,11 +85,12 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - Working as a full time.
 - Developed the card transaction category classification model.
-  - Transformer-based architecture, about `900 TPS` on a single GPU (RTX 8000).
+  - Transformer-based architecture, about `900 TPS` on a single GPU.
   - Handle noisy-text (transaction) & label, class-imbalanced problem.
 - Developed the loan overdue prediction model (CSS model)
-  - EDA, to find the useful features correlated with the overdued user.
-  - Build the robust & stable CV & Ensemble strategy in an aspect of the on/offline performance.
+  - EDA to find the useful features correlated with the overdued user.
+  - Build the robust CV & ensemble strategy in an aspect of the on/offline performance.
+- Contributed to the team culture (e.g. collaboration tools, style-guides, etc).
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
