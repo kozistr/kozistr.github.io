@@ -200,12 +200,6 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ---
 
-## Educations
-
-**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
-
----
-
 ## Personal Projects
 
 ### Computer Languages
@@ -281,12 +275,6 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - **Rosseta Stone** :: Hearthstone simulator using C++ with some reinforcement learning :: [code](https://github.com/utilForever/RosettaStone)
 
-### Plug-Ins
-
-IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
-
-- Recover stripped symbols & information and patch byte-codes for being able to hex-ray
-
 ### Open Source Contributions
 
 - [syzkaller](https://github.com/google/syzkaller) :: New Generation of Linux Kernel Fuzzer :: [#575](https://github.com/google/syzkaller/pull/575)
@@ -295,6 +283,20 @@ IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 - [deit](https://github.com/facebookresearch/deit) :: DeiT: Data-efficient Image Transformers :: [#140](https://github.com/facebookresearch/deit/pull/140), [#147](https://github.com/facebookresearch/deit/pull/147), [#148](https://github.com/facebookresearch/deit/pull/148)
 - [MADGRAD](https://github.com/facebookresearch/madgrad) :: MADGRAD Optimization Method :: [#11](https://github.com/facebookresearch/madgrad/pull/11)
 - [tensorflow-image-models](https://github.com/martinsbruveris/tensorflow-image-models) :: TensorFlow Image Models (tfimm) is a collection of image models with pretrained weights, obtained by porting architectures from timm to TensorFlow :: [#61](https://github.com/martinsbruveris/tensorflow-image-models/pull/61)
+
+### Plug-Ins
+
+IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
+
+- Recover stripped symbols & information and patch byte-codes for being able to hex-ray
+
+---
+
+## Educations
+
+**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
+
+---
 
 ### Security, Hacking
 
@@ -318,18 +320,18 @@ Hacking Team, [**Demon**](https://demonteam.org/) by [_POC_](http://powerofcommu
 
 ---
 
-### Presentations
+## Presentations
 
-#### 2018
+### 2018
 
 [2] Artificial Intelligence ZeroToAll, Apr 2018.
 
 [1] Machine Learning ZeroToAll, Mar 2018.
 
-#### 2015
+### 2015
 
 [1] Polymorphic Virus VS AV Detection, Oct 2015.
 
-#### 2014
+### 2014
 
 [1] Network Sniffing & Detection, Oct, 2014.
