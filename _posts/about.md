@@ -52,7 +52,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - **NAVER NLP Challenge** :: NAVER NLP Challenge 2018
 
-  > - [Final](https://github.com/naver/nlp-challenge) - _Semantic Role Labeling (SRL)_ **6th place**
+  > - [Final](https://github.com/naver/nlp-challenge) - _Semantic Role Labeling (SRL)_ **6th place** - [oral presentation](https://bit.ly/3eneg2y)
 
 - **A.I R&D Challenge** :: A.I R&D Challenge 2018
 
@@ -60,7 +60,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - **NAVER A.I Hackathon** :: NAVER A.I Hackathon 2018
 
-  > - [Final](https://github.com/naver/ai-hackathon-2018) - _Kin_ **4th place**, _Movie Review_ **13th place** :: [_summary_paper_](https://github.com/kozistr/naver-ai-hackathon-2018)
+  > - [Final](https://github.com/naver/ai-hackathon-2018) - _Kin_ **4th place**, _Movie Review_ **13th place** - [solution](https://github.com/kozistr/naver-ai-hackathon-2018)
 
 - **TF-KR Challenge** :: Facebook TF-KR MNIST Challenge
 
