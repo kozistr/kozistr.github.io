@@ -28,7 +28,8 @@ CV : [[PDF] (as of Feb. 2022)](http://kozistr.tech/cv.pdf)
 - Audio/Speech Domains
   - End to End Speaker Diarization
   - Speaker Verifications
-  - Speech Synthesis
+- Computer Vision Domains
+  - especially medical image domain
 
 Previously, I'm also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
 
