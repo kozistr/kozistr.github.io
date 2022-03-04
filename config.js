@@ -12,8 +12,8 @@ module.exports = {
   /** Home > Bio information*/
   comment: 'Data Scientist',
   name: 'Hyeongchan Kim',
-  company: 'Toss',
-  location: 'Korea',
+  company: '',
+  location: 'South Korea',
   email: 'kozistr@gmail.com',
   website: 'http://kozistr.tech',
   linkedin: 'https://www.linkedin.com/in/kozistr',
@@ -30,8 +30,8 @@ module.exports = {
   enableSocialShare: true,              // Social share icon activation (Type of Value: Boolean. Not String)
 
   /** Optional */
-  googleAnalytics: 'UA-116366668-1',                        // Google Analytics TrackingID. ex.'UA-123456789-0'
-  googleSearchConsole: '',                                  // content value in HTML tag of google search console ownership verification. ex. 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4'
-  googleAdsenseSlot: '',                                    // Google Adsense Slot. ex.'5791074071'
-  googleAdsenseClient: '',                                  // Google Adsense Client. ex.'ca-pub-7954241517411559'
+  googleAnalytics: 'UA-116366668-1',    // Google Analytics TrackingID. ex.'UA-123456789-0'
+  googleSearchConsole: '',              // content value in HTML tag of google search console ownership verification. ex. 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4'
+  googleAdsenseSlot: '',                // Google Adsense Slot. ex.'5791074071'
+  googleAdsenseClient: '',              // Google Adsense Client. ex.'ca-pub-7954241517411559'
 };
