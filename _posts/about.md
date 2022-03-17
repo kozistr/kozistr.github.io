@@ -90,7 +90,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
   - Transformer-based architecture (customed with newly proposed methods).
   - calibration-aware training.
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
-    - **Conversions** : soon!
+    - **Conversion** : soon!
     - **CTR** : soon!
 - Developed the loan overdue prediction model (CSS model)
   - EDA to find the useful features correlated with the overdue user.
