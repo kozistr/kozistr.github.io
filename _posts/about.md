@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-02-27
+update: 2022-03-17
 tags:
   - About
 keywords:
@@ -29,7 +29,7 @@ CV : [[PDF] (as of Feb. 2022)](http://kozistr.tech/cv.pdf)
   - End to End Speaker Diarization
   - Speaker Verifications
 - Computer Vision Domains
-  - especially medical image domain
+  - especially medical domain
 
 Previously, I'm also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
 
@@ -86,12 +86,18 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
 - Working as a full time.
-- Developed the card transaction category classification model.
+- Developed the model to forecast the card & account categories to purchase next month & few weeks
+  - Transformer-based architecture (customed).
+  - calibration-aware training.
+  - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
+    - **Converions** : soon!
+    - **CTR** : soon!
+- Developed the loan overdue prediction model (CSS model)
+  - EDA to find the useful features correlated with the overdue user.
+  - Build the robustness CV & ensemble strategy in an aspect of the on/offline performance.
+- Developed the card category classification model.
   - Transformer-based architecture, about `900 TPS` on a single GPU.
   - Handle noisy-text (transaction) & label, class-imbalanced problem.
-- Developed the loan overdue prediction model (CSS model)
-  - EDA to find the useful features correlated with the overdued user.
-  - Build the robust CV & ensemble strategy in an aspect of the on/offline performance.
 - Contributed to the team culture (e.g. collaboration tools, style-guides, etc).
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
@@ -204,16 +210,6 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 ---
 
 ## Personal Projects
-
-### Computer Languages
-
-> **Python**
->
-> C/C++
->
-> Assembly (x86, x86-64, arm, ...)
->
-> _experienced with lots of languages_
 
 ### Machine/Deep Learning
 
