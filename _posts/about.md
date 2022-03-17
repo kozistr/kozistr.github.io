@@ -87,7 +87,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - Working as a full time.
 - Developed the model to forecast the card & account categories to purchase next month & few weeks
-  - Transformer-based architecture (customed).
+  - Transformer-based architecture (customed with newly proposed methods).
   - calibration-aware training.
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Converions** : soon!
