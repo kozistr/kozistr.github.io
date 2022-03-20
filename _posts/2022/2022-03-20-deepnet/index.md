@@ -22,7 +22,7 @@ keywords:
 
 ## Related Work
 
-depth가 깊은 Transformer 를 학습할 때 학습을 stablize 하는 여러 논문들이 있는데, 관련있는 최근 논문 하나를 적어보면 `Gopher`가 있습니다.
+depth가 깊은 Transformer를 학습할 때 학습을 stablize 하는 여러 논문이 있는데, 관련 있는 최근 논문 하나를 적어보면 `Gopher`가 있습니다.
 
 * `Gopher` : [arXiv](https://arxiv.org/abs/2112.11446)
 
@@ -43,6 +43,13 @@ depth가 깊은 Transformer 를 학습할 때 학습을 stablize 하는 여러 �
 
 $\alpha$ 는 depth가 깊어질수록 커지고, $\beta$ (gain) 은 작게 사용하네요.
 
+formula 로 일반화 하면 아래와 같습니다.
+
+> $x_{l + 1} = LN(\alpha x_{l} + G_{l}(x_{l}, \theta_{l}))$
+
+* $\alpha$ : scaling factor at the residual connection
+* $l$ : $l$-th Transformer sub-layer (e.g. FFN or MSA) with parameter ($\theta$)
+
 ## Performance
 
 다양한 NLP task와 benchmarks를 진행했는데, large-scale 에서 diverge하지 않고 더 깊게 쌓았을 때 더 좋은 성능을 보여주고 있습니다.
@@ -59,6 +66,6 @@ $\alpha$ 는 depth가 깊어질수록 커지고, $\beta$ (gain) 은 작게 사�
 
 ## Conclusion
 
-갠적으로도 training recipe 를 통한 성능 향상이나 이런 느낌의 연구들을 정말 좋아하는데, 1000 depths large-scale transformer 를 간단한 방법으로 stable 하게 학습할 수 있다는 점에 재밌는 거 같습니다.
+갠적으로도 training recipe 를 통한 성능 향상이나 이런 느낌의 연구들을 좋아하는데, 1000 depths large-scale transformer 를 간단한 방법으로 stable 하게 학습할 수 있다는 점에 재밌는 거 같습니다.
 
 결론 : 굳굳
