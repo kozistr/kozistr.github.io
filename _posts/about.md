@@ -102,7 +102,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
-- Working as a full time.
+- Worked as a full time.
 - Developed a new sequential recommendation architecture. (named `Trans4Rec`)
   - Newly proposed transformer architecture to improve the performance in a genernal manner.
   - Apply proper post-processing logic into the model.
