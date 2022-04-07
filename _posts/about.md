@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-03-17
+update: 2022-04-07
 tags:
   - About
 keywords:
@@ -92,7 +92,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
     - **CTR** : soon!
-- Developed the loan overdue prediction model (CSS model)
+- Developed the loan overdue prediction model for BNPL (CSS model)
   - EDA to find the useful features correlated with the overdue user.
   - Build the robustness CV & ensemble strategy in an aspect of the on/offline performance.
 - Developed the card category classification model.
