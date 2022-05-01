@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-04-07
+update: 2022-05-02
 tags:
   - About
 keywords:
@@ -86,7 +86,10 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
 - Working as a full time.
-- Developed the model to forecast the card & account categories to purchase next month & few weeks
+- Developed the robust captcha model to predict numeric captchas.
+  - light-weighted CNN model for real-time inference
+  - save **$10,000 / year**
+- Developed the model to forecast the transactions' category to purchase next month & few weeks
   - Transformer-based architecture (customed with newly proposed methods).
   - calibration-aware training.
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
