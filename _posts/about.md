@@ -87,8 +87,8 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - Working as a full time.
 - Developed the robust captcha model to predict numeric captchas.
-  - light-weighted CNN model for real-time inference
-  - save **$10,000 / year**
+  - light-weighted CNN model for real-time inference (about `5 ~ 700 TPS` for batch transactions on CPU)
+  - save **$10,000 ~ 30,000 / year**
 - Developed the model to forecast the transactions' category to purchase next month & few weeks
   - Transformer-based architecture (customed with newly proposed methods).
   - calibration-aware training.
