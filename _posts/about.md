@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-05-02
+update: 2022-05-11
 tags:
   - About
 keywords:
@@ -87,8 +87,11 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - Working as a full time.
 - Developed the robust captcha model to predict numeric captchas.
-  - light-weighted CNN model for real-time inference (about `5 ~ 700 TPS` for batch transactions on CPU)
+  - light-weighted CNN model for real-time inference (about `~ 1000 TPS` for batch transaction, `~ 50 TPS` for a sample on CPU)
   - save **$10,000 ~ 30,000 / year**
+  - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
+    - **Accuracy** : improved **50%p** (`49%` to `95%`)
+    - **latency** : reduced by **x40** (about `800ms` to `20ms`)
 - Developed the model to forecast the transactions' category to purchase next month & few weeks
   - Transformer-based architecture (customed with newly proposed methods).
   - calibration-aware training.
