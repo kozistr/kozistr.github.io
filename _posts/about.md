@@ -129,7 +129,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     - **\*Viewing Days (mean)** : improved **1.012%**
     - **\*Viewing Minutes (median)** : improved **1.015%**
 - Developed a model to predict expected users' view-time of the contents.
-  - Predict how many people and how much time people are going to watch the content before the content supplied.
+  - Predict how many and how much time people are going to watch the content before the content supplied.
   - Find out which features impact users' watches.
 - Developed a pipeline to recognize main actors from the poster and still-cut images.
   - Utilize **SOTA** face detector & recognizer.
