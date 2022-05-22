@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-05-11
+update: 2022-05-22
 tags:
   - About
 keywords:
@@ -29,9 +29,9 @@ CV : [[PDF] (as of Mar. 2022)](http://kozistr.tech/cv.pdf)
   - End to End Speaker Diarization
   - Speaker Verifications
 - Computer Vision Domains
-  - especially medical domain
+  - especially the medical domain
 
-Previously, I'm also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
+Previously, I was also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
 
 ---
 
@@ -85,16 +85,20 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
-- Working as a full time.
+- Working as full-time.
+- Developed the text classification model to categorize users' reviews.
+  - Visualize the summarized trend of the keywords, which show the point of the opinion.
+  - Boost to analyze the users who give feedback with rich information. (may help to boost `NPS score`)
 - Developed the robust captcha model to predict numeric captchas.
   - light-weighted CNN model for real-time inference (about `~ 1000 TPS` for batch transaction, `~ 50 TPS` for a sample on CPU)
-  - save **$10,000 ~ 30,000 / year**
+  - Build augmentations which fit in the domain to build a robust model.
+  - Save **$10,000 ~ 30,000 / year**
   - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`49%` to `95%`)
-    - **latency** : reduced by **x40** (about `800ms` to `20ms`)
-- Developed the model to forecast the transactions' category to purchase next month & few weeks
+    - **latency (p95)** : reduced by **x80** (about `1000ms` to `12ms`)
+- Developed the model to forecast the transactions' category to purchase next month & few weeks.
   - Transformer-based architecture (customed with newly proposed methods).
-  - calibration-aware training.
+  - Calibration-aware training.
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
     - **CTR** : soon!
@@ -108,7 +112,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
-- Worked as a full time.
+- Worked as full-time.
 - Developed a new sequential recommendation architecture. (named `Trans4Rec`)
   - Newly proposed transformer architecture to improve the performance in a genernal manner.
   - Apply proper post-processing logic into the model.
@@ -125,8 +129,8 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
     - **\*Viewing Days (mean)** : improved **1.012%**
     - **\*Viewing Minutes (median)** : improved **1.015%**
 - Developed a model to predict expected users' view-time of the contents.
-  - Predict how many people going to watch, how much time people going to watch the content before the content is supplied.
-  - Find out which features impact users' watch.
+  - Predict how many people and how much time people are going to watch the content before the content supplied.
+  - Find out which features impact users' watches.
 - Developed a pipeline to recognize main actors from the poster and still-cut images.
   - Utilize **SOTA** face detector & recognizer.
   - Optimize pre/post processing routines for low `latency`.
@@ -137,17 +141,17 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
     - **\*Viewing Minutes (median)** : improved **4.10%p+**
     - **Click Ratio** : improved **4.30%p+**
     - **Play Ratio** : improved **2.32%p+**
-- Developed Image Super Resolution model to upscale movie & tv poster, still-cut images.
-  - Optimize the codes for fast `inference time` & `memory-efficiency` on _cpu_.
-  - In internal evaluation (qualitative evaluation by the designers), it catches details better & handles higher resolution & takes a little time.
+- Developed Image Super-Resolution model to upscale movie & tv poster, still-cut images.
+  - Optimize the codes for `low latency` & `memory-efficiency` on _CPU_.
+  - An internal evaluation (qualitative evaluation by the designers), catches details better & handles higher resolution & takes a little time.
 
-% `*Viewing Days` : how many days users active on an app each month.
+% `*Viewing Days` : how many days are users active on an app each month.
 
-% `*Viewing Minutes` : how many minutes user watched the contents.
+% `*Viewing Minutes` : how many minutes the user watched the contents.
 
 #### _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
-- Worked as a full time.
+- Worked as full-time.
 - Developed the card & bank account transaction category classification models, designed _light-weight purpose_ for the low latency. (now on service)
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
     - **\*Accuracy** : improved **about 25 ~ 30%p**
@@ -156,8 +160,8 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
   - Utilized `inference-aware framework` (onnx) to reduce the latency.
     - median 100 ~ 200ms / transaction.
   - zero failure rate (**0** 40x, 50x errors)
-  - Deployed & managed with kubernetes, utilized open source project.
-- Developed the classification model for forecasting possibility of loan overdue.
+  - Deployed & managed with Kubernetes, utilized open source project.
+- Developed the classification model for forecasting the possibility of loan overdue.
 
 % `*Accuracy` : how many people don't update/change their transactions' category.
 
@@ -165,12 +169,12 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 - Worked as an intern.
 - Developed speaker verification, diarization models & logic for recognizing the arbitrary speakers recorded from the noisy (real-world) environment.
-- Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domain naturally.
+- Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domains naturally.
 
 #### _Penetration Tester_, **ELCID**, **(2016.07 ~ 2016.08)**
 
 - Worked as a part-time job.
-- Penetrated some products related to network firewall and anti-virus product.
+- Penetrated some products related to network firewall and anti-virus products.
 
 ### Out Sourcing
 
@@ -181,7 +185,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 [HPC Lab](https://sites.google.com/view/hpclab/home), KoreaTech, **Undergraduate Researcher**, **(2018.09 ~ 2018.12)**
 
-- Wrote a paper about improved TextCNN model to predict a movie rate.
+- Wrote a paper about an improved TextCNN model to predict a movie rate.
 
 ---
 
@@ -192,7 +196,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 [1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
 
 - Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
-- Handling un-normalized text with various convolution kernel size and spatial dropout
+- Handling un-normalized text with various convolution kernel sizes and spatial dropout
 - Selected as one of the `highlight papers` for the first half of 2020
 
 ### Conferences/Workshops
@@ -211,7 +215,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 [1] kozistr (as a part of team, `Dragonsong`) [towarddatascience](https://towardsdatascience.com/detecting-sounds-with-deep-learning-ed9a41909da0)
 
-- Wrote about audio classifier with deep learning based on the kaggle challenge where we participated
+- Wrote about audio classifier with deep learning based on the Kaggle challenge where we participated
 
 ---
 
@@ -228,13 +232,13 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
   > - **LAPGAN-tensorflow** :: Laplacian Pyramid GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/LAPGAN)
   > - **BEGAN-tensorflow** :: Boundary Equilibrium in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/BEGAN)
   > - **DCGAN-tensorflow** :: Deep Convolutional GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/DCGAN)
-  > - **SRGAN-tensorflow** :: Super Resolution GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
+  > - **SRGAN-tensorflow** :: Super-Resolution GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/SRGAN)
   > - **WGAN-GP-tensorflow** :: Wasserstein GAN w/ gradient penalty in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/WGAN)
   > - ... lots of GANs (over 20) :)
 
 #### Super Resolution
 
-- **Single Image Super Resolution** :: Single Image Super Resolution (SISR)
+- **Single Image Super Resolution** :: Single Image Super-Resolution (SISR)
 
   > - **rcan-tensorflow** :: RCAN implementation in tensorflow :: [code](https://github.com/kozistr/rcan-tensorflow)
   > - **ESRGAN-tensorflow** :: ESRGAN implementation in tensorflow :: [code](https://github.com/kozistr/ESRGAN-tensorflow)
@@ -291,7 +295,7 @@ Previously, I'm also interested in **offensive security**, kind of _Reverse Engi
 
 ### Plug-Ins
 
-IDA pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
+IDA-pro plug-in - Golang ELF binary (x86, x86-64), RTTI parser
 
 - Recover stripped symbols & information and patch byte-codes for being able to hex-ray
 
