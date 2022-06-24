@@ -86,18 +86,20 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
 - Working as full-time.
-- Developed the text classification model to categorize users' reviews.
+- Developed the CVR model to predict *CPI user.
+- Developed the multi-label text classification model to categorize users' reviews.
   - Visualize the summarized trend of the keywords, which show the point of the opinion.
-  - Boost to analyze the users who give feedback with rich information. (may help to boost `NPS score`)
+  - Boost to analyze the users who give feedback with rich information.
+  - Build the RESTful API server to inference the model in real-time on CPU.
 - Developed the robust captcha model to predict numeric captchas.
   - light-weighted CNN model for real-time inference (about `~ 1000 TPS` for batch transaction, `~ 50 TPS` for a sample on CPU)
   - Build augmentations which fit in the domain to build a robust model.
-  - Save **$10,000 ~ 30,000 / year**
+  - Save about **$30,000 / year**
   - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`49%` to `95%`)
-    - **latency (p95)** : reduced by **x80** (about `1000ms` to `12ms`)
+    - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
 - Developed the model to forecast the transactions' category to purchase next month & few weeks.
-  - Transformer-based architecture (customed with newly proposed methods).
+  - Transformer-based architecture with the transactions & user demographic.
   - Calibration-aware training.
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
