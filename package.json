@@ -68,6 +68,7 @@
     "mobile-detect": "^1.4.5",
     "moment": "^2.29.4",
     "node-sass": "^7.0.1",
+    "parse-path": "^5.0.0",
     "preact": "^10.10.0",
     "preact-render-to-string": "^5.2.1",
     "prism-themes": "^1.9.0",
@@ -81,6 +82,7 @@
     "react-share": "^4.4.0",
     "react-typography": "^0.16.20",
     "redux": "^4.2.0",
+    "terser": "^5.14.2",
     "theme-ui": "^0.14.6",
     "typography": "^0.16.21"
   },
