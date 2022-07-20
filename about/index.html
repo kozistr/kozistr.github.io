@@ -1042,19 +1042,18 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 <li>Developed the CVR model to predict *CPI user.</li>
 <li>Developed the multi-label text classification model to categorize users' reviews.
 <ul>
-<li>Visualize the summarized trend of the keywords, which show the point of the opinion.</li>
 <li>Boost to analyze the users who give feedback with rich information.</li>
 <li>Build the RESTful API server to inference the model in real-time on CPU.</li>
 </ul>
 </li>
 <li>Developed the robust captcha model to predict numeric captchas.
 <ul>
-<li>light-weighted CNN model for real-time inference (about <code class="language-text">~ 1000 TPS</code> for batch transaction, <code class="language-text">~ 50 TPS</code> for a sample on CPU)</li>
+<li>light-weighted CNN model for real-time inference (about <code class="language-text">~ 1000 TPS</code> for batch transaction, <code class="language-text">80 ~ 100 TPS</code> for a sample on CPU)</li>
 <li>Build augmentations which fit in the domain to build a robust model.</li>
-<li>Save about <strong>$30,000 / year</strong></li>
+<li>Save about <strong>$7,000 / year</strong></li>
 <li>In A/B (online) test, <code class="language-text">google vision OCR</code> vs <code class="language-text">New Captcha Model</code>
 <ul>
-<li><strong>Accuracy</strong> : improved <strong>50%p</strong> (<code class="language-text">49%</code> to <code class="language-text">95%</code>)</li>
+<li><strong>Accuracy</strong> : improved <strong>50%p</strong> (<code class="language-text">45%</code> to <code class="language-text">95%</code>)</li>
 <li><strong>latency (p95)</strong> : reduced by <strong>80x</strong> (about <code class="language-text">1000ms</code> to <code class="language-text">12ms</code>)</li>
 </ul>
 </li>
@@ -1072,7 +1071,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 </li>
 </ul>
 </li>
-<li>Developed the loan overdue prediction model for BNPL (CSS model)
+<li>Developed the CSS model for BNPL (CSS model)
 <ul>
 <li>EDA to find the useful features correlated with the overdue user.</li>
 <li>Build the robustness CV &#x26; ensemble strategy in an aspect of the on/offline performance.</li>
