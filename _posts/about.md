@@ -88,15 +88,14 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 - Working as full-time.
 - Developed the CVR model to predict *CPI user.
 - Developed the multi-label text classification model to categorize users' reviews.
-  - Visualize the summarized trend of the keywords, which show the point of the opinion.
   - Boost to analyze the users who give feedback with rich information.
   - Build the RESTful API server to inference the model in real-time on CPU.
 - Developed the robust captcha model to predict numeric captchas.
-  - light-weighted CNN model for real-time inference (about `~ 1000 TPS` for batch transaction, `~ 50 TPS` for a sample on CPU)
+  - light-weighted CNN model for real-time inference (about `~ 1000 TPS` for batch transaction, `80 ~ 100 TPS` for a sample on CPU)
   - Build augmentations which fit in the domain to build a robust model.
-  - Save about **$30,000 / year**
+  - Save about **$7,000 / year**
   - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
-    - **Accuracy** : improved **50%p** (`49%` to `95%`)
+    - **Accuracy** : improved **50%p** (`45%` to `95%`)
     - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
 - Developed the model to forecast the transactions' category to purchase next month & few weeks.
   - Transformer-based architecture with the transactions & user demographic.
@@ -104,7 +103,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
     - **CTR** : soon!
-- Developed the loan overdue prediction model for BNPL (CSS model)
+- Developed the CSS model for BNPL (CSS model)
   - EDA to find the useful features correlated with the overdue user.
   - Build the robustness CV & ensemble strategy in an aspect of the on/offline performance.
 - Developed the card category classification model.
