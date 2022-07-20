@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-06-24
+update: 2022-07-20
 tags:
   - About
 keywords:
@@ -11,7 +11,7 @@ keywords:
 
 Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
 
-CV : [[PDF] (as of Mar. 2022)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of Jul. 2022)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
