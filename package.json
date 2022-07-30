@@ -63,7 +63,7 @@
     "gatsby-source-filesystem": "^4.19.0",
     "gatsby-transformer-remark": "^5.19.0",
     "gatsby-transformer-sharp": "^4.19.0",
-    "katex": "^0.16.0",
+    "katex": "^0.13.24",
     "lodash": "^4.17.21",
     "mobile-detect": "^1.4.5",
     "moment": "^2.29.4",
