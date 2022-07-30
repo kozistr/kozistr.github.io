@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-07-20
+update: 2022-07-30
 tags:
   - About
 keywords:
@@ -86,30 +86,33 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
 - Working as full-time.
-- Developed the CVR model to predict *CPI user.
-- Developed the multi-label text classification model to categorize users' reviews.
-  - Boost to analyze the users who give feedback with rich information.
-  - Build the RESTful API server to inference the model in real-time on CPU.
-- Developed the robust captcha model to predict numeric captchas.
-  - light-weighted CNN model for real-time inference (about `~ 1000 TPS` for batch transaction, `80 ~ 100 TPS` for a sample on CPU)
+- Developed the multi-label text classification model to categorize users' reviews (NPS).
+  - Boost to analyze the feedback with rich information automatically.
+  - Build the RESTful API server to infer the model for the batch job.
+  - Save analysis time and labor a lot.
+- Developed the robust captcha model to predict captchas.
+  - light-weighted CNN model for real-time inference (about `~ 1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU)
   - Build augmentations which fit in the domain to build a robust model.
-  - Save about **$7,000 / year**
+  - Build the RESTful API server to serve the model in real-time on the CPU.
   - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`45%` to `95%`)
     - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
-- Developed the model to forecast the transactions' category to purchase next month & few weeks.
+    - **Revenue** : Save about **$7,000 / year**
+- Developed the model to forecast the transactions' category to purchase next month.
   - Transformer-based architecture with the transactions & user demographic.
-  - Calibration-aware training.
+  - Build an efficient pipeline to train the large tabular data (500GB ~).
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
     - **CTR** : soon!
 - Developed the CSS model for BNPL (CSS model)
   - EDA to find the useful features correlated with the overdue user.
   - Build the robustness CV & ensemble strategy in an aspect of the on/offline performance.
+  - Achieved targeted default rate, 1%.
 - Developed the card category classification model.
   - Transformer-based architecture, about `900 TPS` on a single GPU.
   - Handle noisy-text (transaction) & label, class-imbalanced problem.
-- Contributed to the team culture (e.g. collaboration tools, style-guides, etc).
+  - Help to boost the accuracy of the ads category, which increases the revenue in a roundabout way.
+- Contributed to the team culture (e.g. collaboration tools, style guides, etc).
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
@@ -122,7 +125,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 - Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
   - Build _Future_ module to understand better at the time of inference.
-  - Apply augmentations to the various features, leads to performance gain & robustness.
+  - Applying augmentations to the various features, leads to performance gain & robustness.
   - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
     - Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
     - However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
@@ -132,7 +135,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 - Developed a model to predict expected users' view-time of the contents.
   - Predict how many and how much time people are going to watch the content before the content supplied.
   - Find out which features impact users' watches.
-- Developed a pipeline to recognize main actors from the poster and still-cut images.
+- Developed a pipeline to recognize the main actors from the poster and still-cut images.
   - Utilize **SOTA** face detector & recognizer.
   - Optimize pre/post processing routines for low `latency`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next. (named `FLAT`)
@@ -143,7 +146,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     - **Click Ratio** : improved **4.30%p+**
     - **Play Ratio** : improved **2.32%p+**
 - Developed Image Super-Resolution model to upscale movie & tv poster, still-cut images.
-  - Optimize the codes for `low latency` & `memory-efficiency` on _CPU_.
+  - Optimize the codes for `low latency` & `memory efficiency` on the _CPU_.
   - An internal evaluation (qualitative evaluation by the designers), catches details better & handles higher resolution & takes a little time.
 
 % `*Viewing Days` : how many days are users active on an app each month.
@@ -153,7 +156,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
 - Worked as full-time.
-- Developed the card & bank account transaction category classification models, designed _light-weight purpose_ for the low latency. (now on service)
+- Developed the card & bank account transaction category classification models, and designed _light-weight purpose_ for the low latency. (In-service)
   - **In A/B (online)** test (statistically significant `p-value < 0.05`)
     - **\*Accuracy** : improved **about 25 ~ 30%p**
 - Developed the RESTful API server to serve (general purpose) machine learning models.
@@ -169,7 +172,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
 - Worked as an intern.
-- Developed speaker verification, diarization models & logic for recognizing the arbitrary speakers recorded from the noisy (real-world) environment.
+- Developed speaker verification, diarization models & logic for recognizing the arbitrary speakers recorded from noisy (real-world) environment.
 - Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domains naturally.
 
 #### _Penetration Tester_, **ELCID**, **(2016.07 ~ 2016.08)**
