@@ -44,7 +44,7 @@ jobs:
           restore-keys: ${{ runner.os }}-pnpm-store-
 
       - name: Install Dependencies
-        run: pnpm ci --prefer-offline --no-audit --production
+        run: pnpm ci --prefer-offline --production
 
       - name: Build
         run: pnpm run build
