@@ -5,6 +5,8 @@ const gatsbyConfig = {
   siteMetadata: { title, description, author, siteUrl, language },
 
   plugins: [
+    'gatsby-plugin-pnpm',
+
     `gatsby-plugin-typescript`,
 
     `gatsby-plugin-react-helmet`,
