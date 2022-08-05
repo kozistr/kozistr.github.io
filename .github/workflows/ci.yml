@@ -30,8 +30,8 @@ jobs:
           path: |
             .cache
             public
-          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
-          restore-keys: ${{ runner.os }}-gatsby-build-
+          key: ${{ runner.os }}-gatsby-pnpm-build-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-gatsby-pnpm-build-
 
       - name: Get pnpm store directory
         id: pnpm-cache
