@@ -49,7 +49,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       const { slug } = fields
       const { date, update } = frontmatter
 
-      // series
       let filteredEdges = []
       const series = []
 
