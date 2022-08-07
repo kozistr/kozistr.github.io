@@ -31,6 +31,7 @@ specifiers:
   gatsby-plugin-manifest: ^4.20.0
   gatsby-plugin-offline: ^5.20.0
   gatsby-plugin-pnpm: ^1.2.10
+  gatsby-plugin-purgecss: ^6.1.2
   gatsby-plugin-react-helmet: ^5.20.0
   gatsby-plugin-robots-txt: ^1.7.1
   gatsby-plugin-sass: ^5.20.0
@@ -95,6 +96,7 @@ dependencies:
   gatsby-plugin-manifest: 4.20.0_qxfvqn5ydvzvumhc7us2mywliy
   gatsby-plugin-offline: 5.20.0_oh3sco4kjkoqh6mdxefyuia3ui
   gatsby-plugin-pnpm: 1.2.10_gatsby@4.20.0
+  gatsby-plugin-purgecss: 6.1.2_gatsby@4.20.0
   gatsby-plugin-react-helmet: 5.20.0_gdqv7coiubvhojb3tfowkm6kam
   gatsby-plugin-robots-txt: 1.7.1_gatsby@4.20.0
   gatsby-plugin-sass: 5.20.0_2murvuaftbnbkhhzsxcztctctm
@@ -7661,6 +7663,18 @@ packages:
       lodash.uniq: 4.5.0
     dev: false
 
+  /gatsby-plugin-purgecss/6.1.2_gatsby@4.20.0:
+    resolution: {integrity: sha512-TT2Af1qS+IUoWN+8UpKDOA1j+HOTuc/LVngc77mmgoARnWZntXNHJJccbUIWHc9nu9jKOOwUbrtdA0iJ60uCuA==}
+    peerDependencies:
+      gatsby: ^2.0.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      fs-extra: 10.1.0
+      gatsby: 4.20.0_ylpyih4ijgk5dar2yjp2w4u6rq
+      loader-utils: 3.2.0
+      merge-anything: 5.0.2
+      purgecss: 4.1.3
+    dev: false
+
   /gatsby-plugin-react-helmet/5.20.0_gdqv7coiubvhojb3tfowkm6kam:
     resolution: {integrity: sha512-YFIphG9xWMv/hEGQHmiAVLAo3oPgeguYkRgOrVlqoz9+PNzPwVvDBVKl8ufeWM8cJL1bIlR0YQ1wU0KhPpP2aQ==}
     engines: {node: '>=14.15.0'}
@@ -9493,6 +9507,11 @@ packages:
     dependencies:
       call-bind: 1.0.2
 
+  /is-what/4.1.7:
+    resolution: {integrity: sha512-DBVOQNiPKnGMxRMLIYSwERAS5MVY1B7xYiGnpgctsOFvVDz9f9PFXXxMcTOHuoqYp4NK9qFYQaIC1NRRxLMpBQ==}
+    engines: {node: '>=12.13'}
+    dev: false
+
   /is-whitespace-character/1.0.4:
     resolution: {integrity: sha512-SDweEzfIZM0SJV0EUga669UTKlmL0Pq8Lno0QDQsPnvECB3IM2aP0gdx5TrU0A01MAPfViaZiI2V1QMZLaKK5w==}
     dev: false
@@ -10328,6 +10347,14 @@ packages:
       trim-newlines: 3.0.1
       type-fest: 0.18.1
       yargs-parser: 20.2.9
+    dev: false
+
+  /merge-anything/5.0.2:
+    resolution: {integrity: sha512-POPQBWkBC0vxdgzRJ2Mkj4+2NTKbvkHo93ih+jGDhNMLzIw+rYKjO7949hOQM2X7DxMHH1uoUkwWFLIzImw7gA==}
+    engines: {node: '>=12.13'}
+    dependencies:
+      is-what: 4.1.7
+      ts-toolbelt: 9.6.0
     dev: false
 
   /merge-descriptors/1.0.1:
@@ -12119,6 +12146,16 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       escape-goat: 2.1.1
+    dev: false
+
+  /purgecss/4.1.3:
+    resolution: {integrity: sha512-99cKy4s+VZoXnPxaoM23e5ABcP851nC2y2GROkkjS8eJaJtlciGavd7iYAw2V84WeBqggZ12l8ef44G99HmTaw==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+      glob: 7.2.3
+      postcss: 8.4.14
+      postcss-selector-parser: 6.0.10
     dev: false
 
   /q/1.5.1:
@@ -14061,6 +14098,10 @@ packages:
       source-map-support: 0.5.21
       typescript: 4.7.4
       yn: 3.1.1
+    dev: false
+
+  /ts-toolbelt/9.6.0:
+    resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
     dev: false
 
   /tsconfig-paths/3.14.1:
