@@ -5,6 +5,8 @@ update: 2022-07-30
 tags:
   - About
 keywords:
+  - cv
+  - aboutme
 ---
 
 ## Profile
