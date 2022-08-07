@@ -33,6 +33,7 @@ specifiers:
   gatsby-plugin-pnpm: ^1.2.10
   gatsby-plugin-purgecss: ^6.1.2
   gatsby-plugin-react-helmet: ^5.20.0
+  gatsby-plugin-remove-fingerprints: ^0.0.2
   gatsby-plugin-robots-txt: ^1.7.1
   gatsby-plugin-sass: ^5.20.0
   gatsby-plugin-sharp: ^4.20.0
@@ -98,6 +99,7 @@ dependencies:
   gatsby-plugin-pnpm: 1.2.10_gatsby@4.20.0
   gatsby-plugin-purgecss: 6.1.2_gatsby@4.20.0
   gatsby-plugin-react-helmet: 5.20.0_gdqv7coiubvhojb3tfowkm6kam
+  gatsby-plugin-remove-fingerprints: 0.0.2
   gatsby-plugin-robots-txt: 1.7.1_gatsby@4.20.0
   gatsby-plugin-sass: 5.20.0_2murvuaftbnbkhhzsxcztctctm
   gatsby-plugin-sharp: 4.20.0_qxfvqn5ydvzvumhc7us2mywliy
@@ -7685,6 +7687,10 @@ packages:
       '@babel/runtime': 7.18.9
       gatsby: 4.20.0_ylpyih4ijgk5dar2yjp2w4u6rq
       react-helmet: 6.1.0_react@17.0.2
+    dev: false
+
+  /gatsby-plugin-remove-fingerprints/0.0.2:
+    resolution: {integrity: sha512-af1zbr0+cr3fcjEAVAbUia/On6GJbrxoLVNZf7TxLqKzPMfMlDNXf6hDXAJy0dzxE6qrqD2oyGZpk1rOdgUQ0Q==}
     dev: false
 
   /gatsby-plugin-robots-txt/1.7.1_gatsby@4.20.0:

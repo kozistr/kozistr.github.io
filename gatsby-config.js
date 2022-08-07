@@ -13,6 +13,8 @@ const gatsbyConfig = {
 
     `gatsby-plugin-sass`,
 
+    `gatsby-plugin-remove-fingerprints`,
+
     `gatsby-transformer-sharp`,
 
     `gatsby-plugin-sharp`,
@@ -207,7 +209,7 @@ const gatsbyConfig = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true,
+        printRejected: false,
         develop: true,
         tailwind: true,
       }
