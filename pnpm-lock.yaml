@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@emotion/react': ^11.10.0
   '@fortawesome/fontawesome-svg-core': ^6.1.2
   '@fortawesome/free-brands-svg-icons': ^6.1.2
   '@fortawesome/free-regular-svg-icons': ^6.1.2
@@ -75,6 +76,7 @@ specifiers:
   typography: ^0.16.21
 
 dependencies:
+  '@emotion/react': 11.10.0_yd7hlrokpzc7r4mu6t7yor2f5q
   '@fortawesome/fontawesome-svg-core': 6.1.2
   '@fortawesome/free-brands-svg-icons': 6.1.2
   '@fortawesome/free-regular-svg-icons': 6.1.2

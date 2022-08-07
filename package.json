@@ -29,6 +29,7 @@
     "node": "^16.0.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
