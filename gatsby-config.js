@@ -212,8 +212,8 @@ const gatsbyConfig = {
         printRejected: false,
         develop: true,
         tailwind: true,
-      }
-    }
+      },
+    },
   ],
 }
 
