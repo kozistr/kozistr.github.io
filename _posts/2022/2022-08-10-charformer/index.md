@@ -64,9 +64,44 @@ subword 내 character 간 positions 정보도 중요한데, 이런 정보를 살
 
 #### Block Scoring Network
 
+모델이 어떤 block 을 선택할지를 학습하기 위해서 간단하게 block scoring network 를 만들었다고 합니다.
+단순한 linear transformation 형태 $F_{R} : \mathbb{R}^{d} -> \mathbb{R}$
 
+score 는 다음과 같이 쓸 수 있습니다.
+
+$p_{b,i} = F_{R}(X_{b,i})$
+
+그리고 각 position $i$ 별로 (모든 block size $b$ 에 대해) 가장 적합한 block 을 찾기 위해서 softmax 해서 ranking 하는데, 공식은 다음과 같습니다.
+
+$P_{i} = softmax([p_{1,i},p_{1,i},...,p_{M,i}])$
+
+아래 이미지와 같이 동작합니다.
+
+![img](./subword_block_scoring.png)
+
+#### Forming Latent Subwords
+
+scoring 후에는 모든 subword blocks $X_{b,i}$ 에 대해서 sum 합니다. $\hat{X}_{i} = \sum_{b}^{M} P_{b,i}X_{b,i}$
+
+한 줄 정리하면 position 별로 optimal subword block 을 학습하게 됩니다.
+
+#### Position-wise Score Calibration
+
+위와 같이 계산하면 각 position 별로 독립적인데, 각 position 별로 서로 봐 주는(?) 무언가가 있으면 더 좋지 않을까라 생각해서 모든 position 에 대해서 dot product 해서 score 를 구하는 module 을 만들었다고 합니다.
+
+$\hat{P} = softmax(P\hat{P})P$, $\hat{P} \in \mathbb{R}^{L \times M}$
+
+### Downsampling
+
+마지막으로 candidate block 을 구한 후, sequence length 를 줄이기 위해서 downsampling 을 합니다.
+
+downsampling function $F_{D} : \mathbb{R}^{L \times d}$, sequence of latent subwords $\bar{X}$
 
 ### Transformer Stack
+
+T5 와 큰 차이점은 없고 (encoder-decoder architecture), 다만 character-level input 을 사용하다보니 `ByT5` 처럼 architecture design 이 달라지는데, 그래서 re-scaling parameters 를 했다고 한다 (구체적인 부분은 논문에...).
+
+한 줄 요약하면 논문에서 비교 benchmark 가능하게끔 적절하게 조절했다고 한다.
 
 ## Performance
 
@@ -83,5 +118,7 @@ subword 내 character 간 positions 정보도 중요한데, 이런 정보를 살
 기존 character-level 보다도 학습 속도가 빠르다는 것도 보여주고 있다.
 
 ## Conclusion
+
+tokenizer 를 trainable 하도록 넣은 점에서 재밌는 연구였다. 아쉬운 점은 다른 architecture (e.g. encoder-only, ...) 와 task 에 대한 실험이 있었으면 좋았을 거 같고 inference 도 학습 연산량, 속도 이외에 더 다양한 자료가 있으면 실제로 얼마나 차이가 있는지 더 와닿지 않았을까 생각이 들었다.
 
 결론 : 굳굳
