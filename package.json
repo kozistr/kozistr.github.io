@@ -52,6 +52,7 @@
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-offline": "^5.20.0",
     "gatsby-plugin-pnpm": "^1.2.10",
+    "gatsby-plugin-react-helmet": "^5.20.0",
     "gatsby-plugin-remove-fingerprints": "^0.0.2",
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sass": "^5.20.0",
