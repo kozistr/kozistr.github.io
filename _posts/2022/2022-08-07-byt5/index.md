@@ -98,7 +98,9 @@ train은 조금 느리고, inference는 더 많이 느리다.
 
 ## Conclusion
 
-개인적으론 `token-free` model 접근은 재밌었지만 (`token-free` 개념 자체는 처음이 아니지만), utf-8 encoded bytes 를 input 으로 넣어주면서 다른 `token-based` model 대비 상대적으로 짧은 sequences 를 다루게 되면서 이 부분은 아쉬웠고, 일반적인 상황에서의 사용성을 생각하면 현재 연구 자체로는 너무 specific 하다고 생각한다. short-medium length 의 multi-lingual tranlsation 에만 적합한 느낌. 
+개인적으론 `token-free` model 접근은 재밌었지만 (`token-free` 개념 자체는 처음이 아니지만), utf-8 encoded bytes 를 input 으로 넣어주면서 다른 `token-based` model 대비 상대적으로 짧은 sequences 를 다루게 되면서 이 부분은 아쉬웠고, 일반적인 상황에서의 사용성을 생각하면 현재 연구 자체로는 너무 specific 하다고 생각한다. short-medium length 의 multi-lingual tranlsation 에만 적합한 느낌.
+
+저자 왈 단점 때문에 속도가 느려지는 게 toeknizer 운영 cost 생각하면 괜찮지 않나? 라는 입장도 어느 정도 reasonable 하다 생각한다.
 
 그래도 후속 연구에서 generation & translation tasks 에 한정이 아닌 general manner 하면서 performance 도 comparable 한 무언가가 나오지 않을까?
 
