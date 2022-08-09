@@ -205,15 +205,6 @@ const gatsbyConfig = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
-
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-        develop: true,
-        tailwind: true,
-      },
-    },
   ],
 }
 
