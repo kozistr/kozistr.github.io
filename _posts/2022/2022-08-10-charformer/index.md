@@ -38,17 +38,17 @@ input to GBST 는 $X \in \mathbb{R}^{L \times d}$, $L$ = sequence length (input 
 
 a subword (block) 은 다음과 같이 정의할 수 있다.
 
-$X_{i:i + b}$ of length $b$ for $1 \leq i \leq L- b$
+$X_{i \colon i + b}$ of length $b$ for $1 \leq i \leq L- b$
 
 #### Constructing Candidate Latent Subword Blocks
 
 $s$ = stride, $b$ = subword blocks of size for $1 \leq b \leq M$, $M$ = maximum block size, $F : \mathbb{R}^{b \times d} \in \mathbb{R}^{d}$ = (non-parameterized) strided pooling function
 
-sequence of character embedding $X_{i:i + b} \in \mathbb{R}^{b \times d}$, single subword block representation $X_{b,i} \in \mathbb{R} ^ {d}$
+sequence of character embedding $X_{i \colon i + b} \in \mathbb{R}^{b \times d}$, single subword block representation $X_{b,i} \in \mathbb{R} ^ {d}$
 
 subword blocks 는 다음과 같이 표현이 가능합니다.
 
-$X_{b} = [F(X_{i:i+b});F(X_{(i+s):(i+s)+b});...]$
+$X_{b} = [F(X_{i \colon i+b});F(X_{(i+s) \colon (i+s)+b});...]$
 
 실제로는 stride $s$ 와 block size $b$ 를 같게 세팅해서, 다시 쓰면 $X_{b} \in \mathbb{R}^{\frac{L}{b} \times d}$ 요렇게 쓸 수 있습니다.
 
