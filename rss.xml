@@ -1,4 +1,246 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 09 Aug 2022 11:02:59 GMT</lastBuildDate><item><title><![CDATA[DeepNet - Scaling Transformers to 1,000 Layers]]></title><description><![CDATA[TL;DR 최근 논문을 보면 complex 한 architecture를 design 하기보다는 training recipes을 제안하거나 large-scale 모델을 더 stable하게 학습하는 방법 등의 논문들이 많이 나오는 경향입니다 (개인적으로…]]></description><link>http://kozistr.tech/deepnet/</link><guid isPermaLink="false">http://kozistr.tech/deepnet/</guid><pubDate>Sun, 20 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 09 Aug 2022 14:05:22 GMT</lastBuildDate><item><title><![CDATA[ByT5 - Towards a Token-Free Future with Pre-trained Byte-to-Byte Models]]></title><description><![CDATA[TL;DR paper : arXiv code : github Related Work CANINE mT5 paper Introduction 기존 LM 에서는 tokenizer 를 사용하고 있어 여러 측면에서 단점이 있는데, 이런 문제를 해결하기 위해 …]]></description><link>http://kozistr.tech/byt5/</link><guid isPermaLink="false">http://kozistr.tech/byt5/</guid><pubDate>Tue, 09 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;paper : &lt;a href=&quot;https://arxiv.org/abs/2105.13626&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;code : &lt;a href=&quot;https://github.com/google-research/byt5&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2103.06874&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;CANINE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2010.11934&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;mT5 paper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;기존 LM 에서는 tokenizer 를 사용하고 있어 여러 측면에서 단점이 있는데, 이런 문제를 해결하기 위해 &lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; LM 모델을 제안했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; model 은 말대로 tokenizer 를 활용하지 않고 byte or character-level (utf-8 encoded) raw text 를 input 으로 받는 형태인데, 여러 장점이 존재합니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;tokenize 하는 code or service 를 관리할 필요가 없다. (서비스 복잡도가 낮아지고 운영 부담 줄어든다.)&lt;/li&gt;
+&lt;li&gt;OOV (Out-Of-Vocabular) case 가 없다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;특히 &lt;code class=&quot;language-text&quot;&gt;T5&lt;/code&gt; 같이 multi-lingual LM 인 경우에 더 유리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;noisy-robust 하다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;그래서 이번 논문의 contributions 은 크게 3가지 입니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; model 시도&lt;/li&gt;
+&lt;li&gt;기존 &lt;code class=&quot;language-text&quot;&gt;token-based&lt;/code&gt; model 에서 최소한의 수정으로 가능하게끔 구현&lt;/li&gt;
+&lt;li&gt;여러 metrics, measurements 에서 &lt;code class=&quot;language-text&quot;&gt;token-based&lt;/code&gt; 에 comparable (or outperform) 한 architecture design&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
+&lt;h3 id=&quot;pretraining&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pretraining&quot; aria-label=&quot;pretraining permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pretraining&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c6f74c824429862342e8c556830ae1aa/b59fb/pretrain_stage.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABj0lEQVQozzWRyY7bMBBE/f9fkj/IZe6DSTCTSQInzmgxbcqm1BQpLuIic0toI4UG+lIP1YXelVLWdRVClFJCCIIBObVwOS6cCSG0VgihRQhjzMPJOC//tSul5LvqLoUPf96fPjUvnzerQoir1hTAGKOUklI65zZjgrXR++D9LqUEANMElFIxgSLXGSOCemfMKuXQtUPX4a497PenpoG2pc3HtWmG3wcxQU0WQiB07Pse9T0/n1nTCKA5xpiS956M40xntXA7z24c7TiKYdD34yscU1qNgWlSUgIAA0gx5pxDCI9St9tNiMVZK4VYGE8hlpQqbIxB6IgxJsPgrbXGSIQUueZUZa2tpcaJErJ5b6RUhGiM3TxX2HvPGJN8MasNIcSYrTbbFlKquLMOADjMztjagvMFIYaxt7bCOWdE2x/o9dfwnes5qJYPz2p88eul5MJXusfvP09vmB1zLjG4mezP/dsCHymGCnPNRnadltFu9ua4XrCRl5vXpRSm6bfuy9fDM6Ld46ExhvvEf8l/AWwH+b6q/ooZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/c6f74c824429862342e8c556830ae1aa/fcda8/pretrain_stage.png&quot;
+        srcset=&quot;/static/c6f74c824429862342e8c556830ae1aa/12f09/pretrain_stage.png 148w,
+/static/c6f74c824429862342e8c556830ae1aa/e4a3f/pretrain_stage.png 295w,
+/static/c6f74c824429862342e8c556830ae1aa/fcda8/pretrain_stage.png 590w,
+/static/c6f74c824429862342e8c556830ae1aa/efc66/pretrain_stage.png 885w,
+/static/c6f74c824429862342e8c556830ae1aa/c83ae/pretrain_stage.png 1180w,
+/static/c6f74c824429862342e8c556830ae1aa/b59fb/pretrain_stage.png 1285w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;위 이미지가 &lt;code class=&quot;language-text&quot;&gt;PLM&lt;/code&gt; 만드는 방법인데, &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; architecture 를 base 로 합니다. &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; vs &lt;code class=&quot;language-text&quot;&gt;ByT5&lt;/code&gt; 를 비교하는데, 다음과 같은 차이가 있습니다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;architecture / features&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;text&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;mask&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;enc/dec&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;mT5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;SentencePiece&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;~ 3 subword tokens&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;equal depth (&lt;code class=&quot;language-text&quot;&gt;enc&lt;/code&gt; = &lt;code class=&quot;language-text&quot;&gt;dec&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;ByT5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;raw text (utf-8 encoded)&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;~ 20 bytes&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;enc&lt;/code&gt; is &lt;strong&gt;3x&lt;/strong&gt; deeper than &lt;code class=&quot;language-text&quot;&gt;dec&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;recipe 에 주목할 만한 차이점이면, 기존 (mT5) 에는 ~ 3 tokens 를 mask 했다면 이번 연구에선 성능상 더 이점이 있어서 더 긴 길이를 (~ 20 bytes) mask 했습니다.&lt;/p&gt;
+&lt;p&gt;또한, encoder 가 decoder 보다 3x 더 깊은데 이것도 실험 결과 byte-level models 에선 encoder 가 더 깊은 게 좋다고 합니다.&lt;/p&gt;
+&lt;h3 id=&quot;design-and-costs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#design-and-costs&quot; aria-label=&quot;design and costs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Design and costs&lt;/h3&gt;
+&lt;p&gt;token 에서 byte-level character 로 바뀌면서 architecture design &amp;#x26; recipe 에 차이가 생길겁니다. 크게 3가지가 변경점이 있을 텐데,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;softmax-layer (output matrices) at the &lt;code class=&quot;language-text&quot;&gt;Decoder&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;sequence-length (~ attention)&lt;/li&gt;
+&lt;li&gt;data efficiency&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;softmax-layer-at-the-code-classlanguage-textdecodercode&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#softmax-layer-at-the-code-classlanguage-textdecodercode&quot; aria-label=&quot;softmax layer at the code classlanguage textdecodercode permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;softmax-layer at the &lt;code class=&quot;language-text&quot;&gt;Decoder&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;mT5-base&lt;/code&gt; 기준으로 decoder 에 output matrices 부분의 parameter 가 전체 모델의 parameter 대비 66% 를 차지합니다 (토큰 수가 많아서).
+그런데, &lt;code class=&quot;language-text&quot;&gt;ByT5&lt;/code&gt; 는 byte-level output 을 주기 때문에 parameter 가 훨 작은데, 논문에서는 &lt;em&gt;동일한 parameter 규모를 가정&lt;/em&gt;하면 transformer layer 를 더 쌓거나 hidden size 를 더 크게 가져가는 등 complexity 측면에서 이득을 볼 수 있다고 합니다.&lt;/p&gt;
+&lt;h4 id=&quot;sequence-length&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sequence-length&quot; aria-label=&quot;sequence length permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;sequence length&lt;/h4&gt;
+&lt;p&gt;byte-level 로 가면서 token 보다 sequence length 가 길어질텐데, time &amp;#x26; space complexity 가 heavy 해 질 수 있다. 무언가 이걸 해결하기 위한 가볍고 빠른 attention 을 utilize 하지는 않은 듯 합니다.&lt;/p&gt;
+&lt;h4 id=&quot;data-efficiency&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data-efficiency&quot; aria-label=&quot;data efficiency permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;data efficiency&lt;/h4&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/52576/per_language_compression_rates.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABNElEQVQY042QPUvDUBiF7y9x0EWQ/gZ/gaOjOOmiFFwKBcHSqVhqLSqhIA5FW4of2CapjYuDUlLTNCma749iFycli83XvbmSiBQ3H87wvu9Z3nPAec9CMMQ4SoQwgjAMwjAIgxn+Xzzfdz1/OnXB0h6zXR9e9N86L++s/TH5/PJhhP8BghCkcsxClp7LUPNZenH3LpVjlosPK0ePq0Rv7ZRdP+tv1AabtcFWnU83hHRD2GmKmatRnpTbwgQcd/jq/ajKiERXIBjxpCtUSO6Q4iu0UCb5A4ovtbkyPSy1uMINW7hm92+fiy0uf8k2nxQQR43QLDPGEfQxhsn808JvI9DD0MURjJ+OEEYBsMZjTTdeJVmSFcu2FVXTdcMwLU035HgxTCs+mollmJaq6ZKsKKrmOM43y4kre31TBEMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/fcda8/per_language_compression_rates.png&quot;
+        srcset=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/12f09/per_language_compression_rates.png 148w,
+/static/0c8294b6b80a5a67ccf151707462d2ad/e4a3f/per_language_compression_rates.png 295w,
+/static/0c8294b6b80a5a67ccf151707462d2ad/fcda8/per_language_compression_rates.png 590w,
+/static/0c8294b6b80a5a67ccf151707462d2ad/efc66/per_language_compression_rates.png 885w,
+/static/0c8294b6b80a5a67ccf151707462d2ad/c83ae/per_language_compression_rates.png 1180w,
+/static/0c8294b6b80a5a67ccf151707462d2ad/52576/per_language_compression_rates.png 1412w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;(mC4 dataset 기준) 언어 토큰 별 평균 byte 길이를 보여주는 건데, 2.5 ~ 9 bytes 에 평균 4 bytes 라고 합니다. 즉, 다른 모델과 같은 세팅으로 훈련하게 된다면 (fixed sequence length, training steps) 4 배 짧은 문장을 학습하게 됩니다. (e.g. 512 tokens -&gt; 128 tokens)&lt;/p&gt;
+&lt;h2 id=&quot;performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#performance&quot; aria-label=&quot;performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
+&lt;h3 id=&quot;glue-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#glue-benchmark&quot; aria-label=&quot;glue benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GLUE benchmark&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b26293e17b6cb2de0721cec3955702b7/8c557/glue_performance.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACIUlEQVQoz22S23KjMBBE/f8fluwDsbEDSKC7BAJBsI1AiIuJt7xbu3Gq0o9Tc3q6ZmZ3/6dxHOu6bv7IGMMYU0q1bVuWZZ7nUgjGmdb6fD5/fn7+RXb3J/2vWmuFEEVRbNvmvU+ShFLKGO2H4bntC16WBWNcFIVzjjE2ukFKWTeNtbYsy2EYhJTPY7/BfhwRQozxvreMsa6z4WGvlKprQwi9Xq/HMKyMmabp58kAwsv1uiwzQtmyrof9vii0cwMXYl3X/Vvwcb78HPt2W7Ms/fhoh75/C4JpmqSQ7flSmyqK43l+OPZufN7RF7yuC0L4tm22615ffy3LWuS5tb0pdXg8reuNEOKn6Wd48h4AUFWmaeowDC+XKyGkaRolxfF0ats2AUld1865r9je+77v1/U2L3M/9M65ruuGYbDWTt5bawfnvJ9G7/00XS7XruumeXLOzfO8q8oyCIJC61wpjDEhBCQgiiJKaZY+FCdJmmVKScpYnCRCCMbYexTlebHTpYYAAAARQmWpOeecPT4iTSEAEALAOTePayFCGCGEUarL8v39xDnfVVUVx3GGkJSq1DpOAISw0JozBmEaRZGQSggBIaSUIoSyLJNSAgCUUg8Yo4xQWhQ5pfSRmxDGmDEGEwxBkiFkjBGCAwgxxpRSznmhNWNsp6Q8hGGWpgCAIAg458fj8eXlJYqihynBURSlaUowhhAmSRIeDoSQ+/2+bdtv8r/+26+0wZwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/b26293e17b6cb2de0721cec3955702b7/fcda8/glue_performance.png&quot;
+        srcset=&quot;/static/b26293e17b6cb2de0721cec3955702b7/12f09/glue_performance.png 148w,
+/static/b26293e17b6cb2de0721cec3955702b7/e4a3f/glue_performance.png 295w,
+/static/b26293e17b6cb2de0721cec3955702b7/fcda8/glue_performance.png 590w,
+/static/b26293e17b6cb2de0721cec3955702b7/8c557/glue_performance.png 700w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;small, base 모델은 &lt;code class=&quot;language-text&quot;&gt;ByT5&lt;/code&gt; model 이 좋은데, 커 질수록 &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; 가 더 좋다. 그런데, 작은 모델에서 &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; 가 성능이 좋지 못한 이유가 decoder output layer 크기가 압도적으로 커서 다른 부분이 집중을 못 하는 issue 가 있다라고 해서, 사실상 그냥 comparable 하다라 보는 게 적절하다 생각함&lt;/p&gt;
+&lt;h3 id=&quot;generation-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#generation-benchmark&quot; aria-label=&quot;generation benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generation benchmark&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/0fcea/generation_performance.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB60lEQVQozzXSyXKcMAAEUP7/02xXPCA2idHCKkaAVsQ2EytlJ3nnrupDd3Qch3Nu3/e+78uyvFcVpdR7P44jxvh+x8ba7YcxJsszjMm+7+u6nucZhf+u68qzNE5irXUIoWmaJAGMseM4/gaUkgghkKbneYYQvr6+om3b+Mi936RS8zxLKTnn+74Pw+DcyjmXcgkhTPM0zVMI4TiOruuccyGESCmVpuk0TZwPYvrGGDPGMEqNMVVVjeOolCSE9H2vtW7btiiKO8bHsUdKSYjQ6/WaJ+FW76ytqur361Wz+no+UwA4H6VcMCE1Y1IphGASx+8fH8dxREZrhNB5ntMkjLVa67Isz/Oq6/q6riwFnHOtNee873trbd93EJYApN5vkZQLZSyEIKWc50UpGce36/mEEF7Xd3PTdsuydF03DINffZ5ncZK8vb3/NBsDIdy2beSjmCYhRFEU3ntKidaaEMzqWinVdf29qoQQeZ5nWXa73ZxzkTbGWmuM8d7P8+yc27ZtkYuUcv3PWuucM9au67rv+7Zt/3aGsCyKUmsjxANC9BhHIUSWgoHzpmkwxkVZdH0HAPj8/IUxLssiy7KiKB6PR4QQbJqma1sAAESIUpLnOSG0bVtCCGOMUooJads2iWMAAKOUEHr8/OQP7phXBihh/hMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/fcda8/generation_performance.png&quot;
+        srcset=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/12f09/generation_performance.png 148w,
+/static/07a106d47a9f8fd4e991b12ebd45f82b/e4a3f/generation_performance.png 295w,
+/static/07a106d47a9f8fd4e991b12ebd45f82b/fcda8/generation_performance.png 590w,
+/static/07a106d47a9f8fd4e991b12ebd45f82b/0fcea/generation_performance.png 851w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;generation task 에선 잘한다.&lt;/p&gt;
+&lt;h3 id=&quot;inference-speed&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#inference-speed&quot; aria-label=&quot;inference speed permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inference Speed&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4add87609bc4a359a4f4d011bd229a01/ad12c/inference_speed.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.54054054054055%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACIUlEQVQoz02S2ZKbMBRE/f+/NZnkKbMFYdAuo81gkAViMRiUMJ5U0k+3SjpXra4+xBjHcfTet20bQqjrGiEkhLDWKq2v3ocQrLWMUSGE1sYYq5QaxzHGeIj/aVkWa4xSWkpZFLJxzbpu27ZJKY011hohRNO4ZVke9w8PZpqmeZ6da4QQ67qez5Zz3vf9PM9933PO+mEIoWOMNc7Nn/qC+xDe3t6V0lVVAQDatsUIMcYIIQ+HZ2sa57quQxBqrRjnXRe+4Hm+JUkSQrgvC2MsxqiVIoQYo+u6jjFyxkLoQ+gQxlVVGmOm6fbPNoTQuev9fscYr+tWVSVlTEpVVZd1XQnBn4F6Qqi1eyjTNH3B4zgmSXK73R5vzvPSeg8R4pydz+UwDK8vL+56FZwnABRFwTkfhr9phxAghGVZeu+V1s65c3kWQkhZaK0vdU0wLsvygSklT6dT17Y77FxzqS7TNLWfGobBOfcYvPfjMLTeT9Ot3X3v1odxV9M0XdcdtFbv7x+YECllmqYgBSAFeZ4jhLIsE5xjiAilSZL8+vgAICWECMERQmVZHmRR5DlECFlrX19+Ukoopd+fn0ECKKUI46I4EUL22nFBCMmyLN8Fm6Y54P1YKikJIUUhH7/69vT0/P2HMSZNj1l2TNOUC0EpASCllGqtxWmv2sFoTSnFGEEICymtNYTQ4zHjXJxO4nPX3laY55QSCGHbdjHGbdv+BPYbX1jGJwNL0kcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/4add87609bc4a359a4f4d011bd229a01/fcda8/inference_speed.png&quot;
+        srcset=&quot;/static/4add87609bc4a359a4f4d011bd229a01/12f09/inference_speed.png 148w,
+/static/4add87609bc4a359a4f4d011bd229a01/e4a3f/inference_speed.png 295w,
+/static/4add87609bc4a359a4f4d011bd229a01/fcda8/inference_speed.png 590w,
+/static/4add87609bc4a359a4f4d011bd229a01/ad12c/inference_speed.png 856w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;train은 조금 느리고, inference는 더 많이 느리다.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;개인적으론 &lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; model 접근은 재밌었지만 (&lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; 개념 자체는 처음이 아니지만), utf-8 encoded bytes 를 input 으로 넣어주면서 다른 &lt;code class=&quot;language-text&quot;&gt;token-based&lt;/code&gt; model 대비 상대적으로 짧은 sequences 를 다루게 되면서 이 부분은 아쉬웠고, 일반적인 상황에서의 사용성을 생각하면 현재 연구 자체로는 너무 specific 하다고 생각한다. short-medium length 의 multi-lingual tranlsation 에만 적합한 느낌.&lt;/p&gt;
+&lt;p&gt;저자 왈 단점 때문에 속도가 느려지는 게 toeknizer 운영 cost 생각하면 괜찮지 않나? 라는 입장도 어느 정도 reasonable 하다 생각한다.&lt;/p&gt;
+&lt;p&gt;그래도 후속 연구에서 generation &amp;#x26; translation tasks 에 한정이 아닌 general manner 하면서 performance 도 comparable 한 무언가가 나오지 않을까?&lt;/p&gt;
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DeepNet - Scaling Transformers to 1,000 Layers]]></title><description><![CDATA[TL;DR 최근 논문을 보면 complex 한 architecture를 design 하기보다는 training recipes을 제안하거나 large-scale 모델을 더 stable하게 학습하는 방법 등의 논문들이 많이 나오는 경향입니다 (개인적으로…]]></description><link>http://kozistr.tech/deepnet/</link><guid isPermaLink="false">http://kozistr.tech/deepnet/</guid><pubDate>Sun, 20 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;최근 논문을 보면 complex 한 architecture를 design 하기보다는 training recipes을 제안하거나 large-scale 모델을 더 stable하게 학습하는 방법 등의 논문들이 많이 나오는 경향입니다 (개인적으로도 좋은 연구 방향이라고 생각함). 이번 microsoft에서 나온 &lt;code class=&quot;language-text&quot;&gt;DeepNet&lt;/code&gt;은 NLP에서 주로 &lt;code class=&quot;language-text&quot;&gt;Transformer&lt;/code&gt;를 쌓는데, &lt;code class=&quot;language-text&quot;&gt;어떻게 하면 깊게 쌓아도 모델을 stable하게 학습할 수 있을까?&lt;/code&gt;에 대한 연구를 진행했습니다.&lt;/p&gt;
 &lt;p&gt;아래는 시간에 따른 Transformers depths 변화인데, 최근 deepmind의 &lt;code class=&quot;language-text&quot;&gt;Gopher&lt;/code&gt;만 해도 ~ 200 depths 인 데 엄청나게 변화가 생겼네요.&lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -1717,354 +1959,4 @@ bg (background)일 때는, 모든 classes에 대해 target &lt;span class=&quot;
 &lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;어쩌면 단순 조합이라고도 할 수 있지만, 여러 architecture를 benchmark하고 각 components를 meaningful하게 가져와 사용한 점과 성능도 outperform 해서 좋아 보였습니다.&lt;/p&gt;
 &lt;p&gt;요즘의 연구 트렌드들이 architecture design을 revisit 하는 연구보단 training recipe &amp;#x26; combining network design로 outperform한 성능을 내는 연구가 많아지는 것 같아서, 갠적으로 튜닝을 좋아하는 사람 중 하나고, 이런 recipes를 발견하고 적용하는 게 더 큰 성능 향상을 낼 수 있다 생각하기 때문에, 더 재밌게 읽었던 것 같습니다.&lt;/p&gt;
-&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[EfficientNetV2 - Smaller Models and Faster Training]]></title><description><![CDATA[TL;DR EfficientNet 의 2번째 논문이 나왔네요. 저자는 EfficientNet 을 쓴 두 분이 쓰셨네요. 이번에 나온 논문은 효율성을 목표로 한 연구인데, NAS로 모델 훈련 속도와 파라메터 수를 엄청나게 줄이면서 성능도 compara…]]></description><link>http://kozistr.tech/EfficientNetV2/</link><guid isPermaLink="false">http://kozistr.tech/EfficientNetV2/</guid><pubDate>Fri, 02 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;EfficientNet 의 2번째 논문이 나왔네요. 저자는 EfficientNet 을 쓴 두 분이 쓰셨네요.&lt;/p&gt;
-&lt;p&gt;이번에 나온 논문은 &lt;strong&gt;효율성&lt;/strong&gt;을 목표로 한 연구인데, NAS로 모델 훈련 속도와 파라메터 수를 엄청나게 줄이면서 성능도 comparable 하거나 더 좋은 성능을 달성했다고 합니다.&lt;/p&gt;
-&lt;p&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2104.00298.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;code : &lt;a href=&quot;https://github.com/google/automl/tree/master/efficientnetv2&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
-&lt;p&gt;요 논문과 관련높은 reference&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;EfficientNet : &lt;a href=&quot;https://arxiv.org/pdf/1905.11946.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;paper&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;최근에 나온 convolution 기반 architectures 를 보면 (e.g. ResNet-RS, NFNet),
-성능은 좋지만, 모델 파라메터가 너무 많고 FLOPs 도 엄청나게 커서 웬만한 장비 아니면 훈련하기도 빡센 문제가 있어요.&lt;/p&gt;
-&lt;h2 id=&quot;training-efficiency&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#training-efficiency&quot; aria-label=&quot;training efficiency permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Training Efficiency&lt;/h2&gt;
-&lt;h3 id=&quot;training-with-very-large-image-sizes-is-slow&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#training-with-very-large-image-sizes-is-slow&quot; aria-label=&quot;training with very large image sizes is slow permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Training with very large image sizes is slow&lt;/h3&gt;
-&lt;p&gt;큰 크기의 이미지를 사용하면 작은 batch size를 사용해야 하는 점이 속도 저하의 원인임을 언급하면서,
-훈련 시에 progressively 이미지 크기를 조정하는 방향으로 이런 문제를 개선했다고 합니다.&lt;/p&gt;
-&lt;h3 id=&quot;depthwise-convolutions-are-slow-in-early-layers&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#depthwise-convolutions-are-slow-in-early-layers&quot; aria-label=&quot;depthwise convolutions are slow in early layers permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Depthwise Convolutions are slow in early layers&lt;/h3&gt;
-&lt;p&gt;EfficientNet architecture에는 &lt;em&gt;MBConv&lt;/em&gt; 라는 block 이 있는데, depth-wise convolution 이 사용되죠.
-그런데, 요 연산이 tpu/gpu 에서 제대로 가속을 못 받아서 일반적으로 사용하는 convolution 연산보다 파라메터나 FLOPs 는 작지만 속도가 느려요.&lt;/p&gt;
-&lt;p&gt;최근 연구들에는 이런 문제때문에 &lt;em&gt;Fused-MBConv&lt;/em&gt; 라는 걸 만들었는데,
-아래 그림처럼 &lt;code class=&quot;language-text&quot;&gt;Conv 1x1 + depthwise Conv 3x3&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;Conv 3x3&lt;/code&gt; 으로 replace 한게 더 좋다는 연구를 언급하면서&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ca0824dfec86d1879498e934bc24af2c/eb1d2/mbconv.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.94594594594594%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABYUlEQVQ4y42T3ZKCMAyFef8384ZLuGAUFEdUQPxDQNA4X5w4XdfF7UynbdKcniSnnjjjfr/rWte1HA4HuV6vOl1f0zSy3+8/+hieGcx4uVwkz3MNZLRtO+r7CsilzWYjRVHIMAzSdd3L1/e9bLdbBcU+ytBWXj+fzzoBdwE5n04nLQn38I0CGqOiyKUsyx+ATPbYYc/eUv8D8Gnc7XayXC4/MsSXJIk2DLDRGjJut5vWZzKZiO/7UlWV1sn8x+NRU2aaCr4C8jJNWa/XvxjSZdivVivN4F+y4WUCALQg8wGeZZn6v3bZZRHHsQYhE5chGSBqUrcGvse/ALnM2raNdpI6WSctgMfQIYDYXZ/heC7dJ4tBptOp5Hkh74Mux7OZRFGk5fj0bT0TLJdIE3bz+Vz31It9GIaSpqkqYLFYaGNYgyDQ8qCGF0MTNMGAkQZpIV4uUjPssOPMytkEzpnyGOADxddBSugpD7YAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;MBConv&quot;
-        title=&quot;MBConv&quot;
-        src=&quot;/static/ca0824dfec86d1879498e934bc24af2c/fcda8/mbconv.png&quot;
-        srcset=&quot;/static/ca0824dfec86d1879498e934bc24af2c/12f09/mbconv.png 148w,
-/static/ca0824dfec86d1879498e934bc24af2c/e4a3f/mbconv.png 295w,
-/static/ca0824dfec86d1879498e934bc24af2c/fcda8/mbconv.png 590w,
-/static/ca0824dfec86d1879498e934bc24af2c/efc66/mbconv.png 885w,
-/static/ca0824dfec86d1879498e934bc24af2c/c83ae/mbconv.png 1180w,
-/static/ca0824dfec86d1879498e934bc24af2c/eb1d2/mbconv.png 1622w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;EfficientNet-B4 에 gradually &lt;em&gt;Fused-MBConv&lt;/em&gt; 를 적용해 봤는데, &lt;strong&gt;early layers&lt;/strong&gt; (1 ~ 3 stages) 에만 적용하는게,
-속도도 빠르면서 성능도 제일 좋게 가져갈 수 있었다고 합니다.&lt;/p&gt;
-&lt;h3 id=&quot;equally-scaling-up-every-stage-is-sub-optimal&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#equally-scaling-up-every-stage-is-sub-optimal&quot; aria-label=&quot;equally scaling up every stage is sub optimal permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Equally scaling up every stage is sub-optimal&lt;/h3&gt;
-&lt;p&gt;EfficinetNet 에선 compound scaling rule 에 따라서 scaling 하는데, 만약 depth coef 가 2라면, 모든 stages 에서 2로 scaling 합니다.
-그런데, 각 stages 에서 훈련 시간과 파라메터 수는 equally contributed 안하는 문제점을 들면서, &lt;em&gt;non-uniform&lt;/em&gt; 한 scaling 전략을 선택하겠다고 합니다.&lt;/p&gt;
-&lt;p&gt;이미지 사이즈 같은 경우도 훈련 시간과 memory 에 큰 영향을 주기 때문에, (image size에 대한) scaling rule 도 변견했다고 합니다.&lt;/p&gt;
-&lt;h2 id=&quot;training-aware-nas-and-scaling&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#training-aware-nas-and-scaling&quot; aria-label=&quot;training aware nas and scaling permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Training-Aware NAS and Scaling&lt;/h2&gt;
-&lt;h3 id=&quot;nas-search&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nas-search&quot; aria-label=&quot;nas search permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NAS Search&lt;/h3&gt;
-&lt;p&gt;모델 훈련 속도를 위한 best combination 을 찾기위해, training-aware NAS 을 제안합니다.&lt;/p&gt;
-&lt;p&gt;EfficientNet에서 사용한 NAS 기반을 했는데, 아래와 같은 목표를 joinly optimize 했다고 합니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;accuracy&lt;/li&gt;
-&lt;li&gt;parameter-efficiency&lt;/li&gt;
-&lt;li&gt;training-efficiency (on modern accelerators)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;구체적인 settings 은 논문에&lt;/p&gt;
-&lt;h3 id=&quot;efficientnetv2-architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#efficientnetv2-architecture&quot; aria-label=&quot;efficientnetv2 architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;EfficientNetV2 Architecture&lt;/h3&gt;
-&lt;p&gt;NAS를 사용해서 찾은 architecture (EfficientNetV2-S, baseline) 가 아래와 같은 구조라 합니다. EfficientNet 과 크게 4가지 차이점이 있다 하는데,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;MBConv&lt;/em&gt; 와 &lt;em&gt;Fused-MBConv&lt;/em&gt; 를 섞어서 씀&lt;/li&gt;
-&lt;li&gt;더 작은 expansion ratio (for &lt;em&gt;MBConv&lt;/em&gt;) 를 사용 -&gt; 더 적은 overhead 를 가지기 때문&lt;/li&gt;
-&lt;li&gt;3x3 kernel sizes 를 선호. (하지만 작은 receptive field를 사용하는 만큼 layer를 더 쌓게 됨)&lt;/li&gt;
-&lt;li&gt;EfficientNet 에 있던 맨 마지막 stride-1 stage 를 제거. -&gt; 이것도 메모리 때문에&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/25eda3ffc1b887abae2f1aaa5829a298/e4c9a/efficientnetv2-s.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 49.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABsklEQVQoz03Q2Y6cMBAF0P7/X0u6FejBxoABg9law+LdxRr1JBPlPtVDHV1V3bKMJkkyjiPGuCzKnNKa103TvIYhTbOiKKqq8gCUvtf6r9R1zVjZcH6LSRyGQVnkCCEUIUppmmZZmnx8RBjjKIrCMOTty1nnvXfOGWP+DOu63s7jwAghHM/zrJRsOH88HhjjaZqklMMwPO73PM8JIcGvgBCSF+XzGeZ5vu/77bouJeU4Ts6567rmeSKE1JwDwLZtxtplWZRSsELfdUoZY4xSShtzXdcbb9tmnVuWmWaUxDgIAv51Nufce2+tdc6d5/l6vQBWAHDOwbr+xQCgtRbLQkiCELrf76yqyqJgrPLeSymNted59l3n4R1rLQB8Yw/amKFvgyCk72clRckIIVmWGWuVUtbafd+bhhtj1/Xd5P9h7702hlfsx88HY6yuGKtqhCJCEmOM1to6t29bWZZK63VdhRD/YeekVLyuw+eTUpplGY5JHOMkTYWUzjlr7bZtjDGtNQAIIcD7Nz6OQwgxz/Mw9G3b9n3fdV3JWMVY33Wf46iUWpZFCNG27ThN4jvHcfwGm20mZgmdIvcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;EfficinetNetV2-S&quot;
-        title=&quot;EfficinetNetV2-S&quot;
-        src=&quot;/static/25eda3ffc1b887abae2f1aaa5829a298/fcda8/efficientnetv2-s.png&quot;
-        srcset=&quot;/static/25eda3ffc1b887abae2f1aaa5829a298/12f09/efficientnetv2-s.png 148w,
-/static/25eda3ffc1b887abae2f1aaa5829a298/e4a3f/efficientnetv2-s.png 295w,
-/static/25eda3ffc1b887abae2f1aaa5829a298/fcda8/efficientnetv2-s.png 590w,
-/static/25eda3ffc1b887abae2f1aaa5829a298/e4c9a/efficientnetv2-s.png 591w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;efficientnetv2-scaling&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#efficientnetv2-scaling&quot; aria-label=&quot;efficientnetv2 scaling permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;EfficientNetV2 Scaling&lt;/h3&gt;
-&lt;p&gt;위에서 만든 EfficientNetV2-S 기반으로 M/L 버전도 만들었는데, 몇 가지 제한을 두고 scaling 했다고 합니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;maximum inference image size to 480&lt;/li&gt;
-&lt;li&gt;add more layers to later stages (stage 5, 6)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/dfccbfac89e8eb29126044fee0fdf98a/50383/accuracy_vs_training_step.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 81.75675675675677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACHUlEQVQoz3WRW3OrIBRG8/9/Xqc9NeoZjYlGRcI1wIYNnFHanvah64Fhhlnsy3fKORtjtNY55xTTTk7Z5UyyGtXCFmG4Bx8PUkoxxvzJKefsvbfW7nJOCVIiyS2OCaaD3j/6ZP/28/yQvfeEEPM0+4NNcYiUU+pozHsFztg8zytZrbXOOUT8ITvnrtdr8D7nrG6KcgoZcszgwDorhFBKrus6jeP1elVKCS4ppR8yAAzD4LxLkMiFYEYMqLQKISCic0DIY11XY/bWEFFKZYzxR7FdXleCCWEBxVXKyTxNWYy1Nsb0fAalpDrYCJmm6X6/042mlE7O2stwAQ38yn301lhELGYI4VCk1lpK6ZwLIeRvnIwxfd+DBS65AwcAXyal1BgTQvi+5xJYuZ9ijHSjQomnf4KDEhsAMMbKYEX7NWdEBABELHkUExG/Z/tV7UdUe0JqH6kMZq19MFZaxYMYIyJ67wH2vrz3pYUPOeccQpBSAnilFGOP6X4nhCzzsswLpXSeZ2utVso5xzn/X7lk4ADkgdZ6XZe6aW63W9/3wzB0XTeOo9bPAjhgjFtr96jatmnadpqmuq7fXl+7vu+6rmh939V13Ry8vf05n6uqqpqmeXl5qeuzEOI0juPlcqmq96Zp2r/t5dKfz+eu69q2fa+qZV2lEI/Hg5BNSMEYI9smpZznWQh5UlIKzh8HG9mWZRFCSCm3bSOElJ3/xj/8jZR6xVa5hwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;acc_vs_step&quot;
-        title=&quot;acc_vs_step&quot;
-        src=&quot;/static/dfccbfac89e8eb29126044fee0fdf98a/fcda8/accuracy_vs_training_step.png&quot;
-        srcset=&quot;/static/dfccbfac89e8eb29126044fee0fdf98a/12f09/accuracy_vs_training_step.png 148w,
-/static/dfccbfac89e8eb29126044fee0fdf98a/e4a3f/accuracy_vs_training_step.png 295w,
-/static/dfccbfac89e8eb29126044fee0fdf98a/fcda8/accuracy_vs_training_step.png 590w,
-/static/dfccbfac89e8eb29126044fee0fdf98a/50383/accuracy_vs_training_step.png 740w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;progressive-learning&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#progressive-learning&quot; aria-label=&quot;progressive learning permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Progressive Learning&lt;/h2&gt;
-&lt;p&gt;훈련 시 image size 를 dynamic 하게 사용하는데, 이전 연구들은 accuracy drop 이 발생했다고 합니다.
-이번 논문에선 그런 accuracy drop이 &lt;em&gt;imbalanced regularization&lt;/em&gt; (다른 이미지 크기로 학습하면 거기에 맞는 regularization strength를 사용해야 한다)에서 오지 않을까 추측합니다.&lt;/p&gt;
-&lt;p&gt;아래와 같이 regularization strength를 실험해 본 결과, 추측한 대로 image size 가 작을 땐 weak augmentations, 클 땐 strong augmentations이 성능향상에 더 도움됐다고 합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5411322c7d21461bb1aafd0796cd7304/baaa6/regularization_strength.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 31.08108108108108%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABEElEQVQY0y2O23KDIBQA8/8f17RVlDtCIso5xQuYZjR20prpvu/snrgwjCnv26qq6rrWShljnHOc88Y2ztnmhdbmern4Lrh28iEB5tttPTXui3GnlaKUcc6FEFIIxnhFCKWUMaa1IYT0fT8MwzzPQ4wIMI7j8/k8/ez7tq3btj1ebNtjXdd937331jrv/f1+v1yv1toQQs5Za900DQAeckrz+f2DEML5USvLklK2LAtnTEoFADFGKSUixhfW2hhjSumQv2/L2/lcFJ+MsbIoPouC1nSaphD6ruumac45F2UZAgzjiIiCc0T8304pCSmPGWOkUlpr6xwiAkDf94g4xNi2bQghxth1nZTCew8Af/IvID9DVB91w9AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;regularization_strength&quot;
-        title=&quot;regularization_strength&quot;
-        src=&quot;/static/5411322c7d21461bb1aafd0796cd7304/fcda8/regularization_strength.png&quot;
-        srcset=&quot;/static/5411322c7d21461bb1aafd0796cd7304/12f09/regularization_strength.png 148w,
-/static/5411322c7d21461bb1aafd0796cd7304/e4a3f/regularization_strength.png 295w,
-/static/5411322c7d21461bb1aafd0796cd7304/fcda8/regularization_strength.png 590w,
-/static/5411322c7d21461bb1aafd0796cd7304/baaa6/regularization_strength.png 813w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Progressive Learning 을 하기 위해서 fomulation을 세웠는데, 아래와 같습니다.&lt;/p&gt;
-&lt;p&gt;전체 훈련을 &lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;N&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6833em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; steps를 하고 훈련 과정을 &lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;M&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6833em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; stages로 나눴고, &lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;k&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 는 regularizations 종류 (e.g. RandAugment, MixUp, Dropout, ...)&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/88a8f124fae964c40aa0bce818b45469/9128f/progressive_learning.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 46.621621621621614%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABgElEQVQoz1WP23KqMBRA/f8/6vRBfDi17YyWCCQQDUZpLo2GFoTQEE7sgPah62lfZu3LbL1aBcE8CILFYgEhTJI4SSDOMowxAAClKRqBYRimCGUZBiCMomj99vbO2MwYAyE8HI+cMca5lJJzrrVWJ3U6nfhY+eB8bAoplFLvjHUTfd/PvPfBfP788pqTXYbxFuMEQkopY6woit12TJM4ThHKJ6SU119m3v9/fHz49/SUExJFEYQQpdl4C6VxHCOI4iQhhCCEtluMUFoUx7Zt77JzbrlcCiGF4GADhJSlLlerdWtMc2m6rjPGOOd621trW2Ps9/cwDHf5er0aYwghdJ9zzsuyrOtal7qqaqVU13VKqculFkIYY26On7jLbdNmWUZ2O7Lfj18Jedb66+tz0i5CCK21lLKqKsZ5M1Vug6bNbbOJYpLnnDFCckrph1JCyMOBMsb3lJ7P5yOljIthGLz3zjl/O9taC0AIwKYsP4dhsNb2/fieMcZO9H9xE7fgB3Lg6WBEeV6xAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;progressive_learning&quot;
-        title=&quot;progressive_learning&quot;
-        src=&quot;/static/88a8f124fae964c40aa0bce818b45469/fcda8/progressive_learning.png&quot;
-        srcset=&quot;/static/88a8f124fae964c40aa0bce818b45469/12f09/progressive_learning.png 148w,
-/static/88a8f124fae964c40aa0bce818b45469/e4a3f/progressive_learning.png 295w,
-/static/88a8f124fae964c40aa0bce818b45469/fcda8/progressive_learning.png 590w,
-/static/88a8f124fae964c40aa0bce818b45469/9128f/progressive_learning.png 603w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;각 모델은 아래와 같은 recipes 로 훈련했다고 합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 526px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8fa0df98e27bce0117600108343ea1d2/2d7ab/progressive_learning_recipes.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABcklEQVQY002P23KiQBRF+f8vS9AxCqIQFIS+nb5xafrYmljN1GRqqma97fW0V3I6FWmaNm1zPhXb7a88z4vj8Xw+7/b7zTYtq2qzSQ+HrKrKojim6eaw3+92H3mWEcIS7/3yH0KIaZrmeaaUeu+11ojYNA1jHBGHYUC/AEjv8Y6YrP+IMa7r6pyTErQxiAgA3iNjbFkWY4yxdpomABHCgzP2eDwSay3pCUiglCLiOI6UkLZt52kuikIqfW2uSinOWV3XRqvq83N2ripLKWUCAO/vb3l+PJ0KLoRSarCWcf56vcqydG4hhNzvdyXhcm0Q/a3rYox1Xc+zS6wxWZa1t1t22F+uDUiJf4LCGuM4jiE8jDExxsFapXUIAb1f1xUAQgiJVmq3+6jrOs+zrifLsjDGxnF8fX8xxrz3lNLn8wlCCADnZv5z6tbenFsSIXhZVpfLpW2bvu8BoOs6IYTWuvuZfd9rrRljlFLBOSHUDvav/A1ESbIGi8ugMAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;recipe&quot;
-        title=&quot;recipe&quot;
-        src=&quot;/static/8fa0df98e27bce0117600108343ea1d2/2d7ab/progressive_learning_recipes.png&quot;
-        srcset=&quot;/static/8fa0df98e27bce0117600108343ea1d2/12f09/progressive_learning_recipes.png 148w,
-/static/8fa0df98e27bce0117600108343ea1d2/e4a3f/progressive_learning_recipes.png 295w,
-/static/8fa0df98e27bce0117600108343ea1d2/2d7ab/progressive_learning_recipes.png 526w&quot;
-        sizes=&quot;(max-width: 526px) 100vw, 526px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#benchmark&quot; aria-label=&quot;benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Benchmark&lt;/h2&gt;
-&lt;h3 id=&quot;imagenet&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#imagenet&quot; aria-label=&quot;imagenet permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ImageNet&lt;/h3&gt;
-&lt;p&gt;accuracy, training speed 측면에서 EfficientNet 대비 다 좋네요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e901cbbd3e0d1a76a8c62b654920a072/5a6dd/performance.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 93.24324324324323%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADAklEQVQ4y12UW4+jOBCF8///0va87Myo1er0JBBsAoRrsLENvpAAzgXikQH1SlsPfnF98jmnSt6kaQqAB30YBKF7cH3fBxB4MPS8IE6rM+KsbnHFccWqqmKUFkWRJHFZllEUbSAAjuO4rgsADMMAeN7BdQ8H7+D5B8/b7/8ACFxnv9/tttvt9vNzv99/fm5d143jeNO2rZIqzzPHcYuiyHKUF7hERClZlqXv+0maRnOdTqciz9M0tW1ZViK0eb1exphLqzzPC8PwlNA44yWWxhitNaVUSsnqWgihlLKdl8s4TcaYvu+/4TY4BnGS5OemxKqq1DS9tB4oY0opxmo1lzFGtWpa4K5bYSm44zi+Hx5DkmQ8zRsh+9tNY4xqxjDGTdNwzueX2wV5vV6b51xSCme/98AJBCQ80YpY2cOgEULMwuhbNud8kW3h6/WCcSWljKIwzVCa8zMSqh1meGCrbHa/31erXT9N9mVjzCq7VRJCeIpLXKk0bx7PcYGrquKcM8oE51LKJafpf4FZ2a7jwXNayFPCnitsZVNK8zwnhDRNY4whhDxHe6uUWuHr5QoACII8zVmckmt3G8eX1npmaoSwEOJ6vRpj7vf7OqDLxQY2jqOUEgCYxKcwjKO4ihOKiZSqxRjXdY0QEpwvQ+r7/vF4jOOz67rNYqBVyvf9U4KimKZ5gyqh9V2pllIyp40ZY03DjXk1TX2738fRzmijtW5tWTjLiizHRSlQpS5XvaTNuSCECLEG1nXdf2kPw6BUK6WEEIRR6gfVMSJC9v3wGPQ657IsKaXLkmg9rEsyTZtxjk4KASE8HoOsYAhLjLlUXd93CCFCKcKIEFLXzTRNVvbt/nw8bGB930spUVm+/fP28fEhhJi3ZzTm1XWdXc+6tp4pXUYlhXg8ntM0WXi03h9ciPf3dwjtl6C1XizdbremrlvVci5apdr2YmUP/XI7DMOmPJ/DMNztdm8/fvz78+fv37/cwwFCCOZP4uvry57bL9d1drvd8Xh0HCcMo7pmCKG/LLMVLhqVldAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;performance&quot;
-        title=&quot;performance&quot;
-        src=&quot;/static/e901cbbd3e0d1a76a8c62b654920a072/fcda8/performance.png&quot;
-        srcset=&quot;/static/e901cbbd3e0d1a76a8c62b654920a072/12f09/performance.png 148w,
-/static/e901cbbd3e0d1a76a8c62b654920a072/e4a3f/performance.png 295w,
-/static/e901cbbd3e0d1a76a8c62b654920a072/fcda8/performance.png 590w,
-/static/e901cbbd3e0d1a76a8c62b654920a072/5a6dd/performance.png 802w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e5c498ab87386813999ea34af6583e5b/68638/efficiency.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 35.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABH0lEQVQY0yWMWW6EMBBEuf8JByIRDYNjE4y3brd3O4K8vyq9qgm9Hz4kDQ5cbTWkYJ0rnpK2BkwuhUJEQiTfKQZltHMhxZBDynmy2thDH6dEQocul2yMMafath/lyDhEjCFGa4099brxQxmKodZaS53UpZS1BmCM0WobY3hEcf5qF2qp/WGMoa5LyMt5Gnfurd3lpJTMybd2S7XW1hoiaiNvpbfW2lN2KWUMfozxr9V6/045Z0SIKQFgSqmU0nsnwpRijJGISinPRQGw6dYgxphzvschBO89Y2xe5vM8rbUAYK31RJ/PZ9938h4AEJFz8XlgbOecE9H0fr9fr9eyLOu6rt/rPM/L17JtG38QD4wxIQ4hjn3fLymF4IwxpdQfJbKNrD5WcrUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;efficiency&quot;
-        title=&quot;efficiency&quot;
-        src=&quot;/static/e5c498ab87386813999ea34af6583e5b/fcda8/efficiency.png&quot;
-        srcset=&quot;/static/e5c498ab87386813999ea34af6583e5b/12f09/efficiency.png 148w,
-/static/e5c498ab87386813999ea34af6583e5b/e4a3f/efficiency.png 295w,
-/static/e5c498ab87386813999ea34af6583e5b/fcda8/efficiency.png 590w,
-/static/e5c498ab87386813999ea34af6583e5b/efc66/efficiency.png 885w,
-/static/e5c498ab87386813999ea34af6583e5b/c83ae/efficiency.png 1180w,
-/static/e5c498ab87386813999ea34af6583e5b/68638/efficiency.png 1510w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;transfer-learning-performance-comparison&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#transfer-learning-performance-comparison&quot; aria-label=&quot;transfer learning performance comparison permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Transfer Learning Performance Comparison&lt;/h3&gt;
-&lt;p&gt;다른 datasets 에 transfer learning 했는데, 성능이 comparable 하네요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/814e99c33821f04e492f5dee4c8b8c87/e4ee8/transfer_learning.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABDUlEQVQY0x2OW5aCMBAF2f/2lEEYwxAkgXTozktMgiBzsP7r1i26rrvd6rIsq6r6KU/qur5er4yxtm0Zuwspx2mcpkmIQUophQCAcZREVOSciAhA9Y9hRkfGP59LzjmlpEBJKbXWiLMCRUSIOM+z/XIcR7Hv+7quzrnqVjf3iXUoRtq37TgOxBk0vF4vImPIeO9TSogYY0wpfT6fYnu/rbXGEGPtLxubu+C9PtvrrkErBSkla6133jkXYzTG5Jy37/pZXpbFGGqahnOulJrRID1diAAaEZdlsdaSOQkhGHNeQMRTjjH2fS+EuFwubduGEIL33rsQvJTiMQwAIKVs//4454MQXddxzhljMaZ/qsxLdKnzMIsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;transfer_learning&quot;
-        title=&quot;transfer_learning&quot;
-        src=&quot;/static/814e99c33821f04e492f5dee4c8b8c87/fcda8/transfer_learning.png&quot;
-        srcset=&quot;/static/814e99c33821f04e492f5dee4c8b8c87/12f09/transfer_learning.png 148w,
-/static/814e99c33821f04e492f5dee4c8b8c87/e4a3f/transfer_learning.png 295w,
-/static/814e99c33821f04e492f5dee4c8b8c87/fcda8/transfer_learning.png 590w,
-/static/814e99c33821f04e492f5dee4c8b8c87/efc66/transfer_learning.png 885w,
-/static/814e99c33821f04e492f5dee4c8b8c87/c83ae/transfer_learning.png 1180w,
-/static/814e99c33821f04e492f5dee4c8b8c87/e4ee8/transfer_learning.png 1496w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;새로운 아이디어보단 여러 가지를 조합하고 training recipe 실험에 가까웠지만, 갠적으로 이런 튜닝 성격의 연구도 좋아하고, 엄청난 개선이 있어서 재밌게 읽었습니다.&lt;/p&gt;
-&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item></channel></rss>
