@@ -95,7 +95,7 @@ $\hat{P} = softmax(P\hat{P})P$, $\hat{P} \in \mathbb{R}^{L \times M}$
 
 마지막으로 candidate block 을 구한 후, sequence length 를 줄이기 위해서 downsampling 을 합니다.
 
-downsampling function $F_{D} : \mathbb{R}^{L \times d}$, sequence of latent subwords $\bar{X}$
+downsampling function $F_{D} : \mathbb{R}^{L \times d} -> \mathbb{R}^{\frac{L}{d_{s}} \times d}, d_{s} factor$, sequence of latent subwords $[\bar{X_{1}},...,\bar{X_{L}}]$ to $\bar{X}$
 
 ### Transformer Stack
 
