@@ -26,12 +26,12 @@ keywords:
 
 ![img](./overview.png)
 
-기존의 pytorch implementation 의 attention 은 모두 HBM 위에서 동작했는데, FlashAttention 은 한땀한땀 cuda 로 구현해 상대적으로 높은 대역폭을 가지는 SRAM 를 활용해서 memory 와 speed 를 빠르게 했다는 점이다.
+기존의 pytorch implementation 의 attention 은 모두 HBM 위에서 동작했는데, FlashAttention 은 한땀한땀 cuda 로 구현해 상대적으로 높은 bandwidth 을 가지는 SRAM 를 활용해서 memory 와 speed 를 빠르게 했다는 점이다.
 
-크게 3 가지 부분에서 contribute 했다.
+크게 3가지 부분에서 contribute 했다.
 
 1. tiling 함 (increamental 하게 softmax redunction 진행)
-2. softmax normalization factor 저장하기. (on-chip 에서 recompute 하는 편이 HBM 에서 attention matrix 읽는 것 보다 더 빠르다함)
+2. softmax normalization factor 저장하기. (on-chip 에서 recompute 하는 편이 HBM 에서 attention matrix 읽는 것 보다 더 빠르다 함)
 3. block-sparse attention 도 만들어봤다
 
 ### Tilling
@@ -65,7 +65,7 @@ attention 연산은 다음과 같은 operations 을 포함하는데,
 
 > matmul, dropout, softmax, mask, (another) matmul
 
-요걸 fused kernel 하나로 개발했다는 이야기 입니다. 그래서 결론은 time complexity $O(N^{2}d)$, space complexity 는 기존 full attention 보다 O(N) 더 큰 정도 ($m(x), \lambda{(x)}$ 이걸 추가로 저장하니까)가 됩니다.
+요걸 fused kernel 하나로 개발했다는 이야기입니다. 그래서 결론은 time complexity $O(N^{2}d)$, space complexity 는 기존 full attention 보다 O(N) 더 큰 정도 ($m(x), \lambda{(x)}$ 이걸 추가로 저장하니까)가 됩니다.
 
 ## Performance
 
@@ -73,7 +73,7 @@ attention 연산은 다음과 같은 operations 을 포함하는데,
 
 ![img](./speed_comparision.png)
 
-pytorch implementation (full) attention 대비 FLOPs 는 recomputation 때문에 증가했지만, HBM r/w 시간을 오지게(?) 줄여서 runtime 에서 훨 빨리진 속도를 볼 수 있습니다.
+pytorch implementation (full) attention 대비 FLOPs 는 recomputation 때문에 증가했지만, HBM 에서 r/w 시간을 오지게(?) 줄여서 runtime 빨리진 속도를 볼 수 있습니다.
 
 ### long-range Arena benchmark
 
