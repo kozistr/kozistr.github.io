@@ -65,7 +65,7 @@ attention 연산은 다음과 같은 operations 을 포함하는데,
 
 > matmul, dropout, softmax, mask, (another) matmul
 
-요걸 fused kernel 하나로 개발했다는 이야기입니다. 그래서 결론은 time complexity $O(N^{2}d)$, space complexity 는 기존 full attention 보다 O(N) 더 큰 정도 ($m(x), \lambda{(x)}$ 이걸 추가로 저장하니까)가 됩니다.
+요걸 fused kernel 하나로 개발했다는 이야기입니다. 그래서 결론은 time complexity $O(N^{2}d)$, space complexity 는 O(N) 더 큰 정도 ($m(x), \lambda{(x)}$ 이걸 추가로 저장하니까)가 됩니다.
 
 ## Performance
 
