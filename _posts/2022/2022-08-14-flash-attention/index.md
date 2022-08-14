@@ -65,14 +65,24 @@ attention 연산은 다음과 같은 operations 을 포함하는데,
 
 > matmul, dropout, softmax, mask, (another) matmul
 
-
-
-### Kernel fusion
+요걸 fused kernel 하나로 개발했다는 이야기 입니다. 그래서 결론은 time complexity $O(N^{2}d)$, space complexity 는 기존 full attention 보다 O(N) 더 큰 정도 ($m(x), \lambda{(x)}$ 이걸 추가로 저장하니까)가 됩니다.
 
 ## Performance
 
+### GPT-2 benchmark on A100
 
+![img](./speed_comparision.png)
+
+pytorch implementation (full) attention 대비 FLOPs 는 recomputation 때문에 증가했지만, HBM r/w 시간을 오지게(?) 줄여서 runtime 에서 훨 빨리진 속도를 볼 수 있습니다.
+
+### long-range Arena benchmark
+
+![img](./long_range_benchmark.png)
+
+long-range benchmark 중 에서도 가장 빠르면서 성능도 comparable 합니다.
 
 ## Conclusion
+
+적용한 기법이나 그런 것들은 이미 알려진 연구지만 이걸 hardware-level 에 adapt 해 좋은 performance 를 보여준 연구인 점에서 재밌었다. 논문 limitations 에도 나와 있지만, 사용성 측면에서 cuda 구현체라 컴파일해 사용해야 하고, architecture 마다 I/O performance 도 다르고 각각 적합하게 구현해 줘야 한다는 점에서 약간 아쉬운 점이 있다 (실험 측면에서 amphere architecture 이외에서 benchmark 가 더 있으면 좋겠다는 생각). 
 
 결론 : 굳굳
