@@ -83,6 +83,8 @@ long-range benchmark 중 에서도 가장 빠르면서 성능도 comparable 합�
 
 ## Conclusion
 
-적용한 기법이나 그런 것들은 이미 알려진 연구지만 이걸 hardware-level 에 adapt 해 좋은 performance 를 보여준 연구인 점에서 재밌었다. 논문 limitations 에도 나와 있지만, 사용성 측면에서 cuda 구현체라 컴파일해 사용해야 하고, architecture 마다 I/O performance 도 다르고 각각 적합하게 구현해 줘야 한다는 점에서 약간 아쉬운 점이 있다 (실험 측면에서 amphere architecture 이외에서 benchmark 가 더 있으면 좋겠다는 생각). 
+적용한 기법이나 그런 것들은 이미 알려진 연구지만 이걸 hardware-level 에 adapt 해 좋은 performance 를 보여준 연구인 점에서 재밌었다. 
+
+논문 limitations 에도 나와 있지만, 사용성 측면에서 cuda 구현체라 컴파일해 사용해야 하고, architecture 마다 I/O performance 도 다르고 각각 적합하게 구현해 줘야 한다는 점에서 약간 아쉬운 점이 있다 (실험 측면에서 amphere architecture 이외에서 benchmark 가 더 있으면 좋겠다는 생각). 
 
 결론 : 굳굳
