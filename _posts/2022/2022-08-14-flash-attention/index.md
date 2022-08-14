@@ -31,8 +31,8 @@ keywords:
 크게 3 가지 부분에서 contribute 했다.
 
 1. tiling 함 (increamental 하게 softmax redunction 진행)
-2. softmax normalization factor 저장해 두기. (가지고 있다 on-chip 에서 다시 연산하는 편이 HBM 에서 attention matrix 읽는 것 보다 더 빠르다함)
-3. block-sparse attention 구현
+2. softmax normalization factor 저장하기. (on-chip 에서 recompute 하는 편이 HBM 에서 attention matrix 읽는 것 보다 더 빠르다함)
+3. block-sparse attention 도 만들어봤다
 
 ### Tilling
 
@@ -47,7 +47,7 @@ numericla statbility 확보를 위해, softmax vector $x \in \mathbb{R}^{B}$ 에
 
 $m(x) = \underbrace{max}_{i} x_{i}$, $f(x) := [e^{x_{1} - m(x)} ... e^{x_{B} - m(x)}]$, $\lambda(x) := \sum_{i} f(x)_{i}$, $softmax(x) := f(x) / \lambda(x)$
 
-vectors $x^{(1)}, x^{(2)} \in \mathbb{R}^{B}$, $x = [x^{(1)}, x^{(2)}] \in \mathbb{R}^{2B}$ 에 대해선 다음처럼 decompose 가능합니다.
+vectors $x^{(1)}, x^{(2)} \in \mathbb{R}^{B}$, $x = [x^{(1)} x^{(2)}] \in \mathbb{R}^{2B}$ 에 대해선 다음처럼 decompose 가능합니다.
 
 $m(x) = max(m(x^{(1)}) m(x^{(2)}))$, $f(x) = [e^{m(x^{(1)}) - m(x)} f(x^{(1)}) e^{m(x^{(2)}) - m(x)} f(x^{(2)})]$, $\lambda(x) = \lambda([x^{(1)} x^{(2)}]) = e^{m(x^{(1)}) - m(x)} \lambda(x^{(1)}) + e^{m(x^{(2)}) - m(x)} \lambda(x^{(2)})$, $softmax(x) = \frac{f(x)}{\lambda{(x)}}$
 
