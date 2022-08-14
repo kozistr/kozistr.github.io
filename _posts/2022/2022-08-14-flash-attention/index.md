@@ -81,6 +81,18 @@ pytorch implementation (full) attention 대비 FLOPs 는 recomputation 때문에
 
 long-range benchmark 중 에서도 가장 빠르면서 성능도 comparable 합니다.
 
+### runtime by sequence length
+
+![img](./runtime_by_seq_len.png)
+
+sequence 길이에 따른 runtime (fwd + bwd) 비교인데, block-sparse flash attention 기준으로 65K 에서 Linformer 보다 2배 정도 빠르다.
+
+### memory usage by sequence length
+
+![img](./memory_usage_by_seq_len.png)
+
+sequence 길이에 따른 memory usage 비교인데, 역시 엄청 적게 먹는다.
+
 ## Conclusion
 
 적용한 기법이나 그런 것들은 이미 알려진 연구지만 이걸 hardware-level 에 adapt 해 좋은 performance 를 보여준 연구인 점에서 재밌었다. 
