@@ -1,7 +1,7 @@
 ---
 title: FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness
 date: 2022-08-14
-update: 2022-08-14
+update: 2022-08-15
 tags:
   - Deep-Learning
 keywords:
@@ -47,9 +47,13 @@ numericla statbility 확보를 위해, softmax vector $x \in \mathbb{R}^{B}$ 에
 
 $m(x) = \underbrace{max}_{i} x_{i}$, $f(x) := [e^{x_{1} - m(x)} ... e^{x_{B} - m(x)}]$, $\lambda(x) := \sum_{i} f(x)_{i}$, $softmax(x) := f(x) / \lambda(x)$
 
-vectors $x^{(1)}, x^{(2)} \in \mathbb{R}^{B}$, $x = [x^{(1)} x^{(2)}] \in \mathbb{R}^{2B}$ 에 대해선 다음처럼 decompose 가능합니다.
+vectors $x^{(1)}, x^{(2)} \in \mathbb{R}^{B}$, $x = [x^{(1)} \ x^{(2)}] \in \mathbb{R}^{2B}$ 에 대해선 다음처럼 decompose 가능합니다.
 
-$m(x) = max(m(x^{(1)}) m(x^{(2)}))$, $f(x) = [e^{m(x^{(1)}) - m(x)} f(x^{(1)}) e^{m(x^{(2)}) - m(x)} f(x^{(2)})]$, $\lambda(x) = \lambda([x^{(1)} x^{(2)}]) = e^{m(x^{(1)}) - m(x)} \lambda(x^{(1)}) + e^{m(x^{(2)}) - m(x)} \lambda(x^{(2)})$, $softmax(x) = \frac{f(x)}{\lambda{(x)}}$
+$m(x) = max(m(x^{(1)}) \ m(x^{(2)}))$, $f(x) = [e^{m(x^{(1)}) - m(x)} f(x^{(1)}) \ e^{m(x^{(2)}) - m(x)} f(x^{(2)})]$
+
+$\lambda(x) = \lambda([x^{(1)} \ x^{(2)}]) = e^{m(x^{(1)}) - m(x)} \lambda(x^{(1)}) + e^{m(x^{(2)}) - m(x)} \lambda(x^{(2)})$
+
+$softmax(x) = \frac{f(x)}{\lambda{(x)}}$
 
 이렇게 $m(x), \lambda{(x)}$ 를 가지고 있고 (backward 할 때 recomputation 하려고), 모든 key, query 에 대해서 incremental 하게 진행합니다.
 
