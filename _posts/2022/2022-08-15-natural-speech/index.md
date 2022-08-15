@@ -140,4 +140,6 @@ RTF 도 FastSpeech 2 + HiFiGAN, VITS 와 comparable 하고 빠른 수준이다.
 
 ## Conclusion
 
-결론 : 굳굳
+LJSpeech dataset 에서 human-level metrics 을 달성했다는 점에서 promising 했고, novelties 나 architecture 도 갠적으론 마음에 드는 구조였다. 다른 dataset 에서 benchmark 결과도 궁금한데, 포함해 주면 좋겠다.
+
+결론 : 굳굳굳
