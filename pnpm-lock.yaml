@@ -30,6 +30,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.33.0
   '@typescript-eslint/parser': ^5.33.0
   autoprefixer: ^10.4.8
+  core-js: ^3.24.1
   cross-env: ^7.0.3
   disqus-react: ^1.1.3
   eslint: ^7.32.0
@@ -72,6 +73,7 @@ specifiers:
   node-sass: ^7.0.1
   parse-path: ^7.0.0
   postcss: ^8.4.16
+  prettier: ^2.7.1
   prism-themes: ^1.9.0
   prismjs: ^1.28.0
   prop-types: ^15.8.1
@@ -99,6 +101,7 @@ dependencies:
   '@fortawesome/react-fontawesome': 0.2.0_cexyl65xkujrplwajjmas5tvau
   '@gatsbyjs/reach-router': 1.3.9_sfoxds7t5ydpegc3knd667wn6m
   '@mdx-js/react': 1.6.22_react@17.0.2
+  core-js: 3.24.1
   cross-env: 7.0.3
   disqus-react: 1.1.3_sfoxds7t5ydpegc3knd667wn6m
   gatsby: 4.20.0_ylpyih4ijgk5dar2yjp2w4u6rq
@@ -167,6 +170,7 @@ devDependencies:
   eslint-plugin-react: 7.30.1_eslint@7.32.0
   gh-pages: 4.0.0
   postcss: 8.4.16
+  prettier: 2.7.1
   tailwindcss: 3.1.8
   typescript: 4.7.4
 
