@@ -1,8 +1,10 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 16",
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2021",
     "module": "commonjs",
-    // "lib": [],
+    "lib": ["es2021"],
     "allowJs": true,
     "jsx": "react",
     // "sourceMap": true,
@@ -21,7 +23,8 @@
     // "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
   },
   "exclude": ["./*.js"]
 }
