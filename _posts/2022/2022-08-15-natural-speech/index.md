@@ -22,7 +22,8 @@ keywords:
 
 ## Related Work
 
-* [VQ-VAE paper](https://arxiv.org/pdf/1711.00937v2.pdf)
+* [VQ-VAE paper](https://arxiv.org/abs/1711.00937v2)
+* [Parallel Tacotron 2 paper](https://arxiv.org/abs/2103.14574)
 
 ## Architecture
 
@@ -37,17 +38,30 @@ keywords:
 
 ### Phoneme Encoder
 
-phoneme encoder 는 말대로 phoneme sequence $y$ 를 frame-level representations 으로 encode 해 주는 module 인데, 이전 연구들은 일반 dataset 으로 학습하거나 phoneme 에 대해서만 학습한 LM 을 사용해서 phoneme domain 에 어울리지 않거나 capacity issue 로 positive boost 를 주지 못했다고 합니다.
+phoneme encoder 는 말대로 phoneme sequence $y$ 를 encode 하는 module 인데, 이전 연구들은 일반 dataset 으로 학습하거나 phoneme 에 대해서만 학습한 LM 을 사용해서 phoneme domain 에 어울리지 않거나 capacity issue 로 positive boost 를 주지 못했다고 합니다.
 
 ![img](./phoneme_pretraining.png)
 
 그래서 이번 연구에선 phoneme 에 대해서만 학습하는게 아닌, mixed-phoneme (phoneme + sub-phoneme) pre-training 을 했다고 합니다.
 
-또한, MLM 학습 할 때 phoneme tokens 과 sub-phoneme tokens 둘 다에 대해서 MLM 학습했습니다.
+또한, MLM 학습 할 때 phoneme tokens 과 sub-phoneme tokens 둘 다에 대해서 MLM 학습 합니다.
 
 ### Differentiable Durator
 
 ![img](./differentiable_durator.png)
+
+architecture 에 나온 것 처럼, 위 phoneme encoder 에서 나온 *phoneme-level phoneme representation* 이 durator ($\theta_{dur}$) 의 input 으로 들어오고 output 으로 priro distribution $p(z^{'}|y)$ 을 줍니다.
+
+다음과 같이 쓸 수 있습니다.
+
+$p(z^{'}|y;\theta_{pri})$ where $\theta_{pri} = [\theta_{pho},\theta_{dur}]$
+
+구체적으로 durator 는 총 3가지 역할을 합니다.
+
+1. each phoneme 에 대해 duration 예측
+2. up-sampling module 에서 `phoneme-level` 을 `frame-level` 로 upsample 해 줌
+3. priro distribution 의 mean/variance 를 calculate 하는 module (prior $p$ 는 standard isotonic multivariant Gaussian. VAE scheme 에 따라서)
+    * train / inference time 에서 predicted duration mismatch 를 최소화 하려고
 
 ### Bi-Directional Prior/Posterior Module
 
