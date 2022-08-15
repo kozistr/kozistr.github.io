@@ -65,6 +65,16 @@ $p(z^{'}|y;\theta_{pri})$ where $\theta_{pri} = [\theta_{pho},\theta_{dur}]$
 
 ### Bi-Directional Prior/Posterior Module
 
+![img](./bidirectional_prior_posterior.png)
+
+bidirectional prior/posterior module 은 phoneme $y$ 으로 부터 오는 $p(z^{'}|y;\theta_{pri})$ 와 speech $x$ 로 부터 오는 $p(z|x;\phi)$ 의 information gap 을 줄이기 위해 만들었다고 합니다.
+
+위 그림처럼 KL divergence 를 각 방향(?)에서 서로의 KL divergence loss 를 optimize 하도록 학습합니다.
+
+module 은 flow model 을 채택했고 이윤 inverse 가능해야하고 optimize 쉬워야 하기 때문이라고 합니다.
+
+reduce posterior $p(z|x;\phi)$ 와 backward mapping $f^{-1}$, enhanced prior $p(z^{'}|y;\theta_{pri})$ 와 forward mapping $f$ 간 KL 을 최소화 하는데, 구체적인 전개 수식은 논문에
+
 ### memory-based VAE
 
 ## Performance
