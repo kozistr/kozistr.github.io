@@ -96,7 +96,15 @@ $Attention(Q, K, V) = [softmax(\frac{QW_{Q}(KW_{K})^{T}VW_{V}}{\sqrt{h}})W_{O}]$
 
 ### Training Recipe
 
+전체 loss 는 다음과 같습니다.
 
+$L_{e2e} (\theta_{pri}, \theta_{bpp}, \theta_{dec}) = -\mathbb{E}_{z^{'}|y;\theta_{pri})} [log p(x|Attention(z, M, M);\theta_{dec})]$
+
+$L = L_{bwd}(\phi, \theta_{pri}, \theta_{bpp}) + L_{fwd}(\phi, \theta_{pri}, \theta_{bpp}) + L_{rec}(\phi, \theta_{dec}) + L_{e2e} (\theta_{pri}, \theta_{bpp}, \theta_{dec})$
+
+gradient flow 가 수식으론 복잡한데, 아래 그림으로 보면 이해가 더 쉽습니다.
+
+![img](./gradient_flows.png)
 
 ## Performance
 
