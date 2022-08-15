@@ -106,9 +106,35 @@ gradient flow 가 수식으론 복잡한데, 아래 그림으로 보면 이해�
 
 ![img](./gradient_flows.png)
 
+train & inference flows
+
+![img](./train_inference.png)
+
 ## Performance
 
 ### MOS/CMOS on LJSpeech
+
+![img](./mos_cmos_on_ljspeech.png)
+
+MOS, CMOS metrics 에서 통계학 적으로 유의미한 분포 차이가 없음을 보여준다.
+
+### Benchmark on LJSpeech
+
+![img](./benchmark.png)
+
+절대적 차이로도 꽤 큰 차이가 난다.
+
+### Modules
+
+![img](./module_performances.png)
+
+이번 연구에서 제안한 ideas 중 하나 씩 빼고 학습했을 때, 모두 metric 에 큰 영향을 주고있다.
+
+### Inference speed
+
+![img](./inference_speed.png)
+
+RTF 도 FastSpeech 2 + HiFiGAN, VITS 와 comparable 하고 빠른 수준이다.
 
 ### Latency
 
