@@ -42,15 +42,15 @@ phoneme encoder 는 말대로 phoneme sequence $y$ 를 encode 하는 module 인�
 
 ![img](./phoneme_pretraining.png)
 
-그래서 이번 연구에선 phoneme 에 대해서만 학습하는게 아닌, mixed-phoneme (phoneme + sub-phoneme) pre-training 을 했다고 합니다.
+그래서 이번 연구에선 phoneme 에 대해서만 학습하는 게 아닌, mixed-phoneme (phoneme + sub-phoneme) pre-training 을 했다고 합니다.
 
-또한, MLM 학습 할 때 phoneme tokens 과 sub-phoneme tokens 둘 다에 대해서 MLM 학습 합니다.
+또한, MLM 학습할 때 phoneme tokens 과 sub-phoneme tokens 둘 다에 대해서 MLM 학습합니다.
 
 ### Differentiable Durator
 
 ![img](./differentiable_durator.png)
 
-architecture 에 나온 것 처럼, 위 phoneme encoder 에서 나온 *phoneme-level phoneme representation* 이 durator ($\theta_{dur}$) 의 input 으로 들어오고 output 으로 priro distribution $p(z^{'}|y)$ 을 줍니다.
+architecture 에 나온 것처럼, 위 phoneme encoder 에서 나온 *phoneme-level phoneme representation* 이 durator ($\theta_{dur}$) 의 input 으로 들어오고 output 으로 priro distribution $p(z^{'}|y)$ 을 줍니다.
 
 다음과 같이 쓸 수 있습니다.
 
@@ -61,7 +61,7 @@ $p(z^{'}|y;\theta_{pri})$ where $\theta_{pri} = [\theta_{pho},\theta_{dur}]$
 1. each phoneme 에 대해 duration 예측
 2. up-sampling module 에서 `phoneme-level` 을 `frame-level` 로 upsample 해 줌
 3. priro distribution 의 mean/variance 를 calculate 하는 module (prior $p$ 는 standard isotonic multivariant Gaussian. VAE scheme 에 따라서)
-    * train / inference time 에서 predicted duration mismatch 를 최소화 하려고
+    * train / inference time 에서 predicted duration mismatch 를 최소화하려고
 
 ### Bi-Directional Prior/Posterior Module
 
@@ -71,13 +71,13 @@ bidirectional prior/posterior module 은 phoneme $y$ 으로 부터 오는 $p(z^{
 
 위 그림처럼 KL divergence 를 각 방향(?)에서 서로의 KL divergence loss 를 optimize 하도록 학습합니다.
 
-module 은 flow model 을 채택했고 이윤 inverse 가능해야하고 optimize 쉬워야 하기 때문이라고 합니다.
+module 은 flow model 을 채택했고 이윤 inverse 가능해야 하고 optimize 쉬워야 하기 때문이라고 합니다.
 
 reduce posterior $p(z|x;\phi)$ 와 backward mapping $f^{-1}$, enhanced prior $p(z^{'}|y;\theta_{pri})$ 와 forward mapping $f$ 간 KL 을 최소화 하는데, 구체적인 전개 수식은 논문에
 
 ### memory-based VAE
 
-posterior $p(z|x;\phi)$ 는 원래 VAE 에서 speech waveform reconstruction 할 때 쓰여서 prior 보다 complex 한데, 요걸 간단하게 하기 위해 memory-based VAE 를 제안합니다.
+posterior $p(z|x;\phi)$ 는 원래 VAE 에서 speech waveform reconstruction 할 때 쓰여서 prior 보다 complex 한데, 요걸 간단하게 하려고 memory-based VAE 를 제안합니다.
 
 $z ~ p(z|x;\phi)$ 를 speech reconstruction 에 그대로 사용하지 말고, $z$ 를 attention query 로 사용하고, attention output 를 waveform reconstruction 에 사용하자는 아이디어 입니다. 즉, posterior $z$ 는 아래 그림처럼 memory bank 에 attention weights 를 구할 때만 사용됩니다.
 
@@ -140,6 +140,6 @@ RTF 도 FastSpeech 2 + HiFiGAN, VITS 와 comparable 하고 빠른 수준이다.
 
 ## Conclusion
 
-LJSpeech dataset 에서 human-level metrics 을 달성했다는 점에서 promising 했고, novelties 나 architecture 도 갠적으론 마음에 드는 구조였다. 다른 dataset 에서 benchmark 결과도 궁금한데, 포함해 주면 좋겠다.
+LJSpeech dataset 에서 human-level metrics 을 달성했다는 점에서 promising 했고, novelties 나 architecture 도 갠적으론 마음에 드는 구조였다. 다른 dataset 에서 benchmark 결과도 궁금한데 포함해 주면 좋겠다.
 
 결론 : 굳굳굳
