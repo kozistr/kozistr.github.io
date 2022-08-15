@@ -77,6 +77,13 @@ reduce posterior $p(z|x;\phi)$ 와 backward mapping $f^{-1}$, enhanced prior $p(
 
 ### memory-based VAE
 
+posterior $p(z|x;\phi)$ 는 원래 VAE 에서 speech waveform reconstruction 할 때 쓰여서 prior 보다 complex 한데, 요걸 간단하게 하기 위해 memory-based VAE 를 제안합니다.
+
+$z ~ p(z|x;\phi)$ 를 speech reconstruction 에 그대로 사용하지 말고, $z$ 를 attention query 로 사용하고, attention output 를 waveform reconstruction 에 사용하자는 아이디어 입니다.
+
+![img](./memory_bank.png)
+
+
 ## Performance
 
 ### MOS/CMOS on LJSpeech
