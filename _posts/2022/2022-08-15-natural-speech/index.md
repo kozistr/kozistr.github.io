@@ -79,9 +79,23 @@ reduce posterior $p(z|x;\phi)$ 와 backward mapping $f^{-1}$, enhanced prior $p(
 
 posterior $p(z|x;\phi)$ 는 원래 VAE 에서 speech waveform reconstruction 할 때 쓰여서 prior 보다 complex 한데, 요걸 간단하게 하기 위해 memory-based VAE 를 제안합니다.
 
-$z ~ p(z|x;\phi)$ 를 speech reconstruction 에 그대로 사용하지 말고, $z$ 를 attention query 로 사용하고, attention output 를 waveform reconstruction 에 사용하자는 아이디어 입니다.
+$z ~ p(z|x;\phi)$ 를 speech reconstruction 에 그대로 사용하지 말고, $z$ 를 attention query 로 사용하고, attention output 를 waveform reconstruction 에 사용하자는 아이디어 입니다. 즉, posterior $z$ 는 아래 그림처럼 memory bank 에 attention weights 를 구할 때만 사용됩니다.
 
 ![img](./memory_bank.png)
+
+reconstruction loss 를 써 보면 다음과 같습니다.
+
+$L_{rec}(\phi, \theta_{dec}) = -\mathbb{E}_{z~q(z|x;\theta)} [log p(x|Attention(z, M, M);\theta_{dec})]$
+
+$Attention(Q, K, V) = [softmax(\frac{QW_{Q}(KW_{K})^{T}VW_{V}}{\sqrt{h}})W_{O}]$ 
+
+* $\theta_{dec}$ = waveform decoder
+* $M$ ($M \in \mathbb{R}^{L \times h}$) = memory bank
+* $W_{Q}, W_{K}, W_{V}$ ($W_{*} \in \mathbb{R}^{h \times h}$) = attention parameters
+* $L$ = size of the $M$, $h$ = hidden dimensions
+
+### Training Recipe
+
 
 
 ## Performance
