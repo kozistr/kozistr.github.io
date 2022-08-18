@@ -1,7 +1,7 @@
 ---
 title: NaturalSpeech - End-to-End Text to Speech Synthesis with Human-Level Quality
 date: 2022-08-15
-update: 2022-08-15
+update: 2022-08-18
 tags:
   - Deep-Learning
 keywords:
@@ -86,7 +86,7 @@ reconstruction loss 를 써 보면 다음과 같습니다.
 
 $L_{rec}(\phi, \theta_{dec}) = -\mathbb{E}_{z \sim q(z|x;\theta)} [log p(x|Attention(z, M, M);\theta_{dec})]$
 
-$Attention(Q, K, V) = [softmax(\frac{QW_{Q}(KW_{K})^{T}VW_{V}}{\sqrt{h}})W_{O}]$ 
+$Attention(Q, K, V) = [softmax(\frac{QW_{Q}(KW_{K})^{T}VW_{V}}{\sqrt{h}})W_{O}]$
 
 * $\theta_{dec}$ = waveform decoder
 * $M$ ($M \in \mathbb{R}^{L \times h}$) = memory bank
