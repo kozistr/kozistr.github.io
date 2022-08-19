@@ -1,5 +1,5 @@
 ---
-title: GC Vit - Global Context Vision Transformers
+title: GC ViT - Global Context Vision Transformers
 date: 2022-08-19
 update: 2022-08-19
 tags:
@@ -19,7 +19,7 @@ keywords:
 
 ## Related Work
 
-* [SwinTransformer](https://arxiv.org/pdf/2103.14030.pdf)
+* [Swin Transformer](https://arxiv.org/pdf/2103.14030.pdf)
 * [Focal Transformer](https://proceedings.neurips.cc/paper/2021/file/fc1a36821b02abbd2503fd949bfc9131-Paper.pdf)
 
 ## Architecture
