@@ -72,13 +72,26 @@ $x = LN(x)$
 
 ## Performance
 
-### ImageNet benchmark
+### ImageNet-1K benchmark
 
 ![img](./imagenet_benchmark.png)
 
 FLOPs, parameters 대비 GC VIT 가 가장 좋은 성능을 보여주고 있습니다.
 
+### MSCOCO benchmark
+
+![img](./mscoco_benchmark.png)
+
+Object Detection task 에서도 비슷한 scale 에 있는 모델들 대비해 좋은 성능을 보여주고 있습니다. base 모델에선 ConNeXt 가 더 좋네요.
+
+### Various Components benchmark
+
+![img](./various_components_benchmark.png)
+
+연구에서 제안한 Global Token 이 얼마나 영향이 있는지도 확인했는데, global self-attention 을 제거했을 때가 performance drop 이 가장 컸다고 한다.
+
 ## Conclusion
 
+갠적으로 Global Token 을 stage 별로 생성하고 global attention 을 한다는 점에서 직관적이고 정말 간단한 방법이면서 FLOPs 대비 성능도 훨 좋아서 재밌게 본 연구였다. 또, 이런 design 이 SwinTransformer 나 Focal Transformer 보다 더 깔끔한 거 같다 생각한다.
 
-결론 : 굳
+결론 : 굳굳
