@@ -1,4 +1,244 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 Aug 2022 06:08:01 GMT</lastBuildDate><item><title><![CDATA[TitaNet - Neural Model for speaker representation with 1D Depth-wise separable convolutions and global context]]></title><description><![CDATA[TL;DR speech domain 다루는 회사 가고싶어요 paper : arXiv code : github Related Work contextnet paper ecapa-tdnn paper angular softmax paper Architect…]]></description><link>http://kozistr.tech/titanet/</link><guid isPermaLink="false">http://kozistr.tech/titanet/</guid><pubDate>Thu, 18 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[Building awesome products & technologies to change the world!]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Aug 2022 00:12:04 GMT</lastBuildDate><item><title><![CDATA[GC Vit - Global Context Vision Transformers]]></title><description><![CDATA[TL;DR 최근 computer vision architecture 를 보면 image 만 사용하는 게 아닌 extra training data 로 text information 를 활용하면서 성능을 끌어올리거나 여러 models 을 ensemble…]]></description><link>http://kozistr.tech/gcvit/</link><guid isPermaLink="false">http://kozistr.tech/gcvit/</guid><pubDate>Fri, 19 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;최근 computer vision architecture 를 보면 image 만 사용하는 게 아닌 extra training data 로 text information 를 활용하면서 성능을 끌어올리거나 여러 models 을 ensemble 하는 &lt;code class=&quot;language-text&quot;&gt;Model soups&lt;/code&gt; 같은 approach 들이 나오고 있는데, 또 다른 hybrid 모델 + 제목부터 Global Context 를 고려한 ViT 라길래 기존 SwinTransformer 나 Focal 과는 어떻게 다를지 궁금해서 읽게 됐습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2206.09959.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;code : &lt;a href=&quot;https://github.com/NVlabs/GCVit&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/2103.14030.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;SwinTransformer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://proceedings.neurips.cc/paper/2021/file/fc1a36821b02abbd2503fd949bfc9131-Paper.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Focal Transformer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1309ba7ef90df79051e499783b09a858/af756/architecture.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABEklEQVQY0zXHTU6DQBgAUI7iMVy78hCuXRjjAYxLT2HiAdSddzCtf63RFBlg5humlLbQKYQMzMA3MEYT3+55NIwoCZpK7vOa+QJxcM6VRU0Xy763zo2qbqNPrnXnnDNtF33yRplhHJ1z3vnV6dnJ4eP9HawFxFMOs74gPPmKwolIPrAgSeIz+gzw1hVxtlwwmAOdbjdZutPe9eXF8dHBzcNtlq9pPAH2Pkiapn4UThI+G2S8SgmlL4y9omTb1TfweRw+7fJ1Jjtvl27EUpS1dKMzXY89WmsHO5jfWGstIqqmbZrWGI2IujVKNVobROsFJBBCcM59fwEAjFFCSPiHkIABlGVZVdVeyqIoqn95niulfgDaSAjsD+Uo+wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/1309ba7ef90df79051e499783b09a858/fcda8/architecture.png&quot;
+        srcset=&quot;/static/1309ba7ef90df79051e499783b09a858/12f09/architecture.png 148w,
+/static/1309ba7ef90df79051e499783b09a858/e4a3f/architecture.png 295w,
+/static/1309ba7ef90df79051e499783b09a858/fcda8/architecture.png 590w,
+/static/1309ba7ef90df79051e499783b09a858/efc66/architecture.png 885w,
+/static/1309ba7ef90df79051e499783b09a858/c83ae/architecture.png 1180w,
+/static/1309ba7ef90df79051e499783b09a858/af756/architecture.png 1639w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;전반적은 design 은 FocalNet, SwinTransformer 느낌처럼 hierarchical 한 구조인데, 차이점만 보면 다음과 같습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Global Token Generator module&lt;/li&gt;
+&lt;li&gt;Local / Global MSA&lt;/li&gt;
+&lt;li&gt;Downsample module&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;global-query-generator&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#global-query-generator&quot; aria-label=&quot;global query generator permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Global Query Generator&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/31a3728d0a2d4f8e33cba4b3dcc962ee/2d2d6/global_query_generator.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 44.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABYElEQVQoz1WR2ZKbMBBF/f+/lTwkqXIWp6YyibFBFghhENrVSGhJYGYq4/PS90Gn+qr6UHZyLosLKeUYkwNv7DIxvoZYSkk7OecY15RSecchl1xKCdE/1U/KiTuHbpgXhbwPhFIHMI4TY2y4j23bEdJrbd7JeZON15/Qh8v0+/k6nJ4rhr9Mcv58/XgdK0KGvh9wS6pL3SA8Mv5ffhkpJcK72dzrjv+psaTfLdhf9OeNN0IIxpgQoqouwzA81H77c45ryrkoiArWlIJbIvgAfnUQjAUu9DQxzkWM8aF23qvn1QXVg+wd77yiQVMQxMs+2bubu7mv/QIhrJv8arxu3lJemMFHib8JdFzoCeiJo6PCX4H+ELejJae8QnnkMM+zMUZrLZW2+5G2U7nFuC3AEqzzDsJW3littd7eKq21tfZwPp8RQm2Lm6bB+NZijFCDUNNiLKXURqudF+Etb+Gf/Bc5E/9OJbokwAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/31a3728d0a2d4f8e33cba4b3dcc962ee/fcda8/global_query_generator.png&quot;
+        srcset=&quot;/static/31a3728d0a2d4f8e33cba4b3dcc962ee/12f09/global_query_generator.png 148w,
+/static/31a3728d0a2d4f8e33cba4b3dcc962ee/e4a3f/global_query_generator.png 295w,
+/static/31a3728d0a2d4f8e33cba4b3dcc962ee/fcda8/global_query_generator.png 590w,
+/static/31a3728d0a2d4f8e33cba4b3dcc962ee/efc66/global_query_generator.png 885w,
+/static/31a3728d0a2d4f8e33cba4b3dcc962ee/c83ae/global_query_generator.png 1180w,
+/static/31a3728d0a2d4f8e33cba4b3dcc962ee/2d2d6/global_query_generator.png 1205w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이번 논문에서 Global Context 를 더 잘 이해하기 위해 제안한 Global Token 이란 개념인데, global context 를 잘 이해하기 위해 local patch 가 아닌 entire input feature 에 대해서 잘 compress 해서 global feature 를 생성합니다.&lt;/p&gt;
+&lt;p&gt;각 stage 초반에 compute 하고 아래 소개할 Global Attention 을 할 때 query 부분에 넣어주는 방식입니다. module design 은 간단한데, fused mbconv 후 max-pool 해 줍니다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;F&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x^{i} = FusedMBConv(x^{i - 1})&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8247em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8247em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.0747em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.13889em;&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;se&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.07153em;&quot;&gt;MBC&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8247em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mbin mtight&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msup&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x^{i} = MaxPooling(x^{i})&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8247em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8247em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.0747em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.13889em;&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;oo&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8247em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;global-self-attention&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#global-self-attention&quot; aria-label=&quot;global self attention permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Global Self Attention&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2f0d3e7e6a222907ba38ce60e9072780/b5dee/global_self_attention.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 30.405405405405407%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABIUlEQVQY0y2NO1PCUBhE8///gmNjQefYWGllRYkkkASTkIAoUXK578d3n04YT7UzuzsnizH6GHxKbg4xxBRT8jG4EGJM/20M0hhlTLoRYnRxrjPwnmmnyQnYiChZ5svqUCutCaU+zAsiIKakDfxO16IrVs2KcEYZ0wAZV6Y6IDUWMH0cf86Ll4fF62I/DP0wWDffy2ES+OyuDZfi6e3x/vlu05SH4Ug4y4xzZ6zl1Go8KLDvTb7uNphShPHNHEYKAn/LsXDeN5/7VbO+EMQYn83WWak1WDBgmBCUSx+isWCctW5Gai2UlFpTzieErfUGQCgFFrKv0ynP133fd92+qutyu93tdlVVtm1blmVV1dPlQilljFFCEEIYY8YYIYRz/gcbNk4HzVCwmAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/2f0d3e7e6a222907ba38ce60e9072780/fcda8/global_self_attention.png&quot;
+        srcset=&quot;/static/2f0d3e7e6a222907ba38ce60e9072780/12f09/global_self_attention.png 148w,
+/static/2f0d3e7e6a222907ba38ce60e9072780/e4a3f/global_self_attention.png 295w,
+/static/2f0d3e7e6a222907ba38ce60e9072780/fcda8/global_self_attention.png 590w,
+/static/2f0d3e7e6a222907ba38ce60e9072780/efc66/global_self_attention.png 885w,
+/static/2f0d3e7e6a222907ba38ce60e9072780/c83ae/global_self_attention.png 1180w,
+/static/2f0d3e7e6a222907ba38ce60e9072780/b5dee/global_self_attention.png 1237w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;architecture 를 보면 각 stage 별로 local attention 후 global attention 을 수행하는데, global attention 을 수행할 때 stage 초반에 &lt;code class=&quot;language-text&quot;&gt;Global Query Generator&lt;/code&gt; 가 생성한 query token 를 query 로 넣어주는 부분에서 차이가 있습니다.&lt;/p&gt;
+&lt;h3 id=&quot;downsample-module&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#downsample-module&quot; aria-label=&quot;downsample module permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Downsample module&lt;/h3&gt;
+&lt;p&gt;은 이전 연구 (EfficientNetV2)에서 사용하던 모듈과 큰 특별한 점이 없는데, pooling layer 를 max-pool 이 아니라 conv strided pool 한 점에서 차이가 있습니다. Fused-MBConv design 은 아래와 같습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;mi&gt;W&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mrow&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\hat{x} = DW-Conv_{3 \times 3}(x)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;accent-body&quot; style=&quot;left:-0.2222em;&quot;&gt;&lt;span class=&quot;mord&quot;&gt;^&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.7667em;vertical-align:-0.0833em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.02778em;&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.13889em;&quot;&gt;W&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.07153em;&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3011em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;mbin mtight&quot;&gt;×&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.2083em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\hat{x} = GELU(\hat{x})&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;accent-body&quot; style=&quot;left:-0.2222em;&quot;&gt;&lt;span class=&quot;mord&quot;&gt;^&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05764em;&quot;&gt;GE&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;LU&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;accent-body&quot; style=&quot;left:-0.2222em;&quot;&gt;&lt;span class=&quot;mord&quot;&gt;^&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\hat{x} = SE(\hat{x})&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;accent-body&quot; style=&quot;left:-0.2222em;&quot;&gt;&lt;span class=&quot;mord&quot;&gt;^&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05764em;&quot;&gt;SE&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;accent-body&quot; style=&quot;left:-0.2222em;&quot;&gt;&lt;span class=&quot;mord&quot;&gt;^&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x = Conv_{1 \times 1}(\hat{x}) + x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.4306em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.07153em;&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3011em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mbin mtight&quot;&gt;×&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.2083em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord accent&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;accent-body&quot; style=&quot;left:-0.2222em;&quot;&gt;&lt;span class=&quot;mord&quot;&gt;^&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.4306em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mrow&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x = Conv_{3 \times 3, stride 2}(x)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.4306em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.0361em;vertical-align:-0.2861em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.07153em;&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;mbin mtight&quot;&gt;×&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;mpunct mtight&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.02778em;&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.2861em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x = LN(x)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.4306em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;% DW-Conv : Depth-Wise Convolution
+% SE : Squeeze and Excitation
+% LN : Layer Normalization&lt;/p&gt;
+&lt;h2 id=&quot;performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#performance&quot; aria-label=&quot;performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
+&lt;h3 id=&quot;imagenet-1k-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#imagenet-1k-benchmark&quot; aria-label=&quot;imagenet 1k benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ImageNet-1K benchmark&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c699a67ad9e5738a071352fb144e98c7/19a15/imagenet_benchmark.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABnElEQVQozzWR647jIAyF8/4vtv9W6kgzk720UxJIU5ISwEDA5rJqOvv9svTpWMdyh4hx30spuZTdQXQQrZ4vZ7spJMKUYoyllFLr7gA2lXefrGHv79GHbtu2mFJwzsv77ffl8rOPEubrfeITEa3riojO2rhKmO6fP05JuvUq/3yc0546LriUchPT9ePsdXioR621tWa9c94Nw2CsWRkb+6vX0RjtgqfWjAdE7KbbzRsb1LZujz1ZqjFlTJlSfrYeOccQrJQQHAQVyWFJWAgJiagTgt/neVukto/SGpVCmepBJvpi7HGXcp7A69ZaLgURW2ullO8wgGutIWJw4EFrrWp96kzEGIspvax3ELzV26PU+h2OByF4a1RwprVSD3do9N7HGAGsA717W/+Tc37eXJ89s/d+331KKOWCSK/Fz545l1IAbIxBqU3KRWtNRK//dcaYZVkAQCk1jiNjbJ5nIcTt4H6wrKsQ4vJ1+dX30zQZY5RSAK7jnJ9Op77v397euODTNDHGhmHgnD8HNnAuGGPn89+XGsdRHKzr+g8JqDUEwbhjawAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/c699a67ad9e5738a071352fb144e98c7/fcda8/imagenet_benchmark.png&quot;
+        srcset=&quot;/static/c699a67ad9e5738a071352fb144e98c7/12f09/imagenet_benchmark.png 148w,
+/static/c699a67ad9e5738a071352fb144e98c7/e4a3f/imagenet_benchmark.png 295w,
+/static/c699a67ad9e5738a071352fb144e98c7/fcda8/imagenet_benchmark.png 590w,
+/static/c699a67ad9e5738a071352fb144e98c7/efc66/imagenet_benchmark.png 885w,
+/static/c699a67ad9e5738a071352fb144e98c7/c83ae/imagenet_benchmark.png 1180w,
+/static/c699a67ad9e5738a071352fb144e98c7/19a15/imagenet_benchmark.png 1229w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;FLOPs, parameters 대비 GC VIT 가 가장 좋은 성능을 보여주고 있습니다.&lt;/p&gt;
+&lt;h3 id=&quot;mscoco-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mscoco-benchmark&quot; aria-label=&quot;mscoco benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MSCOCO benchmark&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2d5743da26ed366ffbc3072880d5216b/58213/mscoco_benchmark.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB/klEQVQozzWR63LbIBCF9f4P1tZp3EncxJdaSAjYXRA3CZBcOe64lTM9P5idBXbOt6fq+75pmhDiOCalZNu2RNS2nLFGCoFr3QKAUoqIlFKglJRSKqm1rnLOpjdpTst1mec5xnC9Xr33NWNSri/quh7GIaVcSrlcLqWUaZpyztM0VQiw2Wxa1frkSykAsCyL1hRC6HvDOUdE773ohNFaCGmMQcS+N0S6GsfRGBNcCDEMw/B5cr7aPp/PdV1LKZum8d7HGLx38b9SSpW1ltU1UyzM8eN6jTHe73drrffrFO+ddXYcxxhjKSWlnEvJOZWS18+E9LzdcuLDPE5lQsTb7eacCyE45/ChIUYAcN4bY6y1q9PHbaWU2v7YtpqnnGKMQoh5ngGUNoaIhBBdJ4wxChQRcs5XZgAkJK0rZ937/l1ZNX3My++FiO73u3MuDkPOyTnvnMsp9XY1b61b9xLCMA4xxkop+fT9qcV2zCmGyBibpkkIgUiI2LZt13VaayklAHRrH5VSiGiMqTTRl29fOfHLsmbYdd3tzw0BtNbee0T8LFZmZxHpwayttX3fV4jIWNOJDiwEH0BBDFE/RERSSqONsxYBhBCcd4gIAIiwMu92r+e6fnl53T5vd7vd8dfxpE6n0+nn29t+v2eMHY/Hw+HgnffePzIL47hi/2P+CwUsjauk4HteAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/2d5743da26ed366ffbc3072880d5216b/fcda8/mscoco_benchmark.png&quot;
+        srcset=&quot;/static/2d5743da26ed366ffbc3072880d5216b/12f09/mscoco_benchmark.png 148w,
+/static/2d5743da26ed366ffbc3072880d5216b/e4a3f/mscoco_benchmark.png 295w,
+/static/2d5743da26ed366ffbc3072880d5216b/fcda8/mscoco_benchmark.png 590w,
+/static/2d5743da26ed366ffbc3072880d5216b/efc66/mscoco_benchmark.png 885w,
+/static/2d5743da26ed366ffbc3072880d5216b/58213/mscoco_benchmark.png 902w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Object Detection task 에서도 비슷한 scale 에 있는 모델들 대비해 좋은 성능을 보여주고 있습니다. base 모델에선 ConNeXt 가 더 좋네요.&lt;/p&gt;
+&lt;h3 id=&quot;various-components-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#various-components-benchmark&quot; aria-label=&quot;various components benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Various Components benchmark&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8f345a3bdca829a972cf828f8a6aee03/1ddef/various_components_benchmark.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACdklEQVQoz02TyW7bSBRF+f9fEwdGd++ShQFTEigVSdU8sCZORVKwLQ6S4ZCBY6CRsz94Fxf3RX3fN38RQkAIpQCcADgej1VVeeeSJDmeTt5779zpdNwfDrv9YVmWaF3X7S/Wde37nhKCMQpdH7oghbTWYoKLohiGQSuZ5bk2Zl3X6P39fRh657xzzpflNE3Xtzel1G63u91uSoosP8/TxBlXSg6XS11XcRy3IWzbFr28vAghAACUUQih1mZZlhDaNE1v9/swDBDCcZr6rlNSXMdpnqY8P7++vn7K4zhWVUUp5ULUnzS3263rAmPs1691GHpCyLwsfddprcdpvl7fCKXzPH/K27a9Xa/WWiFE+BPmfr/3XWeMWbftchk45/O8XC4XY/Q4TuP1SildluVTLksf73bPcfz09PT8HCOMu647HPaPj49N20IIH74/cC4AOP337z+FNoKzb98eKGMfHx9RoYo0BVmWQwgxxoQQYzSE5yRJpFQY4/1+zxiDEB6PRy4EIXi/P3wlj378+MkYW5albVuMEOO8aRqCUdt2dVNba9umoYw756SUZVX1XT8MA2fMOBdlWXqGCGEspRRCCM611oRQjBGEECGojTW6oJQKIaRSRaEYYwAAQmiUJElZloVSlNKqapq6lkKqQlvnhBCMsbIsvS8RQs46RukZIq01QohgHGFChBBKqT97yCkl3peMMYwRZRxjLDjPssxaVxRFnmfWua9qCCFRfj5LKTEhlJITAHEcgzRNU5ACgDFGCH4doZRqrSkleZZxLqSU3peRVKqpq7puvC+dcyGENrQhBO+csdZZW5ZlCMEY4503Rnvn/3+E3+dS4MRu1pZdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/8f345a3bdca829a972cf828f8a6aee03/fcda8/various_components_benchmark.png&quot;
+        srcset=&quot;/static/8f345a3bdca829a972cf828f8a6aee03/12f09/various_components_benchmark.png 148w,
+/static/8f345a3bdca829a972cf828f8a6aee03/e4a3f/various_components_benchmark.png 295w,
+/static/8f345a3bdca829a972cf828f8a6aee03/fcda8/various_components_benchmark.png 590w,
+/static/8f345a3bdca829a972cf828f8a6aee03/1ddef/various_components_benchmark.png 635w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;연구에서 제안한 Global Token 이 얼마나 영향이 있는지도 확인했는데, global self-attention 을 제거했을 때가 performance drop 이 가장 컸다고 한다.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;갠적으로 Global Token 을 stage 별로 생성하고 global attention 을 한다는 점에서 직관적이고 정말 간단한 방법이면서 FLOPs 대비 성능도 훨 좋아서 재밌게 본 연구였다. 또, 이런 design 이 SwinTransformer 나 Focal Transformer 보다 더 깔끔한 거 같다 생각한다.&lt;/p&gt;
+&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TitaNet - Neural Model for speaker representation with 1D Depth-wise separable convolutions and global context]]></title><description><![CDATA[TL;DR speech domain 다루는 회사 가고싶어요 paper : arXiv code : github Related Work contextnet paper ecapa-tdnn paper angular softmax paper Architect…]]></description><link>http://kozistr.tech/titanet/</link><guid isPermaLink="false">http://kozistr.tech/titanet/</guid><pubDate>Thu, 18 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;speech domain 다루는 회사 가고싶어요&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2110.04410v1.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
@@ -1964,167 +2204,4 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 &lt;li&gt;Kaggle Competition Master&lt;/li&gt;
 &lt;li&gt;팀 문화 잘 만들어 나가기&lt;/li&gt;
 &lt;li&gt;운동 꾸준히 열심히 하기&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[2021년 퇴사 부검]]></title><description><![CDATA[TL;DR 올해도 여러 큰 사건(?)들이 있었지만, 그 중 또 한 번의 이직이 가장 큰 사건이 아닐까 싶습니다. 지난 2년 동안 회사를 알아보고 이직하는 과정을 매년 하니 지치고 병특이라 총알(이직 선택지)이 많이 없어서, 일단 환경이 어떻든 버텨봐…]]></description><link>http://kozistr.tech/postmortem/</link><guid isPermaLink="false">http://kozistr.tech/postmortem/</guid><pubDate>Sun, 05 Dec 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;올해도 여러 큰 사건(?)들이 있었지만, 그 중 &lt;strong&gt;또 한 번의 이직&lt;/strong&gt;이 가장 큰 사건이 아닐까 싶습니다. 지난 2년 동안 회사를 알아보고 이직하는 과정을 매년 하니 지치고 병특이라 총알(이직 선택지)이 많이 없어서, 일단 환경이 어떻든 버텨봐야 지란 마인드로 살아왔는데, 어느 순간 돌이킬 수 없는 현타가 왔고 결국 이직을 하게 된 거 같습니다.&lt;/p&gt;
-&lt;p&gt;Netflix에는 퇴사 문화로 &lt;a href=&quot;https://content.v.kakao.com/v/5e54ead52007421c9da29a4b&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;postmortem e-mail&lt;/a&gt;라는게 있습니다. 퇴사하는 직원이 퇴사 당일 동료에게 메일 한 통을 보내는 문화인데, 갠적으로 회사에서도 퇴사자가 왜 퇴사를 하는지 알 수 있고 퇴사자도 자기 생각을 정리할 수 있는 좋은 문화라 생각합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/82ea267dceee609c319816557aa3234c/0b533/postmortem-email.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 120.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAIAAAB1KUohAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADlElEQVQ4y52UW28bRRiG/Tv5AYgfwFW5RupFuQIJpIqCuEgrBE3VJkElcWwnjoPdxHHj9c7u7Oxx1rPnndmTT3tCa4ekSEhAX70Xc7HPvDPffvO1vvjy29/aly8Pu6+Oev/iw+6rt/1fXhw8efzNk6++++TTR62T3qiu66Io6/+gqq7rzSZ07MC1vn661zrewiGlYRj6vh9FMWsUeZ7PGKOUxnFSlOXfvE368cVBq9O/Xq0W4/H4+uq6fXICIRQEgef5wWAAABiNRhDCPM+rD5TnRV3Xz/Ze/79j77T7+Ie9N3cwI25suYnjJ26QLlZRlJpza05sA8/nxHZcX9MMx/UJcUIaxcmigZ8ftI67w6Ksralo38zsm5nDo4ClukF6Z4PhaPz293a31x+9G7dPezyQbm6mmj53PVYWVQM3yVXtRSnNVjRd0mzF4szz6e2UlxWd48CUAxwnEMvNFusoyliUuh67S94dOzBtaljUtCm2mOXRMNINU1ENbFqW7SGkyormuEEUZyxOAxo/wEVZuqLqc9CbSR4HQ2R4bsADyAMIAFQUfTKZzngRmxaLUkoTL/gguaq2ydiiBqEGYaZNw0jRDCjJjhuYcxvJqoFJki6zxTrNViFNHgq23hRkhpz3gn0r2O8Fd4Ycy+tfDE/a3eHwun/xR6fbPz+/5GYQSqqENGL5VVk/u/9VfrJkq7zxumhqFmWqZiqKIUnK7ZTXdFOEMhAkHkARypbtb5PvYaSFSAtlIwAockMvoJpuGpjwvCirOkIKkjVBRECQdMOkLH2Ai7LyZCNQjEDBAdRYGPss0XQTm5YgIlnRVQ1LSOUBnHJAVvQgjO87bFjWtSdpAS+FBgllPZTUAFsQqSKUVQ2rmoFklUXpYpkvlps0W9/Bz980BVttCktUHSA7suFA1ZV0os/bnbPTztm7q0nv7GI4Gjtu6PnM9ZjnM9sNy13Bdk8yiFKWrVi62HpJo7S5raJjkwiihE0rThYsSqM4i+Lsrknu4Y98Vaf9q3yzhhDquk4IkWUZIUQIAQAQQiCEsiwrioIQyvO8GSZV9QB3+teLLDk/70+nU47jLi8vB4OBIAjD4XAymaiqijHWtrqD/0reNsnZqCxyAICmaRhjQRBnM97AGJsmAEIcx7u0uq7LqtqNofWm2eX7vdcff+effj5qPWpG7+DXg9P9w+7+UfflYadZ3PvoH0by/mH36Pjis88f/wk8f/PvYxDhlQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;img&quot;
-        src=&quot;/static/82ea267dceee609c319816557aa3234c/0b533/postmortem-email.png&quot;
-        srcset=&quot;/static/82ea267dceee609c319816557aa3234c/12f09/postmortem-email.png 148w,
-/static/82ea267dceee609c319816557aa3234c/e4a3f/postmortem-email.png 295w,
-/static/82ea267dceee609c319816557aa3234c/0b533/postmortem-email.png 500w&quot;
-        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;마침 배민 기술 블로그에 올라온 &lt;a href=&quot;https://techblog.woowahan.com/2723/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;퇴사 부검&lt;/a&gt;글도 보면서, 올해는 Netflix 퇴사 부검 문화에 맞춰서 회고해 볼까 합니다.&lt;/p&gt;
-&lt;h2 id=&quot;퇴사-부검&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%87%B4%EC%82%AC-%EB%B6%80%EA%B2%80&quot; aria-label=&quot;퇴사 부검 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;퇴사 부검&lt;/h2&gt;
-&lt;h3 id=&quot;1-왜-떠나는지&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%99%9C-%EB%96%A0%EB%82%98%EB%8A%94%EC%A7%80&quot; aria-label=&quot;1 왜 떠나는지 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 왜 떠나는지&lt;/h3&gt;
-&lt;p&gt;개인적으로 개발을 취미로 할 정도로 무언갈 공부하고 개발하는 걸 정말 좋아하는 일상이 개발인 개발자인데요, 여담으로 벌써 개발 공부를 중1 때 시작했으니 시작한 지도 10년이 넘었네요.&lt;/p&gt;
-&lt;p&gt;가끔 주위 사람들이 &quot;개발이 취미고 직업도 개발자니, 덕업일치네~&quot; 라는 말을 하는데, 사실 이 말은 &lt;strong&gt;50%는 맞고 50%는 틀린 말&lt;/strong&gt;이라 생각해요.&lt;/p&gt;
-&lt;p&gt;개발하는 게 정말 좋아서 &lt;strong&gt;업무 자체에서 오는 스트레스는 거의 없고&lt;/strong&gt; 그 순간순간이 재밌다 느껴지는 부분에서 50% 맞지만, 50% 틀린 이유는 &lt;strong&gt;내가 하고 싶은 재밌는 개발&lt;/strong&gt;을 했을 때 재밌지, 내가 원하지 않는(직무와 관련이 없는) 스텍이나 좋지 않은 개발문화에서 일하는 건 정말 스트레스인 거 같아요.&lt;/p&gt;
-&lt;p&gt;예를 들면 회사에서 &lt;code class=&quot;language-text&quot;&gt;이상과는 다른 개발&lt;/code&gt;을 했다면 퇴근 후엔 &lt;code class=&quot;language-text&quot;&gt;이상적인 개발&lt;/code&gt;을 하면서 힐링하는 느낌이에요. (물론 회사에서도 재밌는 일을 하고 있어요)&lt;/p&gt;
-&lt;p&gt;그래서 회사를 고를 때 연봉이나 다른 조건보다 더 중요하게 보는 게, &lt;strong&gt;정말 내가 재밌게 일할 수 있을까?&lt;/strong&gt;, &lt;strong&gt;나중에 돌아봤을 때 남는 게 많을까?&lt;/strong&gt; 에요.&lt;/p&gt;
-&lt;p&gt;저는 지금 Data Scientist/Machine Learning Engineer 연관 직무에서 일하고 있고 현재까진 &lt;strong&gt;재밌게&lt;/strong&gt;란 기준이 다음과 같은데&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;지금까지 경험하지 못한 주제&lt;/li&gt;
-&lt;li&gt;주제 자체가 너무 매력적이고 재밌어 보이거나&lt;/li&gt;
-&lt;li&gt;해당 주제로 해볼 만한 게 많은 곳&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;% 주제 : 서비스, 회사가 가진 데이터&lt;/p&gt;
-&lt;p&gt;이번에 떠나는 이유는 &lt;strong&gt;다른 이유가 더 크기도 하고 3번에 가까운 거&lt;/strong&gt; 같아요.&lt;/p&gt;
-&lt;p&gt;처음엔 추천시스템이란 주제가 전에 경험해본 적 없는 새롭고 재밌어 보이는 주제였고 서비스에서 유저들에게 추천시스템을 개선해서 좋은 사용자 경험을 주고 싶은 생각으로 입사를 하게 됐는데, 개인적으론 시간이 지날수록 추천이란 한 가지 주제에 집중하기엔 어려웠고 추천 이외에 해볼 수 있는 주제들도 한계가 느껴졌습니다.&lt;/p&gt;
-&lt;p&gt;정리하면 &lt;strong&gt;회사에서 내가 재밌게 할 일이 더 있나?&lt;/strong&gt; 란 질문에 저도 답을 찾지 못했고 회사도 답을 주지 못해서 결국 떠나게 된 거 같습니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 447px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ec5332c5be34d605c05681f63102f6c8/a2d48/byebye.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 103.37837837837837%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEHUlEQVQ4y3WUfUxWVRzHn+XqH2NkoiIvGjreebjPvfece+455z73PvdcnuRFAtqY8SZv+jREsmHqWM1mvqLCYIHG6MkBIaUxedFqxYhIyIqApLmUGipI8jJhaesf9NYzdEjW9tvZb2fns9/v9933/CwQ60+GRDwnwA7oCf3/wvIYwCTCEGGQGPM3PKQAaRCzR2/+nSzAAtIESbUKFGIsUxVgxkMiIlVEqgAV4EnsAGlA1nlJEZEKMXsIA+Sw67HO2JfiEjOOHsk9vD8lNEqRZB1ImigpPKQiUnlARUSB7BAEu+jpSLcgalh54j7VMDM7OzJyfWbmj4mJ6/Uf5HgYBfKQAGhAoktUR9SwcYzjKadEc0iCMvPAEdGope2CaZq9vb2TkxN37/2VmBQHeKJtCUk7vQJt5IDERMh4gpxFwRkNvi9XreYAAbLDgu0xweFCVXWtaZrd3d3j47fm7j/IzsvdmhVD0iK2Dyzf3OLDYwkniplnVhZ8s7Kw7/mY4mCeMySqWyCJEaGtp7vGNM3R0ZsDgwOmab6+swQjgJ22nM9WbOlYrm73y6xfU9CzLL/DK6vNR1QRRAYkDotEDBuQd+zIN03zxsitvu8vm6Z5rKw8JDKSqSrNXpdy0hsVro6r9E49uySt9WmcESIInrIewSTCokWakJR+Z/ZO11Bj/3B7b8/Fd/bv4wWOE2jeQel4v3CwDxWcizT2+FsJByCDZJFJHJi+uHFTQsVV8N4wipZCsCzbID3U4WwznR//SdrvOz6Z02p+x/HZiBf1+bKPYKIDpIuUlg/hVlPdVm4PXa/kHRXqppSGKVo/TQpqw92XEjvuJR34NliQMcTGIochhUVZ1TdbSYtpr7pKig44NxcSVyk5Z+qNd+1pW+TOppKbPXtbLjvUVKsgxMyb/zE4Stu0R25+QN23lC/Pu250HG7/Ib/S7azoIj+PvjHVdui3M3s7f0oyssJ43ilRx0NYIswGaUiYgBlxj9tPXLEPfrRr+vPSr4dd7x+JL6unrWNxg507LvW66n6JxPGcCGIksgAbYZF8eBRntWq7GknDtHr+C9eVGztbJjfUTEZVjge+e3up+6bvqQkf18kAXnQsEkwizMojG8BAMvRkuWGGVPdrFT+iirGgytteFRNPHf51Scl3z6R/6MUZVs7KkKIvVIZYn/8l85NvPY6a52h6bVDqCX9Xk39uU0C6O8hR6gdKl77avuaVt6MjwzVR9GhmeWI/MBugb31qc10ILO4KKLm4PqN6XdmYf1GHb/rp545dC6wzfYvb1qpJAkDM8uQCEiWGGUnYvXbf0LLdX63a1ry8evrZ0mveOfWrHHkvZB4Kfe2sX3JxqACY5T+Wk8czjBMVLUVS4mQci7RkqKVAtEHmRDsXbUSE67zA/mn7b/YFvZlreqXwAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;byebye&quot;
-        title=&quot;byebye&quot;
-        src=&quot;/static/ec5332c5be34d605c05681f63102f6c8/a2d48/byebye.png&quot;
-        srcset=&quot;/static/ec5332c5be34d605c05681f63102f6c8/12f09/byebye.png 148w,
-/static/ec5332c5be34d605c05681f63102f6c8/e4a3f/byebye.png 295w,
-/static/ec5332c5be34d605c05681f63102f6c8/a2d48/byebye.png 447w&quot;
-        sizes=&quot;(max-width: 447px) 100vw, 447px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;바로-떠나지-않은-이유&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%94%EB%A1%9C-%EB%96%A0%EB%82%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%9D%B4%EC%9C%A0&quot; aria-label=&quot;바로 떠나지 않은 이유 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;바로 떠나지 않은 이유?&lt;/h4&gt;
-&lt;p&gt;사실 작년 말 ~ 올해 초부터 퇴사 고민을 시작했는데,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;정말 내가 현재 상황을 개선하기 위해서 많은 노력을 했나?&lt;/li&gt;
-&lt;li&gt;그런 노력 없이 그저 더 좋은 환경만을 바라는 도피성 이직인가?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;무언가만 바라거나 도망쳐서 도착한 곳은 절대 행복할 수 없는&lt;/strong&gt; 걸 알기에, 적어도 내가 할 수 있는 노력은 다 해야 후회 없이 후련하게(?) 떠날 수 있을 거 같아서 그 시점부터 기술적이나 문화적으로 더 노력해 봤던 거 같아요.&lt;/p&gt;
-&lt;h3 id=&quot;2-회사에서-배운-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%ED%9A%8C%EC%82%AC%EC%97%90%EC%84%9C-%EB%B0%B0%EC%9A%B4-%EA%B2%83&quot; aria-label=&quot;2 회사에서 배운 것 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 회사에서 배운 것&lt;/h3&gt;
-&lt;p&gt;1년 반이라는 짧다면 짧고 길다면 긴 시간이지만 그래도 다양하고 많은 일을 했습니다.&lt;/p&gt;
-&lt;p&gt;다양하고 많은 일을 하고 성과도 냈지만, 사실 배운 것이 제일 아쉬운 부분입니다. 좋게 말하면 &lt;strong&gt;내가 알고 있는 지식을 정리하고 팀 문화에 정착/기여&lt;/strong&gt;했다고, 나쁘게 말하자면 &lt;strong&gt;없다&lt;/strong&gt;인 거 같아요.&lt;/p&gt;
-&lt;p&gt;주로 팀에서 제 역할은 기술을 팀에 적용하고 팀원들을 기술적으로 케어해 주는 그런 역할이었던 거 같아요. (물론 이 과정에서도 배운 게 있다고 생각합니다).&lt;/p&gt;
-&lt;p&gt;이번 회사까지 경험을 통해 확실하게 나에 대해 깨달은 것들이 있는데 하나만 적어보자면,&lt;/p&gt;
-&lt;h4 id=&quot;너-내-동료가-제발-되어주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%84%88-%EB%82%B4-%EB%8F%99%EB%A3%8C%EA%B0%80-%EC%A0%9C%EB%B0%9C-%EB%90%98%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;너 내 동료가 제발 되어주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;너! 내 동료가 제발 되어주세요&lt;/h4&gt;
-&lt;p&gt;직무적인 부분에선 주로 혼자 일을 했고 처음에는 일에만 몰입하느라 잘 몰랐는데, 혼자 일을 할 때의 장점도 있지만 내가 하는 일에 feedback을 줄 수 있는 동료가 없고 서로 대화하면서 문제를 푸는 즐거움을 느끼지 못하는 부분에서 시간이 지날수록 정말 힘 빠지는 걸 느꼈습니다. 그래서인지 회사를 구할 때 가장 먼저 확인하는 부분이 같은 직무에 동료가 있는지를 1순위로 확인하곤 합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 544px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4a1c17216b89299390f2f22e247a91f8/b3e51/be_my_companion.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACkUlEQVQozxXJ2VMSARwA4N8uQpMomIpaaBiI4liTUY55C0IgAgsu5yLLKZcIAgMiiHggOXIjHgMGY9ljL/2FTd/rB8Bfg1kFLGtBYkJkBCK3IUo3aILTOK7DZw3aj/MaEW3L3oUFqGovKreicitFRqBrKmR2BYCzAIJ1WFQjG0ZESlDVPtBGBHqj8P0waTBJROKpceYKLnlhiPbYc9TtAIhxRGJClxSIUAw0zEeV2SliMyyoYU6Brm7DhkWqFK4vf76vdx5vWioVLpPymVoPBQv93xUNSElkgwCRDjje62Ei1a/000UWyrwavshgERuTiP1O42O90662z5JpweocfN1ClnAQStEFBSrCELEWJHoYMsaYugPGdohlOe43J+m6CN0QpxpivfqwaTeeDMR5tjRsOlCpsWvTPmiIc2y5t+TFiDHxxhADlinyeueYbT8bdeRHHOcDZOYVecawnnPJQ5PVFzLbZwhP15YdUZAM3R575+St/XzQmBjAQ6OmJHAcGY7tlOvKvXN9H3Pm2c5LvjcfSF82YthztfxUu/+RwLPpo0+ebLc+1q120RQkVe2nKN2o1ABsb4HlumToQi9Vzj6Nt08XJ1PVv/e1Vlzz+/bh+aHTPCL+1K9at22uK8fayQxZ0oNktscSB8wBPE+RF6hPBu94nhLHkZ925RuVZukw1DxY6xSv2rW7n3F5JmBp37TwcBoUu0x9pNd0SCdSNHMCJv0VnrMw4S7PBB94wRaRLF2cXmkt5vr++vlR9DSZaoRkYcfmbvSkkC9MuYs83+2H8NPMwa/xYAumIzcTwQovWOb4CpP+Qq1Q/RYtYb69x5CofHFRyRebMWV2DxP4CqXrqjXdYLkb3ECTv9/mBJr/AFO41culBlgZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;be_my_companion&quot;
-        title=&quot;be_my_companion&quot;
-        src=&quot;/static/4a1c17216b89299390f2f22e247a91f8/b3e51/be_my_companion.png&quot;
-        srcset=&quot;/static/4a1c17216b89299390f2f22e247a91f8/12f09/be_my_companion.png 148w,
-/static/4a1c17216b89299390f2f22e247a91f8/e4a3f/be_my_companion.png 295w,
-/static/4a1c17216b89299390f2f22e247a91f8/b3e51/be_my_companion.png 544w&quot;
-        sizes=&quot;(max-width: 544px) 100vw, 544px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;3-회사에서-아쉬운-점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%ED%9A%8C%EC%82%AC%EC%97%90%EC%84%9C-%EC%95%84%EC%89%AC%EC%9A%B4-%EC%A0%90&quot; aria-label=&quot;3 회사에서 아쉬운 점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 회사에서 아쉬운 점&lt;/h3&gt;
-&lt;p&gt;물론 아쉬운 점은 많습니다. 입사했을 때 업무에 집중하고 일하는데 필요한 것들을 물어봤을 때 답했던 점들이 결국엔 현실적이거나 여러 문제로 이뤄지지 않았지만, 개인적으로 일부는 내가 더 적극적으로 노력했다면 어쩌면 해결할 수 있었을 텐데 생각이 들어 저에게 아쉬운 점이 남아있긴 하네요.&lt;/p&gt;
-&lt;h3 id=&quot;4-앞으로의-계획&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%EC%95%9E%EC%9C%BC%EB%A1%9C%EC%9D%98-%EA%B3%84%ED%9A%8D&quot; aria-label=&quot;4 앞으로의 계획 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 앞으로의 계획&lt;/h3&gt;
-&lt;p&gt;새로운 회사에 12월 6일 입사를 하는데, 다시 핀테크 회사로 가게 됐습니다. 사실 앞으로의 생활(?)이나 업무가 어떻게 될지 아직도 잘 모르겠어요 ㅋㅋㅋㅋ. 그래도 재밌는 경험할 수 있을 거 같아서 기대되는데, 이전에 할 수 없었던 새로운 경험을 할 수 있으면 좋을 거 같습니다.&lt;/p&gt;
-&lt;h3 id=&quot;5-회사의-메시지&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-%ED%9A%8C%EC%82%AC%EC%9D%98-%EB%A9%94%EC%8B%9C%EC%A7%80&quot; aria-label=&quot;5 회사의 메시지 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. 회사의 메시지...?&lt;/h3&gt;
-&lt;p&gt;(아마 누군가 어딘가에 남겨 주시겠죠...?)&lt;/p&gt;
-&lt;h2 id=&quot;정리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;정리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정리&lt;/h2&gt;
-&lt;p&gt;여러 분들과 여러 이야기하면서 제 생각과 입장을 존중해주셔서 감사하고, 개인적으로 느꼈던 팀에 아쉬웠던 점들이나 더 잘되기 위해서 어떻게 하면 좋을지 피드백 남기면서 (저는) 잘 마무리했다 생각하는데, 쨋든 올해도 새로운 곳에서 새로운 도전하게 됐고, 잘해 나아갈 수 있으면 좋겠습니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/657e97b84573fb6159c821ac2a8a0f67/9cab2/result.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADYUlEQVQozwFWA6n8AGed12ad2GWc2Gab1qbB3sfY6LXK4Xyn1luX2F+TzFmV2V6a2lmU01qQzHmPqFuQy1+W1GSa1mSa1WKY0QBmndhmnNllm9lkmtaXtNexxNuCqdVemNhdjsB8jm15hGxQc5pXkM+WnqunnphemNVpn9hnnNVjmNRelNAAZp7bZp3ZYprZdKPXpsDcq8DaaZnPMlWAUlI/TksqMioTEQsDPlJq1raboZ2iX5rXZ5zUXZLOVYvJUYrIAGWf22Sd2mqd16zE38PT5LHI41+Hth0qQRgfLQUGCxoVFwICAwoQGquThJqeq1uS0FuOzFKJyE+Ixk+IxgBlntpgmth5pdeyx+CMrtVlm9ZQf7QSHCsWFBVtX1LBp5Chjn4uJB5RQ0OacHVUh8VWj9BQh8ZPiMZPh8cAYpzYYZrWZJrWZZnUWpPRW5XTXpbUNFR5FRgeuaOP7Mmt5cGkMCggGgwLqE9AUFRxQ3m1UIbET4jHT4fHAGGa1mCZ1V6X01uU0lyU0VqT0ViRzl+b3ShHaUAzKLqbhLCXgkkzL2c7NbdlWGcpIA4aKTphkE2Ew0+IyQBgmdVel9NdldJbk9Jak9FZktBXj8xbltYxTW0AAABjZ2TMu7W7alyiT0WpWU6ZQjcsGhwZMEk4XYtRi84AWZPSW5PRWpPRWZLQWJHPWJHPV5DOV5HPTn+0XFphtqmms3ZuizUqjTwygjYufDUsMRkZNGKSV5PaUIrNAGia0VSNzVaPzliQzleQzVePzViRzVWS0WaKuoVcX6daUaNPRIw5L2UqIw0FBQUDAwAAAAQGCTxnmVOP1QDR3uSWt9taktRVkdNVkNBUkdNYkNFXldlYXn90LymSOiySPDCOPzUlGBcAAAACAQEAAAAmP1xLgb5Ri84A1OPsvMnTgZi0XIWzXou9ZYqzYIq6YI7CZneUflBOoVZLkU9Gk3l0kZuae3x7TVNXJCYoQ2mWTY/cTonQALDB1JOkt3qHmWJ9nWiKsXCHoWeGqmSJsl57mIFmaK1yZ41gW5qNhZylo4yQj6Gnp5Wal4ueqWmUvWOSxACIkp2HlKduiaxohKRriKhqi692iaB9iJeQkpuRb2+kc2qfdm+CbW2VlZWamZiYnp6Vm5mdopqdoZmZoZ7obaVKr+o5lgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;result&quot;
-        title=&quot;result&quot;
-        src=&quot;/static/657e97b84573fb6159c821ac2a8a0f67/fcda8/result.png&quot;
-        srcset=&quot;/static/657e97b84573fb6159c821ac2a8a0f67/12f09/result.png 148w,
-/static/657e97b84573fb6159c821ac2a8a0f67/e4a3f/result.png 295w,
-/static/657e97b84573fb6159c821ac2a8a0f67/fcda8/result.png 590w,
-/static/657e97b84573fb6159c821ac2a8a0f67/9cab2/result.png 864w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
