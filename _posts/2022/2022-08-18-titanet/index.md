@@ -12,8 +12,6 @@ keywords:
 
 ## TL;DR
 
-speech domain 다루는 회사 가고싶어요
-
 * paper : [arXiv](https://arxiv.org/pdf/2110.04410v1.pdf)
 * code : [github](https://github.com/NVIDIA/NeMo)
 
@@ -27,7 +25,7 @@ speech domain 다루는 회사 가고싶어요
 
 ![img](./architecture.png)
 
-`ContextNet` architecture 와 비슷한데, decoder 부분만 보면 attentive pooling 에 2 번의 projections 후 AAM (Additive Angular Margin) 한다.
+`ContextNet` architecture와 비슷한데, decoder 부분만 보면 attentive pooling에 2번의 projections 후 AAM (Additive Angular Margin) 한다.
 
 ### Encoder
 
@@ -47,13 +45,13 @@ decoder 도 이전 연구들에 비해 특별한 점이 없다.
 
 recipe 에도 큰 특별한 점은 없다.
 
-* 전처리로 SAD 는 하지 않았다.
-* 3 secs 이상의 audio 는 1.5, 2, 3 secs 의 chunk 로 나눴다.
+* 전처리로 SAD는 하지 않았다.
+* 3 secs 이상의 audio는 1.5, 2, 3 secs의 chunk로 나눴다.
 * frame window : 25 ms, hop window : 10 ms, mel features : 80, num FFT : 512
-  * frequency-axis 로 normalize 함
+  * frequency-axis로 normalize 함
 * augmentation 함
   * RIR impulse corpora
-  * speed pertubation
+  * speed perturbation
   * spec augment
 
 ## Performance
