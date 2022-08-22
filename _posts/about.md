@@ -1,11 +1,13 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-08-07
+update: 2022-08-22
 tags:
   - About
+  - CV
 keywords:
   - cv
+  - resume
   - aboutme
 ---
 
@@ -99,22 +101,21 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`45%` to `95%`)
     - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
-    - **Revenue** : Save about **$7,000 / year**
+    - **Revenue** : reduced cost about **$7,000 / year**
 - Developed the model to forecast the transactions' category to purchase next month.
   - Transformer-based architecture with the transactions & user demographic.
-  - Build an efficient pipeline to train the large tabular data (500GB ~).
+  - Build an efficient pipeline to train the large tabular data (about 500GB).
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
     - **CTR** : soon!
 - Developed the CSS model for BNPL (CSS model)
   - EDA to find the useful features correlated with the overdue user.
   - Build the robustness CV & ensemble strategy in an aspect of the on/offline performance.
-  - Achieved targeted default rate, 1%.
-- Developed the card category classification model.
+  - Achieved the targeted default rate 1%.
+- Developed the transaction category classification model.
   - Transformer-based architecture, about `900 TPS` on a single GPU.
   - Handle noisy-text (transaction) & label, class-imbalanced problem.
   - Help to boost the accuracy of the ads category, which increases the revenue in a roundabout way.
-- Contributed to the team culture (e.g. collaboration tools, style guides, etc).
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
