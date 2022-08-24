@@ -29,6 +29,8 @@ keywords:
 
 architecture design은 다른 연구들과 큰 차이가 없는 hierarchical 한 구조인데, 차이점은 block module를 보면 크게 3 가지 components로 이뤄졌습니다. `MBConv` -> `Block Attention` -> `Grid Attention`.
 
+간단하게 소개하면 `Block Attention`에선 local context, `Grid Attention`에선 global context를 위한 module 입니다.
+
 ### Attention
 
 self-attention 연산은 location-unaware (e.g. non-translation equivariant, inductive bias)한 특징이 있는데, 이런 걸 해결하기 위해 이전 연구들은 vanilla self-attention 대신 related self-attention를 사용해 이런 문제를 어느 정도 완화하고 있습니다. 이번 연구에서도 pre-normalized related self-attention module을 사용했다고 합니다.
@@ -36,6 +38,14 @@ self-attention 연산은 location-unaware (e.g. non-translation equivariant, ind
 ### Multi-axis Attention
 
 ![img](./multi_axis_self_attention.png)
+
+entire space(local patch)에 full self-attention을 하면 complexity가 빡세다는 단점이 있는데, 해결하기 위해서 2 개 (**local**, **global**)의 sparse forms으로 나눠 연산했다고 합니다.
+
+input feature map $X \in \mathbb{R}^{H \times W \times C}$가 있을 때, 기존엔 flattened spatial dimension $HW$에 attention을 했다면 이번 연구에선 $P \times P$ size를 가지는 partition별로  $(\frac{H}{P} \times \frac{W}{P}, P \times P, C)$ attention을 합니다. -> 이렇게 local context를 잘 하기 위해 block attention을 활용했다 합니다.
+
+하지만, 이렇게 local attention만 사용하면 huge-scale datasets에서 잘 동작하지 않기 때문에 sparse global attention을 하는 간단하면서 효율적인 방법을 만들었다고 합니다. (`grid attention`)
+
+local attention처럼 ($HW$에 대해) small window로 partitioning 하지 않고, grid에 대해 partitioning 합니다. input feature map $X \in \mathbb{R}^{H \times W \times C}$가 있을 때, $G \times G$ uniform grid로 $(G \times G, \frac{H}{G} \times \frac{W}{G}, C)$.
 
 ## Performance
 
