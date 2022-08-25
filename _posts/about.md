@@ -105,7 +105,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     - **Revenue** : reduced cost about **$7,000 / year**
 - Developed the model to forecast the transactions' category to purchase next month.
   - Transformer-based architecture with the transactions & user demographic.
-  - Build an efficient pipeline to train the large tabular data (about 500GB).
+  - Build an efficient pipeline to train the large tabular data (about 500 GB).
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
     - **CTR** : soon!
