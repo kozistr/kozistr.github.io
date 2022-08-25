@@ -45,7 +45,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 - **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
 
-  > - [American Express - Default Prediction](https://www.kaggle.com/competitions/amex-default-prediction) - **solo, top 3% (145 / 4935), Private 0.80758**
+  > - [American Express - Default Prediction](https://www.kaggle.com/competitions/amex-default-prediction) - **solo, top 3% (145 / 4935), Private 0.80758** - [solution](https://www.kaggle.com/competitions/amex-default-prediction) (2022.)
   > - [Google Brain - Ventilator Pressure Prediction](https://www.kaggle.com/c/ventilator-pressure-prediction) - **team, top 1% (20 / 2605), Private 0.1171** - [solution](https://www.kaggle.com/c/ventilator-pressure-prediction/discussion/285295#1570360) (2021.)
   > - [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection) - **solo, top 4% (47 / 1305), Private 0.612** - [solution](https://www.kaggle.com/c/siim-covid19-detection/discussion/263830#1463830) (2021.)
   > - [Shopee - Price Match Guarantee](https://www.kaggle.com/c/shopee-product-matching) - **solo, top 7% (166 / 2426), Private 0.725** (2021.)
