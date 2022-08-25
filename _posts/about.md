@@ -96,7 +96,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - Build the RESTful API server to infer the model for the batch job.
   - Save analysis time and labor a lot.
 - Developed the robust captcha model to predict captchas.
-  - light-weighteCNN model to inference in real time (about `~ 1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU)
+  - light-weight CNN model to inference in real time (about `~ 1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU)
   - Build augmentations which fit in the domain to build a robust model.
   - Build the RESTful API server to serve the model in real-time on the CPU.
   - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
