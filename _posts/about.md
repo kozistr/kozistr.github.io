@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-08-26
+update: 2022-09-24
 tags:
   - About
   - CV
@@ -88,9 +88,11 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 ### Company
 
-#### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
+#### _Data Scientist_, **Toss core, Toss CB**, **(2021.12.06 ~ present)**
 
 - Working as full-time.
+- Developed the CSS model
+  - more accurate & robust CSS model for more general targets like thinfiler and thickfiler.
 - Developed the multi-label text classification model to categorize users' reviews (NPS).
   - Boost to analyze the feedback with rich information automatically.
   - Build the RESTful API server to infer the model for the batch job.
@@ -109,7 +111,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
     - **Conversion** : soon!
     - **CTR** : soon!
-- Developed the CSS model for BNPL (CSS model)
+- Developed the CSS model for BNPL (Buy Now Pay Later)
   - EDA to find the useful features correlated with the overdue user.
   - Build the robustness CV & ensemble strategy in an aspect of the on/offline performance.
   - Achieved the targeted default rate 1%.
