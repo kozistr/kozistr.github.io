@@ -1,7 +1,7 @@
 module.exports = {
   /** Site MetaData (Required all)*/
   title: `kozistr`,                             // (* Required)
-  description: `Building awesome products & technologies to change the world!`, // (* Required)
+  description: `generalist better than specialist`, // (* Required)
   author: `Hyeongchan Kim`,                     // (* Required)
   language: 'ko-KR',                            // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'http://kozistr.tech',               // (* Required)
@@ -12,7 +12,7 @@ module.exports = {
   /** Home > Bio information*/
   comment: 'Data Scientist',
   name: 'Hyeongchan Kim',
-  company: '',
+  company: 'Toss',
   location: 'South Korea',
   email: 'kozistr@gmail.com',
   website: 'http://kozistr.tech',
@@ -33,5 +33,5 @@ module.exports = {
   googleAnalytics: 'UA-116366668-1',    // Google Analytics TrackingID. ex.'UA-123456789-0'
   googleSearchConsole: '',              // content value in HTML tag of google search console ownership verification. ex. 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4'
   googleAdsenseSlot: '',                // Google Adsense Slot. ex.'5791074071'
-  googleAdsenseClient: '',              // Google Adsense Client. ex.'ca-pub-7954241517411559'
+  googleAdsenseClient: 'pub-7954241517411559',  // Google Adsense Client. ex.'ca-pub-7954241517411559'
 };
