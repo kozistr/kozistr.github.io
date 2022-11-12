@@ -7,7 +7,7 @@ tags:
 keywords:
   - imagenet
   - vit
-  - multi-axis
+  - multiaxis
 ---
 
 ## TL;DR
