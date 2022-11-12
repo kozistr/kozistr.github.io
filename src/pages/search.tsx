@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
-import * as React from 'react'
-import { useState, useCallback } from 'react'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { graphql } from 'gatsby'
+import * as React from 'react'
+import { useCallback, useState } from 'react'
 
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
-import { graphql } from 'gatsby'
 import PostList from '../components/PostList'
+import SEO from '../components/seo'
+
 import './styles/search.scss'
 
 interface SearchProps {
@@ -85,7 +85,7 @@ const Search = (props: SearchProps) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           rawMarkdownBody

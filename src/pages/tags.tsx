@@ -1,12 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as React from 'react'
-import { useEffect, useState, useCallback } from 'react'
 import { graphql } from 'gatsby'
+import * as React from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import './styles/tags.scss'
+// eslint-disable-next-line import/order
 import PostList from '../components/PostList'
 
 interface TagsPageProps {
@@ -101,8 +102,8 @@ const Tags = (props: TagsPageProps) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      group(field: frontmatter___tags) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
         edges {

@@ -1,18 +1,17 @@
-import * as React from 'react'
-import { memo, useEffect, useState, useCallback } from 'react'
 import { Link } from 'gatsby'
 import { throttle } from 'lodash'
+import * as React from 'react'
+import { memo, useCallback, useEffect, useState } from 'react'
 
 import './postList.scss'
 
 export interface PostListProps {
-  posts: any[]
+  posts: unknown[]
 }
 
 const PostList = memo((props: PostListProps) => {
   const { posts } = props
   const [showCnt, setShowCnt] = useState(10)
-
   const throttleScrollHandler = useCallback(
     throttle(() => {
       if (

@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faFrown } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import * as React from 'react'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'

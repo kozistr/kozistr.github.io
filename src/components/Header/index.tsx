@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { useEffect, useState, useCallback } from 'react'
-import { Link } from 'gatsby'
+import { faChevronRight, faMoon, faSearch, faSun, faTags } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { useSelector, useDispatch } from 'react-redux'
+import { Link } from 'gatsby'
+import * as React from 'react'
+import { useCallback, useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { useColorMode } from 'theme-ui'
 
 import './header.scss'
-import { RootState } from '../../state/reducer'
-import { actionCreators } from '../../state/actions'
 import config from '../../../config'
+import { actionCreators } from '../../state/actions'
+import { RootState } from '../../state/reducer'
 
 interface headerPropsType {
   siteTitle: string
