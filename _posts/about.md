@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-09-24
+update: 2022-11-12
 tags:
   - About
   - CV
@@ -91,6 +91,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Data Scientist_, **Toss core, Toss CB**, **(2021.12.06 ~ present)**
 
 - Working as full-time.
+- Developed the `Thread Summarization Bot` to summarize slack threads.
+  - help people to understand the context quic with a minimum effort
 - Developed the CSS model
   - more accurate & robust CSS model for more general targets like thinfiler and thickfiler.
 - Developed the multi-label text classification model to categorize users' reviews (NPS).
