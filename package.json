@@ -30,9 +30,19 @@
   "engines": {
     "node": "^18.0.0"
   },
-  "browserslist": [
-    ">0.25%, not dead and supports es6-module"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.25%",
+      "not dead",
+      "not op_mini all",
+      "supports es6-module"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
