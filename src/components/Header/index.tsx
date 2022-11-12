@@ -2,7 +2,7 @@ import { faChevronRight, faMoon, faSearch, faSun, faTags } from '@fortawesome/fr
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useColorMode } from 'theme-ui'
 
@@ -22,7 +22,7 @@ const Header = (props: headerPropsType) => {
   const [isHide, setIsHide] = useState(false)
   const dispatch = useDispatch()
   const [colorMode, setColorMode] = useColorMode()
-  const imageSize = React.useMemo(() => size ?? '25px', [size])
+  const imageSize = useMemo(() => size ?? '25px', [size])
 
   const toggleTheme = useCallback(() => {
     const ms = 300
