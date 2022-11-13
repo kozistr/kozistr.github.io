@@ -28,7 +28,7 @@
     "update": "npm-check-updates -u"
   },
   "engines": {
-    "node": "^16.0.0"
+    "node": "^18.0.0"
   },
   "browserslist": [
     ">0.25%, not dead and supports es6-module"
