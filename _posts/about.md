@@ -91,10 +91,11 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Data Scientist_, **Toss core, Toss CB**, **(2021.12.06 ~ present)**
 
 - Working as full-time.
-- Developed the bot which summarize the slack threads.
-  - help people to understand the context in short with a minimum effort.
+- Developed the bot which summarizes the long slack threads.
+  - help people to understand the context quickly with a minimum effort.
 - Developed the CSS model
   - more accurate & robust CSS model for more general targets like thinfiler and thickfiler.
+  - outperform about 15% (on the primary metric) compared with the previous method.
 - Developed the multi-label text classification model to categorize users' reviews (NPS).
   - Boost to analyze the feedback with rich information automatically.
   - Build the RESTful API server to infer the model for the batch job.
