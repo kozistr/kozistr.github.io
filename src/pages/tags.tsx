@@ -5,10 +5,9 @@ import * as React from 'react'
 import { useCallback, useEffect, useState } from 'react'
 
 import Layout from '../components/Layout'
+import PostList from '../components/PostList'
 import SEO from '../components/seo'
 import './styles/tags.scss'
-// eslint-disable-next-line import/order
-import PostList from '../components/PostList'
 
 interface TagsPageProps {
   data: any

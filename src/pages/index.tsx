@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { Link, graphql } from 'gatsby'
