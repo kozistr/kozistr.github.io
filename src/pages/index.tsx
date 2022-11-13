@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as React from 'react'
-import { graphql, Link } from 'gatsby'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { Link, graphql } from 'gatsby'
+import * as React from 'react'
 
 import './styles/index.scss'
-import Layout from '../components/Layout'
-import SEO from '../components/seo'
 import Bio from '../components/Bio'
+import Layout from '../components/Layout'
 import PostList from '../components/PostList'
+import SEO from '../components/seo'
 
 interface IndexPageProps {
   path: string
