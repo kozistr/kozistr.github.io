@@ -95,7 +95,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - help people to understand the context quickly with a minimum effort.
 - Developed the CSS model
   - more accurate & robust CSS model for more general targets like thinfiler and thickfiler.
-  - outperform about 15% (on the primary metric) compared with the previous method.
+  - outperform about **15%** (on the primary metric) compared with the previous method.
 - Developed the multi-label text classification model to categorize users' reviews (NPS).
   - Boost to analyze the feedback with rich information automatically.
   - Build the RESTful API server to infer the model for the batch job.
