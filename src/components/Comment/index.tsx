@@ -1,5 +1,6 @@
-import * as React from 'react'
 import { DiscussionEmbed } from 'disqus-react'
+import * as React from 'react'
+
 import config from '../../../config'
 
 interface CommentProps {

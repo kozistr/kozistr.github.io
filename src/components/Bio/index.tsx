@@ -1,23 +1,23 @@
-import * as React from 'react'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import {
-  faUserCircle,
-  faAt,
-  faMapMarkerAlt,
-  faBuilding,
-  faLink,
-  faAddressCard,
-  faRss,
-} from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebook,
-  faInstagram,
-  faLinkedin,
   faGithub,
+  faInstagram,
   faKaggle,
+  faLinkedin,
   faMedium,
   faSlideshare,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faAddressCard,
+  faAt,
+  faBuilding,
+  faLink,
+  faMapMarkerAlt,
+  faRss,
+  faUserCircle,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import * as React from 'react'
 
 import './bio.scss'
 import config from '../../../config'
