@@ -66,10 +66,10 @@ const Post = (props: postProps) => {
   if (Number(update?.split(',')[1]) === 1) update = null
   const { slug } = fields
   const { series } = pageContext
-  const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config
+  const { enablePostOfContents, repoId, enableSocialShare }: iConfig = config
   const isTableOfContents = enablePostOfContents && tableOfContents !== ''
   const isDevelopment = process.env.NODE_ENV === 'development'
-  const isDisqus: boolean = disqusShortname ? true : false
+  const isGisqus: boolean = repoId ? true : false
   const isSocialShare = enableSocialShare
 
   const mapTags = tags.map((tag: string) => {
@@ -327,7 +327,7 @@ const Post = (props: postProps) => {
                 <span>Ads</span>
                 <span>displayed when you deploy</span>
               </aside>
-              {isDisqus ? (
+              {isGisqus ? (
                 <div className="comments comments-dev">
                   <span>Comments</span>
                   <span>displayed when you deploy</span>
