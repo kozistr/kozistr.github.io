@@ -30,11 +30,9 @@ module.exports = {
   enableSocialShare: true,              // Social share icon activation (Type of Value: Boolean. Not String)
 
   /** Comment */
-  repo: 'kozistr/kozistr.github.io',
   repoId: 'MDEwOlJlcG9zaXRvcnkxMjE2MTUxNzk=',
   category: 'Comment',
   categoryId: 'DIC_kwDOBz-zS84CSqPm',
-  mapping: 'url',
 
   /** Optional */
   googleAnalytics: 'UA-116366668-1',    // Google Analytics TrackingID. ex.'UA-123456789-0'
