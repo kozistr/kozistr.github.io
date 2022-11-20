@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    outputs:
+      pnpm_cache_dir: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
     steps:
       - uses: actions/checkout@v3
 
@@ -34,8 +36,6 @@ jobs:
 
       - name: Get pnpm store directory
         id: pnpm-cache
-        outputs:
-          pnpm_cache_dir: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
         run: echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
 
       - name: Setup pnpm cache
