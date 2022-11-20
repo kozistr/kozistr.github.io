@@ -33,6 +33,7 @@ const gatsbyConfig = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/_posts`,
+        ignore: [`**/.*`], // ignore files starting with a dot
       },
     },
 
@@ -216,6 +217,7 @@ if (process.env.NODE_ENV === 'development') {
     options: {
       path: `${__dirname}/_drafts`,
       name: 'markdown-pages',
+      ignore: [`**/.*`], // ignore files starting with a dot
     },
   })
 }

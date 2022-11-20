@@ -29,6 +29,11 @@ module.exports = {
   disqusShortname: 'zer0days-blog',     // comments (Disqus sort-name)
   enableSocialShare: true,              // Social share icon activation (Type of Value: Boolean. Not String)
 
+  /** Comment */
+  repoId: 'MDEwOlJlcG9zaXRvcnkxMjE2MTUxNzk=',
+  category: 'Comment',
+  categoryId: 'DIC_kwDOBz-zS84CSqPm',
+
   /** Optional */
   googleAnalytics: 'UA-116366668-1',    // Google Analytics TrackingID. ex.'UA-123456789-0'
   googleSearchConsole: '',              // content value in HTML tag of google search console ownership verification. ex. 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4'

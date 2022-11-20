@@ -100,7 +100,7 @@ const Post = (props: postProps) => {
 
   const renderComment = () => {
     const Comment = React.lazy(() => import('../components/Comment'))
-    setCommentEl(<Comment slug={slug} title={title} />)
+    setCommentEl(<Comment />)
   }
 
   useEffect(() => {
