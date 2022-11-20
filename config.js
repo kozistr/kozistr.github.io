@@ -26,7 +26,6 @@ module.exports = {
 
   /** Post */
   enablePostOfContents: true,           // TableOfContents activation (Type of Value: Boolean. Not String)
-  disqusShortname: 'zer0days-blog',     // comments (Disqus sort-name)
   enableSocialShare: true,              // Social share icon activation (Type of Value: Boolean. Not String)
 
   /** Comment */
