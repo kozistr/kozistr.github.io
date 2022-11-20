@@ -2,11 +2,12 @@
   "name": "borderless",
   "private": true,
   "description": "Gatsby Blog, 'Borderless' Theme By Junhobaik",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "author": "kozistr",
   "keywords": [
     "gatsby",
-    "pnpm"
+    "pnpm",
+    "blog"
   ],
   "license": "MIT",
   "repository": {
