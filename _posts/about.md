@@ -130,7 +130,6 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - Apply proper post-processing logic into the model.
   - In A/B (online) test, `FutureFLAT` vs `Trans4Rec` (statistically significant `p-value < 0.01`)
     - **Click Ratio** : improved **1.01%**
-- Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
   - Build a network to capture the times.
   - Apply augmentations to the various features, leads to performance gain & robustness.
@@ -140,34 +139,38 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
     - **\*Viewing Days (mean)** : improved **1.012%**
     - **\*Viewing Minutes (median)** : improved **1.015%**
-- Developed a model to predict expected users' view-time of the contents.
   - Predict how many and how much time people are going to watch the content before the content supplied.
   - Find out which features impact users' watches.
 - Developed a pipeline to recognize the main actors from the poster and still-cut images.
   - Utilize `SOTA` face detector & recognizer.
   - Optimize pre/post processing routines to work on `CPU`.
-- Developed a novel sequential recommendation architecture to recommend what content to watch next. (named `FLAT`)
-  - **In A/B (online)** test, `previous algorithms` vs `FLAT` (statistically significant `p-value < 0.05`)
-    - **Paid Conversion** : improved **1.39%p+**
-    - **\*Viewing Days (mean)** : improved **0.25%p+**
-    - **\*Viewing Minutes (median)** : improved **4.10%p+**
-    - **Click Ratio** : improved **4.30%p+**
-    - **Play Ratio** : improved **2.32%p+**
+
+- Watcha recommendation system to offer better user experience and increase `paid conversion`.
+  - Developed the novel sequential recommendation architecture to recommend what content to watch next.
+    - **In A/B** test, `previous algorithm` vs `FLAT`
+      - **Paid Conversion** : improved **1.39%p+**
+      - **\*Viewing Days (mean)** : improved **0.25%p+**
+      - **\*Viewing Minutes (median)** : improved **4.10%p+**
+      - **Click Ratio** : improved **4.30%p+**
+      - **Play Ratio** : improved **2.32%p+**
+- Music recommendation system for `Watcha Music` (prototype)
+- Internal product to predict expected users' view-time of the content.
+  - Before the content is imported, the model gives an insight into the valuation of the content like expected view-time affecting the cost of the content.
 - Internal product to help designer's works
-  - Developed the image super-resolution model to upscale image more accurate and faster (e.g., waifu).
+  - Developed the image super-resolution model to upscale image more accurately and faster (e.g., waifu).
 - Worked as full-time.
 
-% `*Viewing Days` : how many days are users active on an app each month.
+% `*Viewing Days` : how many days users are active on an app each month.
 
-% `*Viewing Minutes` : how many minutes the user watched the contents.
+% `*Viewing Minutes` : how many minutes the user watched the content.
 
 #### _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
-- transaction category classification application to identify the category for the convenience of user experience.
+- Transaction category classification application to identify the category for the convenience of user experience.
   - Developed the lightweight transaction category classification model. **In A/B test**, the new model **achieved 25 ~ 30%p+** `*Accuracy` improvement.
   - Developed the backends (e.g., model serving, business logic microservices) in Python.
     - Utilized inference-aware framework (ONNX) to goal stable and low latency.
-    - Achieved a target latency of about 7 ~ 10 TPS (p50 latency) while handling `1M transactions/day` (1 transaction = 100 samples).
+    - Achieved a target latency of about 7 ~ 10 TPS (p50) while handling `1M transactions/day` (1 transaction = 100 samples).
 - CSS model to forecast the possibility of loan overdue.
 - Worked as full-time.
 
