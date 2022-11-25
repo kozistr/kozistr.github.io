@@ -90,7 +90,6 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Data Scientist_, **Toss core, Toss CB**, **(2021.12.06 ~ present)**
 
-- Working as full-time.
 - Developed the bot which summarizes the long slack threads.
   - help people to understand the context quickly with a minimum effort.
 - Developed the CSS model
@@ -122,6 +121,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - Transformer-based architecture, about `900 TPS` on a single GPU.
   - Handle noisy-text (transaction) & label, class-imbalanced problem.
   - Help to boost the accuracy of the ads category, which increases the revenue in a roundabout way.
+- Working as full-time.
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
