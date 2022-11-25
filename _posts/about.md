@@ -176,11 +176,11 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
-- Developed `proceedings` deep learning application which automatically recognizes speakers & speeches (speaker diarization).
+- Developed `Proceedings` deep learning application which automatically recognizes speakers & speeches (speaker diarization).
   - Developed the backend to diarize the conversation.
   - Developed the lightweight speaker verification model (served at AWS Lambda).
   - Developed the on/offline speaker diarization based on clustering & E2E methods.
-- Developed a `hair salon` project to swap the hair with what the user wants naturally.
+- Developed a `Hair Salon` project to swap the hair with what the user wants naturally.
   - Developed a hair/face image segmentation model to identify hair & face accurately.
   - Developed image in-painting model to detach a hair.
   - Developed an I2I translation model to change the hairstyle.
