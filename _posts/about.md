@@ -125,39 +125,25 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
-- Developed a new sequential recommendation architecture. (named `Trans4Rec`)
-  - Newly proposed transformer architecture to improve the performance in a genernal manner.
-  - Apply proper post-processing logic into the model.
-  - In A/B (online) test, `FutureFLAT` vs `Trans4Rec` (statistically significant `p-value < 0.01`)
-    - **Click Ratio** : improved **1.01%**
-- Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
-  - Build a network to capture the times.
-  - Apply augmentations to the various features, leads to performance gain & robustness.
-  - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-    - Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
-    - However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
-  - **In A/B (online)** test, [`Div2Vec`](https://arxiv.org/abs/2009.09588) vs `FutureFLAT` (statistically significant `p-value < 0.05`)
-    - **\*Viewing Days (mean)** : improved **1.012%**
-    - **\*Viewing Minutes (median)** : improved **1.015%**
-  - Predict how many and how much time people are going to watch the content before the content supplied.
-  - Find out which features impact users' watches.
-- Developed a pipeline to recognize the main actors from the poster and still-cut images.
-  - Utilize `SOTA` face detector & recognizer.
-  - Optimize pre/post processing routines to work on `CPU`.
-
-- Watcha recommendation system to offer better user experience and increase `paid conversion`.
-  - Developed the novel sequential recommendation architecture to recommend what content to watch next.
-    - **In A/B** test, `previous algorithm` vs `FLAT`
-      - **Paid Conversion** : improved **1.39%p+**
-      - **\*Viewing Days (mean)** : improved **0.25%p+**
-      - **\*Viewing Minutes (median)** : improved **4.10%p+**
-      - **Click Ratio** : improved **4.30%p+**
-      - **Play Ratio** : improved **2.32%p+**
-- Music recommendation system for `Watcha Music` (prototype)
+- Watcha recommendation system to offer a better user experience and increase `paid conversion`.
+  - Developed the advanced the training recipe & architecture to improve training stability and offline performance. Also, worked on post-processing to recommend unseen content to users. In the A/B test, the new model boosts the **Click Ratio** online metric by about **1.01%+**.
+  - Developed the network to capture the time the user watches while the augmentations bring the training stability and performance gain. In the A/B test, the new model wins the online metrics by the followings. (compared with Div2Vec and the new model, previous deep learning model beats the current new model)
+  - **\*Viewing Days (mean)**: improved **1.012%+**
+  - **\*Viewing Minutes (median)**: improved **1.015%+**
+  - Developed the sequential recommendation architecture to recommend what content to watch next. It achieved SOTA performance compared to the previous SOTA architecture like BERT4Rec. In the A/B test, the new model outperforms by the following metrics. (A: previous algorithm, B: the new model)
+    - **Paid Conversion** : improved **1.39%p+**
+    - **\*Viewing Days (mean)** : improved **0.25%p+**
+    - **\*Viewing Minutes (median)** : improved **4.10%p+**
+    - **Click Ratio** : improved **4.30%p+**
+    - **Play Ratio** : improved **2.32%p+**
+- Face recognition model to find actors from the poster & still-cut images for the WatchaPedia product.
+  - Developed the pipeline to identify & recognizing actor faces from the images with the face detection & identification deep learning models (similarity-based searching).
+  - Built a daily job that runs on the CPU. Also, optimize CPU-intensive operations to run fast.
 - Internal product to predict expected users' view-time of the content.
   - Before the content is imported, the model gives an insight into the valuation of the content like expected view-time affecting the cost of the content.
 - Internal product to help designer's works
-  - Developed the image super-resolution model to upscale image more accurately and faster (e.g., waifu).
+  - Developed the image super-resolution model to upscale the image more accurately and faster (e.g., waifu).
+- Music recommendation system for `Watcha Music` (prototype)
 - Worked as full-time.
 
 % `*Viewing Days` : how many days users are active on an app each month.
