@@ -164,36 +164,32 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
+- Developed the transaction category classification application to automatically identify the category for the convenience of user experience.
+  - Developed the lightweight transaction category classification model. **In A/B test**, the new model **achieved 25 ~ 30%p+** `*Accuracy` improvement.
+- Developed the backends (e.g., model serving, business logic microservices) in Python.
+  - Utilized inference-aware framework (ONNX) to goal stable and low latency.
+  - Achieved a target latency of about 7 ~ 10 TPS (p50 latency) while handling `1M transactions/day` (1 transaction = 100 samples).
+- Developed the CSS model to forecast the possibility of loan overdue.
 - Worked as full-time.
-- Developed the card & bank account transaction category classification models, and designed _light-weight purpose_ for the low latency. (In-service)
-  - **In A/B (online)** test (statistically significant `p-value < 0.05`)
-    - **\*Accuracy** : improved **about 25 ~ 30%p**
-- Developed the RESTful API server to serve (general purpose) machine learning models.
-  - about 1M MAU service, 500K ~ 1M transactions / day (1 transaction = (median) about 100 samples).
-  - Utilized `inference-aware framework` (onnx) to reduce the latency.
-    - median 100 ~ 200ms / transaction.
-  - zero failure rate (**0** 40x, 50x errors)
-  - Deployed & managed with Kubernetes, utilized open source project.
-- Developed the classification model for forecasting the possibility of loan overdue.
 
-% `*Accuracy` : how many people don't update/change their transactions' category.
+% `*Accuracy` : how many users don't update their transactions' category.
 
 #### _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
 - Developed `proceedings` deep learning application which automatically recognizes speakers & speeches (speaker diarization).
-  - Developed full pipeline to diarize the conversation.
-  - light-weight speaker verification model (served at AWS Lambda).
-  - on/offline speaker diarization based on clustering & E2E methods.
-- Developed `hair salon` project to swap the hair with what user wants naturally.
+  - Developed the backend to diarize the conversation.
+  - Developed the lightweight speaker verification model (served at AWS Lambda).
+  - Developed the on/offline speaker diarization based on clustering & E2E methods.
+- Developed a `hair salon` project to swap the hair with what the user wants naturally.
   - Developed a hair/face image segmentation model to identify hair & face accurately.
   - Developed image in-painting model to detach a hair.
-  - Developed I2I translation model to change the hair style.
+  - Developed an I2I translation model to change the hairstyle.
 - Worked as an intern.
 
 #### _Penetration Tester_, **ELCID**, **(2016.07 ~ 2016.08)**
 
+- Penetrated the network firewall and anti-virus products.
 - Worked as a part-time job.
-- Penetrated some products related to network firewall and anti-virus products.
 
 ### Out Sourcing
 
