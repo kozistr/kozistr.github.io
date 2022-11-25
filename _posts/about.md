@@ -90,31 +90,29 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Data Scientist_, **Toss core, Toss CB**, **(2021.12.06 ~ present)**
 
-- Developed the bot which summarizes the long slack threads.
-  - help people to understand the context quickly with a minimum effort.
-- Developed the CSS model
-  - more accurate & robust CSS model for more general targets like thinfiler and thickfiler.
-  - outperform about **15%** (on the primary metric) compared with the previous method.
+- Perosnal CSS model for the CB.
+  - Developed a more accurate & robust CSS model for more general targets like thin-filer and thick-filer.
+  - Outperformed about **15%** (on the primary metric) compared with the previous method.
 - Classify the category of the user review for the NPS (Net Performer Score) product.
-  - Build the RESTful API server to infer the deep learning model for the batch job.
+  - Built the RESTful API server to infer the deep learning model for the batch job.
   - Saved analysis time and labor of the NPS team a lot.
 - Captcha model to break captchas for the automation product.
-  - Developed the lightweight model to inference in real-time (about `1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU).
-  - Built the RESTful API server to serve the model in real time on the CPU.
+  - Developed the lightweight model for inference in real-time (about `1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU).
+  - Built the RESTful API server to serve the model in real-time on the CPU.
   - In the A/B test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`45%` to `95%`)
     - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
     - **Revenue** : reduced cost by about **$7,000 / year**
 - User consumption forecasting model for CDP Product.
   - Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
-  - Developed a Transformer based sequential model that predicts what the users will consume from the next month.
-  - In A/B test, the new model achieved...
+  - Developed a Transformer based sequential model that predicts what the users will consume in the next month.
+  - In the A/B test, the new model achieved...
 - CSS model for BNPL (Buy Now Pay Later) service.
   - Developed the CSS model (default prediction) targeted to the thin-filer.
   - Achieved the targeted **default rate of about 1%**.
 - Transaction category classification model to boost the advertisement.
   - Developed the ads category classifier that increases revenue in a roundabout way.
-- Internel product, The Slack bot that summarizes the long slack threads
+- Internal product, The Slack bot that summarizes the long slack threads
   - help people to understand the context quickly with minimum effort.
 - Working as full-time.
 
