@@ -95,32 +95,27 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 - Developed the CSS model
   - more accurate & robust CSS model for more general targets like thinfiler and thickfiler.
   - outperform about **15%** (on the primary metric) compared with the previous method.
-- Developed the multi-label text classification model to categorize users' reviews (NPS).
-  - Boost to analyze the feedback with rich information automatically.
-  - Build the RESTful API server to infer the model for the batch job.
-  - Save analysis time and labor a lot.
-- Developed the robust captcha model to predict captchas.
-  - light-weight CNN model to inference in real time (about `~ 1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU)
-  - Build augmentations which fit in the domain to build a robust model.
-  - Build the RESTful API server to serve the model in real-time on the CPU.
-  - In A/B (online) test, `google vision OCR` vs `New Captcha Model`
+- Classify the category of the user review for the NPS (Net Performer Score) product.
+  - Build the RESTful API server to infer the deep learning model for the batch job.
+  - Saved analysis time and labor of the NPS team a lot.
+- Captcha model to break captchas for the automation product.
+  - Developed the lightweight model to inference in real-time (about `1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU).
+  - Built the RESTful API server to serve the model in real time on the CPU.
+  - In the A/B test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`45%` to `95%`)
     - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
-    - **Revenue** : reduced cost about **$7,000 / year**
-- Developed the model to forecast the transactions' category to purchase next month.
-  - Transformer-based architecture with the transactions & user demographic.
-  - Build an efficient pipeline to train the large tabular data (about 500 GB).
-  - In A/B (online) test, `previous ML model` vs `AdsClassifier` (statistically significant `p-value < 0.05`)
-    - **Conversion** : soon!
-    - **CTR** : soon!
-- Developed the CSS model for BNPL (Buy Now Pay Later)
-  - EDA to find the useful features correlated with the overdue user.
-  - Build the robustness CV & ensemble strategy in an aspect of the on/offline performance.
-  - Achieved the targeted default rate 1%.
-- Developed the transaction category classification model.
-  - Transformer-based architecture, about `900 TPS` on a single GPU.
-  - Handle noisy-text (transaction) & label, class-imbalanced problem.
-  - Help to boost the accuracy of the ads category, which increases the revenue in a roundabout way.
+    - **Revenue** : reduced cost by about **$7,000 / year**
+- User consumption forecasting model for CDP Product.
+  - Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
+  - Developed a Transformer based sequential model that predicts what the users will consume from the next month.
+  - In A/B test, the new model achieved...
+- CSS model for BNPL (Buy Now Pay Later) service.
+  - Developed the CSS model (default prediction) targeted to the thin-filer.
+  - Achieved the targeted **default rate of about 1%**.
+- Transaction category classification model to boost the advertisement.
+  - Developed the ads category classifier that increases revenue in a roundabout way.
+- Internel product, The Slack bot that summarizes the long slack threads
+  - help people to understand the context quickly with minimum effort.
 - Working as full-time.
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
