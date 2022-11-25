@@ -1051,51 +1051,46 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 <li>outperform about <strong>15%</strong> (on the primary metric) compared with the previous method.</li>
 </ul>
 </li>
-<li>Developed the multi-label text classification model to categorize users' reviews (NPS).
+<li>Classify the category of the user review for the NPS (Net Performer Score) product.
 <ul>
-<li>Boost to analyze the feedback with rich information automatically.</li>
-<li>Build the RESTful API server to infer the model for the batch job.</li>
-<li>Save analysis time and labor a lot.</li>
+<li>Build the RESTful API server to infer the deep learning model for the batch job.</li>
+<li>Saved analysis time and labor of the NPS team a lot.</li>
 </ul>
 </li>
-<li>Developed the robust captcha model to predict captchas.
+<li>Captcha model to break captchas for the automation product.
 <ul>
-<li>light-weight CNN model to inference in real time (about <code class="language-text">~ 1000 TPS</code> for a batch transaction, <code class="language-text">80 ~ 100 TPS</code> for a sample on the CPU)</li>
-<li>Build augmentations which fit in the domain to build a robust model.</li>
-<li>Build the RESTful API server to serve the model in real-time on the CPU.</li>
-<li>In A/B (online) test, <code class="language-text">google vision OCR</code> vs <code class="language-text">New Captcha Model</code>
+<li>Developed the lightweight model to inference in real-time (about <code class="language-text">1000 TPS</code> for a batch transaction, <code class="language-text">80 ~ 100 TPS</code> for a sample on the CPU).</li>
+<li>Built the RESTful API server to serve the model in real time on the CPU.</li>
+<li>In the A/B test, <code class="language-text">google vision OCR</code> vs <code class="language-text">New Captcha Model</code>
 <ul>
 <li><strong>Accuracy</strong> : improved <strong>50%p</strong> (<code class="language-text">45%</code> to <code class="language-text">95%</code>)</li>
 <li><strong>latency (p95)</strong> : reduced by <strong>80x</strong> (about <code class="language-text">1000ms</code> to <code class="language-text">12ms</code>)</li>
-<li><strong>Revenue</strong> : reduced cost about <strong>$7,000 / year</strong></li>
+<li><strong>Revenue</strong> : reduced cost by about <strong>$7,000 / year</strong></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Developed the model to forecast the transactions' category to purchase next month.
+<li>User consumption forecasting model for CDP Product.
 <ul>
-<li>Transformer-based architecture with the transactions &#x26; user demographic.</li>
-<li>Build an efficient pipeline to train the large tabular data (about 500 GB).</li>
-<li>In A/B (online) test, <code class="language-text">previous ML model</code> vs <code class="language-text">AdsClassifier</code> (statistically significant <code class="language-text">p-value &lt; 0.05</code>)
-<ul>
-<li><strong>Conversion</strong> : soon!</li>
-<li><strong>CTR</strong> : soon!</li>
+<li>Build an efficient pipeline to process and train lots of tabular data (about 500 GB).</li>
+<li>Developed a Transformer based sequential model that predicts what the users will consume from the next month.</li>
+<li>In A/B test, the new model achieved...</li>
 </ul>
 </li>
+<li>CSS model for BNPL (Buy Now Pay Later) service.
+<ul>
+<li>Developed the CSS model (default prediction) targeted to the thin-filer.</li>
+<li>Achieved the targeted <strong>default rate of about 1%</strong>.</li>
 </ul>
 </li>
-<li>Developed the CSS model for BNPL (Buy Now Pay Later)
+<li>Transaction category classification model to boost the advertisement.
 <ul>
-<li>EDA to find the useful features correlated with the overdue user.</li>
-<li>Build the robustness CV &#x26; ensemble strategy in an aspect of the on/offline performance.</li>
-<li>Achieved the targeted default rate 1%.</li>
+<li>Developed the ads category classifier that increases revenue in a roundabout way.</li>
 </ul>
 </li>
-<li>Developed the transaction category classification model.
+<li>Internel product, The Slack bot that summarizes the long slack threads
 <ul>
-<li>Transformer-based architecture, about <code class="language-text">900 TPS</code> on a single GPU.</li>
-<li>Handle noisy-text (transaction) &#x26; label, class-imbalanced problem.</li>
-<li>Help to boost the accuracy of the ads category, which increases the revenue in a roundabout way.</li>
+<li>help people to understand the context quickly with minimum effort.</li>
 </ul>
 </li>
 <li>Working as full-time.</li>
