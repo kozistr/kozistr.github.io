@@ -1102,52 +1102,13 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 </ul>
 <h4 id="machine-learning-researcher-watcha-20200622--20211203" style="position:relative;"><a href="#machine-learning-researcher-watcha-20200622--20211203" aria-label="machine learning researcher watcha 20200622  20211203 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><em>Machine Learning Researcher</em>, <strong>Watcha</strong>, <strong>(2020.06.22 ~ 2021.12.03)</strong></h4>
 <ul>
-<li>
-<p>Developed a new sequential recommendation architecture. (named <code class="language-text">Trans4Rec</code>)</p>
+<li>Watcha recommendation system to offer a better user experience and increase <code class="language-text">paid conversion</code>.
 <ul>
-<li>Newly proposed transformer architecture to improve the performance in a genernal manner.</li>
-<li>Apply proper post-processing logic into the model.</li>
-<li>In A/B (online) test, <code class="language-text">FutureFLAT</code> vs <code class="language-text">Trans4Rec</code> (statistically significant <code class="language-text">p-value &lt; 0.01</code>)
-<ul>
-<li><strong>Click Ratio</strong> : improved <strong>1.01%</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Developed a training recipe to train sequential recommendation architecture. (named <code class="language-text">FutureFLAT</code>)</p>
-<ul>
-<li>Build a network to capture the times.</li>
-<li>Apply augmentations to the various features, leads to performance gain &#x26; robustness.</li>
-<li><strong>In A/B (online)</strong> test, <code class="language-text">FLAT</code> vs <code class="language-text">FutureFLAT</code> (statistically significant <code class="language-text">p-value &lt; 0.05</code>)
-<ul>
-<li>Compared to the previous model (<code class="language-text">FLAT</code>), there’s no (statistically significant) improvments.</li>
-<li>However, it still seems to be better on <code class="language-text">the offline metrics</code> &#x26; <code class="language-text">training stability</code>. So, we chose to use it.</li>
-</ul>
-</li>
-<li><strong>In A/B (online)</strong> test, <a href="https://arxiv.org/abs/2009.09588" target="_blank" rel="nofollow noopener noreferrer"><code class="language-text">Div2Vec</code></a> vs <code class="language-text">FutureFLAT</code> (statistically significant <code class="language-text">p-value &lt; 0.05</code>)
-<ul>
-<li><strong>*Viewing Days (mean)</strong> : improved <strong>1.012%</strong></li>
-<li><strong>*Viewing Minutes (median)</strong> : improved <strong>1.015%</strong></li>
-</ul>
-</li>
-<li>Predict how many and how much time people are going to watch the content before the content supplied.</li>
-<li>Find out which features impact users' watches.</li>
-</ul>
-</li>
-<li>
-<p>Developed a pipeline to recognize the main actors from the poster and still-cut images.</p>
-<ul>
-<li>Utilize <code class="language-text">SOTA</code> face detector &#x26; recognizer.</li>
-<li>Optimize pre/post processing routines to work on <code class="language-text">CPU</code>.</li>
-</ul>
-</li>
-<li>
-<p>Watcha recommendation system to offer better user experience and increase <code class="language-text">paid conversion</code>.</p>
-<ul>
-<li>Developed the novel sequential recommendation architecture to recommend what content to watch next.
-<ul>
-<li><strong>In A/B</strong> test, <code class="language-text">previous algorithm</code> vs <code class="language-text">FLAT</code>
+<li>Developed the advanced the training recipe &#x26; architecture to improve training stability and offline performance. Also, worked on post-processing to recommend unseen content to users. In the A/B test, the new model boosts the <strong>Click Ratio</strong> online metric by about <strong>1.01%+</strong>.</li>
+<li>Developed the network to capture the time the user watches while the augmentations bring the training stability and performance gain. In the A/B test, the new model wins the online metrics by the followings. (compared with Div2Vec and the new model, previous deep learning model beats the current new model)</li>
+<li><strong>*Viewing Days (mean)</strong>: improved <strong>1.012%+</strong></li>
+<li><strong>*Viewing Minutes (median)</strong>: improved <strong>1.015%+</strong></li>
+<li>Developed the sequential recommendation architecture to recommend what content to watch next. It achieved SOTA performance compared to the previous SOTA architecture like BERT4Rec. In the A/B test, the new model outperforms by the following metrics. (A: previous algorithm, B: the new model)
 <ul>
 <li><strong>Paid Conversion</strong> : improved <strong>1.39%p+</strong></li>
 <li><strong>*Viewing Days (mean)</strong> : improved <strong>0.25%p+</strong></li>
@@ -1158,26 +1119,24 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 </li>
 </ul>
 </li>
+<li>Face recognition model to find actors from the poster &#x26; still-cut images for the WatchaPedia product.
+<ul>
+<li>Developed the pipeline to identify &#x26; recognizing actor faces from the images with the face detection &#x26; identification deep learning models (similarity-based searching).</li>
+<li>Built a daily job that runs on the CPU. Also, optimize CPU-intensive operations to run fast.</li>
 </ul>
 </li>
-<li>
-<p>Music recommendation system for <code class="language-text">Watcha Music</code> (prototype)</p>
-</li>
-<li>
-<p>Internal product to predict expected users' view-time of the content.</p>
+<li>Internal product to predict expected users' view-time of the content.
 <ul>
 <li>Before the content is imported, the model gives an insight into the valuation of the content like expected view-time affecting the cost of the content.</li>
 </ul>
 </li>
-<li>
-<p>Internal product to help designer's works</p>
+<li>Internal product to help designer's works
 <ul>
-<li>Developed the image super-resolution model to upscale image more accurately and faster (e.g., waifu).</li>
+<li>Developed the image super-resolution model to upscale the image more accurately and faster (e.g., waifu).</li>
 </ul>
 </li>
-<li>
-<p>Worked as full-time.</p>
-</li>
+<li>Music recommendation system for <code class="language-text">Watcha Music</code> (prototype)</li>
+<li>Worked as full-time.</li>
 </ul>
 <p>% <code class="language-text">*Viewing Days</code> : how many days users are active on an app each month.</p>
 <p>% <code class="language-text">*Viewing Minutes</code> : how many minutes the user watched the content.</p>
