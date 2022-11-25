@@ -125,7 +125,6 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
-- Worked as full-time.
 - Developed a new sequential recommendation architecture. (named `Trans4Rec`)
   - Newly proposed transformer architecture to improve the performance in a genernal manner.
   - Apply proper post-processing logic into the model.
@@ -154,9 +153,9 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     - **\*Viewing Minutes (median)** : improved **4.10%p+**
     - **Click Ratio** : improved **4.30%p+**
     - **Play Ratio** : improved **2.32%p+**
-- Developed Image Super-Resolution model to upscale movie & tv poster, still-cut images.
-  - Optimize the code to achieve `low latency` & `memory efficiency` on _CPU_.
-  - An internal evaluation (qualitative evaluation by the designers), the model catches details better & handles higher resolution.
+- Internal product to help designer's works
+  - Developed the image super-resolution model to upscale image more accurate and faster (e.g., waifu).
+- Worked as full-time.
 
 % `*Viewing Days` : how many days are users active on an app each month.
 
@@ -164,23 +163,23 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
-- Developed the transaction category classification application to automatically identify the category for the convenience of user experience.
+- transaction category classification application to identify the category for the convenience of user experience.
   - Developed the lightweight transaction category classification model. **In A/B test**, the new model **achieved 25 ~ 30%p+** `*Accuracy` improvement.
-- Developed the backends (e.g., model serving, business logic microservices) in Python.
-  - Utilized inference-aware framework (ONNX) to goal stable and low latency.
-  - Achieved a target latency of about 7 ~ 10 TPS (p50 latency) while handling `1M transactions/day` (1 transaction = 100 samples).
-- Developed the CSS model to forecast the possibility of loan overdue.
+  - Developed the backends (e.g., model serving, business logic microservices) in Python.
+    - Utilized inference-aware framework (ONNX) to goal stable and low latency.
+    - Achieved a target latency of about 7 ~ 10 TPS (p50 latency) while handling `1M transactions/day` (1 transaction = 100 samples).
+- CSS model to forecast the possibility of loan overdue.
 - Worked as full-time.
 
 % `*Accuracy` : how many users don't update their transactions' category.
 
 #### _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
-- Developed `Proceedings` deep learning application which automatically recognizes speakers & speeches (speaker diarization).
+- `Proceedings` deep learning application which automatically recognizes speakers & speeches (speaker diarization).
   - Developed the backend to diarize the conversation.
   - Developed the lightweight speaker verification model (served at AWS Lambda).
   - Developed the on/offline speaker diarization based on clustering & E2E methods.
-- Developed a `Hair Salon` project to swap the hair with what the user wants naturally.
+- `Hair Salon` project to swap the hair with what the user wants naturally.
   - Developed a hair/face image segmentation model to identify hair & face accurately.
   - Developed image in-painting model to detach a hair.
   - Developed an I2I translation model to change the hairstyle.
