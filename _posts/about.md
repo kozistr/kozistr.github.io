@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-11-13
+update: 2022-11-25
 tags:
   - About
   - CV
@@ -133,8 +133,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     - **Click Ratio** : improved **1.01%**
 - Developed a music recommendation system (prototype)
 - Developed a training recipe to train sequential recommendation architecture. (named `FutureFLAT`)
-  - Build _Future_ module to understand better at the time of inference.
-  - Applying augmentations to the various features, leads to performance gain & robustness.
+  - Build a network to capture the times.
+  - Apply augmentations to the various features, leads to performance gain & robustness.
   - **In A/B (online)** test, `FLAT` vs `FutureFLAT` (statistically significant `p-value < 0.05`)
     - Compared to the previous model (`FLAT`), there’s no (statistically significant) improvments.
     - However, it still seems to be better on `the offline metrics` & `training stability`. So, we chose to use it.
@@ -145,8 +145,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - Predict how many and how much time people are going to watch the content before the content supplied.
   - Find out which features impact users' watches.
 - Developed a pipeline to recognize the main actors from the poster and still-cut images.
-  - Utilize **SOTA** face detector & recognizer.
-  - Optimize pre/post processing routines for low `latency`.
+  - Utilize `SOTA` face detector & recognizer.
+  - Optimize pre/post processing routines to work on `CPU`.
 - Developed a novel sequential recommendation architecture to recommend what content to watch next. (named `FLAT`)
   - **In A/B (online)** test, `previous algorithms` vs `FLAT` (statistically significant `p-value < 0.05`)
     - **Paid Conversion** : improved **1.39%p+**
@@ -155,8 +155,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     - **Click Ratio** : improved **4.30%p+**
     - **Play Ratio** : improved **2.32%p+**
 - Developed Image Super-Resolution model to upscale movie & tv poster, still-cut images.
-  - Optimize the codes for `low latency` & `memory efficiency` on the _CPU_.
-  - An internal evaluation (qualitative evaluation by the designers), catches details better & handles higher resolution & takes a little time.
+  - Optimize the code to achieve `low latency` & `memory efficiency` on _CPU_.
+  - An internal evaluation (qualitative evaluation by the designers), the model catches details better & handles higher resolution.
 
 % `*Viewing Days` : how many days are users active on an app each month.
 
@@ -180,9 +180,15 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Machine Learning Engineer_, **VoyagerX**, **(2019.01.07 ~ 2019.10.04)**
 
+- Developed `proceedings` deep learning application which automatically recognizes speakers & speeches (speaker diarization).
+  - Developed full pipeline to diarize the conversation.
+  - light-weight speaker verification model (served at AWS Lambda).
+  - on/offline speaker diarization based on clustering & E2E methods.
+- Developed `hair salon` project to swap the hair with what user wants naturally.
+  - Developed a hair/face image segmentation model to identify hair & face accurately.
+  - Developed image in-painting model to detach a hair.
+  - Developed I2I translation model to change the hair style.
 - Worked as an intern.
-- Developed speaker verification, diarization models & logic for recognizing the arbitrary speakers recorded from noisy (real-world) environment.
-- Developed a hair image semantic segmentation / image in-paint / i2i domain transfer model for swapping hair domains naturally.
 
 #### _Penetration Tester_, **ELCID**, **(2016.07 ~ 2016.08)**
 
