@@ -96,7 +96,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 - Classify the category of the user review for the NPS (Net Performer Score) product.
   - Developed the RESTful API server to infer the deep learning model for the batch job.
   - Saved analysis time and labor of the NPS team a lot.
-- Captcha model to break captchas for the automation product.
+- OCR model to break captchas for the automation product.
   - Developed the lightweight models (text detector & captcha classifier) for inference in real-time (about `1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU) and built the RESTful API server to serve the model in real-time on the CPU.
   - In the A/B test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`45%` to `95%`)
