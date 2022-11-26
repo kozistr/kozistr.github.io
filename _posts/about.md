@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-11-25
+update: 2022-11-26
 tags:
   - About
   - CV
@@ -102,7 +102,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   - In the A/B test, `google vision OCR` vs `New Captcha Model`
     - **Accuracy** : improved **50%p** (`45%` to `95%`)
     - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
-    - **Revenue** : reduced cost by about **$7,000 / year**
+    - **Revenue** : reduced cost by about **$7,000 ~ / year**
 - User consumption forecasting model for CDP Product.
   - Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
   - Developed a Transformer based sequential model that predicts what the users will consume in the next month.
@@ -146,10 +146,10 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Machine Learning Engineer_, **Rainist**, **(2019.11.11 ~ 2020.06.19)**
 
 - Transaction category classification application to identify the category for the convenience of user experience.
-  - Developed the lightweight transaction category classification model. **In A/B test**, the new model **achieved 25 ~ 30%p+** `*Accuracy` improvement.
+  - Developed the lightweight transaction category classification model. In the A/B test, the new model **achieved 25 ~ 30%p+** `*Accuracy` improvement.
   - Developed the backends (e.g., model serving, business logic microservices) in Python.
     - Utilized inference-aware framework (ONNX) to goal stable and low latency.
-    - Achieved a target latency of about 7 ~ 10 TPS (p50) while handling `1M transactions/day` (1 transaction = 100 samples).
+    - Achieved a target latency of **about 7 ~ 10 TPS (p50)** while handling `1M transactions / day` (1 transaction = 100 samples).
 - CSS model to forecast the possibility of loan overdue.
 - Worked as full-time.
 
