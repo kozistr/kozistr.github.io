@@ -1054,8 +1054,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 </li>
 <li>Captcha model to break captchas for the automation product.
 <ul>
-<li>Developed the lightweight model for inference in real-time (about <code class="language-text">1000 TPS</code> for a batch transaction, <code class="language-text">80 ~ 100 TPS</code> for a sample on the CPU).</li>
-<li>Built the RESTful API server to serve the model in real-time on the CPU.</li>
+<li>Developed the lightweight model (text detector &#x26; captcha classifier) for inference in real-time (about <code class="language-text">1000 TPS</code> for a batch transaction, <code class="language-text">80 ~ 100 TPS</code> for a sample on the CPU) and built the RESTful API server to serve the model in real-time on the CPU.</li>
 <li>In the A/B test, <code class="language-text">google vision OCR</code> vs <code class="language-text">New Captcha Model</code>
 <ul>
 <li><strong>Accuracy</strong> : improved <strong>50%p</strong> (<code class="language-text">45%</code> to <code class="language-text">95%</code>)</li>
