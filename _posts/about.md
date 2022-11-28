@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2022-11-26
+update: 2022-11-28
 tags:
   - About
   - CV
@@ -121,7 +121,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 - Watcha recommendation system to offer a better user experience and increase `paid conversion`.
   - Developed the **advanced the training recipe & architecture** to improve training stability and offline performance. Also, worked on **post-processing** to recommend unseen content to users. In the A/B test, the new model boosts the **Click Ratio** online metric by about **1.01%+**.
-  - Developed the network to capture the time the user watches while the augmentations bring the training stability and performance gain. In the A/B test, the new model wins the online metrics by the followings. (compared with Div2Vec and the new model, previous deep learning model beats the current new model)
+  - Developed the network to capture the time the user watches while the augmentations bring the training stability and performance gain. In the A/B test, the new model wins the online metrics by the followings. (compared with [Div2Vec](https://arxiv.org/abs/2009.09588) and the new model, previous deep learning model beats the current new model)
     - **\*Viewing Days** (mean): improved **1.012%+**
     - **\*Viewing Minutes** (median): improved **1.015%+**
   - Developed the sequential recommendation architecture to recommend what content to watch next. It achieved SOTA performance compared to the previous SOTA architecture like BERT4Rec. In the A/B test, the new model outperforms by the following metrics. (A: previous algorithm, B: the new model)
