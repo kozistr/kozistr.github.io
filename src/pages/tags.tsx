@@ -102,7 +102,7 @@ const Tags = (props: TagsPageProps) => {
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
         edges {
