@@ -1,3 +1,5 @@
+/* eslint-disable react/display-name */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link } from 'gatsby'
 import { throttle } from 'lodash'
 import * as React from 'react'
