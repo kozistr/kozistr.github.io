@@ -4,7 +4,7 @@ import * as React from 'react'
 import { useEffect, useState, useCallback, Suspense } from 'react'
 import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
-import { graphql, Link } from 'gatsby'
+import { graphql, Link, Script } from 'gatsby'
 import moment from 'moment'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
@@ -177,8 +177,8 @@ const Post = (props: postProps) => {
   return (
     <>
       <Helmet>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script type="application/ld+json">
+        <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+        <Script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
@@ -213,7 +213,7 @@ const Post = (props: postProps) => {
               }
             }
           `}
-        </script>
+        </Script>
       </Helmet>
 
       <SEO title={title} description={excerpt} keywords={metaKeywords(keywords, tags)} />
