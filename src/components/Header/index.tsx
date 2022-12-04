@@ -95,14 +95,13 @@ const Header = (props: headerPropsType) => {
             <img
               src={
                 config.profileImageFileName
-                  ? require(`../../images/${config.profileImageFileName}`).default
+                  ? // eslint-disable-next-line @typescript-eslint/no-var-requires
+                    require(`../../images/${config.profileImageFileName}`).default
                   : 'https://source.unsplash.com/random/100x100'
               }
               alt="title profile picture"
-              style={{
-                width: imageSize,
-                height: imageSize,
-              }}
+              width={imageSize}
+              height={imageSize}
             />
           </div>
         </Link>
