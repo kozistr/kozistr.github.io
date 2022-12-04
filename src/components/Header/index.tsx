@@ -142,7 +142,7 @@ const Header = (props: headerPropsType) => {
           <li>
             <div className="tag-wrap">
               <Link to="/tags">
-                <Fa icon={faTags} />
+                <Fa icon={faTags} aria-label="tag icon" />
               </Link>
             </div>
           </li>
@@ -150,7 +150,7 @@ const Header = (props: headerPropsType) => {
           <li>
             <div className="search-wrap">
               <Link to="/search" className="search">
-                <Fa icon={faSearch} />
+                <Fa icon={faSearch} aria-label="search icon" />
               </Link>
             </div>
           </li>
