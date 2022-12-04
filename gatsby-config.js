@@ -19,7 +19,14 @@ const gatsbyConfig = {
 
     `gatsby-transformer-sharp`,
 
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        failOn: `none`,
+        stripMetadata: true,
+        defaultQuality: 50,
+      },
+    },
 
     {
       resolve: `gatsby-plugin-google-analytics`,
