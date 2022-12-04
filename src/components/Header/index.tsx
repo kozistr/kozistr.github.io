@@ -97,7 +97,7 @@ const Header = (props: headerPropsType) => {
                 config.profileImageFileName
                   ? // eslint-disable-next-line @typescript-eslint/no-var-requires
                     require(`../../images/${config.profileImageFileName}`).default
-                  : 'https://source.unsplash.com/random/50x50'
+                  : 'https://source.unsplash.com/random/25x25'
               }
               alt="title profile picture"
               width={imageSize}
