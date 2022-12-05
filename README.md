@@ -5,6 +5,19 @@
 
 Here's [blog](http://kozistr.tech)
 
+## Specs
+
+* Gatsby v5
+* Node 18
+* React 18
+* pnpm
+
+## Features
+
+* Giscus
+* support MD & MDX
+* time to read with coffee emoji
+
 ## Packages
 
 ```json
