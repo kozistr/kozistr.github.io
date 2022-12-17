@@ -44,7 +44,7 @@ commit 수만 보면 올해도 작년과 비슷하게 약 1.7k contributions를 
 
 ### Rust
 
-작년에 잠시 공부한 거 이외엔 써 볼 데가 없었는데, 회사 일 하다가 ML 모델 serving을 Rust + gRPC 기반으로 하면 빠르겠지? 생각이 들어서 CatBoost model 서빙하는 gRPC 서버를 [만들어봤다](https://github.com/kozistr/catboost-server-rs). 역시나 python bindings 도 아니고 gRPC 라서 확실히 RESTful API server보다 속도 차이가 큰 거 같다. 토스에서는 아직 real-time으로 CatBoost 같은 model을 serving 하는 니즈가 없기도 하고 jvm 친화적인 회사라 production 까지 ship 하긴 어렵겠지만, 기회가 된다면 함 해 봐야겠다.
+작년에 잠시 공부한 거 이외엔 써 볼 데가 없었는데, 회사 일 하다가 ML 모델 serving을 Rust + gRPC 기반으로 하면 빠르겠지? 생각이 들어서 CatBoost model 서빙하는 gRPC 서버를 [만들어봤다](https://github.com/kozistr/catboost-server-rs). 역시나 python bindings 도 아니고 gRPC 라서 확실히 RESTful API server보다 속도 차이가 큰 거 같다. 토스에서는 아직 real-time으로 tree 계열 model을 serving 하는 니즈가 없기도 하고 jvm 친화적인 곳이라 production까지 ship 하긴 어렵겠지만, 기회가 된다면 함 해 봐야겠다.
 
 ## 회사
 
