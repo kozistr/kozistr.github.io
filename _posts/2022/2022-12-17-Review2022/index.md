@@ -40,7 +40,7 @@ commit 수만 보면 올해도 작년과 비슷하게 약 1.7k contributions를 
 
 ### Gatsby Blog
 
-작년? 재작년 겨울에 ruby + jekelly 기반에서 react + gatsby 기반 blog로 바꿨는데, frontend와는 거리가 먼 나였는데 하다 보니 소소하기 기능 추가하고 가꾸는 게 재밌어서 유지보수를 해 왔다. 대충 작업한 내용을 생각해 보면, post에 `time to read` 달아주거나 댓글은 Giscus 사용, Gatsby v5로 migrate 하기, CI/CD pipeline 최적화, LightHouse 100점 만들기 등등 다양한 시도를 했고 그 과정에서 많이 공부할 수 있어서 재밌었다. React를 대충 공부한 적밖에 없어서 아직도 코드를 완벽하게 이해하고 있는 게 아니라서 내년엔 React 공부도 제대로 해 봐야겠다.
+작년? 재작년 겨울에 ruby + jekelly 기반에서 react + gatsby 기반 blog로 바꿨는데, frontend와는 거리가 먼 나였는데 하다 보니 소소하기 기능 추가하고 가꾸는 게 재밌어서 유지보수를 해 왔다. 대충 작업한 내용을 생각해 보면, post에 `time to read` 달아주거나 댓글은 Giscus 사용, Gatsby v5로 migrate 하기, CI/CD pipeline 최적화, Lighthouse 100점 만들기 등등 다양한 시도를 했고 그 과정에서 많이 공부할 수 있어서 재밌었다. React를 대충 공부한 적밖에 없어서 아직도 코드를 완벽하게 이해하고 있는 게 아니라서 내년엔 React 공부도 제대로 해 봐야겠다.
 
 ### Rust
 
