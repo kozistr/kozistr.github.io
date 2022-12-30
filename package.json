@@ -18,7 +18,7 @@
     "url": "https://github.com/kozistr/kozistr.github.io/issues"
   },
   "scripts": {
-    "init": "pnpm install -g gatsby-cli@latest npm-check-updates cross-env",
+    "init": "pnpm install -g gatsby@latest gatsby-cli@latest npm-check-updates cross-env",
     "develop": "gatsby develop",
     "build": "cross-env GATSBY_CPU_COUNT=8 GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=8 GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --prefix-paths --write-to-file --log-pages",
     "serve": "gatsby serve",
