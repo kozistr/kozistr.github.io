@@ -33,7 +33,7 @@ commit 수만 보면 올해도 작년과 비슷하게 약 1.7k contributions를 
 간단하게 앞으로의 계획을 적어보자면,
 
 1. docstring format 정하기
-2. huggingface doc 만들기
+2. documentation 하기
 3. 더 많은 lr scheduler 구현
 
 요렇게 작업할 예정이다.
