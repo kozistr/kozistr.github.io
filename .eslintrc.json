@@ -8,7 +8,7 @@
     "browser": true,
     "node": true,
     "commonjs": true,
-    "es2020": true
+    "es2021": true
   },
   "extends": [
     "eslint:recommended",
@@ -23,12 +23,14 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 11
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint", "prettier", "import"],
   "rules": {
     "import/no-unresolved": "error",
     "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/strict-boolean-expressions": "off",
     "sort-imports": [
       "error",
       {
