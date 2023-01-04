@@ -45,7 +45,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 - **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
 
-  > - [G2Net Detecting Continuous Gravitational Waves](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves) - **sole, top 2% (22 / 936), Private 0.771** - [solution](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927)
+  > - [G2Net Detecting Continuous Gravitational Waves](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves) - **solo, top 2% (22 / 936), Private 0.771** - [solution](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927)
   > - [American Express - Default Prediction](https://www.kaggle.com/competitions/amex-default-prediction) - **solo, top 3% (135 / 4875), Private 0.80758** - [solution](https://www.kaggle.com/competitions/amex-default-prediction/discussion/347996) (2022.)
   > - [Google Brain - Ventilator Pressure Prediction](https://www.kaggle.com/c/ventilator-pressure-prediction) - **team, top 1% (20 / 2605), Private 0.1171** - [solution](https://www.kaggle.com/c/ventilator-pressure-prediction/discussion/285295#1570360) (2021.)
   > - [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection) - **solo, top 4% (47 / 1305), Private 0.612** - [solution](https://www.kaggle.com/c/siim-covid19-detection/discussion/263830#1463830) (2021.)
