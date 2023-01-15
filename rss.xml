@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[generalist better than specialist]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 04 Jan 2023 11:56:25 GMT</lastBuildDate><item><title><![CDATA[2022년 회고]]></title><description><![CDATA[TL;DR 올해 회고를 시작하기 전 작년 회고를 읽었는데, 첫 줄부터 희망한 대로 흘러가진 않았다. 병특도 정착했고 2022년은 조용히 지나가나 했지만, 회사 관련해서도 큰 변화가 있었고 여러 일들이 있었다. 우리가 이라 하는 것처럼 "이젠 괜찮겠지…]]></description><link>http://kozistr.tech/Review2022/</link><guid isPermaLink="false">http://kozistr.tech/Review2022/</guid><pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[generalist better than specialist]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Jan 2023 15:18:38 GMT</lastBuildDate><item><title><![CDATA[2022년 회고]]></title><description><![CDATA[TL;DR 올해 회고를 시작하기 전 작년 회고를 읽었는데, 첫 줄부터 희망한 대로 흘러가진 않았다. 병특도 정착했고 2022년은 조용히 지나가나 했지만, 회사 관련해서도 큰 변화가 있었고 여러 일들이 있었다. 우리가 이라 하는 것처럼 "이젠 괜찮겠지…]]></description><link>http://kozistr.tech/Review2022/</link><guid isPermaLink="false">http://kozistr.tech/Review2022/</guid><pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;올해 회고를 시작하기 전 작년 회고를 읽었는데, 첫 줄부터 희망한 대로 흘러가진 않았다. 병특도 정착했고 2022년은 조용히 지나가나 했지만, 회사 관련해서도 큰 변화가 있었고 여러 일들이 있었다. 우리가 &lt;code class=&quot;language-text&quot;&gt;그 발언&lt;/code&gt;이라 하는 것처럼 &quot;이젠 괜찮겠지...?&quot; 라 하면 안 괜찮은 게 정말 맞나 싶다. 그래서 올해 TL;DR은 여기까지만 적어볼 예정이다.&lt;/p&gt;
 &lt;h2 id=&quot;kaggle&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#kaggle&quot; aria-label=&quot;kaggle permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kaggle&lt;/h2&gt;
 &lt;p&gt;상반기엔 회사 일에 시간을 많이 쓰느라 Kaggle을 거의 못했다가 최근에 여유가 생겨서 대회 하나를 진행 중이다. 중성자별 continuous gravitational-wave signal을 탐지하는 &lt;a href=&quot;https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;challenge&lt;/a&gt; 인데, 주제가 재밌어서 진심을 담아 하고 있고, 내년 1월 3일에 끝나는데 남은 3 주 열심히 해서 gold medal를 노려봐야겠다. &lt;del&gt;역시 회사 일보다 100배는 재밌는 거 같다&lt;/del&gt;.&lt;/p&gt;
@@ -51,7 +51,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/984854a5da9fa85cd0ff7d036c5d5c95/1c72d/m45.jpg&quot;
         srcset=&quot;/static/984854a5da9fa85cd0ff7d036c5d5c95/a80bd/m45.jpg 148w,
 /static/984854a5da9fa85cd0ff7d036c5d5c95/1c91a/m45.jpg 295w,
@@ -85,7 +85,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/61f1e4e61ef069ead18c355da7f5428f/1c72d/sky.jpg&quot;
         srcset=&quot;/static/61f1e4e61ef069ead18c355da7f5428f/a80bd/sky.jpg 148w,
 /static/61f1e4e61ef069ead18c355da7f5428f/1c91a/sky.jpg 295w,
@@ -131,7 +131,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/49869b48d19d414a8dc7612cb39abea3/fcda8/architecture.png&quot;
         srcset=&quot;/static/49869b48d19d414a8dc7612cb39abea3/12f09/architecture.png 148w,
 /static/49869b48d19d414a8dc7612cb39abea3/e4a3f/architecture.png 295w,
@@ -168,7 +168,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/9ae350be573c6c4006c0a7eb87b9b383/fcda8/multi_axis_self_attention.png&quot;
         srcset=&quot;/static/9ae350be573c6c4006c0a7eb87b9b383/12f09/multi_axis_self_attention.png 148w,
 /static/9ae350be573c6c4006c0a7eb87b9b383/e4a3f/multi_axis_self_attention.png 295w,
@@ -207,7 +207,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/ea0fea681df81601b961119a68c6defa/fcda8/imagenet1k_benchmark.png&quot;
         srcset=&quot;/static/ea0fea681df81601b961119a68c6defa/12f09/imagenet1k_benchmark.png 148w,
 /static/ea0fea681df81601b961119a68c6defa/e4a3f/imagenet1k_benchmark.png 295w,
@@ -242,7 +242,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/48b5f16b66bc6ada200477be909080f4/fcda8/large_scale_pretrained.png&quot;
         srcset=&quot;/static/48b5f16b66bc6ada200477be909080f4/12f09/large_scale_pretrained.png 148w,
 /static/48b5f16b66bc6ada200477be909080f4/e4a3f/large_scale_pretrained.png 295w,
@@ -289,7 +289,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/1309ba7ef90df79051e499783b09a858/fcda8/architecture.png&quot;
         srcset=&quot;/static/1309ba7ef90df79051e499783b09a858/12f09/architecture.png 148w,
 /static/1309ba7ef90df79051e499783b09a858/e4a3f/architecture.png 295w,
@@ -329,7 +329,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/31a3728d0a2d4f8e33cba4b3dcc962ee/fcda8/global_query_generator.png&quot;
         srcset=&quot;/static/31a3728d0a2d4f8e33cba4b3dcc962ee/12f09/global_query_generator.png 148w,
 /static/31a3728d0a2d4f8e33cba4b3dcc962ee/e4a3f/global_query_generator.png 295w,
@@ -367,7 +367,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/2f0d3e7e6a222907ba38ce60e9072780/fcda8/global_self_attention.png&quot;
         srcset=&quot;/static/2f0d3e7e6a222907ba38ce60e9072780/12f09/global_self_attention.png 148w,
 /static/2f0d3e7e6a222907ba38ce60e9072780/e4a3f/global_self_attention.png 295w,
@@ -414,7 +414,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/c699a67ad9e5738a071352fb144e98c7/fcda8/imagenet_benchmark.png&quot;
         srcset=&quot;/static/c699a67ad9e5738a071352fb144e98c7/12f09/imagenet_benchmark.png 148w,
 /static/c699a67ad9e5738a071352fb144e98c7/e4a3f/imagenet_benchmark.png 295w,
@@ -449,7 +449,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/2d5743da26ed366ffbc3072880d5216b/fcda8/mscoco_benchmark.png&quot;
         srcset=&quot;/static/2d5743da26ed366ffbc3072880d5216b/12f09/mscoco_benchmark.png 148w,
 /static/2d5743da26ed366ffbc3072880d5216b/e4a3f/mscoco_benchmark.png 295w,
@@ -483,7 +483,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/8f345a3bdca829a972cf828f8a6aee03/fcda8/various_components_benchmark.png&quot;
         srcset=&quot;/static/8f345a3bdca829a972cf828f8a6aee03/12f09/various_components_benchmark.png 148w,
 /static/8f345a3bdca829a972cf828f8a6aee03/e4a3f/various_components_benchmark.png 295w,
@@ -529,7 +529,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/011c0e30e8c5868e8e9afcd77fca3909/7c1cd/architecture.png&quot;
         srcset=&quot;/static/011c0e30e8c5868e8e9afcd77fca3909/12f09/architecture.png 148w,
 /static/011c0e30e8c5868e8e9afcd77fca3909/e4a3f/architecture.png 295w,
@@ -595,7 +595,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/c1f0f3c0516171ac70ebc8d93c4ea405/fcda8/voxceleb1_benchmark.png&quot;
         srcset=&quot;/static/c1f0f3c0516171ac70ebc8d93c4ea405/12f09/voxceleb1_benchmark.png 148w,
 /static/c1f0f3c0516171ac70ebc8d93c4ea405/e4a3f/voxceleb1_benchmark.png 295w,
@@ -628,7 +628,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/d4d37e8dd848c40204c9bec602cd6896/fcda8/det_curve_benchmark.png&quot;
         srcset=&quot;/static/d4d37e8dd848c40204c9bec602cd6896/12f09/det_curve_benchmark.png 148w,
 /static/d4d37e8dd848c40204c9bec602cd6896/e4a3f/det_curve_benchmark.png 295w,
@@ -676,7 +676,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/f8bd83072b80faad6549f96976411644/fcda8/architecture.png&quot;
         srcset=&quot;/static/f8bd83072b80faad6549f96976411644/12f09/architecture.png 148w,
 /static/f8bd83072b80faad6549f96976411644/e4a3f/architecture.png 295w,
@@ -716,7 +716,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/dd14fd65e64060eba639e1da1ef7c25a/fcda8/phoneme_pretraining.png&quot;
         srcset=&quot;/static/dd14fd65e64060eba639e1da1ef7c25a/12f09/phoneme_pretraining.png 148w,
 /static/dd14fd65e64060eba639e1da1ef7c25a/e4a3f/phoneme_pretraining.png 295w,
@@ -750,7 +750,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/6cd4a82fd97dc8e72eb18e678a3c8182/00e65/differentiable_durator.png&quot;
         srcset=&quot;/static/6cd4a82fd97dc8e72eb18e678a3c8182/12f09/differentiable_durator.png 148w,
 /static/6cd4a82fd97dc8e72eb18e678a3c8182/e4a3f/differentiable_durator.png 295w,
@@ -794,7 +794,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/8b7334dade24a4266237805bad0b501f/fcda8/bidirectional_prior_posterior.png&quot;
         srcset=&quot;/static/8b7334dade24a4266237805bad0b501f/12f09/bidirectional_prior_posterior.png 148w,
 /static/8b7334dade24a4266237805bad0b501f/e4a3f/bidirectional_prior_posterior.png 295w,
@@ -832,7 +832,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/2201ce3a3347d769a3c83d3c1e3ddca1/b0122/memory_bank.png&quot;
         srcset=&quot;/static/2201ce3a3347d769a3c83d3c1e3ddca1/12f09/memory_bank.png 148w,
 /static/2201ce3a3347d769a3c83d3c1e3ddca1/e4a3f/memory_bank.png 295w,
@@ -887,7 +887,7 @@ M834 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/s
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/b25fce9956cd7d1865902b49073fef80/46684/gradient_flows.png&quot;
         srcset=&quot;/static/b25fce9956cd7d1865902b49073fef80/12f09/gradient_flows.png 148w,
 /static/b25fce9956cd7d1865902b49073fef80/e4a3f/gradient_flows.png 295w,
@@ -918,7 +918,7 @@ M834 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/s
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/c4eae91f82db2ea9fb132d1e8555381e/fcda8/train_inference.png&quot;
         srcset=&quot;/static/c4eae91f82db2ea9fb132d1e8555381e/12f09/train_inference.png 148w,
 /static/c4eae91f82db2ea9fb132d1e8555381e/e4a3f/train_inference.png 295w,
@@ -952,7 +952,7 @@ M834 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/s
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/a674b5ae798a735d09ab89071c19717d/fcda8/mos_cmos_on_ljspeech.png&quot;
         srcset=&quot;/static/a674b5ae798a735d09ab89071c19717d/12f09/mos_cmos_on_ljspeech.png 148w,
 /static/a674b5ae798a735d09ab89071c19717d/e4a3f/mos_cmos_on_ljspeech.png 295w,
@@ -987,7 +987,7 @@ M834 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/s
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/f7e170384762c8317ced79a60d21ce3e/fcda8/benchmark.png&quot;
         srcset=&quot;/static/f7e170384762c8317ced79a60d21ce3e/12f09/benchmark.png 148w,
 /static/f7e170384762c8317ced79a60d21ce3e/e4a3f/benchmark.png 295w,
@@ -1022,7 +1022,7 @@ M834 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/s
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/14ed0910e9b4b5e9b9914f102906eddd/fcda8/module_performances.png&quot;
         srcset=&quot;/static/14ed0910e9b4b5e9b9914f102906eddd/12f09/module_performances.png 148w,
 /static/14ed0910e9b4b5e9b9914f102906eddd/e4a3f/module_performances.png 295w,
@@ -1055,7 +1055,7 @@ M834 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/s
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/da5d100b2cd45b9d5579e26e37e3bfcf/fcda8/inference_speed.png&quot;
         srcset=&quot;/static/da5d100b2cd45b9d5579e26e37e3bfcf/12f09/inference_speed.png 148w,
 /static/da5d100b2cd45b9d5579e26e37e3bfcf/e4a3f/inference_speed.png 295w,
@@ -1104,7 +1104,7 @@ M834 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/s
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/27f1109bb24d9a412a3e586b9a11fd68/fcda8/overview.png&quot;
         srcset=&quot;/static/27f1109bb24d9a412a3e586b9a11fd68/12f09/overview.png 148w,
 /static/27f1109bb24d9a412a3e586b9a11fd68/e4a3f/overview.png 295w,
@@ -1170,7 +1170,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/829fd4306d188e64f889cff60564a426/fcda8/flash_attention.png&quot;
         srcset=&quot;/static/829fd4306d188e64f889cff60564a426/12f09/flash_attention.png 148w,
 /static/829fd4306d188e64f889cff60564a426/e4a3f/flash_attention.png 295w,
@@ -1210,7 +1210,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/13fffc6bab22b5f9a7408323ef673ee0/fcda8/speed_comparision.png&quot;
         srcset=&quot;/static/13fffc6bab22b5f9a7408323ef673ee0/12f09/speed_comparision.png 148w,
 /static/13fffc6bab22b5f9a7408323ef673ee0/e4a3f/speed_comparision.png 295w,
@@ -1245,7 +1245,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/2cc6cf259ec17efbe5956b0e15f1d3a0/fcda8/long_range_benchmark.png&quot;
         srcset=&quot;/static/2cc6cf259ec17efbe5956b0e15f1d3a0/12f09/long_range_benchmark.png 148w,
 /static/2cc6cf259ec17efbe5956b0e15f1d3a0/e4a3f/long_range_benchmark.png 295w,
@@ -1280,7 +1280,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/5bd57716e8a1e6ee0962a8875a45b967/fcda8/runtime_by_seq_len.png&quot;
         srcset=&quot;/static/5bd57716e8a1e6ee0962a8875a45b967/12f09/runtime_by_seq_len.png 148w,
 /static/5bd57716e8a1e6ee0962a8875a45b967/e4a3f/runtime_by_seq_len.png 295w,
@@ -1315,7 +1315,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/6e53084a7d8bbe8dcfcd84548ba8f7e6/fcda8/memory_usage_by_seq_len.png&quot;
         srcset=&quot;/static/6e53084a7d8bbe8dcfcd84548ba8f7e6/12f09/memory_usage_by_seq_len.png 148w,
 /static/6e53084a7d8bbe8dcfcd84548ba8f7e6/e4a3f/memory_usage_by_seq_len.png 295w,
@@ -1365,7 +1365,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/4f59bf07d771a60ff147acc151952503/fcda8/diff_architecture.png&quot;
         srcset=&quot;/static/4f59bf07d771a60ff147acc151952503/12f09/diff_architecture.png 148w,
 /static/4f59bf07d771a60ff147acc151952503/e4a3f/diff_architecture.png 295w,
@@ -1423,7 +1423,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/9042d73f77ce5d90af7b4d08ef757bc9/fcda8/subword_block_scoring.png&quot;
         srcset=&quot;/static/9042d73f77ce5d90af7b4d08ef757bc9/12f09/subword_block_scoring.png 148w,
 /static/9042d73f77ce5d90af7b4d08ef757bc9/e4a3f/subword_block_scoring.png 295w,
@@ -1470,7 +1470,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/69a442bc5151b7451d6716a5d33c8187/fcda8/performances.png&quot;
         srcset=&quot;/static/69a442bc5151b7451d6716a5d33c8187/12f09/performances.png 148w,
 /static/69a442bc5151b7451d6716a5d33c8187/e4a3f/performances.png 295w,
@@ -1505,7 +1505,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/2abbb5f4e0f46af043bd04ab4cd5481f/fcda8/speed_benchmark.png&quot;
         srcset=&quot;/static/2abbb5f4e0f46af043bd04ab4cd5481f/12f09/speed_benchmark.png 148w,
 /static/2abbb5f4e0f46af043bd04ab4cd5481f/e4a3f/speed_benchmark.png 295w,
@@ -1572,7 +1572,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/c6f74c824429862342e8c556830ae1aa/fcda8/pretrain_stage.png&quot;
         srcset=&quot;/static/c6f74c824429862342e8c556830ae1aa/12f09/pretrain_stage.png 148w,
 /static/c6f74c824429862342e8c556830ae1aa/e4a3f/pretrain_stage.png 295w,
@@ -1645,7 +1645,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/fcda8/per_language_compression_rates.png&quot;
         srcset=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/12f09/per_language_compression_rates.png 148w,
 /static/0c8294b6b80a5a67ccf151707462d2ad/e4a3f/per_language_compression_rates.png 295w,
@@ -1681,7 +1681,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/b26293e17b6cb2de0721cec3955702b7/fcda8/glue_performance.png&quot;
         srcset=&quot;/static/b26293e17b6cb2de0721cec3955702b7/12f09/glue_performance.png 148w,
 /static/b26293e17b6cb2de0721cec3955702b7/e4a3f/glue_performance.png 295w,
@@ -1714,7 +1714,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/fcda8/generation_performance.png&quot;
         srcset=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/12f09/generation_performance.png 148w,
 /static/07a106d47a9f8fd4e991b12ebd45f82b/e4a3f/generation_performance.png 295w,
@@ -1747,7 +1747,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img&quot;
-        title=&quot;img&quot;
+        title=&quot;&quot;
         src=&quot;/static/4add87609bc4a359a4f4d011bd229a01/fcda8/inference_speed.png&quot;
         srcset=&quot;/static/4add87609bc4a359a4f4d011bd229a01/12f09/inference_speed.png 148w,
 /static/4add87609bc4a359a4f4d011bd229a01/e4a3f/inference_speed.png 295w,
@@ -1786,7 +1786,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;transformer-depths&quot;
-        title=&quot;transformer-depths&quot;
+        title=&quot;&quot;
         src=&quot;/static/84b4b660b7309d4c7c1c57902d7b10a8/fcda8/transformer-depths.png&quot;
         srcset=&quot;/static/84b4b660b7309d4c7c1c57902d7b10a8/12f09/transformer-depths.png 148w,
 /static/84b4b660b7309d4c7c1c57902d7b10a8/e4a3f/transformer-depths.png 295w,
@@ -1831,7 +1831,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;initiaizers&quot;
-        title=&quot;initiaizers&quot;
+        title=&quot;&quot;
         src=&quot;/static/c96c1b00b31ad924105c0128fdec152d/fcda8/initializers.png&quot;
         srcset=&quot;/static/c96c1b00b31ad924105c0128fdec152d/12f09/initializers.png 148w,
 /static/c96c1b00b31ad924105c0128fdec152d/e4a3f/initializers.png 295w,
@@ -1882,7 +1882,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;bleu&quot;
-        title=&quot;bleu&quot;
+        title=&quot;&quot;
         src=&quot;/static/ffc741d661cd37f139eeb4a2cb78e5f0/fcda8/bleu-benchmark.png&quot;
         srcset=&quot;/static/ffc741d661cd37f139eeb4a2cb78e5f0/12f09/bleu-benchmark.png 148w,
 /static/ffc741d661cd37f139eeb4a2cb78e5f0/e4a3f/bleu-benchmark.png 295w,
@@ -1917,7 +1917,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;blue-depths&quot;
-        title=&quot;blue-depths&quot;
+        title=&quot;&quot;
         src=&quot;/static/712143abe3ee5a029f303e0dad1d2777/fcda8/bleu-by-depths.png&quot;
         srcset=&quot;/static/712143abe3ee5a029f303e0dad1d2777/12f09/bleu-by-depths.png 148w,
 /static/712143abe3ee5a029f303e0dad1d2777/e4a3f/bleu-by-depths.png 295w,
@@ -1998,7 +1998,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;empathy&quot;
-        title=&quot;empathy&quot;
+        title=&quot;&quot;
         src=&quot;/static/e725009538bb05e2e1798237979b53eb/fcda8/empathy.png&quot;
         srcset=&quot;/static/e725009538bb05e2e1798237979b53eb/12f09/empathy.png 148w,
 /static/e725009538bb05e2e1798237979b53eb/e4a3f/empathy.png 295w,
