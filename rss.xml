@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[generalist better than specialist]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 19 Jan 2023 06:41:36 GMT</lastBuildDate><item><title><![CDATA[2022년 회고]]></title><description><![CDATA[TL;DR 올해 회고를 시작하기 전 작년 회고를 읽었는데, 첫 줄부터 희망한 대로 흘러가진 않았다. 병특도 정착했고 2022년은 조용히 지나가나 했지만, 회사 관련해서도 큰 변화가 있었고 여러 일들이 있었다. 우리가 이라 하는 것처럼 "이젠 괜찮겠지…]]></description><link>http://kozistr.tech/Review2022/</link><guid isPermaLink="false">http://kozistr.tech/Review2022/</guid><pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[generalist better than specialist]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 19 Jan 2023 07:02:25 GMT</lastBuildDate><item><title><![CDATA[Detecting Continuous Gravitational Waves (Kaggle) - 22th place solution]]></title><description><![CDATA[Original Post : https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927 Data Pre-Processing In…]]></description><link>http://kozistr.tech/detecting-continuous-gravitational-waves/</link><guid isPermaLink="false">http://kozistr.tech/detecting-continuous-gravitational-waves/</guid><pubDate>Tue, 03 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Original Post : &lt;a href=&quot;https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;data&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data&quot; aria-label=&quot;data permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data&lt;/h2&gt;
+&lt;h3 id=&quot;pre-processing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pre-processing&quot; aria-label=&quot;pre processing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pre-Processing&lt;/h3&gt;
+&lt;p&gt;In my experiment, &lt;a href=&quot;https://www.kaggle.com/code/laeyoung/g2net-large-kernel-inference&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;preprocessing&lt;/a&gt; (&lt;code class=&quot;language-text&quot;&gt;normalize&lt;/code&gt; function) works better than the power spectrogram. It improves the score by about +0.02 on CV/LB. After normalizing the signal, take a mean over the time axis. The final shape is (360, 360).&lt;/p&gt;
+&lt;h3 id=&quot;simulation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#simulation&quot; aria-label=&quot;simulation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Simulation&lt;/h3&gt;
+&lt;p&gt;Generating samples is the most crucial part of boosting the score. I can get 0.761 on the LB with a single model.&lt;/p&gt;
+&lt;p&gt;In short, signal depth (&lt;code class=&quot;language-text&quot;&gt;sqrtSX / h0&lt;/code&gt;) takes a huge impact. I generated 100K samples (50K positives, 50K negatives) and uniformly sampled the signal depth between 10 and 100. &lt;code class=&quot;language-text&quot;&gt;cosi&lt;/code&gt; parameter is uniformly sampled (-1, 1).&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;signal depth&lt;/th&gt;
+&lt;th&gt;LB score&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;10 ~ 50&lt;/td&gt;
+&lt;td&gt;0.73x ~ 0.74x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10 ~ 80&lt;/td&gt;
+&lt;td&gt;0.75x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10 ~ 100&lt;/td&gt;
+&lt;td&gt;0.761&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;augmentations&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#augmentations&quot; aria-label=&quot;augmentations permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Augmentations&lt;/h3&gt;
+&lt;p&gt;Also, I&apos;ve worked on the augmentations for much time. Here&apos;s a list.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;v/hflip&lt;/li&gt;
+&lt;li&gt;shuffle channel&lt;/li&gt;
+&lt;li&gt;shift on freq-axis&lt;/li&gt;
+&lt;li&gt;denoise a signal (subtract corresponding noise from the signal)&lt;/li&gt;
+&lt;li&gt;add noises
+&lt;ul&gt;
+&lt;li&gt;Guassian N(0, 1e-2)&lt;/li&gt;
+&lt;li&gt;mixed (add or concatenate) with another (stationary) noise(s)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;add vertical line artifact(s).&lt;/li&gt;
+&lt;li&gt;SpecAugment&lt;/li&gt;
+&lt;li&gt;mixup (alpha 5.0)
+&lt;ul&gt;
+&lt;li&gt;perform &lt;code class=&quot;language-text&quot;&gt;or&lt;/code&gt; mixup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;model&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#model&quot; aria-label=&quot;model permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model&lt;/h2&gt;
+&lt;p&gt;First, I tried to search for the backbones (effnet, nfnet, resnest, convnext, vit-based) and found &lt;code class=&quot;language-text&quot;&gt;convnext&lt;/code&gt; works best on CV &amp;#x26; LB score. After selecting a baseline backbone, I experimented with customizing a stem layer (e.g. large kernel &amp;#x26; pool sizes, multiple convolutions stem with various kernel sizes) to detect the long-lasting signal effectively, but they didn&apos;t affect the performance positively.&lt;/p&gt;
+&lt;h2 id=&quot;ensemble&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ensemble&quot; aria-label=&quot;ensemble permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ensemble&lt;/h2&gt;
+&lt;p&gt;Most of the models used at the ensemble are &lt;code class=&quot;language-text&quot;&gt;convnext-xlarge&lt;/code&gt; but each model trained with different variances (e.g. augmentations, simulated samples, ...) and &lt;code class=&quot;language-text&quot;&gt;eca-nfnet-l2&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;efficientnetv2-xl&lt;/code&gt; for one model. Every model trained on various datasets and LB score seems reliable, so I adjusted the ensemble weights by LB score.&lt;/p&gt;
+&lt;p&gt;I selected the two best LB submissions (LB 0.768 PB 0.771). And the best PB that I didn&apos;t select is 0.778 (LB 0.766) (mixing all my experiments).&lt;/p&gt;
+&lt;h2 id=&quot;works&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#works&quot; aria-label=&quot;works permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Works&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;convnext&lt;/code&gt; family backbone&lt;/li&gt;
+&lt;li&gt;signal depth 10 ~ 100&lt;/li&gt;
+&lt;li&gt;hard augmentation&lt;/li&gt;
+&lt;li&gt;pair stratified k fold
+&lt;ul&gt;
+&lt;li&gt;8 folds&lt;/li&gt;
+&lt;li&gt;stratified on the target&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;pair&lt;/code&gt; means the pair (corresponding noise &amp;#x26; signal) must be in the same fold.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;pseudo label (smooth label)&lt;/li&gt;
+&lt;li&gt;segmentation (but hard to converge on my experiment)&lt;/li&gt;
+&lt;li&gt;TTA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;not-works&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#not-works&quot; aria-label=&quot;not works permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Not Works&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;segmentation with classification head (0.6 * bce + 0.4 * dice)
+&lt;ul&gt;
+&lt;li&gt;Actually, seg with cls works slightly better than only cls, but hard to train without loss divergence. So, I just did only cls.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;cosi == 0&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;cosi&lt;/code&gt; is also a critical parameter to determine an SNR. I generated more samples where &lt;code class=&quot;language-text&quot;&gt;cosi&lt;/code&gt; is 0, but there&apos;s a score drop.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;augmentations (not worked)
+&lt;ul&gt;
+&lt;li&gt;swap with random negatives (proposed at the past competition)&lt;/li&gt;
+&lt;li&gt;random resized crop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Customize a stem layer with large kernel &amp;#x26; pool sizes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope this could help you :)&lt;/p&gt;
+&lt;p&gt;Happy new year!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2022년 회고]]></title><description><![CDATA[TL;DR 올해 회고를 시작하기 전 작년 회고를 읽었는데, 첫 줄부터 희망한 대로 흘러가진 않았다. 병특도 정착했고 2022년은 조용히 지나가나 했지만, 회사 관련해서도 큰 변화가 있었고 여러 일들이 있었다. 우리가 이라 하는 것처럼 "이젠 괜찮겠지…]]></description><link>http://kozistr.tech/Review2022/</link><guid isPermaLink="false">http://kozistr.tech/Review2022/</guid><pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;올해 회고를 시작하기 전 작년 회고를 읽었는데, 첫 줄부터 희망한 대로 흘러가진 않았다. 병특도 정착했고 2022년은 조용히 지나가나 했지만, 회사 관련해서도 큰 변화가 있었고 여러 일들이 있었다. 우리가 &lt;code class=&quot;language-text&quot;&gt;그 발언&lt;/code&gt;이라 하는 것처럼 &quot;이젠 괜찮겠지...?&quot; 라 하면 안 괜찮은 게 정말 맞나 싶다. 그래서 올해 TL;DR은 여기까지만 적어볼 예정이다.&lt;/p&gt;
 &lt;h2 id=&quot;kaggle&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#kaggle&quot; aria-label=&quot;kaggle permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kaggle&lt;/h2&gt;
 &lt;p&gt;상반기엔 회사 일에 시간을 많이 쓰느라 Kaggle을 거의 못했다가 최근에 여유가 생겨서 대회 하나를 진행 중이다. 중성자별 continuous gravitational-wave signal을 탐지하는 &lt;a href=&quot;https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;challenge&lt;/a&gt; 인데, 주제가 재밌어서 진심을 담아 하고 있고, 내년 1월 3일에 끝나는데 남은 3 주 열심히 해서 gold medal를 노려봐야겠다. &lt;del&gt;역시 회사 일보다 100배는 재밌는 거 같다&lt;/del&gt;.&lt;/p&gt;
@@ -645,7 +739,137 @@
 &lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;이전 연구랑 큰 성능 차이도 나지 않고 architecture design 도 대부분 이전 연구들과 차이점이 없어서 연구 자체가 재미있진 않았지만, 요즘 speaker verification 모델 성능이 이 정도 나오는구나 하고 넘어갔다.&lt;/p&gt;
 &lt;p&gt;첫 회사 첫 프로젝트로 speaker diarization 모델을 만들었는데, 아쉬움이 많이 남은 프로젝트라서 아직도 애착이 가는 분야이자 프로젝트다. 그래서 아직도 speech domain 다루는 회사 (synthesis 도 좋지만 diarization 쪽)를 다녀보고 싶습니다 ㅋㅋㅋㅋ&lt;/p&gt;
-&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[NaturalSpeech - End-to-End Text to Speech Synthesis with Human-Level Quality]]></title><description><![CDATA[TL;DR 오랜만에 speech-synthesis 쪽 논문을 보다가 (LJSpeech dataset에서) MOS, CMOS metrics에서 human-level에 도달한 research 가 있는데, 거기에 최근 유행이었던 diffusion appr…]]></description><link>http://kozistr.tech/natural-speech/</link><guid isPermaLink="false">http://kozistr.tech/natural-speech/</guid><pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Default Prediction (Kaggle) - 135th place solution]]></title><description><![CDATA[Original Post : https://www.kaggle.com/competitions/amex-default-prediction/discussion/347996 TL;DR I couldn't spend lots of time on the co…]]></description><link>http://kozistr.tech/default-prediction/</link><guid isPermaLink="false">http://kozistr.tech/default-prediction/</guid><pubDate>Wed, 17 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Original Post : &lt;a href=&quot;https://www.kaggle.com/competitions/amex-default-prediction/discussion/347996&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.kaggle.com/competitions/amex-default-prediction/discussion/347996&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;I couldn&apos;t spend lots of time on the competition (only made 30 submissions :(). In the meantime, the competition metric is kinda noisy and we also expected a shake-up/down (not a planet-scale, but for some cases). So, my strategy is focused on protecting a shake-down as possible i can (instead of bulding new features).&lt;/p&gt;
+&lt;h2 id=&quot;overview&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#overview&quot; aria-label=&quot;overview permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;My strategy is &lt;code class=&quot;language-text&quot;&gt;building various datasets, folds, seeds, models&lt;/code&gt;. I&apos;ll explain them one by one.&lt;/p&gt;
+&lt;h3 id=&quot;data-pre-processing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data-pre-processing&quot; aria-label=&quot;data pre processing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data (Pre-Processing)&lt;/h3&gt;
+&lt;p&gt;My base dataset is based on the raddar&apos;s dataset (huge thanks to @raddar). Also, most of the pre-processing logic can be found in the &lt;code class=&quot;language-text&quot;&gt;Code&lt;/code&gt; section.&lt;/p&gt;
+&lt;p&gt;The differences are...&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;using more lagging features (to 3 months)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;not just using a single dataset, but multiple datasets (I just added features incrementally) for the variousity.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A dataset&lt;/li&gt;
+&lt;li&gt;B dataset = A dataset + (features)&lt;/li&gt;
+&lt;li&gt;C dataset = B dataset + (another features)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I didn&apos;t check the exact effectiveness of using the datasets on multiple models, however, it seems that positive effects when ensembling in my experiments.&lt;/p&gt;
+&lt;h3 id=&quot;model&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#model&quot; aria-label=&quot;model permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model&lt;/h3&gt;
+&lt;p&gt;I built 6 models (3 gbtm, 3 nn) to secure the variousity and roboustness. Also, a few models (LightGBM, CatBoost) are trained on multiple seeds (1, 42, 1337) with the same training recipe. Lastly, some models are trained with 10, 20 folds.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Xgboost&lt;/li&gt;
+&lt;li&gt;CatBoost&lt;/li&gt;
+&lt;li&gt;LightGBM (w/ dart, w/o dart)&lt;/li&gt;
+&lt;li&gt;5-layers NN&lt;/li&gt;
+&lt;li&gt;stacked bi-GRU&lt;/li&gt;
+&lt;li&gt;Transformer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&apos;s the best CV by the model (sorry for the LB, PB scores, I rarely submitted a single model)&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Model&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;CV&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Note&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;bi-GRU&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0.787006&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Transformer&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0.785647&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;NN&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0.789874&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Xgboost&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0.795940&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;only using the given(?) cat features as &lt;code class=&quot;language-text&quot;&gt;cat_features&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;CatBoost&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0.797058&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;using all &lt;code class=&quot;language-text&quot;&gt;np.int8&lt;/code&gt; features as &lt;code class=&quot;language-text&quot;&gt;cat_features&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;LighGBM&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0.798410&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;w/ dart&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The CV score of the single neural network model isn&apos;t good. Nevertheless, when ensembling, It works good with the tree-based models.&lt;/p&gt;
+&lt;h3 id=&quot;blend-ensemble&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#blend-ensemble&quot; aria-label=&quot;blend ensemble permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blend (Ensemble)&lt;/h3&gt;
+&lt;p&gt;Inspired by the discussion &lt;a href=&quot;https://www.kaggle.com/competitions/amex-default-prediction/discussion/329103&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;log-odds&lt;/a&gt;, I found weighted ensemble with log-odds probability is better than a normal weighted ensemble (I tuned the weights with &lt;code class=&quot;language-text&quot;&gt;Optuna&lt;/code&gt; library based on the OOF). But, one difference is not &lt;code class=&quot;language-text&quot;&gt;ln&lt;/code&gt;, but &lt;code class=&quot;language-text&quot;&gt;log10&lt;/code&gt;. In my experiments, It&apos;s better to optimize the weights with &lt;code class=&quot;language-text&quot;&gt;log10&lt;/code&gt;. However, It brings little boost (4th digit difference).&lt;/p&gt;
+&lt;p&gt;I ensembled about 50 models, and there&apos;s no post-processing logic.&lt;/p&gt;
+&lt;h2 id=&quot;summary&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#summary&quot; aria-label=&quot;summary permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;The final score is&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Model&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;CV&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Public LB&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Private LB&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Ensemble&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0.8009&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0.7992&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0.8075&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Last day of the competition, I selected about 1600th Public LB solution (my best CV solution). Luckily, &lt;code class=&quot;language-text&quot;&gt;Trust CV score&lt;/code&gt; wins again :) (Actually, my best CV is also my best LB, and when the cv score increases, lb score increases, so there&apos;s little difference between best CV &amp;#x26; LB for my cases)&lt;/p&gt;
+&lt;p&gt;After the competition, I checked the correlation among the scores (CV vs Private LB, CV vs Public LB). then, I found the CV score is more correlated with Private LB than Public LB in my case.&lt;/p&gt;
+&lt;h3 id=&quot;works&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#works&quot; aria-label=&quot;works permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Works&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;blending various models (gbtm + nn), even if there&apos;re huge CV gaps
+&lt;ul&gt;
+&lt;li&gt;e.g. nn 0.790, lgbm 0.798&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(maybe) various datasets, models, seeds bring a robust prediction I guess&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;didnt-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#didnt-work&quot; aria-label=&quot;didnt work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Didn&apos;t work&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pseudo labeling (w/ hard label)
+&lt;ul&gt;
+&lt;li&gt;maybe &lt;code class=&quot;language-text&quot;&gt;soft-label&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;hard label&lt;/code&gt; with a more strict threshold could be worked i guess.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;deeper NN models
+&lt;ul&gt;
+&lt;li&gt;5-layers nn is enough&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;num of folds doesn&apos;t matter (5 folds are enough)
+&lt;ul&gt;
+&lt;li&gt;there&apos;s no significant difference between 5 folds vs 20 folds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rank weighted ensemble&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope this you could help :) Thank you!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[NaturalSpeech - End-to-End Text to Speech Synthesis with Human-Level Quality]]></title><description><![CDATA[TL;DR 오랜만에 speech-synthesis 쪽 논문을 보다가 (LJSpeech dataset에서) MOS, CMOS metrics에서 human-level에 도달한 research 가 있는데, 거기에 최근 유행이었던 diffusion appr…]]></description><link>http://kozistr.tech/natural-speech/</link><guid isPermaLink="false">http://kozistr.tech/natural-speech/</guid><pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;오랜만에 speech-synthesis 쪽 논문을 보다가 (LJSpeech dataset에서) MOS, CMOS metrics에서 human-level에 도달한 research 가 있는데, 거기에 최근 유행이었던 diffusion approach 가 아닌 점에서도 꽤 흥미로웠습니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2205.04421v2.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
@@ -1765,257 +1989,4 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 &lt;p&gt;개인적으론 &lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; model 접근은 재밌었지만 (&lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; 개념 자체는 처음이 아니지만), utf-8 encoded bytes 를 input 으로 넣어주면서 다른 &lt;code class=&quot;language-text&quot;&gt;token-based&lt;/code&gt; model 대비 상대적으로 짧은 sequences 를 다루게 되면서 이 부분은 아쉬웠고, 일반적인 상황에서의 사용성을 생각하면 현재 연구 자체로는 너무 specific 하다고 생각한다. short-medium length 의 multi-lingual tranlsation 에만 적합한 느낌.&lt;/p&gt;
 &lt;p&gt;저자 왈 단점 때문에 속도가 느려지는 게 toeknizer 운영 cost 생각하면 괜찮지 않나? 라는 입장도 어느 정도 reasonable 하다 생각한다.&lt;/p&gt;
 &lt;p&gt;그래도 후속 연구에서 generation &amp;#x26; translation tasks 에 한정이 아닌 general manner 하면서 performance 도 comparable 한 무언가가 나오지 않을까?&lt;/p&gt;
-&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DeepNet - Scaling Transformers to 1,000 Layers]]></title><description><![CDATA[TL;DR 최근 논문을 보면 complex 한 architecture를 design 하기보다는 training recipes을 제안하거나 large-scale 모델을 더 stable하게 학습하는 방법 등의 논문들이 많이 나오는 경향입니다 (개인적으로…]]></description><link>http://kozistr.tech/deepnet/</link><guid isPermaLink="false">http://kozistr.tech/deepnet/</guid><pubDate>Sun, 20 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;최근 논문을 보면 complex 한 architecture를 design 하기보다는 training recipes을 제안하거나 large-scale 모델을 더 stable하게 학습하는 방법 등의 논문들이 많이 나오는 경향입니다 (개인적으로도 좋은 연구 방향이라고 생각함). 이번 microsoft에서 나온 &lt;code class=&quot;language-text&quot;&gt;DeepNet&lt;/code&gt;은 NLP에서 주로 &lt;code class=&quot;language-text&quot;&gt;Transformer&lt;/code&gt;를 쌓는데, &lt;code class=&quot;language-text&quot;&gt;어떻게 하면 깊게 쌓아도 모델을 stable하게 학습할 수 있을까?&lt;/code&gt;에 대한 연구를 진행했습니다.&lt;/p&gt;
-&lt;p&gt;아래는 시간에 따른 Transformers depths 변화인데, 최근 deepmind의 &lt;code class=&quot;language-text&quot;&gt;Gopher&lt;/code&gt;만 해도 ~ 200 depths 인 데 엄청나게 변화가 생겼네요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/84b4b660b7309d4c7c1c57902d7b10a8/5c98f/transformer-depths.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 47.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA50lEQVR42p2Q23LDIAxE/f8/WTvEEHMxCIEhYEQndpvm1d0HzWpGZ1bSEGOode+XRETT1JUaYtxqrdfgfe8p9d6HnFLdLya31p/PF7yudt/bP2EA+FybiD79u/0zB0w502vtnN8POweIqJTym9HyoR/srLX2Y2BIh0JA9L6WkmI0Wo83JqUUnDN2H79GKZVWuhOh93zmgnH5eIQYh1orIjoHYExwNiOitWDBKs3ZrPXqVptzkZyD1htGv67jdL8xllIaWmsAYJ2LcRNCGGMAvFJyWRYMwYHjQlhrAWCeudYGAxqjz0O+AcdLDJ8w126BAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;transformer-depths&quot;
-        title=&quot;&quot;
-        src=&quot;/static/84b4b660b7309d4c7c1c57902d7b10a8/fcda8/transformer-depths.png&quot;
-        srcset=&quot;/static/84b4b660b7309d4c7c1c57902d7b10a8/12f09/transformer-depths.png 148w,
-/static/84b4b660b7309d4c7c1c57902d7b10a8/e4a3f/transformer-depths.png 295w,
-/static/84b4b660b7309d4c7c1c57902d7b10a8/fcda8/transformer-depths.png 590w,
-/static/84b4b660b7309d4c7c1c57902d7b10a8/efc66/transformer-depths.png 885w,
-/static/84b4b660b7309d4c7c1c57902d7b10a8/c83ae/transformer-depths.png 1180w,
-/static/84b4b660b7309d4c7c1c57902d7b10a8/5c98f/transformer-depths.png 1283w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;github : &lt;a href=&quot;https://github.com/microsoft/unilm&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;paper : &lt;a href=&quot;https://arxiv.org/pdf/2203.00555.pdf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arxiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
-&lt;p&gt;depth가 깊은 Transformer를 학습할 때 학습을 stablize 하는 여러 논문이 있는데, 관련 있는 최근 논문 하나를 적어보면 &lt;code class=&quot;language-text&quot;&gt;Gopher&lt;/code&gt;가 있습니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Gopher&lt;/code&gt; : &lt;a href=&quot;https://arxiv.org/abs/2112.11446&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
-&lt;p&gt;논문을 1장 요약하면 아래 이미지로 요약 가능합니다. 기존에는 &lt;code class=&quot;language-text&quot;&gt;Post-LN&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;Pre-LN&lt;/code&gt; scheme을 통해 stability + performance 를 올리는 연구가 있었는데, &lt;code class=&quot;language-text&quot;&gt;Pre-LN&lt;/code&gt; 는 layer depths가 뒤로 갈 수록 앞 layer보다 gradient norm이 커지면서 performance degradation이 올 수 있다는 점을 이야기합니다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;DeepNet&lt;/code&gt;에서는 이 부분은 &lt;code class=&quot;language-text&quot;&gt;initializations&lt;/code&gt;을 잘해서 해결합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c96c1b00b31ad924105c0128fdec152d/71e8d/initializers.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.054054054054056%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABAUlEQVR42i3O23KEIAwGYN//9fZCQdEYcHUdENuFNLAeOtp+F5kkk5n8xbryNNnXPL9DYGa65Zz3fZ/nGQC8X5nZOmcGE2MkonX1iEhExbJ8us5qHKZx/DB/OGVOx7af5zkYU5ZljMT8w8zbtsUYmTnlf0XOx3P8MjDMHU4tWj2+OvTP8TxPgO7xeCyLT7ecc0qJiN636/O2Hd/f5BbvZ+usvapz7xCO4wghLH4JNyKKIfzFvvo7QtH3ME2j1rpH1Fqb5wAAiNcE0Gtj+h4AOqUUag09IOK11xoACtU0VVUJKZVSdV1LKYUQoiqbuhFClGXZtq2UQt4Hl6YBgLZV1rlfa/BKtwtKjtsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;initiaizers&quot;
-        title=&quot;&quot;
-        src=&quot;/static/c96c1b00b31ad924105c0128fdec152d/fcda8/initializers.png&quot;
-        srcset=&quot;/static/c96c1b00b31ad924105c0128fdec152d/12f09/initializers.png 148w,
-/static/c96c1b00b31ad924105c0128fdec152d/e4a3f/initializers.png 295w,
-/static/c96c1b00b31ad924105c0128fdec152d/fcda8/initializers.png 590w,
-/static/c96c1b00b31ad924105c0128fdec152d/efc66/initializers.png 885w,
-/static/c96c1b00b31ad924105c0128fdec152d/c83ae/initializers.png 1180w,
-/static/c96c1b00b31ad924105c0128fdec152d/71e8d/initializers.png 1304w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;initialization&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#initialization&quot; aria-label=&quot;initialization permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;initialization&lt;/h3&gt;
-&lt;p&gt;더 구체적으로 보면 크게 2가지인데,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;residual connection 하는 부분에서 input 에 대해 scaling&lt;/li&gt;
-&lt;li&gt;거의 비슷한데 (기존과 같이 xavier normal), 일부 layer에 gain 수정&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\alpha&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.4306em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.0037em;&quot;&gt;α&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 는 depth가 깊어질수록 커지고, &lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;β&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\beta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8889em;vertical-align:-0.1944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05278em;&quot;&gt;β&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; (gain) 은 작게 사용하네요.&lt;/p&gt;
-&lt;p&gt;formula 로 일반화 하면 아래와 같습니다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/msub&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x_{l + 1} = LN(\alpha x_{l} + G_{l}(x_{l}, \theta_{l}))&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6389em;vertical-align:-0.2083em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mbin mtight&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.2083em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.0037em;&quot;&gt;α&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;G&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.1667em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.3361em;&quot;&gt;&lt;span style=&quot;top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\alpha&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.4306em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.0037em;&quot;&gt;α&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; : scaling factor at the residual connection&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;l&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; : &lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;l&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;-th Transformer sub-layer (e.g. FFN or MSA) with parameter (&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\theta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.6944em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.02778em;&quot;&gt;θ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#performance&quot; aria-label=&quot;performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
-&lt;p&gt;다양한 NLP task와 benchmarks를 진행했는데, large-scale 에서 diverge하지 않고 더 깊게 쌓았을 때 더 좋은 성능을 보여주고 있습니다.&lt;/p&gt;
-&lt;h3 id=&quot;bleu-score&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bleu-score&quot; aria-label=&quot;bleu score permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BLEU score&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ffc741d661cd37f139eeb4a2cb78e5f0/86a1e/bleu-benchmark.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 44.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABjElEQVR42j2R2XKrMBBE+f+/M2GVhLUjhNBqG7Ac7FskqdtP/TBdc6anQAiVZRljDCF47/8brSdKKYQQY0wwbppGSnkpS4wJAOByuVDKCoyvZfn1N0QIhHBZjHNunmdCKeeMUvp6vdZ13fe973sI4SvndV1zzgVjrO+6vge/UkrFlF45O2cJpfM8W2vv97sQ4vl8WmshhEqpZ87f39/n5rpu2qZp2pYxBiGkjL2Pd0ppUpO1dlmWnLO19vN+M0b1NN1SmqZp2/Zi0hMAAEE4DIOUAoA+hLjte/B+nmdjjPc+pcSFOI5DKbWuq/e+quoQQkEIKb9OQQjrqkZoWBZjrY0xcs6NMcuyPB4PIcT7ONqu+wF5MsaO4yjGUQIAMMYQwnEcT05jtm1LKSqlnHMxxN/w5/PhnKeUbrcbAGBdt+I6DG3bDtcrQij8/OkMpCSlxBgLIaSU4zjWdR2C7/t+HEetdde2J3bXtZzzHgBCSNeexdV1jRCqqkpr7f8uX7xzxpgQgjFGax1jdNb9A9QC5zLexmqgAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;bleu&quot;
-        title=&quot;&quot;
-        src=&quot;/static/ffc741d661cd37f139eeb4a2cb78e5f0/fcda8/bleu-benchmark.png&quot;
-        srcset=&quot;/static/ffc741d661cd37f139eeb4a2cb78e5f0/12f09/bleu-benchmark.png 148w,
-/static/ffc741d661cd37f139eeb4a2cb78e5f0/e4a3f/bleu-benchmark.png 295w,
-/static/ffc741d661cd37f139eeb4a2cb78e5f0/fcda8/bleu-benchmark.png 590w,
-/static/ffc741d661cd37f139eeb4a2cb78e5f0/efc66/bleu-benchmark.png 885w,
-/static/ffc741d661cd37f139eeb4a2cb78e5f0/c83ae/bleu-benchmark.png 1180w,
-/static/ffc741d661cd37f139eeb4a2cb78e5f0/86a1e/bleu-benchmark.png 1296w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;bleu-score-by-depths&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bleu-score-by-depths&quot; aria-label=&quot;bleu score by depths permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BLEU score by depths&lt;/h3&gt;
-&lt;p&gt;다른 methods 는 18 dethps (약 &lt;code class=&quot;language-text&quot;&gt;large&lt;/code&gt; recipe) 정도만 돼도 diverge 하네요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/712143abe3ee5a029f303e0dad1d2777/20785/bleu-by-depths.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 44.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABh0lEQVR42h3Q2bKDIBAEUP//765ZABcIqyIyCCYSTWJuxfM8PV3VBWOsLMt0iDHO8xwP1lohRNM0nPOWthhjpVRZllLKipC/v9IYUwghylNJKRVccC7atnXOBYBfWEophFRqXddlWfKyoCvinK/bNs/3dV0LJeXlcsEYYYQqQqRUMcZt25xzjDLn3Oh9irHrzLZt1lpCiLXD+/Brvl6v5CClbNtGKbnve0ppGAbvvQd4Pp/TNH33nXPunJtidG54vV5F13VHMyaE3G43hBAA5LwAQN/3wzCEEABAKfX5fKSUOWdr7el0ejyWQil1Pp8RQozSy+VKGfsdHwFjjB/HEEKMse/79/uNMU4p5ZyNMfu+F50xGGPGWF3XSmkA8N7nnEMIXdcB+JTmaZq01t/vlzH2eDxCCBWp1nUrGKWEkLqum6bxh9/aIUgpKWNaa6W1EIIQEgB+a/W9Maau6ynGoqpro3XbtlyIqqoIwVVFKKUYIefcPM/HL5imGABSSqP34zje7/eU0j+Nm+gWWgbtHwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;blue-depths&quot;
-        title=&quot;&quot;
-        src=&quot;/static/712143abe3ee5a029f303e0dad1d2777/fcda8/bleu-by-depths.png&quot;
-        srcset=&quot;/static/712143abe3ee5a029f303e0dad1d2777/12f09/bleu-by-depths.png 148w,
-/static/712143abe3ee5a029f303e0dad1d2777/e4a3f/bleu-by-depths.png 295w,
-/static/712143abe3ee5a029f303e0dad1d2777/fcda8/bleu-by-depths.png 590w,
-/static/712143abe3ee5a029f303e0dad1d2777/efc66/bleu-by-depths.png 885w,
-/static/712143abe3ee5a029f303e0dad1d2777/c83ae/bleu-by-depths.png 1180w,
-/static/712143abe3ee5a029f303e0dad1d2777/20785/bleu-by-depths.png 1307w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;갠적으로도 training recipe 를 통한 성능 향상이나 이런 느낌의 연구들을 좋아하는데, 1000 depths large-scale transformer 를 간단한 방법으로 stable 하게 학습할 수 있다는 점에 재밌는 거 같습니다.&lt;/p&gt;
-&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[토스 3 months review]]></title><description><![CDATA[TL;DR 벌써 토스로 이직한 지 3달이 됐네요. 사실 블로그에 글로 쓸 생각은 없었는데, 짧지만 정말 여러 가지를 생각하고 느끼기도 했고 입사 당시에는 토스 문화에 대해서 잘 알지 못했는데, 여기에 남겨보면 어떨까 해서 글을 씁니다. 토스 문화에 …]]></description><link>http://kozistr.tech/3mths-review/</link><guid isPermaLink="false">http://kozistr.tech/3mths-review/</guid><pubDate>Sat, 19 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;벌써 토스로 이직한 지 3달이 됐네요. 사실 블로그에 글로 쓸 생각은 없었는데, 짧지만 정말 여러 가지를 생각하고 느끼기도 했고 입사 당시에는 토스 문화에 대해서 잘 알지 못했는데, 여기에 남겨보면 어떨까 해서 글을 씁니다.&lt;/p&gt;
-&lt;p&gt;토스 문화에 관심 있으시거나, 저랑 같은 고민을 하신 분들 등 분들에게 정보나 공감이 되지 않을까 생각했어요. 어쩌면 나중에 다른 곳에서 같은 고민을 하고 있을 때 도움이 될 거 같기도 합니다.&lt;/p&gt;
-&lt;h2 id=&quot;회사-고르는-기준&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%9A%8C%EC%82%AC-%EA%B3%A0%EB%A5%B4%EB%8A%94-%EA%B8%B0%EC%A4%80&quot; aria-label=&quot;회사 고르는 기준 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;회사 고르는 기준&lt;/h2&gt;
-&lt;p&gt;작년 21년 회고에서도 말했듯, &lt;code class=&quot;language-text&quot;&gt;회사를 고르는 기준&lt;/code&gt;에 큰 변경이 있었어요. 전/후로 차이를 비교하면 아래와 같은데, 3년 동안 많이 바뀐 거 같아요 &lt;strong&gt;180도 달라진 기준&lt;/strong&gt;이라 생각해요. (&lt;del&gt;그래도 GPU는 못 참습니다&lt;/del&gt;)&lt;/p&gt;
-&lt;p&gt;As-Is (2019년)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;내가 (직무에서) 기술적으로 성장할 수 있는 환경&lt;/li&gt;
-&lt;li&gt;같은 background가 있는 동료와 재밌게 일 할 수 있는 환경&lt;/li&gt;
-&lt;li&gt;GPU 많은 곳 (진심)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;To-Be (2021년)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;내가 주도할 수 있는 환경 (기술, 문화 모든 것을)&lt;/li&gt;
-&lt;li&gt;나와 다른 background를 가지고 있는 사람들과의 협업&lt;/li&gt;
-&lt;li&gt;현업 (기술적인 부분)이나 이외에서 직접 설득하는 일이 많은 곳&lt;/li&gt;
-&lt;li&gt;GPU 많은 곳 (진심)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;사실 아직 &lt;strong&gt;As-Is&lt;/strong&gt; 기준을 선호하긴 하지만, 제가 더 성장하려면 새로운 환경이 필요했고 단순히 개발 잘하는 사람이 아니라 사람들을 설득하고 공감을 얻고 팀 규모의 문화나 기술을 정착하고 관리하려면 &lt;strong&gt;To-Be&lt;/strong&gt; 경험이 필요하다 판단했어요.&lt;/p&gt;
-&lt;h2 id=&quot;입사전&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%82%AC%EC%A0%84&quot; aria-label=&quot;입사전 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입사전&lt;/h2&gt;
-&lt;p&gt;들은 이야기가 하나 없는 회사니 면접 전에 팀원 분과 tea time 가지면서 여러 이야기도 나눴고 면접 때도 어떤 회사와 팀일 거 같다는 예측(?)을 했는데, 이전에 ML/DL 서비스를 시도한 적 없는 신생 회사/팀이고 계신 분들도 ML/DL 쪽으로 background가 크게 없는 등 큰 장애물이 있다 생각했지만, 이런 환경도 극복하고 직접 문화를 만들어 나가는 과정에서 배우는 점이 있을 거라 생각했어요. 결국 &lt;strong&gt;To-Be&lt;/strong&gt;에는 토스가 적합하다 생각해서 합류하게 됐습니다.&lt;/p&gt;
-&lt;h2 id=&quot;입사후&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%82%AC%ED%9B%84&quot; aria-label=&quot;입사후 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입사후&lt;/h2&gt;
-&lt;p&gt;입사전 우려와 같이 &lt;strong&gt;제가 생각한 방향과 전혀 맞지 않았어요&lt;/strong&gt;. 하지만, 바로 제가 생각하는 방향으로 작업하거나 피드백을 주지 않았어요. 이유는 아래와 같아요.&lt;/p&gt;
-&lt;h3 id=&quot;공감&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%90&quot; aria-label=&quot;공감 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공감&lt;/h3&gt;
-&lt;p&gt;아마 토스 블로그나 여러 자료를 보면 토스에서 가장 중요하게 생각하는 것 중 하나가 있는데 바로 &lt;strong&gt;공감, 신뢰&lt;/strong&gt; 입니다. 제가 동료의 신뢰나 하는 일에 공감 없이 진행한다면 그 일은 지지를 받지 못하고 결국 쓸모없는 일이 됩니다. 또한, 이전의 context 이해 없이 방향을 제시하는 건 대단히 조심해야 하는 행동이라 생각해요.&lt;/p&gt;
-&lt;p&gt;그래서 문제점이 보여도 바로 피드백하지 않고 처음 1달 정도는 팀과 회사의 context를 이해하는 데 노력하고 동료의 신뢰를 얻는 데 노력했어요. 물론 정말 침묵과 100% 수용만 하는 게 아닌 새로운 문화를 도입하기 위해서 문서를 통해서 회의 때 공유하거나 하는 등의 노력도 꾸준히 했습니다.&lt;/p&gt;
-&lt;p&gt;개인적으로도 &lt;strong&gt;이 과정이 너무 답답하기&lt;/strong&gt;도 했어요. 빠르게 체계적인 팀 문화를 도입하고 효율적으로 제품을 만들어야 하는데, 이런 과정이 길어지면 제대로 속도도 내지 못하고 효율이나 퀄리티도 보장하지 못한다 생각합니다. &lt;strong&gt;하지만&lt;/strong&gt;, 신뢰와 공감을 얻지 못하고 아무리 좋은 방향이라 해도 도입했다면, 어쩌면 다른 분들에게 상처를 줄 수도 있고 제 일도 잘할 수 없다는 점을 통해 이런 과정이 &lt;strong&gt;필수적이다&lt;/strong&gt; 라는 것을 깨달았어요.&lt;/p&gt;
-&lt;h3 id=&quot;공감--신뢰-얻는-법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%90--%EC%8B%A0%EB%A2%B0-%EC%96%BB%EB%8A%94-%EB%B2%95&quot; aria-label=&quot;공감  신뢰 얻는 법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공감 &amp;#x26; 신뢰 얻는 법&lt;/h3&gt;
-&lt;p&gt;동료의 공감과 신뢰를 얻기 위해서 저는 다음과 같은 일들은 했어요.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;팀에서 비효율적인 부분 빠르게 개선 및 적용하기. 문서로 정리 &amp;#x26; 공유하기&lt;/li&gt;
-&lt;li&gt;빠르게 눈에 보이는 성과 내기&lt;/li&gt;
-&lt;li&gt;팀원들 도와주기&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;이전 DS 팀에는 code convention이나 CI/CD 등 규칙 및 문서들이 존재하지 않았고, 퀄리티나 안정성, 문서화보단 일단 완성하고 보자 방식으로 업무를 진행해서 lagacy가 산재해 있었습니다. 저희 팀은 Notion을 주로 사용하는데, 저는 이런 convention이나 규칙들을 문서화하고 팀에게 공유해서 필요성과 우선순위에 대한 공감을 얻었습니다.&lt;/p&gt;
-&lt;p&gt;그리고 foramtter와 linter를 repository에 직접 적용하고 깔끔하고 좋은 코드를 구현하기 위해서 팀 전반적인 PR의 code-review에 참여 했습니다. 이외에도 MLOps 및 모델 연구관점에서 life-cycle, 여러 ML/DL 지식 등 많은 문서를 작성했는데 이 부분도 공감 받아 팀 문화적으로도 &lt;code class=&quot;language-text&quot;&gt;필수적인 문서화&lt;/code&gt;에 조금씩 기여하고 있는거 같아요.&lt;/p&gt;
-&lt;p&gt;이전에도 code-review 하는 문화가 있었지만, 제대로 이뤄지고 있지 않아서 이 부분도 손 걷어붙이고 제가 주도하면서 다른 분들도 그냥 LGTM이 아닌 건전하게 의견을 제시할 수 있게끔 했던 거 같아요. 아직도 개선하기 위해서 노력 중 입니당.&lt;/p&gt;
-&lt;p&gt;정리하면,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;팀이나 개인의 부채를 적극적으로 해결하고&lt;/li&gt;
-&lt;li&gt;제 분야에서 성과를 보여주는 과정에서&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;신뢰를 얻게 된 거 같아요.&lt;/p&gt;
-&lt;p&gt;다만, 그 과정에서 가끔 저만의 아쉬움과 답답함이 나와서 부족한 모습도 있었는데, 앞으로 더 개선해야겠습니다. 처음엔 업무에서의 권한 없이 타인의 &lt;code class=&quot;language-text&quot;&gt;공감과 신뢰&lt;/code&gt;를 얻는 것에 대한 중요도를 잘 몰랐다면, 지금은 필요성을 알고 어려운 일이라는 걸 깨닫는 좋은 경험이었습니다.&lt;/p&gt;
-&lt;p&gt;또한, 토스에서 &lt;code class=&quot;language-text&quot;&gt;권한&lt;/code&gt;없이 제 실력과 방향에 대해 팀원들의 신뢰와 공감을 얻는 과정에서 많은 것을 배운 거 같습니다. 감사하게도 팀원 분들께서도 피드백 주시길 개인이나 팀 단위의 공감대를 잘 형성했다 말씀해 주셔서 제 방식이 잘 먹혔던(?) 거 같아요.&lt;/p&gt;
-&lt;p&gt;최근에 &lt;a href=&quot;https://jojoldu.tistory.com/626&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;회고&lt;/a&gt;를 보면서 등장한 짤인데, 제 상황에 가장 알맞은 거 같아서 가져왔어요.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e725009538bb05e2e1798237979b53eb/5a190/empathy.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 92.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEnUlEQVR42m2U629TZRjAz/+giZ9NBIUZBRMVjQZEEyMEUBCUADoHSEIYICOgKCFcNwgSDLdNXbdCRoV1V7p17dau6y7d6enWdV3X9d6u3dauG+tGlzHY+JlzEvkiT/J8OO95z+95njfn/QnPnj1DjpmZGRwOB11dXfj9fux2O5Ik4fV6cblciKJIR0cHRqMRk8lEZ2cntbW1PHz4UPle5sgp/AeUY3p6mkgkQkVFBXq9nqqqKqVITU0NTU1NCqChoUFJed/ExASLi4v/BwYCQZoMBozNzRiMRurq6pROKisrMRgMaLVVNLe00NioR6fToVKpsEuSMkVvb68yycLCggIWnj6ZZ2pygpH4MPFYlEgkTDgcJhQKKYXCkQjTmSlSY6OkU0nSqTFG4jGSI3GSo3GSyTHi8WGy2SyLiwsIA7FxvIlJfKNTDI1O4XJ7cLv7lerWtjaGvIM4fVGCk3P407P4xrP4xx/hn3iCO5Glz+2jr68fz4Abry+A0BWdwSZnJIM0Msed6kbKy1QYjc04nC5Ed4A2fxIxtUB77BFi6ilSGqT4GEH7zwSkm0iSiMsbQPKGEGwDIWxDccTIFFI8y6kLRVw5d5RV777DoV/P4kov0uIYROr3MBSO0ReKI6ZA6iomaNxDyrqOZM9hLNEsrvgkgs87iKXVTHcgSUcoQ2X1fWaibdj0pRRdvU5v8gmeYIwHtdVoK+8TCfqxxTKYHXZsJi12cwV2UyEd0QzeVBahsLAQQ6cD59hjpJF5bl6/S1vdXWrVd7hxS0ujw0/hpd8xm02YzGbEfi+2xCyt3hF8zgbGfY1YOlrpGAddaxfC0iWvUdPuwuKO8EtBPrs2buOnfUXkbj3O7u0n2Px1Ljk5y3hz+TJKNNVIY3Mcy88j76tP0Fzcy1jzGcK3NlD553nOXriIUHjhFGJ0kj3bvmDjWy+x87McDuQeZsOa3Xz+/k7ydnzP2ytW8OnqD5CiKW6o1Gxa8TJbP3qdgvVvEDm9lNnLS9AeWsmR4ycQ2trNiAMBbpdc5eTBXHasXc6m1etZs3IHH+Zs4cq5M2z/dhN/Ff+B0+3BbhdprNNSsOcbfli7FP9vr5I99wo917ZQ/HcJgnx3261tRGNx5U8/f+xH1r33MUf3F1Gw/yyXThexd98u7mk1tJotaLVavP4gBr2O/M2riGnymaw+hPVaHhWqYoSBgQFUqjKa9HoFeE9dwt2yEppNLYTCAaYzWQ4cOcjW777E0FhLU0M9LYYGrl88ibnFSCA2isHShcPZzz/l5Qg9PT309fUp99Fms9Gsf4AodqNW30b3QKfYxmI1c+zkEVqqrqHTlHDj0inKb16mWxSpq62hSnsfyW7H4/EgzM/PKwqSzTE7O4ssH7mIxWKhu7tbUdnc3GNeFIlEnOHhYZLJJLFYDJklvGij/FI+CjkDgYAClWXh9/uIRqPK+mw2+8IiCjCTyeB2u5WW5fFLS0vRaDSK9+rr6ykuLqasrEzxpJxqtVqZQu5Mlm8qlXruRAWYTqcVIzudTgVqtVqVLoaGhhgcHFTOV+5QfpYLBoNBZZ+8Jgs4kUg8B/4Li+LRGhU+cQwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;empathy&quot;
-        title=&quot;&quot;
-        src=&quot;/static/e725009538bb05e2e1798237979b53eb/fcda8/empathy.png&quot;
-        srcset=&quot;/static/e725009538bb05e2e1798237979b53eb/12f09/empathy.png 148w,
-/static/e725009538bb05e2e1798237979b53eb/e4a3f/empathy.png 295w,
-/static/e725009538bb05e2e1798237979b53eb/fcda8/empathy.png 590w,
-/static/e725009538bb05e2e1798237979b53eb/5a190/empathy.png 800w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;지금&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A7%80%EA%B8%88&quot; aria-label=&quot;지금 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;지금&lt;/h2&gt;
-&lt;p&gt;작년까지만 해도 3달 수습기간이 있었지만, 지금은 사라졌습니다. 하지만 1.5 / 3 months review 문화는 그대로 남아있는데요, 피드백을 보면 제가 도입한 문화와 성과에 대해서 긍정적으로 생각하고 공감해 주셨다는 점에서, 토스에서 내가 목표하는 것을 잘 해내고 있다는 생각도 들고 더 좋은 팀을 만들어 나가야겠다는 생각도 드네요.&lt;/p&gt;
-&lt;p&gt;토스에서는 공감만 얻을 수 있다면 누구나 프로젝트의 DRI가 될 수 있는데, 그래도 드는 생각은 저나 ML 분야에 대한 background를 잘 이해할 수 있는 분이 계셨다면 어쩌면 더 빠르게 공감을 얻을 수 있고 더 좋은 문화와 체계를 이미 도입하고 사용하지 않았을까 하는 아쉬운 점도 남아 있어요. 어쩌면, 이런 부분에선 팀장 같은 &lt;code class=&quot;language-text&quot;&gt;권한&lt;/code&gt;이 있으면 어떨까란 생각도 들기도 합니다.&lt;/p&gt;
-&lt;p&gt;그래서 나중엔 팀장으로서 팀을 lead 하는 경험도 해 보고 싶네요.&lt;/p&gt;
-&lt;h2 id=&quot;미래&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AF%B8%EB%9E%98&quot; aria-label=&quot;미래 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;미래&lt;/h2&gt;
-&lt;p&gt;앞으로도 저는 0순위로 팀 문화를 잘 만드는 일에 기여하게 될 거 같아요. 이제 팀원들에 대한 신뢰도 얻었으니 제가 생각하는 방향에 대해서 더 적극적으로 제안하고 강하게 이야기해야 하는 부분은 이야기하게 될 거 같아요. 물론 그 중간 지점은 계속해서 잘 찾아 나가야할 거 같습니다.&lt;/p&gt;
-&lt;h2 id=&quot;한-줄-요약&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%9C-%EC%A4%84-%EC%9A%94%EC%95%BD&quot; aria-label=&quot;한 줄 요약 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;한 줄 요약&lt;/h2&gt;
-&lt;p&gt;처음엔 이게 맞나 생각했지만 배우는 부분도 많았고, 아직 해결할 문제가 많지만 하나씩 해결해 나가자!&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item></channel></rss>
