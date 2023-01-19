@@ -1,11 +1,11 @@
 ---
-title: [Kaggle] COVID-19 Detection - 47th (top 4%) place solution
+title: (Kaggle) COVID-19 Detection - 47th (top 4%) place solution
 date: 2021-08-09
 update: 2023-01-19
 tags:
   - Deep-Learning
+  - Kaggle
 keywords:
-  - kaggle
   - siim-fisabio-rsna
   - covid19-detection
   - classification

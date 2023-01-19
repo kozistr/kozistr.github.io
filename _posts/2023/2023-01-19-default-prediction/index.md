@@ -1,11 +1,11 @@
 ---
-title: [Kaggle] Default Prediction - 135th (top 3%) place solution
+title: (Kaggle) Default Prediction - 135th (top 3%) place solution
 date: 2022-08-17
 update: 2023-01-19
 tags:
   - Deep-Learning
+  - Kaggle
 keywords:
-  - kaggle
   - america-express
   - default-prediction
   - gbm
