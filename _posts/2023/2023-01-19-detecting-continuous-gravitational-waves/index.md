@@ -1,5 +1,5 @@
 ---
-title: Detecting Continuous Gravitational Waves (Kaggle) - 22th place solution
+title: [Kaggle] Detecting Continuous Gravitational Waves - 22th (top 1%) place solution
 date: 2023-01-03
 update: 2023-01-19
 tags:

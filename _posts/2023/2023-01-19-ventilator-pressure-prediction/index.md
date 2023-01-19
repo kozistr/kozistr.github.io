@@ -1,5 +1,5 @@
 ---
-title: Ventilator Pressure Prediction (Kaggle) - 20th place solution
+title: [Kaggle] Ventilator Pressure Prediction - 20th (top 1%) place solution
 date: 2021-11-03
 update: 2023-01-19
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Default Prediction (Kaggle) - 135th place solution
+title: [Kaggle] Default Prediction - 135th (top 3%) place solution
 date: 2022-08-17
 update: 2023-01-19
 tags:

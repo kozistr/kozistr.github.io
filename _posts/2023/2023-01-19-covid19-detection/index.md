@@ -1,5 +1,5 @@
 ---
-title: COVID-19 Detection (Kaggle) - 47th place solution
+title: [Kaggle] COVID-19 Detection - 47th (top 4%) place solution
 date: 2021-08-09
 update: 2023-01-19
 tags:
