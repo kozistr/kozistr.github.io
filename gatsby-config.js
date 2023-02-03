@@ -33,8 +33,8 @@ const gatsbyConfig = {
       options: {
         trackingIds: [googleGTag],
         pluginConfig: {
-          head: true
-        }
+          head: true,
+        },
       },
     },
 
