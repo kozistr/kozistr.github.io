@@ -34,7 +34,7 @@ specifiers:
   eslint-plugin-react: ^7.32.2
   gatsby: ^5.5.0
   gatsby-plugin-feed: ^5.5.0
-  gatsby-plugin-google-analytics: ^5.5.0
+  gatsby-plugin-google-gtag: ^5.5.0
   gatsby-plugin-image: ^3.5.0
   gatsby-plugin-manifest: ^5.5.0
   gatsby-plugin-offline: ^6.5.0
@@ -97,7 +97,7 @@ dependencies:
   cross-env: 7.0.3
   gatsby: 5.5.0_qoa4v2lpgensdmmqjb4bcrzng4
   gatsby-plugin-feed: 5.5.0_5uvgjed7jedu2526fan4tk2wr4
-  gatsby-plugin-google-analytics: 5.5.0_o4p7qdiwf4pqd6kjd376izruy4
+  gatsby-plugin-google-gtag: 5.5.0_o4p7qdiwf4pqd6kjd376izruy4
   gatsby-plugin-image: 3.5.0_zwrwjmotwvqks2zh6eh6uqg7gm
   gatsby-plugin-manifest: 5.5.0_pafsmpcyfa3g3fzn6iwhqotvby
   gatsby-plugin-offline: 6.5.0_o4p7qdiwf4pqd6kjd376izruy4
@@ -6975,8 +6975,8 @@ packages:
       - graphql
     dev: false
 
-  /gatsby-plugin-google-analytics/5.5.0_o4p7qdiwf4pqd6kjd376izruy4:
-    resolution: {integrity: sha512-/OfFZd7ciXkft6Pq6J2lCMTewuhNfQd/2cKWqLiWSD0okw6OXH8swJ/VOk6yIDW8i3EULvlsbofxIVZD0Loeig==}
+  /gatsby-plugin-google-gtag/5.5.0_o4p7qdiwf4pqd6kjd376izruy4:
+    resolution: {integrity: sha512-y6hcbsVG9xV+djfeX9clfScX4mW6NeYzEs72lU1YpTYV2+NXxglZgk6OB2l99GyEq0fUpYEGwn9jPHwyHCFSLg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       gatsby: ^5.0.0-next
@@ -6988,7 +6988,6 @@ packages:
       minimatch: 3.1.2
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      web-vitals: 1.1.2
     dev: false
 
   /gatsby-plugin-image/3.5.0_zwrwjmotwvqks2zh6eh6uqg7gm:
@@ -13367,10 +13366,6 @@ packages:
 
   /web-namespaces/1.1.4:
     resolution: {integrity: sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==}
-    dev: false
-
-  /web-vitals/1.1.2:
-    resolution: {integrity: sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==}
     dev: false
 
   /webidl-conversions/3.0.1:
