@@ -34,7 +34,7 @@ module.exports = {
   categoryId: 'DIC_kwDOBz-zS84CSqPm',
 
   /** Optional */
-  googleAnalytics: '3352008708',        // Google Analytics TrackingID. ex.'UA-116366668-1'
+  googleGTag: 'G-GX6YBKFNSN',           // Google Analytics G-Tag. ex. 'G-GX6YBKFNSN'
   googleSearchConsole: '',              // content value in HTML tag of google search console ownership verification. ex. 'yVb-5RupSxz0n597I3F2TyflhbyZqUs8rHyLmrzqJB4'
   googleAdsenseSlot: '',                // Google Adsense Slot. ex.'5791074071'
   googleAdsenseClient: 'pub-7954241517411559',  // Google Adsense Client. ex.'ca-pub-7954241517411559'

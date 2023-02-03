@@ -1,5 +1,5 @@
 const config = require('./config')
-const { title, description, author, googleAnalytics, siteUrl, language } = config
+const { title, description, author, googleGTag, siteUrl, language } = config
 
 const gatsbyConfig = {
   siteMetadata: { title, description, author, siteUrl, language },
@@ -29,9 +29,12 @@ const gatsbyConfig = {
     },
 
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: googleAnalytics,
+        trackingIds: [googleGTag],
+        pluginConfig: {
+          head: true
+        }
       },
     },
 
