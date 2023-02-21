@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-01-04
+update: 2023-02-21
 tags:
   - About
   - CV
@@ -89,8 +89,11 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 ### Company
 
-#### _Data Scientist_, **Toss core, Toss CB**, **(2021.12.06 ~ present)**
+#### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
+- CSS model for Loan Comparison product.
+  - Developed a CSS model only with non-financial data.
+  - Outperformed about **3 ~ 4%p** (on the primary metric) compared with the previous method.
 - Perosnal CSS model for the CB.
   - Developed a more accurate & robust CSS model for more general targets like thin-filer and thick-filer.
   - Outperformed about **15%** (on the primary metric) compared with the previous method.
