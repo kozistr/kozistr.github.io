@@ -46,7 +46,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 * **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
 
-  > [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) - **solo, top 1% (16 / 1720), Private 0.49** - [~~solution~~](https://www.kaggle.com/competitions/rsna-breast-cancer-detection/discussion/) (2023.)
+  > [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) - **solo, top 1% (16 / 1720), Private 0.49** - [solution](https://www.kaggle.com/competitions/rsna-breast-cancer-detection/discussion/391133) (2023.)
 
   > [G2Net Detecting Continuous Gravitational Waves](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves) - **solo, top 2% (22 / 936), Private 0.771** - [solution](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927) (2023.)
 
