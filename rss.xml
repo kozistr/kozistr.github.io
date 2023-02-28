@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[generalist better than specialist]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Feb 2023 05:05:01 GMT</lastBuildDate><item><title><![CDATA[(Kaggle) Detecting Continuous Gravitational Waves - 22th (top 2%) place solution]]></title><description><![CDATA[Original Post : https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927 Data Pre-Processing In…]]></description><link>http://kozistr.tech/detecting-continuous-gravitational-waves/</link><guid isPermaLink="false">http://kozistr.tech/detecting-continuous-gravitational-waves/</guid><pubDate>Tue, 03 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kozistr | Feed]]></title><description><![CDATA[generalist better than specialist]]></description><link>http://kozistr.tech</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Feb 2023 13:41:14 GMT</lastBuildDate><item><title><![CDATA[(Kaggle) Screening Mammography Breast Cancer Detection - 16th (top 1%) place solution]]></title><description><![CDATA[Original Post : https://www.kaggle.com/competitions/rsna-breast-cancer-detection/discussion/391133 Data Preprocessing My preprocessing code…]]></description><link>http://kozistr.tech/screening-mammography-breast-cancer-detection/</link><guid isPermaLink="false">http://kozistr.tech/screening-mammography-breast-cancer-detection/</guid><pubDate>Tue, 28 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Original Post : &lt;a href=&quot;https://www.kaggle.com/competitions/rsna-breast-cancer-detection/discussion/391133&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.kaggle.com/competitions/rsna-breast-cancer-detection/discussion/391133&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;data&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data&quot; aria-label=&quot;data permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data&lt;/h2&gt;
+&lt;h3 id=&quot;preprocessing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#preprocessing&quot; aria-label=&quot;preprocessing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preprocessing&lt;/h3&gt;
+&lt;p&gt;My preprocessing code heavily depends on the public notebooks (eg. remove letters, crop breast via contour).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;decode &lt;code class=&quot;language-text&quot;&gt;.dicom&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;.jpeg&lt;/code&gt; with &lt;code class=&quot;language-text&quot;&gt;dicomsdl&lt;/code&gt; &amp;#x26; &lt;code class=&quot;language-text&quot;&gt;nvjpeg2000&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;crop edge (margin pixel 10)&lt;/li&gt;
+&lt;li&gt;extract breast with &lt;code class=&quot;language-text&quot;&gt;opencv2&lt;/code&gt; (contour based)&lt;/li&gt;
+&lt;li&gt;resize to 1536x960. (I roughly guess that resizing into a 1.5 ~ 2.0 aspect ratio is fine.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In my experiment, windowing doesn&apos;t affect the score positively, so I decide not to use it.&lt;/p&gt;
+&lt;h3 id=&quot;augmentation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#augmentation&quot; aria-label=&quot;augmentation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Augmentation&lt;/h3&gt;
+&lt;p&gt;Heavy augmentation works well. Light augmentation tends to overfit.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;v/hflip&lt;/li&gt;
+&lt;li&gt;scale / rotate&lt;/li&gt;
+&lt;li&gt;brightness / contrast&lt;/li&gt;
+&lt;li&gt;cutout (coarse dropout with large patch size)&lt;/li&gt;
+&lt;li&gt;mixup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;I couldn&apos;t spend much time running various experiments due to a lack of time &amp;#x26; computing resources. So, I only tested few backbones &amp;#x26; training recipes. (about 70% of my submissions are runtime errors &amp;#x26; mistakes lol)&lt;/p&gt;
+&lt;p&gt;Here&apos;s a full pipeline.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;pre-train segmentation model with the &lt;code class=&quot;language-text&quot;&gt;cbis-ddsm&lt;/code&gt; &amp;#x26; &lt;code class=&quot;language-text&quot;&gt;vindr&lt;/code&gt; datasets.
+&lt;ul&gt;
+&lt;li&gt;segment: provided RoI image.&lt;/li&gt;
+&lt;li&gt;label: &lt;code class=&quot;language-text&quot;&gt;malignant&lt;/code&gt; to cancer / &lt;code class=&quot;language-text&quot;&gt;BIRADS 5&lt;/code&gt; to cancer.&lt;/li&gt;
+&lt;/ul&gt;
+% Of course, the label doesn&apos;t perfectly correlate with the competition standards. But, I roughly think that maybe it could help train the model in some ways.&lt;/li&gt;
+&lt;li&gt;train with competition data (initialize the weight with the pre-trained model)
+&lt;ul&gt;
+&lt;li&gt;segment: inferred with the pre-trained model.&lt;/li&gt;
+&lt;li&gt;auxiliary: given meta-features (total 11 features).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;re-label the external data with the &lt;code class=&quot;language-text&quot;&gt;step 2&lt;/code&gt; model.&lt;/li&gt;
+&lt;li&gt;re-train with competition data (initialize with &lt;code class=&quot;language-text&quot;&gt;step 3&lt;/code&gt; model)&lt;/li&gt;
+&lt;li&gt;train a meta-classifier (oof + meta-features (e.g. laterality, age, ...))&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For a baseline, I run step 1 ~ 2, 5 and achieve CV 0.4885 LB 0.59 (PB 0.46). Also, I test only with the &lt;code class=&quot;language-text&quot;&gt;cbis-ddsm&lt;/code&gt; dataset for pre-training, and there were about 0.02 drops on CV &amp;#x26; LB, but the same score on PB (CV 0.4656 LB 0.57 PB 0.46).&lt;/p&gt;
+&lt;p&gt;A week before the deadline, I finished up to step ~ 5 and got CV 0.5012 LB 0.55 (PB 0.51). Sadly, I didn&apos;t choose it as a final submission : (&lt;/p&gt;
+&lt;p&gt;Last day of the competition, I ensembled &lt;code class=&quot;language-text&quot;&gt;effnet_v2_s&lt;/code&gt; backbone and got CV 0.5063 LB 0.56 (PB 0.49).&lt;/p&gt;
+&lt;p&gt;Lastly, I choose the best LB &amp;#x26; CV for the final submission.&lt;/p&gt;
+&lt;h3 id=&quot;meta-classifier&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#meta-classifier&quot; aria-label=&quot;meta classifier permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Meta-Classifier&lt;/h3&gt;
+&lt;p&gt;I built a meta-classifier with meta-features like age, laterality, and the (per-breast) statistics of the predictions. Usually, It gives ~ 0.02 improvements on the CV &amp;#x26; LB (also PB).&lt;/p&gt;
+&lt;p&gt;I&apos;m worried about overfitting into some meta-features (eg. machine id, (predicted) density, ...), so I decided to use only 3 auxiliary features (age, site_id, laterality) to train the model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;feature: age, site_id, laterality, (mean, std, min, max) of the predictions.&lt;/li&gt;
+&lt;li&gt;cv: stratified k fold (5 folds)&lt;/li&gt;
+&lt;li&gt;model: CatBoost&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;works&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#works&quot; aria-label=&quot;works permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Works&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;higher resolution (1536x768 ~ 1024) is good.&lt;/li&gt;
+&lt;li&gt;external data
+&lt;ul&gt;
+&lt;li&gt;it gives about +0.02 boosts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;architecture
+&lt;ul&gt;
+&lt;li&gt;encoder: backbone: &lt;code class=&quot;language-text&quot;&gt;effnet-b3&lt;/code&gt; works best&lt;/li&gt;
+&lt;li&gt;decoder: u-net++&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;augmentation&lt;/li&gt;
+&lt;li&gt;mixup (alpha 1.0)&lt;/li&gt;
+&lt;li&gt;loss
+&lt;ul&gt;
+&lt;li&gt;0.6 * cls_loss (cross_entropy) + 0.4 * seg_loss (dice) + 0.1 * aux_loss (cross-entropy)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;stratified group k fold (4 folds)&lt;/li&gt;
+&lt;li&gt;meta-classifier&lt;/li&gt;
+&lt;li&gt;TTA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;thanks for reading! I hope this could help you :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[(Kaggle) Detecting Continuous Gravitational Waves - 22th (top 2%) place solution]]></title><description><![CDATA[Original Post : https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927 Data Pre-Processing In…]]></description><link>http://kozistr.tech/detecting-continuous-gravitational-waves/</link><guid isPermaLink="false">http://kozistr.tech/detecting-continuous-gravitational-waves/</guid><pubDate>Tue, 03 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;Original Post : &lt;a href=&quot;https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;data&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data&quot; aria-label=&quot;data permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data&lt;/h2&gt;
@@ -1747,246 +1826,4 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 &lt;p&gt;기존 character-level 보다도 학습 속도가 빠르다는 것도 보여주고 있다.&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;tokenizer를 trainable 하도록 넣은 점에서 재밌는 연구였다. 아쉬운 점은 다른 architecture (e.g. encoder-only, ...)와 task에 대한 실험이 있었으면 좋았을 거 같고 inference 도 학습 연산량, 속도 이외에 더 다양한 자료가 있으면 실제로 얼마나 차이가 있는지 더 와닿지 않았을까 생각이 들었다.&lt;/p&gt;
-&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ByT5 - Towards a Token-Free Future with Pre-trained Byte-to-Byte Models]]></title><description><![CDATA[TL;DR paper : arXiv code : github Related Work CANINE mT5 paper Introduction 기존 LM 에서는 tokenizer 를 사용하고 있어 여러 측면에서 단점이 있는데, 이런 문제를 해결하기 위해 …]]></description><link>http://kozistr.tech/byt5/</link><guid isPermaLink="false">http://kozistr.tech/byt5/</guid><pubDate>Tue, 09 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;paper : &lt;a href=&quot;https://arxiv.org/abs/2105.13626&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;code : &lt;a href=&quot;https://github.com/google-research/byt5&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;related-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related-work&quot; aria-label=&quot;related work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Work&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2103.06874&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;CANINE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2010.11934&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;mT5 paper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;introduction&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;기존 LM 에서는 tokenizer 를 사용하고 있어 여러 측면에서 단점이 있는데, 이런 문제를 해결하기 위해 &lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; LM 모델을 제안했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; model 은 말대로 tokenizer 를 활용하지 않고 byte or character-level (utf-8 encoded) raw text 를 input 으로 받는 형태인데, 여러 장점이 존재합니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;tokenize 하는 code or service 를 관리할 필요가 없다. (서비스 복잡도가 낮아지고 운영 부담 줄어든다.)&lt;/li&gt;
-&lt;li&gt;OOV (Out-Of-Vocabular) case 가 없다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;특히 &lt;code class=&quot;language-text&quot;&gt;T5&lt;/code&gt; 같이 multi-lingual LM 인 경우에 더 유리&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;noisy-robust 하다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;그래서 이번 논문의 contributions 은 크게 3가지 입니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; model 시도&lt;/li&gt;
-&lt;li&gt;기존 &lt;code class=&quot;language-text&quot;&gt;token-based&lt;/code&gt; model 에서 최소한의 수정으로 가능하게끔 구현&lt;/li&gt;
-&lt;li&gt;여러 metrics, measurements 에서 &lt;code class=&quot;language-text&quot;&gt;token-based&lt;/code&gt; 에 comparable (or outperform) 한 architecture design&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#architecture&quot; aria-label=&quot;architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h2&gt;
-&lt;h3 id=&quot;pretraining&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pretraining&quot; aria-label=&quot;pretraining permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pretraining&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c6f74c824429862342e8c556830ae1aa/b59fb/pretrain_stage.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABmElEQVR42jWPyY7UMBiE8/5Pwitw4IIQBzQgBOqeIZ1l0okTL7EdO3G8+0c9A3WoU32qqgoA9n1XSgGAc06sBKOBLuO6Ms65lKLve8651vo9KYSA/6oAIOecUgKAAiDG55+fPrRPH73dU8rWWkqpc85aa8zpnHPmzD7kEHKMVUrpvURwrtmq5gn3N9Td3Gm0lFPTzH0/te3z5fJa16RtWdPgpkEvL4rSCkpZ17Xruq7thq7d7qNsWkloCiHnbIyZppESLBk7KD3n+UCID8PG2L/ZMUatNcaLFIIQzClJMZVSUnp4jMl7r5Q6jVFCbFyUGMrbzcoYM473GSGMkLf22PX22u94yW+y9lz5SilZ8eK9P5RSBO8zcoI/4PM8KaHbKsxuQogxlVMfzsWcSynFHIZgwgk1h0kp2pXJ/lWMkz/tA84533l/vf+ql+t2yKg7uTwd9IczBApIw2t0/TNd8IYeB4Oh6PfQft/YLedYlVKIXAbcjWw47B4MVqw+ROPtBgBUL9/qL18vn3t2KwVKycFb720IDqD8Bf58+QVrFIw3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/c6f74c824429862342e8c556830ae1aa/fcda8/pretrain_stage.png&quot;
-        srcset=&quot;/static/c6f74c824429862342e8c556830ae1aa/12f09/pretrain_stage.png 148w,
-/static/c6f74c824429862342e8c556830ae1aa/e4a3f/pretrain_stage.png 295w,
-/static/c6f74c824429862342e8c556830ae1aa/fcda8/pretrain_stage.png 590w,
-/static/c6f74c824429862342e8c556830ae1aa/efc66/pretrain_stage.png 885w,
-/static/c6f74c824429862342e8c556830ae1aa/c83ae/pretrain_stage.png 1180w,
-/static/c6f74c824429862342e8c556830ae1aa/b59fb/pretrain_stage.png 1285w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;위 이미지가 &lt;code class=&quot;language-text&quot;&gt;PLM&lt;/code&gt; 만드는 방법인데, &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; architecture 를 base 로 합니다. &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; vs &lt;code class=&quot;language-text&quot;&gt;ByT5&lt;/code&gt; 를 비교하는데, 다음과 같은 차이가 있습니다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;architecture / features&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;text&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;mask&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;enc/dec&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;mT5&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;SentencePiece&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;~ 3 subword tokens&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;equal depth (&lt;code class=&quot;language-text&quot;&gt;enc&lt;/code&gt; = &lt;code class=&quot;language-text&quot;&gt;dec&lt;/code&gt;)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;ByT5&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;raw text (utf-8 encoded)&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;~ 20 bytes&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;enc&lt;/code&gt; is &lt;strong&gt;3x&lt;/strong&gt; deeper than &lt;code class=&quot;language-text&quot;&gt;dec&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;recipe 에 주목할 만한 차이점이면, 기존 (mT5) 에는 ~ 3 tokens 를 mask 했다면 이번 연구에선 성능상 더 이점이 있어서 더 긴 길이를 (~ 20 bytes) mask 했습니다.&lt;/p&gt;
-&lt;p&gt;또한, encoder 가 decoder 보다 3x 더 깊은데 이것도 실험 결과 byte-level models 에선 encoder 가 더 깊은 게 좋다고 합니다.&lt;/p&gt;
-&lt;h3 id=&quot;design-and-costs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#design-and-costs&quot; aria-label=&quot;design and costs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Design and costs&lt;/h3&gt;
-&lt;p&gt;token 에서 byte-level character 로 바뀌면서 architecture design &amp;#x26; recipe 에 차이가 생길겁니다. 크게 3가지가 변경점이 있을 텐데,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;softmax-layer (output matrices) at the &lt;code class=&quot;language-text&quot;&gt;Decoder&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;sequence-length (~ attention)&lt;/li&gt;
-&lt;li&gt;data efficiency&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;softmax-layer-at-the-code-classlanguage-textdecodercode&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#softmax-layer-at-the-code-classlanguage-textdecodercode&quot; aria-label=&quot;softmax layer at the code classlanguage textdecodercode permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;softmax-layer at the &lt;code class=&quot;language-text&quot;&gt;Decoder&lt;/code&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;mT5-base&lt;/code&gt; 기준으로 decoder 에 output matrices 부분의 parameter 가 전체 모델의 parameter 대비 66% 를 차지합니다 (토큰 수가 많아서).
-그런데, &lt;code class=&quot;language-text&quot;&gt;ByT5&lt;/code&gt; 는 byte-level output 을 주기 때문에 parameter 가 훨 작은데, 논문에서는 &lt;em&gt;동일한 parameter 규모를 가정&lt;/em&gt;하면 transformer layer 를 더 쌓거나 hidden size 를 더 크게 가져가는 등 complexity 측면에서 이득을 볼 수 있다고 합니다.&lt;/p&gt;
-&lt;h4 id=&quot;sequence-length&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sequence-length&quot; aria-label=&quot;sequence length permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;sequence length&lt;/h4&gt;
-&lt;p&gt;byte-level 로 가면서 token 보다 sequence length 가 길어질텐데, time &amp;#x26; space complexity 가 heavy 해 질 수 있다. 무언가 이걸 해결하기 위한 가볍고 빠른 attention 을 utilize 하지는 않은 듯 합니다.&lt;/p&gt;
-&lt;h4 id=&quot;data-efficiency&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data-efficiency&quot; aria-label=&quot;data efficiency permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;data efficiency&lt;/h4&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/52576/per_language_compression_rates.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABQElEQVR42oWKO0/CUABG+1OM0cFJR3+Bm5txYzEhDu4aYhxYHDXxEeSV8FAmTUwEEYoB4gOVYqVCQh+3t22cdJBBSu+zppHdkzN8OfmEZEMbI+z7Pp/AOKecUUYJpYSSQEJwIA78w0PIdcfCQrS6lmmn7+Gl/NHUvvTPnxGmjPvc/wdCiDAfvZmJlKa2itOR0uz29dxOeXG3trTXXD68W4k9rMYfQ6nnUPppLfMSzkrhnLSelzYKnc3zbqEFhVxdOW32z5r9fF3JN3rZei8lykmxm759T4rdhKicVORETYlX345K0kGxfVx+jVXk/avORWsgMEoYxZziyWCEIJcRxCcRU4wYQT6jxHOxN6LY4yx4MoIE23GACQeqqmo6tGzdACaEJrSAaWq6AYBp2Y5uAMt2NANAyzKAqeqGphvfw+EvtVYsOpGzzfAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/fcda8/per_language_compression_rates.png&quot;
-        srcset=&quot;/static/0c8294b6b80a5a67ccf151707462d2ad/12f09/per_language_compression_rates.png 148w,
-/static/0c8294b6b80a5a67ccf151707462d2ad/e4a3f/per_language_compression_rates.png 295w,
-/static/0c8294b6b80a5a67ccf151707462d2ad/fcda8/per_language_compression_rates.png 590w,
-/static/0c8294b6b80a5a67ccf151707462d2ad/efc66/per_language_compression_rates.png 885w,
-/static/0c8294b6b80a5a67ccf151707462d2ad/c83ae/per_language_compression_rates.png 1180w,
-/static/0c8294b6b80a5a67ccf151707462d2ad/52576/per_language_compression_rates.png 1412w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;(mC4 dataset 기준) 언어 토큰 별 평균 byte 길이를 보여주는 건데, 2.5 ~ 9 bytes 에 평균 4 bytes 라고 합니다. 즉, 다른 모델과 같은 세팅으로 훈련하게 된다면 (fixed sequence length, training steps) 4 배 짧은 문장을 학습하게 됩니다. (e.g. 512 tokens -&gt; 128 tokens)&lt;/p&gt;
-&lt;h2 id=&quot;performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#performance&quot; aria-label=&quot;performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
-&lt;h3 id=&quot;glue-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#glue-benchmark&quot; aria-label=&quot;glue benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GLUE benchmark&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b26293e17b6cb2de0721cec3955702b7/8c557/glue_performance.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 68.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACH0lEQVR42nWS6W7iQBCEef8X20gQlAV7bs/p8YHBM+MDX8GsSJRklc3Wj1arpa+7SurN/UPDMNR17Zxz3ldVJYRI0zSEUJalMalWSkpZlmXTNJ/I5rNb13We59fX13Vd69oZY6y1y7J0XQcAkFJywduuu/+lL3ieJ8qotVnXdVLJruuUUlVVhRCKomjbRintnLvdbt/g9X6/X689IURr3baNECI0zW67TdO0KArOhXduv9+fqmqaph8uT9MEIWyaZhxHSum8LPv9vijKrm2U1vM875+fnQ/vAf+1PROCnXMh+N1uN46TUtJ7n9s0AnCaJsbIdRj/k3maCCG3dXWu/vX0tCzLW4TOpvr34TjPM6V0GKef4WEYMEbl6VSdTnEMvPdCiPP5bLQCEF4uF4xxVZ37vv+Cu7a91PU4jsMwhBDatnXONU0TQrj2vfe+bdtr3/f9o1wuF+d8/zYfhmGT2XS73RpjpJT0IQJAfDxGjDEIAYQwimJCiJCSJUkcRVIIzvnhcEjTdGOtxQhBiJIkybJMSiUEF1ISjBDGCEKldVkWCWOcS/ao3NrseDwYbTZ5ngMAKKXG6MymcQwIxlmeKykxxlEcvZvCGCcJZ4xSQpTWCKOPyxhTxozWlNIkSQghlLI8zwh5RECY5HnOOQcAEEIYpUKIh0elNlmWIYSUlJzzOI6tzRDCLy8v7G2dMYYxJpUyRgshE84RhNZm76/yB6ph/3qUhmi/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/b26293e17b6cb2de0721cec3955702b7/fcda8/glue_performance.png&quot;
-        srcset=&quot;/static/b26293e17b6cb2de0721cec3955702b7/12f09/glue_performance.png 148w,
-/static/b26293e17b6cb2de0721cec3955702b7/e4a3f/glue_performance.png 295w,
-/static/b26293e17b6cb2de0721cec3955702b7/fcda8/glue_performance.png 590w,
-/static/b26293e17b6cb2de0721cec3955702b7/8c557/glue_performance.png 700w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;small, base 모델은 &lt;code class=&quot;language-text&quot;&gt;ByT5&lt;/code&gt; model 이 좋은데, 커 질수록 &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; 가 더 좋다. 그런데, 작은 모델에서 &lt;code class=&quot;language-text&quot;&gt;mT5&lt;/code&gt; 가 성능이 좋지 못한 이유가 decoder output layer 크기가 압도적으로 커서 다른 부분이 집중을 못 하는 issue 가 있다라고 해서, 사실상 그냥 comparable 하다라 보는 게 적절하다 생각함&lt;/p&gt;
-&lt;h3 id=&quot;generation-benchmark&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#generation-benchmark&quot; aria-label=&quot;generation benchmark permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generation benchmark&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/0fcea/generation_performance.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB3klEQVR42jWR626jMBBGef83y6ptioOKbxhIE9tA8G1sTNK0dNvsnn/zaTQafadYlsVaG2OUUhKMRdNwzp334zC0bcs5v1wuABBC8N4TQhhnAcA5l1Iqtv/c73dM8H6/n6bLtm1aq7IshRAxpcdCCIFRihB6JF9fX8X1eh3HMcYIAOMwzPMslVrXVWtlrR2GYZqmbductVrrz8/PnLOU0jm3bVsBAFVVKaWGQWs9WGuFEN77ruu8c20rzudzCKFtu/Pp5EMYhgFj3DTNz9sRAGOcczZmno1Zc65rfL/f+75f1ysl+OeK95Syvusul7lp+H6/3+12AFDEGCmlS16tNcbYZVkO1eF2+3h/f7/ebozSrj8+6lRSOuumcSSEVFXlvS9CCJzzbdu890rrGOH56el6+6CU5LwyShjj1rm+76WUAYBS+vr6utv98SEUKcW6ximlaZqUUsYYhFBKS9u2xpi+7yhjzrnT6cQZ01pjXJeofH55McYUD4HOuRijMcZ7H2O01s7zDAAPC+EfHgBSSo8w51xwzjHG5qeumTGmpDSzwbg+/9J1HSFYSlnXNUJIiJZxVmOMMZFSFg3njRBKycPhgAnpuu7t7Y1zfjwehRDtL48RobJEqPkFAP56/ga471ZceJovOgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/fcda8/generation_performance.png&quot;
-        srcset=&quot;/static/07a106d47a9f8fd4e991b12ebd45f82b/12f09/generation_performance.png 148w,
-/static/07a106d47a9f8fd4e991b12ebd45f82b/e4a3f/generation_performance.png 295w,
-/static/07a106d47a9f8fd4e991b12ebd45f82b/fcda8/generation_performance.png 590w,
-/static/07a106d47a9f8fd4e991b12ebd45f82b/0fcea/generation_performance.png 851w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;generation task 에선 잘한다.&lt;/p&gt;
-&lt;h3 id=&quot;inference-speed&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#inference-speed&quot; aria-label=&quot;inference speed permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inference Speed&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4add87609bc4a359a4f4d011bd229a01/ad12c/inference_speed.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 65.54054054054055%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACKUlEQVR42k2SyY7jMAxE8/+/1Tn0XCbTnXiTLImytdiOrEReZCfeBu4EmKkTCeIVyAIP27Z57621t9vNOWeMSdOUAyilpJTWWuec1poxyjkXUmit8zzvum7btsP2n+Z5vlZVnguR50JKY8w0zdu2FlpLKYtCZ1lmrR3HcV3XNzzP8/P5nOfZOQcA8zyb65Ux1vf9NE3DMACwtuv7vmeM1bWdfvSGvffn8znPc2NMEAT3uyOEUMoopUII731VlcbUXdchhJRSANA0zRuepim4XJxzy7JQQtZtK7ROCdFaXc11XdeM8/vdDcOAML5WlVLKD8MbXpYFY2SMWdcFYzzPizFXQqmQsqyqZVkZpdbarm1TQsqikFL8gx+PRxAGw7j3WqnH49l3LcYYOBRlOY7jn9OptlYKcblchBDAwHv/hvu+D8NQKdU0jRCirm1ZloRSAHgFkSSJLgrOOcZplmWMsdvttsNt29Z1PY5j13XOOe+9c65tmnEY2qbx3u/1Pm3btu3advjR/X7vuu6glPr6+iKE5LmI4ySKojAM4zjGOI2jGIBjjCiDMAjO399BEFBKs4wjhHRRHLTSCKEkSYpCn06/MUKUsV+fn0EQUkLTlGRZRglJEAIAQmjyI4RwXdcHRinnmVaKEMKzDACUlMePj+PxqJWK4jhJ9nUAgAGEYbjvKHIGYIw5KCkppRglUZwA5y+XIAjTlHAOL0fO+X5IiqMosnaP6vWefwE+zMVILBNbMQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/4add87609bc4a359a4f4d011bd229a01/fcda8/inference_speed.png&quot;
-        srcset=&quot;/static/4add87609bc4a359a4f4d011bd229a01/12f09/inference_speed.png 148w,
-/static/4add87609bc4a359a4f4d011bd229a01/e4a3f/inference_speed.png 295w,
-/static/4add87609bc4a359a4f4d011bd229a01/fcda8/inference_speed.png 590w,
-/static/4add87609bc4a359a4f4d011bd229a01/ad12c/inference_speed.png 856w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;train은 조금 느리고, inference는 더 많이 느리다.&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;개인적으론 &lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; model 접근은 재밌었지만 (&lt;code class=&quot;language-text&quot;&gt;token-free&lt;/code&gt; 개념 자체는 처음이 아니지만), utf-8 encoded bytes 를 input 으로 넣어주면서 다른 &lt;code class=&quot;language-text&quot;&gt;token-based&lt;/code&gt; model 대비 상대적으로 짧은 sequences 를 다루게 되면서 이 부분은 아쉬웠고, 일반적인 상황에서의 사용성을 생각하면 현재 연구 자체로는 너무 specific 하다고 생각한다. short-medium length 의 multi-lingual tranlsation 에만 적합한 느낌.&lt;/p&gt;
-&lt;p&gt;저자 왈 단점 때문에 속도가 느려지는 게 toeknizer 운영 cost 생각하면 괜찮지 않나? 라는 입장도 어느 정도 reasonable 하다 생각한다.&lt;/p&gt;
-&lt;p&gt;그래도 후속 연구에서 generation &amp;#x26; translation tasks 에 한정이 아닌 general manner 하면서 performance 도 comparable 한 무언가가 나오지 않을까?&lt;/p&gt;
-&lt;p&gt;결론 : 굳&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;결론 : 굳굳&lt;/p&gt;</content:encoded></item></channel></rss>
