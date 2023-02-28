@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-02-21
+update: 2023-02-28
 tags:
   - About
   - CV
@@ -13,9 +13,10 @@ keywords:
 
 ## Profile
 
-Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
+* Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
+* Job offering is welcome! feel free to mail me.
 
-CV : [[PDF] (as of Dec. 2022)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of Feb. 2023)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -28,12 +29,12 @@ CV : [[PDF] (as of Dec. 2022)](http://kozistr.tech/cv.pdf)
 
 ## Interests
 
-- Lots of real-world challenges like **Kaggle**
-- Audio/Speech Domains
-  - End to End Speaker Diarization
-  - Speaker Verifications
-- Computer Vision Domains
-  - especially the medical domain
+* Lots of real-world challenges like **Kaggle**
+* Audio/Speech Domains
+  * End to End Speaker Diarization
+  * Speaker Verifications
+* Computer Vision Domains
+  * especially the medical domain
 
 Previously, I was also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
 
@@ -45,6 +46,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 - **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
 
+  > - [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) - **solo, top 1% (16 / 1720), Private 0.49** - [solution]() (2023.)
   > - [G2Net Detecting Continuous Gravitational Waves](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves) - **solo, top 2% (22 / 936), Private 0.771** - [solution](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/375927) (2023.)
   > - [American Express - Default Prediction](https://www.kaggle.com/competitions/amex-default-prediction) - **solo, top 3% (135 / 4875), Private 0.80758** - [solution](https://www.kaggle.com/competitions/amex-default-prediction/discussion/347996) (2022.)
   > - [Google Brain - Ventilator Pressure Prediction](https://www.kaggle.com/c/ventilator-pressure-prediction) - **team, top 1% (20 / 2605), Private 0.1171** - [solution](https://www.kaggle.com/c/ventilator-pressure-prediction/discussion/285295#1570360) (2021.)
@@ -91,33 +93,33 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
-- CSS model for Loan Comparison product.
-  - Developed a CSS model only with non-financial data.
-  - Outperformed about **3 ~ 4%p** (on the primary metric) compared with the previous method.
-- Perosnal CSS model for the CB.
-  - Developed a more accurate & robust CSS model for more general targets like thin-filer and thick-filer.
-  - Outperformed about **15%** (on the primary metric) compared with the previous method.
-- Classify the category of the user review for the NPS (Net Performer Score) product.
-  - Developed the RESTful API server to infer the deep learning model for the batch job.
-  - Saved analysis time and labor of the NPS team a lot.
-- OCR model to break captchas for the automation product.
-  - Developed the lightweight models (text detector & captcha classifier) for inference in real-time (about `1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU) and built the RESTful API server to serve the model in real-time on the CPU.
-  - In the A/B test, `google vision OCR` vs `New Captcha Model`
-    - **Accuracy** : improved **50%p** (`45%` to `95%`)
-    - **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
-    - **Revenue** : reduced cost by about **$7,000 ~ / year**
-- User consumption forecasting model for the *CDP Product.
-  - Developed the Transformer based sequential model that predicts what the users will consume in the next month.
-  - Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
-  - In the A/B test, the new model achieved...
-- CSS model for BNPL (Buy Now Pay Later) service.
-  - Developed the **CSS model** (default prediction), mainly targeted to the **thin-filer**. The new model achieved the targeted **default rate of about 1%**.
-  - Developed the **explainer** to describe which factors **affect the rejection**.
-- Transaction category classification model to boost the advertisement.
-  - Developed the ads category classifier that **increases revenue** in a roundabout way.
-- Internal product, The Slack bot that summarizes the long slack threads
-  - help people to **understand the context** quickly with minimum effort.
-- Working as full-time.
+* CSS model for Loan Comparison product.
+  * Developed a CSS model only with non-financial data.
+  * Outperformed about **3 ~ 4%p** (on the primary metric) compared with the previous method.
+* Perosnal CSS model for the CB.
+  * Developed a more accurate & robust CSS model for more general targets like thin-filer and thick-filer.
+  * Outperformed about **15%** (on the primary metric) compared with the previous method.
+* Classify the category of the user review for the NPS (Net Performer Score) product.
+  * Developed the RESTful API server to infer the deep learning model for the batch job.
+  * Saved analysis time and labor of the NPS team a lot.
+* OCR model to break captchas for the automation product.
+  * Developed the lightweight models (text detector & captcha classifier) for inference in real-time (about `1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU) and built the RESTful API server to serve the model in real-time on the CPU.
+  * In the A/B test, `google vision OCR` vs `New Captcha Model`
+    * **Accuracy** : improved **50%p** (`45%` to `95%`)
+    * **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
+    * **Revenue** : reduced cost by about **$7,000 ~ / year**
+* User consumption forecasting model for the *CDP Product.
+  * Developed the Transformer based sequential model that predicts what the users will consume in the next month.
+  * Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
+  * In the A/B test, the new model achieved...
+* CSS model for BNPL (Buy Now Pay Later) service.
+  * Developed the **CSS model** (default prediction), mainly targeted to the **thin-filer**. The new model achieved the targeted **default rate of about 1%**.
+  * Developed the **explainer** to describe which factors **affect the rejection**.
+* Transaction category classification model to boost the advertisement.
+  * Developed the ads category classifier that **increases revenue** in a roundabout way.
+* Internal product, The Slack bot that summarizes the long slack threads
+  * help people to **understand the context** quickly with minimum effort.
+* Working as full-time.
 
 % `*CDP`: Customer Data Platform. Lots of user segments generated by the ML models.
 
