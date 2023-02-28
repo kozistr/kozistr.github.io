@@ -21,7 +21,7 @@ keywords:
 
 My preprocessing code heavily depends on the public notebooks (eg. remove letters, crop breast via contour).
 
-1. decode `.dicom` to `.jpeg` with `dicomsdl` & `nvjpeg2000`.
+1. decode `.jpeg` with `dicomsdl` & `nvjpeg2000`.
 2. crop edge (margin pixel 10)
 3. extract breast with `opencv2` (contour based)
 4. resize to 1536x960. (I roughly guess that resizing into a 1.5 ~ 2.0 aspect ratio is fine.)
