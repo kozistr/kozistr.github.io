@@ -4,7 +4,7 @@ Here's [blog](http://kozistr.tech)
 
 ## Specs
 
-* Gatsby v5
+* Gatsby 5
 * Node 18
 * React 18
 * pnpm
@@ -14,6 +14,7 @@ Here's [blog](http://kozistr.tech)
 * Giscus
 * support MD & MDX
 * time to read with coffee emoji
+* google analytics with gtag
 
 ## Packages
 
