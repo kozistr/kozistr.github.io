@@ -136,7 +136,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
 * Watcha recommendation system to offer a better user experience and increase `paid conversion`.
-  * Developed the **advanced the training recipe & architecture** to improve training stability and offline performance. Also, working on **post-processing** to recommend unseen content to users. In the A/B test, the new model boosts the **Click Ratio** online metric by about **1.01%+**.
+  * Developed the **advanced the training recipe & architecture** to improve training stability and the performance. Also, working on **post-processing** to recommend unseen content to users. In the A/B test, the new model boosts the **Click Ratio** by about **1.01%+**.
   * Developed the network to capture the active time of user while the augmentations bring the training stability and performance gain. In the A/B/C test, the new model beats `Div2Vec` in the online metrics while achieving comparable performance with the previous model (A: [Div2Vec](https://arxiv.org/abs/2009.09588), B: the previous model, C: the new model).
     * **\*Viewing Days** (mean): improved **1.012%+**
     * **\*Viewing Minutes** (median): improved **1.015%+**
@@ -146,7 +146,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     * **\*Viewing Minutes** (median): improved **4.10%p+**
     * **Click Ratio** : improved **4.30%p+**
     * **Play Ratio** : improved **2.32%p+**
-* Face recognition model to find actors from the poster & still-cut images for the Watcha Pedia product.
+* Face recognition architecture to find actors from the poster & still-cut images for the Watcha Pedia product.
   * Developed the pipeline to identify & recognizing actor faces from the images with the face detection & identification deep learning models (similarity-based searching).
   * Built a daily job that runs on the CPU. Also, optimize CPU-intensive operations to run fast.
 * Internal product to predict expected users' view-time of the content.
