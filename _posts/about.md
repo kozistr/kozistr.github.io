@@ -105,7 +105,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 * CSS model for Loan Comparison product.
   * Developed a CSS model only with non-financial data.
   * Outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
-* Perosnal CSS model for the CB.
+* CSS model for the Perosnal CB.
   * Developed a more accurate & robust CSS model, mainly targeting the thin-filer.
   * Outperformed about **15%** (on the primary metric) compared with the previous method.
 * Classify the category of the user review for the NPS (Net Performer Score) product.
@@ -117,7 +117,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
     * **Accuracy (top1)** : improved **50%p** (`45%` to `95%`)
     * **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
     * **Revenue** reduced cost by about **$7,000 ~ / year**
-* User consumptio :n forecasting model for the *CDP Product.
+    * It also elaborates on decreasing a funnel and increasing user conversion.
+* User consumption forecasting model for the *CDP Product.
   * Developed the Transformer based sequential model that predicts what the users will consume in the next month.
   * Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
   * In the A/B test, the new model achieved ...
@@ -135,8 +136,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 #### _Machine Learning Researcher_, **Watcha**, **(2020.06.22 ~ 2021.12.03)**
 
 * Watcha recommendation system to offer a better user experience and increase `paid conversion`.
-  * Developed the **advanced the training recipe & architecture** to improve training stability and offline performance. Also, worked on **post-processing** to recommend unseen content to users. In the A/B test, the new model boosts the **Click Ratio** online metric by about **1.01%+**.
-  * Developed the network to capture the user's active time while the augmentations bring the training stability and performance gain. In the A/B/C test, the new model beats `Div2Vec` in the online metrics while achieving comparable performance with the previous model (A: [Div2Vec](https://arxiv.org/abs/2009.09588), B: the previous model, C: the new model).
+  * Developed the **advanced the training recipe & architecture** to improve training stability and offline performance. Also, working on **post-processing** to recommend unseen content to users. In the A/B test, the new model boosts the **Click Ratio** online metric by about **1.01%+**.
+  * Developed the network to capture the active time of user while the augmentations bring the training stability and performance gain. In the A/B/C test, the new model beats `Div2Vec` in the online metrics while achieving comparable performance with the previous model (A: [Div2Vec](https://arxiv.org/abs/2009.09588), B: the previous model, C: the new model).
     * **\*Viewing Days** (mean): improved **1.012%+**
     * **\*Viewing Minutes** (median): improved **1.015%+**
   * Developed the sequential recommendation architecture to recommend what content to watch next. It achieved SOTA performance compared to the previous SOTA architecture like BERT4Rec. In the A/B test, the new model outperforms by the following metrics (A: previous algorithm, B: the new model).
@@ -149,7 +150,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
   * Developed the pipeline to identify & recognizing actor faces from the images with the face detection & identification deep learning models (similarity-based searching).
   * Built a daily job that runs on the CPU. Also, optimize CPU-intensive operations to run fast.
 * Internal product to predict expected users' view-time of the content.
-  * Before the content is imported, the model gives an insight into the valuation of the content like expected view-time affecting the cost of the content.
+  * Before the content is imported, the model gives an insight into the valuation of the content, like expected view-time affecting the cost of the content.
 * Internal product to help designer's works
   * Developed the image super-resolution model to upscale the image more accurately and faster (e.g., waifu).
 * Music recommendation system for `Watcha Music` (prototype)
