@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-02-28
+update: 2023-03-23
 tags:
   - About
   - CV
@@ -14,9 +14,9 @@ keywords:
 ## Profile
 
 * Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
-* Job offering is welcome! feel free to mail me.
+* Offering a job is welcome! feel free to mail me.
 
-CV : [[PDF] (as of Feb. 2023)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of Mar. 2023)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -33,8 +33,6 @@ CV : [[PDF] (as of Feb. 2023)](http://kozistr.tech/cv.pdf)
 * Audio/Speech Domains
   * End to End Speaker Diarization
   * Speaker Verifications
-* Computer Vision Domains
-  * especially the medical domain
 
 Previously, I was also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
 
@@ -106,23 +104,23 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 * CSS model for Loan Comparison product.
   * Developed a CSS model only with non-financial data.
-  * Outperformed about **3 ~ 4%p** (on the primary metric) compared with the previous method.
+  * Outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
 * Perosnal CSS model for the CB.
-  * Developed a more accurate & robust CSS model for more general targets like thin-filer and thick-filer.
+  * Developed a more accurate & robust CSS model, mainly targeting the thin-filer.
   * Outperformed about **15%** (on the primary metric) compared with the previous method.
 * Classify the category of the user review for the NPS (Net Performer Score) product.
   * Developed the RESTful API server to infer the deep learning model for the batch job.
-  * Saved analysis time and labor of the NPS team a lot.
+  * Saved analysis time and labor of the NPS team.
 * OCR model to break captchas for the automation product.
   * Developed the lightweight models (text detector & captcha classifier) for inference in real-time (about `1000 TPS` for a batch transaction, `80 ~ 100 TPS` for a sample on the CPU) and built the RESTful API server to serve the model in real-time on the CPU.
   * In the A/B test, `google vision OCR` vs `New Captcha Model`
-    * **Accuracy** : improved **50%p** (`45%` to `95%`)
+    * **Accuracy (top1)** : improved **50%p** (`45%` to `95%`)
     * **latency (p95)** : reduced by **80x** (about `1000ms` to `12ms`)
     * **Revenue** reduced cost by about **$7,000 ~ / year**
 * User consumptio :n forecasting model for the *CDP Product.
   * Developed the Transformer based sequential model that predicts what the users will consume in the next month.
   * Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
-  * In the A/B test, the new model achieved...
+  * In the A/B test, the new model achieved ...
 * CSS model for BNPL (Buy Now Pay Later) service.
   * Developed the **CSS model** (default prediction), mainly targeted to the **thin-filer**. The new model achieved the targeted **default rate of about 1%**.
   * Developed the **explainer** to describe which factors **affect the rejection**.
@@ -138,7 +136,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 * Watcha recommendation system to offer a better user experience and increase `paid conversion`.
   * Developed the **advanced the training recipe & architecture** to improve training stability and offline performance. Also, worked on **post-processing** to recommend unseen content to users. In the A/B test, the new model boosts the **Click Ratio** online metric by about **1.01%+**.
-  * Developed the network to capture the user active time while the augmentations bring the training stability and performance gain. In the A/B/C test, the new model beats `Div2Vec` in the online metrics while achieved a comparable performance with the previous model (A: [Div2Vec](https://arxiv.org/abs/2009.09588), B: the previous model, C: the new model).
+  * Developed the network to capture the user's active time while the augmentations bring the training stability and performance gain. In the A/B/C test, the new model beats `Div2Vec` in the online metrics while achieving comparable performance with the previous model (A: [Div2Vec](https://arxiv.org/abs/2009.09588), B: the previous model, C: the new model).
     * **\*Viewing Days** (mean): improved **1.012%+**
     * **\*Viewing Minutes** (median): improved **1.015%+**
   * Developed the sequential recommendation architecture to recommend what content to watch next. It achieved SOTA performance compared to the previous SOTA architecture like BERT4Rec. In the A/B test, the new model outperforms by the following metrics (A: previous algorithm, B: the new model).
@@ -192,7 +190,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 ### Out Sourcing
 
 * Developed Korean University Course Information Web Parser (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
-* Developed AWS CloudTrail logger analyzer / formatter. **(2019.09 ~ 2019.10)**
+* Developed AWS CloudTrail logger analyzer. **(2019.09 ~ 2019.10)**
 
 ### Lab
 
@@ -208,7 +206,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 [1] **Kim** et al, [CNN Architecture Predicting Movie Rating](http://ktccs.kips.or.kr/digital-library/23245), 2020. 01.
 
-* Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to TextCNN model, brings performance gain over the task while keeping its latency, generally.
+* Wrote about the CNN Architecture, which utilizes a channel-attention method (SE Module) to the TextCNN model, bringing performance gain over the task while keeping its latency, generally.
 * Handling un-normalized text with various convolution kernel sizes and spatial dropout
 * Selected as one of the `highlight papers` for the first half of 2020
 
@@ -283,7 +281,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 * **pytorch-optimizer** :: Bunch of optimizer implementations in PyTorch
 
-  > * **pytorch_optimizer** :: Bunch of optimizer implementations in PyTorch with clean-code, strict types. Also, including useful optimization ideas. Most of the implementations are based on the original paper, but I added some tweaks. :: [code](https://github.com/kozistr/pytorch_optimizer)
+  > * **pytorch_optimizer** :: Bunch of optimizer implementations in PyTorch with clean-code, strict types. Also, includes useful optimization ideas. Most of the implementations are based on the original paper, but I added some tweaks. :: [code](https://github.com/kozistr/pytorch_optimizer)
 
 * **AdaBound** :: Optimizer that trains as fast as Adam and as good as SGD
 
@@ -305,6 +303,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 * [deit](https://github.com/facebookresearch/deit) :: DeiT: Data-efficient Image Transformers :: [#140](https://github.com/facebookresearch/deit/pull/140), [#147](https://github.com/facebookresearch/deit/pull/147), [#148](https://github.com/facebookresearch/deit/pull/148)
 * [MADGRAD](https://github.com/facebookresearch/madgrad) :: MADGRAD Optimization Method :: [#11](https://github.com/facebookresearch/madgrad/pull/11)
 * [tensorflow-image-models](https://github.com/martinsbruveris/tensorflow-image-models) :: TensorFlow Image Models (tfimm) is a collection of image models with pretrained weights, obtained by porting architectures from timm to TensorFlow :: [#61](https://github.com/martinsbruveris/tensorflow-image-models/pull/61)
+* [onnx2tf](https://github.com/PINTO0309/onnx2tf) :: Self-Created Tools to convert ONNX files (NCHW) to TensorFlow/TFLite/Keras format (NHWC). The purpose of this tool is to solve the massive Transpose extrapolation problem in onnx-tensorflow (onnx-tf) :: [#259](https://github.com/PINTO0309/onnx2tf/pull/259)
 
 ### Plug-Ins
 
