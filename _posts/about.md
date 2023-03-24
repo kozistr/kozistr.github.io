@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-03-23
+update: 2023-03-24
 tags:
   - About
   - CV
@@ -121,7 +121,6 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 * User consumption forecasting model for the *CDP Product.
   * Developed the Transformer based sequential model that predicts what the users will consume in the next month.
   * Build an efficient pipeline to process and train lots of tabular data (about 500 GB).
-  * In the A/B test, the new model achieved ...
 * CSS model for BNPL (Buy Now Pay Later) service.
   * Developed the **CSS model** (default prediction), mainly targeted to the **thin-filer**. The new model achieved the targeted **default rate of about 1%**.
   * Developed the **explainer** to describe which factors **affect the rejection**.
