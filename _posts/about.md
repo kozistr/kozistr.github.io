@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-03-24
+update: 2023-05-02
 tags:
   - About
   - CV
@@ -16,7 +16,7 @@ keywords:
 * Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
 * Offering a job is welcome! feel free to mail me.
 
-CV : [[PDF] (as of Mar. 2023)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of May. 2023)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -27,12 +27,9 @@ CV : [[PDF] (as of Mar. 2023)](http://kozistr.tech/cv.pdf)
 | Kaggle   | [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr)           |
 | Linkedin | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr) |
 
-## Interests
+## Recent Interests
 
 * Lots of real-world challenges like **Kaggle**
-* Audio/Speech Domains
-  * End to End Speaker Diarization
-  * Speaker Verifications
 
 Previously, I was also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
 
@@ -43,6 +40,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 ### Machine Learning
 
 * **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
+
+  > [Google - Isolated Sign Language Recognition](https://www.kaggle.com/competitions/asl-signs) - **sole, top 5% (63 / 1165), Private 0.8377** - (2023.)
 
   > [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) - **solo, top 1% (16 / 1687), Private 0.49** - [solution](https://www.kaggle.com/competitions/rsna-breast-cancer-detection/discussion/391133) (2023.)
 
@@ -102,6 +101,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
 
+* Develop TPS (Toss Profile Service) product.
 * CSS model for Loan Comparison product.
   * Developed a CSS model only with non-financial data.
   * Outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
@@ -304,6 +304,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 * [MADGRAD](https://github.com/facebookresearch/madgrad) :: MADGRAD Optimization Method :: [#11](https://github.com/facebookresearch/madgrad/pull/11)
 * [tensorflow-image-models](https://github.com/martinsbruveris/tensorflow-image-models) :: TensorFlow Image Models (tfimm) is a collection of image models with pretrained weights, obtained by porting architectures from timm to TensorFlow :: [#61](https://github.com/martinsbruveris/tensorflow-image-models/pull/61)
 * [onnx2tf](https://github.com/PINTO0309/onnx2tf) :: Self-Created Tools to convert ONNX files (NCHW) to TensorFlow/TFLite/Keras format (NHWC). The purpose of this tool is to solve the massive Transpose extrapolation problem in onnx-tensorflow (onnx-tf) :: [#259](https://github.com/PINTO0309/onnx2tf/pull/259)
+* [dadaptation](https://github.com/facebookresearch/dadaptation) :: D-Adaptation for SGD, Adam and AdaGrad :: [#21](https://github.com/facebookresearch/dadaptation/pull/21)
 
 ### Plug-Ins
 
