@@ -41,6 +41,8 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 * **Kaggle Challenges** :: Kaggle Challenges :: **Competition Expert**
 
+  > [BirdCLEF 2023](https://www.kaggle.com/competitions/birdclef-2023) - **sole, top 2% (24 / 1209), Private 0.73** - (2023.)
+
   > [Google - Isolated Sign Language Recognition](https://www.kaggle.com/competitions/asl-signs) - **sole, top 5% (63 / 1165), Private 0.8377** - (2023.)
 
   > [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) - **solo, top 1% (16 / 1687), Private 0.49** - [solution](https://www.kaggle.com/competitions/rsna-breast-cancer-detection/discussion/391133) (2023.)
