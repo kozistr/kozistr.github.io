@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-05-26
+update: 2023-06-13
 tags:
   - About
   - CV
@@ -16,7 +16,7 @@ keywords:
 * Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
 * Offering a job is welcome! feel free to mail me.
 
-CV : [[PDF] (as of May. 2023)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -101,12 +101,14 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 ### Company
 
-#### _Data Scientist_, **Toss core**, **(2021.12.06 ~ present)**
+#### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.0x.xx)**
 
 * Develop TPS (Toss Profile Service) product.
-* CSS model for Loan Comparison product.
+* Various models to boost Loan Comparison product.
   * Developed a CSS model only with non-financial data.
-  * Outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
+    * Outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
+  * Developed a model to predict expected interest rate by the banks & products.
+  * Developed a model to classify loan approval/rejection by the banks & products.
 * CSS model for the Perosnal CB.
   * Developed a more accurate & robust CSS model, mainly targeting the thin-filer.
   * Outperformed about **15%** (on the primary metric) compared with the previous method.
