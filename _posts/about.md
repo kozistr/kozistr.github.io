@@ -113,8 +113,7 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 * Various models to boost Loan Comparison product.
   * Developed a CSS model only with non-financial data.
     * Outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
-  * Developed a model to predict expected interest rate by the banks & products.
-  * Developed a model to classify loan approval/rejection by the banks & products.
+  * Developed models to predict loan approval and interest rate.
 * CSS model for the Perosnal CB.
   * Developed a more accurate & robust CSS model, mainly targeting the thin-filer.
   * Outperformed about **15%** (on the primary metric) compared with the previous method.
