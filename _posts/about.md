@@ -27,12 +27,6 @@ CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
 | Kaggle   | [https://www.kaggle.com/kozistr](https://www.kaggle.com/kozistr)           |
 | Linkedin | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr) |
 
-## Recent Interests
-
-* Lots of real-world challenges like **Kaggle**
-
-Previously, I was also interested in **offensive security**, kind of _Reverse Engineering_, _Linux Kernel Exploitation_.
-
 ---
 
 ## Brief Introduction
