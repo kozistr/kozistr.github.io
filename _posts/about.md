@@ -282,9 +282,9 @@ CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
 
 #### Optimizer
 
-* **pytorch-optimizer** :: Bunch of optimizer implementations in PyTorch
+* **pytorch-optimizer** :: optimizer & lr scheduler collections in PyTorch
 
-  > * **pytorch_optimizer** :: Bunch of optimizer implementations in PyTorch with clean-code, strict types. Also, includes useful optimization ideas. Most of the implementations are based on the original paper, but I added some tweaks. :: [code](https://github.com/kozistr/pytorch_optimizer)
+  > * **pytorch_optimizer** :: pytorch-optimizer is optimizer & lr scheduler collections in PyTorch. I just re-implemented (speed & memory tweaks, plug-ins) the algorithm while based on the original paper. Also, It includes useful and practical optimization ideas. :: [code](https://github.com/kozistr/pytorch_optimizer)
 
 * **AdaBound** :: Optimizer that trains as fast as Adam and as good as SGD
 
