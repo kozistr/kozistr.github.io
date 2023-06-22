@@ -35,6 +35,12 @@ Previously, I was also interested in **offensive security**, kind of _Reverse En
 
 ---
 
+## Brief Introduction
+
+* Develop & service practical ML/DL products in various domains, Audio, Vision, NLP, and Tabular.
+* Research & develop a recommendation system and contribute to ML team development culture.
+* Kaggle, 2x Expert. the highest competition rank is top 0.1%.
+
 ## Challenges & Awards
 
 ### Machine Learning
