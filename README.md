@@ -16,12 +16,6 @@ Here's [blog](http://kozistr.tech)
 * time to read with coffee emoji
 * google analytics with gtag
 
-## Packages
-
-```json
-"katex": "0.13.24",
-```
-
 ## Reference
 
 based on **[https://junhobaik.github.io](https://junhobaik.github.io)**
