@@ -1,7 +1,7 @@
 module.exports = {
   /** Site MetaData (Required all)*/
   title: `kozistr`,                             // (* Required)
-  description: `generalist better than specialist`, // (* Required)
+  description: `all-rounder`,                   // (* Required)
   author: `Hyeongchan Kim`,                     // (* Required)
   language: 'ko-KR',                            // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'http://kozistr.tech',               // (* Required)
@@ -10,9 +10,9 @@ module.exports = {
   profileImageFileName: 'profile.webp',
 
   /** Home > Bio information*/
-  comment: 'Data Scientist',
+  comment: 'Machine Learning Engineer & Data Scientist',
   name: 'Hyeongchan Kim',
-  company: 'Toss',
+  company: '',
   location: 'South Korea',
   email: 'kozistr@gmail.com',
   website: 'http://kozistr.tech',
