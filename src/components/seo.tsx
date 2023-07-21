@@ -15,20 +15,18 @@ interface SEOPropsType {
 const SEO = (props: SEOPropsType) => {
   const { description, lang, meta, title, keywords } = props
 
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            language
-          }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          language
         }
       }
-    `
-  )
+    }
+  `)
 
   const metaDescription = description ?? site.siteMetadata.description
   const metaTtitle = site.siteMetadata.title
