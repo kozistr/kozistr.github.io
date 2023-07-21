@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-06-22
+update: 2023-07-21
 tags:
   - About
   - CV
@@ -33,7 +33,7 @@ CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
 
 * Develop & service practical ML/DL products in various domains, Audio, Vision, NLP, and Tabular.
 * Research & develop a recommendation system and contribute to ML team development culture.
-* Kaggle, 2x Expert. the highest competition rank is top 0.1%.
+* Kaggle 2x Expert. the highest competition rank is top 0.1%.
 
 ## Challenges & Awards
 
@@ -308,6 +308,7 @@ CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
 * [tensorflow-image-models](https://github.com/martinsbruveris/tensorflow-image-models) :: TensorFlow Image Models (tfimm) is a collection of image models with pretrained weights, obtained by porting architectures from timm to TensorFlow :: [#61](https://github.com/martinsbruveris/tensorflow-image-models/pull/61)
 * [onnx2tf](https://github.com/PINTO0309/onnx2tf) :: Self-Created Tools to convert ONNX files (NCHW) to TensorFlow/TFLite/Keras format (NHWC). The purpose of this tool is to solve the massive Transpose extrapolation problem in onnx-tensorflow (onnx-tf) :: [#259](https://github.com/PINTO0309/onnx2tf/pull/259)
 * [dadaptation](https://github.com/facebookresearch/dadaptation) :: D-Adaptation for SGD, Adam and AdaGrad :: [#21](https://github.com/facebookresearch/dadaptation/pull/21)
+* [python-mastery](https://github.com/dabeaz-course/python-mastery) :: Advanced Python Mastery :: [#14](https://github.com/dabeaz-course/python-mastery/pull/14)
 
 ### Plug-Ins
 
