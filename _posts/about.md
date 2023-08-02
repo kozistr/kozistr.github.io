@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-07-21
+update: 2023-08-02
 tags:
   - About
   - CV
@@ -14,9 +14,9 @@ keywords:
 ## Profile
 
 * Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
-* Offering a job is welcome! feel free to mail me.
+* Offering a job is welcome! feel free to contact me.
 
-CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
+CV : [[PDF] (as of Aug. 2023)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -104,13 +104,12 @@ CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.0x.xx)**
 
 * Develop TPS (Toss Profile Service) product.
-* Various models to boost Loan Comparison product.
-  * Developed a CSS model only with non-financial data.
-    * Outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
+* Various models to boost Loan Comparison products.
+  * Developed a CSS model only with non-financial data and it outperformed by about **~ 4%p** (on the primary metric) compared with the previous method.
   * Developed models to predict loan approval and interest rate.
-* CSS model for the Perosnal CB.
-  * Developed a more accurate & robust CSS model, mainly targeting the thin-filer.
-  * Outperformed about **15%** (on the primary metric) compared with the previous method.
+* Various CSS models for the CB (Credit Bureau).
+  * Developed a more accurate & robust CSS model that mainly targets the thin-filer and it outperformed about **15%** compared with the previous method.
+  * Developed a model that predicts consumer proposal status.
 * Classify the category of the user review for the NPS (Net Performer Score) product.
   * Developed the RESTful API server to infer the deep learning model for the batch job.
   * Saved analysis time and labor of the NPS team.
@@ -129,7 +128,7 @@ CV : [[PDF] (as of June. 2023)](http://kozistr.tech/cv.pdf)
   * Developed the **explainer** to describe which factors **affect the rejection**.
 * Transaction category classification model to boost the advertisement.
   * Developed the ads category classifier that **increases revenue** in a roundabout way.
-* Internal product, The Slack bot that summarizes the long slack threads
+* Internal product, The Slack bot that summarizes the long threads
   * help people to **understand the context** quickly with minimum effort.
 * Working as full-time.
 
