@@ -123,7 +123,7 @@ CV : [[PDF] (as of Aug. 2023)](http://kozistr.tech/cv.pdf)
     * It also elaborates on decreasing a funnel and increasing user conversion.
 * User consumption forecasting model for the *CDP Product.
   * Developed the Transformer based sequential model that predicts what the users will consume in the next month.
-  * Built an efficient pipeline to process and train lots of tabular data (about 500 GB).
+  * Built an efficient pipeline to process and train lots of tabular data.
 * CSS model for BNPL (Buy Now Pay Later) service.
   * Developed the **CSS model** (default prediction), mainly targeted to the **thin-filer**. The new model achieved the targeted **default rate of about 1%**.
   * Developed the **explainer** to describe which factors **affect the rejection**.
