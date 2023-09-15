@@ -11,12 +11,12 @@ jobs:
     outputs:
       pnpm_cache_dir: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
