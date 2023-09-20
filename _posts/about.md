@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-09-15
+update: 2023-09-24
 tags:
   - About
   - CV
@@ -31,7 +31,7 @@ CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
 
 ## Brief Introduction
 
-* Develop & service practical ML/DL products in various domains, Audio & Speech, Vision, NLP, Recommender and Tabular.
+* Service ML/DL products in various domains, Audio & Speech, Vision, NLP, Recommendation System and Tabular.
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 ## Challenges & Awards
@@ -100,7 +100,7 @@ CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
 
 ### Company
 
-#### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.29)**
+#### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.27)**
 
 * Develop TPS (Toss Profile Service) product.
 * Various models to boost Loan Comparison products.
