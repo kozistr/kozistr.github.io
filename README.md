@@ -5,7 +5,7 @@ Here's [blog](http://kozistr.tech)
 ## Specs
 
 * Gatsby 5
-* Node 18
+* Node 20
 * React 18
 * pnpm
 
