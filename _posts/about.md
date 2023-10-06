@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-09-24
+update: 2023-10-06
 tags:
   - About
   - CV
@@ -13,10 +13,14 @@ keywords:
 
 ## Profile
 
-* Alternative Military Service Status : **on duty** (`2020/11/27 ~ 2023/09/26`)
+* Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
 * Offering a job is welcome! feel free to contact me.
+* CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
 
-CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
+## Brief Introduction
+
+* Service many machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation System and Tabular.
+* Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 ## Links
 
@@ -28,11 +32,6 @@ CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
 | Linkedin | [https://www.linkedin.com/in/kozistr](https://www.linkedin.com/in/kozistr) |
 
 ---
-
-## Brief Introduction
-
-* Service ML/DL products in various domains, Audio & Speech, Vision, NLP, Recommendation System and Tabular.
-* Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 ## Challenges & Awards
 
