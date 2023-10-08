@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-10-06
+update: 2023-10-08
 tags:
   - About
   - CV
@@ -13,14 +13,12 @@ keywords:
 
 ## Profile
 
-* Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
-* Offering a job is welcome! feel free to contact me.
-* CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
-
-## Brief Introduction
-
+* I'm currently building a ...
 * Service many machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation System and Tabular.
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
+
+* Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
+* CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -96,6 +94,13 @@ keywords:
 ---
 
 ## Work Experience
+
+* **2023 -** : Joined ...
+* **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to lots of products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
+* **2020 - 2021** : Joined Watcha to build a recommendation system with deep learning. Developed deep learning recommender that outperforms the previous algorithm, and contributed to other products like WatchaPedia, in-house applications.
+* **2019 - 2020** : Joined Rainist (Banksalad). Developed a transaction classifier service to analyze the categories with low latency, high accuracy, and in real-time.
+* **2019** : Joined VoyagerX. Developed a speaker diarization product that automatically recognizes the contents of the meeting.
+* **- 2019** : offensive security stuffs. Mainly researched and studied Linux kernel exploitation and reverse engineering.
 
 ### Company
 
@@ -191,7 +196,7 @@ keywords:
 
 ### Out Sourcing
 
-* Developed Korean University Course Information Web Parser (About 40 Universities). **2 times, (2017.7 ~ 2018.3)**
+* Developed Korean University Course Information Web Parser (about 40 universities). **2 times, (2017.7, 2018.3)**
 * Developed AWS CloudTrail logger analyzer. **(2019.09 ~ 2019.10)**
 
 ### Lab
@@ -214,13 +219,13 @@ keywords:
 
 ### Conferences/Workshops
 
-[1] `kozistr_team`, [presentation](https://bit.ly/3eneg2y) _NAVER NLP Challenge 2018 SRL Task_</a>
+[1] `kozistr_team`, [presentation](https://bit.ly/3eneg2y) _NAVER NLP Challenge 2018 SRL Task_
 
 * SRL Task, challenging w/o any domain knowledge. Presented about trials & errors during the competition
 
 ### Journals
 
-[1] zer0day, [_Windows Anti-Debugging Techniques_](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](/refs/Anti%20Revering%20Techniques%20%5Bzer0day%5D.pdf)
+[1] zer0day, [_Windows Anti-Debugging Techniques_](http://zer0day.tistory.com/335?category=505873) (CodeEngn 2016) Sep. 2016. [PDF](https://t1.daumcdn.net/cfile/tistory/21611F5057EC7DCD2F)
 
 * Wrote about lots of anti-reversing / debugging (A to Z) techniques avail on window executable binary
 
@@ -238,7 +243,7 @@ keywords:
 
 #### Generative Models
 
-* **GANs-tensorflow** :: Lots of GAN codes :) :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
+* **GANs-tensorflow** :: Lots of GAN :: [Generative Adversary Networks](https://github.com/kozistr/Awesome-GANs)
 
   > * **ACGAN-tensorflow** :: Auxiliary Classifier GAN in tensorflow :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/ACGAN)
   > * **StarGAN-tensorflow** :: Unified GAN for multi-domain :: [code](https://github.com/kozistr/Awesome-GANs/tree/master/StarGAN)
