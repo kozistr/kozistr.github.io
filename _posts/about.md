@@ -1,9 +1,9 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-10-08
+update: 2023-10-11
 tags:
-  - About
+  - Abo
   - CV
 keywords:
   - cv
@@ -14,7 +14,7 @@ keywords:
 ## Profile
 
 * I'm currently building a ...
-* Service many machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation System and Tabular.
+* Service many machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation Systems, and Tabular in many startups.
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 * Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
@@ -96,7 +96,7 @@ keywords:
 ## Work Experience
 
 * **2023 -** : Joined ...
-* **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to lots of products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
+* **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to many products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
 * **2020 - 2021** : Joined Watcha to build a recommendation system with deep learning. Developed deep learning recommender that outperforms the previous algorithm, and contributed to other products like WatchaPedia, in-house applications.
 * **2019 - 2020** : Joined Rainist (Banksalad). Developed a transaction classifier service to analyze the categories with low latency, high accuracy, and in real-time.
 * **2019** : Joined VoyagerX. Developed a speaker diarization product that automatically recognizes the contents of the meeting.
