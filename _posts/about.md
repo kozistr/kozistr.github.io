@@ -1,9 +1,9 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2023-10-11
+update: 2024-04-28
 tags:
-  - Abo
+  - About
   - CV
 keywords:
   - cv
@@ -18,7 +18,7 @@ keywords:
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 * Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
-* CV : [[PDF] (as of Sep. 2023)](http://kozistr.tech/cv.pdf)
+* CV : [[PDF] (as of Apr. 2024)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -95,7 +95,7 @@ keywords:
 
 ## Work Experience
 
-* **2023 -** : Joined ...
+* **2023 - Current** : Joined Sionic AI.
 * **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to many products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
 * **2020 - 2021** : Joined Watcha to build a recommendation system with deep learning. Developed deep learning recommender that outperforms the previous algorithm, and contributed to other products like WatchaPedia, in-house applications.
 * **2019 - 2020** : Joined Rainist (Banksalad). Developed a transaction classifier service to analyze the categories with low latency, high accuracy, and in real-time.
@@ -196,7 +196,7 @@ keywords:
 
 ### Out Sourcing
 
-* Developed Korean University Course Information Web Parser (about 40 universities). **2 times, (2017.7, 2018.3)**
+* Developed Korean University Course Information Web Parser (about 40 universities). **2 times, (2017.07, 2018.03)**
 * Developed AWS CloudTrail logger analyzer. **(2019.09 ~ 2019.10)**
 
 ### Lab
@@ -313,6 +313,9 @@ keywords:
 * [onnx2tf](https://github.com/PINTO0309/onnx2tf) :: Self-Created Tools to convert ONNX files (NCHW) to TensorFlow/TFLite/Keras format (NHWC). The purpose of this tool is to solve the massive Transpose extrapolation problem in onnx-tensorflow (onnx-tf) :: [#259](https://github.com/PINTO0309/onnx2tf/pull/259)
 * [dadaptation](https://github.com/facebookresearch/dadaptation) :: D-Adaptation for SGD, Adam and AdaGrad :: [#21](https://github.com/facebookresearch/dadaptation/pull/21)
 * [python-mastery](https://github.com/dabeaz-course/python-mastery) :: Advanced Python Mastery :: [#14](https://github.com/dabeaz-course/python-mastery/pull/14)
+* [text-embedding-inference](https://github.com/huggingface/text-embeddings-inference) :: A blazing fast inference solution for text embeddings modee :: [#62](https://github.com/huggingface/text-embeddings-inference/pull/62)
+* [langchain-ai](https://github.com/langchain-ai/langchain) :: Build context-aware reasoning applications :: [#18839](https://github.com/langchain-ai/langchain/pull/18839), [#20057](https://github.com/langchain-ai/langchain/pull/20057)
+* [qdrant](https://github.com/qdrant/qdrant) :: Qdrant - High-performance, massive-scale Vector Database for the next generation of AI :: [#3982](https://github.com/qdrant/qdrant/pull/3982)
 
 ### Plug-Ins
 
