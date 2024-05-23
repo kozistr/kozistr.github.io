@@ -18,42 +18,38 @@ import {
   faUserCircle,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { memo } from 'react'
 
 import './bio.scss'
 import config from '../../../config'
 
 type SocialIconKey = 'linkedin' | 'facebook' | 'instagram' | 'github' | 'kaggle' | 'medium' | 'sildeshare'
 
-const BioItem: React.FC<{ icon: IconDefinition; link?: string; text?: string; className?: string }> = ({
-  icon,
-  link,
-  text,
-  className,
-}) => (
-  <div className={`bio-item ${className || ''}`}>
-    <div className="icon-wrap">
-      <Fa icon={icon} />
+// eslint-disable-next-line react/display-name
+const BioItem = memo<{ icon: IconDefinition; link?: string; text?: string; className?: string }>(
+  // eslint-disable-next-line react/prop-types
+  ({ icon, link, text, className }) => (
+    <div className={`bio-item ${className || ''}`}>
+      <div className="icon-wrap">
+        <Fa icon={icon} />
+      </div>
+      {link ? (
+        <a href={link} aria-label={text}>
+          {text || link}
+        </a>
+      ) : text ? (
+        <span>{text}</span>
+      ) : null}
     </div>
-    {link ? (
-      <a href={link} aria-label={text}>
-        {text || link}
-      </a>
-    ) : text ? (
-      <span>{text}</span>
-    ) : null}
-  </div>
+  )
 )
 
-const SocialItem: React.FC<{ icon: IconDefinition; link?: string; className?: string }> = ({
-  icon,
-  link,
-  className,
-}) => (
+// eslint-disable-next-line react/display-name, react/prop-types
+const SocialItem = memo<{ icon: IconDefinition; link?: string; className?: string }>(({ icon, link, className }) => (
   <a href={link} className={className} target="_blank" rel="noopener noreferrer">
     <Fa icon={icon} className={className} />
   </a>
-)
+))
 
 const Bio = () => {
   const {
@@ -114,4 +110,4 @@ const Bio = () => {
   )
 }
 
-export default Bio
+export default memo(Bio)
