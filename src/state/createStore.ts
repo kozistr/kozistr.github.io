@@ -1,6 +1,12 @@
-import { createStore as reduxCreateStore } from 'redux'
+import { configureStore } from '@reduxjs/toolkit'
 
 import reducer, { initialState } from './reducer'
 
-const createStore = () => reduxCreateStore(reducer, initialState)
+const createStore = () => {
+  return configureStore({
+    reducer: reducer,
+    preloadedState: initialState,
+  })
+}
+
 export default createStore
