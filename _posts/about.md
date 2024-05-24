@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2024-04-28
+update: 2024-04-24
 tags:
   - About
   - CV
@@ -13,7 +13,7 @@ keywords:
 
 ## Profile
 
-* I'm currently building a ...
+* I'm currently building LLM product & the platform to make a better life.
 * Service many machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation Systems, and Tabular in many startups.
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
@@ -316,6 +316,7 @@ keywords:
 * [text-embedding-inference](https://github.com/huggingface/text-embeddings-inference) :: A blazing fast inference solution for text embeddings model :: [#62](https://github.com/huggingface/text-embeddings-inference/pull/62)
 * [langchain-ai](https://github.com/langchain-ai/langchain) :: Build context-aware reasoning applications :: [#18839](https://github.com/langchain-ai/langchain/pull/18839), [#20057](https://github.com/langchain-ai/langchain/pull/20057)
 * [qdrant](https://github.com/qdrant/qdrant) :: Qdrant - High-performance, massive-scale Vector Database for the next generation of AI :: [#3982](https://github.com/qdrant/qdrant/pull/3982)
+* [bfb](https://github.com/qdrant/bfb) :: *high-load* benchmarking tool :: [#37](https://github.com/qdrant/bfb/pull/37)
 
 ### Plug-Ins
 
