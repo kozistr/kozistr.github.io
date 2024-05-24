@@ -2,7 +2,7 @@ import { faChevronRight, faMoon, faSearch, faSun, faTags } from '@fortawesome/fr
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useColorMode } from 'theme-ui'
 
@@ -11,51 +11,42 @@ import config from '../../../config'
 import { actionCreators } from '../../state/actions'
 import { RootState } from '../../state/reducer'
 
-interface headerPropsType {
+interface HeaderProps {
   siteTitle: string
 }
 
-const Header = (props: headerPropsType) => {
-  const { siteTitle } = props
+const Header = ({ siteTitle }: HeaderProps) => {
   const { isMobile, path, size } = useSelector((state: RootState) => state)
   const [, setYPos] = useState(0)
   const [isHide, setIsHide] = useState(false)
   const dispatch = useDispatch()
   const [colorMode, setColorMode] = useColorMode()
-  const imageSize = React.useMemo(() => size ?? '25px', [size])
+  const imageSize = size ?? '25px'
+
+  const bioRef = useRef<HTMLDivElement | null>(null)
+  const headerRef = useRef<HTMLElement | null>(null)
 
   const toggleTheme = useCallback(() => {
     const ms = 300
-    const header: HTMLElement | null = document.getElementById('Header')
     const transition = `top 0.3s ease 0.2s, background-color ${ms}ms`
 
     document.body.style.transition = `background-color ${ms}ms`
-    if (header) header.style.transition = transition
+    if (headerRef.current) headerRef.current.style.transition = transition
 
-    if (colorMode === 'dark') {
-      setColorMode('light')
-    } else {
-      setColorMode('dark')
-    }
+    setColorMode(prevMode => (prevMode === 'dark' ? 'light' : 'dark'))
 
     setTimeout(() => {
       document.body.style.transition = 'none'
-      if (header) header.style.transition = transition
+      if (headerRef.current) headerRef.current.style.transition = transition
     }, ms + 100)
-  }, [colorMode])
+  }, [colorMode, setColorMode])
 
-  const setPath = useCallback((path: string, size?: string) => dispatch(actionCreators.setPath(path, size)), [])
+  const setPath = useCallback((path: string, size?: string) => dispatch(actionCreators.setPath(path, size)), [dispatch])
 
   useEffect(() => {
-    const bio: HTMLDivElement | null = document.querySelector('.bio')
-    if (bio) {
-      if (isHide === true) {
-        bio.style.opacity = '0'
-        bio.style.pointerEvents = 'none'
-      } else {
-        bio.style.opacity = '1'
-        bio.style.pointerEvents = 'all'
-      }
+    if (bioRef.current) {
+      bioRef.current.style.opacity = isHide ? '0' : '1'
+      bioRef.current.style.pointerEvents = isHide ? 'none' : 'all'
     }
   }, [isHide])
 
@@ -74,18 +65,19 @@ const Header = (props: headerPropsType) => {
       setPath(location.pathname)
     }
 
-    const setVisible = () => {
+    const handleScroll = () => {
       setYPos(prevYPos => {
-        const currentYPos = window.pageYOffset
+        const currentYPos = window.scrollY
 
         if (currentYPos > 0) setIsHide(prevYPos < currentYPos)
 
         return currentYPos
       })
     }
-    document.addEventListener('scroll', setVisible)
-    return () => document.removeEventListener('scroll', setVisible)
-  }, [])
+
+    document.addEventListener('scroll', handleScroll)
+    return () => document.removeEventListener('scroll', handleScroll)
+  }, [path, setPath])
 
   return (
     <header id="Header" className={`${isHide ? 'hide' : 'show'} ${isMobile ? 'mobile' : ''}`}>
@@ -125,11 +117,11 @@ const Header = (props: headerPropsType) => {
             icon={colorMode === 'dark' ? faSun : faMoon}
             style={{ fontSize: colorMode === 'dark' ? '1.2rem' : '1.1rem' }}
             onMouseEnter={() => {
-              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description')
+              const toggle = bioRef.current
               if (toggle) toggle.style.opacity = '0.5'
             }}
             onMouseLeave={() => {
-              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description')
+              const toggle = bioRef.current
               if (toggle) toggle.style.opacity = '0'
             }}
             onClick={() => {
