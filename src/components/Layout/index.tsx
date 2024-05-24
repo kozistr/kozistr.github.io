@@ -41,7 +41,7 @@ const Layout = (props: LayoutPropsType) => {
   `)
 
   const setTop = useCallback(
-    throttle(() => setIsTop(window.pageYOffset < window.innerHeight / 2), 250),
+    throttle(() => setIsTop(window.scrollY < window.innerHeight / 2), 250),
     []
   )
 
@@ -53,7 +53,7 @@ const Layout = (props: LayoutPropsType) => {
 
     document.addEventListener('scroll', setTop)
     return () => document.removeEventListener('scroll', setTop)
-  }, [])
+  }, [dispatch, setTop])
 
   return (
     <>
