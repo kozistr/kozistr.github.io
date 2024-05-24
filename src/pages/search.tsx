@@ -3,8 +3,7 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { graphql } from 'gatsby'
-import * as React from 'react'
-import { useCallback, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
@@ -16,26 +15,31 @@ interface SearchProps {
   data: any
 }
 
-const Search = (props: SearchProps) => {
-  const { data } = props
-  const posts = data.allMarkdownRemark.edges
+const Search: React.FC<SearchProps> = ({ data }) => {
+  const {
+    allMarkdownRemark: { edges: posts },
+  } = data
 
   const [value, setValue] = useState('')
   const [isTitleOnly, setIsTitleOnly] = useState(true)
+  const [filteredPosts, setFilteredPosts] = useState(posts)
 
-  const filteredPosts = useCallback(
-    posts.filter((post: any) => {
-      const { node } = post
+  useEffect(() => {
+    const lowerValue = value.toLowerCase()
+
+    const result = posts.filter(({ node }: any) => {
       const { frontmatter, rawMarkdownBody } = node
       const { title } = frontmatter
-      const lowerValue = value.toLocaleLowerCase()
 
-      if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true
+      if (!isTitleOnly && rawMarkdownBody.toLowerCase().includes(lowerValue)) {
+        return true
+      }
 
-      return title.toLocaleLowerCase().includes(lowerValue)
-    }),
-    [value, isTitleOnly]
-  )
+      return title.toLowerCase().includes(lowerValue)
+    })
+
+    setFilteredPosts(result)
+  }, [value, isTitleOnly, posts])
 
   return (
     <Layout>

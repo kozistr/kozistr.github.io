@@ -1,89 +1,78 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { graphql } from 'gatsby'
-import * as React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import React, { memo, useCallback, useEffect, useMemo, useState } from 'react'
 
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import SEO from '../components/seo'
+
 import './styles/tags.scss'
 
 interface TagsPageProps {
   data: any
 }
 
-const Tags = (props: TagsPageProps) => {
-  const { data } = props
+interface groupItem {
+  fieldValue: string
+  totalCount: number
+  edges: any[]
+}
+
+const TagsComponent: React.FC<TagsPageProps> = ({ data }) => {
   const { group } = data.allMarkdownRemark
 
+  const sortedGroup = useMemo(() => {
+    return group.sort((a: groupItem, b: groupItem) => {
+      const x = a.fieldValue.toLocaleLowerCase()
+      const y = b.fieldValue.toLocaleLowerCase()
+
+      return x.localeCompare(y)
+    })
+  }, [group])
+
   const [largeCount, setLargeCount] = useState(0)
-  const [targetTag, setTargetTag] = useState<string | undefined>()
-  const [currentPostList, setCurrentPostList] = useState([])
-
-  interface groupItem {
-    fieldValue: string
-    totalCount: number
-  }
-
-  group.sort((a: groupItem, b: groupItem) => {
-    const x = a.fieldValue.toLocaleLowerCase()
-    const y = b.fieldValue.toLocaleLowerCase()
-
-    if (x < y) return -1
-    if (y < x) return 1
-    return 0
+  const [targetTag, setTargetTag] = useState<string | undefined>(() => {
+    return typeof window !== 'undefined' && window.location.hash ? window.location.hash.split('#')[1] : undefined
   })
 
-  const tagList = group.map((g: groupItem) => {
-    const getFontSize = () => {
-      let fontSize = Math.round(50 / (largeCount / g.totalCount)).toString()
-      if (fontSize.length <= 1) fontSize = `0${fontSize}`
-      return `${Number(fontSize) / 100 + 0.9}rem`
-    }
+  useEffect(() => {
+    const large = sortedGroup.reduce((max: number, g: { totalCount: number }) => Math.max(max, g.totalCount), 0)
+    setLargeCount(large)
+  }, [sortedGroup])
 
-    return (
+  const getFontSize = useCallback(
+    (totalCount: number) => {
+      const fontSize = Math.max(50 / (largeCount / totalCount), 10)
+      return `${fontSize / 100 + 0.9}rem`
+    },
+    [largeCount]
+  )
+
+  const tagList = useMemo(() => {
+    return sortedGroup.map((g: groupItem) => (
       <li key={g.fieldValue}>
         <span
           className="tag-text"
           style={{
-            fontSize: g.fieldValue !== 'undefined' ? getFontSize() : '0.9rem',
+            fontSize: g.fieldValue !== 'undefined' ? getFontSize(g.totalCount) : '0.9rem',
             opacity: g.fieldValue === targetTag ? '0.9' : '0.5',
             fontWeight: g.fieldValue === targetTag ? 'bold' : 'normal',
           }}
-          onClick={() => {
-            setTargetTag(g.fieldValue)
-          }}
+          onClick={() => setTargetTag(g.fieldValue)}
         >
           <a href={`#${g.fieldValue}`}>{g.fieldValue}</a>
         </span>
       </li>
-    )
-  })
+    ))
+  }, [sortedGroup, getFontSize, targetTag])
 
-  const getPostList = useCallback(() => {
-    if (group.filter((g: groupItem) => g.fieldValue === targetTag).length) {
-      return group.filter((g: groupItem) => g.fieldValue === targetTag)[0].edges
-    }
-    if (group.filter((g: groupItem) => g.fieldValue === 'undefined').length) {
-      return group.filter((g: groupItem) => g.fieldValue === 'undefined')[0].edges
-    }
-    return []
-  }, [targetTag])
-
-  useEffect(() => {
-    setTargetTag(location?.hash ? location.hash.split('#')[1] : 'undefined')
-
-    let large = 0
-    for (const g of group) {
-      if (g.fieldValue !== 'undefined' && g.totalCount > large) large = g.totalCount
-    }
-    setLargeCount(large)
-  }, [])
-
-  useEffect(() => {
-    if (targetTag) setCurrentPostList(getPostList())
-  }, [targetTag])
+  const currentPostList = useMemo(() => {
+    const tagGroup =
+      sortedGroup.find((g: groupItem) => g.fieldValue === targetTag) ||
+      sortedGroup.find((g: groupItem) => g.fieldValue === 'undefined')
+    return tagGroup ? tagGroup.edges : []
+  }, [sortedGroup, targetTag])
 
   return (
     <Layout>
@@ -92,12 +81,13 @@ const Tags = (props: TagsPageProps) => {
         <div className="tag-list-wrap">
           <ul>{tagList}</ul>
         </div>
-
-        <PostList posts={currentPostList.length ? currentPostList : []} />
+        <PostList posts={currentPostList} />
       </div>
     </Layout>
   )
 }
+
+const Tags = memo(TagsComponent)
 
 export const pageQuery = graphql`
   query {
