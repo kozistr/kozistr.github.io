@@ -1,21 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&family=Raleway:wght@400&display=swap@subset=korean,latin');
+$font-url: 'https://fonts.googleapis.com/css2?family=';
 
-$font-family-raleway: 'Raleway', 'Nanum Gothic';
-$font-family-nanum-gothic: 'Nanum Gothic', sans-serif;
-$font-family-nanum-gothic-coding: 'Nanum Gothic Coding', monospace;
-
-@mixin apply-font($font-family) {
-  font-family: $font-family;
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-display: swap;
+  src: local('Nanum Gothic'), local('NanumGothic'),
+       url('#{$font-url}Nanum+Gothic:wght@400&display=swap&subset=korean,latin') format('woff2');
+  font-weight: 400;
 }
 
-body {
-  @include apply-font($font-family-raleway);
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-display: swap;
+  src: local('Nanum Gothic Bold'), local('NanumGothic-Bold'),
+       url('#{$font-url}Nanum+Gothic:wght@700&display=swap&subset=korean,latin') format('woff2');
+  font-weight: 700;
 }
 
-.nanum-gothic {
-  @include apply-font($font-family-nanum-gothic);
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-display: swap;
+  src: local('Nanum Gothic Coding'), local('NanumGothicCoding'),
+       url('#{$font-url}Nanum+Gothic+Coding:wght@400&display=swap&subset=korean,latin') format('woff2');
+  font-weight: 400;
 }
 
-.nanum-gothic-coding {
-  @include apply-font($font-family-nanum-gothic-coding);
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-display: swap;
+  src: local('Nanum Gothic Coding Bold'), local('NanumGothicCoding-Bold'),
+       url('#{$font-url}Nanum+Gothic+Coding:wght@700&display=swap&subset=korean,latin') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-display: swap;
+  src: local('Raleway'),
+       url('#{$font-url}Raleway:wght@400&display=swap&subset=korean,latin') format('woff2');
+  font-weight: 400;
 }
