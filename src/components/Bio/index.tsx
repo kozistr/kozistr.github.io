@@ -1,4 +1,5 @@
 import {
+  IconDefinition,
   faFacebook,
   faGithub,
   faInstagram,
@@ -17,10 +18,36 @@ import {
   faUserCircle,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import * as React from 'react'
+import React from 'react'
 
 import './bio.scss'
 import config from '../../../config'
+
+type SocialIconKey = 'linkedin' | 'facebook' | 'instagram' | 'github' | 'kaggle' | 'medium' | 'sildeshare'
+
+const BioItem: React.FC<{ icon: IconDefinition; link?: string; text?: string; className?: string }> = ({
+  icon,
+  link,
+  text,
+  className,
+}) => (
+  <div className={`bio-item ${className || ''}`}>
+    <div className="icon-wrap">
+      <Fa icon={icon} />
+    </div>
+    {link ? <a href={link}>{text || link}</a> : text ? <span>{text}</span> : null}
+  </div>
+)
+
+const SocialItem: React.FC<{ icon: IconDefinition; link?: string; className?: string }> = ({
+  icon,
+  link,
+  className,
+}) => (
+  <a href={link} target="_blank" rel="noopener noreferrer">
+    <Fa icon={icon} className={className} />
+  </a>
+)
 
 const Bio = () => {
   const {
@@ -39,109 +66,42 @@ const Bio = () => {
     sildeshare,
   } = config
 
+  const socialLinks = {
+    linkedin,
+    facebook,
+    instagram,
+    github,
+    kaggle,
+    medium,
+    sildeshare,
+  }
+
+  const socialIcons: { [key in SocialIconKey]: IconDefinition } = {
+    linkedin: faLinkedin,
+    facebook: faFacebook,
+    instagram: faInstagram,
+    github: faGithub,
+    kaggle: faKaggle,
+    medium: faMedium,
+    sildeshare: faSlideshare,
+  }
+
   return (
     <div className="bio">
-      {!comment ? null : <span className="comment">{comment}</span>}
+      {comment && <span className="comment">{comment}</span>}
 
-      {!name ? null : (
-        <div className="bio-item name">
-          <div className="icon-wrap">
-            <Fa icon={faUserCircle} />
-          </div>
-          <a href="/about">
-            <span>{name}</span>
-          </a>
-        </div>
-      )}
-
-      {!company ? null : (
-        <div className="bio-item company">
-          <div className="icon-wrap">
-            <Fa icon={faBuilding} />
-          </div>
-          <span>{company}</span>
-        </div>
-      )}
-
-      {!location ? null : (
-        <div className="bio-item location">
-          <div className="icon-wrap">
-            <Fa icon={faMapMarkerAlt} />
-          </div>
-          <span>{location}</span>
-        </div>
-      )}
-
-      {!email ? null : (
-        <div className="bio-item email">
-          <div className="icon-wrap">
-            <Fa icon={faAt} />
-          </div>
-          <a href={`mailto:${email}`}>{email}</a>
-        </div>
-      )}
-
-      {!website ? null : (
-        <div className="bio-item website">
-          <div className="icon-wrap">
-            <Fa icon={faLink} />
-          </div>
-
-          <a href={website} target="_blank" rel="noopener noreferrer">
-            {website}
-          </a>
-        </div>
-      )}
-
-      <div className="bio-item about">
-        <div className="icon-wrap">
-          <Fa icon={faAddressCard} />
-        </div>
-
-        <a href="/about">
-          <span>About ME</span>
-        </a>
-      </div>
+      <BioItem icon={faUserCircle} link="/about" text={name} className="name" />
+      <BioItem icon={faBuilding} text={company} className="company" />
+      <BioItem icon={faMapMarkerAlt} text={location} className="location" />
+      <BioItem icon={faAt} link={`mailto:${email}`} text={email} className="email" />
+      <BioItem icon={faLink} link={website} className="website" />
+      <BioItem icon={faAddressCard} link="/about" text="About ME" className="about" />
 
       <div className="social">
-        <a href={`${config.siteUrl}/rss`} target="_blank" rel="noopener noreferrer">
-          <Fa icon={faRss} className="rss" />
-        </a>
+        <SocialItem icon={faRss} link={`${config.siteUrl}/rss`} className="rss" />
 
-        {!linkedin ? null : (
-          <a href={linkedin} target="_blank" rel="noopener noreferrer">
-            <Fa icon={faLinkedin} className="linkedin" />
-          </a>
-        )}
-        {!facebook ? null : (
-          <a href={facebook} target="_blank" rel="noopener noreferrer">
-            <Fa icon={faFacebook} className="facebook" />
-          </a>
-        )}
-        {!instagram ? null : (
-          <a href={instagram} target="_blank" rel="noopener noreferrer">
-            <Fa icon={faInstagram} className="instagram" />
-          </a>
-        )}
-        {!github ? null : (
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <Fa icon={faGithub} className="github" />
-          </a>
-        )}
-        {!kaggle ? null : (
-          <a href={kaggle} target="_blank" rel="noopener noreferrer">
-            <Fa icon={faKaggle} className="kaggle" />
-          </a>
-        )}
-        {!medium ? null : (
-          <a href={medium} target="_blank" rel="noopener noreferrer">
-            <Fa icon={faMedium} className="medium" />
-          </a>
-        )}
-        {!sildeshare ? null : (
-          <a href={sildeshare} target="_blank" rel="noopener noreferrer">
-            <Fa icon={faSlideshare} className="sildeshare" />
-          </a>
+        {Object.entries(socialLinks).map(([key, value]) =>
+          value ? <SocialItem key={key} icon={socialIcons[key as SocialIconKey]} link={value} className={key} /> : null
         )}
       </div>
     </div>
