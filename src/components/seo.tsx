@@ -1,20 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { graphql, useStaticQuery } from 'gatsby'
-import * as React from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 
 interface SEOPropsType {
   description?: string
   lang?: string
-  meta?: any[]
+  meta?: { name: string; content: string }[]
   title?: string
   keywords?: string[]
 }
 
-const SEO = (props: SEOPropsType) => {
-  const { description, lang, meta, title, keywords } = props
-
+const SEO: React.FC<SEOPropsType> = ({ description, lang, meta = [], title, keywords = [] }) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
