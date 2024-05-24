@@ -1,8 +1,7 @@
 import { faChevronRight, faMoon, faSearch, faSun, faTags } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { Link } from 'gatsby'
-import * as React from 'react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useColorMode } from 'theme-ui'
 
@@ -15,7 +14,7 @@ interface HeaderProps {
   siteTitle: string
 }
 
-const Header = ({ siteTitle }: HeaderProps) => {
+const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   const { isMobile, path, size } = useSelector((state: RootState) => state)
   const [, setYPos] = useState(0)
   const [isHide, setIsHide] = useState(false)

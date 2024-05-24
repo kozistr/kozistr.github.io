@@ -4,8 +4,7 @@ import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { graphql, useStaticQuery } from 'gatsby'
 import { throttle } from 'lodash'
 import MobileDetect from 'mobile-detect'
-import * as React from 'react'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { useDispatch } from 'react-redux'
 import { useColorMode } from 'theme-ui'
@@ -22,11 +21,11 @@ interface LayoutPropsType {
   children: React.ReactNode
 }
 
-const Layout = (props: LayoutPropsType) => {
-  const { children } = props
+const Layout: React.FC<LayoutPropsType> = ({ children }) => {
   const [isTop, setIsTop] = useState(true)
   const dispatch = useDispatch()
   const [colorMode] = useColorMode()
+
   const isDark = useMemo(() => colorMode === 'dark', [colorMode])
 
   const data = useStaticQuery(graphql`
@@ -51,7 +50,7 @@ const Layout = (props: LayoutPropsType) => {
       dispatch(actionCreators.setIsMobile(true))
     }
 
-    document.addEventListener('scroll', setTop)
+    document.addEventListener('scroll', setTop, { passive: true })
     return () => document.removeEventListener('scroll', setTop)
   }, [dispatch, setTop])
 
