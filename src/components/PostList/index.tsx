@@ -3,31 +3,68 @@
 
 import { Link } from 'gatsby'
 import { throttle } from 'lodash'
-import * as React from 'react'
-import { memo, useCallback, useEffect, useState } from 'react'
+import React, { memo, useCallback, useEffect, useMemo, useState } from 'react'
 
 import './postList.scss'
 
-export interface PostListProps {
-  posts: any[]
+interface PostNode {
+  node: {
+    excerpt: string
+    fields: {
+      slug: string
+    }
+    frontmatter: {
+      date: string
+      title: string
+      tags: string[]
+      update?: string
+    }
+    timeToRead: number
+  }
 }
 
-const PostList = memo((props: PostListProps) => {
-  const { posts } = props
+export interface PostListProps {
+  posts: PostNode[]
+}
+
+// eslint-disable-next-line react/prop-types
+const Tag: React.FC<{ tag: string; slug: string }> = memo(({ tag, slug }) => {
+  if (tag === 'undefined') return null
+
+  return (
+    <li key={`${slug}-${tag}`} className="tag">
+      <span>
+        <Link to={`/tags#${tag}`} className="link">{`#${tag}`}</Link>
+      </span>
+    </li>
+  )
+})
+
+// eslint-disable-next-line react/prop-types
+const PostList: React.FC<PostListProps> = memo(({ posts }) => {
   const [showCnt, setShowCnt] = useState(10)
+
+  const sortedPosts = useMemo(
+    () =>
+      // eslint-disable-next-line react/prop-types
+      posts.sort((a, b) => {
+        const aDate = new Date(a.node.frontmatter.update ?? a.node.frontmatter.date)
+        const bDate = new Date(b.node.frontmatter.update ?? b.node.frontmatter.date)
+
+        return bDate.getTime() - aDate.getTime()
+      }),
+    [posts]
+  )
 
   const throttleScrollHandler = useCallback(
     throttle(() => {
-      if (
-        window.outerHeight > (document.querySelector('.post-list') as HTMLDivElement).getBoundingClientRect().bottom
-      ) {
-        setShowCnt((prev: number) => {
-          if (prev >= posts.length) return prev
-          return prev + 10
-        })
+      if (window.outerHeight + window.scrollY > document.body.offsetHeight) {
+        // eslint-disable-next-line react/prop-types
+        setShowCnt(prev => (prev >= posts.length ? prev : prev + 10))
       }
     }, 250),
-    []
+    // eslint-disable-next-line react/prop-types
+    [posts.length]
   )
 
   useEffect(() => {
@@ -36,37 +73,16 @@ const PostList = memo((props: PostListProps) => {
     return () => {
       window.removeEventListener('scroll', throttleScrollHandler)
     }
-  }, [])
+  }, [throttleScrollHandler])
 
-  posts.sort((a: any, b: any) => {
-    const aDate = new Date(a.node.frontmatter.update ?? a.node.frontmatter.date)
-    const bDate = new Date(b.node.frontmatter.update ?? b.node.frontmatter.date)
-
-    if (aDate < bDate) return 1
-    if (aDate > bDate) return -1
-    return 0
-  })
-
-  const mapPost = posts.map((post: any, i: number) => {
+  const mapPost = sortedPosts.map((post: any, i: number) => {
     const { node } = post
     const { excerpt, fields, frontmatter, timeToRead } = node
     const { slug } = fields
     const { date, title, tags } = frontmatter
 
     let update = frontmatter.update
-    if (Number(update.split(',')[1]) === 1) update = null
-
-    const mapTag = tags.map((tag: string) => {
-      if (tag === 'undefined') return
-
-      return (
-        <li key={`${slug}-${tag}`} className="tag">
-          <span>
-            <Link to={`/tags#${tag}`} className="link">{`#${tag}`}</Link>
-          </span>
-        </li>
-      )
-    })
+    if (Number(update?.split(',')[1]) === 1) update = null
 
     return (
       <li key={slug} className={`post ${i < showCnt ? 'show' : 'hide'}`}>
@@ -82,7 +98,11 @@ const PostList = memo((props: PostListProps) => {
             </Link>
           </h2>
           <div className="info">
-            <ul className="tag-list">{mapTag}</ul>
+            <ul className="tag-list">
+              {tags.map((tag: string) => (
+                <Tag key={tag} tag={tag} slug={slug} />
+              ))}
+            </ul>
           </div>
           <span className="excerpt">
             <Link to={slug} className="link">
@@ -93,6 +113,7 @@ const PostList = memo((props: PostListProps) => {
       </li>
     )
   })
+
   return (
     <div className="post-list">
       <ul>{mapPost}</ul>
