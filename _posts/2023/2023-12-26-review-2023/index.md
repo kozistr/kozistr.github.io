@@ -16,7 +16,7 @@ keywords:
 
 ## Kaggle
 
-최근에는 장비도 없고 일이 너무 바빠서 Kaggle을 못 하고 있지만, 올해 초에는 정말 열심히 했었고 꽤 좋은 성과를 거뒀다. 중단기 목표가 대회에서 solo gold medal을 따는 게 목표였는데, final submission 선택 차이로 눈앞에서 놓친 대회가 하나 있었고 나머지 대회에서도 gold medal zone에 가까운 rank를 달성했다. 그렇게 global ranking에서 200 등대를 찍으면서 highest competition rank **top 0.1%**를 달성했다.
+최근에는 장비도 없고 일이 너무 바빠서 Kaggle을 못 하고 있지만, 올해 초에는 정말 열심히 했었고 꽤 좋은 성과를 거뒀다. 중단기 목표가 대회에서 solo gold medal을 따는 게 목표였는데, final submission 선택 차이로 눈앞에서 놓친 대회가 하나 있었고 나머지 대회에서도 gold medal zone에 가까운 rank를 달성했다. 그렇게 global ranking에서 200 등대를 찍으면서 highest competition rank **top 0.1%** 를 달성했다.
 
 성적과 관련 없이 개인적으로 이전에는 나의 최대치가 2 ~ 30등이라면 올해는 짧은 시간 안에도 1 ~ 20등 결과물을 낼 수 있는 실력이 됐다는 점에서 성장했다는 걸 느꼈고 가장 의미 있다고 생각했다. 최종 목표는 10등 안의 결과물을 낼 수 있는 실력에 도달하는 것이고, 실질적인 성과로는 competition grandmaster를 달성하는 것으로 더 노력해야겠다.
 
