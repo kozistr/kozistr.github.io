@@ -3,7 +3,7 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { Link, graphql } from 'gatsby'
-import * as React from 'react'
+import React from 'react'
 
 import './styles/index.scss'
 import Bio from '../components/Bio'
@@ -16,10 +16,13 @@ interface IndexPageProps {
   data: any
 }
 
-const IndexPage = (props: IndexPageProps) => {
-  const { data } = props
-  const posts = data.allMarkdownRemark.edges
-  const title = data.site.siteMetadata.title
+const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
+  const {
+    allMarkdownRemark: { edges: posts },
+    site: {
+      siteMetadata: { title },
+    },
+  } = data
 
   return (
     <Layout>
