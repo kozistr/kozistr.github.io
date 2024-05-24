@@ -1,42 +1,40 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as React from 'react'
-import { useEffect, useState, useCallback, Suspense } from 'react'
+import { faAngleLeft, faLayerGroup, faListUl } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { Link, Script, graphql } from 'gatsby'
+import { throttle } from 'lodash'
+import moment from 'moment'
+import React, { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
+import AdSense from 'react-adsense'
 import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
-import { graphql, Link, Script } from 'gatsby'
-import moment from 'moment'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
-import AdSense from 'react-adsense'
 import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  RedditShareButton,
-  PocketShareButton,
+  EmailIcon,
   EmailShareButton,
   FacebookIcon,
-  TwitterIcon,
+  FacebookShareButton,
   LinkedinIcon,
-  RedditIcon,
+  LinkedinShareButton,
   PocketIcon,
-  EmailIcon,
+  PocketShareButton,
+  RedditIcon,
+  RedditShareButton,
+  TwitterIcon,
+  TwitterShareButton,
 } from 'react-share'
 import { useColorMode } from 'theme-ui'
-import { throttle } from 'lodash'
 
 import './post.scss'
 import './code-theme.scss'
 import './md-style.scss'
 import 'katex/dist/katex.min.css'
 
-import Layout from '../components/Layout'
-import Toc from '../components/Toc'
-import SEO from '../components/seo'
-
-import { RootState } from '../state/reducer'
 import config from '../../config'
+import Layout from '../components/Layout'
+import SEO from '../components/seo'
+import Toc from '../components/Toc'
+import { RootState } from '../state/reducer'
 
 interface postProps {
   data: any
@@ -46,13 +44,14 @@ interface postProps {
 interface iConfig {
   enablePostOfContents: boolean
   enableSocialShare: boolean
+  repoId: string
   disqusShortname?: string
 }
 
-const Post = (props: postProps) => {
-  const isSSR = typeof window === 'undefined'
+const Comment = React.lazy(() => import('../components/Comment'))
 
-  const { data, pageContext } = props
+const Post: React.FC<postProps> = ({ data, pageContext }) => {
+  const isSSR = typeof window === 'undefined'
   const isMobile = useSelector((state: RootState) => state.isMobile)
   const [yList, setYList] = useState([] as number[])
   const [isInsideToc, setIsInsideToc] = useState(false)
@@ -61,54 +60,52 @@ const Post = (props: postProps) => {
 
   const { markdownRemark } = data
   const { frontmatter, html, tableOfContents, fields, excerpt, timeToRead } = markdownRemark
-  const { title, date, tags, keywords } = frontmatter
-  let update = frontmatter.update
-  if (Number(update?.split(',')[1]) === 1) update = null
+  const { title, date, tags, keywords, update } = frontmatter
   const { slug } = fields
   const { series } = pageContext
-  const { enablePostOfContents, repoId, enableSocialShare }: iConfig = config
-  const isTableOfContents = enablePostOfContents && tableOfContents !== ''
-  const isDevelopment = process.env.NODE_ENV === 'development'
-  const isGisqus: boolean = repoId ? true : false
+  const { enablePostOfContents, enableSocialShare, repoId }: iConfig = config
+
+  const isTableOfContents = useMemo(
+    () => enablePostOfContents && tableOfContents !== '',
+    [enablePostOfContents, tableOfContents]
+  )
   const isSocialShare = enableSocialShare
 
-  const mapTags = tags.map((tag: string) => {
-    return (
-      <li key={tag} className="blog-post-tag">
-        <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
-      </li>
-    )
-  })
+  const updatedDate = Number(update?.split(',')[1]) === 1 ? null : update
 
-  const mapSeries = series.map((s: any) => {
-    return (
-      <li key={`${s.slug}-series-${s.num}`} className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
-        <Link to={s.slug}>
-          <span>{s.title}</span>
-          <div className="icon-wrap">{slug === s.slug ? <Fa icon={faAngleLeft} /> : null}</div>
-        </Link>
-      </li>
-    )
-  })
+  const mapTags = useMemo(
+    () =>
+      tags.map((tag: React.Key | null | undefined) => (
+        <li key={tag} className="blog-post-tag">
+          <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
+        </li>
+      )),
+    [tags]
+  )
+
+  const mapSeries = useMemo(
+    () =>
+      series.map(s => (
+        <li key={`${s.slug}-series-${s.num}`} className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
+          <Link to={s.slug}>
+            <span>{s.title}</span>
+            <div className="icon-wrap">{slug === s.slug ? <Fa icon={faAngleLeft} /> : null}</div>
+          </Link>
+        </li>
+      )),
+    [series, slug]
+  )
 
   const metaKeywords = useCallback((keywordList: string[], tagList: string[]) => {
-    const resultKeywords = new Set()
-    for (const v of [...keywordList, ...tagList]) resultKeywords.add(v)
-
-    return Array.from(resultKeywords) as string[]
+    return Array.from(new Set([...keywordList, ...tagList]))
   }, [])
-
-  const renderComment = () => {
-    const Comment = React.lazy(() => import('../components/Comment'))
-    setCommentEl(<Comment />)
-  }
 
   useEffect(() => {
     if (isMobile) {
       const adDiv = document.querySelector('.ad') as HTMLDivElement
 
       if (adDiv) {
-        const maxWidth = window.innerHeight > window.innerWidth ? window.innerWidth : window.innerHeight
+        const maxWidth = Math.min(window.innerHeight, window.innerWidth)
         adDiv.style.maxWidth = `${maxWidth}px`
         adDiv.style.display = 'flex'
         adDiv.style.justifyContent = 'flex-end'
@@ -117,61 +114,48 @@ const Post = (props: postProps) => {
   }, [isMobile])
 
   useEffect(() => {
-    const setYPos = () => {
-      if (yList) {
-        const index =
-          yList.filter((v: number) => {
-            return v < window.pageYOffset
-          }).length - 1
-
-        const aList = document.querySelectorAll('.toc.outside li a') as NodeListOf<HTMLAnchorElement>
-
-        for (const i in Array.from(aList)) {
-          if (parseInt(i, 10) === index) {
-            aList[i].style.opacity = '1'
-          } else {
-            aList[i].style.opacity = '0.4'
-          }
+    if (isTableOfContents) {
+      const handleScroll = throttle(() => {
+        if (yList.length > 0) {
+          const index = yList.filter(v => v < window.scrollY).length - 1
+          const aList = document.querySelectorAll('.toc.outside li a') as NodeListOf<HTMLAnchorElement>
+          aList.forEach((a, i) => {
+            a.style.opacity = i === index ? '1' : '0.4'
+          })
         }
-      }
-    }
+      }, 250)
 
-    if (isTableOfContents) document.addEventListener('scroll', setYPos)
-    return () => {
-      if (isTableOfContents) document.removeEventListener('scroll', setYPos)
+      document.addEventListener('scroll', handleScroll)
+      return () => document.removeEventListener('scroll', handleScroll)
     }
-  }, [yList])
+  }, [yList, isTableOfContents])
 
   useEffect(() => {
     setCommentEl(null)
-
-    setTimeout(() => {
-      renderComment()
-    }, 1000)
+    setTimeout(() => setCommentEl(<Comment />), 1000)
   }, [colorMode])
 
   useEffect(() => {
-    // scroll
-    const postContentOriginTop = document.querySelector('.blog-post')?.getBoundingClientRect().top ?? 0
-    const removeScrollEvent = () => document.removeEventListener('scroll', scrollEvents)
+    const postContent = document.querySelector('.blog-post')
+    const postContentOriginTop = postContent?.getBoundingClientRect().top ?? 0
+    const renderCondition = window.scrollY + window.innerHeight * 1.75 - postContentOriginTop
 
-    const scrollEvents = throttle(() => {
-      const postContentHeight = document.querySelector('.blog-post')?.getBoundingClientRect().height ?? Infinity
-      if (window.scrollY + window.innerHeight * 1.75 - postContentOriginTop > postContentHeight) {
-        renderComment()
-        removeScrollEvent()
-      }
+    const handleScroll = throttle(() => {
+      const postContentHeight = postContent?.getBoundingClientRect().height ?? Infinity
+      if (renderCondition > postContentHeight) setCommentEl(<Comment />)
     }, 250)
-    scrollEvents()
-    document.addEventListener('scroll', scrollEvents)
 
-    // toc
-    const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[]
+    if (postContent) {
+      document.addEventListener('scroll', handleScroll)
+      handleScroll()
+    }
+
+    const headings = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[]
     const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5)
-    const yPositions = hs.map(h => h.offsetTop - minusValue)
+    const yPositions = headings.map(h => h.offsetTop - minusValue)
     setYList(yPositions)
 
-    return () => removeScrollEvent()
+    return () => document.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
@@ -183,8 +167,8 @@ const Post = (props: postProps) => {
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              "datePublished": "${moment(new Date(date)).toISOString()}",
-              ${update ? `"dateModified": "${moment(new Date(update)).toISOString()}",` : ''}
+              "datePublished": "${moment(date).toISOString()}",
+              ${updatedDate ? `"dateModified": "${moment(update).toISOString()}",` : ''}
               "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "${config.siteUrl}"
@@ -226,10 +210,10 @@ const Post = (props: postProps) => {
                 {date} • {timeToRead} min read ☕
               </span>
               <span> </span>
-              {update ? (
+              {updatedDate ? (
                 <>
                   <span>(</span>
-                  <span className="update-date">{`Last updated: ${update}`}</span>
+                  <span className="update-date">{`Last updated: ${updatedDate}`}</span>
                   <span>)</span>
                 </>
               ) : null}
@@ -237,31 +221,23 @@ const Post = (props: postProps) => {
             <h1 className="blog-post-title">{title}</h1>
 
             <div className="blog-post-info">
-              {tags.length && tags[0] !== 'undefined' ? (
+              {tags.length > 0 && tags[0] !== 'undefined' ? (
                 <>
                   <span className="dot">·</span>
                   <ul className="blog-post-tag-list">{mapTags}</ul>
                 </>
               ) : null}
 
-              {!isTableOfContents ? null : (
+              {isTableOfContents && (
                 <div className="blog-post-inside-toc">
-                  <div
-                    className="toc-button"
-                    role="button"
-                    onClick={() => {
-                      setIsInsideToc((prev: boolean) => {
-                        return !prev
-                      })
-                    }}
-                  >
+                  <div className="toc-button" role="button" onClick={() => setIsInsideToc(!isInsideToc)}>
                     <Fa icon={faListUl} />
                   </div>
                 </div>
               )}
             </div>
 
-            {!isTableOfContents ? null : (
+            {isTableOfContents && (
               <div className="inside-toc-wrap" style={{ display: isInsideToc ? 'flex' : 'none' }}>
                 <Toc isOutside={false} toc={tableOfContents} />
               </div>
@@ -321,13 +297,13 @@ const Post = (props: postProps) => {
             </div>
           ) : null}
 
-          {isDevelopment ? (
+          {process.env.NODE_ENV === 'development' ? (
             <>
               <aside className="ad ad-dev">
                 <span>Ads</span>
                 <span>displayed when you deploy</span>
               </aside>
-              {isGisqus ? (
+              {repoId ? (
                 <div className="comments comments-dev">
                   <span>Comments</span>
                   <span>displayed when you deploy</span>
@@ -351,7 +327,7 @@ const Post = (props: postProps) => {
           )}
         </div>
 
-        {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
+        {isTableOfContents && <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
     </>
   )
