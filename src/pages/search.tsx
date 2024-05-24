@@ -3,7 +3,7 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { graphql } from 'gatsby'
-import React, { useEffect, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
@@ -22,24 +22,25 @@ const Search: React.FC<SearchProps> = ({ data }) => {
 
   const [value, setValue] = useState('')
   const [isTitleOnly, setIsTitleOnly] = useState(true)
-  const [filteredPosts, setFilteredPosts] = useState(posts)
 
-  useEffect(() => {
+  const filteredPosts = useMemo(() => {
     const lowerValue = value.toLowerCase()
-
-    const result = posts.filter(({ node }: any) => {
+    return posts.filter(({ node }: any) => {
       const { frontmatter, rawMarkdownBody } = node
       const { title } = frontmatter
-
-      if (!isTitleOnly && rawMarkdownBody.toLowerCase().includes(lowerValue)) {
-        return true
-      }
-
-      return title.toLowerCase().includes(lowerValue)
+      return (
+        (!isTitleOnly && rawMarkdownBody.toLowerCase().includes(lowerValue)) || title.toLowerCase().includes(lowerValue)
+      )
     })
-
-    setFilteredPosts(result)
   }, [value, isTitleOnly, posts])
+
+  const handleInputChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setValue(e.currentTarget.value)
+  }
+
+  const handleToggleClick = (titleOnly: boolean) => {
+    setIsTitleOnly(titleOnly)
+  }
 
   return (
     <Layout>
@@ -56,35 +57,31 @@ const Search: React.FC<SearchProps> = ({ data }) => {
               placeholder="Search"
               autoComplete="off"
               autoFocus
-              onChange={(e: React.FormEvent<HTMLInputElement>) => {
-                setValue(e.currentTarget.value)
-              }}
+              onChange={handleInputChange}
             />
-            <div className="search-toggle">
-              <span
-                style={{ opacity: isTitleOnly ? 0.8 : 0.15 }}
-                onClick={() => {
-                  setIsTitleOnly(true)
-                }}
-              >
-                in Title
-              </span>
-              <span
-                style={{ opacity: !isTitleOnly ? 0.8 : 0.15 }}
-                onClick={() => {
-                  setIsTitleOnly(false)
-                }}
-              >
-                in Title+Content
-              </span>
-            </div>
+            <SearchToggle isTitleOnly={isTitleOnly} onToggle={handleToggleClick} />
           </div>
-
-          {value !== '' && !filteredPosts.length ? <span className="no-result">No search results</span> : null}
-          <PostList posts={value === '' ? posts : filteredPosts} />
+          {value && !filteredPosts.length && <span className="no-result">No search results</span>}
+          <PostList posts={value ? filteredPosts : posts} />
         </div>
       </div>
     </Layout>
+  )
+}
+
+const SearchToggle: React.FC<{ isTitleOnly: boolean; onToggle: (titleOnly: boolean) => void }> = ({
+  isTitleOnly,
+  onToggle,
+}) => {
+  return (
+    <div className="search-toggle">
+      <span style={{ opacity: isTitleOnly ? 0.8 : 0.15 }} onClick={() => onToggle(true)}>
+        in Title
+      </span>
+      <span style={{ opacity: !isTitleOnly ? 0.8 : 0.15 }} onClick={() => onToggle(false)}>
+        in Title+Content
+      </span>
+    </div>
   )
 }
 
