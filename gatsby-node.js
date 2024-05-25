@@ -1,9 +1,7 @@
 const path = require(`path`)
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const envify = require('envify/custom')
 const { createFilePath } = require('gatsby-source-filesystem')
 const TerserPlugin = require('terser-webpack-plugin')
-const webpack = require('webpack')
 
 const config = require('./config')
 
@@ -34,14 +32,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  const getSeries = target => {
-    const splitedSlug = target.split('_')
-    if (splitedSlug.length >= 3) return 0
-
-    const seriesNum = splitedSlug[splitedSlug.length - 1].split('/').join('')
-    const isNum = !/[^0-9]/g.test(seriesNum)
-
-    if (isNum) return parseInt(seriesNum, 10)
+  const getSeries = slug => {
+    const parts = slug.split('_')
+    if (parts.length < 3) {
+      const seriesNum = parts[parts.length - 1].replace('/', '')
+      return !isNaN(seriesNum) ? parseInt(seriesNum, 10) : 0
+    }
     return 0
   }
 
@@ -80,9 +76,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
           }
 
-          series.sort((a, b) => {
-            return a.num - b.num
-          })
+          series.sort((a, b) => a.num - b.num)
         }
       }
 
@@ -134,6 +128,7 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
       if (!node.frontmatter.tags || node.frontmatter.tags === '') {
         node.frontmatter.tags = ['undefined']
       }
+
       // 태그 필드가 배열이 아닌 문자열 하나일때 배열로 덮음
       else if (typeof node.frontmatter.tags === 'string') {
         node.frontmatter.tags = [node.frontmatter.tags]
@@ -141,8 +136,7 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
 
       // markdown 내 date의 timezone 제거
       if (node.frontmatter.date.includes('+')) {
-        const date = new Date(node.frontmatter.date.split('+')[0])
-        node.frontmatter.date = date
+        node.frontmatter.date = new Date(node.frontmatter.date.split('+')[0])
       } else {
         node.frontmatter.date = new Date(node.frontmatter.date)
       }
@@ -172,30 +166,26 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
     actions.setWebpackConfig({ devtool: false })
   }
 
-  if (stage === 'build-javascript' || stage === 'build-html') {
-    config.plugins.push(new webpack.DefinePlugin(envify(process.env)))
-
-    if (stage === 'build-javascript') {
-      config.optimization.minimizer.push(new CssMinimizerPlugin())
-
-      config.optimization.minimizer.push(
-        new TerserPlugin({
-          test: /\.(js|jsx|ts|tsx)$/,
-          parallel: true,
-          terserOptions: {
-            format: {
-              comments: false,
-            },
-            compress: {
-              warnings: false,
-              drop_console: true,
-            },
-            extractComments: false,
+  if (stage === 'build-javascript') {
+    config.optimization.minimizer = [
+      ...config.optimization.minimizer,
+      new CssMinimizerPlugin(),
+      new TerserPlugin({
+        test: /\.(js|jsx|ts|tsx)$/,
+        parallel: true,
+        terserOptions: {
+          format: {
+            comments: false,
           },
-        })
-      )
-    }
-  }
+          compress: {
+            warnings: false,
+            drop_console: true,
+          },
+          extractComments: false,
+        },
+      }),
+    ]
 
-  actions.replaceWebpackConfig(config)
+    actions.replaceWebpackConfig(config)
+  }
 }
