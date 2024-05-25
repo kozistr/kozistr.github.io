@@ -1,5 +1,9 @@
 const path = require(`path`)
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const envify = require('envify/custom')
 const { createFilePath } = require('gatsby-source-filesystem')
+const TerserPlugin = require('terser-webpack-plugin')
+const webpack = require('webpack')
 
 const config = require('./config')
 
@@ -103,7 +107,7 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
       }
 
       // jekyll 기준으로 파일명에 날짜를 포함시키던 것을 url에서 제거하기 위함
-      const dayRegExp = /\/(19|20)\d{2}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[0-1])-/
+      const dayRegExp = /\/(18|19|20|21)\d{2}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[0-1])-/
       if (slug.match(dayRegExp)) {
         slug = '/' + slug.replace(dayRegExp, '')
       }
@@ -159,4 +163,35 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
       value: newSlug,
     })
   }
+}
+
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+  const config = getConfig()
+
+  if (stage === 'build-javascript' || stage === 'build-html') {
+    config.plugins.push(new webpack.DefinePlugin(envify(process.env)))
+
+    if (stage === 'build-javascript') {
+      config.optimization.minimizer.push(new CssMinimizerPlugin())
+
+      config.optimization.minimizer.push(
+        new TerserPlugin({
+          test: /\.(js|jsx|ts|tsx)$/,
+          parallel: true,
+          terserOptions: {
+            format: {
+              comments: false,
+            },
+            compress: {
+              warnings: false,
+              drop_console: true,
+            },
+            extractComments: false,
+          },
+        })
+      )
+    }
+  }
+
+  actions.replaceWebpackConfig(config)
 }
