@@ -35,7 +35,13 @@ const BioItem: React.FC<{ icon: IconDefinition; link?: string; text?: string; cl
     <div className="icon-wrap">
       <Fa icon={icon} />
     </div>
-    {link ? <a href={link}>{text || link}</a> : text ? <span>{text}</span> : null}
+    {link ? (
+      <a href={link} aria-label={text}>
+        {text || link}
+      </a>
+    ) : text ? (
+      <span>{text}</span>
+    ) : null}
   </div>
 )
 
@@ -44,7 +50,7 @@ const SocialItem: React.FC<{ icon: IconDefinition; link?: string; className?: st
   link,
   className,
 }) => (
-  <a href={link} target="_blank" rel="noopener noreferrer">
+  <a href={link} className={className} target="_blank" rel="noopener noreferrer">
     <Fa icon={icon} className={className} />
   </a>
 )
