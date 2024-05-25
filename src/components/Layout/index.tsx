@@ -58,6 +58,7 @@ const Layout: React.FC<LayoutPropsType> = ({ children }) => {
     <>
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" />
         <meta name="google-site-verification" content={config.googleSearchConsole ?? ''} />
         <style>{FaDom.css()}</style>
       </Helmet>
