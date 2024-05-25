@@ -167,8 +167,8 @@ const Post: React.FC<postProps> = ({ data, pageContext }) => {
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              "datePublished": "${moment(date).toISOString()}",
-              ${updatedDate ? `"dateModified": "${moment(update).toISOString()}",` : ''}
+              "datePublished": "${moment(new Date(date)).toISOString()}",
+              ${updatedDate ? `"dateModified": "${moment(new Date(update)).toISOString()}",` : ''}
               "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "${config.siteUrl}"
