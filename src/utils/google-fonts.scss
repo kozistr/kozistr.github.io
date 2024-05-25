@@ -4,7 +4,7 @@ $font-family-raleway: 'Raleway', 'Nanum Gothic';
 $font-family-nanum-gothic: 'Nanum Gothic', sans-serif;
 $font-family-nanum-gothic-coding: 'Nanum Gothic Coding', monospace;
 
-body, .nanum-gothic, .nanum-gothic-coding {
+body, code, h1, h2, h3 {
   font-display: swap;
 }
 
@@ -12,10 +12,6 @@ body {
   font-family: $font-family-raleway;
 }
 
-.nanum-gothic {
-  font-family: $font-family-nanum-gothic;
-}
-
-.nanum-gothic-coding {
+code {
   font-family: $font-family-nanum-gothic-coding;
 }
