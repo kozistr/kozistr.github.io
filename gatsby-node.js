@@ -168,6 +168,10 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
 exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   const config = getConfig()
 
+  if (config.mode === 'production') {
+    actions.setWebpackConfig({ devtool: false })
+  }
+
   if (stage === 'build-javascript' || stage === 'build-html') {
     config.plugins.push(new webpack.DefinePlugin(envify(process.env)))
 
