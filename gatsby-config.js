@@ -233,7 +233,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  gatsbyConfig.plugins.push(`gatsby-plugin-pnpm`)
+  gatsbyConfig.plugins.push(`gatsby-plugin-pnpm-gatsby-5`)
 }
 
 module.exports = gatsbyConfig

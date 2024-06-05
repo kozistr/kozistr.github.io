@@ -96,9 +96,9 @@ importers:
       gatsby-plugin-offline:
         specifier: ^6.13.2
         version: 6.13.2(gatsby@5.13.6(babel-eslint@10.1.0(eslint@9.4.0))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5)(webpack-hot-middleware@2.26.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      gatsby-plugin-pnpm:
-        specifier: ^1.2.10
-        version: 1.2.10(gatsby@5.13.6(babel-eslint@10.1.0(eslint@9.4.0))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5)(webpack-hot-middleware@2.26.1))
+      gatsby-plugin-pnpm-gatsby-5:
+        specifier: ^1.2.11
+        version: 1.2.11(gatsby@5.13.6(babel-eslint@10.1.0(eslint@9.4.0))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5)(webpack-hot-middleware@2.26.1))
       gatsby-plugin-react-helmet:
         specifier: ^6.13.1
         version: 6.13.1(gatsby@5.13.6(babel-eslint@10.1.0(eslint@9.4.0))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5)(webpack-hot-middleware@2.26.1))(react-helmet@6.1.0(react@18.3.1))
@@ -4357,10 +4357,10 @@ packages:
     peerDependencies:
       gatsby: ^5.0.0-next
 
-  gatsby-plugin-pnpm@1.2.10:
-    resolution: {integrity: sha512-29xjIakNEUY42OBb3wI9Thmawr5EcUUOB3dB8nE51yr/TfKQFCREk+HAOATQHTNedG3VZhgU4wVjl2V3wgOXJA==}
+  gatsby-plugin-pnpm-gatsby-5@1.2.11:
+    resolution: {integrity: sha512-3isxA0QFNmESkUlUPDNs/kzY4c8lA5XypTULjzE00rbdHQSWVD/BFXPyr3GSvY4U7sCubAlVa8KSNR6Zf+gzLg==}
     peerDependencies:
-      gatsby: ~2.x.x || ~3.x.x || ~4.x.x
+      gatsby: ~2.x.x || ~3.x.x || ~4.x.x || ~5.x.x
 
   gatsby-plugin-react-helmet@6.13.1:
     resolution: {integrity: sha512-Fwgf2UDOo1LQgw1vUmGmDMK5hXVrIXDR92URzu4DylQWgyfycfQ3D9FdU2JZ8jB6F3OI6Yx6YHC7zL3OAL7iOw==}
@@ -13887,7 +13887,7 @@ snapshots:
       - graphql
       - supports-color
 
-  gatsby-plugin-pnpm@1.2.10(gatsby@5.13.6(babel-eslint@10.1.0(eslint@9.4.0))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5)(webpack-hot-middleware@2.26.1)):
+  gatsby-plugin-pnpm-gatsby-5@1.2.11(gatsby@5.13.6(babel-eslint@10.1.0(eslint@9.4.0))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5)(webpack-hot-middleware@2.26.1)):
     dependencies:
       gatsby: 5.13.6(babel-eslint@10.1.0(eslint@9.4.0))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5)(webpack-hot-middleware@2.26.1)
       lodash.get: 4.4.2
