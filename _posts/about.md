@@ -13,7 +13,7 @@ keywords:
 
 ## Profile
 
-* I'm currently building LLM product & the platform to make a better life.
+* I'm building a platform for LLM applications to make a better life.
 * Service many machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation Systems, and Tabular in many startups.
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
