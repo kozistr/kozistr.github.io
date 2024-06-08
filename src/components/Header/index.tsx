@@ -32,7 +32,11 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
     document.body.style.transition = `background-color ${ms}ms`
     if (headerRef.current) headerRef.current.style.transition = transition
 
-    setColorMode(prevMode => (prevMode === 'dark' ? 'light' : 'dark'))
+    if (colorMode === 'dark') {
+      setColorMode('default')
+    } else {
+      setColorMode('dark')
+    }
 
     setTimeout(() => {
       document.body.style.transition = 'none'

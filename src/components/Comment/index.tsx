@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import Giscus from '@giscus/react'
 import React from 'react'
 
