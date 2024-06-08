@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2024-04-24
+update: 2024-06-08
 tags:
   - About
   - CV
@@ -18,7 +18,7 @@ keywords:
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 * Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
-* CV : [[PDF] (as of Apr. 2024)](http://kozistr.tech/cv.pdf)
+* CV : [[PDF] (as of Jun. 2024)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -95,7 +95,7 @@ keywords:
 
 ## Work Experience
 
-* **2023 - Current** : Joined Sionic AI.
+* **2023 - Current** : Joined Sionic AI. Building enterprise-grade full-stack platform for LLM applications.
 * **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to many products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
 * **2020 - 2021** : Joined Watcha to build a recommendation system with deep learning. Developed deep learning recommender that outperforms the previous algorithm, and contributed to other products like WatchaPedia, in-house applications.
 * **2019 - 2020** : Joined Rainist (Banksalad). Developed a transaction classifier service to analyze the categories with low latency, high accuracy, and in real-time.
@@ -103,6 +103,11 @@ keywords:
 * **- 2019** : offensive security stuffs. Mainly researched and studied Linux kernel exploitation and reverse engineering.
 
 ### Company
+
+#### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ Current)**
+
+* Building enterprise-grade full-stack platform for LLM applications.
+* Worked as a full-time (early start-up member)
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.27)**
 
