@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2024-06-08
+update: 2024-06-22
 tags:
   - About
   - CV
@@ -318,7 +318,7 @@ keywords:
 * [onnx2tf](https://github.com/PINTO0309/onnx2tf) :: Self-Created Tools to convert ONNX files (NCHW) to TensorFlow/TFLite/Keras format (NHWC). The purpose of this tool is to solve the massive Transpose extrapolation problem in onnx-tensorflow (onnx-tf) :: [#259](https://github.com/PINTO0309/onnx2tf/pull/259)
 * [dadaptation](https://github.com/facebookresearch/dadaptation) :: D-Adaptation for SGD, Adam and AdaGrad :: [#21](https://github.com/facebookresearch/dadaptation/pull/21)
 * [python-mastery](https://github.com/dabeaz-course/python-mastery) :: Advanced Python Mastery :: [#14](https://github.com/dabeaz-course/python-mastery/pull/14)
-* [text-embedding-inference](https://github.com/huggingface/text-embeddings-inference) :: A blazing fast inference solution for text embeddings model :: [#62](https://github.com/huggingface/text-embeddings-inference/pull/62)
+* [text-embedding-inference](https://github.com/huggingface/text-embeddings-inference) :: A blazing fast inference solution for text embeddings model :: [#62](https://github.com/huggingface/text-embeddings-inference/pull/62), [#285](https://github.com/huggingface/text-embeddings-inference/pull/285)
 * [langchain-ai](https://github.com/langchain-ai/langchain) :: Build context-aware reasoning applications :: [#18839](https://github.com/langchain-ai/langchain/pull/18839), [#20057](https://github.com/langchain-ai/langchain/pull/20057)
 * [qdrant](https://github.com/qdrant/qdrant) :: Qdrant - High-performance, massive-scale Vector Database for the next generation of AI :: [#3982](https://github.com/qdrant/qdrant/pull/3982)
 * [bfb](https://github.com/qdrant/bfb) :: *high-load* benchmarking tool :: [#37](https://github.com/qdrant/bfb/pull/37)
