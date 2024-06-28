@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2024-06-22
+update: 2024-06-28
 tags:
   - About
   - CV
@@ -95,7 +95,7 @@ keywords:
 
 ## Work Experience
 
-* **2023 - Current** : Joined Sionic AI. Building enterprise-grade full-stack platform for LLM applications.
+* **2023** : Joined Sionic AI. Building enterprise-grade full-stack platform for LLM applications.
 * **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to many products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
 * **2020 - 2021** : Joined Watcha to build a recommendation system with deep learning. Developed deep learning recommender that outperforms the previous algorithm, and contributed to other products like WatchaPedia, in-house applications.
 * **2019 - 2020** : Joined Rainist (Banksalad). Developed a transaction classifier service to analyze the categories with low latency, high accuracy, and in real-time.
@@ -104,7 +104,7 @@ keywords:
 
 ### Company
 
-#### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ Current)**
+#### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ 2024.06.30)**
 
 * Building enterprise-grade full-stack platform for LLM applications.
 * Worked as a full-time (early start-up member)
@@ -322,6 +322,7 @@ keywords:
 * [langchain-ai](https://github.com/langchain-ai/langchain) :: Build context-aware reasoning applications :: [#18839](https://github.com/langchain-ai/langchain/pull/18839), [#20057](https://github.com/langchain-ai/langchain/pull/20057)
 * [qdrant](https://github.com/qdrant/qdrant) :: Qdrant - High-performance, massive-scale Vector Database for the next generation of AI :: [#3982](https://github.com/qdrant/qdrant/pull/3982)
 * [bfb](https://github.com/qdrant/bfb) :: *high-load* benchmarking tool :: [#37](https://github.com/qdrant/bfb/pull/37)
+* [qdrant-web-ui](https://github.com/qdrant/qdrant-web-ui) :: Self-hosted web UI for Qdrant :: [#191](https://github.com/qdrant/qdrant-web-ui/pull/191)
 
 ### Plug-Ins
 
