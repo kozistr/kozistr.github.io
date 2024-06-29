@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2024-06-28
+update: 2024-06-29
 tags:
   - About
   - CV
@@ -13,8 +13,7 @@ keywords:
 
 ## Profile
 
-* I'm building a platform for LLM applications to make a better life.
-* Service many machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation Systems, and Tabular in many startups.
+* Service machine learning products in various domains, Audio & Speech, Vision, NLP, Recommendation Systems, Tabular, LLM applications in many startups.
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 * Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
@@ -95,7 +94,7 @@ keywords:
 
 ## Work Experience
 
-* **2023** : Joined Sionic AI. Building an enterprise-grade full-stack platform for LLM applications.
+* **2023** : Joined Sionic AI. Built an enterprise-grade full-stack platform for LLM applications.
 * **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to many products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
 * **2020 - 2021** : Joined Watcha to build a recommendation system with deep learning. Developed deep learning recommender that outperforms the previous algorithm, and contributed to other products like WatchaPedia, in-house applications.
 * **2019 - 2020** : Joined Rainist (Banksalad). Developed a transaction classifier service to analyze the categories with low latency, high accuracy, and in real-time.
@@ -106,7 +105,7 @@ keywords:
 
 #### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ 2024.06.30)**
 
-* Building enterprise-grade full-stack platform for LLM applications.
+* Built an enterprise-grade full-stack platform for LLM applications.
 * Worked as a full-time (early start-up member)
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.27)**
@@ -354,7 +353,7 @@ Hacking Team, [**Demon**](https://demonteam.org/) by [_POC_](http://powerofcommu
 
 ## Educations
 
-**Senior** in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
+BS in Computer Engineering from [KUT](https://www.koreatech.ac.kr/eng.do)
 
 ## Presentations
 
