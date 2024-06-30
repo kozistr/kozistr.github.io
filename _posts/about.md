@@ -94,9 +94,9 @@ keywords:
 
 ## Work Experience
 
-* **2023 - 2024** : Joined Sionic AI. Built an enterprise-grade full-stack platform for LLM applications.
-* **2021 - 2023** : Joined Viva Republica (Toss). Developed and contributed to many products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
-* **2020 - 2021** : Joined Watcha to build a recommendation system with deep learning. Developed deep learning recommender that outperforms the previous algorithm, and contributed to other products like WatchaPedia, in-house applications.
+* **2023 - 2024** : Joined Sionic AI. Built enterprise-grade LLM applications.
+* **2021 - 2023** : Joined Viva Republica (Toss). Developed many products like BNPL, CSS, OCR, NPS, CDP, and in-house products.
+* **2020 - 2021** : Joined Watcha. Developed Watcha recommendation system, and contributed to other products like WatchaPedia, in-house applications.
 * **2019 - 2020** : Joined Rainist (Banksalad). Developed a transaction classifier service to analyze the categories with low latency, high accuracy, and in real-time.
 * **2019** : Joined VoyagerX. Developed a speaker diarization product that automatically recognizes the contents of the meeting.
 * **- 2019** : offensive security stuffs. Mainly researched and studied Linux kernel exploitation and reverse engineering.
@@ -105,7 +105,7 @@ keywords:
 
 #### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ 2024.06.30)**
 
-* Built an enterprise-grade full-stack platform for LLM applications.
+* Built enterprise-grade LLM applications.
 * Worked as a full-time (early start-up member)
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.27)**
