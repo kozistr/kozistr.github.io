@@ -106,6 +106,8 @@ keywords:
 #### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ 2024.06.30)**
 
 * Built enterprise-grade LLM applications.
+  * Developed & Managed the advanced RAG pipeline & server and text embedding, reranker models, and vector database & inference servers.
+  * Developed the utility services likewise category classification, keyword extraction, and summarization.
 * Worked as a full-time (early start-up member)
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.27)**
