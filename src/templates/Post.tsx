@@ -185,6 +185,7 @@ const Post: React.FC<postProps> = ({ data, pageContext }) => {
                 "name" : "${config.name}",
                 "logo": {
                   "@type": "ImageObject",
+                  // eslint-disable-next-line @typescript-eslint/no-require-imports
                   "url": "${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"
                 }
               },
