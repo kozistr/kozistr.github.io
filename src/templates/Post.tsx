@@ -185,12 +185,10 @@ const Post: React.FC<postProps> = ({ data, pageContext }) => {
                 "name" : "${config.name}",
                 "logo": {
                   "@type": "ImageObject",
-                  // eslint-disable-next-line @typescript-eslint/no-require-imports
-                  "url": "${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"
+                  "url": "${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}" // eslint-disable-line @typescript-eslint/no-require-imports
                 }
               },
-              // eslint-disable-next-line @typescript-eslint/no-require-imports
-              "image": ["${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"]`
+              "image": ["${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"]` // eslint-disable-line @typescript-eslint/no-require-imports
                   : `"publisher": {
                 "@type" : "organization",
                 "name" : "${config.name}"
