@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-explicit-any @typescript-eslint/no-require-imports */
 
 import { faAngleLeft, faLayerGroup, faListUl } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
@@ -185,10 +185,10 @@ const Post: React.FC<postProps> = ({ data, pageContext }) => {
                 "name" : "${config.name}",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}" // eslint-disable-line @typescript-eslint/no-require-imports
+                  "url": "${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"
                 }
               },
-              "image": ["${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"]` // eslint-disable-line @typescript-eslint/no-require-imports
+              "image": ["${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"]`
                   : `"publisher": {
                 "@type" : "organization",
                 "name" : "${config.name}"
