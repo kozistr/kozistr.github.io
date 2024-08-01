@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any @typescript-eslint/no-require-imports */
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-require-imports */
 
 import { faAngleLeft, faLayerGroup, faListUl } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
