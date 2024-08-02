@@ -10,7 +10,6 @@ import { useDispatch } from 'react-redux'
 import { useColorMode } from 'theme-ui'
 
 import './layout.scss'
-import '../../utils/google-fonts.scss'
 import config from '../../../config'
 import { actionCreators } from '../../state/actions'
 import Header from '../Header'
