@@ -90,8 +90,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
             <img
               src={
                 config.profileImageFileName
-                  ? // eslint-disable-next-line @typescript-eslint/no-var-requires
-                    require(`../../images/${config.profileImageFileName}`).default
+                  ? require(`../../images/${config.profileImageFileName}`).default
                   : 'https://source.unsplash.com/random/25x25'
               }
               alt="title profile picture"
