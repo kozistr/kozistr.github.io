@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2024-09-30
+update: 2024-10-25
 tags:
   - About
   - CV
@@ -103,11 +103,10 @@ keywords:
 
 ### Company
 
-#### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ 2024.06.30)**
+#### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ 2024.07.05)**
 
-* Built enterprise-grade LLM applications.
-  * Developed & Managed the advanced RAG pipeline & server and text embedding, reranker models, and vector database & inference servers.
-  * Developed the utility services likewise category classification, keyword extraction, and summarization.
+* Search engine and LLM applications based on RAG for B2B products.
+  * Developed whole search engine components, contributed to designing advanced RAG algorithms, building text embedding / re-ranker models, model inference engines, backend services for business logic.
 * Worked as a full-time (early start-up member)
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.27)**
