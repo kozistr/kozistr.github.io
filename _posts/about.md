@@ -1,7 +1,7 @@
 ---
 title: About ME
 date: 2020-12-12
-update: 2024-10-25
+update: 2024-11-30
 tags:
   - About
   - CV
@@ -17,7 +17,7 @@ keywords:
 * Kaggle 2x Expert. the highest competition rank is **top 0.1%**.
 
 * Alternative Military Service Status : **discharge** (`2020/11/27 ~ 2023/09/26`)
-* CV : [[PDF] (as of Sep. 2024)](http://kozistr.tech/cv.pdf)
+* CV : [[PDF] (as of Nov. 2024)](http://kozistr.tech/cv.pdf)
 
 ## Links
 
@@ -106,7 +106,9 @@ keywords:
 #### _Machine Learning Engineer_, **Sionic AI**, **(2023.10.23 ~ 2024.07.05)**
 
 * Search engine and LLM applications based on RAG for B2B products.
-  * Developed whole search engine components, contributed to designing advanced RAG algorithms, building text embedding / re-ranker models, model inference engines, backend services for business logic.
+  * Developed advanced RAG algorithm that accurately handles multi-turns, huge and lots of documents, and is cost-efficient.
+  * Developed multi/cross-lingual text embedding and re-ranker models, which perform well in Korean.
+  * Developed and maintained backend services such as backends for business logic, model inference engines, and VectorDB.
 * Worked as a full-time (early start-up member)
 
 #### _Data Scientist_, **Toss core**, **(2021.12.06 ~ 2023.09.27)**
@@ -318,7 +320,7 @@ keywords:
 * [onnx2tf](https://github.com/PINTO0309/onnx2tf) :: Self-Created Tools to convert ONNX files (NCHW) to TensorFlow/TFLite/Keras format (NHWC). The purpose of this tool is to solve the massive Transpose extrapolation problem in onnx-tensorflow (onnx-tf) :: [#259](https://github.com/PINTO0309/onnx2tf/pull/259)
 * [dadaptation](https://github.com/facebookresearch/dadaptation) :: D-Adaptation for SGD, Adam and AdaGrad :: [#21](https://github.com/facebookresearch/dadaptation/pull/21)
 * [python-mastery](https://github.com/dabeaz-course/python-mastery) :: Advanced Python Mastery :: [#14](https://github.com/dabeaz-course/python-mastery/pull/14)
-* [text-embedding-inference](https://github.com/huggingface/text-embeddings-inference) :: A blazing fast inference solution for text embeddings model :: [#62](https://github.com/huggingface/text-embeddings-inference/pull/62), [#285](https://github.com/huggingface/text-embeddings-inference/pull/285), [#343](https://github.com/huggingface/text-embeddings-inference/pull/343), [#360](https://github.com/huggingface/text-embeddings-inference/pull/360), [#361](https://github.com/huggingface/text-embeddings-inference/pull/361)
+* [text-embedding-inference](https://github.com/huggingface/text-embeddings-inference) :: A blazing fast inference solution for text embeddings model :: [#62](https://github.com/huggingface/text-embeddings-inference/pull/62), [#285](https://github.com/huggingface/text-embeddings-inference/pull/285), [#343](https://github.com/huggingface/text-embeddings-inference/pull/343), [#360](https://github.com/huggingface/text-embeddings-inference/pull/360), [#361](https://github.com/huggingface/text-embeddings-inference/pull/361), [#441](https://github.com/huggingface/text-embeddings-inference/pull/441)
 * [langchain-ai](https://github.com/langchain-ai/langchain) :: Build context-aware reasoning applications :: [#18839](https://github.com/langchain-ai/langchain/pull/18839), [#20057](https://github.com/langchain-ai/langchain/pull/20057)
 * [qdrant](https://github.com/qdrant/qdrant) :: Qdrant - High-performance, massive-scale Vector Database for the next generation of AI :: [#3982](https://github.com/qdrant/qdrant/pull/3982)
 * [bfb](https://github.com/qdrant/bfb) :: *high-load* benchmarking tool :: [#37](https://github.com/qdrant/bfb/pull/37)
