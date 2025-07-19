@@ -1,4 +1,4 @@
-@import '/src/utils/variables.scss';
+@use '../../utils/variables.scss' as var;
 
 .toc {
   font-size: 0.8rem;
@@ -48,11 +48,11 @@
   top: 0;
   right: 0;
   overflow: auto;
-  margin-top: $header-height;
+  margin-top: var.$header-height;
   opacity: 0.4;
   max-height: 85%;
 
-  @media screen and (max-width: $break-toc) {
+  @media screen and (max-width: var.$break-toc) {
     display: none;
   }
 

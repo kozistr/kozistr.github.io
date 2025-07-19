@@ -1,4 +1,4 @@
-@import '/src/utils/variables.scss';
+@use '../../utils/variables.scss' as var;
 
 #Header {
   display: flex;
@@ -8,23 +8,23 @@
   align-items: flex-end;
   justify-content: space-between;
   padding: 0 2rem 1rem 2rem;
-  height: $header-height;
-  max-height: $header-height;
+  height: var.$header-height;
+  max-height: var.$header-height;
   transition: top 0.3s ease 0.2s; // toggleTheme();
   background-color: transparent;
   user-select: none;
   pointer-events: none;
 
-  @media screen and (max-width: $break-l) {
+  @media screen and (max-width: var.$break-l) {
     padding: 0 1.5rem 1rem 1.5rem;
     z-index: 2;
   }
-  @media screen and (max-width: $break-m) {
+  @media screen and (max-width: var.$break-m) {
     padding: 0 1rem 0.5rem 1rem;
-    height: $header-height-m;
+    height: var.$header-height-m;
   }
-  @media screen and (max-width: $break-s) {
-    height: $header-height-s;
+  @media screen and (max-width: var.$break-s) {
+    height: var.$header-height-s;
     padding: 0 1rem 0.25rem 1rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
@@ -41,14 +41,14 @@
     top: 0;
   }
   &.hide {
-    top: -$header-height;
+    top: -var.$header-height;
   }
 
   .header-title {
     display: flex;
     align-items: flex-end;
 
-    @media screen and (max-width: $break-s) {
+    @media screen and (max-width: var.$break-s) {
       align-items: center;
       align-self: center;
       margin-top: 0.5rem;
@@ -62,7 +62,7 @@
       border-radius: 100%;
       margin-right: 0.25rem;
 
-      @media screen and (max-width: $break-s) {
+      @media screen and (max-width: var.$break-s) {
         padding: 1px;
       }
 
@@ -75,12 +75,12 @@
         transition: all 0.5s;
         transition-timing-function: ease-in-out;
 
-        @media screen and (max-width: $break-l) {
+        @media screen and (max-width: var.$break-l) {
           width: 25px !important;
           height: 25px !important;
         }
 
-        @media screen and (max-width: $break-s) {
+        @media screen and (max-width: var.$break-s) {
           min-width: 15px;
           min-height: 15px;
           width: 15px !important;
@@ -111,7 +111,7 @@
       opacity: 0.9;
       transition: opacity 0.3s;
 
-      @media screen and (max-width: $break-s) {
+      @media screen and (max-width: var.$break-s) {
         font-size: 1.1rem;
       }
 
@@ -180,7 +180,7 @@
         transition: opacity 0.3s;
         opacity: 0.7;
 
-        @media screen and (max-width: $break-s) {
+        @media screen and (max-width: var.$break-s) {
           font-size: 1rem;
         }
 

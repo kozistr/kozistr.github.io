@@ -1,4 +1,4 @@
-@import '/src/utils/variables.scss';
+@use '../../utils/variables.scss' as var;
 
 #layout {
   a {
@@ -12,25 +12,25 @@
   }
 
   &.light {
-    color: $font-color-0 !important;
+    color: var.$font-color-0 !important;
 
-    @media screen and (max-width: $break-l) {
+    @media screen and (max-width: var.$break-l) {
       #Header {
-        background-color: $background-color;
+        background-color: var.$background-color;
       }
     }
   }
 
   &.dark {
-    color: $font-color-0-d !important;
+    color: var.$font-color-0-d !important;
 
     svg {
       color: #a3aab3;
     }
 
-    @media screen and (max-width: $break-l) {
+    @media screen and (max-width: var.$break-l) {
       #Header {
-        background-color: $background-color-d;
+        background-color: var.$background-color-d;
       }
     }
   }
@@ -43,14 +43,14 @@ a {
 #content {
   display: flex;
   flex-direction: column;
-  padding-top: $header-height;
+  padding-top: var.$header-height;
   min-height: 100vh;
 
-  @media screen and (max-width: $break-m) {
-    padding-top: $header-height-m;
+  @media screen and (max-width: var.$break-m) {
+    padding-top: var.$header-height-m;
   }
-  @media screen and (max-width: $break-s) {
-    padding-top: $header-height-s;
+  @media screen and (max-width: var.$break-s) {
+    padding-top: var.$header-height-s;
   }
 
   main {
@@ -83,7 +83,7 @@ a {
   transition: 0.5s;
   cursor: pointer;
 
-  @media screen and (max-width: $break-s) {
+  @media screen and (max-width: var.$break-s) {
     margin-right: 1rem;
     margin-bottom: 1rem;
   }

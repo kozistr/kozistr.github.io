@@ -1,4 +1,4 @@
-@import '/src/utils/variables.scss';
+@use '../../utils/variables.scss' as var;
 
 .post-list {
   max-width: 640px;
@@ -21,7 +21,7 @@
     opacity: 0.85;
     transition: opacity 0.2s;
 
-    @media screen and (max-width: $break-m) {
+    @media screen and (max-width: var.$break-m) {
       margin: 4rem 1rem;
     }
 
@@ -39,10 +39,10 @@
 
     & > * > * {
       margin-bottom: 0.25rem;
-      @media screen and (max-width: $break-m) {
+      @media screen and (max-width: var.$break-m) {
         margin-bottom: 0.2rem;
       }
-      @media screen and (max-width: $break-s) {
+      @media screen and (max-width: var.$break-s) {
         margin-bottom: 0.1rem;
       }
     }
@@ -51,7 +51,7 @@
       font-size: 1.3rem;
       line-height: 1.5 !important;
 
-      @media screen and (max-width: $break-m) {
+      @media screen and (max-width: var.$break-m) {
         font-size: 1.1rem;
       }
     }
@@ -110,7 +110,7 @@
       -webkit-box-orient: vertical;
       font-size: 0.95rem;
 
-      @media screen and (max-width: $break-m) {
+      @media screen and (max-width: var.$break-m) {
         font-size: 0.82rem;
       }
     }
