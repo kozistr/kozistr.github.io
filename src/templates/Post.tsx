@@ -2,6 +2,7 @@
 
 import { faAngleLeft, faLayerGroup, faListUl } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+// eslint-disable-next-line import/named
 import { Link, Script, graphql } from 'gatsby'
 import { throttle } from 'lodash'
 import moment from 'moment'

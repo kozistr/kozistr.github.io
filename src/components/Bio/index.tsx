@@ -1,4 +1,5 @@
 import {
+  // eslint-disable-next-line import/named
   IconDefinition,
   faFacebook,
   faGithub,
