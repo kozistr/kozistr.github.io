@@ -101,46 +101,41 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       return slug.replace(/\/(18|19|20|21)\d{2}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[0-1])-/, '/')
     }
 
-    const rewriteNode = node => {
-      if (node.frontmatter.title.includes(`"`)) {
-        console.log('')
-        console.warn(`
-          It is not recommended to include " in the title.
-          - file: ${node.fileAbsolutePath}
-          - title: ${node.frontmatter.title}
-        `)
-      }
+    const fm = node.frontmatter
 
-      if (!node.frontmatter.keywords) {
-        node.frontmatter.keywords = [config.title, config.author]
-      }
-
-      if (!node.frontmatter.tags) {
-        node.frontmatter.tags = ['undefined']
-      } else if (typeof node.frontmatter.tags === 'string') {
-        node.frontmatter.tags = [node.frontmatter.tags]
-      }
-
-      if (node.frontmatter.date.includes('+')) {
-        node.frontmatter.date = new Date(node.frontmatter.date.split('+')[0])
-      } else {
-        node.frontmatter.date = new Date(node.frontmatter.date)
-      }
-
-      if (!node.frontmatter.update) {
-        node.frontmatter.update = '0001-01-01T00:00:00.000Z'
-      }
-
-      return node
+    if (fm.title.includes(`"`)) {
+      console.log('')
+      console.warn(`
+        It is not recommended to include " in the title.
+        - file: ${node.fileAbsolutePath}
+        - title: ${fm.title}
+      `)
     }
 
-    const newSlug = rewriteSlug(slug)
-    const newNode = rewriteNode(node)
+    if (!fm.keywords) {
+      fm.keywords = [config.title, config.author]
+    }
+
+    if (!fm.tags) {
+      fm.tags = ['undefined']
+    } else if (typeof fm.tags === 'string') {
+      fm.tags = [fm.tags]
+    }
+
+    if (fm.date.includes('+')) {
+      fm.date = new Date(fm.date.split('+')[0])
+    } else {
+      fm.date = new Date(fm.date)
+    }
+
+    if (!fm.update) {
+      fm.update = '0001-01-01T00:00:00.000Z'
+    }
 
     actions.createNodeField({
       name: `slug`,
-      node: newNode,
-      value: newSlug,
+      node: node,
+      value: rewriteSlug(slug),
     })
   }
 }
