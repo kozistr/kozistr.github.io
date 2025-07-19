@@ -1,24 +1,24 @@
-@import '../../utils/variables.scss';
+@use '../../utils/variables.scss' as var;
 
 .index-wrap {
   display: flex;
 
-  @media screen and (max-width: $break-l) {
+  @media screen and (max-width: var.$break-l) {
     margin-top: 0.5rem;
   }
-  @media screen and (max-width: $break-m) {
+  @media screen and (max-width: var.$break-m) {
     margin-top: 1rem;
   }
 
   .bio {
     position: fixed;
-    top: $header-height;
+    top: var.$header-height;
     left: 0;
     transition: opacity 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.1s;
 
-    @media screen and (max-width: $break-l) {
+    @media screen and (max-width: var.$break-l) {
       display: none;
     }
   }

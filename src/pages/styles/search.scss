@@ -1,4 +1,4 @@
-@import '../../utils/variables.scss';
+@use '../../utils/variables.scss' as var;
 
 #Search {
   max-width: 720px;
@@ -12,7 +12,7 @@
       margin-bottom: 4rem;
       padding: 1rem;
 
-      @media screen and (max-width: $break-s) {
+      @media screen and (max-width: var.$break-s) {
         margin-bottom: 2rem;
       }
 
@@ -20,7 +20,7 @@
         all: unset;
         margin: 0 1rem;
         margin-top: 0.1rem;
-        @media screen and (max-width: $break-s) {
+        @media screen and (max-width: var.$break-s) {
           min-width: 5rem;
         }
       }
@@ -34,7 +34,7 @@
         flex-direction: row;
         font-size: 0.8rem;
 
-        @media screen and (max-width: $break-s) {
+        @media screen and (max-width: var.$break-s) {
           flex-direction: column;
         }
 

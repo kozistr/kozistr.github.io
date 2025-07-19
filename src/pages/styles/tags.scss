@@ -1,4 +1,4 @@
-@import '../../utils/variables.scss';
+@use '../../utils/variables.scss' as var;
 
 #tags {
   max-width: 720px;
@@ -7,7 +7,7 @@
   .tag-list-wrap {
     margin-bottom: 5rem;
 
-    @media screen and (max-width: $break-s) {
+    @media screen and (max-width: var.$break-s) {
       margin-bottom: 3rem;
     }
 
@@ -23,7 +23,7 @@
         margin: 0.25rem 0.5rem;
         list-style: none;
 
-        @media screen and (max-width: $break-s) {
+        @media screen and (max-width: var.$break-s) {
           margin: 0 0.4rem;
         }
 

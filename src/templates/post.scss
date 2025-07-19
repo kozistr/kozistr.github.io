@@ -1,4 +1,4 @@
-@import '../utils/variables.scss';
+@use '../utils/variables.scss' as var;
 
 .blog-post-container {
   padding-bottom: 2rem;
@@ -22,7 +22,7 @@
       line-height: 1.5;
       word-break: keep-all;
 
-      @media screen and (max-width: $break-s) {
+      @media screen and (max-width: var.$break-s) {
         font-size: 1.2rem;
       }
     }
@@ -81,7 +81,7 @@
         display: none;
         align-self: flex-end;
 
-        @media screen and (max-width: $break-toc) {
+        @media screen and (max-width: var.$break-toc) {
           display: inline-block;
         }
 
