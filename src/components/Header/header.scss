@@ -41,7 +41,7 @@
     top: 0;
   }
   &.hide {
-    top: -var.$header-height;
+    top: -#{var.$header-height};
   }
 
   .header-title {
