@@ -76,7 +76,7 @@
     "gatsby-transformer-remark": "^6.14.0",
     "gatsby-transformer-sharp": "^5.14.0",
     "katex": "0.16.22",
-    "lodash": "^4.17.21",
+    "es-toolkit": "^1.39.8",
     "mobile-detect": "^1.4.5",
     "moment": "^2.30.1",
     "parse-path": "^7.1.0",
@@ -100,7 +100,6 @@
     "typography": "^0.16.24"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-helmet": "^6.1.11",
