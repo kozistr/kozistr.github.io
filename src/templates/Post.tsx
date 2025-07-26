@@ -2,9 +2,9 @@
 
 import { faAngleLeft, faLayerGroup, faListUl } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { throttle } from 'es-toolkit/compat'
 // eslint-disable-next-line import/named
 import { Link, Script, graphql } from 'gatsby'
-import { throttle } from 'lodash'
 import moment from 'moment'
 import React, { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import AdSense from 'react-adsense'

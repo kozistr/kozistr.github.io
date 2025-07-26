@@ -1,8 +1,8 @@
 /* eslint-disable react/display-name */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { throttle } from 'es-toolkit/compat'
 import { Link } from 'gatsby'
-import { throttle } from 'lodash'
 import React, { memo, useCallback, useEffect, useMemo, useState } from 'react'
 
 import './postList.scss'
