@@ -79,6 +79,10 @@ keywords:
 
   > [TF-KR MNIST Challenge](https://github.com/kozistr/MNIST-Competition) - **Top 9, 3rd price, ACC 0.9964**
 
+### Software Engineering
+
+* [KaiCode 2025](https://www.kaicode.org/2025.html) :: **2nd place**
+
 ### Hacking
 
 * **Boot2Root CTF 2018** :: **2nd place** (Demon + alpha)
@@ -107,4 +111,3 @@ keywords:
 * [qdrant](https://github.com/qdrant/qdrant) :: Qdrant - High-performance, massive-scale Vector Database for the next generation of AI :: [#3982](https://github.com/qdrant/qdrant/pull/3982)
 * [bfb](https://github.com/qdrant/bfb) :: *high-load* benchmarking tool :: [#37](https://github.com/qdrant/bfb/pull/37)
 * [qdrant-web-ui](https://github.com/qdrant/qdrant-web-ui) :: Self-hosted web UI for Qdrant :: [#191](https://github.com/qdrant/qdrant-web-ui/pull/191)
-
